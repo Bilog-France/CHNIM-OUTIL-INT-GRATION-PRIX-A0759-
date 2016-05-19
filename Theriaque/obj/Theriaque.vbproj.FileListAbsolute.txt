@@ -565,3 +565,4 @@ E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque-afif\Theriaque(1)\Ther
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque-afif\Theriaque(1)\Theriaque\Theriaque\obj\Release\Theriaque.Resources.resources
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque-afif\Theriaque(1)\Theriaque\Theriaque\obj\Release\Theriaque.vbproj.GenerateResource.Cache
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque-afif\Theriaque(1)\Theriaque\Theriaque\obj\Release\Theriaque.exe.licenses
+E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Git-Version\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\Theriaque\bin\Debug\Theriaque.exe.config

@@ -92,6 +92,7 @@
     <Compile Include="DataSet\dsTheriaque2.vb">
       <DependentUpon>dsTheriaque2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet\dsTheriaque21.Designer.vb" />
     <Compile Include="DataSet\dsTheriaqueCategorie.designer.vb">
       <DependentUpon>dsTheriaqueCategorie.vb</DependentUpon>
     </Compile>
