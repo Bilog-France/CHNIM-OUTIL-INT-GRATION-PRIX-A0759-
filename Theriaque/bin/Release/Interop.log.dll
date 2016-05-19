@@ -1,0 +1,679 @@
+Thériaque;18/09/2014 09:47:20;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:172.16.1.170,8008>Échec de l'ouverture de session de l'utilisateur 'sa'.
+Thériaque;18/09/2014 09:48:53;Voulez-vous valider ?;;
+Thériaque;18/09/2014 09:49:30;Voulez-vous valider ?;;
+Thériaque;18/09/2014 09:52:20;Voulez-vous valider ?;;
+Thériaque;18/09/2014 09:52:38;Voulez-vous valider ?;;
+SQLcn;24/09/2014 13:50:22;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select SP_CODE_SQ_PK as code, SP_NOM as libelle From THERIAQUE.SP_SPECIALITE
+SQLcn;24/09/2014 13:50:24;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select SP_CODE_SQ_PK as code, SP_NOM as libelle From THERIAQUE.SP_SPECIALITE
+SQLcn;24/09/2014 13:50:25;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '20' 
+SQLcn;24/09/2014 13:50:26;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '22' 
+SQLcn;24/09/2014 13:53:17;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '01' 
+SQLcn;24/09/2014 13:58:57;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '01' 
+SQLcn;24/09/2014 14:04:37;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '01' 
+SQLcn;24/09/2014 14:12:39;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '01' 
+SQLcn;24/09/2014 14:19:46;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '01' 
+SQLcn;24/09/2014 14:25:56;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '01' 
+SQLcn;24/09/2014 14:36:24;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select SP_CODE_SQ_PK as code, SP_NOM as libelle From THERIAQUE.SP_SPECIALITE
+SQLcn;24/09/2014 14:37:01;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select SP_CODE_SQ_PK as code, SP_NOM as libelle From THERIAQUE.SP_SPECIALITE
+SQLcn;24/09/2014 14:37:09;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '20' 
+SQLcn;24/09/2014 14:37:10;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '22' 
+SQLcn;24/09/2014 14:37:11;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '19' 
+SQLcn;24/09/2014 14:39:02;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '01' 
+Thériaque;01/10/2014 14:52:37;Merci de remplir au moins une entité.;;
+Thériaque;01/10/2014 14:52:43;Il faut au moins une nature EI clinique ou une nature paraclinique !;;
+Thériaque;01/10/2014 14:52:48;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;01/10/2014 14:52:48;Voulez-vous valider ?;;
+Thériaque;01/10/2014 14:53:31;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;01/10/2014 15:04:52;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;01/10/2014 15:04:53;Voulez-vous valider ?;;
+Thériaque;01/10/2014 15:18:43;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;01/10/2014 15:18:51;Voulez-vous valider ?;;
+SQLcn;07/10/2014 09:35:06;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;07/10/2014 09:37:09;Substance active ne doit pas être vide.;;
+Thériaque;07/10/2014 09:38:07;Substance active ne doit pas être vide.;;
+Thériaque;07/10/2014 09:38:22;Substance active ne doit pas être vide.;;
+Thériaque;07/10/2014 09:41:41;Substance active ne doit pas être vide.;;
+Thériaque;07/10/2014 09:42:02;Substance active ne doit pas être vide.;;
+Thériaque;07/10/2014 09:54:54;Voulez-vous supprimer ?;;
+Thériaque;07/10/2014 09:54:55;Merci de consulter tous les onglets avant de supprimer.;;
+Thériaque;07/10/2014 09:55:26;Il faut au moins une nature EI clinique ou une nature paraclinique !;;
+Thériaque;07/10/2014 09:55:48;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 09:55:52;Voulez-vous valider ?;;
+Thériaque;07/10/2014 09:56:20;Vous êtes sur le point de valider la partie 'En cas de surdosage' et perdre toutes les données de la partie 'A dose thérapeutique'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 09:56:22;Voulez-vous valider ?;;
+Thériaque;07/10/2014 09:57:08;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+SQLcn;07/10/2014 09:58:08;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;07/10/2014 10:03:08;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:03:20;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:03:21;Voulez-vous valider ?;;
+Thériaque;07/10/2014 10:04:06;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:04:19;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:04:31;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:11:07;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:11:09;Voulez-vous valider ?;;
+Thériaque;07/10/2014 10:11:57;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:12:02;Voulez-vous valider ?;;
+Thériaque;07/10/2014 10:12:35;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:12:38;Voulez-vous valider ?;;
+Thériaque;07/10/2014 10:12:52;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:12:53;Voulez-vous valider ?;;
+Thériaque;07/10/2014 10:13:08;Vous êtes sur le point de valider la partie 'En cas de surdosage' et perdre toutes les données de la partie 'A dose thérapeutique'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:13:08;Voulez-vous valider ?;;
+Thériaque;07/10/2014 10:13:23;Vous êtes sur le point de valider la partie 'En cas de surdosage' et perdre toutes les données de la partie 'A dose thérapeutique'.Voulez-vous continuez ?;;
+Thériaque;07/10/2014 10:13:25;Voulez-vous valider ?;;
+Thériaque;09/10/2014 09:38:16;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+SQLcn;09/10/2014 09:40:53;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;09/10/2014 09:57:31;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 09:57:33;Voulez-vous valider ?;;
+Thériaque;09/10/2014 09:58:23;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 09:58:23;Voulez-vous valider ?;;
+Thériaque;09/10/2014 09:58:42;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 09:58:43;Voulez-vous valider ?;;
+Thériaque;09/10/2014 10:06:04;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 10:41:49;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 10:41:50;Voulez-vous valider ?;;
+Thériaque;09/10/2014 10:43:39;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 10:43:40;Voulez-vous valider ?;;
+Thériaque;09/10/2014 10:51:55;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 10:51:57;Voulez-vous valider ?;;
+Thériaque;09/10/2014 10:52:32;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 10:52:33;Voulez-vous valider ?;;
+Thériaque;09/10/2014 10:52:47;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 10:52:48;Voulez-vous valider ?;;
+Thériaque;09/10/2014 10:53:07;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;09/10/2014 10:53:08;Voulez-vous valider ?;;
+Thériaque;21/10/2014 11:26:36;Voulez-vous valider ?;;
+SQLcn;21/10/2014 11:36:13;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = 'CC' 
+Thériaque;21/10/2014 11:50:42;Voulez-vous valider ?;;
+SQLcn;21/10/2014 11:57:53;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;21/10/2014 12:04:09;Voulez-vous valider ?;;
+Thériaque;21/10/2014 12:06:07;Voulez-vous valider ?;;
+Thériaque;21/10/2014 12:06:51;Voulez-vous valider ?;;
+Thériaque;21/10/2014 12:15:18;Voulez-vous supprimer ?;;
+Thériaque;21/10/2014 14:00:10;Voulez-vous valider ?;;
+Thériaque;21/10/2014 14:10:23;Voulez-vous valider ?;;
+Thériaque;21/10/2014 14:28:32;Voulez-vous valider ?;;
+Thériaque;22/10/2014 10:04:42;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [TheriaqueBechir]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+SQLcn;22/10/2014 10:14:37;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PRE_CODE_PK as code, (Select SP_NOM  From THERIAQUE.SP_SPECIALITE a where SP_CODE_SQ_PK  = b.PRE_SP_CODE_FK)as libelle from THERIAQUE.PRE_PRESENTATION b order by PRE_CODE_PK 
+Thériaque;22/10/2014 10:15:10;Voulez-vous valider ?;;
+Thériaque;22/10/2014 12:17:27;Voulez-vous valider ?;;
+Thériaque;22/10/2014 12:53:53;Voulez-vous valider ?;;
+Thériaque;22/10/2014 12:54:52;Voulez-vous valider ?;;
+Thériaque;22/10/2014 12:55:18;Voulez-vous valider ?;;
+Thériaque;22/10/2014 12:57:13;Voulez-vous valider ?;;
+Thériaque;22/10/2014 12:57:35;Voulez-vous valider ?;;
+Thériaque;22/10/2014 13:02:59;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:11:51;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:12:53;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:13:44;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:15:16;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:31:10;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:33:02;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:33:37;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:35:30;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:35:53;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:37:27;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:38:40;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:39:16;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:53:00;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:53:26;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:53:59;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:55:34;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:55:57;Voulez-vous valider ?;;
+Thériaque;22/10/2014 14:57:17;Voulez-vous valider ?;;
+Thériaque;22/10/2014 15:09:38;Voulez-vous valider ?;;
+Thériaque;22/10/2014 15:10:03;Voulez-vous valider ?;;
+Thériaque;22/10/2014 15:10:36;Voulez-vous valider ?;;
+Thériaque;22/10/2014 15:10:55;Voulez-vous valider ?;;
+Thériaque;22/10/2014 15:11:18;Voulez-vous valider ?;;
+Thériaque;22/10/2014 15:12:01;Voulez-vous valider ?;;
+SQLcn;23/10/2014 12:30:14;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;Select SP_CODE_SQ_PK as code, SP_NOM as libelle From THERIAQUE.SP_SPECIALITE
+Thériaque;23/10/2014 12:31:04;Voulez-vous valider ?;;
+Thériaque;23/10/2014 14:10:25;Voulez-vous valider ?;;
+Thériaque;23/10/2014 14:12:17;Voulez-vous valider ?;;
+Thériaque;23/10/2014 14:12:46;Voulez-vous valider ?;;
+Thériaque;23/10/2014 14:14:52;Voulez-vous valider ?;;
+Thériaque;23/10/2014 14:15:17;Voulez-vous valider ?;;
+Thériaque;23/10/2014 14:16:50;Voulez-vous valider ?;;
+Thériaque;23/10/2014 14:59:29;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:28:26;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:28:49;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:49:31;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:49:55;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:51:20;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:51:31;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:51:49;Voulez-vous valider ?;;
+Thériaque;23/10/2014 15:52:23;Voulez-vous valider ?;;
+SQLcn;28/10/2014 14:17:28;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PRE_CODE_PK as code, (Select SP_NOM  From THERIAQUE.SP_SPECIALITE a where SP_CODE_SQ_PK  = b.PRE_SP_CODE_FK)as libelle from THERIAQUE.PRE_PRESENTATION b order by PRE_CODE_PK 
+Thériaque;28/10/2014 14:18:37;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:21:29;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:21:54;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:22:50;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:26:44;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:27:06;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:27:29;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:30:40;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:31:03;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:31:31;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:33:20;Voulez-vous valider ?;;
+Thériaque;28/10/2014 14:33:43;Voulez-vous valider ?;;
+Thériaque;03/11/2014 09:58:05;Voulez-vous valider ?;;
+SQLcn;03/11/2014 10:00:46;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = 'CC' 
+Thériaque;03/11/2014 10:01:23;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:04:03;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:04:49;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:07:01;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:22:40;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:27:06;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:27:55;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:30:04;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:33:56;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:38:48;Voulez-vous valider ?;;
+Thériaque;03/11/2014 10:48:27;Voulez-vous valider ?;;
+Thériaque;03/11/2014 11:19:27;Voulez-vous valider ?;;
+Thériaque;04/11/2014 16:29:44;Voulez-vous valider ?;;
+Thériaque;07/11/2014 09:55:28;Voulez-vous valider ?;;
+Thériaque;07/11/2014 09:57:07;Voulez-vous valider ?;;
+Thériaque;07/11/2014 09:57:32;Voulez-vous valider ?;;
+SQLcn;07/11/2014 14:18:06;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;Select SP_CODE_SQ_PK as code, SP_NOM as libelle From THERIAQUE.SP_SPECIALITE
+Thériaque;07/11/2014 14:21:47;Voulez-vous valider ?;;
+Thériaque;07/11/2014 14:42:41;Voulez-vous valider ?;;
+Thériaque;07/11/2014 14:43:10;Voulez-vous valider ?;;
+Thériaque;10/11/2014 10:51:05;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;10/11/2014 10:51:46;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [TheriaqueBechir]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;10/11/2014 11:35:53;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [TheriaqueBechir]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+SQLcn;10/11/2014 14:34:31;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);; Select CPH_CODE_PK as code, CPH_NOM as libelle,0 as disable ,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK  not in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER)  UNION  Select CPH_CODE_PK as code, CPH_NOM as libelle, 1 as disable,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER) order by CPH_CODE_PK  
+SQLcn;10/11/2014 14:51:01;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+SQLcn;13/11/2014 16:02:11;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;Select GSP_CODE_SQ_PK as code, GSP_NOM as libelle From THERIAQUE.GSP_GENERIQUE_SPECIALITE
+Thériaque;13/11/2014 16:09:51;Voulez-vous valider ?;;
+SQLcn;21/11/2014 09:49:59;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;select (CDFPF_CODEF_FK_PK + '_' + CDFPF_NUMEROF_FK_PK) as code, CDFPF_NUMEROP_FK_PK, CDFPF_CODEP_FK_PK, CDFPF_NUMEROF_FK_PK, CDFPF_CODEF_FK_PK, CDFPF_NUMORD FROM theriaque.CDFPF_LIEN_CDF_PERE_FILS WHERE 1 = 2
+SQLcn;21/11/2014 09:50:19;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select (CDF_CODE_PK + '_' + CDF_NUMERO_PK) as code, CDF_NOM as libelle,CDF_CODE_PK as val1, CDF_NUMERO_PK as val2  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK in ('CC','CS','NC','NN','PT','GP','PC')
+SQLcn;21/11/2014 10:02:21;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = 'PA' 
+SQLcn;21/11/2014 10:02:47;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = 'TP' 
+SQLcn;21/11/2014 10:03:22;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);; Select * from THERIAQUE.SYCDF_SYNCODIF where UPPER(SYCDF_NOM_PK) = '' and SYCDF_CDF_NUMERO_FK_PK = 'TP'
+SQLcn;21/11/2014 10:25:01;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;21/11/2014 10:30:01;Voulez-vous valider ?;;
+Thériaque;21/11/2014 10:31:24;Voulez-vous valider ?;;
+Thériaque;21/11/2014 10:31:32;Voulez-vous supprimer ?;;
+Thériaque;21/11/2014 10:40:53;Voulez-vous valider ?;;
+Thériaque;21/11/2014 10:42:54;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;21/11/2014 10:43:11;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;21/11/2014 10:43:57;Voulez vous recalculez les doses Min/Max ? ;;
+SQLcn;21/11/2014 10:50:17;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;21/11/2014 11:10:28;Voulez-vous valider ?;;
+SQLcn;21/11/2014 11:13:26;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = 'CC' 
+Thériaque;21/11/2014 11:15:44;Voulez-vous valider ?;;
+Thériaque;21/11/2014 11:16:09;Voulez-vous valider ?;;
+Thériaque;24/11/2014 16:35:21;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [TheriaqueBechir]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+SQLcn;24/11/2014 16:43:27;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;24/11/2014 16:45:34;Voulez-vous valider ?;;
+Thériaque;24/11/2014 16:51:33;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;24/11/2014 16:52:03;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;24/11/2014 16:52:28;Voulez-vous valider ?;;
+Thériaque;27/11/2014 11:33:11;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+Thériaque;27/11/2014 11:33:38;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:172.16.1.170,8008>Échec de l'ouverture de session de l'utilisateur 'sa'.
+SQLcn;27/11/2014 11:46:41;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+SQLcn;27/11/2014 11:57:23;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+SQLcn;27/11/2014 11:59:16;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+SQLcn;04/12/2014 11:59:23;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+SQLcn;04/12/2014 12:01:08;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+SQLcn;09/12/2014 08:03:14;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;09/12/2014 08:06:20;Voulez vous recalculez les doses Min/Max ? ;;
+SQLcn;09/12/2014 10:54:34;[M167] Expiration du délai d'attente. Le délai d'attente s'est écoulé avant la fin de l'opération ou le serveur ne répond pas.;;Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT
+Thériaque;11/12/2014 10:09:04;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 10:14:57;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 10:24:33;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 10:26:32;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 10:30:13;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 10:58:49;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 13:51:59;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 13:56:50;Voulez-vous valider ?;;
+Thériaque;11/12/2014 14:00:11;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:03:32;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:09:37;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:12:36;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:15:59;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:19:11;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:21:15;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:25:29;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:26:09;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:30:35;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 14:39:48;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [TheriaqueBechir]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:172.16.1.170,8008>Échec de l'ouverture de session de l'utilisateur 'sa'.
+Thériaque;11/12/2014 14:39:55;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [TheriaqueBechir]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:172.16.1.170,8008>Échec de l'ouverture de session de l'utilisateur 'sa'.
+SQLcn;11/12/2014 14:41:17;[M167] Échec de l'ouverture de session de l'utilisateur 'sa'.;; Select CPH_CODE_PK as code, CPH_NOM as libelle,0 as disable ,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK  not in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER)  UNION  Select CPH_CODE_PK as code, CPH_NOM as libelle, 1 as disable,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER) order by CPH_CODE_PK  
+Thériaque;11/12/2014 15:06:44;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 15:07:24;Voulez-vous valider ?;;
+Thériaque;11/12/2014 15:23:06;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 15:28:09;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 15:51:46;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 15:52:41;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 15:53:46;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 15:55:34;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 15:58:02;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:00:13;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 16:00:32;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;11/12/2014 16:01:01;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:01:26;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:05:49;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:22:17;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:23:20;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:33:24;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:34:33;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:37:40;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:39:15;Voulez-vous valider ?;;
+Thériaque;11/12/2014 16:45:03;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;11/12/2014 16:45:37;Voulez vous recalculez les séquences posologies ? ;;
+SQLcn;12/12/2014 09:49:58;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;SELECT DISTINCT FPO_CODE_SQ_PK as code, '' as libelle FROM THERIAQUE.FPO_FICHEPOSO ORDER BY FPO_CODE_SQ_PK
+Thériaque;12/12/2014 10:00:20;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;12/12/2014 10:14:36;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:15:16;Voulez-vous valider ?;;
+Thériaque;12/12/2014 10:17:43;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:20:48;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:21:47;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:25:09;Voulez-vous valider ?;;
+Thériaque;12/12/2014 10:27:34;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:28:44;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:37:31;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:38:16;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:44:41;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;12/12/2014 10:45:03;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;12/12/2014 10:46:12;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:47:10;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:47:56;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:48:39;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:53:16;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;12/12/2014 10:57:51;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;12/12/2014 11:12:11;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;12/12/2014 12:12:50;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 10:51:54;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 10:53:10;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 11:29:58;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 11:31:01;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 11:35:06;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 11:47:36;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 11:49:07;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:07:36;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:10:48;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:15:48;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:29:17;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:33:53;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:34:31;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:36:39;Voulez-vous valider ?;;
+Thériaque;14/12/2014 12:36:50;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:37:50;Voulez-vous valider ?;;
+Thériaque;14/12/2014 12:37:58;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:46:18;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;14/12/2014 12:48:27;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;15/12/2014 09:51:16;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;15/12/2014 11:34:00;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;15/12/2014 15:18:44;Voulez vous recalculez les séquences posologies ? ;;
+SQLcn;15/12/2014 15:19:11;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:13;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:14;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:16;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:17;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:19;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:20;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:21;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:21;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:22;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:23;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:24;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:19:25;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:29:01;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:29:03;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:29:04;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:29:05;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:31;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:32;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:33;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:34;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:35;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:36;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:44;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:45;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:51:46;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:52:43;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+SQLcn;15/12/2014 15:52:43;[M167] Incorrect syntax near '='.;; Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '  ' AND CDF_CODE_PK = 
+Thériaque;15/12/2014 15:55:47;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;15/12/2014 16:09:18;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;15/12/2014 16:11:37;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;15/12/2014 16:13:59;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;15/12/2014 16:15:07;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;16/12/2014 10:02:01;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;16/12/2014 10:02:42;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+SQLcn;16/12/2014 12:38:52;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;Select GSP_CODE_SQ_PK as code, GSP_NOM as libelle From THERIAQUE.GSP_GENERIQUE_SPECIALITE
+Thériaque;17/12/2014 10:50:32;Voulez-vous valider ?;;
+Thériaque;17/12/2014 11:42:51;Voulez-vous valider ?;;
+Thériaque;18/12/2014 09:47:40;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;18/12/2014 09:48:23;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;18/12/2014 09:50:13;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 09:50:25;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 09:50:47;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 09:52:31;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;18/12/2014 09:58:39;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 10:10:22;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 10:10:52;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 10:13:35;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 10:21:12;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;18/12/2014 10:23:28;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;18/12/2014 10:25:01;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;18/12/2014 10:27:02;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;18/12/2014 10:28:58;Voulez vous recalculez les séquences posologies ? ;;
+SQLcn;27/12/2014 03:58:40;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.);; Select CPH_CODE_PK as code, CPH_NOM as libelle,0 as disable ,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK  not in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER)  UNION  Select CPH_CODE_PK as code, CPH_NOM as libelle, 1 as disable,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER) order by CPH_CODE_PK  
+SQLcn;27/12/2014 03:59:16;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.);;SELECT DISTINCT FPO_CODE_SQ_PK as code, '' as libelle FROM THERIAQUE.FPO_FICHEPOSO ORDER BY FPO_CODE_SQ_PK
+Thériaque;27/12/2014 04:04:04;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;27/12/2014 04:04:13;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;27/12/2014 04:05:07;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;27/12/2014 04:27:55;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;27/12/2014 04:28:01;Voulez-vous valider ?;;
+Thériaque;27/12/2014 04:04:26;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;27/12/2014 04:05:57;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;27/12/2014 04:06:44;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;27/12/2014 04:08:13;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;27/12/2014 04:12:15;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;27/12/2014 04:24:00;Voulez vous recalculez les séquences posologies ? ;;
+Thériaque;27/12/2014 05:30:43;Voulez vous recalculez les doses Min/Max ? ;;
+SQLcn;27/12/2014 05:30:45;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);; select isnull(max(IPODOSE_NUM_SEQ_PK),0) from theriaque.IPODOSE_INFOPOSO
+SQLcn;11/02/2015 11:47:28;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;Select CIM_CODE_PK as code, CIM_LIBELLE_COURT as libelle From THERIAQUE.CIM10 
+Thériaque;11/02/2015 11:49:26;Voulez-vous valider ?;;
+Thériaque;11/02/2015 11:50:23;Voulez-vous valider ?;;
+Thériaque;11/02/2015 11:55:52;Voulez-vous valider ?;;
+Thériaque;11/02/2015 11:56:07;Voulez-vous valider ?;;
+Thériaque;11/02/2015 11:59:00;Voulez-vous valider ?;;
+Thériaque;12/02/2015 11:37:04;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;12/02/2015 11:38:07;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;12/02/2015 11:49:56;Voulez-vous valider ?;;
+Thériaque;12/02/2015 11:53:48;Voulez-vous valider ?;;
+Thériaque;12/02/2015 11:59:39;Voulez-vous valider ?;;
+Thériaque;02/03/2015 17:07:17;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;02/03/2015 17:07:25;Voulez-vous valider ?;;
+Thériaque;02/03/2015 17:09:01;Merci de remplir au moins une entité.;;
+Thériaque;02/03/2015 17:09:08;Il faut au moins une nature EI clinique ou une nature paraclinique !;;
+Thériaque;02/03/2015 17:09:16;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;02/03/2015 17:09:18;Voulez-vous valider ?;;
+Thériaque;02/03/2015 18:02:15;Merci de remplir au moins une entité.;;
+Thériaque;02/03/2015 18:02:21;Il faut au moins une nature EI clinique ou une nature paraclinique !;;
+Thériaque;02/03/2015 18:02:24;Vous êtes sur le point de valider la partie 'A dose thérapeutique' et perdre toutes les données de la partie 'En cas de surdosage'.Voulez-vous continuez ?;;
+Thériaque;02/03/2015 18:02:25;Voulez-vous valider ?;;
+Thériaque;27/07/2015 12:30:32;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:172.16.1.170,8008>Échec de l'ouverture de session de l'utilisateur 'sa'.
+Thériaque;28/07/2015 15:44:59;Voulez-vous valider ?;;
+Thériaque;28/07/2015 15:54:03;Voulez-vous valider ?;;
+Thériaque;28/07/2015 15:54:23;Voulez-vous valider ?;;
+Thériaque;28/07/2015 15:54:36;Voulez-vous valider ?;;
+SQLcn;03/08/2015 09:47:05;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CIM_CODE_PK as code, CIM_LIBELLE_COURT as libelle From THERIAQUE.CIM10 
+SQLcn;03/08/2015 09:47:23;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CISP_CODE_PK as code, CISP_LIBELLE_COURT as libelle From THERIAQUE.CISP_CLASSIF_INTER_SOINS 
+SQLcn;03/08/2015 09:47:27;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = 'CC' 
+Thériaque;03/08/2015 09:48:17;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:AFIF-PC\SQLEXPRESS>Échec de l'ouverture de session de l'utilisateur 'sa'.
+Thériaque;03/08/2015 11:11:42;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+SQLcn;03/08/2015 11:47:12;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);; Select CPH_CODE_PK as code, CPH_NOM as libelle,0 as disable ,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK  not in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER)  UNION  Select CPH_CODE_PK as code, CPH_NOM as libelle, 1 as disable,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER) order by CPH_CODE_PK  
+Thériaque;03/08/2015 11:51:11;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+Thériaque;03/08/2015 12:15:37;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:15:44;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:18:57;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:19:06;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:25:18;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:25:40;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:27:29;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:27:42;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:29:08;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:29:31;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:30:25;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:30:44;Voulez-vous valider ?;;
+Thériaque;03/08/2015 12:32:08;Voulez-vous valider ?;;
+Thériaque;03/08/2015 13:57:21;Voulez-vous valider ?;;
+Thériaque;03/08/2015 14:14:54;Voulez-vous valider ?;;
+Thériaque;03/08/2015 14:15:02;Voulez-vous valider ?;;
+Thériaque;03/08/2015 14:57:34;Voulez-vous valider ?;;
+Thériaque;03/08/2015 14:57:46;Voulez-vous valider ?;;
+Thériaque;03/08/2015 14:59:44;Voulez-vous valider ?;;
+Thériaque;03/08/2015 14:59:57;Voulez-vous valider ?;;
+Thériaque;03/08/2015 15:00:02;Voulez-vous valider ?;;
+Thériaque;03/08/2015 15:01:55;Voulez-vous valider ?;;
+Thériaque;03/08/2015 15:02:25;Voulez-vous valider ?;;
+Thériaque;03/08/2015 15:02:47;Voulez-vous valider ?;;
+Thériaque;03/08/2015 15:04:02;Voulez-vous valider ?;;
+SQLcn;04/08/2015 10:21:20;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;SELECT SP_CODE_SQ_PK AS code, SP_NOM AS libelle, 0 as disable, 0 as chk , 0 as chkFixe FROM THERIAQUE.SP_SPECIALITE WHERE SP_GSP_CODE_FK IS NULL
+Thériaque;04/08/2015 11:49:03;Voulez-vous valider ?;;
+Thériaque;04/08/2015 11:53:39;Voulez-vous valider ?;;
+Thériaque;04/08/2015 11:53:48;Voulez-vous valider ?;;
+Thériaque;04/08/2015 11:54:01;Voulez-vous valider ?;;
+Thériaque;04/08/2015 11:54:10;Voulez-vous valider ?;;
+Thériaque;05/08/2015 09:44:33;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:AFIF-PC\SQLEXPRESS>Échec de l'ouverture de session de l'utilisateur 'sa'.
+SQLcn;05/08/2015 15:14:00;[M167] Syntaxe incorrecte vers 'introduction'.;; SELECT SAC_CODE_SQ_PK AS code, SAC_NOM AS libelle FROM THERIAQUE.SAC_SUBACTIVE  WHERE SAC_CODE_REF = 'ZZ test d'introduction de libellés d'apostrophe' ORDER BY SAC_CODE_SQ_PK 
+SQLcn;05/08/2015 15:15:27;[M167] Syntaxe incorrecte vers 'introduction'.;; SELECT SAC_CODE_SQ_PK AS code, SAC_NOM AS libelle FROM THERIAQUE.SAC_SUBACTIVE  WHERE SAC_CODE_REF = 'ZZ test d'introduction de libellés d'apostrophe' ORDER BY SAC_CODE_SQ_PK 
+Thériaque;06/08/2015 09:46:30;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:AFIF-PC\SQLEXPRESS>Échec de l'ouverture de session de l'utilisateur 'sa'.
+SQLcn;06/08/2015 15:38:21;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;Select GSAC_CODE_SQ_PK as code, GSAC_NOM as libelle FROM THERIAQUE.GSAC_PERE_SUBACT 
+Thériaque;06/08/2015 16:46:18;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+Thériaque;07/08/2015 12:22:57;Voulez-vous valider ?;;
+Thériaque;07/08/2015 12:27:36;Saisir un produit;;
+Thériaque;07/08/2015 12:28:10;Voulez-vous valider ?;;
+Thériaque;10/08/2015 10:27:40;Voulez-vous valider ?;;
+Thériaque;11/08/2015 15:03:18;Voulez-vous valider ?;;
+Thériaque;12/08/2015 12:49:48;Voulez-vous valider ?;;
+Thériaque;12/08/2015 12:50:08;Voulez-vous valider ?;;
+SQLcn;12/08/2015 14:21:47;[M167] Syntaxe incorrecte vers '.'.;;Select max(CDFUCUM_CODE_PK) From THERIAQUE.
+Thériaque;12/08/2015 14:26:00;Voulez-vous valider ?;;
+Thériaque;12/08/2015 14:26:05;Voulez-vous valider ?;;
+Thériaque;12/08/2015 14:33:41;Voulez-vous valider ?;;
+Thériaque;12/08/2015 14:36:32;Voulez-vous valider ?;;
+Thériaque;12/08/2015 14:36:49;Voulez-vous valider ?;;
+Thériaque;12/08/2015 15:30:42;Voulez-vous valider ?;;
+Thériaque;12/08/2015 15:30:46;Voulez-vous valider ?;;
+Thériaque;12/08/2015 15:31:22;Voulez-vous valider ?;;
+Thériaque;12/08/2015 15:33:52;Voulez-vous valider ?;;
+Thériaque;12/08/2015 15:35:02;Voulez-vous valider ?;;
+Thériaque;12/08/2015 15:40:03;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:02:46;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:03:02;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:03:08;Voulez-vous supprimer ?;;
+Thériaque;12/08/2015 16:06:45;Voulez-vous supprimer ?;;
+Thériaque;12/08/2015 16:06:54;Voulez-vous supprimer ?;;
+Thériaque;12/08/2015 16:07:04;Voulez-vous valider ?;;
+SQLcn;12/08/2015 16:17:09;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;SELECT [CDFUCUM_CODE_PK] as code,[CDFUCUM_SYMBOLE] as libelle FROM [theriaque].[theriaque].[CDFUCUM_UCUM] 
+Thériaque;12/08/2015 16:17:41;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:18:08;Voulez-vous supprimer ?;;
+Thériaque;12/08/2015 16:18:15;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:50:56;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:50:59;Voulez-vous supprimer ?;;
+Thériaque;12/08/2015 16:51:04;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:51:39;Voulez-vous supprimer ?;;
+Thériaque;12/08/2015 16:51:52;Voulez-vous valider ?;;
+Thériaque;12/08/2015 16:51:54;Voulez-vous supprimer ?;;
+Thériaque;24/08/2015 10:34:50;Voulez-vous supprimer ?;;
+Thériaque;24/08/2015 10:34:54;Voulez-vous valider ?;;
+Thériaque;24/08/2015 10:35:07;Voulez-vous supprimer ?;;
+Thériaque;24/08/2015 10:35:14;Voulez-vous valider ?;;
+SQLcn;24/08/2015 14:08:17;[M167] Une erreur de niveau transport s'est produite lors de l'envoi de la requête au serveur. (provider: Fournisseur TCP, error: 0 - Une connexion existante a dû être fermée par l’hôte distant.);;select (CDFPF_CODEF_FK_PK + '_' + CDFPF_NUMEROF_FK_PK) as code, CDFPF_NUMEROP_FK_PK, CDFPF_CODEP_FK_PK, CDFPF_NUMEROF_FK_PK, CDFPF_CODEF_FK_PK, CDFPF_NUMORD FROM theriaque.CDFPF_LIEN_CDF_PERE_FILS WHERE 1 = 2
+Thériaque;24/08/2015 14:09:13;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;24/08/2015 15:05:19;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;25/08/2015 10:10:43;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;25/08/2015 11:57:06;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+SQLcn;25/08/2015 11:58:26;[M167] Syntaxe incorrecte vers '='.;; select CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE from theriaque.CDFUCUM_UCUM  where CDFUCUM_CODE_PK in (select CDFCDFU_CDFUCUM_CODE_FK_PK  from theriaque.CDFCDFU_CDFU  CDFCDFU_CDF_NUMERO_FK_PK = '19' 
+Thériaque;25/08/2015 12:01:03;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:afif-pc,8008>Échec de l'ouverture de session de l'utilisateur 'sa'.
+Thériaque;25/08/2015 12:01:18;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:afif-pc,8008\sqlexpress>Échec de l'ouverture de session de l'utilisateur 'sa'.
+Thériaque;25/08/2015 12:03:26;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;25/08/2015 14:06:54;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+SQLcn;25/08/2015 15:18:46;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;select (CDFPF_CODEF_FK_PK + '_' + CDFPF_NUMEROF_FK_PK) as code, CDFPF_NUMEROP_FK_PK, CDFPF_CODEP_FK_PK, CDFPF_NUMEROF_FK_PK, CDFPF_CODEF_FK_PK, CDFPF_NUMORD FROM theriaque.CDFPF_LIEN_CDF_PERE_FILS WHERE 1 = 2
+SQLcn;25/08/2015 15:18:47;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);; select CDFUCUM_CODE_PK as code, CDFUCUM_SYMBOLE as libelle from theriaque.CDFUCUM_UCUM 
+Thériaque;25/08/2015 16:01:40;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;25/08/2015 16:02:40;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+SQLcn;25/08/2015 16:51:37;[M167] Syntaxe incorrecte vers ')'.;; select CDFUCUM_CODE_PK as code, CDFUCUM_SYMBOLE as libelle from theriaque.CDFUCUM_UCUM   where CDFUCUM_CODE_PK = '4') 
+Thériaque;26/08/2015 11:45:01;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Une tentative de connexion a échoué car le parti connecté n’a pas répondu convenablement au-delà d’une certaine durée ou une connexion établie a échoué car l’hôte de connexion n’a pas répondu.)
+Thériaque;26/08/2015 12:34:11;Échec de l'ouverture de session de l'utilisateur 'sa'.  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:afif-pc,8008\sqlexpress>Échec de l'ouverture de session de l'utilisateur 'sa'.
+Thériaque;26/08/2015 12:35:51;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Hôte inconnu.)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur TCP, error: 0 - Hôte inconnu.)
+Thériaque;26/08/2015 14:19:39;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;26/08/2015 14:46:56;Voulez-vous valider ?;;
+Thériaque;26/08/2015 14:47:11;Voulez-vous supprimer ?;;
+Thériaque;26/08/2015 14:49:53;Voulez-vous valider ?;;
+Thériaque;26/08/2015 14:50:30;Voulez-vous valider ?;;
+Thériaque;26/08/2015 14:52:44;Voulez-vous valider ?;;
+Thériaque;26/08/2015 14:52:57;Voulez-vous valider ?;;
+Thériaque;26/08/2015 14:56:30;Voulez-vous valider ?;;
+Thériaque;26/08/2015 15:31:08;Voulez-vous valider ?;;
+Thériaque;26/08/2015 15:58:29;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;26/08/2015 15:58:53;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Interfaces réseau SQL, error: 26 - Erreur lors de la localisation du serveur/de l'instance spécifiés)
+Thériaque;26/08/2015 15:59:32;Voulez-vous valider ?;;
+SQLcn;26/08/2015 16:50:54;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;select (CDFPF_CODEF_FK_PK + '_' + CDFPF_NUMEROF_FK_PK) as code, CDFPF_NUMEROP_FK_PK, CDFPF_CODEP_FK_PK, CDFPF_NUMEROF_FK_PK, CDFPF_CODEF_FK_PK, CDFPF_NUMORD FROM theriaque.CDFPF_LIEN_CDF_PERE_FILS WHERE 1 = 2
+SQLcn;26/08/2015 16:50:57;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);; select CDFUCUM_CODE_PK as code, CDFUCUM_SYMBOLE as libelle from theriaque.CDFUCUM_UCUM 
+Thériaque;26/08/2015 17:05:33;Voulez-vous valider ?;;
+Thériaque;26/08/2015 17:05:52;Voulez-vous valider ?;;
+SQLcn;26/08/2015 17:12:41;[M167] Syntaxe incorrecte vers le mot clé 'union'.;;union select CDFUCUM_CODE_PK as code, CDFUCUM_SYMBOLE as libelle from theriaque.CDFUCUM_UCUM 
+Thériaque;26/08/2015 17:17:14;Voulez-vous valider ?;;
+Thériaque;26/08/2015 17:17:24;Voulez-vous valider ?;;
+Thériaque;27/08/2015 09:26:05;Voulez-vous valider ?;;
+Thériaque;27/08/2015 09:26:10;Voulez-vous valider ?;;
+Thériaque;27/08/2015 09:57:43;Voulez-vous valider ?;;
+Thériaque;27/08/2015 09:57:59;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:00:59;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:01:53;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:06:32;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:06:51;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:09:51;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:10:11;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:12:45;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:12:54;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:13:10;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:18:35;Voulez-vous valider ?;;
+SQLcn;27/08/2015 10:18:36;[M166] Nom de colonne non valide : 'A1'.;;DELETE FROM theriaque.CDFCDFU_CDFU where CDFCDFU_CDF_NUMERO_FK_PK='PA' and CDFCDFU_CDF_CODE_FK_PK=A1
+Thériaque;27/08/2015 10:19:20;Voulez-vous valider ?;;
+Thériaque;27/08/2015 10:21:28;Voulez-vous valider ?;;
+Thériaque;27/08/2015 12:19:16;Voulez-vous valider ?;;
+Thériaque;27/08/2015 12:21:49;Voulez-vous valider ?;;
+Thériaque;27/08/2015 15:15:50;Voulez-vous valider ?;;
+Thériaque;27/08/2015 15:18:03;Voulez-vous valider ?;;
+Thériaque;27/08/2015 15:18:17;Voulez-vous valider ?;;
+Thériaque;28/08/2015 15:27:07;Voulez-vous valider ?;;
+SQLcn;28/08/2015 15:42:37;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '25' 
+SQLcn;28/08/2015 15:42:38;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '18' 
+SQLcn;28/08/2015 17:04:18;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '25' 
+SQLcn;28/08/2015 17:04:40;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);;Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = '18' 
+Thériaque;28/08/2015 17:06:10;Voulez-vous valider ?;;
+Thériaque;28/08/2015 17:46:21;Voulez-vous valider ?;;
+SQLcn;28/08/2015 17:46:22;[M166] Violation de la contrainte UNIQUE KEY « UQ__CATVO_CA__81A7654B1A677688 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (18).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('1','18')
+Thériaque;28/08/2015 17:46:44;Voulez-vous valider ?;;
+SQLcn;28/08/2015 17:46:45;[M166] Violation de la contrainte UNIQUE KEY « UQ__CATVO_CA__81A7654B1A677688 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (18).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('11','18')
+Thériaque;28/08/2015 17:46:53;Voulez-vous valider ?;;
+SQLcn;28/08/2015 17:46:54;[M166] Violation de la contrainte UNIQUE KEY « UQ__CATVO_CA__81A7654B1A677688 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (18).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('19','18')
+Thériaque;31/08/2015 09:03:54;Voulez-vous valider ?;;
+SQLcn;31/08/2015 09:03:55;[M166] Violation de la contrainte UNIQUE KEY « UQ__CATVO_CA__81A7654B1A677688 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (18).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('1','18')
+Thériaque;31/08/2015 09:04:27;Voulez-vous valider ?;;
+Thériaque;31/08/2015 09:19:17;Voulez-vous valider ?;;
+Thériaque;31/08/2015 09:58:28;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:34:45;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:34:56;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:35:01;Voulez-vous valider ?;;
+SQLcn;31/08/2015 10:35:01;[M166] Violation de la contrainte PRIMARY KEY « PK__CATVO_CA__FC3CED6D6394A212 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (2, 18).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('2','18')
+Thériaque;31/08/2015 10:37:34;Voulez-vous valider ?;;
+SQLcn;31/08/2015 10:38:52;[M166] Violation de la contrainte PRIMARY KEY « PK__CATVO_CA__FC3CED6D6394A212 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (1, 18).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('1','18')
+Thériaque;31/08/2015 10:39:00;Voulez-vous valider ?;;
+SQLcn;31/08/2015 10:39:01;[M166] Violation de la contrainte PRIMARY KEY « PK__CATVO_CA__FC3CED6D6394A212 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (1, 18).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('1','18')
+Thériaque;31/08/2015 10:41:59;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:42:11;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:52:28;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:54:34;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:55:11;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:55:20;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:57:19;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:57:34;Voulez-vous valider ?;;
+SQLcn;31/08/2015 10:57:35;[M166] Violation de la contrainte PRIMARY KEY « PK__CATVO_CA__FC3CED6D6394A212 ». Impossible d'insérer une clé en double dans l'objet « theriaque.CATVO_CATEGORIEVOIE ». Valeur de clé dupliquée : (3, 1).  L'instruction a été arrêtée.;; INSERT INTO [theriaque].[CATVO_CATEGORIEVOIE]([CATVO_CDF_CAT_CODE_FK_PK],[CATVO_CDF_VO_CODE_FK_PK])  VALUES('3','1')
+Thériaque;31/08/2015 10:59:18;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:59:27;Voulez-vous valider ?;;
+Thériaque;31/08/2015 10:59:41;Voulez-vous valider ?;;
+Thériaque;31/08/2015 11:03:25;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+Thériaque;31/08/2015 11:20:40;Voulez-vous valider ?;;
+Thériaque;31/08/2015 11:25:10;Voulez-vous valider ?;;
+Thériaque;31/08/2015 11:25:58;Voulez-vous valider ?;;
+Thériaque;31/08/2015 11:26:13;Voulez-vous valider ?;;
+Thériaque;31/08/2015 11:27:10;Voulez-vous valider ?;;
+Thériaque;31/08/2015 11:36:19;Voulez-vous valider ?;;
+Thériaque;31/08/2015 11:37:03;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:17:01;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:17:14;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:17:55;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:19:54;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:20:01;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:20:13;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:20:21;Voulez-vous valider ?;;
+Thériaque;31/08/2015 12:20:56;Voulez-vous valider ?;;
+Thériaque;31/08/2015 15:37:54;Voulez-vous valider ?;;
+Thériaque;31/08/2015 15:38:05;Voulez-vous valider ?;;
+Thériaque;01/09/2015 10:33:03;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;01/09/2015 10:33:21;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;01/09/2015 10:33:47;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;01/09/2015 10:58:20;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;01/09/2015 10:59:06;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;01/09/2015 10:59:55;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:16:44;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:16:59;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:17:48;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:18:26;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:21:50;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:23:05;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:26:22;Voulez vous recalculez les durées Min/Max ? ;;
+SQLcn;02/09/2015 17:27:10;[M167] Syntaxe incorrecte vers le mot clé 'GROUP'.;; select FPOUT_CDF_UTPO_CODE_FK_PK from theriaque.FPOUT_FPOSO_UTILTH fpout, theriaque.FPOSP_POSO_SPE fposp  where fposp.FPOSP_FPO_CODE_FK_PK = fpout.FPOUT_FPO_CODE_FK_PK  and fposp.FPOSP_SP_CODE_FK_PK= GROUP BY fpout.FPOUT_CDF_UTPO_CODE_FK_PK  order by FPOUT_CDF_UTPO_CODE_FK_PK 
+Thériaque;02/09/2015 17:30:03;Voulez vous recalculez les durées Min/Max ? ;;
+SQLcn;02/09/2015 17:30:18;[M167] Syntaxe incorrecte vers le mot clé 'GROUP'.;; select FPOUT_CDF_UTPO_CODE_FK_PK from theriaque.FPOUT_FPOSO_UTILTH fpout, theriaque.FPOSP_POSO_SPE fposp  where fposp.FPOSP_FPO_CODE_FK_PK = fpout.FPOUT_FPO_CODE_FK_PK  and fposp.FPOSP_SP_CODE_FK_PK= GROUP BY fpout.FPOUT_CDF_UTPO_CODE_FK_PK  order by FPOUT_CDF_UTPO_CODE_FK_PK 
+Thériaque;02/09/2015 17:30:41;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:32:57;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:33:19;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:34:41;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:35:01;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:35:43;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:36:56;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:37:07;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:37:17;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:37:20;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;02/09/2015 17:37:32;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;03/09/2015 08:54:24;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;03/09/2015 08:54:32;Voulez vous recalculez les durées Min/Max ? ;;
+Thériaque;08/09/2015 10:54:55;La voie d'administration est obligatoire.;;
+Thériaque;08/09/2015 10:55:00;Voulez-vous valider ?;;
+Thériaque;08/09/2015 10:56:07;Voulez-vous valider ?;;
+Thériaque;09/09/2015 11:31:55;Voulez-vous valider ?;;
+Thériaque;09/09/2015 14:27:13;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:37:07;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:38:51;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:40:32;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:44:21;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:46:30;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:50:19;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:52:29;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 14:54:35;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:18:31;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:21:15;Voulez vous recalculez les doses Min/Max ? ;;
+SQLcn;09/09/2015 15:24:40;[M167] Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server);; Select CPH_CODE_PK as code, CPH_NOM as libelle,0 as disable ,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK  not in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER)  UNION  Select CPH_CODE_PK as code, CPH_NOM as libelle, 1 as disable,0 as chk ,0 as chkFixe From THERIAQUE.CPH_CLASSEPHARMTHER where CPH_CODE_PK in (select distinct isnull(CPH_CPH_CODE_FK,'') from THERIAQUE.CPH_CLASSEPHARMTHER) order by CPH_CODE_PK  
+Thériaque;09/09/2015 15:25:26;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:27:17;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+Thériaque;09/09/2015 15:28:00;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:29:40;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:33:22;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:33:40;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:37:05;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:38:43;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:38:49;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:40:19;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:40:35;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:40:50;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:41:11;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:41:31;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:44:04;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:53:21;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:53:31;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:53:38;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 15:53:46;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:15:24;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:17:01;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:17:19;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:17:52;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:19:30;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:20:11;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:20:44;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:21:39;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:22:02;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:27:00;Voulez vous recalculez les doses Min/Max ? ;;
+Thériaque;09/09/2015 16:30:00;Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)  Impossible de se connecter à cette base de données: [Theriaque]  Veuillez mettre à jour les paramètres de configuration de la connexion;;Fournisseur:.Net SqlClient Data ProviderServeur:>Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez que le nom de l'instance est correct et que SQL Server est configuré pour autoriser les connexions distantes. (provider: Fournisseur de canaux nommés, error: 40 - Impossible d'ouvrir une connexion à SQL Server)
+Thériaque;10/09/2015 12:58:25;Voulez-vous valider ?;;
+Thériaque;10/09/2015 15:49:42;Voulez-vous valider ?;;
+Thériaque;10/09/2015 15:49:49;Voulez-vous valider ?;;
+Thériaque;10/09/2015 15:50:24;Il faut au moin rattacher une spécialité fils;;
