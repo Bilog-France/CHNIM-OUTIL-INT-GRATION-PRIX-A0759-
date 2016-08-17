@@ -76,6 +76,9 @@ Partial Class Frm_CDF
         Me.lkupUnite_UCUM = New DevExpress.XtraEditors.LookUpEdit
         Me.CDFCDFUCDFUBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CdfcdfU_CDFUTableAdapter1 = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.CDFCDFU_CDFUTableAdapter
+        Me.lblDureeMaxPresc = New System.Windows.Forms.Label
+        Me.txtDuree = New DevExpress.XtraEditors.TextEdit
+        Me.panDureeMaxPresc = New System.Windows.Forms.Panel
         Me.Pan.SuspendLayout()
         Me.PanMain.SuspendLayout()
         Me.PanTop.SuspendLayout()
@@ -114,6 +117,8 @@ Partial Class Frm_CDF
         Me.PanUniteUCUM.SuspendLayout()
         CType(Me.lkupUnite_UCUM.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CDFCDFUCDFUBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtDuree.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panDureeMaxPresc.SuspendLayout()
         Me.SuspendLayout()
         '
         'Pan
@@ -122,6 +127,7 @@ Partial Class Frm_CDF
         '
         'PanMain
         '
+        Me.PanMain.Controls.Add(Me.panDureeMaxPresc)
         Me.PanMain.Controls.Add(Me.PanUniteUCUM)
         Me.PanMain.Controls.Add(Me.Panel2)
         Me.PanMain.Controls.Add(Me.PanUnite)
@@ -668,7 +674,7 @@ Partial Class Frm_CDF
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanUniteUCUM.Controls.Add(Me.Label8)
         Me.PanUniteUCUM.Controls.Add(Me.lkupUnite_UCUM)
-        Me.PanUniteUCUM.Location = New System.Drawing.Point(12, 126)
+        Me.PanUniteUCUM.Location = New System.Drawing.Point(28, 125)
         Me.PanUniteUCUM.Name = "PanUniteUCUM"
         Me.PanUniteUCUM.Size = New System.Drawing.Size(222, 26)
         Me.PanUniteUCUM.TabIndex = 28
@@ -703,6 +709,38 @@ Partial Class Frm_CDF
         'CdfcdfU_CDFUTableAdapter1
         '
         Me.CdfcdfU_CDFUTableAdapter1.ClearBeforeFill = True
+        '
+        'lblDureeMaxPresc
+        '
+        Me.lblDureeMaxPresc.AutoSize = True
+        Me.lblDureeMaxPresc.Location = New System.Drawing.Point(4, 8)
+        Me.lblDureeMaxPresc.Name = "lblDureeMaxPresc"
+        Me.lblDureeMaxPresc.Size = New System.Drawing.Size(146, 13)
+        Me.lblDureeMaxPresc.TabIndex = 18
+        Me.lblDureeMaxPresc.Text = "Durée max prescription (jours)"
+        Me.lblDureeMaxPresc.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtDuree
+        '
+        Me.txtDuree.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature21, "CDF_CODIF.CDF_VAL_NUM", True))
+        Me.txtDuree.Location = New System.Drawing.Point(164, 4)
+        Me.txtDuree.Name = "txtDuree"
+        Me.txtDuree.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtDuree.Size = New System.Drawing.Size(105, 20)
+        Me.txtDuree.TabIndex = 22
+        Me.txtDuree.Tag = "[EDIT][ADD]"
+        '
+        'panDureeMaxPresc
+        '
+        Me.panDureeMaxPresc.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.panDureeMaxPresc.Controls.Add(Me.txtDuree)
+        Me.panDureeMaxPresc.Controls.Add(Me.lblDureeMaxPresc)
+        Me.panDureeMaxPresc.Location = New System.Drawing.Point(29, 123)
+        Me.panDureeMaxPresc.Name = "panDureeMaxPresc"
+        Me.panDureeMaxPresc.Size = New System.Drawing.Size(345, 26)
+        Me.panDureeMaxPresc.TabIndex = 28
+        Me.panDureeMaxPresc.Visible = False
         '
         'Frm_CDF
         '
@@ -754,6 +792,9 @@ Partial Class Frm_CDF
         Me.PanUniteUCUM.PerformLayout()
         CType(Me.lkupUnite_UCUM.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CDFCDFUCDFUBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtDuree.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panDureeMaxPresc.ResumeLayout(False)
+        Me.panDureeMaxPresc.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -813,5 +854,8 @@ Partial Class Frm_CDF
     Friend WithEvents lkupUnite_UCUM As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents CDFCDFUCDFUBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents CdfcdfU_CDFUTableAdapter1 As Theriaque.dsTheriaque_Nomenclature2TableAdapters.CDFCDFU_CDFUTableAdapter
+    Friend WithEvents txtDuree As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents lblDureeMaxPresc As System.Windows.Forms.Label
+    Friend WithEvents panDureeMaxPresc As System.Windows.Forms.Panel
 
 End Class

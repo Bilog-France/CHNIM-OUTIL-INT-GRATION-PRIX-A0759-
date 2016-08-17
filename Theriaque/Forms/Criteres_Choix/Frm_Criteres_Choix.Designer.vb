@@ -645,7 +645,7 @@ Partial Class Frm_Criteres_Choix
         Me.xtraDeclinaison.Controls.Add(Me.Panel16)
         Me.xtraDeclinaison.Controls.Add(Me.Panel4)
         Me.xtraDeclinaison.Name = "xtraDeclinaison"
-        Me.xtraDeclinaison.Size = New System.Drawing.Size(503, 460)
+        Me.xtraDeclinaison.Size = New System.Drawing.Size(683, 468)
         Me.xtraDeclinaison.Text = "Déclinaison"
         '
         'Panel19
@@ -655,14 +655,14 @@ Partial Class Frm_Criteres_Choix
         Me.Panel19.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel19.Location = New System.Drawing.Point(0, 292)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(503, 153)
+        Me.Panel19.Size = New System.Drawing.Size(683, 153)
         Me.Panel19.TabIndex = 2
         '
         'Panel20
         '
         Me.Panel20.Controls.Add(Me.GC_D6)
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(162, 0)
+        Me.Panel20.Location = New System.Drawing.Point(342, 0)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(341, 153)
         Me.Panel20.TabIndex = 1
@@ -701,7 +701,6 @@ Partial Class Frm_Criteres_Choix
         '
         'colCHPR_CH_CODE_SQ_PK_FK
         '
-        Me.colCHPR_CH_CODE_SQ_PK_FK.Caption = "IT1PR_FIT_CODE_FK_PK"
         Me.colCHPR_CH_CODE_SQ_PK_FK.FieldName = "CHPR_CH_CODE_SQ_PK_FK"
         Me.colCHPR_CH_CODE_SQ_PK_FK.Name = "colCHPR_CH_CODE_SQ_PK_FK"
         '
@@ -773,7 +772,6 @@ Partial Class Frm_Criteres_Choix
         '
         'colCHSAU_CH_CODE_SQ_PK_FK
         '
-        Me.colCHSAU_CH_CODE_SQ_PK_FK.Caption = "IT1SAU_FIT_CODE_FK_PK"
         Me.colCHSAU_CH_CODE_SQ_PK_FK.FieldName = "CHSAU_CH_CODE_SQ_PK_FK"
         Me.colCHSAU_CH_CODE_SQ_PK_FK.Name = "colCHSAU_CH_CODE_SQ_PK_FK"
         '
@@ -809,14 +807,14 @@ Partial Class Frm_Criteres_Choix
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel16.Location = New System.Drawing.Point(0, 143)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(503, 149)
+        Me.Panel16.Size = New System.Drawing.Size(683, 149)
         Me.Panel16.TabIndex = 1
         '
         'Panel17
         '
         Me.Panel17.Controls.Add(Me.GC_D4)
         Me.Panel17.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel17.Location = New System.Drawing.Point(162, 0)
+        Me.Panel17.Location = New System.Drawing.Point(342, 0)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(341, 149)
         Me.Panel17.TabIndex = 1
@@ -858,15 +856,15 @@ Partial Class Frm_Criteres_Choix
         Me.colCHSAC_CH_CODE_SQ_PK_FK.Caption = "Code"
         Me.colCHSAC_CH_CODE_SQ_PK_FK.FieldName = "CHSAC_CH_CODE_SQ_PK_FK"
         Me.colCHSAC_CH_CODE_SQ_PK_FK.Name = "colCHSAC_CH_CODE_SQ_PK_FK"
-        Me.colCHSAC_CH_CODE_SQ_PK_FK.Visible = True
-        Me.colCHSAC_CH_CODE_SQ_PK_FK.VisibleIndex = 0
         Me.colCHSAC_CH_CODE_SQ_PK_FK.Width = 50
         '
         'colCHSAC_SAC_CODE_SQ_PK_FK
         '
-        Me.colCHSAC_SAC_CODE_SQ_PK_FK.Caption = "IT1SAC_FIT_CODE_FK_PK"
+        Me.colCHSAC_SAC_CODE_SQ_PK_FK.Caption = "code"
         Me.colCHSAC_SAC_CODE_SQ_PK_FK.FieldName = "CHSAC_SAC_CODE_SQ_PK_FK"
         Me.colCHSAC_SAC_CODE_SQ_PK_FK.Name = "colCHSAC_SAC_CODE_SQ_PK_FK"
+        Me.colCHSAC_SAC_CODE_SQ_PK_FK.Visible = True
+        Me.colCHSAC_SAC_CODE_SQ_PK_FK.VisibleIndex = 0
         '
         'colCHSAC_SAC_CODE_SQ_PK_FK2
         '
@@ -927,18 +925,17 @@ Partial Class Frm_Criteres_Choix
         '
         'colCHCATC_CH_CODE_SQ_PK_FK
         '
-        Me.colCHCATC_CH_CODE_SQ_PK_FK.Caption = "Code"
         Me.colCHCATC_CH_CODE_SQ_PK_FK.FieldName = "CHCATC_CH_CODE_SQ_PK_FK"
         Me.colCHCATC_CH_CODE_SQ_PK_FK.Name = "colCHCATC_CH_CODE_SQ_PK_FK"
-        Me.colCHCATC_CH_CODE_SQ_PK_FK.Visible = True
-        Me.colCHCATC_CH_CODE_SQ_PK_FK.VisibleIndex = 0
         Me.colCHCATC_CH_CODE_SQ_PK_FK.Width = 50
         '
         'colCHCATC_CATC_CODE_PK_FK
         '
-        Me.colCHCATC_CATC_CODE_PK_FK.Caption = "GridColumn1"
+        Me.colCHCATC_CATC_CODE_PK_FK.Caption = "Code"
         Me.colCHCATC_CATC_CODE_PK_FK.FieldName = "CHCATC_CATC_CODE_PK_FK"
         Me.colCHCATC_CATC_CODE_PK_FK.Name = "colCHCATC_CATC_CODE_PK_FK"
+        Me.colCHCATC_CATC_CODE_PK_FK.Visible = True
+        Me.colCHCATC_CATC_CODE_PK_FK.VisibleIndex = 0
         '
         'colCHCATC_CATC_CODE_PK_FK2
         '
@@ -969,14 +966,14 @@ Partial Class Frm_Criteres_Choix
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(503, 143)
+        Me.Panel4.Size = New System.Drawing.Size(683, 143)
         Me.Panel4.TabIndex = 0
         '
         'Panel15
         '
         Me.Panel15.Controls.Add(Me.GC_D2)
         Me.Panel15.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel15.Location = New System.Drawing.Point(162, 0)
+        Me.Panel15.Location = New System.Drawing.Point(342, 0)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(341, 143)
         Me.Panel15.TabIndex = 1

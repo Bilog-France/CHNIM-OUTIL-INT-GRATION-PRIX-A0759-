@@ -22,6 +22,22 @@ Public Module ModSQLData
         Return strSSQL
     End Function
 
+    Public Function strSSQL_CDF_CODIFU(ByVal strNumero As String, Optional ByVal strSupllSQL As String = "") As String
+        Dim strSSQL As String = ""
+        strSSQL = "Select CDF_CODE_PK + '_' + CDF_NUMERO_PK  as code, CDF_NOM as libelle, CDF_NUMERO_PK as num From THERIAQUE.CDF_CODIF "
+        strSSQL &= " where CDF_NUMERO_PK = " & cn.SQLText(strNumero) & " "
+        strSSQL &= strSupllSQL
+        Return strSSQL
+    End Function
+
+    Public Function strSSQL_CDF_CODIF_UNION(Optional ByVal strSupllSQL As String = "") As String
+        Dim strSSQL As String = ""
+        strSSQL = strSSQL_CDF_CODIFU("19") & " UNION " & strSSQL_CDF_CODIFU("04") & " UNION " & strSSQL_CDF_CODIFU("06") & " UNION "
+        strSSQL &= strSSQL_CDF_CODIFU("21") & " UNION " & strSSQL_CDF_CODIFU("20")
+
+        Return strSSQL
+    End Function
+
     Public Function strSSQL_CDF_CODIF2(ByVal strNumero As String, Optional ByVal strSupllSQL As String = "") As String
         Dim strSSQL As String = ""
         strSSQL = "Select CDF_CODE_PK as code, CDF_NOM as libelle From THERIAQUE.CDF_CODIF "
@@ -85,6 +101,8 @@ Public Module ModSQLData
     Public Const strSSQL_TXTI_TEXTINTRO_CMI As String = "SELECT FETTXTI_FET_CODE_FK_PK as code,  FETTXTI_TXT_INTRO as libelle FROM THERIAQUE.FETTXTI_TEXTINTRO_CMI"
 
     Public Const strSSQL_GSP_GENERIQUE_SPECIALITE As String = "Select GSP_CODE_SQ_PK as code, GSP_NOM as libelle From THERIAQUE.GSP_GENERIQUE_SPECIALITE"
+    Public Const strSSQL_MVPR_MEDICAMENT_VIRTUEL_PERE As String = " Select MVPR_CODE_SQ_PK as code, MVPR_LIBELLE as libelle From THERIAQUE.MVPR_MEDICAMENT_VIRTUEL_PERE "
+
     Public Const strSSQL_PR_PRODUIT As String = "Select PR_CODE_SQ_PK as code, PR_NOM as libelle From THERIAQUE.PR_PRODUIT"
     Public Const strSSQL_SAC_SUBACTIVE As String = "Select SAC_CODE_SQ_PK as code, SAC_NOM as libelle,0 as chk ,0 as chkFixe From THERIAQUE.SAC_SUBACTIVE"
     Public Const strSSQL_ADSAC_AUTRE_DENOMINATION_SUBAC As String = "Select ADSAC_SAC_CODE_FK  as code, ADSAC_NOM_PK as libelle,0 as chk ,0 as chkFixe  from THERIAQUE.ADSAC_AUTRE_DENOMINATION_SUBAC"
@@ -182,6 +200,21 @@ Public Module ModSQLData
 
     End Function
 
+    Public Function FPOMM_FICHEPOSOMINMAX_NIVEAU() As String
+
+        Dim strSSQL1 As String = ""
+
+        strSSQL1 &= " Select FPOMM_CODE_SQ_PK as code, SP_NOM as libelle "
+        strSSQL1 &= " from THERIAQUE.FPOMM_POSOLOGIE_MIN_MAX Left outer join THERIAQUE.FPOMMSP_POSOMINMAX_SPE  "
+        strSSQL1 &= " On FPOMMSP_FPOMM_CODE_FK_PK = FPOMM_CODE_SQ_PK  Left outer join  "
+        strSSQL1 &= " THERIAQUE.SP_SPECIALITE  on  FPOMMSP_SP_CODE_FK_PK = SP_CODE_SQ_PK  "
+
+        Return strSSQL1
+
+    End Function
+
+
+
 #Region " Requette STOCKE "
 
     Public Function strSSQL_SAC_SP(ByVal SP_PK As String) As String
@@ -243,6 +276,8 @@ Public Module ModSQLData
     Public Const RUBCDF_RUBRIQUE_CODIFICATION As String = "RUBCDF_RUBRIQUE_CODIFICATION"
 
     Public Const GSP_GENERIQUE_SPECIALITE As String = "GSP_GENERIQUE_SPECIALITE"
+    Public Const MVPR_MEDICAMENT_VIRTUEL_PERE As String = "MVPR_MEDICAMENT_VIRTUEL_PERE"
+
     Public Const INTER_INTEROPERABLE As String = "INTER_INTEROPERABLE"
     Public Const PR_PRODUIT As String = "PR_PRODUIT"
     Public Const SYSP_SYNONYME_SPECIALITE As String = "SYSP_SYNONYME_SPECIALITE"
@@ -804,7 +839,7 @@ Public Module ModSQLData
                 End If
             Case "03"
                 'Condition de conservation
-                sSQL = " SELECT PERCS_NUM_CODE_PK FROM THERIAQUE.PERCS_PERIODE_COND_CS WHERE PERCS_CDF_CSV_CODE_FK_PK = " & cn.SQLText(sCode)
+                sSQL = " SELECT PERCS_NUM_CODE_PK FROM THERIAQUE.PERCS_PERIODE_COND_CSV WHERE PERCS_CDF_CSV_CODE_FK_PK = " & cn.SQLText(sCode)
                 dt = cn.MySelect(sSQL)
                 If dt.Rows.Count > 0 Then
                     Return True

@@ -7,6 +7,7 @@ Public Class Frm_Formulaire
     Protected Friend MasterTable As String
     Protected OnLoading As Boolean = False
     Protected Declinaison_Global As Boolean = False
+    Protected IsValider As Boolean = True
 
 #Region " Initialisation des composants "
 
@@ -105,7 +106,12 @@ Public Class Frm_Formulaire
     Private Sub LookUpEdit_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
         If CInt(e.KeyCode) = eKeyPressed.KeyDeletelkup Then
             If sender.ToString = "DevExpress.XtraEditors.LookUpEdit" Then
-                sender.editvalue = ""
+                Try
+                    sender.editvalue = ""
+                Catch ex As Exception
+
+                End Try
+
             End If
         End If
     End Sub
@@ -558,6 +564,8 @@ Public Class Frm_Formulaire
     Public Overridable Sub Dupliquer() Implements ModInterface.InterfaceFormulaire.Dupliquer
         DateEdit2.EditValue = Now.Date
         DateEdit2.DateTime = Now.Date
+
+
     End Sub
     Public Overridable Function ChercherMultiCriteres() As Boolean Implements ModInterface.InterfaceFormulaire.ChercherMultiCriteres
 
@@ -596,9 +604,11 @@ Public Class Frm_Formulaire
             If ValideControl() Then
                 If Process_Message(strValider, MsgBoxStyle.YesNo, MsgBoxStyle.Question).BtResult = MsgBoxResult.Yes Then
                     Valider()
-                    ModeFiche = eMode.Consultation
-                    UpdateStateBouton()
-                    Initcomponent()
+                    If (IsValider) Then
+                        ModeFiche = eMode.Consultation
+                        UpdateStateBouton()
+                        Initcomponent()
+                    End If
                 End If
             End If
         Catch ex As Exception

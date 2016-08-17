@@ -190,28 +190,28 @@ Public Class Frm_Dictionnaire
                             strSSQLCode = " or code Like " & cn.SQLTextLike(aMots(inti))
                         End If
                 End Select
-
-                Select Case LCase(dt.Columns(1).DataType.Name)
-                    Case "int32", "decimal"
-                        'If IsNumeric(aMots(inti)) Then
-                        If IsInt(aMots(inti)) Then
-                            strFiltre &= "  (libelle = " & aMots(inti) & strSSQLCode & ")"
-                        Else
-                            If (Decimal.TryParse(aMots(inti), dec)) Then
-                                strFiltre &= " (libelle =" & dec.ToString().Replace(",", ".") & strSSQLCode & ")"
+                If (dt.Columns.Count > 1) Then
+                    Select Case LCase(dt.Columns(1).DataType.Name)
+                        Case "int32", "decimal"
+                            'If IsNumeric(aMots(inti)) Then
+                            If IsInt(aMots(inti)) Then
+                                strFiltre &= "  (libelle = " & aMots(inti) & strSSQLCode & ")"
+                            Else
+                                If (Decimal.TryParse(aMots(inti), dec)) Then
+                                    strFiltre &= " (libelle =" & dec.ToString().Replace(",", ".") & strSSQLCode & ")"
+                                End If
                             End If
-                        End If
 
-                    Case Else
+                        Case Else
 
-                        If Not _SearchOnlyFirst Then
-                            strFiltre &= " (libelle like  " & cn.SQLTextLike2(aMots(inti)) & strSSQLCode & ")"
-                        Else
-                            strFiltre &= " (libelle like  " & cn.SQLTextLike(aMots(inti)) & strSSQLCode & ")"
-                        End If
+                            If Not _SearchOnlyFirst Then
+                                strFiltre &= " (libelle like  " & cn.SQLTextLike2(aMots(inti)) & strSSQLCode & ")"
+                            Else
+                                strFiltre &= " (libelle like  " & cn.SQLTextLike(aMots(inti)) & strSSQLCode & ")"
+                            End If
 
-                End Select
-
+                    End Select
+                End If
 
             End If
             For inti = 1 To aMots.Length - 1

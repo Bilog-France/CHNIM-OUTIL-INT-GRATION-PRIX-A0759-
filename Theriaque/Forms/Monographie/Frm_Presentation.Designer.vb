@@ -29,21 +29,6 @@ Partial Class Frm_Presentation
         Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage
         Me.Panel6 = New System.Windows.Forms.Panel
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel
-        Me.GC5 = New DevExpress.XtraGrid.GridControl
-        Me.GV5 = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.colPRECAR_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.colPRECAR_COCONT_NUM_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.rpCrtCmpl = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-        Me.colPRECAR_NUMORD = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.GC4 = New DevExpress.XtraGrid.GridControl
-        Me.GV4 = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.colPREMAT_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.colPREMAT_COCONT_NUM_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.rpMat = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-        Me.colPREMAT_NUMORD = New DevExpress.XtraGrid.Columns.GridColumn
         Me.Panel8 = New System.Windows.Forms.Panel
         Me.GC3 = New DevExpress.XtraGrid.GridControl
         Me.GV3 = New DevExpress.XtraGrid.Views.Grid.GridView
@@ -70,12 +55,14 @@ Partial Class Frm_Presentation
         Me.colPREDISP_UNITEDISP = New DevExpress.XtraGrid.Columns.GridColumn
         Me.colPREDISP_CDF_UD_CODE_FK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.rpUnite = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.colPREDISP_DOSEFRAC = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GC1 = New DevExpress.XtraGrid.GridControl
         Me.GV1 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.colPREUCD_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.colPREUCD_CDF_COMUCD_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.rpCommentaire = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
         Me.colPREUCD_NUMORD = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.Panel12 = New System.Windows.Forms.Panel
         Me.GC2 = New DevExpress.XtraGrid.GridControl
         Me.GV2 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.colCOCONT_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
@@ -83,6 +70,25 @@ Partial Class Frm_Presentation
         Me.colCOCONT_CDF_GAL_CODE_FK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.lkupCont = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
         Me.colCOCONT_NUMORD = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.Label29 = New System.Windows.Forms.Label
+        Me.txtVolume = New DevExpress.XtraEditors.TextEdit
+        Me.lkupUnite = New DevExpress.XtraEditors.LookUpEdit
+        Me.Label30 = New System.Windows.Forms.Label
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel
+        Me.GC5 = New DevExpress.XtraGrid.GridControl
+        Me.GV5 = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colPRECAR_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPRECAR_COCONT_NUM_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.rpCrtCmpl = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.colPRECAR_NUMORD = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.GC4 = New DevExpress.XtraGrid.GridControl
+        Me.GV4 = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colPREMAT_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPREMAT_COCONT_NUM_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.rpMat = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.colPREMAT_NUMORD = New DevExpress.XtraGrid.Columns.GridColumn
         Me.Panel4 = New System.Windows.Forms.Panel
         Me.TextEdit4 = New DevExpress.XtraEditors.TextEdit
         Me.lkupUCD = New DevExpress.XtraEditors.LookUpEdit
@@ -211,6 +217,27 @@ Partial Class Frm_Presentation
         Me.Label22 = New System.Windows.Forms.Label
         Me.XtraTabPage5 = New DevExpress.XtraTab.XtraTabPage
         Me.pan5 = New System.Windows.Forms.Panel
+        Me.GCDisp = New DevExpress.XtraGrid.GridControl
+        Me.GVDisp = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colPREDISPMAX_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.lkupDispMax = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.colPREDISPMAX_MAXUCD = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPREDISPMAX_MAXCIP = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPREDISPMAX_PRE_CIP13 = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.btADDSMR = New DevExpress.XtraEditors.SimpleButton
+        Me.GC19 = New DevExpress.XtraGrid.GridControl
+        Me.GV19 = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colPRESMR_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.rpSMR = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.colPRESMR_DATE_SMR_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPRESMR_ATR_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.GC18 = New DevExpress.XtraGrid.GridControl
+        Me.GV18 = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colPREDITX_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colPREDITX_TEXTE = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.RepositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
         Me.lkup_Liste = New DevExpress.XtraEditors.LookUpEdit
         Me.Pan_Lieu_Commentaire = New System.Windows.Forms.Panel
         Me.GC17 = New DevExpress.XtraGrid.GridControl
@@ -225,14 +252,6 @@ Partial Class Frm_Presentation
         Me.colPREDILI_CDF_LIEU_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.rpPredili = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
         Me.colPREDILI_NUMORD = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.btADDSMR = New DevExpress.XtraEditors.SimpleButton
-        Me.GC19 = New DevExpress.XtraGrid.GridControl
-        Me.GV19 = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.colPRESMR_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.rpSMR = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-        Me.colPRESMR_DATE_SMR_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.colPRESMR_ATR_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.lkupEPH2 = New DevExpress.XtraEditors.LookUpEdit
         Me.lkupEPH = New DevExpress.XtraEditors.LookUpEdit
         Me.Label27 = New System.Windows.Forms.Label
@@ -240,11 +259,6 @@ Partial Class Frm_Presentation
         Me.lkupATC = New DevExpress.XtraEditors.LookUpEdit
         Me.Label28 = New System.Windows.Forms.Label
         Me.Label26 = New System.Windows.Forms.Label
-        Me.GC18 = New DevExpress.XtraGrid.GridControl
-        Me.GV18 = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.colPREDITX_PRE_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.colPREDITX_TEXTE = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.RepositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
         Me.Label25 = New System.Windows.Forms.Label
         Me.TextEdit1 = New DevExpress.XtraEditors.TextEdit
         Me.Label24 = New System.Windows.Forms.Label
@@ -316,6 +330,9 @@ Partial Class Frm_Presentation
         Me.colId = New DevExpress.XtraGrid.Columns.GridColumn
         Me.beChemin = New DevExpress.XtraEditors.ButtonEdit
         Me.Precpss_TA = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.PRECPSSTableAdapter
+        Me.PrevolsoL_VOLUME_SOLUTIONTableAdapter1 = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREVOLSOL_VOLUME_SOLUTIONTableAdapter
+        Me.PrevolsoL = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREVOLSOL_VOLUME_SOLUTIONTableAdapter
+        Me.PREDISPMAX = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREDISPMAX_PRE_DISP_MAXIMALETableAdapter
         Me.Pan.SuspendLayout()
         Me.PanMain.SuspendLayout()
         Me.PanTop.SuspendLayout()
@@ -333,13 +350,6 @@ Partial Class Frm_Presentation
         Me.XtraTabPage1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.TableLayoutPanel3.SuspendLayout()
-        CType(Me.GC5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GV5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.rpCrtCmpl, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GC4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GV4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.rpMat, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         CType(Me.GC3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GV3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -355,9 +365,19 @@ Partial Class Frm_Presentation
         CType(Me.GC1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GV1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rpCommentaire, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
         CType(Me.GC2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GV2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupCont, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtVolume.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lkupUnite.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel3.SuspendLayout()
+        CType(Me.GC5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rpCrtCmpl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GC4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rpMat, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupUCD.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -426,6 +446,15 @@ Partial Class Frm_Presentation
         CType(Me.rpMemo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage5.SuspendLayout()
         Me.pan5.SuspendLayout()
+        CType(Me.GCDisp, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GVDisp, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lkupDispMax, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GC19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rpSMR, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GC18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkup_Liste.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Pan_Lieu_Commentaire.SuspendLayout()
         CType(Me.GC17, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -434,16 +463,10 @@ Partial Class Frm_Presentation
         CType(Me.GC16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GV16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rpPredili, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GC19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GV19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.rpSMR, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupEPH2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupEPH.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupATC2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupATC.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GC18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GV18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage6.SuspendLayout()
         CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -469,21 +492,21 @@ Partial Class Frm_Presentation
         '
         'Pan
         '
-        Me.Pan.Size = New System.Drawing.Size(914, 624)
+        Me.Pan.Size = New System.Drawing.Size(919, 624)
         '
         'PanMain
         '
         Me.PanMain.Controls.Add(Me.PanMain3)
         Me.PanMain.Location = New System.Drawing.Point(0, 64)
-        Me.PanMain.Size = New System.Drawing.Size(796, 560)
+        Me.PanMain.Size = New System.Drawing.Size(799, 560)
         '
         'PanTop
         '
-        Me.PanTop.Size = New System.Drawing.Size(914, 64)
+        Me.PanTop.Size = New System.Drawing.Size(919, 64)
         '
         'Label1
         '
-        Me.Label1.Size = New System.Drawing.Size(914, 28)
+        Me.Label1.Size = New System.Drawing.Size(919, 28)
         Me.Label1.Text = "Présentation"
         '
         'LabelControl2
@@ -500,8 +523,8 @@ Partial Class Frm_Presentation
         '
         'Panel1
         '
-        Me.Panel1.Location = New System.Drawing.Point(796, 64)
-        Me.Panel1.Size = New System.Drawing.Size(118, 560)
+        Me.Panel1.Location = New System.Drawing.Point(799, 64)
+        Me.Panel1.Size = New System.Drawing.Size(120, 560)
         '
         'DateEdit1
         '
@@ -514,7 +537,7 @@ Partial Class Frm_Presentation
         'GroupBox
         '
         Me.GroupBox.Location = New System.Drawing.Point(0, 56)
-        Me.GroupBox.Size = New System.Drawing.Size(914, 8)
+        Me.GroupBox.Size = New System.Drawing.Size(919, 8)
         '
         'DateEdit2
         '
@@ -545,7 +568,7 @@ Partial Class Frm_Presentation
         Me.PanMain3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanMain3.Location = New System.Drawing.Point(0, 0)
         Me.PanMain3.Name = "PanMain3"
-        Me.PanMain3.Size = New System.Drawing.Size(796, 560)
+        Me.PanMain3.Size = New System.Drawing.Size(799, 560)
         Me.PanMain3.TabIndex = 0
         '
         'Panel5
@@ -599,10 +622,10 @@ Partial Class Frm_Presentation
         Me.XtraTabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.XtraTabControl1.Location = New System.Drawing.Point(7, 54)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(7, 60)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(786, 506)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(789, 497)
         Me.XtraTabControl1.TabIndex = 4
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2, Me.XtraTabPage3, Me.XtraTabPage4, Me.XtraTabPage5, Me.XtraTabPage6})
         Me.XtraTabControl1.Text = "Document"
@@ -611,7 +634,7 @@ Partial Class Frm_Presentation
         '
         Me.XtraTabPage1.Controls.Add(Me.Panel6)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(777, 475)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(780, 466)
         Me.XtraTabPage1.Tag = "[ADD][EDIT]"
         Me.XtraTabPage1.Text = "Conditionnement"
         '
@@ -619,218 +642,43 @@ Partial Class Frm_Presentation
         '
         Me.Panel6.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel6.Controls.Add(Me.Panel4)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Location = New System.Drawing.Point(9, 5)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(777, 475)
+        Me.Panel6.Size = New System.Drawing.Size(777, 458)
         Me.Panel6.TabIndex = 11
         '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Panel8, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.GC2, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Panel12, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 93)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 86)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.58064!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.68817!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.38568!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.92562!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(777, 382)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(777, 372)
         Me.TableLayoutPanel1.TabIndex = 11
-        '
-        'TableLayoutPanel3
-        '
-        Me.TableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TableLayoutPanel3.ColumnCount = 2
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.GC5, 1, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.GC4, 0, 0)
-        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 288)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.Padding = New System.Windows.Forms.Padding(2)
-        Me.TableLayoutPanel3.RowCount = 1
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(771, 91)
-        Me.TableLayoutPanel3.TabIndex = 12
-        '
-        'GC5
-        '
-        Me.GC5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GC5.DataMember = "COCONT_COMPO_CONTENANT.FK2_PRECAR_PRESENT_CARACTCOMP"
-        Me.GC5.EmbeddedNavigator.Buttons.Edit.Visible = False
-        Me.GC5.EmbeddedNavigator.Buttons.First.Enabled = False
-        Me.GC5.EmbeddedNavigator.Buttons.First.Visible = False
-        Me.GC5.EmbeddedNavigator.Buttons.Last.Enabled = False
-        Me.GC5.EmbeddedNavigator.Buttons.Last.Visible = False
-        Me.GC5.EmbeddedNavigator.Buttons.Next.Enabled = False
-        Me.GC5.EmbeddedNavigator.Buttons.Next.Visible = False
-        Me.GC5.EmbeddedNavigator.Buttons.NextPage.Enabled = False
-        Me.GC5.EmbeddedNavigator.Buttons.NextPage.Visible = False
-        Me.GC5.EmbeddedNavigator.Buttons.Prev.Enabled = False
-        Me.GC5.EmbeddedNavigator.Buttons.Prev.Visible = False
-        Me.GC5.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
-        Me.GC5.EmbeddedNavigator.Buttons.PrevPage.Visible = False
-        Me.GC5.EmbeddedNavigator.Name = ""
-        Me.GC5.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
-        Me.GC5.Location = New System.Drawing.Point(388, 5)
-        Me.GC5.MainView = Me.GV5
-        Me.GC5.Name = "GC5"
-        Me.GC5.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpCrtCmpl})
-        Me.GC5.Size = New System.Drawing.Size(378, 81)
-        Me.GC5.TabIndex = 10
-        Me.GC5.UseEmbeddedNavigator = True
-        Me.GC5.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV5})
-        '
-        'GV5
-        '
-        Me.GV5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPRECAR_PRE_CODE_FK_PK, Me.colPRECAR_COCONT_NUM_FK_PK, Me.colPRECAR_CDF_CODE_CACDT_FK_PK, Me.colPRECAR_NUMORD})
-        Me.GV5.GridControl = Me.GC5
-        Me.GV5.GroupPanelText = " "
-        Me.GV5.Name = "GV5"
-        Me.GV5.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
-        Me.GV5.OptionsView.ShowGroupPanel = False
-        Me.GV5.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colPRECAR_NUMORD, DevExpress.Data.ColumnSortOrder.Ascending)})
-        '
-        'colPRECAR_PRE_CODE_FK_PK
-        '
-        Me.colPRECAR_PRE_CODE_FK_PK.Caption = "PRECAR_PRE_CODE_FK_PK"
-        Me.colPRECAR_PRE_CODE_FK_PK.FieldName = "PRECAR_PRE_CODE_FK_PK"
-        Me.colPRECAR_PRE_CODE_FK_PK.Name = "colPRECAR_PRE_CODE_FK_PK"
-        '
-        'colPRECAR_COCONT_NUM_FK_PK
-        '
-        Me.colPRECAR_COCONT_NUM_FK_PK.Caption = "PRECAR_COCONT_NUM_FK_PK"
-        Me.colPRECAR_COCONT_NUM_FK_PK.FieldName = "PRECAR_COCONT_NUM_FK_PK"
-        Me.colPRECAR_COCONT_NUM_FK_PK.Name = "colPRECAR_COCONT_NUM_FK_PK"
-        '
-        'colPRECAR_CDF_CODE_CACDT_FK_PK
-        '
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Caption = "Caract complément"
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.ColumnEdit = Me.rpCrtCmpl
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.FieldName = "PRECAR_CDF_CODE_CACDT_FK_PK"
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Name = "colPRECAR_CDF_CODE_CACDT_FK_PK"
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Visible = True
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.VisibleIndex = 0
-        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Width = 262
-        '
-        'rpCrtCmpl
-        '
-        Me.rpCrtCmpl.AutoHeight = False
-        Me.rpCrtCmpl.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.rpCrtCmpl.Name = "rpCrtCmpl"
-        Me.rpCrtCmpl.NullText = ""
-        '
-        'colPRECAR_NUMORD
-        '
-        Me.colPRECAR_NUMORD.Caption = "N°"
-        Me.colPRECAR_NUMORD.FieldName = "PRECAR_NUMORD"
-        Me.colPRECAR_NUMORD.Name = "colPRECAR_NUMORD"
-        Me.colPRECAR_NUMORD.Visible = True
-        Me.colPRECAR_NUMORD.VisibleIndex = 1
-        Me.colPRECAR_NUMORD.Width = 57
-        '
-        'GC4
-        '
-        Me.GC4.DataMember = "COCONT_COMPO_CONTENANT.FK2_PREMAT_PRE_MATERIAU"
-        Me.GC4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GC4.EmbeddedNavigator.Buttons.Edit.Visible = False
-        Me.GC4.EmbeddedNavigator.Buttons.First.Enabled = False
-        Me.GC4.EmbeddedNavigator.Buttons.First.Visible = False
-        Me.GC4.EmbeddedNavigator.Buttons.Last.Enabled = False
-        Me.GC4.EmbeddedNavigator.Buttons.Last.Visible = False
-        Me.GC4.EmbeddedNavigator.Buttons.Next.Enabled = False
-        Me.GC4.EmbeddedNavigator.Buttons.Next.Visible = False
-        Me.GC4.EmbeddedNavigator.Buttons.NextPage.Enabled = False
-        Me.GC4.EmbeddedNavigator.Buttons.NextPage.Visible = False
-        Me.GC4.EmbeddedNavigator.Buttons.Prev.Enabled = False
-        Me.GC4.EmbeddedNavigator.Buttons.Prev.Visible = False
-        Me.GC4.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
-        Me.GC4.EmbeddedNavigator.Buttons.PrevPage.Visible = False
-        Me.GC4.EmbeddedNavigator.Name = ""
-        Me.GC4.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
-        Me.GC4.Location = New System.Drawing.Point(5, 5)
-        Me.GC4.MainView = Me.GV4
-        Me.GC4.Name = "GC4"
-        Me.GC4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpMat})
-        Me.GC4.Size = New System.Drawing.Size(377, 81)
-        Me.GC4.TabIndex = 9
-        Me.GC4.UseEmbeddedNavigator = True
-        Me.GC4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV4})
-        '
-        'GV4
-        '
-        Me.GV4.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPREMAT_PRE_CODE_FK_PK, Me.colPREMAT_COCONT_NUM_FK_PK, Me.colPREMAT_CDF_MACDT_CODE_FK_PK, Me.colPREMAT_NUMORD})
-        Me.GV4.GridControl = Me.GC4
-        Me.GV4.GroupPanelText = " "
-        Me.GV4.Name = "GV4"
-        Me.GV4.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
-        Me.GV4.OptionsView.ShowGroupPanel = False
-        Me.GV4.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colPREMAT_NUMORD, DevExpress.Data.ColumnSortOrder.Ascending)})
-        '
-        'colPREMAT_PRE_CODE_FK_PK
-        '
-        Me.colPREMAT_PRE_CODE_FK_PK.Caption = "PREMAT_PRE_CODE_FK_PK"
-        Me.colPREMAT_PRE_CODE_FK_PK.FieldName = "PREMAT_PRE_CODE_FK_PK"
-        Me.colPREMAT_PRE_CODE_FK_PK.Name = "colPREMAT_PRE_CODE_FK_PK"
-        '
-        'colPREMAT_COCONT_NUM_FK_PK
-        '
-        Me.colPREMAT_COCONT_NUM_FK_PK.Caption = "PREMAT_COCONT_NUM_FK_PK"
-        Me.colPREMAT_COCONT_NUM_FK_PK.FieldName = "PREMAT_COCONT_NUM_FK_PK"
-        Me.colPREMAT_COCONT_NUM_FK_PK.Name = "colPREMAT_COCONT_NUM_FK_PK"
-        '
-        'colPREMAT_CDF_MACDT_CODE_FK_PK
-        '
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Caption = "Matériau"
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.ColumnEdit = Me.rpMat
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.FieldName = "PREMAT_CDF_MACDT_CODE_FK_PK"
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Name = "colPREMAT_CDF_MACDT_CODE_FK_PK"
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Visible = True
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.VisibleIndex = 0
-        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Width = 245
-        '
-        'rpMat
-        '
-        Me.rpMat.AutoHeight = False
-        Me.rpMat.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.rpMat.Name = "rpMat"
-        Me.rpMat.NullText = ""
-        '
-        'colPREMAT_NUMORD
-        '
-        Me.colPREMAT_NUMORD.Caption = "N°"
-        Me.colPREMAT_NUMORD.FieldName = "PREMAT_NUMORD"
-        Me.colPREMAT_NUMORD.Name = "colPREMAT_NUMORD"
-        Me.colPREMAT_NUMORD.Visible = True
-        Me.colPREMAT_NUMORD.VisibleIndex = 1
-        Me.colPREMAT_NUMORD.Width = 33
         '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Panel8.Controls.Add(Me.GC3)
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(3, 193)
+        Me.Panel8.Location = New System.Drawing.Point(3, 190)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel8.Size = New System.Drawing.Size(771, 89)
+        Me.Panel8.Size = New System.Drawing.Size(771, 70)
         Me.Panel8.TabIndex = 12
         '
         'GC3
         '
-        Me.GC3.DataMember = "COCONT_COMPO_CONTENANT.FK2_PRECONT_PRE_CONTENANT"
-        Me.GC3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GC3.EmbeddedNavigator.Buttons.Append.Visible = False
         Me.GC3.EmbeddedNavigator.Buttons.Edit.Visible = False
         Me.GC3.EmbeddedNavigator.Buttons.First.Enabled = False
@@ -851,7 +699,7 @@ Partial Class Frm_Presentation
         Me.GC3.MainView = Me.GV3
         Me.GC3.Name = "GC3"
         Me.GC3.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpNBCont, Me.rpContenuReel, Me.rpContPossible, Me.rpTexte})
-        Me.GC3.Size = New System.Drawing.Size(765, 83)
+        Me.GC3.Size = New System.Drawing.Size(765, 64)
         Me.GC3.TabIndex = 8
         Me.GC3.UseEmbeddedNavigator = True
         Me.GC3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV3})
@@ -975,7 +823,6 @@ Partial Class Frm_Presentation
         Me.GV3.OptionsView.EnableAppearanceEvenRow = True
         Me.GV3.OptionsView.EnableAppearanceOddRow = True
         Me.GV3.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
-        Me.GV3.OptionsView.RowAutoHeight = True
         Me.GV3.OptionsView.ShowDetailButtons = False
         Me.GV3.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
         Me.GV3.OptionsView.ShowGroupPanel = False
@@ -1099,7 +946,7 @@ Partial Class Frm_Presentation
         Me.TableLayoutPanel2.Padding = New System.Windows.Forms.Padding(2)
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(771, 89)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(771, 78)
         Me.TableLayoutPanel2.TabIndex = 12
         '
         'GC
@@ -1125,14 +972,14 @@ Partial Class Frm_Presentation
         Me.GC.MainView = Me.GV
         Me.GC.Name = "GC"
         Me.GC.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpUnite, Me.rpSubACT})
-        Me.GC.Size = New System.Drawing.Size(377, 79)
+        Me.GC.Size = New System.Drawing.Size(377, 68)
         Me.GC.TabIndex = 5
         Me.GC.UseEmbeddedNavigator = True
         Me.GC.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV})
         '
         'GV
         '
-        Me.GV.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPREDISP_PRE_CODE_FK_PK, Me.colPREDISP_NUMSEQ_PK, Me.colPREDISP_SAC_CODE_FK, Me.colPREDISP_UNITEDISP, Me.colPREDISP_CDF_UD_CODE_FK})
+        Me.GV.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPREDISP_PRE_CODE_FK_PK, Me.colPREDISP_NUMSEQ_PK, Me.colPREDISP_SAC_CODE_FK, Me.colPREDISP_UNITEDISP, Me.colPREDISP_CDF_UD_CODE_FK, Me.colPREDISP_DOSEFRAC})
         Me.GV.GridControl = Me.GC
         Me.GV.GroupPanelText = " "
         Me.GV.Name = "GV"
@@ -1197,6 +1044,14 @@ Partial Class Frm_Presentation
         Me.rpUnite.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.rpUnite.Name = "rpUnite"
         '
+        'colPREDISP_DOSEFRAC
+        '
+        Me.colPREDISP_DOSEFRAC.Caption = "Dose fractionnée"
+        Me.colPREDISP_DOSEFRAC.FieldName = "PREDISP_DOSEFRAC"
+        Me.colPREDISP_DOSEFRAC.Name = "colPREDISP_DOSEFRAC"
+        Me.colPREDISP_DOSEFRAC.Visible = True
+        Me.colPREDISP_DOSEFRAC.VisibleIndex = 4
+        '
         'GC1
         '
         Me.GC1.DataMember = "PREUCD_COMMENT_DOSEUCD"
@@ -1220,7 +1075,7 @@ Partial Class Frm_Presentation
         Me.GC1.MainView = Me.GV1
         Me.GC1.Name = "GC1"
         Me.GC1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpCommentaire})
-        Me.GC1.Size = New System.Drawing.Size(378, 79)
+        Me.GC1.Size = New System.Drawing.Size(378, 68)
         Me.GC1.TabIndex = 6
         Me.GC1.UseEmbeddedNavigator = True
         Me.GC1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV1})
@@ -1267,10 +1122,22 @@ Partial Class Frm_Presentation
         Me.colPREUCD_NUMORD.VisibleIndex = 1
         Me.colPREUCD_NUMORD.Width = 44
         '
+        'Panel12
+        '
+        Me.Panel12.Controls.Add(Me.GC2)
+        Me.Panel12.Controls.Add(Me.Label29)
+        Me.Panel12.Controls.Add(Me.txtVolume)
+        Me.Panel12.Controls.Add(Me.lkupUnite)
+        Me.Panel12.Controls.Add(Me.Label30)
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel12.Location = New System.Drawing.Point(3, 87)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(771, 97)
+        Me.Panel12.TabIndex = 13
+        '
         'GC2
         '
         Me.GC2.DataMember = "COCONT_COMPO_CONTENANT"
-        Me.GC2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GC2.EmbeddedNavigator.Buttons.Edit.Visible = False
         Me.GC2.EmbeddedNavigator.Buttons.First.Enabled = False
         Me.GC2.EmbeddedNavigator.Buttons.First.Visible = False
@@ -1286,12 +1153,12 @@ Partial Class Frm_Presentation
         Me.GC2.EmbeddedNavigator.Buttons.PrevPage.Visible = False
         Me.GC2.EmbeddedNavigator.Name = ""
         Me.GC2.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
-        Me.GC2.Location = New System.Drawing.Point(3, 98)
+        Me.GC2.Location = New System.Drawing.Point(0, 27)
         Me.GC2.MainView = Me.GV2
         Me.GC2.Name = "GC2"
         Me.GC2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkupCont})
-        Me.GC2.Size = New System.Drawing.Size(771, 89)
-        Me.GC2.TabIndex = 7
+        Me.GC2.Size = New System.Drawing.Size(768, 75)
+        Me.GC2.TabIndex = 14
         Me.GC2.UseEmbeddedNavigator = True
         Me.GC2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV2})
         '
@@ -1347,6 +1214,218 @@ Partial Class Frm_Presentation
         Me.colCOCONT_NUMORD.VisibleIndex = 2
         Me.colCOCONT_NUMORD.Width = 84
         '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(4, 6)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(188, 13)
+        Me.Label29.TabIndex = 1
+        Me.Label29.Tag = "[ADD][EDIT]"
+        Me.Label29.Text = "Volume administrable de solution finale"
+        '
+        'txtVolume
+        '
+        Me.txtVolume.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PREVOLSOL_VOLUME_SOLUTION.PREVOLSOL_VOLSOLUTION", True))
+        Me.txtVolume.Location = New System.Drawing.Point(209, 4)
+        Me.txtVolume.Name = "txtVolume"
+        Me.txtVolume.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtVolume.Properties.MaxLength = 11
+        Me.txtVolume.Size = New System.Drawing.Size(101, 20)
+        Me.txtVolume.TabIndex = 0
+        Me.txtVolume.Tag = "[ADD][EDIT]"
+        '
+        'lkupUnite
+        '
+        Me.lkupUnite.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PREVOLSOL_VOLUME_SOLUTION.PREVOLSOL_CDF_VOL_CODE_FK", True))
+        Me.lkupUnite.Location = New System.Drawing.Point(373, 3)
+        Me.lkupUnite.Name = "lkupUnite"
+        Me.lkupUnite.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lkupUnite.Properties.NullText = ""
+        Me.lkupUnite.Size = New System.Drawing.Size(145, 20)
+        Me.lkupUnite.TabIndex = 31
+        Me.lkupUnite.Tag = ""
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(335, 7)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(32, 13)
+        Me.Label30.TabIndex = 30
+        Me.Label30.Text = "Unité"
+        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TableLayoutPanel3.ColumnCount = 2
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.GC5, 1, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.GC4, 0, 0)
+        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 268)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.Padding = New System.Windows.Forms.Padding(2)
+        Me.TableLayoutPanel3.RowCount = 1
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(771, 101)
+        Me.TableLayoutPanel3.TabIndex = 12
+        '
+        'GC5
+        '
+        Me.GC5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GC5.DataMember = "COCONT_COMPO_CONTENANT.FK2_PRECAR_PRESENT_CARACTCOMP"
+        Me.GC5.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC5.EmbeddedNavigator.Buttons.First.Enabled = False
+        Me.GC5.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC5.EmbeddedNavigator.Buttons.Last.Enabled = False
+        Me.GC5.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC5.EmbeddedNavigator.Buttons.Next.Enabled = False
+        Me.GC5.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC5.EmbeddedNavigator.Buttons.NextPage.Enabled = False
+        Me.GC5.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC5.EmbeddedNavigator.Buttons.Prev.Enabled = False
+        Me.GC5.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC5.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
+        Me.GC5.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC5.EmbeddedNavigator.Name = ""
+        Me.GC5.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
+        Me.GC5.Location = New System.Drawing.Point(388, 5)
+        Me.GC5.MainView = Me.GV5
+        Me.GC5.Name = "GC5"
+        Me.GC5.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpCrtCmpl})
+        Me.GC5.Size = New System.Drawing.Size(378, 91)
+        Me.GC5.TabIndex = 10
+        Me.GC5.UseEmbeddedNavigator = True
+        Me.GC5.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV5})
+        '
+        'GV5
+        '
+        Me.GV5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPRECAR_PRE_CODE_FK_PK, Me.colPRECAR_COCONT_NUM_FK_PK, Me.colPRECAR_CDF_CODE_CACDT_FK_PK, Me.colPRECAR_NUMORD})
+        Me.GV5.GridControl = Me.GC5
+        Me.GV5.GroupPanelText = " "
+        Me.GV5.Name = "GV5"
+        Me.GV5.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
+        Me.GV5.OptionsView.ShowGroupPanel = False
+        Me.GV5.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colPRECAR_NUMORD, DevExpress.Data.ColumnSortOrder.Ascending)})
+        '
+        'colPRECAR_PRE_CODE_FK_PK
+        '
+        Me.colPRECAR_PRE_CODE_FK_PK.Caption = "PRECAR_PRE_CODE_FK_PK"
+        Me.colPRECAR_PRE_CODE_FK_PK.FieldName = "PRECAR_PRE_CODE_FK_PK"
+        Me.colPRECAR_PRE_CODE_FK_PK.Name = "colPRECAR_PRE_CODE_FK_PK"
+        '
+        'colPRECAR_COCONT_NUM_FK_PK
+        '
+        Me.colPRECAR_COCONT_NUM_FK_PK.Caption = "PRECAR_COCONT_NUM_FK_PK"
+        Me.colPRECAR_COCONT_NUM_FK_PK.FieldName = "PRECAR_COCONT_NUM_FK_PK"
+        Me.colPRECAR_COCONT_NUM_FK_PK.Name = "colPRECAR_COCONT_NUM_FK_PK"
+        '
+        'colPRECAR_CDF_CODE_CACDT_FK_PK
+        '
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Caption = "Caract complément"
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.ColumnEdit = Me.rpCrtCmpl
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.FieldName = "PRECAR_CDF_CODE_CACDT_FK_PK"
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Name = "colPRECAR_CDF_CODE_CACDT_FK_PK"
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Visible = True
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.VisibleIndex = 0
+        Me.colPRECAR_CDF_CODE_CACDT_FK_PK.Width = 262
+        '
+        'rpCrtCmpl
+        '
+        Me.rpCrtCmpl.AutoHeight = False
+        Me.rpCrtCmpl.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.rpCrtCmpl.Name = "rpCrtCmpl"
+        Me.rpCrtCmpl.NullText = ""
+        '
+        'colPRECAR_NUMORD
+        '
+        Me.colPRECAR_NUMORD.Caption = "N°"
+        Me.colPRECAR_NUMORD.FieldName = "PRECAR_NUMORD"
+        Me.colPRECAR_NUMORD.Name = "colPRECAR_NUMORD"
+        Me.colPRECAR_NUMORD.Visible = True
+        Me.colPRECAR_NUMORD.VisibleIndex = 1
+        Me.colPRECAR_NUMORD.Width = 57
+        '
+        'GC4
+        '
+        Me.GC4.DataMember = "COCONT_COMPO_CONTENANT.FK2_PREMAT_PRE_MATERIAU"
+        Me.GC4.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC4.EmbeddedNavigator.Buttons.First.Enabled = False
+        Me.GC4.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC4.EmbeddedNavigator.Buttons.Last.Enabled = False
+        Me.GC4.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC4.EmbeddedNavigator.Buttons.Next.Enabled = False
+        Me.GC4.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC4.EmbeddedNavigator.Buttons.NextPage.Enabled = False
+        Me.GC4.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC4.EmbeddedNavigator.Buttons.Prev.Enabled = False
+        Me.GC4.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC4.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
+        Me.GC4.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC4.EmbeddedNavigator.Name = ""
+        Me.GC4.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
+        Me.GC4.Location = New System.Drawing.Point(5, 5)
+        Me.GC4.MainView = Me.GV4
+        Me.GC4.Name = "GC4"
+        Me.GC4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpMat})
+        Me.GC4.Size = New System.Drawing.Size(370, 89)
+        Me.GC4.TabIndex = 9
+        Me.GC4.UseEmbeddedNavigator = True
+        Me.GC4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV4})
+        '
+        'GV4
+        '
+        Me.GV4.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPREMAT_PRE_CODE_FK_PK, Me.colPREMAT_COCONT_NUM_FK_PK, Me.colPREMAT_CDF_MACDT_CODE_FK_PK, Me.colPREMAT_NUMORD})
+        Me.GV4.GridControl = Me.GC4
+        Me.GV4.GroupPanelText = " "
+        Me.GV4.Name = "GV4"
+        Me.GV4.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
+        Me.GV4.OptionsView.ShowGroupPanel = False
+        Me.GV4.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colPREMAT_NUMORD, DevExpress.Data.ColumnSortOrder.Ascending)})
+        '
+        'colPREMAT_PRE_CODE_FK_PK
+        '
+        Me.colPREMAT_PRE_CODE_FK_PK.Caption = "PREMAT_PRE_CODE_FK_PK"
+        Me.colPREMAT_PRE_CODE_FK_PK.FieldName = "PREMAT_PRE_CODE_FK_PK"
+        Me.colPREMAT_PRE_CODE_FK_PK.Name = "colPREMAT_PRE_CODE_FK_PK"
+        '
+        'colPREMAT_COCONT_NUM_FK_PK
+        '
+        Me.colPREMAT_COCONT_NUM_FK_PK.Caption = "PREMAT_COCONT_NUM_FK_PK"
+        Me.colPREMAT_COCONT_NUM_FK_PK.FieldName = "PREMAT_COCONT_NUM_FK_PK"
+        Me.colPREMAT_COCONT_NUM_FK_PK.Name = "colPREMAT_COCONT_NUM_FK_PK"
+        '
+        'colPREMAT_CDF_MACDT_CODE_FK_PK
+        '
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Caption = "Matériau"
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.ColumnEdit = Me.rpMat
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.FieldName = "PREMAT_CDF_MACDT_CODE_FK_PK"
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Name = "colPREMAT_CDF_MACDT_CODE_FK_PK"
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Visible = True
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.VisibleIndex = 0
+        Me.colPREMAT_CDF_MACDT_CODE_FK_PK.Width = 245
+        '
+        'rpMat
+        '
+        Me.rpMat.AutoHeight = False
+        Me.rpMat.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.rpMat.Name = "rpMat"
+        Me.rpMat.NullText = ""
+        '
+        'colPREMAT_NUMORD
+        '
+        Me.colPREMAT_NUMORD.Caption = "N°"
+        Me.colPREMAT_NUMORD.FieldName = "PREMAT_NUMORD"
+        Me.colPREMAT_NUMORD.Name = "colPREMAT_NUMORD"
+        Me.colPREMAT_NUMORD.Visible = True
+        Me.colPREMAT_NUMORD.VisibleIndex = 1
+        Me.colPREMAT_NUMORD.Width = 33
+        '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.TextEdit4)
@@ -1360,7 +1439,7 @@ Partial Class Frm_Presentation
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(777, 93)
+        Me.Panel4.Size = New System.Drawing.Size(777, 86)
         Me.Panel4.TabIndex = 12
         '
         'TextEdit4
@@ -1446,7 +1525,7 @@ Partial Class Frm_Presentation
         '
         Me.XtraTabPage2.Controls.Add(Me.PanMain4)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(493, 417)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(780, 466)
         Me.XtraTabPage2.Text = "Taux de remboursement"
         '
         'PanMain4
@@ -1464,7 +1543,7 @@ Partial Class Frm_Presentation
         Me.PanMain4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanMain4.Location = New System.Drawing.Point(0, 0)
         Me.PanMain4.Name = "PanMain4"
-        Me.PanMain4.Size = New System.Drawing.Size(493, 417)
+        Me.PanMain4.Size = New System.Drawing.Size(780, 466)
         Me.PanMain4.TabIndex = 0
         Me.PanMain4.Tag = "[ADD][EDIT]"
         '
@@ -1586,7 +1665,7 @@ Partial Class Frm_Presentation
         Me.Panel3.Controls.Add(Me.GC7)
         Me.Panel3.Location = New System.Drawing.Point(8, 279)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(482, 132)
+        Me.Panel3.Size = New System.Drawing.Size(769, 181)
         Me.Panel3.TabIndex = 17
         '
         'GC8
@@ -1613,7 +1692,7 @@ Partial Class Frm_Presentation
         Me.GC8.MainView = Me.GV8
         Me.GC8.Name = "GC8"
         Me.GC8.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpTauxSociale, Me.RpMemoEditHop})
-        Me.GC8.Size = New System.Drawing.Size(475, 79)
+        Me.GC8.Size = New System.Drawing.Size(762, 79)
         Me.GC8.TabIndex = 6
         Me.GC8.UseEmbeddedNavigator = True
         Me.GC8.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV8})
@@ -1715,7 +1794,7 @@ Partial Class Frm_Presentation
         Me.GC7.MainView = Me.GV7
         Me.GC7.Name = "GC7"
         Me.GC7.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpTauxRBS, Me.RpMemoEditVille})
-        Me.GC7.Size = New System.Drawing.Size(475, 88)
+        Me.GC7.Size = New System.Drawing.Size(762, 88)
         Me.GC7.TabIndex = 5
         Me.GC7.UseEmbeddedNavigator = True
         Me.GC7.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV7})
@@ -1836,7 +1915,7 @@ Partial Class Frm_Presentation
         Me.MemoEdit1.Location = New System.Drawing.Point(3, 120)
         Me.MemoEdit1.Name = "MemoEdit1"
         Me.MemoEdit1.Properties.MaxLength = 255
-        Me.MemoEdit1.Size = New System.Drawing.Size(482, 61)
+        Me.MemoEdit1.Size = New System.Drawing.Size(769, 61)
         Me.MemoEdit1.TabIndex = 1
         '
         'GC6
@@ -1863,7 +1942,7 @@ Partial Class Frm_Presentation
         Me.GC6.MainView = Me.GV6
         Me.GC6.Name = "GC6"
         Me.GC6.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpCractEmb})
-        Me.GC6.Size = New System.Drawing.Size(485, 88)
+        Me.GC6.Size = New System.Drawing.Size(772, 88)
         Me.GC6.TabIndex = 0
         Me.GC6.UseEmbeddedNavigator = True
         Me.GC6.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV6})
@@ -1914,7 +1993,7 @@ Partial Class Frm_Presentation
         '
         Me.XtraTabPage3.Controls.Add(Me.PanMain5)
         Me.XtraTabPage3.Name = "XtraTabPage3"
-        Me.XtraTabPage3.Size = New System.Drawing.Size(493, 417)
+        Me.XtraTabPage3.Size = New System.Drawing.Size(780, 466)
         Me.XtraTabPage3.Text = "Statut"
         '
         'PanMain5
@@ -1945,7 +2024,7 @@ Partial Class Frm_Presentation
         Me.PanMain5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanMain5.Location = New System.Drawing.Point(0, 0)
         Me.PanMain5.Name = "PanMain5"
-        Me.PanMain5.Size = New System.Drawing.Size(493, 417)
+        Me.PanMain5.Size = New System.Drawing.Size(780, 466)
         Me.PanMain5.TabIndex = 0
         Me.PanMain5.Tag = "[ADD][EDIT]"
         '
@@ -1956,7 +2035,7 @@ Partial Class Frm_Presentation
         Me.MemoEdit3.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_TSS_TEXTE", True))
         Me.MemoEdit3.Location = New System.Drawing.Point(176, 7)
         Me.MemoEdit3.Name = "MemoEdit3"
-        Me.MemoEdit3.Size = New System.Drawing.Size(302, 81)
+        Me.MemoEdit3.Size = New System.Drawing.Size(589, 81)
         Me.MemoEdit3.TabIndex = 0
         '
         'MemoEdit2
@@ -1966,7 +2045,7 @@ Partial Class Frm_Presentation
         Me.MemoEdit2.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_PARTSTATUT", True))
         Me.MemoEdit2.Location = New System.Drawing.Point(7, 338)
         Me.MemoEdit2.Name = "MemoEdit2"
-        Me.MemoEdit2.Size = New System.Drawing.Size(333, 70)
+        Me.MemoEdit2.Size = New System.Drawing.Size(333, 119)
         Me.MemoEdit2.TabIndex = 11
         '
         'GC11
@@ -1994,7 +2073,7 @@ Partial Class Frm_Presentation
         Me.GC11.MainView = Me.GV11
         Me.GC11.Name = "GC11"
         Me.GC11.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpStatutR})
-        Me.GC11.Size = New System.Drawing.Size(132, 88)
+        Me.GC11.Size = New System.Drawing.Size(419, 137)
         Me.GC11.TabIndex = 12
         Me.GC11.UseEmbeddedNavigator = True
         Me.GC11.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV11})
@@ -2073,7 +2152,7 @@ Partial Class Frm_Presentation
         Me.GC10.MainView = Me.GV10
         Me.GC10.Name = "GC10"
         Me.GC10.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpStatutC})
-        Me.GC10.Size = New System.Drawing.Size(132, 111)
+        Me.GC10.Size = New System.Drawing.Size(419, 111)
         Me.GC10.TabIndex = 10
         Me.GC10.UseEmbeddedNavigator = True
         Me.GC10.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV10})
@@ -2371,7 +2450,7 @@ Partial Class Frm_Presentation
         '
         Me.XtraTabPage4.Controls.Add(Me.Panel7)
         Me.XtraTabPage4.Name = "XtraTabPage4"
-        Me.XtraTabPage4.Size = New System.Drawing.Size(493, 417)
+        Me.XtraTabPage4.Size = New System.Drawing.Size(780, 466)
         Me.XtraTabPage4.Tag = "[ADD][EDIT]"
         Me.XtraTabPage4.Text = "Conservation"
         '
@@ -2386,7 +2465,7 @@ Partial Class Frm_Presentation
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(493, 417)
+        Me.Panel7.Size = New System.Drawing.Size(780, 466)
         Me.Panel7.TabIndex = 39
         '
         'GC15
@@ -2415,7 +2494,7 @@ Partial Class Frm_Presentation
         Me.GC15.MainView = Me.GV15
         Me.GC15.Name = "GC15"
         Me.GC15.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpMemoCons})
-        Me.GC15.Size = New System.Drawing.Size(477, 49)
+        Me.GC15.Size = New System.Drawing.Size(764, 98)
         Me.GC15.TabIndex = 3
         Me.GC15.UseEmbeddedNavigator = True
         Me.GC15.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV15})
@@ -2475,7 +2554,7 @@ Partial Class Frm_Presentation
         Me.Panel2.Controls.Add(Me.GC14)
         Me.Panel2.Location = New System.Drawing.Point(3, 231)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(487, 116)
+        Me.Panel2.Size = New System.Drawing.Size(774, 116)
         Me.Panel2.TabIndex = 37
         '
         'GC14
@@ -2503,7 +2582,7 @@ Partial Class Frm_Presentation
         Me.GC14.MainView = Me.GV14
         Me.GC14.Name = "GC14"
         Me.GC14.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpCondition})
-        Me.GC14.Size = New System.Drawing.Size(477, 100)
+        Me.GC14.Size = New System.Drawing.Size(764, 100)
         Me.GC14.TabIndex = 2
         Me.GC14.UseEmbeddedNavigator = True
         Me.GC14.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV14})
@@ -2579,7 +2658,7 @@ Partial Class Frm_Presentation
         Me.GC13.MainView = Me.GV13
         Me.GC13.Name = "GC13"
         Me.GC13.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpDureeConsv})
-        Me.GC13.Size = New System.Drawing.Size(477, 99)
+        Me.GC13.Size = New System.Drawing.Size(764, 99)
         Me.GC13.TabIndex = 1
         Me.GC13.UseEmbeddedNavigator = True
         Me.GC13.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV13})
@@ -2660,7 +2739,7 @@ Partial Class Frm_Presentation
         Me.GC12.MainView = Me.GV12
         Me.GC12.Name = "GC12"
         Me.GC12.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpMemo})
-        Me.GC12.Size = New System.Drawing.Size(477, 100)
+        Me.GC12.Size = New System.Drawing.Size(764, 100)
         Me.GC12.TabIndex = 0
         Me.GC12.UseEmbeddedNavigator = True
         Me.GC12.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV12})
@@ -2716,15 +2795,17 @@ Partial Class Frm_Presentation
         '
         Me.XtraTabPage5.Controls.Add(Me.pan5)
         Me.XtraTabPage5.Name = "XtraTabPage5"
-        Me.XtraTabPage5.Size = New System.Drawing.Size(493, 417)
+        Me.XtraTabPage5.Size = New System.Drawing.Size(780, 466)
         Me.XtraTabPage5.Text = "Dispensation"
         '
         'pan5
         '
-        Me.pan5.Controls.Add(Me.lkup_Liste)
-        Me.pan5.Controls.Add(Me.Pan_Lieu_Commentaire)
+        Me.pan5.Controls.Add(Me.GCDisp)
         Me.pan5.Controls.Add(Me.btADDSMR)
         Me.pan5.Controls.Add(Me.GC19)
+        Me.pan5.Controls.Add(Me.GC18)
+        Me.pan5.Controls.Add(Me.lkup_Liste)
+        Me.pan5.Controls.Add(Me.Pan_Lieu_Commentaire)
         Me.pan5.Controls.Add(Me.lkupEPH2)
         Me.pan5.Controls.Add(Me.lkupEPH)
         Me.pan5.Controls.Add(Me.Label27)
@@ -2732,25 +2813,267 @@ Partial Class Frm_Presentation
         Me.pan5.Controls.Add(Me.lkupATC)
         Me.pan5.Controls.Add(Me.Label28)
         Me.pan5.Controls.Add(Me.Label26)
-        Me.pan5.Controls.Add(Me.GC18)
         Me.pan5.Controls.Add(Me.Label25)
         Me.pan5.Controls.Add(Me.TextEdit1)
         Me.pan5.Controls.Add(Me.Label24)
         Me.pan5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pan5.Location = New System.Drawing.Point(0, 0)
         Me.pan5.Name = "pan5"
-        Me.pan5.Size = New System.Drawing.Size(493, 417)
+        Me.pan5.Size = New System.Drawing.Size(780, 466)
         Me.pan5.TabIndex = 0
+        '
+        'GCDisp
+        '
+        Me.GCDisp.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GCDisp.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.First.Enabled = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.Last.Enabled = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.Next.Enabled = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.NextPage.Enabled = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.Prev.Enabled = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
+        Me.GCDisp.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GCDisp.EmbeddedNavigator.Name = ""
+        Me.GCDisp.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
+        Me.GCDisp.Location = New System.Drawing.Point(11, 240)
+        Me.GCDisp.MainView = Me.GVDisp
+        Me.GCDisp.Name = "GCDisp"
+        Me.GCDisp.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkupDispMax})
+        Me.GCDisp.Size = New System.Drawing.Size(757, 83)
+        Me.GCDisp.TabIndex = 55
+        Me.GCDisp.UseEmbeddedNavigator = True
+        Me.GCDisp.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVDisp})
+        '
+        'GVDisp
+        '
+        Me.GVDisp.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPREDISPMAX_PRE_CODE_FK_PK, Me.colPREDISPMAX_CDF_TYPE_FK_PK, Me.colPREDISPMAX_MAXUCD, Me.colPREDISPMAX_MAXCIP, Me.colPREDISPMAX_PRE_CIP13})
+        Me.GVDisp.GridControl = Me.GCDisp
+        Me.GVDisp.GroupPanelText = " "
+        Me.GVDisp.Name = "GVDisp"
+        Me.GVDisp.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
+        Me.GVDisp.OptionsView.ShowGroupPanel = False
+        Me.GVDisp.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colPREDISPMAX_MAXCIP, DevExpress.Data.ColumnSortOrder.Ascending)})
+        '
+        'colPREDISPMAX_PRE_CODE_FK_PK
+        '
+        Me.colPREDISPMAX_PRE_CODE_FK_PK.Caption = "PREDISPMAX_PRE_CODE_FK_PK"
+        Me.colPREDISPMAX_PRE_CODE_FK_PK.FieldName = "PREDISPMAX_PRE_CODE_FK_PK"
+        Me.colPREDISPMAX_PRE_CODE_FK_PK.Name = "colPREDISPMAX_PRE_CODE_FK_PK"
+        '
+        'colPREDISPMAX_CDF_TYPE_FK_PK
+        '
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK.Caption = "Type max dispensation"
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK.ColumnEdit = Me.lkupDispMax
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK.FieldName = "PREDISPMAX_CDF_TYPE_FK_PK"
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK.Name = "colPREDISPMAX_CDF_TYPE_FK_PK"
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK.Visible = True
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK.VisibleIndex = 0
+        Me.colPREDISPMAX_CDF_TYPE_FK_PK.Width = 163
+        '
+        'lkupDispMax
+        '
+        Me.lkupDispMax.AutoHeight = False
+        Me.lkupDispMax.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lkupDispMax.Name = "lkupDispMax"
+        '
+        'colPREDISPMAX_MAXUCD
+        '
+        Me.colPREDISPMAX_MAXUCD.Caption = "Max 1 disp UCD"
+        Me.colPREDISPMAX_MAXUCD.FieldName = "PREDISPMAX_MAXUCD"
+        Me.colPREDISPMAX_MAXUCD.Name = "colPREDISPMAX_MAXUCD"
+        Me.colPREDISPMAX_MAXUCD.Visible = True
+        Me.colPREDISPMAX_MAXUCD.VisibleIndex = 1
+        Me.colPREDISPMAX_MAXUCD.Width = 100
+        '
+        'colPREDISPMAX_MAXCIP
+        '
+        Me.colPREDISPMAX_MAXCIP.Caption = "Max 1 disp CIP"
+        Me.colPREDISPMAX_MAXCIP.FieldName = "PREDISPMAX_MAXCIP"
+        Me.colPREDISPMAX_MAXCIP.Name = "colPREDISPMAX_MAXCIP"
+        Me.colPREDISPMAX_MAXCIP.Visible = True
+        Me.colPREDISPMAX_MAXCIP.VisibleIndex = 2
+        Me.colPREDISPMAX_MAXCIP.Width = 49
+        '
+        'colPREDISPMAX_PRE_CIP13
+        '
+        Me.colPREDISPMAX_PRE_CIP13.Caption = "PREDISPMAX_PRE_CIP13"
+        Me.colPREDISPMAX_PRE_CIP13.FieldName = "PREDISPMAX_PRE_CIP13"
+        Me.colPREDISPMAX_PRE_CIP13.Name = "colPREDISPMAX_PRE_CIP13"
+        '
+        'btADDSMR
+        '
+        Me.btADDSMR.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btADDSMR.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
+        Me.btADDSMR.Location = New System.Drawing.Point(165, 443)
+        Me.btADDSMR.Name = "btADDSMR"
+        Me.btADDSMR.Size = New System.Drawing.Size(54, 20)
+        Me.btADDSMR.TabIndex = 50
+        Me.btADDSMR.Text = "..."
+        '
+        'GC19
+        '
+        Me.GC19.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GC19.DataMember = "PRESMR_PRE_SMR_ATR"
+        Me.GC19.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC19.EmbeddedNavigator.Buttons.First.Enabled = False
+        Me.GC19.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC19.EmbeddedNavigator.Buttons.Last.Enabled = False
+        Me.GC19.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC19.EmbeddedNavigator.Buttons.Next.Enabled = False
+        Me.GC19.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC19.EmbeddedNavigator.Buttons.NextPage.Enabled = False
+        Me.GC19.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC19.EmbeddedNavigator.Buttons.Prev.Enabled = False
+        Me.GC19.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC19.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
+        Me.GC19.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC19.EmbeddedNavigator.Name = ""
+        Me.GC19.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
+        Me.GC19.Location = New System.Drawing.Point(11, 397)
+        Me.GC19.MainView = Me.GV19
+        Me.GC19.Name = "GC19"
+        Me.GC19.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpSMR})
+        Me.GC19.Size = New System.Drawing.Size(758, 66)
+        Me.GC19.TabIndex = 54
+        Me.GC19.Tag = "[ADD][EDIT]"
+        Me.GC19.UseEmbeddedNavigator = True
+        Me.GC19.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV19})
+        '
+        'GV19
+        '
+        Me.GV19.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPRESMR_PRE_CODE_FK_PK, Me.colPRESMR_CDF_SMR_CODE_FK_PK, Me.colPRESMR_DATE_SMR_PK, Me.colPRESMR_ATR_CODE_FK_PK})
+        Me.GV19.GridControl = Me.GC19
+        Me.GV19.GroupPanelText = " "
+        Me.GV19.Name = "GV19"
+        Me.GV19.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
+        Me.GV19.OptionsView.ShowDetailButtons = False
+        Me.GV19.OptionsView.ShowGroupPanel = False
+        '
+        'colPRESMR_PRE_CODE_FK_PK
+        '
+        Me.colPRESMR_PRE_CODE_FK_PK.Caption = "PRESMR_PRE_CODE_FK_PK"
+        Me.colPRESMR_PRE_CODE_FK_PK.FieldName = "PRESMR_PRE_CODE_FK_PK"
+        Me.colPRESMR_PRE_CODE_FK_PK.Name = "colPRESMR_PRE_CODE_FK_PK"
+        '
+        'colPRESMR_CDF_SMR_CODE_FK_PK
+        '
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Caption = "SMR"
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK.ColumnEdit = Me.rpSMR
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK.FieldName = "PRESMR_CDF_SMR_CODE_FK_PK"
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Name = "colPRESMR_CDF_SMR_CODE_FK_PK"
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Visible = True
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK.VisibleIndex = 0
+        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Width = 392
+        '
+        'rpSMR
+        '
+        Me.rpSMR.AutoHeight = False
+        Me.rpSMR.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.rpSMR.Name = "rpSMR"
+        '
+        'colPRESMR_DATE_SMR_PK
+        '
+        Me.colPRESMR_DATE_SMR_PK.Caption = "Date"
+        Me.colPRESMR_DATE_SMR_PK.FieldName = "PRESMR_DATE_SMR_PK"
+        Me.colPRESMR_DATE_SMR_PK.Name = "colPRESMR_DATE_SMR_PK"
+        Me.colPRESMR_DATE_SMR_PK.Visible = True
+        Me.colPRESMR_DATE_SMR_PK.VisibleIndex = 1
+        Me.colPRESMR_DATE_SMR_PK.Width = 128
+        '
+        'colPRESMR_ATR_CODE_FK_PK
+        '
+        Me.colPRESMR_ATR_CODE_FK_PK.Caption = "Avis commission Trans."
+        Me.colPRESMR_ATR_CODE_FK_PK.FieldName = "PRESMR_ATR_CODE_FK_PK"
+        Me.colPRESMR_ATR_CODE_FK_PK.Name = "colPRESMR_ATR_CODE_FK_PK"
+        Me.colPRESMR_ATR_CODE_FK_PK.Visible = True
+        Me.colPRESMR_ATR_CODE_FK_PK.VisibleIndex = 2
+        Me.colPRESMR_ATR_CODE_FK_PK.Width = 131
+        '
+        'GC18
+        '
+        Me.GC18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GC18.DataMember = "PREDITX_TEXTE_DISPENSAT"
+        Me.GC18.EmbeddedNavigator.Buttons.Append.Visible = False
+        Me.GC18.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC18.EmbeddedNavigator.Buttons.First.Enabled = False
+        Me.GC18.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC18.EmbeddedNavigator.Buttons.Last.Enabled = False
+        Me.GC18.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC18.EmbeddedNavigator.Buttons.Next.Enabled = False
+        Me.GC18.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC18.EmbeddedNavigator.Buttons.NextPage.Enabled = False
+        Me.GC18.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC18.EmbeddedNavigator.Buttons.Prev.Enabled = False
+        Me.GC18.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC18.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
+        Me.GC18.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC18.EmbeddedNavigator.Name = ""
+        Me.GC18.EmbeddedNavigator.TextStringFormat = ""
+        Me.GC18.Location = New System.Drawing.Point(12, 167)
+        Me.GC18.MainView = Me.GV18
+        Me.GC18.Name = "GC18"
+        Me.GC18.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemMemoEdit1})
+        Me.GC18.Size = New System.Drawing.Size(758, 67)
+        Me.GC18.TabIndex = 53
+        Me.GC18.UseEmbeddedNavigator = True
+        Me.GC18.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV18})
+        '
+        'GV18
+        '
+        Me.GV18.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPREDITX_PRE_CODE_FK_PK, Me.colPREDITX_TEXTE})
+        Me.GV18.GridControl = Me.GC18
+        Me.GV18.GroupFormat = ""
+        Me.GV18.GroupPanelText = " "
+        Me.GV18.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never
+        Me.GV18.Name = "GV18"
+        Me.GV18.OptionsCustomization.AllowRowSizing = True
+        Me.GV18.OptionsNavigation.AutoFocusNewRow = True
+        Me.GV18.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
+        Me.GV18.OptionsView.ShowColumnHeaders = False
+        Me.GV18.OptionsView.ShowDetailButtons = False
+        Me.GV18.OptionsView.ShowGroupPanel = False
+        Me.GV18.OptionsView.ShowHorzLines = False
+        Me.GV18.OptionsView.ShowIndicator = False
+        Me.GV18.RowHeight = 42
+        Me.GV18.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll
+        '
+        'colPREDITX_PRE_CODE_FK_PK
+        '
+        Me.colPREDITX_PRE_CODE_FK_PK.Caption = "PREDITX_PRE_CODE_FK_PK"
+        Me.colPREDITX_PRE_CODE_FK_PK.FieldName = "PREDITX_PRE_CODE_FK_PK"
+        Me.colPREDITX_PRE_CODE_FK_PK.Name = "colPREDITX_PRE_CODE_FK_PK"
+        '
+        'colPREDITX_TEXTE
+        '
+        Me.colPREDITX_TEXTE.Caption = "PREDITX_TEXTE"
+        Me.colPREDITX_TEXTE.ColumnEdit = Me.RepositoryItemMemoEdit1
+        Me.colPREDITX_TEXTE.FieldName = "PREDITX_TEXTE"
+        Me.colPREDITX_TEXTE.Name = "colPREDITX_TEXTE"
+        Me.colPREDITX_TEXTE.Visible = True
+        Me.colPREDITX_TEXTE.VisibleIndex = 0
+        '
+        'RepositoryItemMemoEdit1
+        '
+        Me.RepositoryItemMemoEdit1.Name = "RepositoryItemMemoEdit1"
         '
         'lkup_Liste
         '
         Me.lkup_Liste.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lkup_Liste.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_CDF_LI_CODE_FK", True))
-        Me.lkup_Liste.Location = New System.Drawing.Point(114, 248)
+        Me.lkup_Liste.Location = New System.Drawing.Point(114, 329)
         Me.lkup_Liste.Name = "lkup_Liste"
         Me.lkup_Liste.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lkup_Liste.Size = New System.Drawing.Size(368, 20)
+        Me.lkup_Liste.Size = New System.Drawing.Size(289, 20)
         Me.lkup_Liste.TabIndex = 52
         Me.lkup_Liste.Tag = "[NOADD][NOEDIT]"
         '
@@ -2760,7 +3083,7 @@ Partial Class Frm_Presentation
         Me.Pan_Lieu_Commentaire.Controls.Add(Me.GC16)
         Me.Pan_Lieu_Commentaire.Location = New System.Drawing.Point(12, 30)
         Me.Pan_Lieu_Commentaire.Name = "Pan_Lieu_Commentaire"
-        Me.Pan_Lieu_Commentaire.Size = New System.Drawing.Size(671, 118)
+        Me.Pan_Lieu_Commentaire.Size = New System.Drawing.Size(754, 118)
         Me.Pan_Lieu_Commentaire.TabIndex = 51
         '
         'GC17
@@ -2782,11 +3105,11 @@ Partial Class Frm_Presentation
         Me.GC17.EmbeddedNavigator.Buttons.PrevPage.Visible = False
         Me.GC17.EmbeddedNavigator.Name = ""
         Me.GC17.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
-        Me.GC17.Location = New System.Drawing.Point(353, 0)
+        Me.GC17.Location = New System.Drawing.Point(373, 0)
         Me.GC17.MainView = Me.GV17
         Me.GC17.Name = "GC17"
         Me.GC17.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpComDispo})
-        Me.GC17.Size = New System.Drawing.Size(318, 118)
+        Me.GC17.Size = New System.Drawing.Size(381, 118)
         Me.GC17.TabIndex = 2
         Me.GC17.UseEmbeddedNavigator = True
         Me.GC17.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV17})
@@ -2856,7 +3179,7 @@ Partial Class Frm_Presentation
         Me.GC16.MainView = Me.GV16
         Me.GC16.Name = "GC16"
         Me.GC16.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpPredili})
-        Me.GC16.Size = New System.Drawing.Size(353, 118)
+        Me.GC16.Size = New System.Drawing.Size(373, 118)
         Me.GC16.TabIndex = 1
         Me.GC16.UseEmbeddedNavigator = True
         Me.GC16.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV16})
@@ -2903,101 +3226,10 @@ Partial Class Frm_Presentation
         Me.colPREDILI_NUMORD.VisibleIndex = 1
         Me.colPREDILI_NUMORD.Width = 38
         '
-        'btADDSMR
-        '
-        Me.btADDSMR.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btADDSMR.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple
-        Me.btADDSMR.Location = New System.Drawing.Point(181, 389)
-        Me.btADDSMR.Name = "btADDSMR"
-        Me.btADDSMR.Size = New System.Drawing.Size(54, 20)
-        Me.btADDSMR.TabIndex = 50
-        Me.btADDSMR.Text = "..."
-        '
-        'GC19
-        '
-        Me.GC19.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-                    Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GC19.DataMember = "PRESMR_PRE_SMR_ATR"
-        Me.GC19.EmbeddedNavigator.Buttons.Edit.Visible = False
-        Me.GC19.EmbeddedNavigator.Buttons.First.Enabled = False
-        Me.GC19.EmbeddedNavigator.Buttons.First.Visible = False
-        Me.GC19.EmbeddedNavigator.Buttons.Last.Enabled = False
-        Me.GC19.EmbeddedNavigator.Buttons.Last.Visible = False
-        Me.GC19.EmbeddedNavigator.Buttons.Next.Enabled = False
-        Me.GC19.EmbeddedNavigator.Buttons.Next.Visible = False
-        Me.GC19.EmbeddedNavigator.Buttons.NextPage.Enabled = False
-        Me.GC19.EmbeddedNavigator.Buttons.NextPage.Visible = False
-        Me.GC19.EmbeddedNavigator.Buttons.Prev.Enabled = False
-        Me.GC19.EmbeddedNavigator.Buttons.Prev.Visible = False
-        Me.GC19.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
-        Me.GC19.EmbeddedNavigator.Buttons.PrevPage.Visible = False
-        Me.GC19.EmbeddedNavigator.Name = ""
-        Me.GC19.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
-        Me.GC19.Location = New System.Drawing.Point(12, 324)
-        Me.GC19.MainView = Me.GV19
-        Me.GC19.Name = "GC19"
-        Me.GC19.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpSMR})
-        Me.GC19.Size = New System.Drawing.Size(471, 90)
-        Me.GC19.TabIndex = 9
-        Me.GC19.Tag = "[ADD][EDIT]"
-        Me.GC19.UseEmbeddedNavigator = True
-        Me.GC19.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV19})
-        '
-        'GV19
-        '
-        Me.GV19.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPRESMR_PRE_CODE_FK_PK, Me.colPRESMR_CDF_SMR_CODE_FK_PK, Me.colPRESMR_DATE_SMR_PK, Me.colPRESMR_ATR_CODE_FK_PK})
-        Me.GV19.GridControl = Me.GC19
-        Me.GV19.GroupPanelText = " "
-        Me.GV19.Name = "GV19"
-        Me.GV19.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
-        Me.GV19.OptionsView.ShowDetailButtons = False
-        Me.GV19.OptionsView.ShowGroupPanel = False
-        '
-        'colPRESMR_PRE_CODE_FK_PK
-        '
-        Me.colPRESMR_PRE_CODE_FK_PK.Caption = "PRESMR_PRE_CODE_FK_PK"
-        Me.colPRESMR_PRE_CODE_FK_PK.FieldName = "PRESMR_PRE_CODE_FK_PK"
-        Me.colPRESMR_PRE_CODE_FK_PK.Name = "colPRESMR_PRE_CODE_FK_PK"
-        '
-        'colPRESMR_CDF_SMR_CODE_FK_PK
-        '
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Caption = "SMR"
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK.ColumnEdit = Me.rpSMR
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK.FieldName = "PRESMR_CDF_SMR_CODE_FK_PK"
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Name = "colPRESMR_CDF_SMR_CODE_FK_PK"
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Visible = True
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK.VisibleIndex = 0
-        Me.colPRESMR_CDF_SMR_CODE_FK_PK.Width = 392
-        '
-        'rpSMR
-        '
-        Me.rpSMR.AutoHeight = False
-        Me.rpSMR.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.rpSMR.Name = "rpSMR"
-        '
-        'colPRESMR_DATE_SMR_PK
-        '
-        Me.colPRESMR_DATE_SMR_PK.Caption = "Date"
-        Me.colPRESMR_DATE_SMR_PK.FieldName = "PRESMR_DATE_SMR_PK"
-        Me.colPRESMR_DATE_SMR_PK.Name = "colPRESMR_DATE_SMR_PK"
-        Me.colPRESMR_DATE_SMR_PK.Visible = True
-        Me.colPRESMR_DATE_SMR_PK.VisibleIndex = 1
-        Me.colPRESMR_DATE_SMR_PK.Width = 128
-        '
-        'colPRESMR_ATR_CODE_FK_PK
-        '
-        Me.colPRESMR_ATR_CODE_FK_PK.Caption = "Avis commission Trans."
-        Me.colPRESMR_ATR_CODE_FK_PK.FieldName = "PRESMR_ATR_CODE_FK_PK"
-        Me.colPRESMR_ATR_CODE_FK_PK.Name = "colPRESMR_ATR_CODE_FK_PK"
-        Me.colPRESMR_ATR_CODE_FK_PK.Visible = True
-        Me.colPRESMR_ATR_CODE_FK_PK.VisibleIndex = 2
-        Me.colPRESMR_ATR_CODE_FK_PK.Width = 131
-        '
         'lkupEPH2
         '
         Me.lkupEPH2.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_CEPH_CODE_FK", True))
-        Me.lkupEPH2.Location = New System.Drawing.Point(114, 299)
+        Me.lkupEPH2.Location = New System.Drawing.Point(114, 373)
         Me.lkupEPH2.Name = "lkupEPH2"
         Me.lkupEPH2.Size = New System.Drawing.Size(76, 20)
         Me.lkupEPH2.TabIndex = 7
@@ -3008,17 +3240,17 @@ Partial Class Frm_Presentation
         Me.lkupEPH.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lkupEPH.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_CEPH_CODE_FK", True))
-        Me.lkupEPH.Location = New System.Drawing.Point(196, 300)
+        Me.lkupEPH.Location = New System.Drawing.Point(196, 374)
         Me.lkupEPH.Name = "lkupEPH"
         Me.lkupEPH.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lkupEPH.Size = New System.Drawing.Size(287, 20)
+        Me.lkupEPH.Size = New System.Drawing.Size(290, 20)
         Me.lkupEPH.TabIndex = 8
         Me.lkupEPH.Tag = "[NOADD][NOEDIT]"
         '
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(29, 302)
+        Me.Label27.Location = New System.Drawing.Point(29, 376)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(77, 13)
         Me.Label27.TabIndex = 49
@@ -3027,7 +3259,7 @@ Partial Class Frm_Presentation
         'lkupATC2
         '
         Me.lkupATC2.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_CATC_CODE_FK", True))
-        Me.lkupATC2.Location = New System.Drawing.Point(114, 273)
+        Me.lkupATC2.Location = New System.Drawing.Point(114, 351)
         Me.lkupATC2.Name = "lkupATC2"
         Me.lkupATC2.Size = New System.Drawing.Size(76, 20)
         Me.lkupATC2.TabIndex = 5
@@ -3038,17 +3270,17 @@ Partial Class Frm_Presentation
         Me.lkupATC.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lkupATC.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_CATC_CODE_FK", True))
-        Me.lkupATC.Location = New System.Drawing.Point(196, 274)
+        Me.lkupATC.Location = New System.Drawing.Point(196, 352)
         Me.lkupATC.Name = "lkupATC"
         Me.lkupATC.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lkupATC.Size = New System.Drawing.Size(287, 20)
+        Me.lkupATC.Size = New System.Drawing.Size(290, 20)
         Me.lkupATC.TabIndex = 6
         Me.lkupATC.Tag = "[NOADD][NOEDIT]"
         '
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(46, 278)
+        Me.Label28.Location = New System.Drawing.Point(46, 356)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(62, 13)
         Me.Label28.TabIndex = 45
@@ -3057,84 +3289,16 @@ Partial Class Frm_Presentation
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(77, 252)
+        Me.Label26.Location = New System.Drawing.Point(77, 333)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(29, 13)
         Me.Label26.TabIndex = 43
         Me.Label26.Text = "Liste"
         '
-        'GC18
-        '
-        Me.GC18.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GC18.DataMember = "PREDITX_TEXTE_DISPENSAT"
-        Me.GC18.EmbeddedNavigator.Buttons.Append.Visible = False
-        Me.GC18.EmbeddedNavigator.Buttons.Edit.Visible = False
-        Me.GC18.EmbeddedNavigator.Buttons.First.Enabled = False
-        Me.GC18.EmbeddedNavigator.Buttons.First.Visible = False
-        Me.GC18.EmbeddedNavigator.Buttons.Last.Enabled = False
-        Me.GC18.EmbeddedNavigator.Buttons.Last.Visible = False
-        Me.GC18.EmbeddedNavigator.Buttons.Next.Enabled = False
-        Me.GC18.EmbeddedNavigator.Buttons.Next.Visible = False
-        Me.GC18.EmbeddedNavigator.Buttons.NextPage.Enabled = False
-        Me.GC18.EmbeddedNavigator.Buttons.NextPage.Visible = False
-        Me.GC18.EmbeddedNavigator.Buttons.Prev.Enabled = False
-        Me.GC18.EmbeddedNavigator.Buttons.Prev.Visible = False
-        Me.GC18.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
-        Me.GC18.EmbeddedNavigator.Buttons.PrevPage.Visible = False
-        Me.GC18.EmbeddedNavigator.Name = ""
-        Me.GC18.EmbeddedNavigator.TextStringFormat = ""
-        Me.GC18.Location = New System.Drawing.Point(12, 175)
-        Me.GC18.MainView = Me.GV18
-        Me.GC18.Name = "GC18"
-        Me.GC18.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemMemoEdit1})
-        Me.GC18.Size = New System.Drawing.Size(471, 67)
-        Me.GC18.TabIndex = 3
-        Me.GC18.UseEmbeddedNavigator = True
-        Me.GC18.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV18})
-        '
-        'GV18
-        '
-        Me.GV18.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPREDITX_PRE_CODE_FK_PK, Me.colPREDITX_TEXTE})
-        Me.GV18.GridControl = Me.GC18
-        Me.GV18.GroupFormat = ""
-        Me.GV18.GroupPanelText = " "
-        Me.GV18.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Never
-        Me.GV18.Name = "GV18"
-        Me.GV18.OptionsCustomization.AllowRowSizing = True
-        Me.GV18.OptionsNavigation.AutoFocusNewRow = True
-        Me.GV18.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
-        Me.GV18.OptionsView.ShowColumnHeaders = False
-        Me.GV18.OptionsView.ShowDetailButtons = False
-        Me.GV18.OptionsView.ShowGroupPanel = False
-        Me.GV18.OptionsView.ShowHorzLines = False
-        Me.GV18.OptionsView.ShowIndicator = False
-        Me.GV18.RowHeight = 42
-        Me.GV18.ScrollStyle = DevExpress.XtraGrid.Views.Grid.ScrollStyleFlags.LiveVertScroll
-        '
-        'colPREDITX_PRE_CODE_FK_PK
-        '
-        Me.colPREDITX_PRE_CODE_FK_PK.Caption = "PREDITX_PRE_CODE_FK_PK"
-        Me.colPREDITX_PRE_CODE_FK_PK.FieldName = "PREDITX_PRE_CODE_FK_PK"
-        Me.colPREDITX_PRE_CODE_FK_PK.Name = "colPREDITX_PRE_CODE_FK_PK"
-        '
-        'colPREDITX_TEXTE
-        '
-        Me.colPREDITX_TEXTE.Caption = "PREDITX_TEXTE"
-        Me.colPREDITX_TEXTE.ColumnEdit = Me.RepositoryItemMemoEdit1
-        Me.colPREDITX_TEXTE.FieldName = "PREDITX_TEXTE"
-        Me.colPREDITX_TEXTE.Name = "colPREDITX_TEXTE"
-        Me.colPREDITX_TEXTE.Visible = True
-        Me.colPREDITX_TEXTE.VisibleIndex = 0
-        '
-        'RepositoryItemMemoEdit1
-        '
-        Me.RepositoryItemMemoEdit1.Name = "RepositoryItemMemoEdit1"
-        '
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(10, 159)
+        Me.Label25.Location = New System.Drawing.Point(10, 150)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(111, 13)
         Me.Label25.TabIndex = 40
@@ -3147,7 +3311,7 @@ Partial Class Frm_Presentation
         Me.TextEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "PRE_PRESENTATION.PRE_CONSAPOUV", True))
         Me.TextEdit1.Location = New System.Drawing.Point(181, 4)
         Me.TextEdit1.Name = "TextEdit1"
-        Me.TextEdit1.Size = New System.Drawing.Size(302, 20)
+        Me.TextEdit1.Size = New System.Drawing.Size(589, 20)
         Me.TextEdit1.TabIndex = 0
         '
         'Label24
@@ -3165,7 +3329,7 @@ Partial Class Frm_Presentation
         Me.XtraTabPage6.Controls.Add(Me.gcPropDoc)
         Me.XtraTabPage6.Controls.Add(Me.PanelControl1)
         Me.XtraTabPage6.Name = "XtraTabPage6"
-        Me.XtraTabPage6.Size = New System.Drawing.Size(493, 417)
+        Me.XtraTabPage6.Size = New System.Drawing.Size(780, 466)
         Me.XtraTabPage6.Text = "Document"
         '
         'PanelControl2
@@ -3175,7 +3339,7 @@ Partial Class Frm_Presentation
         Me.PanelControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl2.Location = New System.Drawing.Point(0, 31)
         Me.PanelControl2.Name = "PanelControl2"
-        Me.PanelControl2.Size = New System.Drawing.Size(493, 300)
+        Me.PanelControl2.Size = New System.Drawing.Size(780, 349)
         Me.PanelControl2.TabIndex = 8
         Me.PanelControl2.Text = "PanelControl2"
         '
@@ -3185,7 +3349,7 @@ Partial Class Frm_Presentation
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel10.Location = New System.Drawing.Point(2, 2)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(402, 296)
+        Me.Panel10.Size = New System.Drawing.Size(689, 345)
         Me.Panel10.TabIndex = 6
         '
         'gcDocuments
@@ -3195,7 +3359,7 @@ Partial Class Frm_Presentation
         Me.gcDocuments.Location = New System.Drawing.Point(0, 0)
         Me.gcDocuments.MainView = Me.gvDocuments
         Me.gcDocuments.Name = "gcDocuments"
-        Me.gcDocuments.Size = New System.Drawing.Size(402, 296)
+        Me.gcDocuments.Size = New System.Drawing.Size(689, 345)
         Me.gcDocuments.TabIndex = 3
         Me.gcDocuments.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.gvDocuments})
         '
@@ -3247,9 +3411,9 @@ Partial Class Frm_Presentation
         Me.Panel9.Controls.Add(Me.btAperçu)
         Me.Panel9.Controls.Add(Me.btnImporter)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel9.Location = New System.Drawing.Point(404, 2)
+        Me.Panel9.Location = New System.Drawing.Point(691, 2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(87, 296)
+        Me.Panel9.Size = New System.Drawing.Size(87, 345)
         Me.Panel9.TabIndex = 5
         '
         'bSupprimer
@@ -3296,9 +3460,9 @@ Partial Class Frm_Presentation
         Me.gcPropDoc.Controls.Add(Me.txtLibelle)
         Me.gcPropDoc.Controls.Add(Me.LabelControl6)
         Me.gcPropDoc.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.gcPropDoc.Location = New System.Drawing.Point(0, 331)
+        Me.gcPropDoc.Location = New System.Drawing.Point(0, 380)
         Me.gcPropDoc.Name = "gcPropDoc"
-        Me.gcPropDoc.Size = New System.Drawing.Size(493, 86)
+        Me.gcPropDoc.Size = New System.Drawing.Size(780, 86)
         Me.gcPropDoc.TabIndex = 9
         Me.gcPropDoc.Text = "Propriété document"
         '
@@ -3376,7 +3540,7 @@ Partial Class Frm_Presentation
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl1.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl1.Name = "PanelControl1"
-        Me.PanelControl1.Size = New System.Drawing.Size(493, 31)
+        Me.PanelControl1.Size = New System.Drawing.Size(780, 31)
         Me.PanelControl1.TabIndex = 7
         Me.PanelControl1.Text = "PanelControl1"
         '
@@ -3638,10 +3802,22 @@ Partial Class Frm_Presentation
         '
         Me.Precpss_TA.ClearBeforeFill = True
         '
+        'PrevolsoL_VOLUME_SOLUTIONTableAdapter1
+        '
+        Me.PrevolsoL_VOLUME_SOLUTIONTableAdapter1.ClearBeforeFill = True
+        '
+        'PrevolsoL
+        '
+        Me.PrevolsoL.ClearBeforeFill = True
+        '
+        'PREDISPMAX
+        '
+        Me.PREDISPMAX.ClearBeforeFill = True
+        '
         'Frm_Presentation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.ClientSize = New System.Drawing.Size(914, 624)
+        Me.ClientSize = New System.Drawing.Size(919, 624)
         Me.Name = "Frm_Presentation"
         Me.Text = "Présentation"
         Me.Pan.ResumeLayout(False)
@@ -3664,13 +3840,6 @@ Partial Class Frm_Presentation
         Me.XtraTabPage1.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel3.ResumeLayout(False)
-        CType(Me.GC5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GV5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.rpCrtCmpl, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GC4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GV4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.rpMat, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         CType(Me.GC3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GV3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3686,9 +3855,20 @@ Partial Class Frm_Presentation
         CType(Me.GC1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GV1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rpCommentaire, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
         CType(Me.GC2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GV2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkupCont, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtVolume.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lkupUnite.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        CType(Me.GC5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rpCrtCmpl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GC4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rpMat, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.TextEdit4.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3762,6 +3942,15 @@ Partial Class Frm_Presentation
         Me.XtraTabPage5.ResumeLayout(False)
         Me.pan5.ResumeLayout(False)
         Me.pan5.PerformLayout()
+        CType(Me.GCDisp, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GVDisp, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lkupDispMax, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GC19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rpSMR, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GC18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkup_Liste.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Pan_Lieu_Commentaire.ResumeLayout(False)
         CType(Me.GC17, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3770,16 +3959,10 @@ Partial Class Frm_Presentation
         CType(Me.GC16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GV16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rpPredili, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GC19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GV19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.rpSMR, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkupEPH2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkupEPH.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkupATC2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkupATC.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GC18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GV18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TextEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabPage6.ResumeLayout(False)
         CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3828,8 +4011,6 @@ Partial Class Frm_Presentation
     Friend WithEvents GV As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GC1 As DevExpress.XtraGrid.GridControl
     Friend WithEvents GV1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents GC2 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GV2 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GC4 As DevExpress.XtraGrid.GridControl
     Friend WithEvents GV4 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GC5 As DevExpress.XtraGrid.GridControl
@@ -3878,10 +4059,6 @@ Partial Class Frm_Presentation
     Friend WithEvents rpCommentaire As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents colPREUCD_NUMORD As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents CoconT_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.COCONT_COMPO_CONTENANTTableAdapter
-    Friend WithEvents colCOCONT_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colCOCONT_NUM_PK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colCOCONT_CDF_GAL_CODE_FK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colCOCONT_NUMORD As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents PreconT_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PRECONT_PRE_CONTENANTTableAdapter
     Friend WithEvents colPRECONT_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colPRECONT_COCONT_NUM_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
@@ -3907,7 +4084,6 @@ Partial Class Frm_Presentation
     Friend WithEvents colPRECAR_NUMORD As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents rpCrtCmpl As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents PrecaR_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PRECAR_PRESENTATION_CARACTCOMPTableAdapter
-    Friend WithEvents lkupCont As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents PrecemB_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PRECEMB_PRE_CAREMBALLAGETableAdapter
     Friend WithEvents colPRECEMB_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colPRECEMB_CDF_CAREMB_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
@@ -4017,27 +4193,15 @@ Partial Class Frm_Presentation
     Friend WithEvents colPREDICO_NUMORD As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents rpComDispo As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents PredicO_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREDICO_COMMENT_DISPENSATTableAdapter
-    Friend WithEvents GC18 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GV18 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents RepositoryItemMemoEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
     Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents lkupATC As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents Label28 As System.Windows.Forms.Label
-    Friend WithEvents colPREDITX_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colPREDITX_TEXTE As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents PreditX_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREDITX_TEXTE_DISPENSATTableAdapter
     Friend WithEvents lkupATC2 As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents lkupEPH2 As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents lkupEPH As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents Label27 As System.Windows.Forms.Label
-    Friend WithEvents GC19 As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GV19 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents rpSMR As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-    Friend WithEvents colPRESMR_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colPRESMR_CDF_SMR_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colPRESMR_DATE_SMR_PK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents colPRESMR_ATR_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents PresmR_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PRESMR_PRE_SMR_ATRTableAdapter
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents btADDSMR As DevExpress.XtraEditors.SimpleButton
@@ -4103,5 +4267,41 @@ Partial Class Frm_Presentation
     Friend WithEvents RepositoryItemImageComboBox1 As DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox
     Friend WithEvents RepositoryItemLookUpEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents Precpss_TA As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PRECPSSTableAdapter
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents txtVolume As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents lkupUnite As DevExpress.XtraEditors.LookUpEdit
+    Friend WithEvents PrevolsoL_VOLUME_SOLUTIONTableAdapter1 As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREVOLSOL_VOLUME_SOLUTIONTableAdapter
+    Friend WithEvents PrevolsoL As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREVOLSOL_VOLUME_SOLUTIONTableAdapter
+    Friend WithEvents GC18 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GV18 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents colPREDITX_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colPREDITX_TEXTE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemMemoEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
+    Friend WithEvents GC19 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GV19 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents colPRESMR_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colPRESMR_CDF_SMR_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents rpSMR As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents colPRESMR_DATE_SMR_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colPRESMR_ATR_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents PREDISPMAX As Theriaque.dsTheriaque_Nomenclature2TableAdapters.PREDISPMAX_PRE_DISP_MAXIMALETableAdapter
+    Friend WithEvents colPREDISP_DOSEFRAC As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents Panel12 As System.Windows.Forms.Panel
+    Friend WithEvents GC2 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GV2 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents colCOCONT_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colCOCONT_NUM_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colCOCONT_CDF_GAL_CODE_FK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents lkupCont As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents colCOCONT_NUMORD As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GCDisp As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GVDisp As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents colPREDISPMAX_PRE_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colPREDISPMAX_CDF_TYPE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents lkupDispMax As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents colPREDISPMAX_MAXUCD As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colPREDISPMAX_MAXCIP As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colPREDISPMAX_PRE_CIP13 As DevExpress.XtraGrid.Columns.GridColumn
 
 End Class

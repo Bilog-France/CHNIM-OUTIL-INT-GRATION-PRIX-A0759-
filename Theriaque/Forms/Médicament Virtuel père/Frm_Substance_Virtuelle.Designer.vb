@@ -41,6 +41,14 @@ Partial Class Frm_Substance_Virtuelle
         Me.EditCode = New DevExpress.XtraEditors.TextEdit
         Me.Label3 = New System.Windows.Forms.Label
         Me.SAVSAC_SUBVIRT_SUBACTableAdapter = New Theriaque.dsTheriaque_Virtuel_PereTableAdapters.SAVSAC_SUBVIRT_SUBACTableAdapter
+        Me.XtraTabControl2 = New DevExpress.XtraTab.XtraTabControl
+        Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage
+        Me.GC2 = New DevExpress.XtraGrid.GridControl
+        Me.GV2 = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colSYSAV_LIBELLE = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colSYSAV_SAV_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.RepositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.SYSAV = New Theriaque.dsTheriaque_Virtuel_PereTableAdapters.SYSAV_SYNONYME_SUBST_VIRTTableAdapter
         Me.Pan.SuspendLayout()
         Me.PanMain.SuspendLayout()
         Me.PanTop.SuspendLayout()
@@ -62,6 +70,12 @@ Partial Class Frm_Substance_Virtuelle
         Me.Panel2.SuspendLayout()
         CType(Me.EditCodeRef.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EditCode.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.XtraTabControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.XtraTabControl2.SuspendLayout()
+        Me.XtraTabPage2.SuspendLayout()
+        CType(Me.GC2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Pan
@@ -70,6 +84,7 @@ Partial Class Frm_Substance_Virtuelle
         '
         'PanMain
         '
+        Me.PanMain.Controls.Add(Me.XtraTabControl2)
         Me.PanMain.Controls.Add(Me.XtraTabControl1)
         Me.PanMain.Controls.Add(Me.GroupBox1)
         Me.PanMain.Location = New System.Drawing.Point(0, 36)
@@ -133,11 +148,10 @@ Partial Class Frm_Substance_Virtuelle
         '
         'XtraTabControl1
         '
-        Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(0, 97)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(1, 230)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(425, 259)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(425, 133)
         Me.XtraTabControl1.TabIndex = 0
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1})
         Me.XtraTabControl1.Text = "XtraTabControl1"
@@ -148,13 +162,13 @@ Partial Class Frm_Substance_Virtuelle
         Me.XtraTabPage1.Appearance.PageClient.Options.UseBackColor = True
         Me.XtraTabPage1.Controls.Add(Me.GridControl1)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(416, 228)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(416, 102)
         Me.XtraTabPage1.Tag = "[EDIT][ADD]"
         Me.XtraTabPage1.Text = "Substance fille"
         '
         'GridControl1
         '
-        Me.GridControl1.DataMember = "SAV_SUBSTANCE_VIRTUELLE.SAV_SUBVIRT_PK"
+        Me.GridControl1.DataMember = "SAVSAC_SUBVIRT_SUBAC"
         Me.GridControl1.DataSource = Me.DsTheriaqueVirtuelPere
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.EmbeddedNavigator.Buttons.Edit.Visible = False
@@ -170,7 +184,7 @@ Partial Class Frm_Substance_Virtuelle
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lstsav})
-        Me.GridControl1.Size = New System.Drawing.Size(416, 228)
+        Me.GridControl1.Size = New System.Drawing.Size(416, 102)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.UseEmbeddedNavigator = True
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -185,7 +199,7 @@ Partial Class Frm_Substance_Virtuelle
         'SAV_CODE_SQ_PK
         '
         Me.SAV_CODE_SQ_PK.Caption = "Code"
-        Me.SAV_CODE_SQ_PK.FieldName = "SAVSAC_SAV_CODE_FK_PK"
+        Me.SAV_CODE_SQ_PK.FieldName = "SAVSAC_SAC_CODE_FK_PK"
         Me.SAV_CODE_SQ_PK.Name = "SAV_CODE_SQ_PK"
         Me.SAV_CODE_SQ_PK.Visible = True
         Me.SAV_CODE_SQ_PK.VisibleIndex = 0
@@ -194,7 +208,7 @@ Partial Class Frm_Substance_Virtuelle
         '
         Me.SAV_LIBELLE.Caption = "Libellé"
         Me.SAV_LIBELLE.ColumnEdit = Me.lstsav
-        Me.SAV_LIBELLE.FieldName = "SAVSAC_SAV_CODE_FK_PK"
+        Me.SAV_LIBELLE.FieldName = "SAVSAC_SAC_CODE_FK_PK"
         Me.SAV_LIBELLE.Name = "SAV_LIBELLE"
         Me.SAV_LIBELLE.Visible = True
         Me.SAV_LIBELLE.VisibleIndex = 1
@@ -208,7 +222,7 @@ Partial Class Frm_Substance_Virtuelle
         'colinvisible
         '
         Me.colinvisible.Caption = "GridColumn1"
-        Me.colinvisible.FieldName = "SAVSAC_SAC_CODE_FK_PK"
+        Me.colinvisible.FieldName = "SAVSAC_SAV_CODE_FK_PK"
         Me.colinvisible.Name = "colinvisible"
         '
         'SAV_SUBSTANCE_VIRTUELLEBindingSource
@@ -312,6 +326,79 @@ Partial Class Frm_Substance_Virtuelle
         '
         Me.SAVSAC_SUBVIRT_SUBACTableAdapter.ClearBeforeFill = True
         '
+        'XtraTabControl2
+        '
+        Me.XtraTabControl2.Location = New System.Drawing.Point(0, 98)
+        Me.XtraTabControl2.Name = "XtraTabControl2"
+        Me.XtraTabControl2.SelectedTabPage = Me.XtraTabPage2
+        Me.XtraTabControl2.Size = New System.Drawing.Size(425, 131)
+        Me.XtraTabControl2.TabIndex = 14
+        Me.XtraTabControl2.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})
+        Me.XtraTabControl2.Text = "XtraTabControl2"
+        '
+        'XtraTabPage2
+        '
+        Me.XtraTabPage2.Appearance.PageClient.BackColor = System.Drawing.Color.Tomato
+        Me.XtraTabPage2.Appearance.PageClient.Options.UseBackColor = True
+        Me.XtraTabPage2.Controls.Add(Me.GC2)
+        Me.XtraTabPage2.Name = "XtraTabPage2"
+        Me.XtraTabPage2.Size = New System.Drawing.Size(416, 100)
+        Me.XtraTabPage2.Tag = "[EDIT][ADD]"
+        Me.XtraTabPage2.Text = "Synonymes"
+        '
+        'GC2
+        '
+        Me.GC2.DataSource = Me.DsTheriaqueVirtuelPere
+        Me.GC2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GC2.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC2.EmbeddedNavigator.Name = ""
+        Me.GC2.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
+        Me.GC2.Location = New System.Drawing.Point(0, 0)
+        Me.GC2.MainView = Me.GV2
+        Me.GC2.Name = "GC2"
+        Me.GC2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemLookUpEdit1})
+        Me.GC2.Size = New System.Drawing.Size(416, 100)
+        Me.GC2.TabIndex = 0
+        Me.GC2.UseEmbeddedNavigator = True
+        Me.GC2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV2})
+        '
+        'GV2
+        '
+        Me.GV2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colSYSAV_LIBELLE, Me.colSYSAV_SAV_CODE_FK_PK})
+        Me.GV2.GridControl = Me.GC2
+        Me.GV2.Name = "GV2"
+        Me.GV2.OptionsView.ShowGroupPanel = False
+        '
+        'colSYSAV_LIBELLE
+        '
+        Me.colSYSAV_LIBELLE.Caption = "Libellé"
+        Me.colSYSAV_LIBELLE.FieldName = "SYSAV_LIBELLE"
+        Me.colSYSAV_LIBELLE.Name = "colSYSAV_LIBELLE"
+        Me.colSYSAV_LIBELLE.Visible = True
+        Me.colSYSAV_LIBELLE.VisibleIndex = 0
+        '
+        'colSYSAV_SAV_CODE_FK_PK
+        '
+        Me.colSYSAV_SAV_CODE_FK_PK.Caption = "SYFOV_FOV_CODE_FK_PK"
+        Me.colSYSAV_SAV_CODE_FK_PK.FieldName = "SYSAV_SAV_CODE_FK_PK"
+        Me.colSYSAV_SAV_CODE_FK_PK.Name = "colSYSAV_SAV_CODE_FK_PK"
+        '
+        'RepositoryItemLookUpEdit1
+        '
+        Me.RepositoryItemLookUpEdit1.AutoHeight = False
+        Me.RepositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit1.Name = "RepositoryItemLookUpEdit1"
+        '
+        'SYSAV
+        '
+        Me.SYSAV.ClearBeforeFill = True
+        '
         'Frm_Substance_Virtuelle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -343,6 +430,12 @@ Partial Class Frm_Substance_Virtuelle
         Me.Panel2.PerformLayout()
         CType(Me.EditCodeRef.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EditCode.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.XtraTabControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.XtraTabControl2.ResumeLayout(False)
+        Me.XtraTabPage2.ResumeLayout(False)
+        CType(Me.GC2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -367,5 +460,13 @@ Partial Class Frm_Substance_Virtuelle
     Friend WithEvents colinvisible As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lstsav As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents SAVSAC_SUBVIRT_SUBACTableAdapter As Theriaque.dsTheriaque_Virtuel_PereTableAdapters.SAVSAC_SUBVIRT_SUBACTableAdapter
+    Friend WithEvents XtraTabControl2 As DevExpress.XtraTab.XtraTabControl
+    Friend WithEvents XtraTabPage2 As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents GC2 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GV2 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents colSYSAV_LIBELLE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents colSYSAV_SAV_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents SYSAV As Theriaque.dsTheriaque_Virtuel_PereTableAdapters.SYSAV_SYNONYME_SUBST_VIRTTableAdapter
 
 End Class

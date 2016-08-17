@@ -621,8 +621,8 @@ Public Class Frm_Specialite
     Public Overrides Sub Ajouter()
         EmptyDataTable()
         Me.BindingContext(Me.MasterDataSet, MasterTable).AddNew()
-        'SetCode_MAx(MasterTable, txtCode)
-        txtCode.Text = Get_MAxCode() 'GetMaxSP_ID()
+        SetCode_MAx(MasterTable, txtCode)
+        'txtCode.Text = Get_MAxCode() 'GetMaxSP_ID()
         CodE = InvalidCode
         bModeDuplication = False
         Me.gcDocument.DataSource = New ArrayList()
@@ -789,15 +789,25 @@ Public Class Frm_Specialite
 
         'MyBase.Valider()
 
-        If Not SpCodeExist(txtCode.Text) Then
-            GetMaxSP_ID()
-        End If
+        'If Not SpCodeExist(txtCode.Text) Then
+        '    GetMaxSP_ID()
+        'End If
 
         DateEdit1.EditValue = Now.Date
         DateEdit1.DateTime = Now.Date
 
+       
+
         Me.BindingContext(Me.MasterDataSet, MasterTable).EndCurrentEdit()
         SP_TA.Update(Me.DsTheriaque_Nomenclature1.SP_SPECIALITE)
+
+        If (String.IsNullOrEmpty(txtUCD.Text)) Then
+            cn.Execute("update theriaque.SP_SPECIALITE set SP_CIPUCD=null where SP_CODE_SQ_PK= " & txtCode.Text)
+        End If
+
+        If (String.IsNullOrEmpty(txtUCD13.Text)) Then
+            cn.Execute("update theriaque.SP_SPECIALITE set SP_CIPUCD13=null where SP_CODE_SQ_PK= " & txtCode.Text)
+        End If
 
         'Modifier l'ordre de SPTEN et SPADM aprés SP_SECIALITE
         Me.BindingContext(Me.MasterDataSet, SPTEN_SPECIALITE_TENEUR).EndCurrentEdit()
@@ -1129,8 +1139,8 @@ Public Class Frm_Specialite
 
         'Construction de la nouvelle fiche avec les données de la fiche de base
         Me.BindingContext(Me.MasterDataSet, MasterTable).AddNew()
-        'SetCode_MAx(MasterTable, txtCode)
-        txtCode.Text = Get_MAxCode()
+        SetCode_MAx(MasterTable, txtCode)
+        'txtCode.Text = Get_MAxCode()
         CodE = InvalidCode
 
         'Terrain
@@ -1989,6 +1999,17 @@ Public Class Frm_Specialite
             End If
         End If
 
+
+        If Ctrl.Name.ToLower = "txtLibelle".ToLower Or AllCtrl Then
+            'End If
+            If txtLibelle.Text = "" Then
+                Me.DxErrorProvider.SetError(txtLibelle, "Le libellé ne doit pas etre vide")
+                Return False
+            Else
+                Me.DxErrorProvider.SetError(txtLibelle, "")
+            End If
+        End If
+
         If Ctrl.Name.ToLower = "lkupProduit".ToLower Or AllCtrl Then
             If Not TestProduit_Libelle() Then
                 Return False
@@ -1999,13 +2020,20 @@ Public Class Frm_Specialite
             '    Exit Function
             'End If
             'End If
-            If lkupProduit.Text = "" Then Return False
+            If lkupProduit.Text = "" Then
+                Me.DxErrorProvider.SetError(lkupProduit, "produit ne doit pas etre vide")
+                Return False
+            Else
+                Me.DxErrorProvider.SetError(lkupProduit, "")
+            End If
         End If
+
         If Ctrl.Name.ToLower = "txtCIS".ToLower Or AllCtrl Then
             If Not Code_CIS(txtCIS.Text, txtCIS, Me.DxErrorProvider) Then
                 Return False
             End If
         End If
+
         If Ctrl.Name.ToLower = "txtUCD".ToLower Or AllCtrl Then
             If Not Code_UCD(txtUCD.Text, txtUCD, Me.DxErrorProvider, txtCode.Text) Then
                 Return False
@@ -2024,6 +2052,25 @@ Public Class Frm_Specialite
                 Me.DxErrorProvider.SetError(TxtEdit_APHP, "")
             End If
         End If
+
+        If Ctrl.Name.ToLower = "lkupListe".ToLower Or AllCtrl Then
+            If lkupListe.Text = "" Then
+                Me.DxErrorProvider.SetError(lkupListe, "laboratoire ne doit pas etre vide")
+                Return False
+            Else
+                Me.DxErrorProvider.SetError(lkupListe, "")
+            End If
+        End If
+
+        If Ctrl.Name.ToLower = "lkupStLab".ToLower Or AllCtrl Then
+            If lkupStLab.Text = "" Then
+                Me.DxErrorProvider.SetError(lkupStLab, "laboratoire ne doit pas etre vide")
+                Return False
+            Else
+                Me.DxErrorProvider.SetError(lkupStLab, "")
+            End If
+        End If
+
         If Not Tab_TA2 And CodE <> InvalidCode Then LoadTab_2()
         If Not Tab_TA3 And CodE <> InvalidCode Then LoadTab_3()
 
@@ -2451,7 +2498,7 @@ Public Class Frm_Specialite
 
     Private Sub txtLibelle_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtLibelle.Validated
         TestProduit_Libelle()
-        ValideControl(sender, False)
+        'ValideControl(sender, False)
     End Sub
 
     Private Sub GV10_InitNewRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GV10.InitNewRow

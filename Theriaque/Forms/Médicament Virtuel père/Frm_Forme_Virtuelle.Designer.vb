@@ -26,10 +26,12 @@ Partial Class Frm_Forme_Virtuelle
         Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage
         Me.GridControl1 = New DevExpress.XtraGrid.GridControl
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView
-        Me.FOV_CODE_SQ_PK = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.FOV_LIBELLE = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.lstcdf = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.colFOVCFO_CDF_CFO_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.collibelle = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.lstcdf1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
         Me.colinvisible = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.lkuptest = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.cmbTest = New DevExpress.XtraEditors.Repository.RepositoryItemComboBox
         Me.FOVFORMEVIRTUELLEBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.Panel3 = New System.Windows.Forms.Panel
@@ -42,6 +44,15 @@ Partial Class Frm_Forme_Virtuelle
         Me.Label3 = New System.Windows.Forms.Label
         Me.FOVCFO = New System.Windows.Forms.BindingSource(Me.components)
         Me.FOVCFO_FORMEVIRT_COMPFORMETableAdapter = New Theriaque.dsTheriaque_Virtuel_PereTableAdapters.FOVCFO_FORMEVIRT_COMPFORMETableAdapter
+        Me.XtraTabControl2 = New DevExpress.XtraTab.XtraTabControl
+        Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage
+        Me.GC2 = New DevExpress.XtraGrid.GridControl
+        Me.GV2 = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colSYFOV_LIBELLE = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colSYFOV_FOV_CODE_FK_PK = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.RepositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.SYFOV = New Theriaque.dsTheriaque_Virtuel_PereTableAdapters.SYFOV_SYNONYME_FORME_VIRTTableAdapter
+        Me.FrecvO_RECONSADM_VOIETableAdapter1 = New Theriaque.dsTheriaque_Reconst_AdministTableAdapters.FRECVO_RECONSADM_VOIETableAdapter
         Me.Pan.SuspendLayout()
         Me.PanMain.SuspendLayout()
         Me.PanTop.SuspendLayout()
@@ -55,7 +66,9 @@ Partial Class Frm_Forme_Virtuelle
         Me.XtraTabPage1.SuspendLayout()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.lstcdf, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lstcdf1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lkuptest, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cmbTest, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FOVFORMEVIRTUELLEBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -64,6 +77,12 @@ Partial Class Frm_Forme_Virtuelle
         CType(Me.EditCodeRef.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EditCode.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FOVCFO, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.XtraTabControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.XtraTabControl2.SuspendLayout()
+        Me.XtraTabPage2.SuspendLayout()
+        CType(Me.GC2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Pan
@@ -72,6 +91,7 @@ Partial Class Frm_Forme_Virtuelle
         '
         'PanMain
         '
+        Me.PanMain.Controls.Add(Me.XtraTabControl2)
         Me.PanMain.Controls.Add(Me.XtraTabControl1)
         Me.PanMain.Controls.Add(Me.GroupBox1)
         Me.PanMain.Location = New System.Drawing.Point(0, 41)
@@ -135,11 +155,10 @@ Partial Class Frm_Forme_Virtuelle
         '
         'XtraTabControl1
         '
-        Me.XtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XtraTabControl1.Location = New System.Drawing.Point(0, 97)
+        Me.XtraTabControl1.Location = New System.Drawing.Point(4, 229)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(425, 254)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(421, 123)
         Me.XtraTabControl1.TabIndex = 0
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1})
         Me.XtraTabControl1.Text = "XtraTabControl1"
@@ -150,14 +169,12 @@ Partial Class Frm_Forme_Virtuelle
         Me.XtraTabPage1.Appearance.PageClient.Options.UseBackColor = True
         Me.XtraTabPage1.Controls.Add(Me.GridControl1)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(416, 223)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(412, 92)
         Me.XtraTabPage1.Tag = "[EDIT][ADD]"
         Me.XtraTabPage1.Text = "Forme fille"
         '
         'GridControl1
         '
-        Me.GridControl1.DataMember = "FOV_FORME_VIRTUELLE.FOV_FOVCFO_PK"
-        Me.GridControl1.DataSource = Me.DsTheriaqueVirtuelPere
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.EmbeddedNavigator.Buttons.Edit.Visible = False
         Me.GridControl1.EmbeddedNavigator.Buttons.First.Visible = False
@@ -171,47 +188,59 @@ Partial Class Frm_Forme_Virtuelle
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lstcdf})
-        Me.GridControl1.Size = New System.Drawing.Size(416, 223)
+        Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lstcdf1, Me.lkuptest, Me.cmbTest})
+        Me.GridControl1.Size = New System.Drawing.Size(412, 92)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.UseEmbeddedNavigator = True
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
         'GridView1
         '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.FOV_CODE_SQ_PK, Me.FOV_LIBELLE, Me.colinvisible})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colFOVCFO_CDF_CFO_CODE_FK_PK, Me.collibelle, Me.colinvisible})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsView.ShowGroupPanel = False
         '
-        'FOV_CODE_SQ_PK
+        'colFOVCFO_CDF_CFO_CODE_FK_PK
         '
-        Me.FOV_CODE_SQ_PK.Caption = "Code"
-        Me.FOV_CODE_SQ_PK.FieldName = "FOVCFO_CDF_CFO_CODE_FK_PK"
-        Me.FOV_CODE_SQ_PK.Name = "FOV_CODE_SQ_PK"
-        Me.FOV_CODE_SQ_PK.Visible = True
-        Me.FOV_CODE_SQ_PK.VisibleIndex = 0
+        Me.colFOVCFO_CDF_CFO_CODE_FK_PK.Caption = "Code"
+        Me.colFOVCFO_CDF_CFO_CODE_FK_PK.FieldName = "FOVCFO_CDF_CFO_CODE_FK_PK"
+        Me.colFOVCFO_CDF_CFO_CODE_FK_PK.Name = "colFOVCFO_CDF_CFO_CODE_FK_PK"
+        Me.colFOVCFO_CDF_CFO_CODE_FK_PK.Visible = True
+        Me.colFOVCFO_CDF_CFO_CODE_FK_PK.VisibleIndex = 0
         '
-        'FOV_LIBELLE
+        'collibelle
         '
-        Me.FOV_LIBELLE.Caption = "Libellé"
-        Me.FOV_LIBELLE.ColumnEdit = Me.lstcdf
-        Me.FOV_LIBELLE.FieldName = "FOVCFO_CDF_CFO_CODE_FK_PK"
-        Me.FOV_LIBELLE.Name = "FOV_LIBELLE"
-        Me.FOV_LIBELLE.Visible = True
-        Me.FOV_LIBELLE.VisibleIndex = 1
+        Me.collibelle.Caption = "Libellé"
+        Me.collibelle.ColumnEdit = Me.lstcdf1
+        Me.collibelle.FieldName = "FOVCFO_CDF_CFO_CODE_FK_PK"
+        Me.collibelle.Name = "collibelle"
+        Me.collibelle.Visible = True
+        Me.collibelle.VisibleIndex = 1
         '
-        'lstcdf
+        'lstcdf1
         '
-        Me.lstcdf.AutoHeight = False
-        Me.lstcdf.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lstcdf.Name = "lstcdf"
+        Me.lstcdf1.AutoHeight = False
+        Me.lstcdf1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lstcdf1.Name = "lstcdf1"
         '
         'colinvisible
         '
         Me.colinvisible.Caption = "GridColumn1"
         Me.colinvisible.FieldName = "FOVCFO_FOV_CODE_FK_PK"
         Me.colinvisible.Name = "colinvisible"
+        '
+        'lkuptest
+        '
+        Me.lkuptest.AutoHeight = False
+        Me.lkuptest.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lkuptest.Name = "lkuptest"
+        '
+        'cmbTest
+        '
+        Me.cmbTest.AutoHeight = False
+        Me.cmbTest.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.cmbTest.Name = "cmbTest"
         '
         'FOVFORMEVIRTUELLEBindingSource
         '
@@ -320,6 +349,83 @@ Partial Class Frm_Forme_Virtuelle
         '
         Me.FOVCFO_FORMEVIRT_COMPFORMETableAdapter.ClearBeforeFill = True
         '
+        'XtraTabControl2
+        '
+        Me.XtraTabControl2.Location = New System.Drawing.Point(4, 97)
+        Me.XtraTabControl2.Name = "XtraTabControl2"
+        Me.XtraTabControl2.SelectedTabPage = Me.XtraTabPage2
+        Me.XtraTabControl2.Size = New System.Drawing.Size(425, 131)
+        Me.XtraTabControl2.TabIndex = 15
+        Me.XtraTabControl2.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})
+        Me.XtraTabControl2.Text = "XtraTabControl2"
+        '
+        'XtraTabPage2
+        '
+        Me.XtraTabPage2.Appearance.PageClient.BackColor = System.Drawing.Color.Tomato
+        Me.XtraTabPage2.Appearance.PageClient.Options.UseBackColor = True
+        Me.XtraTabPage2.Controls.Add(Me.GC2)
+        Me.XtraTabPage2.Name = "XtraTabPage2"
+        Me.XtraTabPage2.Size = New System.Drawing.Size(416, 100)
+        Me.XtraTabPage2.Tag = "[EDIT][ADD]"
+        Me.XtraTabPage2.Text = "Synonymes"
+        '
+        'GC2
+        '
+        Me.GC2.DataSource = Me.DsTheriaqueVirtuelPere
+        Me.GC2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GC2.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC2.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC2.EmbeddedNavigator.Name = ""
+        Me.GC2.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
+        Me.GC2.Location = New System.Drawing.Point(0, 0)
+        Me.GC2.MainView = Me.GV2
+        Me.GC2.Name = "GC2"
+        Me.GC2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemLookUpEdit1})
+        Me.GC2.Size = New System.Drawing.Size(416, 100)
+        Me.GC2.TabIndex = 0
+        Me.GC2.UseEmbeddedNavigator = True
+        Me.GC2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV2})
+        '
+        'GV2
+        '
+        Me.GV2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colSYFOV_LIBELLE, Me.colSYFOV_FOV_CODE_FK_PK})
+        Me.GV2.GridControl = Me.GC2
+        Me.GV2.Name = "GV2"
+        Me.GV2.OptionsView.ShowGroupPanel = False
+        '
+        'colSYFOV_LIBELLE
+        '
+        Me.colSYFOV_LIBELLE.Caption = "Libellé"
+        Me.colSYFOV_LIBELLE.FieldName = "SYFOV_LIBELLE"
+        Me.colSYFOV_LIBELLE.Name = "colSYFOV_LIBELLE"
+        Me.colSYFOV_LIBELLE.Visible = True
+        Me.colSYFOV_LIBELLE.VisibleIndex = 0
+        '
+        'colSYFOV_FOV_CODE_FK_PK
+        '
+        Me.colSYFOV_FOV_CODE_FK_PK.Caption = "SYFOV_FOV_CODE_FK_PK"
+        Me.colSYFOV_FOV_CODE_FK_PK.FieldName = "SYFOV_FOV_CODE_FK_PK"
+        Me.colSYFOV_FOV_CODE_FK_PK.Name = "colSYFOV_FOV_CODE_FK_PK"
+        '
+        'RepositoryItemLookUpEdit1
+        '
+        Me.RepositoryItemLookUpEdit1.AutoHeight = False
+        Me.RepositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit1.Name = "RepositoryItemLookUpEdit1"
+        '
+        'SYFOV
+        '
+        Me.SYFOV.ClearBeforeFill = True
+        '
+        'FrecvO_RECONSADM_VOIETableAdapter1
+        '
+        Me.FrecvO_RECONSADM_VOIETableAdapter1.ClearBeforeFill = True
+        '
         'Frm_Forme_Virtuelle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -341,7 +447,9 @@ Partial Class Frm_Forme_Virtuelle
         Me.XtraTabPage1.ResumeLayout(False)
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.lstcdf, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lstcdf1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lkuptest, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cmbTest, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FOVFORMEVIRTUELLEBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
@@ -352,6 +460,12 @@ Partial Class Frm_Forme_Virtuelle
         CType(Me.EditCodeRef.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EditCode.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.FOVCFO, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.XtraTabControl2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.XtraTabControl2.ResumeLayout(False)
+        Me.XtraTabPage2.ResumeLayout(False)
+        CType(Me.GC2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -371,11 +485,22 @@ Partial Class Frm_Forme_Virtuelle
     Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
     Friend WithEvents FOVFORMEVIRTUELLEBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
-    Friend WithEvents FOV_CODE_SQ_PK As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents FOV_LIBELLE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colFOVCFO_CDF_CFO_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents collibelle As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colinvisible As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents lstcdf As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents lstcdf1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents FOVCFO As System.Windows.Forms.BindingSource
     Friend WithEvents FOVCFO_FORMEVIRT_COMPFORMETableAdapter As Theriaque.dsTheriaque_Virtuel_PereTableAdapters.FOVCFO_FORMEVIRT_COMPFORMETableAdapter
+    Friend WithEvents lkuptest As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents cmbTest As DevExpress.XtraEditors.Repository.RepositoryItemComboBox
+    Friend WithEvents XtraTabControl2 As DevExpress.XtraTab.XtraTabControl
+    Friend WithEvents XtraTabPage2 As DevExpress.XtraTab.XtraTabPage
+    Friend WithEvents GC2 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GV2 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents colSYFOV_LIBELLE As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colSYFOV_FOV_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents SYFOV As Theriaque.dsTheriaque_Virtuel_PereTableAdapters.SYFOV_SYNONYME_FORME_VIRTTableAdapter
+    Friend WithEvents FrecvO_RECONSADM_VOIETableAdapter1 As Theriaque.dsTheriaque_Reconst_AdministTableAdapters.FRECVO_RECONSADM_VOIETableAdapter
 
 End Class

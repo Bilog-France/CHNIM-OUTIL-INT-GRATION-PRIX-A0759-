@@ -10,6 +10,7 @@ Public Class Frm_CDF
 
     Public Overrides Function Chercher() As Boolean
         MyBase.Chercher()
+
         Dim decVal As Decimal
         Dim symbole As String
         Dim f As New Frm_Recherche
@@ -56,6 +57,7 @@ Public Class Frm_CDF
         Else
             Return False
         End If
+
     End Function
 
     Public Overrides Sub Ajouter()
@@ -93,7 +95,9 @@ Public Class Frm_CDF
     Public Overrides Sub Valider()
 
         If (txtCode.ErrorText.Trim().Equals("")) Then
+
             MyBase.Valider()
+
             'If _Code_CDF = "TP" Or _Code_CDF = "PA" Then
             '    Dim decVal As Decimal
 
@@ -156,6 +160,7 @@ Public Class Frm_CDF
             End If
 
             UpdateValNum()
+
         End If
 
     End Sub
@@ -270,7 +275,6 @@ Public Class Frm_CDF
 
     Private Sub InitVariable()
 
-        Dim dtR As DataTable
         FirstFocus = txtLibelle
         MasterDataSet = Me.DsTheriaque_Nomenclature21
         MasterTable = CDF_CODIF
@@ -322,28 +326,56 @@ Public Class Frm_CDF
             PanUniteUCUM.Visible = True
         End If
 
+        If _Code_CDF = "14" Or _Code_CDF = "29" Then
+            If (_Code_CDF = "29") Then
+                lblDureeMaxPresc.Text = lblDureeMaxPresc.Text.Replace("prescription", "dispensation")
+            End If
+            panDureeMaxPresc.Visible = True
+        End If
+
         Ctl_Off(txtCodePere)
         Ctl_Off(lkupCDF_CODE_PK)
         Ctl_Off(txtNCodif)
+
     End Sub
 
     Private Sub UpdateValNum()
-        If (String.IsNullOrEmpty(txtValeur.Text.Trim)) Then
-            Dim sSql As String
-            sSql = " Update theriaque.CDF_CODIF set CDF_VAL_NUM = null where CDF_NUMERO_PK='" & txtNCodif.Text & "' and CDF_CODE_PK='" & txtCode.Text & "'"
 
-            cn.Execute(sSql)
+        If _Code_CDF <> "14" And _Code_CDF <> "29" Then
+
+            If (String.IsNullOrEmpty(txtValeur.Text.Trim)) Then
+
+                Dim sSql As String
+                sSql = " Update theriaque.CDF_CODIF set CDF_VAL_NUM = null where CDF_NUMERO_PK='" & txtNCodif.Text & "' and CDF_CODE_PK='" & txtCode.Text & "'"
+                cn.Execute(sSql)
+
+            End If
+
+        Else
+
+            If (String.IsNullOrEmpty(txtDuree.Text.Trim)) Then
+
+                Dim sSql As String
+                sSql = " Update theriaque.CDF_CODIF set CDF_VAL_NUM = null where CDF_NUMERO_PK='" & txtNCodif.Text & "' and CDF_CODE_PK='" & txtCode.Text & "'"
+                cn.Execute(sSql)
+
+            End If
+
         End If
+
     End Sub
 
     Private Sub GV_InitNewRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GV.InitNewRow
+
         GV.SetRowCellValue(e.RowHandle, colSYCDF_CDF_CODE_FK, Me.txtCode.Text)
         GV.SetRowCellValue(e.RowHandle, colSYCDF_CDF_NUMERO_FK_PK, _Code_CDF)
         ModeFiche = eMode.Modification
         UpdateStateBouton()
+
     End Sub
 
     Private Sub GV2_InitNewRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GV2.InitNewRow
+
         GV2.SetRowCellValue(e.RowHandle, colCDFPF_CODEP_FK_PK, Me.txtCode.Text)
         GV2.SetRowCellValue(e.RowHandle, colCDFPF_NUMEROP_FK_PK, _Code_CDF)
         GV2.SetRowCellValue(e.RowHandle, colCDFPF_NUMEROF_FK_PK, _Code_CDF)
@@ -351,6 +383,7 @@ Public Class Frm_CDF
         GV2.SetFocusedRowCellValue(colCDFPF_NUMORD, Code_MAx(GV2, colCDFPF_NUMORD))
         ModeFiche = eMode.Modification
         UpdateStateBouton()
+
     End Sub
 
     Private Sub txtCode_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtCode.Validated
@@ -367,6 +400,7 @@ Public Class Frm_CDF
         Else
             ValideControl(sender, False)
         End If
+
     End Sub
 
     
@@ -561,10 +595,12 @@ Public Class Frm_CDF
         sSQL &= " and CDFCDFU_CDF_CODE_FK_PK=" & cn.SQLText(txtCode.Text)
         cn.Execute(sSQL)
 
-        If (Not String.IsNullOrEmpty(lkupUnite_UCUM.EditValue)) And lkupUnite_UCUM.EditValue <> 0 Then
-            sSQL = " INSERT INTO [theriaque].[theriaque].[CDFCDFU_CDFU]([CDFCDFU_CDFUCUM_CODE_FK_PK],[CDFCDFU_CDF_NUMERO_FK_PK],[CDFCDFU_CDF_CODE_FK_PK]) "
-            sSQL &= " VALUES(" & lkupUnite_UCUM.EditValue & "," & cn.SQLText(txtNCodif.Text) & "," & cn.SQLText(txtCode.Text) & ")"
-            cn.Execute(sSQL)
+        If lkupUnite_UCUM.EditValue IsNot System.DBNull.Value Then
+            If (Not String.IsNullOrEmpty(lkupUnite_UCUM.EditValue)) And lkupUnite_UCUM.EditValue <> 0 Then
+                sSQL = " INSERT INTO [theriaque].[theriaque].[CDFCDFU_CDFU]([CDFCDFU_CDFUCUM_CODE_FK_PK],[CDFCDFU_CDF_NUMERO_FK_PK],[CDFCDFU_CDF_CODE_FK_PK]) "
+                sSQL &= " VALUES(" & lkupUnite_UCUM.EditValue & "," & cn.SQLText(txtNCodif.Text) & "," & cn.SQLText(txtCode.Text) & ")"
+                cn.Execute(sSQL)
+            End If
         End If
 
     End Sub
@@ -573,7 +609,7 @@ Public Class Frm_CDF
 
     End Sub
 
-    Private Sub txtValeur_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtValeur.TextChanged
+    Private Sub txtValeur_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtValeur.TextChanged, txtDuree.TextChanged
 
         btValider.Enabled = True
         btAnnuler.Enabled = True
@@ -587,21 +623,29 @@ Public Class Frm_CDF
 
     End Sub
 
-    Private Sub txtValeur_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtValeur.EditValueChanged
+    Private Sub txtValeur_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtValeur.EditValueChanged, txtDuree.EditValueChanged
+
+        btValider.Enabled = True
+        btAnnuler.Enabled = True
+        btAjouter.Enabled = False
+        btChercher.Enabled = False
+        btFermer.Enabled = False
+        btSupprimer.Enabled = False
+        If (txtDuree.Text.Trim().Equals("")) Then
+            txtDuree.Text = Nothing
+        End If
+    End Sub
+
+    Private Sub txtValeur_Validating(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles txtValeur.Validating, txtDuree.Validating
 
     End Sub
 
-    Private Sub txtValeur_Validating(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles txtValeur.Validating
-
-    End Sub
-
-    Private Sub txtValeur_Validated(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtValeur.Validated
+    Private Sub txtValeur_Validated(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtValeur.Validated, txtDuree.Validated
 
     End Sub
 
 
     Private Sub txtLibelle_EnabledChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtLibelle.EnabledChanged
-
 
 
     End Sub

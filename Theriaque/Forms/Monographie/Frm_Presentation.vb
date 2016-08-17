@@ -46,7 +46,7 @@ Public Class Frm_Presentation
         Me.PrecaR_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRECAR_PRESENTATION_CARACTCOMP, code)
         Me.PremaT_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PREMAT_PRE_MATERIAU, code)
         Me.Precpss_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRECPSS, code)
-
+        Me.PREDISPMAX.FillByCode(Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE, code)
         doc = New DocumentService.DocumentProvider(strConnexion)
         Me.gcDocuments.DataSource = doc.GetDocsByTypeDoc(code, DocumentService.DocumentProvider.TypeDoc.Presentation)
 
@@ -78,7 +78,6 @@ Public Class Frm_Presentation
             txtLibelle.Text = ""
             meNote.Text = ""
 
-
             Me.PrE_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRE_PRESENTATION, CodE)
 
             Dim valueCode As String = Me.PrE_TA.GetDataByCode(CodE).Rows(0).Item("PRE_NATUCD_CDF_CODE_FK").ToString()
@@ -90,11 +89,13 @@ Public Class Frm_Presentation
             Me.PreconT_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRECONT_PRE_CONTENANT, CodE)
             Me.PrecaR_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRECAR_PRESENTATION_CARACTCOMP, CodE)
             Me.PremaT_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PREMAT_PRE_MATERIAU, CodE)
-
+            Me.PREDISPMAX.FillByCode(Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE, f._Code)
             Me.Precpss_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRECPSS, CodE)
             doc = New DocumentService.DocumentProvider(strConnexion)
             Me.lueCategorie.EditValue = CType(doc.ID_Categorie, Short)
             Me.gcDocuments.DataSource = doc.GetDocsByTypeDoc(CodE, DocumentService.DocumentProvider.TypeDoc.Presentation)
+            PrevolsoL.FillByCode(Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION, txtCode.Text)
+            'Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").AddNew()
 
             btnImporter.Enabled = True
             Tab_TA1 = False
@@ -404,7 +405,11 @@ Public Class Frm_Presentation
     Public Overrides Sub Ajouter()
         EmptyDataTable()
         Me.BindingContext(Me.MasterDataSet, MasterTable).AddNew()
+        Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION.Clear()
         'SetCode_MAx(MasterTable, txtCode)
+
+        Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE.Clear()
+
         lkupUCD.EditValue = ""
         CodE = InvalideControl
         Me.gcDocuments.DataSource = New ArrayList()
@@ -468,6 +473,8 @@ Public Class Frm_Presentation
             'PRIPRE_PRIX_PRESENTATION 
             cn.Execute("delete THERIAQUE.PRIPRE_PRIX_PRESENTATION where PRIPRE_PRE_CODE_FK_PK = " & cn.SQLText(txtCode.Text))
 
+            'PREVOLSOL_VOLUME_SOLUTION
+            cn.Execute("DELETE from theriaque.PREVOLSOL_VOLUME_SOLUTION where PREVOLSOL_PRE_CODE_FK_PK= " & cn.SQLText(txtCode.Text))
 
             'FORPRE_FORFAIT_PRE 
             cn.Execute("delete THERIAQUE.FORPRE_FORFAIT_PRE where FORPRE_PRE_CODE_FK_PK = " & cn.SQLText(txtCode.Text))
@@ -538,6 +545,18 @@ Public Class Frm_Presentation
             Next
             Me.CoconT_TA.Update(DsTheriaque_Nomenclature2)
 
+            'Prevolsol
+            'For iCount = 0 To DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION.Rows.Count - 1
+            '    DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION.Rows(iCount).Delete()
+            'Next
+            'Me.PrevolsoL.Update(DsTheriaque_Nomenclature2)
+
+            'PreDispMax
+            For iCount = 0 To DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE.Rows.Count - 1
+                DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE.Rows(iCount).Delete()
+            Next
+            Me.PREDISPMAX.Update(DsTheriaque_Nomenclature2)
+
             Me.DsTheriaque_Nomenclature2.PRE_PRESENTATION.Rows(0).Delete()
             Me.PrE_TA.Update(Me.MasterDataSet)
 
@@ -552,6 +571,31 @@ Public Class Frm_Presentation
 
     Public Overrides Sub valider()
         'MyBase.Valider()
+
+        Dim unite As String
+        Dim volume As String
+        Dim maxUCD As String
+        Dim maxCIP As String
+        Dim Type As String
+
+        Dim pass As Boolean = True
+        If String.IsNullOrEmpty(lkupUnite.Text) And String.IsNullOrEmpty(txtVolume.Text) Then
+            pass = False
+            cn.Execute(" Delete from theriaque.PREVOLSOL_VOLUME_SOLUTION where PREVOLSOL_PRE_CODE_FK_PK= " & cn.SQLText(txtCode.Text))
+        Else
+            If Not String.IsNullOrEmpty(lkupUnite.Text) And String.IsNullOrEmpty(txtVolume.Text) Then
+                MsgBox("Veuillez sélectionner le champ Volume administrable")
+                MyBase.IsValider = False
+                Return
+            Else
+                If Not String.IsNullOrEmpty(txtVolume.Text) And String.IsNullOrEmpty(lkupUnite.Text) Then
+                    MsgBox("Veuillez sélectionner le champ unité Volume administrable")
+                    MyBase.IsValider = False
+                    Return
+                End If
+            End If
+        End If
+        MyBase.IsValider = True
 
         DateEdit1.EditValue = Now.Date
         DateEdit1.DateTime = Now.Date
@@ -638,6 +682,56 @@ Public Class Frm_Presentation
         Me.BindingContext(Me.MasterDataSet, "PRECPSS").EndCurrentEdit()
         Me.Precpss_TA.Update(Me.DsTheriaque_Nomenclature2.PRECPSS)
 
+
+        If Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Count = 0 Then
+
+            If lkupUnite.EditValue Is System.DBNull.Value Then
+                unite = Nothing
+            Else
+                unite = lkupUnite.EditValue
+            End If
+
+            volume = txtVolume.Text
+
+            Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").AddNew()
+
+            Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_PRE_CODE_FK_PK") = txtCode.Text
+            Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_CIP13") = txtEAN.Text
+
+            If Not String.IsNullOrEmpty(volume) Then
+                Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_VOLSOLUTION") = volume
+            End If
+
+            If unite IsNot System.DBNull.Value Then
+                If Not String.IsNullOrEmpty(unite) Then
+                    Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_CDF_VOL_CODE_FK") = unite
+                End If
+            End If
+        Else
+            If lkupUnite.EditValue Is System.DBNull.Value Then
+                unite = Nothing
+            Else
+                unite = lkupUnite.EditValue
+            End If
+
+            If String.IsNullOrEmpty(unite) And String.IsNullOrEmpty(txtVolume.Text) Then
+                'Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION.Rows(0).Delete()
+                cn.Execute(" Delete from theriaque.PREVOLSOL_VOLUME_SOLUTION where PREVOLSOL_PRE_CODE_FK_PK =" & cn.SQLText(txtCode.Text))
+            Else
+                Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_PRE_CODE_FK_PK") = txtCode.Text
+                Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_CIP13") = txtEAN.Text
+            End If
+
+        End If
+
+        If (pass) Then
+            Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").EndCurrentEdit()
+            Me.PrevolsoL.Update(Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION)
+        End If
+
+        Me.BindingContext(Me.MasterDataSet, "PREDISPMAX_PRE_DISP_MAXIMALE").EndCurrentEdit()
+        Me.PREDISPMAX.Update(Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE)
+
         'Dupplication des documents
         If (DupArray IsNot Nothing) Then
             For iCount As Integer = 0 To DupArray.Count - 1
@@ -646,13 +740,16 @@ Public Class Frm_Presentation
             DupArray = Nothing
         End If
 
+
         UpdateCIP13()
 
         bModeDuplication = False
         Update_INTER_INTEROPERABLE()
         btnImporter.Enabled = True
         bSupprimer.Enabled = True
+
     End Sub
+
 
     Public Overrides Sub annuler()
         OnLoading = True
@@ -726,6 +823,10 @@ Public Class Frm_Presentation
 
         Me.BindingContext(Me.MasterDataSet, PRE_PRESENTATION).CancelCurrentEdit()
         Me.DsTheriaque_Nomenclature2.PRE_PRESENTATION.RejectChanges()
+
+        PrevolsoL.FillByCode(Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION, txtCode.Text)
+
+        Me.PREDISPMAX.FillByCode(Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE, txtCode.Text)
 
         If (txtCode.Text.Trim.Equals("")) Then
             lkupUCD.EditValue = ""
@@ -811,6 +912,9 @@ Public Class Frm_Presentation
         GC20.DataSource = DsTheriaque_Nomenclature2
         GC20.DataMember = "PRECPSS"
 
+        GCDisp.DataSource = DsTheriaque_Nomenclature2
+        GCDisp.DataMember = "PREDISPMAX_PRE_DISP_MAXIMALE"
+
     End Sub
 
 
@@ -841,7 +945,7 @@ Public Class Frm_Presentation
         Me.DsTheriaque_Nomenclature2.PRIPRE_PRIX_PRESENTATION.Clear()
         Me.DsTheriaque_Nomenclature2.PRE_PRESENTATION.Clear()
         Me.DsTheriaque_Nomenclature2.PRECPSS.Clear()
-
+        Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE.Clear()
     End Sub
 
 
@@ -849,6 +953,12 @@ Public Class Frm_Presentation
     ''' Proçédure: Duplication des données à partir d'une autre fiche
     ''' </summary>
     ''' <remarks>Proçédure surchargée</remarks>
+    ''' 
+    ''' <summary>
+    ''' Proçédure: Duplication des données à partir d'une autre fiche
+    ''' </summary>
+    ''' <remarks>Proçédure surchargée</remarks>
+    ''' 
     Public Overrides Sub Dupliquer()
         btImporter.Enabled = False
         If Not Tab_TA1 And CodE <> InvalideControl And CodE <> Nothing Then LoadTab_1()
@@ -917,6 +1027,9 @@ Public Class Frm_Presentation
 
         Dim dt17 As New DataTable
         dt17 = DsTheriaque_Nomenclature2.PREDICO_COMMENT_DISPENSAT.Copy
+
+        Dim dt18 As New DataTable
+        dt18 = DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE.Copy
 
         Dim sLkupListe As String = Me.BindingContext(DsTheriaque_Nomenclature2, PRE_PRESENTATION).Current("PRE_CDF_LI_CODE_FK").ToString
         Dim sLkupATC As String = Me.BindingContext(DsTheriaque_Nomenclature2, PRE_PRESENTATION).Current("PRE_CATC_CODE_FK").ToString
@@ -1028,6 +1141,12 @@ Public Class Frm_Presentation
             drTemp = DsTheriaque_Nomenclature2.Tables("PREDICO_COMMENT_DISPENSAT").NewRow()
             drTemp.ItemArray = dt17.Rows(iCount).ItemArray
             DsTheriaque_Nomenclature2.Tables("PREDICO_COMMENT_DISPENSAT").Rows.Add(drTemp)
+        Next
+
+        For iCount As Integer = 0 To dt18.Rows.Count - 1
+            drTemp = DsTheriaque_Nomenclature2.Tables("PREDISPMAX_PRE_DISP_MAXIMALE").NewRow()
+            drTemp.ItemArray = dt18.Rows(iCount).ItemArray
+            DsTheriaque_Nomenclature2.Tables("PREDISPMAX_PRE_DISP_MAXIMALE").Rows.Add(drTemp)
         Next
 
         If sLkupListe <> "" Then Me.BindingContext(DsTheriaque_Nomenclature2, PRE_PRESENTATION).Current("PRE_CDF_LI_CODE_FK") = sLkupListe
@@ -1255,6 +1374,9 @@ Public Class Frm_Presentation
         InitLkup(rpMat, CDF_CODIF, strSSQL_CDF_CODIF("09"), True)
         InitLkup(rpCrtCmpl, CDF_CODIF, strSSQL_CDF_CODIF("01"), True)
         InitLkup(rpCDF_CODIF, CDF_CODIF, strSSQL_CDF_CODIF("32"), True)
+        InitLkup(lkupUnite, CDF_CODIF, strSSQL_CDF_CODIF("21"), True)
+
+        InitLkup(lkupDispMax, CDF_CODIF, strSSQL_CDF_CODIF("34"), True)
 
         doc = New DocumentService.DocumentProvider(strConnexion)
 
@@ -1398,11 +1520,11 @@ Public Class Frm_Presentation
         Me.GV17.SetFocusedRowCellValue(colPREDICO_NUMORD, Code_MAx(GV17, colPREDICO_NUMORD))
     End Sub
 
-    Private Sub GV18_InitNewRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GV18.InitNewRow
+    Private Sub GV18_InitNewRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs)
         Me.GV18.SetRowCellValue(e.RowHandle, colPREDITX_PRE_CODE_FK_PK, txtCode.Text)
     End Sub
 
-    Private Sub GV19_InitNewRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GV19.InitNewRow
+    Private Sub GV19_InitNewRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs)
         Me.GV19.SetRowCellValue(e.RowHandle, colPRESMR_PRE_CODE_FK_PK, txtCode.Text)
     End Sub
 
@@ -1644,7 +1766,7 @@ Public Class Frm_Presentation
         Return True
     End Function
 
-    Private Sub txtCode_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtCode.Validated, lkupPrise.Validated, txtEAN.Validated
+    Private Sub txtCode_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles txtCode.Validated, lkupPrise.Validated, txtEAN.Validated, txtVolume.Validated
         ValideControl(sender, False)
         'ModifierCode()
     End Sub
@@ -1663,7 +1785,7 @@ Public Class Frm_Presentation
 
     'End Sub
 
-    Private Sub GV2_ValidateRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs) Handles GV2.ValidateRow
+    Private Sub GV2_ValidateRow(ByVal sender As Object, ByVal e As DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs)
         If GV2.RowCount > 1 Then
             If GV2.GetRowCellValue(GV2.FocusedRowHandle, colCOCONT_CDF_GAL_CODE_FK) Is DBNull.Value Then
                 e.ErrorText = "Le libellé est obligatoire puisque il existe plusieurs contenant"
@@ -1859,6 +1981,17 @@ Public Class Frm_Presentation
                 e.Valid = False
             End If
         End If
+
+        'If (e.Column.Name = "colPREDISP_DOSEFRAC") Then
+        If GV.FocusedColumn Is colPREDISP_DOSEFRAC Then
+            If e.Value.ToString() = "" Then
+                e.Value = Nothing
+                e.Valid = True
+            End If
+
+        End If
+
+
     End Sub
 
     Private Sub GV_ValidateRow(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs) Handles GV.ValidateRow
@@ -1888,6 +2021,9 @@ Public Class Frm_Presentation
         Me.PrecaR_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRECAR_PRESENTATION_CARACTCOMP, CodE)
         Me.PremaT_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PREMAT_PRE_MATERIAU, CodE)
         Me.Precpss_TA.FillByCode(Me.DsTheriaque_Nomenclature2.PRECPSS, CodE)
+        PrevolsoL.FillByCode(Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION, CodE)
+        Me.PREDISPMAX.FillByCode(Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE, CodE)
+
 
 
 
@@ -1919,7 +2055,7 @@ Public Class Frm_Presentation
         End If
     End Sub
 
-    Private Sub GV_CalcRowHeight(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Grid.RowHeightEventArgs) Handles GV12.CalcRowHeight, GV15.CalcRowHeight, GV18.CalcRowHeight
+    Private Sub GV_CalcRowHeight(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Grid.RowHeightEventArgs) Handles GV12.CalcRowHeight, GV15.CalcRowHeight
         e.RowHeight = sender.GridControl.Height
     End Sub
 
@@ -2650,6 +2786,59 @@ Public Class Frm_Presentation
         'If (MemoEdit1.Text.Length = 255) And Microsoft.VisualBasic.Asc(e.KeyChar) <> 8 Then
         '    MsgBox("Taille limite du texte atteinte")
         'End If
+
+    End Sub
+
+    Private Sub lkupUnite_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lkupUnite.EditValueChanged
+        btValider.Enabled = True
+        btAnnuler.Enabled = True
+        btAjouter.Enabled = False
+        btSupprimer.Enabled = False
+        btFermer.Enabled = False
+        btChercher.Enabled = False
+    End Sub
+
+    Private Sub lkupMaxDisp_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        btValider.Enabled = True
+        btAnnuler.Enabled = True
+        btAjouter.Enabled = False
+        btSupprimer.Enabled = False
+        btFermer.Enabled = False
+        btChercher.Enabled = False
+    End Sub
+
+    Private Sub txtVolume_EditValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtVolume.EditValueChanged
+        If (txtVolume.Text.Trim().Equals("")) Then
+            txtVolume.Text = Nothing
+        End If
+    End Sub
+
+    Private Sub GV_CellValueChanged(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs) Handles GV.CellValueChanged
+
+        'If (e.Column.Name = "colPREDISP_DOSEFRAC") Then
+
+        '    If GV.GetFocusedRowCellValue(colPREDISP_DOSEFRAC).ToString() = "" Then
+        '        GV.SetFocusedRowCellValue(colPREDISP_DOSEFRAC, Nothing)
+        '    End If
+
+        'End If
+
+    End Sub
+
+    Private Sub GVDisp_InitNewRow(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GVDisp.InitNewRow
+        GVDisp.SetFocusedRowCellValue(colPREDISPMAX_PRE_CODE_FK_PK, txtCode.Text)
+        GVDisp.SetFocusedRowCellValue(colPREDISPMAX_PRE_CIP13, txtEAN.Text)
+    End Sub
+
+    Private Sub GC18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GC18.Click
+
+    End Sub
+
+    Private Sub GV18_InitNewRow_1(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GV18.InitNewRow
+        GV18.SetFocusedRowCellValue(colPREDITX_PRE_CODE_FK_PK, txtCode.Text)
+    End Sub
+
+    Private Sub GC3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GC3.Click
 
     End Sub
 End Class

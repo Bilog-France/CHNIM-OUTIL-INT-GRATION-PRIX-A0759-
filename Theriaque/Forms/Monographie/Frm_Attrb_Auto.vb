@@ -281,6 +281,23 @@ Public Class Frm_Attrb_Auto
             Next
         End If
 
+        'Posologie Min Max
+        bExist = False
+        strSSQL = " Select distinct cast(FPOMMSP_FPOMM_CODE_FK_PK as varchar) as code from THERIAQUE.FPOMMSP_POSOMINMAX_SPE "
+        strSSQL &= " where FPOMMSP_SP_CODE_FK_PK = " & cn.SQLText(txtCode.Text)
+        dtTemp = cn.MySelect(strSSQL)
+        If dtTemp.Rows.Count > 0 Then
+            For iCount As Integer = 0 To dtTemp.Rows.Count - 1
+                Dim dtSpecialite As DataTable = cn.MySelect("SELECT FPOMMSP_SP_CODE_FK_PK FROM THERIAQUE.FPOMMSP_POSOMINMAX_SPE WHERE FPOMMSP_FPOMM_CODE_FK_PK =" & dtTemp.Rows(iCount)(0) & " AND FPOMMSP_SP_CODE_FK_PK = " & cn.SQLText(txtCode2.Text))
+                If dtSpecialite.Rows.Count > 0 Then
+                    bExist = True
+                End If
+                If Not bExist Then
+                    cn.Execute("Insert into THERIAQUE.FPOMMSP_POSOMINMAX_SPE values (" & dtTemp.Rows(iCount)(0) & "," & cn.SQLText(txtCode2.Text) & ")")
+                End If
+            Next
+        End If
+
         'Cipemg code 
         bExist = False
         strSSQL = " Select distinct cast(FCPMSP_FCPM_CODE_FK_PK as varchar) as code from THERIAQUE.FCPMSP_CIPEMG_SPE "
@@ -494,6 +511,15 @@ Public Class Frm_Attrb_Auto
         GC5.DataSource = cn.MySelect(strSSQL)
 
         Application.DoEvents()
+
+
+        'posologie Min max
+        strSSQL = " Select distinct cast(FPOMMSP_FPOMM_CODE_FK_PK as varchar) as code from THERIAQUE.FPOMMSP_POSOMINMAX_SPE "
+        strSSQL &= " where FPOMMSP_SP_CODE_FK_PK = " & CodE
+        GC13.DataSource = cn.MySelect(strSSQL)
+        Application.DoEvents()
+
+
 
         'reconst/aDminist
         strSSQL = " Select distinct cast(FRECSP_FREC_CODE_FK_PK as varchar) as code from THERIAQUE.FRECSP_RECONST_SPEC "
@@ -738,6 +764,15 @@ Public Class Frm_Attrb_Auto
         End If
     End Sub
 
+    Private Sub rpbtEdit13_ButtonClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraEditors.Controls.ButtonPressedEventArgs) Handles rpbtEdit13.ButtonClick
+        If Me.GV13.GetFocusedRowCellValue(Me.colPosoMinMax) IsNot Nothing Then
+            Dim f As New Frm_Posologie_Min_Max1
+            f._Code = Me.GV13.GetFocusedRowCellValue(Me.colPosoMinMax)
+            f.MdiParent = FMain
+            f.Show()
+        End If
+    End Sub
+
     Private Function TestEntiteSimilaire_Exist(Optional ByVal sCodeSP As String = "") As Boolean
         TestEntiteSimilaire_Exist = False
         'Etiologie
@@ -850,4 +885,6 @@ Public Class Frm_Attrb_Auto
             Exit Function
         End If
     End Function
+
+   
 End Class

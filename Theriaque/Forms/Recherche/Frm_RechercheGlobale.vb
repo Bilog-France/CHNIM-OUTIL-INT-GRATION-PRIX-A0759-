@@ -125,6 +125,15 @@ Public Class Frm_RechercheGlobale
         GC10.DataSource = cn.MySelect(strSSQL)
         Application.DoEvents()
 
+        'posologie Min max
+        strSSQL = " Select distinct cast(FPOMMSP_FPOMM_CODE_FK_PK as varchar) as code from THERIAQUE.FPOMMSP_POSOMINMAX_SPE "
+        strSSQL &= " where FPOMMSP_SP_CODE_FK_PK = " & CodE
+        GC15.DataSource = cn.MySelect(strSSQL)
+        Application.DoEvents()
+
+
+
+
         ProgressBar.Visible = False
 
     End Sub
@@ -286,7 +295,7 @@ Public Class Frm_RechercheGlobale
     ''' <remarks></remarks>
     Private Sub rpbtEdit13_ButtonClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraEditors.Controls.ButtonPressedEventArgs) Handles rpbtEdit13.ButtonClick
         If Me.GV14.GetFocusedRowCellValue(Me.col1_CipemgC) IsNot Nothing Then
-            Dim f As New Frm_Cipemg_Code
+            Dim f As New Frm_Cipemg_Code1
             f._Code = Me.GV14.GetFocusedRowCellValue(Me.col1_CipemgC)
             f.MdiParent = FMain
             f.Show()
@@ -448,6 +457,17 @@ Public Class Frm_RechercheGlobale
         End If
     End Sub
 
+    Private Sub rpbtEdit15_ButtonClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraEditors.Controls.ButtonPressedEventArgs) Handles rpbtEdit15.ButtonClick
+
+        If Me.GV15.GetFocusedRowCellValue(Me.colPosoMinMax) IsNot Nothing Then
+            Dim f As New Frm_Posologie_Min_Max1
+            f._Code = Me.GV15.GetFocusedRowCellValue(Me.colPosoMinMax)
+            f.MdiParent = FMain
+            f.Show()
+        End If
+
+    End Sub
+
 #End Region
 
     Private Sub LoadTab_1()
@@ -464,4 +484,6 @@ Public Class Frm_RechercheGlobale
             Exit Sub
         End If
     End Sub
+
+    
 End Class

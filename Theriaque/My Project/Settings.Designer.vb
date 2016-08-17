@@ -79,33 +79,22 @@ Partial Friend NotInheritable Class MySettings
     <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=PC-DE-ADMIN;Initial Catalog=Theriaque;Persist Security Info=True;User"& _ 
-        " ID=sa;Password=123")>  _
-    Public ReadOnly Property TheriaqueConnectionString() As String
-        Get
-            Return CType(Me("TheriaqueConnectionString"),String)
-        End Get
-    End Property
-    
-    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=PC-DE-BILEL\THERIAQUE;Initial Catalog=Theriaque;User ID=sa;Password=v"& _ 
-        "ald7890")>  _
-    Public ReadOnly Property TheriaqueConnectionString1() As String
-        Get
-            Return CType(Me("TheriaqueConnectionString1"),String)
-        End Get
-    End Property
-    
-    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
      Global.System.Configuration.DefaultSettingValueAttribute("Data Source=BILOG-SVN\MSSQLSERVER2005;Initial Catalog=theriaqueDS;User ID=sa;Pass"& _ 
         "word=sfmg2015")>  _
     Public ReadOnly Property theriaqueDSConnectionString() As String
         Get
             Return CType(Me("theriaqueDSConnectionString"),String)
+        End Get
+    End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=178.33.180.171,8008\SQLEXPRESS;Initial Catalog=temp;Persist Security "& _ 
+        "Info=True;User ID=sa;Password=2cSpy2Bjgw")>  _
+    Public ReadOnly Property tempConnectionString() As String
+        Get
+            Return CType(Me("tempConnectionString"),String)
         End Get
     End Property
 End Class

@@ -22,12 +22,12 @@ Partial Class Frm_MedVirtuelle
         Me.colSP_CODE_SQ_PK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl
         Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage
-        Me.GC = New DevExpress.XtraGrid.GridControl
-        Me.DsTheriaque_Nomenclature2 = New Theriaque.dsTheriaque_Nomenclature2
-        Me.GV = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.GC1 = New DevExpress.XtraGrid.GridControl
+        Me.GV1 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.colSYGSP_NOM_PK1 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.colSYGSP_GSP_CODE_FK1 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.colSYGSP_NUMORD1 = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.DsTheriaque_Nomenclature2 = New Theriaque.dsTheriaque_Nomenclature2
         Me.Label2 = New System.Windows.Forms.Label
         Me.txtCode = New DevExpress.XtraEditors.TextEdit
         Me.txtLibelle = New DevExpress.XtraEditors.TextEdit
@@ -66,8 +66,8 @@ Partial Class Frm_MedVirtuelle
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.GridColumn1 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn
-        Me.GridColumn4 = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colUnite = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.colN = New DevExpress.XtraGrid.Columns.GridColumn
         Me.colGSPCODEFKPK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.GridColumn5 = New DevExpress.XtraGrid.Columns.GridColumn
         Me.txtCodeRef = New DevExpress.XtraEditors.TextEdit
@@ -76,6 +76,12 @@ Partial Class Frm_MedVirtuelle
         Me.Label8 = New System.Windows.Forms.Label
         Me.DateDispoEdit3 = New DevExpress.XtraEditors.DateEdit
         Me.statutEdit = New DevExpress.XtraEditors.LookUpEdit
+        Me.MVPSDU = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.MVPSDU_MED_VIR_PERE_SATableAdapter
+        Me.IC1SP_TERME1SPECIALITETableAdapter1 = New Theriaque.dsTheriaque_AnalyseOrdonance2TableAdapters.IC1SP_TERME1SPECIALITETableAdapter
+        Me.MVPF = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.MVPF_MED_VIR_PERE_FORMETableAdapter
+        Me.txtMax = New DevExpress.XtraEditors.TextEdit
+        Me.Label9 = New System.Windows.Forms.Label
+        Me.dtRetrait = New DevExpress.XtraEditors.DateEdit
         Me.Pan.SuspendLayout()
         Me.PanMain.SuspendLayout()
         Me.PanTop.SuspendLayout()
@@ -86,9 +92,9 @@ Partial Class Frm_MedVirtuelle
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
         Me.XtraTabPage1.SuspendLayout()
-        CType(Me.GC, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GC1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DsTheriaque_Nomenclature2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GV, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCode.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtLibelle.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCodeVirtuelle.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,16 +125,21 @@ Partial Class Frm_MedVirtuelle
         CType(Me.txtCodeRef.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DateDispoEdit3.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.statutEdit.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtMax.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtRetrait.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Pan
         '
-        Me.Pan.Size = New System.Drawing.Size(679, 641)
+        Me.Pan.Size = New System.Drawing.Size(698, 641)
         '
         'PanMain
         '
+        Me.PanMain.Controls.Add(Me.txtMax)
         Me.PanMain.Controls.Add(Me.statutEdit)
+        Me.PanMain.Controls.Add(Me.dtRetrait)
         Me.PanMain.Controls.Add(Me.DateDispoEdit3)
+        Me.PanMain.Controls.Add(Me.Label9)
         Me.PanMain.Controls.Add(Me.Label8)
         Me.PanMain.Controls.Add(Me.Label7)
         Me.PanMain.Controls.Add(Me.txtCodeRef)
@@ -143,15 +154,15 @@ Partial Class Frm_MedVirtuelle
         Me.PanMain.Controls.Add(Me.Label6)
         Me.PanMain.Controls.Add(Me.txtCodeVirtuelle)
         Me.PanMain.Controls.Add(Me.Label3)
-        Me.PanMain.Size = New System.Drawing.Size(561, 554)
+        Me.PanMain.Size = New System.Drawing.Size(580, 554)
         '
         'PanTop
         '
-        Me.PanTop.Size = New System.Drawing.Size(679, 87)
+        Me.PanTop.Size = New System.Drawing.Size(698, 87)
         '
         'Label1
         '
-        Me.Label1.Size = New System.Drawing.Size(679, 28)
+        Me.Label1.Size = New System.Drawing.Size(698, 28)
         Me.Label1.Text = "Médicament virtuel"
         '
         'LabelControl2
@@ -166,7 +177,7 @@ Partial Class Frm_MedVirtuelle
         '
         'Panel1
         '
-        Me.Panel1.Location = New System.Drawing.Point(561, 87)
+        Me.Panel1.Location = New System.Drawing.Point(580, 87)
         Me.Panel1.Size = New System.Drawing.Size(118, 554)
         '
         'DateEdit1
@@ -178,7 +189,7 @@ Partial Class Frm_MedVirtuelle
         '
         'GroupBox
         '
-        Me.GroupBox.Size = New System.Drawing.Size(679, 8)
+        Me.GroupBox.Size = New System.Drawing.Size(698, 8)
         '
         'DateEdit2
         '
@@ -203,7 +214,7 @@ Partial Class Frm_MedVirtuelle
         Me.XtraTabControl1.Location = New System.Drawing.Point(2, 7)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(547, 152)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(543, 152)
         Me.XtraTabControl1.TabIndex = 31
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1})
         Me.XtraTabControl1.Tag = "[EDIT][NOADD]"
@@ -211,54 +222,46 @@ Partial Class Frm_MedVirtuelle
         '
         'XtraTabPage1
         '
-        Me.XtraTabPage1.Controls.Add(Me.GC)
+        Me.XtraTabPage1.Controls.Add(Me.GC1)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(538, 121)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(534, 121)
         Me.XtraTabPage1.Tag = "[EDIT][ADD]"
         Me.XtraTabPage1.Text = "Synonymes"
         '
-        'GC
+        'GC1
         '
-        Me.GC.DataMember = "GSP_GENERIQUE_SPECIALITE.FK1_SYGSP_SYNONYME_GSP"
-        Me.GC.DataSource = Me.DsTheriaque_Nomenclature2
-        Me.GC.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GC.EmbeddedNavigator.Buttons.Edit.Visible = False
-        Me.GC.EmbeddedNavigator.Buttons.First.Enabled = False
-        Me.GC.EmbeddedNavigator.Buttons.First.Visible = False
-        Me.GC.EmbeddedNavigator.Buttons.Last.Enabled = False
-        Me.GC.EmbeddedNavigator.Buttons.Last.Visible = False
-        Me.GC.EmbeddedNavigator.Buttons.Next.Enabled = False
-        Me.GC.EmbeddedNavigator.Buttons.Next.Visible = False
-        Me.GC.EmbeddedNavigator.Buttons.NextPage.Enabled = False
-        Me.GC.EmbeddedNavigator.Buttons.NextPage.Visible = False
-        Me.GC.EmbeddedNavigator.Buttons.Prev.Enabled = False
-        Me.GC.EmbeddedNavigator.Buttons.Prev.Visible = False
-        Me.GC.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
-        Me.GC.EmbeddedNavigator.Buttons.PrevPage.Visible = False
-        Me.GC.EmbeddedNavigator.Name = ""
-        Me.GC.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
-        Me.GC.Location = New System.Drawing.Point(0, 0)
-        Me.GC.MainView = Me.GV
-        Me.GC.Name = "GC"
-        Me.GC.Size = New System.Drawing.Size(538, 121)
-        Me.GC.TabIndex = 0
-        Me.GC.Tag = "[EDIT][NOADD]"
-        Me.GC.UseEmbeddedNavigator = True
-        Me.GC.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV})
+        Me.GC1.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC1.EmbeddedNavigator.Buttons.First.Enabled = False
+        Me.GC1.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC1.EmbeddedNavigator.Buttons.Last.Enabled = False
+        Me.GC1.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC1.EmbeddedNavigator.Buttons.Next.Enabled = False
+        Me.GC1.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC1.EmbeddedNavigator.Buttons.NextPage.Enabled = False
+        Me.GC1.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC1.EmbeddedNavigator.Buttons.Prev.Enabled = False
+        Me.GC1.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC1.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
+        Me.GC1.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC1.EmbeddedNavigator.Name = ""
+        Me.GC1.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
+        Me.GC1.Location = New System.Drawing.Point(4, 9)
+        Me.GC1.MainView = Me.GV1
+        Me.GC1.Name = "GC1"
+        Me.GC1.Size = New System.Drawing.Size(528, 109)
+        Me.GC1.TabIndex = 0
+        Me.GC1.Tag = ""
+        Me.GC1.UseEmbeddedNavigator = True
+        Me.GC1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV1})
         '
-        'DsTheriaque_Nomenclature2
+        'GV1
         '
-        Me.DsTheriaque_Nomenclature2.DataSetName = "dsTheriaque_Nomenclature2"
-        Me.DsTheriaque_Nomenclature2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'GV
-        '
-        Me.GV.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colSYGSP_NOM_PK1, Me.colSYGSP_GSP_CODE_FK1, Me.colSYGSP_NUMORD1})
-        Me.GV.GridControl = Me.GC
-        Me.GV.GroupPanelText = " "
-        Me.GV.Name = "GV"
-        Me.GV.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
-        Me.GV.OptionsView.ShowGroupPanel = False
+        Me.GV1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colSYGSP_NOM_PK1, Me.colSYGSP_GSP_CODE_FK1, Me.colSYGSP_NUMORD1})
+        Me.GV1.GridControl = Me.GC1
+        Me.GV1.GroupPanelText = " "
+        Me.GV1.Name = "GV1"
+        Me.GV1.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
+        Me.GV1.OptionsView.ShowGroupPanel = False
         '
         'colSYGSP_NOM_PK1
         '
@@ -280,10 +283,15 @@ Partial Class Frm_MedVirtuelle
         Me.colSYGSP_NUMORD1.FieldName = "SYGSP_NUMORD"
         Me.colSYGSP_NUMORD1.Name = "colSYGSP_NUMORD1"
         '
+        'DsTheriaque_Nomenclature2
+        '
+        Me.DsTheriaque_Nomenclature2.DataSetName = "dsTheriaque_Nomenclature2"
+        Me.DsTheriaque_Nomenclature2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 15)
+        Me.Label2.Location = New System.Drawing.Point(40, 14)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(46, 13)
         Me.Label2.TabIndex = 29
@@ -293,7 +301,7 @@ Partial Class Frm_MedVirtuelle
         'txtCode
         '
         Me.txtCode.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_CODE_SQ_PK", True))
-        Me.txtCode.Location = New System.Drawing.Point(92, 11)
+        Me.txtCode.Location = New System.Drawing.Point(92, 10)
         Me.txtCode.Name = "txtCode"
         Me.txtCode.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control
         Me.txtCode.Properties.Appearance.Options.UseBackColor = True
@@ -306,19 +314,17 @@ Partial Class Frm_MedVirtuelle
         '
         'txtLibelle
         '
-        Me.txtLibelle.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtLibelle.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_NOM", True))
-        Me.txtLibelle.Location = New System.Drawing.Point(92, 38)
+        Me.txtLibelle.Location = New System.Drawing.Point(92, 37)
         Me.txtLibelle.Name = "txtLibelle"
-        Me.txtLibelle.Size = New System.Drawing.Size(357, 20)
+        Me.txtLibelle.Size = New System.Drawing.Size(279, 20)
         Me.txtLibelle.TabIndex = 25
         Me.txtLibelle.Tag = "[EDIT]"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(49, 42)
+        Me.Label6.Location = New System.Drawing.Point(49, 41)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(37, 13)
         Me.Label6.TabIndex = 27
@@ -338,7 +344,7 @@ Partial Class Frm_MedVirtuelle
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(54, 67)
+        Me.Label3.Location = New System.Drawing.Point(54, 68)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(38, 13)
         Me.Label3.TabIndex = 26
@@ -352,7 +358,7 @@ Partial Class Frm_MedVirtuelle
         Me.XtraTabControl2.Location = New System.Drawing.Point(2, 164)
         Me.XtraTabControl2.Name = "XtraTabControl2"
         Me.XtraTabControl2.SelectedTabPage = Me.XtraTabPage2
-        Me.XtraTabControl2.Size = New System.Drawing.Size(541, 128)
+        Me.XtraTabControl2.Size = New System.Drawing.Size(537, 128)
         Me.XtraTabControl2.TabIndex = 32
         Me.XtraTabControl2.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage2})
         Me.XtraTabControl2.Tag = "[EDIT][ADD]"
@@ -362,7 +368,7 @@ Partial Class Frm_MedVirtuelle
         '
         Me.XtraTabPage2.Controls.Add(Me.GC2)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(532, 97)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(528, 97)
         Me.XtraTabPage2.Tag = "[EDIT][ADD]"
         Me.XtraTabPage2.Text = "Fils"
         '
@@ -390,7 +396,7 @@ Partial Class Frm_MedVirtuelle
         Me.GC2.MainView = Me.GV2
         Me.GC2.Name = "GC2"
         Me.GC2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpSP, Me.rpCheck, Me.fovlib})
-        Me.GC2.Size = New System.Drawing.Size(532, 97)
+        Me.GC2.Size = New System.Drawing.Size(528, 97)
         Me.GC2.TabIndex = 0
         Me.GC2.UseEmbeddedNavigator = True
         Me.GC2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV2})
@@ -477,7 +483,7 @@ Partial Class Frm_MedVirtuelle
         'Ch_DC
         '
         Me.Ch_DC.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_PRESCRIPTION_DC", True))
-        Me.Ch_DC.Location = New System.Drawing.Point(210, 11)
+        Me.Ch_DC.Location = New System.Drawing.Point(192, 11)
         Me.Ch_DC.Name = "Ch_DC"
         Me.Ch_DC.Properties.Caption = "Prescription DC"
         Me.Ch_DC.Properties.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked
@@ -491,7 +497,7 @@ Partial Class Frm_MedVirtuelle
         Me.GroupControl1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.GroupControl1.Location = New System.Drawing.Point(0, 298)
         Me.GroupControl1.Name = "GroupControl1"
-        Me.GroupControl1.Size = New System.Drawing.Size(552, 117)
+        Me.GroupControl1.Size = New System.Drawing.Size(571, 117)
         Me.GroupControl1.TabIndex = 34
         Me.GroupControl1.Tag = "[EDIT][ADD]"
         Me.GroupControl1.Text = "Info Général"
@@ -502,14 +508,14 @@ Partial Class Frm_MedVirtuelle
         Me.MemoEdit3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MemoEdit3.Location = New System.Drawing.Point(2, 20)
         Me.MemoEdit3.Name = "MemoEdit3"
-        Me.MemoEdit3.Size = New System.Drawing.Size(548, 95)
+        Me.MemoEdit3.Size = New System.Drawing.Size(567, 95)
         Me.MemoEdit3.TabIndex = 37
         Me.MemoEdit3.Tag = ""
         '
         'txt_Code13
         '
         Me.txt_Code13.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_CODE_VIRTUEL13", True))
-        Me.txt_Code13.Location = New System.Drawing.Point(251, 64)
+        Me.txt_Code13.Location = New System.Drawing.Point(260, 64)
         Me.txt_Code13.Name = "txt_Code13"
         Me.txt_Code13.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txt_Code13.Size = New System.Drawing.Size(100, 20)
@@ -519,7 +525,7 @@ Partial Class Frm_MedVirtuelle
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(206, 67)
+        Me.Label4.Location = New System.Drawing.Point(215, 68)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 13)
         Me.Label4.TabIndex = 36
@@ -532,7 +538,7 @@ Partial Class Frm_MedVirtuelle
         Me.XtraTabControl3.Location = New System.Drawing.Point(0, 108)
         Me.XtraTabControl3.Name = "XtraTabControl3"
         Me.XtraTabControl3.SelectedTabPage = Me.XtraTabPage3
-        Me.XtraTabControl3.Size = New System.Drawing.Size(561, 446)
+        Me.XtraTabControl3.Size = New System.Drawing.Size(580, 446)
         Me.XtraTabControl3.TabIndex = 37
         Me.XtraTabControl3.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage3, Me.XtraTabPage4})
         Me.XtraTabControl3.Tag = "[EDIT][NOADD]"
@@ -544,7 +550,7 @@ Partial Class Frm_MedVirtuelle
         Me.XtraTabPage3.Controls.Add(Me.XtraTabControl1)
         Me.XtraTabPage3.Controls.Add(Me.XtraTabControl2)
         Me.XtraTabPage3.Name = "XtraTabPage3"
-        Me.XtraTabPage3.Size = New System.Drawing.Size(552, 415)
+        Me.XtraTabPage3.Size = New System.Drawing.Size(571, 415)
         Me.XtraTabPage3.Tag = "[EDIT][ADD]"
         Me.XtraTabPage3.Text = "Groupe"
         '
@@ -553,18 +559,16 @@ Partial Class Frm_MedVirtuelle
         Me.XtraTabPage4.Controls.Add(Me.GridControl2)
         Me.XtraTabPage4.Controls.Add(Me.GridControl1)
         Me.XtraTabPage4.Name = "XtraTabPage4"
-        Me.XtraTabPage4.Size = New System.Drawing.Size(552, 415)
+        Me.XtraTabPage4.Size = New System.Drawing.Size(571, 415)
         Me.XtraTabPage4.Text = "Structure"
         '
         'GridControl2
         '
-        Me.GridControl2.DataMember = "GSP_GENERIQUE_SPECIALITE.FK_GSP1"
+        Me.GridControl2.DataMember = "MVPF_MED_VIR_PERE_FORME"
         Me.GridControl2.DataSource = Me.DsTheriaque_Nomenclature2
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GridControl2.EmbeddedNavigator.Buttons.Edit.Enabled = False
         Me.GridControl2.EmbeddedNavigator.Buttons.Edit.Visible = False
-        Me.GridControl2.EmbeddedNavigator.Buttons.EndEdit.Enabled = False
-        Me.GridControl2.EmbeddedNavigator.Buttons.EndEdit.Visible = False
         Me.GridControl2.EmbeddedNavigator.Buttons.First.Enabled = False
         Me.GridControl2.EmbeddedNavigator.Buttons.First.Visible = False
         Me.GridControl2.EmbeddedNavigator.Buttons.Last.Enabled = False
@@ -583,7 +587,7 @@ Partial Class Frm_MedVirtuelle
         Me.GridControl2.MainView = Me.GridView2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.savlib, Me.cdfnom, Me.fovlibelle})
-        Me.GridControl2.Size = New System.Drawing.Size(552, 200)
+        Me.GridControl2.Size = New System.Drawing.Size(571, 200)
         Me.GridControl2.TabIndex = 1
         Me.GridControl2.UseEmbeddedNavigator = True
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
@@ -618,13 +622,9 @@ Partial Class Frm_MedVirtuelle
         '
         'GridControl1
         '
-        Me.GridControl1.DataMember = "GSP_GENERIQUE_SPECIALITE.FK_GSP_MVPSDU"
-        Me.GridControl1.DataSource = Me.DsTheriaque_Nomenclature2
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.GridControl1.EmbeddedNavigator.Buttons.Edit.Enabled = False
         Me.GridControl1.EmbeddedNavigator.Buttons.Edit.Visible = False
-        Me.GridControl1.EmbeddedNavigator.Buttons.EndEdit.Enabled = False
-        Me.GridControl1.EmbeddedNavigator.Buttons.EndEdit.Visible = False
         Me.GridControl1.EmbeddedNavigator.Buttons.First.Enabled = False
         Me.GridControl1.EmbeddedNavigator.Buttons.First.Visible = False
         Me.GridControl1.EmbeddedNavigator.Buttons.Last.Enabled = False
@@ -637,19 +637,20 @@ Partial Class Frm_MedVirtuelle
         Me.GridControl1.EmbeddedNavigator.Buttons.Prev.Visible = False
         Me.GridControl1.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
         Me.GridControl1.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GridControl1.EmbeddedNavigator.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.GridControl1.EmbeddedNavigator.Name = ""
         Me.GridControl1.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
         Me.GridControl1.Location = New System.Drawing.Point(0, 0)
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(552, 200)
+        Me.GridControl1.Size = New System.Drawing.Size(571, 200)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.UseEmbeddedNavigator = True
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
         'GridView1
         '
-        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.colGSPCODEFKPK})
+        Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn1, Me.GridColumn2, Me.colUnite, Me.colN, Me.colGSPCODEFKPK})
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsView.ShowGroupPanel = False
@@ -662,6 +663,7 @@ Partial Class Frm_MedVirtuelle
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 0
+        Me.GridColumn1.Width = 106
         '
         'GridColumn2
         '
@@ -671,29 +673,31 @@ Partial Class Frm_MedVirtuelle
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 1
         '
-        'GridColumn3
+        'colUnite
         '
-        Me.GridColumn3.Caption = "Unité"
-        Me.GridColumn3.ColumnEdit = Me.cdfnom
-        Me.GridColumn3.FieldName = "MVPSDU_CDF_UNITE"
-        Me.GridColumn3.Name = "GridColumn3"
-        Me.GridColumn3.Visible = True
-        Me.GridColumn3.VisibleIndex = 2
+        Me.colUnite.Caption = "Unité"
+        Me.colUnite.ColumnEdit = Me.cdfnom
+        Me.colUnite.FieldName = "MVPSDU_CDF_UNITE"
+        Me.colUnite.Name = "colUnite"
+        Me.colUnite.Visible = True
+        Me.colUnite.VisibleIndex = 2
+        Me.colUnite.Width = 106
         '
-        'GridColumn4
+        'colN
         '
-        Me.GridColumn4.Caption = "N"
-        Me.GridColumn4.FieldName = "MVPSDU_NUM_ORD"
-        Me.GridColumn4.Name = "GridColumn4"
-        Me.GridColumn4.OptionsColumn.ReadOnly = True
-        Me.GridColumn4.Visible = True
-        Me.GridColumn4.VisibleIndex = 3
+        Me.colN.Caption = "N"
+        Me.colN.FieldName = "MVPSDU_NUM_ORD"
+        Me.colN.Name = "colN"
+        Me.colN.OptionsColumn.ReadOnly = True
+        Me.colN.Visible = True
+        Me.colN.VisibleIndex = 3
         '
         'colGSPCODEFKPK
         '
-        Me.colGSPCODEFKPK.Caption = "GridColumn6"
+        Me.colGSPCODEFKPK.Caption = "MVPSDU_GSP_CODE_FK_PK"
         Me.colGSPCODEFKPK.FieldName = "MVPSDU_GSP_CODE_FK_PK"
         Me.colGSPCODEFKPK.Name = "colGSPCODEFKPK"
+        Me.colGSPCODEFKPK.OptionsColumn.AllowEdit = False
         '
         'GridColumn5
         '
@@ -704,18 +708,18 @@ Partial Class Frm_MedVirtuelle
         '
         'txtCodeRef
         '
-        Me.txtCodeRef.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_CODE_SP_REFERENCE", True))
-        Me.txtCodeRef.Location = New System.Drawing.Point(452, 64)
+        Me.txtCodeRef.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_CODE_REF", True))
+        Me.txtCodeRef.Location = New System.Drawing.Point(476, 64)
         Me.txtCodeRef.Name = "txtCodeRef"
         Me.txtCodeRef.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtCodeRef.Size = New System.Drawing.Size(100, 20)
         Me.txtCodeRef.TabIndex = 38
-        Me.txtCodeRef.Tag = "[NOEDIT]"
+        Me.txtCodeRef.Tag = "[ADD][EDIT]"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(364, 67)
+        Me.Label5.Location = New System.Drawing.Point(388, 68)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(81, 13)
         Me.Label5.TabIndex = 39
@@ -725,7 +729,7 @@ Partial Class Frm_MedVirtuelle
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(307, 14)
+        Me.Label7.Location = New System.Drawing.Point(285, 14)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(35, 13)
         Me.Label7.TabIndex = 41
@@ -735,36 +739,79 @@ Partial Class Frm_MedVirtuelle
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(450, 14)
+        Me.Label8.Location = New System.Drawing.Point(420, 14)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(40, 13)
+        Me.Label8.Size = New System.Drawing.Size(70, 13)
         Me.Label8.TabIndex = 43
-        Me.Label8.Text = "Depuis"
+        Me.Label8.Text = "Dispo Depuis"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'DateDispoEdit3
         '
         Me.DateDispoEdit3.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_DATE_DISPO", True))
         Me.DateDispoEdit3.EditValue = Nothing
-        Me.DateDispoEdit3.Location = New System.Drawing.Point(494, 10)
+        Me.DateDispoEdit3.Location = New System.Drawing.Point(490, 10)
         Me.DateDispoEdit3.Name = "DateDispoEdit3"
         Me.DateDispoEdit3.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.DateDispoEdit3.Size = New System.Drawing.Size(65, 20)
+        Me.DateDispoEdit3.Size = New System.Drawing.Size(87, 20)
         Me.DateDispoEdit3.TabIndex = 44
         '
         'statutEdit
         '
         Me.statutEdit.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_ETAT_DISPO", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
-        Me.statutEdit.Location = New System.Drawing.Point(349, 12)
+        Me.statutEdit.Location = New System.Drawing.Point(321, 10)
         Me.statutEdit.Name = "statutEdit"
         Me.statutEdit.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.statutEdit.Properties.NullText = ""
         Me.statutEdit.Size = New System.Drawing.Size(100, 20)
         Me.statutEdit.TabIndex = 45
+        '
+        'MVPSDU
+        '
+        Me.MVPSDU.ClearBeforeFill = True
+        '
+        'IC1SP_TERME1SPECIALITETableAdapter1
+        '
+        Me.IC1SP_TERME1SPECIALITETableAdapter1.ClearBeforeFill = True
+        '
+        'MVPF
+        '
+        Me.MVPF.ClearBeforeFill = True
+        '
+        'txtMax
+        '
+        Me.txtMax.Location = New System.Drawing.Point(458, 90)
+        Me.txtMax.Name = "txtMax"
+        Me.txtMax.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtMax.Size = New System.Drawing.Size(100, 20)
+        Me.txtMax.TabIndex = 46
+        Me.txtMax.Tag = ""
+        Me.txtMax.Visible = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(436, 41)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(50, 13)
+        Me.Label9.TabIndex = 43
+        Me.Label9.Text = "Retiré en"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'dtRetrait
+        '
+        Me.dtRetrait.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature2, "GSP_GENERIQUE_SPECIALITE.GSP_DATE_RETRAIT", True))
+        Me.dtRetrait.EditValue = Nothing
+        Me.dtRetrait.Location = New System.Drawing.Point(490, 37)
+        Me.dtRetrait.Name = "dtRetrait"
+        Me.dtRetrait.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.dtRetrait.Size = New System.Drawing.Size(86, 20)
+        Me.dtRetrait.TabIndex = 44
         '
         'Frm_MedVirtuelle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.ClientSize = New System.Drawing.Size(679, 641)
+        Me.ClientSize = New System.Drawing.Size(698, 641)
         Me.Name = "Frm_MedVirtuelle"
         Me.Text = "Médicament virtuel"
         Me.Pan.ResumeLayout(False)
@@ -779,9 +826,9 @@ Partial Class Frm_MedVirtuelle
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabControl1.ResumeLayout(False)
         Me.XtraTabPage1.ResumeLayout(False)
-        CType(Me.GC, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GC1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DsTheriaque_Nomenclature2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GV, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCode.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtLibelle.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCodeVirtuelle.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -812,6 +859,8 @@ Partial Class Frm_MedVirtuelle
         CType(Me.txtCodeRef.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DateDispoEdit3.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.statutEdit.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtMax.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtRetrait.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -821,8 +870,8 @@ Partial Class Frm_MedVirtuelle
     Friend WithEvents GV2 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents XtraTabControl1 As DevExpress.XtraTab.XtraTabControl
     Friend WithEvents XtraTabPage1 As DevExpress.XtraTab.XtraTabPage
-    Friend WithEvents GC As DevExpress.XtraGrid.GridControl
-    Friend WithEvents GV As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents GC1 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GV1 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txtCode As DevExpress.XtraEditors.TextEdit
     Friend WithEvents txtLibelle As DevExpress.XtraEditors.TextEdit
@@ -859,8 +908,8 @@ Partial Class Frm_MedVirtuelle
     Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GridColumn1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn2 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn3 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents GridColumn4 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colUnite As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents colN As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridControl2 As DevExpress.XtraGrid.GridControl
     Friend WithEvents GridView2 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GridColumn5 As DevExpress.XtraGrid.Columns.GridColumn
@@ -872,5 +921,11 @@ Partial Class Frm_MedVirtuelle
     Friend WithEvents fovlibelle As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents colGSPCODEFKPK As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents col_GSP_CODE_FK_PK As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents MVPSDU As Theriaque.dsTheriaque_Nomenclature2TableAdapters.MVPSDU_MED_VIR_PERE_SATableAdapter
+    Friend WithEvents IC1SP_TERME1SPECIALITETableAdapter1 As Theriaque.dsTheriaque_AnalyseOrdonance2TableAdapters.IC1SP_TERME1SPECIALITETableAdapter
+    Friend WithEvents MVPF As Theriaque.dsTheriaque_Nomenclature2TableAdapters.MVPF_MED_VIR_PERE_FORMETableAdapter
+    Friend WithEvents txtMax As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents dtRetrait As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents Label9 As System.Windows.Forms.Label
 
 End Class

@@ -34,6 +34,8 @@ Public Module ModSQLData2
     Public Const strSSQL_FIC_INCOMPATIBILITE As String = "Select FIC_CODE_SQ_PK as code, '' as libelle FROM THERIAQUE.FIC_INCOMPATIBILITE"
     Public Const strSSQL_CLASSE_RMO As String = "Select CLRMO_CL_CODE_PK as code, CLRMO_NOM as libelle From THERIAQUE.CLRMO_CLASSE_RMO"
     Public Const strSSQL_SP_SPECIALITE_WITHOUT_MEDV As String = "SELECT SP_CODE_SQ_PK AS code, SP_NOM AS libelle, 0 as disable, 0 as chk , 0 as chkFixe FROM THERIAQUE.SP_SPECIALITE WHERE SP_GSP_CODE_FK IS NULL"
+    Public Const strSSQL_GSP As String = " SELECT GSP_CODE_SQ_PK AS code, GSP_NOM AS libelle FROM THERIAQUE.GSP_GENERIQUE_SPECIALITE "
+
 
 
     Public Const FIC_INCOMPATIBILITE As String = "FIC_INCOMPATIBILITE"

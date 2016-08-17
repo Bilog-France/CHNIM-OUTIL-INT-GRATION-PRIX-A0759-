@@ -188,6 +188,7 @@ Public Class Frm_Cipemg_Texte
     ''' <remarks>Proçédure surchargée</remarks>
     Public Overrides Sub Ajouter()
         EmptyDataTable()
+
         Me.BindingContext(Me.MasterDataSet, MasterTable).AddNew()
         SetCode_MAx(MasterTable, txtCode)
         CodE = InvalideControl

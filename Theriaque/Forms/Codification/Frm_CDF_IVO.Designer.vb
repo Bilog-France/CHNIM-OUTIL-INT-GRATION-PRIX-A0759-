@@ -57,7 +57,7 @@ Partial Class Frm_CDF_IVO
         Me.lbNomABRG = New System.Windows.Forms.Label
         Me.CdF_CODIFTA = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.CDF_CODIFTableAdapter
         Me.txtIdentification = New DevExpress.XtraEditors.TextEdit
-        Me.Label5 = New System.Windows.Forms.Label
+        Me.lblCategorie = New System.Windows.Forms.Label
         Me.lkupCatégorie = New DevExpress.XtraEditors.LookUpEdit
         Me.CatvO_CATEGORIEVOIETableAdapter1 = New Theriaque.dsTheriaque_Nomenclature2TableAdapters.CATVO_CATEGORIEVOIETableAdapter
         Me.Pan.SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class Frm_CDF_IVO
         'PanMain
         '
         Me.PanMain.Controls.Add(Me.lkupCatégorie)
-        Me.PanMain.Controls.Add(Me.Label5)
+        Me.PanMain.Controls.Add(Me.lblCategorie)
         Me.PanMain.Controls.Add(Me.txtIdentification)
         Me.PanMain.Controls.Add(Me.txtNomAbrege)
         Me.PanMain.Controls.Add(Me.lbNomABRG)
@@ -512,15 +512,16 @@ Partial Class Frm_CDF_IVO
         Me.txtIdentification.TabIndex = 30
         Me.txtIdentification.Tag = "[EDIT][ADD]"
         '
-        'Label5
+        'lblCategorie
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(258, 94)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 13)
-        Me.Label5.TabIndex = 31
-        Me.Label5.Text = "Catégorie"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCategorie.AutoSize = True
+        Me.lblCategorie.Location = New System.Drawing.Point(258, 94)
+        Me.lblCategorie.Name = "lblCategorie"
+        Me.lblCategorie.Size = New System.Drawing.Size(52, 13)
+        Me.lblCategorie.TabIndex = 31
+        Me.lblCategorie.Text = "Catégorie"
+        Me.lblCategorie.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblCategorie.Visible = False
         '
         'lkupCatégorie
         '
@@ -533,6 +534,7 @@ Partial Class Frm_CDF_IVO
         Me.lkupCatégorie.Size = New System.Drawing.Size(182, 20)
         Me.lkupCatégorie.TabIndex = 32
         Me.lkupCatégorie.Tag = ""
+        Me.lkupCatégorie.Visible = False
         '
         'CatvO_CATEGORIEVOIETableAdapter1
         '
@@ -612,7 +614,7 @@ Partial Class Frm_CDF_IVO
     Friend WithEvents DsTheriaque_Nomenclature21 As Theriaque.dsTheriaque_Nomenclature2
     Friend WithEvents CDFCODIFBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents txtIdentification As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents lblCategorie As System.Windows.Forms.Label
     Friend WithEvents lkupCatégorie As DevExpress.XtraEditors.LookUpEdit
     Friend WithEvents CatvO_CATEGORIEVOIETableAdapter1 As Theriaque.dsTheriaque_Nomenclature2TableAdapters.CATVO_CATEGORIEVOIETableAdapter
 

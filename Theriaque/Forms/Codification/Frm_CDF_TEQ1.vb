@@ -174,10 +174,14 @@ Public Class Frm_CDF_TEQ1
         sSQL &= " and CDFCDFU_CDF_CODE_FK_PK=" & cn.SQLText(txtCode.Text)
         cn.Execute(sSQL)
 
-        If (Not String.IsNullOrEmpty(lkupUnite_UCUM.EditValue)) And lkupUnite_UCUM.EditValue <> 0 Then
-            sSQL = " INSERT INTO [theriaque].[theriaque].[CDFCDFU_CDFU]([CDFCDFU_CDFUCUM_CODE_FK_PK],[CDFCDFU_CDF_NUMERO_FK_PK],[CDFCDFU_CDF_CODE_FK_PK]) "
-            sSQL &= " VALUES(" & lkupUnite_UCUM.EditValue & "," & cn.SQLText(txtNCodif.Text) & "," & cn.SQLText(txtCode.Text) & ")"
-            cn.Execute(sSQL)
+        If lkupUnite_UCUM.EditValue IsNot System.DBNull.Value Then
+
+            If (Not String.IsNullOrEmpty(lkupUnite_UCUM.EditValue)) And lkupUnite_UCUM.EditValue <> 0 Then
+                sSQL = " INSERT INTO [theriaque].[theriaque].[CDFCDFU_CDFU]([CDFCDFU_CDFUCUM_CODE_FK_PK],[CDFCDFU_CDF_NUMERO_FK_PK],[CDFCDFU_CDF_CODE_FK_PK]) "
+                sSQL &= " VALUES(" & lkupUnite_UCUM.EditValue & "," & cn.SQLText(txtNCodif.Text) & "," & cn.SQLText(txtCode.Text) & ")"
+                cn.Execute(sSQL)
+            End If
+
         End If
 
     End Sub

@@ -275,6 +275,8 @@ Public Class Frm_CDF_IVO
 
         If _Code_CDF = "18" Then
             InitLkup(lkupCatégorie, "CDF_CODIF", strSSQL_CDF_CODIF2("33"), True)
+            lblCategorie.Visible = True
+            lkupCatégorie.Visible = True
         End If
 
         'Me.lkupCDF25.DataSource = CdF_CODIFTableAdapterSourceOffc.GetDataByNumero("25")

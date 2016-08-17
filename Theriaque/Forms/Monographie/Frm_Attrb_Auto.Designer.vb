@@ -19,24 +19,6 @@ Partial Class Frm_Attrb_Auto
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim StyleFormatCondition28 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition29 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition30 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition31 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition32 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition33 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition34 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition35 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition36 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition37 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition38 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition39 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition40 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition41 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition42 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition43 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition44 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition45 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition1 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition2 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition3 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
@@ -61,6 +43,27 @@ Partial Class Frm_Attrb_Auto
         Dim StyleFormatCondition22 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition23 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition24 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition25 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition26 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition27 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition28 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition29 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition30 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition31 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition32 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition33 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition34 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition35 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition36 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition37 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition38 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition39 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition40 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition41 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition42 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition43 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition44 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition45 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Me.Panel2 = New System.Windows.Forms.Panel
         Me.ProgressBar = New System.Windows.Forms.ProgressBar
         Me.Label2 = New System.Windows.Forms.Label
@@ -115,6 +118,10 @@ Partial Class Frm_Attrb_Auto
         Me.CardView5 = New DevExpress.XtraGrid.Views.Grid.GridView
         Me.col1_InteractionRCP = New DevExpress.XtraGrid.Columns.GridColumn
         Me.rpbtEdit5 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
+        Me.GC13 = New DevExpress.XtraGrid.GridControl
+        Me.GV13 = New DevExpress.XtraGrid.Views.Grid.GridView
+        Me.colPosoMinMax = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.rpbtEdit13 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel
         Me.GC12 = New DevExpress.XtraGrid.GridControl
@@ -183,6 +190,9 @@ Partial Class Frm_Attrb_Auto
         CType(Me.GC9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CardView5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rpbtEdit5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GC13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GV13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rpbtEdit13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.GC12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -201,22 +211,22 @@ Partial Class Frm_Attrb_Auto
         '
         'Pan
         '
-        Me.Pan.Size = New System.Drawing.Size(791, 575)
+        Me.Pan.Size = New System.Drawing.Size(905, 575)
         '
         'PanMain
         '
         Me.PanMain.Controls.Add(Me.Panel3)
         Me.PanMain.Controls.Add(Me.Panel2)
         Me.PanMain.Location = New System.Drawing.Point(0, 35)
-        Me.PanMain.Size = New System.Drawing.Size(673, 540)
+        Me.PanMain.Size = New System.Drawing.Size(787, 540)
         '
         'PanTop
         '
-        Me.PanTop.Size = New System.Drawing.Size(791, 35)
+        Me.PanTop.Size = New System.Drawing.Size(905, 35)
         '
         'Label1
         '
-        Me.Label1.Size = New System.Drawing.Size(791, 28)
+        Me.Label1.Size = New System.Drawing.Size(905, 28)
         Me.Label1.Text = "Attribution automatique"
         '
         'LabelControl2
@@ -231,7 +241,7 @@ Partial Class Frm_Attrb_Auto
         '
         'Panel1
         '
-        Me.Panel1.Location = New System.Drawing.Point(673, 35)
+        Me.Panel1.Location = New System.Drawing.Point(787, 35)
         Me.Panel1.Size = New System.Drawing.Size(118, 540)
         '
         'DateEdit1
@@ -243,7 +253,7 @@ Partial Class Frm_Attrb_Auto
         'GroupBox
         '
         Me.GroupBox.Location = New System.Drawing.Point(0, 27)
-        Me.GroupBox.Size = New System.Drawing.Size(791, 8)
+        Me.GroupBox.Size = New System.Drawing.Size(905, 8)
         Me.GroupBox.Visible = False
         '
         'DateEdit2
@@ -267,7 +277,7 @@ Partial Class Frm_Attrb_Auto
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(2)
-        Me.Panel2.Size = New System.Drawing.Size(673, 146)
+        Me.Panel2.Size = New System.Drawing.Size(787, 146)
         Me.Panel2.TabIndex = 19
         '
         'ProgressBar
@@ -275,7 +285,7 @@ Partial Class Frm_Attrb_Auto
         Me.ProgressBar.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.ProgressBar.Location = New System.Drawing.Point(2, 132)
         Me.ProgressBar.Name = "ProgressBar"
-        Me.ProgressBar.Size = New System.Drawing.Size(669, 12)
+        Me.ProgressBar.Size = New System.Drawing.Size(783, 12)
         Me.ProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee
         Me.ProgressBar.TabIndex = 18
         Me.ProgressBar.Visible = False
@@ -360,7 +370,7 @@ Partial Class Frm_Attrb_Auto
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 146)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(673, 394)
+        Me.Panel3.Size = New System.Drawing.Size(787, 394)
         Me.Panel3.TabIndex = 20
         '
         'XtraTabControl1
@@ -370,7 +380,7 @@ Partial Class Frm_Attrb_Auto
         Me.XtraTabControl1.Location = New System.Drawing.Point(0, 0)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.XtraTabPage1
-        Me.XtraTabControl1.Size = New System.Drawing.Size(673, 394)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(787, 394)
         Me.XtraTabControl1.TabIndex = 10
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage1, Me.XtraTabPage2})
         Me.XtraTabControl1.Text = " f"
@@ -379,7 +389,7 @@ Partial Class Frm_Attrb_Auto
         '
         Me.XtraTabPage1.Controls.Add(Me.TableLayoutPanel1)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(664, 363)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(778, 363)
         Me.XtraTabPage1.Text = "Attribution automatique 1"
         '
         'TableLayoutPanel1
@@ -387,12 +397,13 @@ Partial Class Frm_Attrb_Auto
         Me.TableLayoutPanel1.AutoSize = True
         Me.TableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.TableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TableLayoutPanel1.ColumnCount = 5
+        Me.TableLayoutPanel1.ColumnCount = 6
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.87952!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.87952!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GC2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.GC, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GC3, 1, 0)
@@ -403,13 +414,14 @@ Partial Class Frm_Attrb_Auto
         Me.TableLayoutPanel1.Controls.Add(Me.GC7, 3, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GC6, 2, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.GC9, 4, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.GC13, 5, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(664, 363)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(778, 363)
         Me.TableLayoutPanel1.TabIndex = 2
         '
         'GC2
@@ -438,7 +450,7 @@ Partial Class Frm_Attrb_Auto
         Me.GC2.MainView = Me.CardView6
         Me.GC2.Name = "GC2"
         Me.GC2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit6})
-        Me.GC2.Size = New System.Drawing.Size(126, 176)
+        Me.GC2.Size = New System.Drawing.Size(123, 176)
         Me.GC2.TabIndex = 10
         Me.GC2.UseEmbeddedNavigator = True
         Me.GC2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView6})
@@ -446,22 +458,22 @@ Partial Class Frm_Attrb_Auto
         'CardView6
         '
         Me.CardView6.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Pharmaco})
-        StyleFormatCondition28.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition28.Appearance.Options.UseBackColor = True
-        StyleFormatCondition28.ApplyToRow = True
-        StyleFormatCondition28.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition28.Value1 = "Consultation"
-        StyleFormatCondition29.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition29.Appearance.Options.UseBackColor = True
-        StyleFormatCondition29.ApplyToRow = True
-        StyleFormatCondition29.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition29.Value1 = "Ajout"
-        StyleFormatCondition30.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition30.Appearance.Options.UseBackColor = True
-        StyleFormatCondition30.ApplyToRow = True
-        StyleFormatCondition30.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition30.Value1 = "Suppression"
-        Me.CardView6.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition28, StyleFormatCondition29, StyleFormatCondition30})
+        StyleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition1.Appearance.Options.UseBackColor = True
+        StyleFormatCondition1.ApplyToRow = True
+        StyleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition1.Value1 = "Consultation"
+        StyleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition2.Appearance.Options.UseBackColor = True
+        StyleFormatCondition2.ApplyToRow = True
+        StyleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition2.Value1 = "Ajout"
+        StyleFormatCondition3.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition3.Appearance.Options.UseBackColor = True
+        StyleFormatCondition3.ApplyToRow = True
+        StyleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition3.Value1 = "Suppression"
+        Me.CardView6.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition1, StyleFormatCondition2, StyleFormatCondition3})
         Me.CardView6.GridControl = Me.GC2
         Me.CardView6.GroupPanelText = " "
         Me.CardView6.Name = "CardView6"
@@ -511,7 +523,7 @@ Partial Class Frm_Attrb_Auto
         Me.GC.MainView = Me.CardView1
         Me.GC.Name = "GC"
         Me.GC.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit1})
-        Me.GC.Size = New System.Drawing.Size(126, 175)
+        Me.GC.Size = New System.Drawing.Size(123, 175)
         Me.GC.TabIndex = 1
         Me.GC.UseEmbeddedNavigator = True
         Me.GC.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView1})
@@ -519,22 +531,22 @@ Partial Class Frm_Attrb_Auto
         'CardView1
         '
         Me.CardView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Etiologie})
-        StyleFormatCondition31.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition31.Appearance.Options.UseBackColor = True
-        StyleFormatCondition31.ApplyToRow = True
-        StyleFormatCondition31.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition31.Value1 = "Consultation"
-        StyleFormatCondition32.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition32.Appearance.Options.UseBackColor = True
-        StyleFormatCondition32.ApplyToRow = True
-        StyleFormatCondition32.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition32.Value1 = "Ajout"
-        StyleFormatCondition33.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition33.Appearance.Options.UseBackColor = True
-        StyleFormatCondition33.ApplyToRow = True
-        StyleFormatCondition33.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition33.Value1 = "Suppression"
-        Me.CardView1.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition31, StyleFormatCondition32, StyleFormatCondition33})
+        StyleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition4.Appearance.Options.UseBackColor = True
+        StyleFormatCondition4.ApplyToRow = True
+        StyleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition4.Value1 = "Consultation"
+        StyleFormatCondition5.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition5.Appearance.Options.UseBackColor = True
+        StyleFormatCondition5.ApplyToRow = True
+        StyleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition5.Value1 = "Ajout"
+        StyleFormatCondition6.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition6.Appearance.Options.UseBackColor = True
+        StyleFormatCondition6.ApplyToRow = True
+        StyleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition6.Value1 = "Suppression"
+        Me.CardView1.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition4, StyleFormatCondition5, StyleFormatCondition6})
         Me.CardView1.GridControl = Me.GC
         Me.CardView1.GroupPanelText = " "
         Me.CardView1.Name = "CardView1"
@@ -580,11 +592,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC3.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC3.EmbeddedNavigator.Name = ""
         Me.GC3.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC3.Location = New System.Drawing.Point(135, 3)
+        Me.GC3.Location = New System.Drawing.Point(132, 3)
         Me.GC3.MainView = Me.CardView2
         Me.GC3.Name = "GC3"
         Me.GC3.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit2})
-        Me.GC3.Size = New System.Drawing.Size(126, 175)
+        Me.GC3.Size = New System.Drawing.Size(123, 175)
         Me.GC3.TabIndex = 5
         Me.GC3.UseEmbeddedNavigator = True
         Me.GC3.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView2})
@@ -592,22 +604,22 @@ Partial Class Frm_Attrb_Auto
         'CardView2
         '
         Me.CardView2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_SecPrec})
-        StyleFormatCondition34.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition34.Appearance.Options.UseBackColor = True
-        StyleFormatCondition34.ApplyToRow = True
-        StyleFormatCondition34.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition34.Value1 = "Consultation"
-        StyleFormatCondition35.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition35.Appearance.Options.UseBackColor = True
-        StyleFormatCondition35.ApplyToRow = True
-        StyleFormatCondition35.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition35.Value1 = "Ajout"
-        StyleFormatCondition36.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition36.Appearance.Options.UseBackColor = True
-        StyleFormatCondition36.ApplyToRow = True
-        StyleFormatCondition36.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition36.Value1 = "Suppression"
-        Me.CardView2.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition34, StyleFormatCondition35, StyleFormatCondition36})
+        StyleFormatCondition7.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition7.Appearance.Options.UseBackColor = True
+        StyleFormatCondition7.ApplyToRow = True
+        StyleFormatCondition7.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition7.Value1 = "Consultation"
+        StyleFormatCondition8.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition8.Appearance.Options.UseBackColor = True
+        StyleFormatCondition8.ApplyToRow = True
+        StyleFormatCondition8.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition8.Value1 = "Ajout"
+        StyleFormatCondition9.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition9.Appearance.Options.UseBackColor = True
+        StyleFormatCondition9.ApplyToRow = True
+        StyleFormatCondition9.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition9.Value1 = "Suppression"
+        Me.CardView2.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition7, StyleFormatCondition8, StyleFormatCondition9})
         Me.CardView2.GridControl = Me.GC3
         Me.CardView2.GroupPanelText = " "
         Me.CardView2.Name = "CardView2"
@@ -653,11 +665,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC10.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC10.EmbeddedNavigator.Name = ""
         Me.GC10.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC10.Location = New System.Drawing.Point(533, 184)
+        Me.GC10.Location = New System.Drawing.Point(521, 184)
         Me.GC10.MainView = Me.CardView10
         Me.GC10.Name = "GC10"
         Me.GC10.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit10})
-        Me.GC10.Size = New System.Drawing.Size(128, 176)
+        Me.GC10.Size = New System.Drawing.Size(124, 176)
         Me.GC10.TabIndex = 4
         Me.GC10.UseEmbeddedNavigator = True
         Me.GC10.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView10})
@@ -665,22 +677,22 @@ Partial Class Frm_Attrb_Auto
         'CardView10
         '
         Me.CardView10.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Grosse_Allai})
-        StyleFormatCondition37.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition37.Appearance.Options.UseBackColor = True
-        StyleFormatCondition37.ApplyToRow = True
-        StyleFormatCondition37.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition37.Value1 = "Consultation"
-        StyleFormatCondition38.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition38.Appearance.Options.UseBackColor = True
-        StyleFormatCondition38.ApplyToRow = True
-        StyleFormatCondition38.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition38.Value1 = "Ajout"
-        StyleFormatCondition39.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition39.Appearance.Options.UseBackColor = True
-        StyleFormatCondition39.ApplyToRow = True
-        StyleFormatCondition39.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition39.Value1 = "Suppression"
-        Me.CardView10.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition37, StyleFormatCondition38, StyleFormatCondition39})
+        StyleFormatCondition10.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition10.Appearance.Options.UseBackColor = True
+        StyleFormatCondition10.ApplyToRow = True
+        StyleFormatCondition10.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition10.Value1 = "Consultation"
+        StyleFormatCondition11.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition11.Appearance.Options.UseBackColor = True
+        StyleFormatCondition11.ApplyToRow = True
+        StyleFormatCondition11.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition11.Value1 = "Ajout"
+        StyleFormatCondition12.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition12.Appearance.Options.UseBackColor = True
+        StyleFormatCondition12.ApplyToRow = True
+        StyleFormatCondition12.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition12.Value1 = "Suppression"
+        Me.CardView10.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition10, StyleFormatCondition11, StyleFormatCondition12})
         Me.CardView10.GridControl = Me.GC10
         Me.CardView10.GroupPanelText = " "
         Me.CardView10.Name = "CardView10"
@@ -726,11 +738,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC8.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC8.EmbeddedNavigator.Name = ""
         Me.GC8.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC8.Location = New System.Drawing.Point(400, 184)
+        Me.GC8.Location = New System.Drawing.Point(391, 184)
         Me.GC8.MainView = Me.CardView9
         Me.GC8.Name = "GC8"
         Me.GC8.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit9})
-        Me.GC8.Size = New System.Drawing.Size(127, 176)
+        Me.GC8.Size = New System.Drawing.Size(124, 176)
         Me.GC8.TabIndex = 9
         Me.GC8.UseEmbeddedNavigator = True
         Me.GC8.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView9})
@@ -738,22 +750,22 @@ Partial Class Frm_Attrb_Auto
         'CardView9
         '
         Me.CardView9.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_CipemgTexte})
-        StyleFormatCondition40.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition40.Appearance.Options.UseBackColor = True
-        StyleFormatCondition40.ApplyToRow = True
-        StyleFormatCondition40.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition40.Value1 = "Consultation"
-        StyleFormatCondition41.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition41.Appearance.Options.UseBackColor = True
-        StyleFormatCondition41.ApplyToRow = True
-        StyleFormatCondition41.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition41.Value1 = "Ajout"
-        StyleFormatCondition42.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition42.Appearance.Options.UseBackColor = True
-        StyleFormatCondition42.ApplyToRow = True
-        StyleFormatCondition42.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition42.Value1 = "Suppression"
-        Me.CardView9.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition40, StyleFormatCondition41, StyleFormatCondition42})
+        StyleFormatCondition13.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition13.Appearance.Options.UseBackColor = True
+        StyleFormatCondition13.ApplyToRow = True
+        StyleFormatCondition13.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition13.Value1 = "Consultation"
+        StyleFormatCondition14.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition14.Appearance.Options.UseBackColor = True
+        StyleFormatCondition14.ApplyToRow = True
+        StyleFormatCondition14.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition14.Value1 = "Ajout"
+        StyleFormatCondition15.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition15.Appearance.Options.UseBackColor = True
+        StyleFormatCondition15.ApplyToRow = True
+        StyleFormatCondition15.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition15.Value1 = "Suppression"
+        Me.CardView9.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition13, StyleFormatCondition14, StyleFormatCondition15})
         Me.CardView9.GridControl = Me.GC8
         Me.CardView9.GroupPanelText = " "
         Me.CardView9.Name = "CardView9"
@@ -799,11 +811,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC4.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC4.EmbeddedNavigator.Name = ""
         Me.GC4.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC4.Location = New System.Drawing.Point(135, 184)
+        Me.GC4.Location = New System.Drawing.Point(132, 184)
         Me.GC4.MainView = Me.CardView7
         Me.GC4.Name = "GC4"
         Me.GC4.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit7})
-        Me.GC4.Size = New System.Drawing.Size(126, 176)
+        Me.GC4.Size = New System.Drawing.Size(123, 176)
         Me.GC4.TabIndex = 3
         Me.GC4.UseEmbeddedNavigator = True
         Me.GC4.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView7})
@@ -811,22 +823,22 @@ Partial Class Frm_Attrb_Auto
         'CardView7
         '
         Me.CardView7.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Indication})
-        StyleFormatCondition43.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition43.Appearance.Options.UseBackColor = True
-        StyleFormatCondition43.ApplyToRow = True
-        StyleFormatCondition43.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition43.Value1 = "Consultation"
-        StyleFormatCondition44.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition44.Appearance.Options.UseBackColor = True
-        StyleFormatCondition44.ApplyToRow = True
-        StyleFormatCondition44.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition44.Value1 = "Ajout"
-        StyleFormatCondition45.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition45.Appearance.Options.UseBackColor = True
-        StyleFormatCondition45.ApplyToRow = True
-        StyleFormatCondition45.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition45.Value1 = "Suppression"
-        Me.CardView7.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition43, StyleFormatCondition44, StyleFormatCondition45})
+        StyleFormatCondition16.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition16.Appearance.Options.UseBackColor = True
+        StyleFormatCondition16.ApplyToRow = True
+        StyleFormatCondition16.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition16.Value1 = "Consultation"
+        StyleFormatCondition17.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition17.Appearance.Options.UseBackColor = True
+        StyleFormatCondition17.ApplyToRow = True
+        StyleFormatCondition17.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition17.Value1 = "Ajout"
+        StyleFormatCondition18.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition18.Appearance.Options.UseBackColor = True
+        StyleFormatCondition18.ApplyToRow = True
+        StyleFormatCondition18.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition18.Value1 = "Suppression"
+        Me.CardView7.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition16, StyleFormatCondition17, StyleFormatCondition18})
         Me.CardView7.GridControl = Me.GC4
         Me.CardView7.GroupPanelText = " "
         Me.CardView7.Name = "CardView7"
@@ -872,11 +884,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC5.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC5.EmbeddedNavigator.Name = ""
         Me.GC5.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC5.Location = New System.Drawing.Point(267, 3)
+        Me.GC5.Location = New System.Drawing.Point(261, 3)
         Me.GC5.MainView = Me.CardView3
         Me.GC5.Name = "GC5"
         Me.GC5.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit3})
-        Me.GC5.Size = New System.Drawing.Size(127, 175)
+        Me.GC5.Size = New System.Drawing.Size(124, 175)
         Me.GC5.TabIndex = 4
         Me.GC5.UseEmbeddedNavigator = True
         Me.GC5.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView3})
@@ -884,22 +896,22 @@ Partial Class Frm_Attrb_Auto
         'CardView3
         '
         Me.CardView3.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Posologie})
-        StyleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition1.Appearance.Options.UseBackColor = True
-        StyleFormatCondition1.ApplyToRow = True
-        StyleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition1.Value1 = "Consultation"
-        StyleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition2.Appearance.Options.UseBackColor = True
-        StyleFormatCondition2.ApplyToRow = True
-        StyleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition2.Value1 = "Ajout"
-        StyleFormatCondition3.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition3.Appearance.Options.UseBackColor = True
-        StyleFormatCondition3.ApplyToRow = True
-        StyleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition3.Value1 = "Suppression"
-        Me.CardView3.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition1, StyleFormatCondition2, StyleFormatCondition3})
+        StyleFormatCondition19.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition19.Appearance.Options.UseBackColor = True
+        StyleFormatCondition19.ApplyToRow = True
+        StyleFormatCondition19.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition19.Value1 = "Consultation"
+        StyleFormatCondition20.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition20.Appearance.Options.UseBackColor = True
+        StyleFormatCondition20.ApplyToRow = True
+        StyleFormatCondition20.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition20.Value1 = "Ajout"
+        StyleFormatCondition21.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition21.Appearance.Options.UseBackColor = True
+        StyleFormatCondition21.ApplyToRow = True
+        StyleFormatCondition21.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition21.Value1 = "Suppression"
+        Me.CardView3.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition19, StyleFormatCondition20, StyleFormatCondition21})
         Me.CardView3.GridControl = Me.GC5
         Me.CardView3.GroupPanelText = " "
         Me.CardView3.Name = "CardView3"
@@ -945,11 +957,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC7.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC7.EmbeddedNavigator.Name = ""
         Me.GC7.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC7.Location = New System.Drawing.Point(400, 3)
+        Me.GC7.Location = New System.Drawing.Point(391, 3)
         Me.GC7.MainView = Me.CardView4
         Me.GC7.Name = "GC7"
         Me.GC7.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit4})
-        Me.GC7.Size = New System.Drawing.Size(127, 175)
+        Me.GC7.Size = New System.Drawing.Size(124, 175)
         Me.GC7.TabIndex = 8
         Me.GC7.UseEmbeddedNavigator = True
         Me.GC7.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView4})
@@ -957,22 +969,22 @@ Partial Class Frm_Attrb_Auto
         'CardView4
         '
         Me.CardView4.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_CipemgCode})
-        StyleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition4.Appearance.Options.UseBackColor = True
-        StyleFormatCondition4.ApplyToRow = True
-        StyleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition4.Value1 = "Consultation"
-        StyleFormatCondition5.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition5.Appearance.Options.UseBackColor = True
-        StyleFormatCondition5.ApplyToRow = True
-        StyleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition5.Value1 = "Ajout"
-        StyleFormatCondition6.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition6.Appearance.Options.UseBackColor = True
-        StyleFormatCondition6.ApplyToRow = True
-        StyleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition6.Value1 = "Suppression"
-        Me.CardView4.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition4, StyleFormatCondition5, StyleFormatCondition6})
+        StyleFormatCondition22.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition22.Appearance.Options.UseBackColor = True
+        StyleFormatCondition22.ApplyToRow = True
+        StyleFormatCondition22.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition22.Value1 = "Consultation"
+        StyleFormatCondition23.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition23.Appearance.Options.UseBackColor = True
+        StyleFormatCondition23.ApplyToRow = True
+        StyleFormatCondition23.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition23.Value1 = "Ajout"
+        StyleFormatCondition24.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition24.Appearance.Options.UseBackColor = True
+        StyleFormatCondition24.ApplyToRow = True
+        StyleFormatCondition24.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition24.Value1 = "Suppression"
+        Me.CardView4.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition22, StyleFormatCondition23, StyleFormatCondition24})
         Me.CardView4.GridControl = Me.GC7
         Me.CardView4.GroupPanelText = " "
         Me.CardView4.Name = "CardView4"
@@ -1018,11 +1030,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC6.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC6.EmbeddedNavigator.Name = ""
         Me.GC6.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC6.Location = New System.Drawing.Point(267, 184)
+        Me.GC6.Location = New System.Drawing.Point(261, 184)
         Me.GC6.MainView = Me.CardView8
         Me.GC6.Name = "GC6"
         Me.GC6.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit8})
-        Me.GC6.Size = New System.Drawing.Size(127, 176)
+        Me.GC6.Size = New System.Drawing.Size(124, 176)
         Me.GC6.TabIndex = 7
         Me.GC6.UseEmbeddedNavigator = True
         Me.GC6.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView8})
@@ -1030,22 +1042,22 @@ Partial Class Frm_Attrb_Auto
         'CardView8
         '
         Me.CardView8.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_ReconstAdminist})
-        StyleFormatCondition7.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition7.Appearance.Options.UseBackColor = True
-        StyleFormatCondition7.ApplyToRow = True
-        StyleFormatCondition7.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition7.Value1 = "Consultation"
-        StyleFormatCondition8.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition8.Appearance.Options.UseBackColor = True
-        StyleFormatCondition8.ApplyToRow = True
-        StyleFormatCondition8.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition8.Value1 = "Ajout"
-        StyleFormatCondition9.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition9.Appearance.Options.UseBackColor = True
-        StyleFormatCondition9.ApplyToRow = True
-        StyleFormatCondition9.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition9.Value1 = "Suppression"
-        Me.CardView8.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition7, StyleFormatCondition8, StyleFormatCondition9})
+        StyleFormatCondition25.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition25.Appearance.Options.UseBackColor = True
+        StyleFormatCondition25.ApplyToRow = True
+        StyleFormatCondition25.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition25.Value1 = "Consultation"
+        StyleFormatCondition26.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition26.Appearance.Options.UseBackColor = True
+        StyleFormatCondition26.ApplyToRow = True
+        StyleFormatCondition26.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition26.Value1 = "Ajout"
+        StyleFormatCondition27.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition27.Appearance.Options.UseBackColor = True
+        StyleFormatCondition27.ApplyToRow = True
+        StyleFormatCondition27.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition27.Value1 = "Suppression"
+        Me.CardView8.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition25, StyleFormatCondition26, StyleFormatCondition27})
         Me.CardView8.GridControl = Me.GC6
         Me.CardView8.GroupPanelText = " "
         Me.CardView8.Name = "CardView8"
@@ -1091,11 +1103,11 @@ Partial Class Frm_Attrb_Auto
         Me.GC9.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC9.EmbeddedNavigator.Name = ""
         Me.GC9.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC9.Location = New System.Drawing.Point(533, 3)
+        Me.GC9.Location = New System.Drawing.Point(521, 3)
         Me.GC9.MainView = Me.CardView5
         Me.GC9.Name = "GC9"
         Me.GC9.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit5})
-        Me.GC9.Size = New System.Drawing.Size(128, 175)
+        Me.GC9.Size = New System.Drawing.Size(124, 175)
         Me.GC9.TabIndex = 4
         Me.GC9.UseEmbeddedNavigator = True
         Me.GC9.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.CardView5})
@@ -1103,22 +1115,22 @@ Partial Class Frm_Attrb_Auto
         'CardView5
         '
         Me.CardView5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_InteractionRCP})
-        StyleFormatCondition10.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition10.Appearance.Options.UseBackColor = True
-        StyleFormatCondition10.ApplyToRow = True
-        StyleFormatCondition10.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition10.Value1 = "Consultation"
-        StyleFormatCondition11.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition11.Appearance.Options.UseBackColor = True
-        StyleFormatCondition11.ApplyToRow = True
-        StyleFormatCondition11.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition11.Value1 = "Ajout"
-        StyleFormatCondition12.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition12.Appearance.Options.UseBackColor = True
-        StyleFormatCondition12.ApplyToRow = True
-        StyleFormatCondition12.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition12.Value1 = "Suppression"
-        Me.CardView5.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition10, StyleFormatCondition11, StyleFormatCondition12})
+        StyleFormatCondition28.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition28.Appearance.Options.UseBackColor = True
+        StyleFormatCondition28.ApplyToRow = True
+        StyleFormatCondition28.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition28.Value1 = "Consultation"
+        StyleFormatCondition29.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition29.Appearance.Options.UseBackColor = True
+        StyleFormatCondition29.ApplyToRow = True
+        StyleFormatCondition29.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition29.Value1 = "Ajout"
+        StyleFormatCondition30.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition30.Appearance.Options.UseBackColor = True
+        StyleFormatCondition30.ApplyToRow = True
+        StyleFormatCondition30.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition30.Value1 = "Suppression"
+        Me.CardView5.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition28, StyleFormatCondition29, StyleFormatCondition30})
         Me.CardView5.GridControl = Me.GC9
         Me.CardView5.GroupPanelText = " "
         Me.CardView5.Name = "CardView5"
@@ -1141,6 +1153,79 @@ Partial Class Frm_Attrb_Auto
         Me.rpbtEdit5.AutoHeight = False
         Me.rpbtEdit5.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
         Me.rpbtEdit5.Name = "rpbtEdit5"
+        '
+        'GC13
+        '
+        Me.GC13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GC13.EmbeddedNavigator.Buttons.Append.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.CancelEdit.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.Edit.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.EndEdit.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.First.Enabled = False
+        Me.GC13.EmbeddedNavigator.Buttons.First.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.Last.Enabled = False
+        Me.GC13.EmbeddedNavigator.Buttons.Last.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.Next.Enabled = False
+        Me.GC13.EmbeddedNavigator.Buttons.Next.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.NextPage.Enabled = False
+        Me.GC13.EmbeddedNavigator.Buttons.NextPage.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.Prev.Enabled = False
+        Me.GC13.EmbeddedNavigator.Buttons.Prev.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.PrevPage.Enabled = False
+        Me.GC13.EmbeddedNavigator.Buttons.PrevPage.Visible = False
+        Me.GC13.EmbeddedNavigator.Buttons.Remove.Visible = False
+        Me.GC13.EmbeddedNavigator.Name = ""
+        Me.GC13.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
+        Me.GC13.Location = New System.Drawing.Point(651, 3)
+        Me.GC13.MainView = Me.GV13
+        Me.GC13.Name = "GC13"
+        Me.GC13.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit13})
+        Me.GC13.Size = New System.Drawing.Size(124, 175)
+        Me.GC13.TabIndex = 11
+        Me.GC13.UseEmbeddedNavigator = True
+        Me.GC13.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV13})
+        '
+        'GV13
+        '
+        Me.GV13.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colPosoMinMax})
+        StyleFormatCondition31.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition31.Appearance.Options.UseBackColor = True
+        StyleFormatCondition31.ApplyToRow = True
+        StyleFormatCondition31.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition31.Value1 = "Consultation"
+        StyleFormatCondition32.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition32.Appearance.Options.UseBackColor = True
+        StyleFormatCondition32.ApplyToRow = True
+        StyleFormatCondition32.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition32.Value1 = "Ajout"
+        StyleFormatCondition33.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition33.Appearance.Options.UseBackColor = True
+        StyleFormatCondition33.ApplyToRow = True
+        StyleFormatCondition33.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition33.Value1 = "Suppression"
+        Me.GV13.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition31, StyleFormatCondition32, StyleFormatCondition33})
+        Me.GV13.GridControl = Me.GC13
+        Me.GV13.GroupPanelText = " "
+        Me.GV13.Name = "GV13"
+        Me.GV13.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never
+        Me.GV13.OptionsView.ShowGroupPanel = False
+        Me.GV13.OptionsView.ShowHorzLines = False
+        Me.GV13.OptionsView.ShowVertLines = False
+        '
+        'colPosoMinMax
+        '
+        Me.colPosoMinMax.Caption = "Posologie Min Max"
+        Me.colPosoMinMax.ColumnEdit = Me.rpbtEdit13
+        Me.colPosoMinMax.FieldName = "code"
+        Me.colPosoMinMax.Name = "colPosoMinMax"
+        Me.colPosoMinMax.Visible = True
+        Me.colPosoMinMax.VisibleIndex = 0
+        '
+        'rpbtEdit13
+        '
+        Me.rpbtEdit13.AutoHeight = False
+        Me.rpbtEdit13.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton})
+        Me.rpbtEdit13.Name = "rpbtEdit13"
         '
         'XtraTabPage2
         '
@@ -1209,22 +1294,22 @@ Partial Class Frm_Attrb_Auto
         'CardView12
         '
         Me.CardView12.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_EffetInde})
-        StyleFormatCondition13.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition13.Appearance.Options.UseBackColor = True
-        StyleFormatCondition13.ApplyToRow = True
-        StyleFormatCondition13.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition13.Value1 = "Consultation"
-        StyleFormatCondition14.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition14.Appearance.Options.UseBackColor = True
-        StyleFormatCondition14.ApplyToRow = True
-        StyleFormatCondition14.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition14.Value1 = "Ajout"
-        StyleFormatCondition15.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition15.Appearance.Options.UseBackColor = True
-        StyleFormatCondition15.ApplyToRow = True
-        StyleFormatCondition15.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition15.Value1 = "Suppression"
-        Me.CardView12.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition13, StyleFormatCondition14, StyleFormatCondition15})
+        StyleFormatCondition34.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition34.Appearance.Options.UseBackColor = True
+        StyleFormatCondition34.ApplyToRow = True
+        StyleFormatCondition34.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition34.Value1 = "Consultation"
+        StyleFormatCondition35.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition35.Appearance.Options.UseBackColor = True
+        StyleFormatCondition35.ApplyToRow = True
+        StyleFormatCondition35.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition35.Value1 = "Ajout"
+        StyleFormatCondition36.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition36.Appearance.Options.UseBackColor = True
+        StyleFormatCondition36.ApplyToRow = True
+        StyleFormatCondition36.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition36.Value1 = "Suppression"
+        Me.CardView12.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition34, StyleFormatCondition35, StyleFormatCondition36})
         Me.CardView12.GridControl = Me.GC12
         Me.CardView12.GroupPanelText = " "
         Me.CardView12.Name = "CardView12"
@@ -1282,22 +1367,22 @@ Partial Class Frm_Attrb_Auto
         'CardView11
         '
         Me.CardView11.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Conducteur})
-        StyleFormatCondition16.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition16.Appearance.Options.UseBackColor = True
-        StyleFormatCondition16.ApplyToRow = True
-        StyleFormatCondition16.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition16.Value1 = "Consultation"
-        StyleFormatCondition17.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition17.Appearance.Options.UseBackColor = True
-        StyleFormatCondition17.ApplyToRow = True
-        StyleFormatCondition17.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition17.Value1 = "Ajout"
-        StyleFormatCondition18.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition18.Appearance.Options.UseBackColor = True
-        StyleFormatCondition18.ApplyToRow = True
-        StyleFormatCondition18.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition18.Value1 = "Suppression"
-        Me.CardView11.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition16, StyleFormatCondition17, StyleFormatCondition18})
+        StyleFormatCondition37.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition37.Appearance.Options.UseBackColor = True
+        StyleFormatCondition37.ApplyToRow = True
+        StyleFormatCondition37.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition37.Value1 = "Consultation"
+        StyleFormatCondition38.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition38.Appearance.Options.UseBackColor = True
+        StyleFormatCondition38.ApplyToRow = True
+        StyleFormatCondition38.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition38.Value1 = "Ajout"
+        StyleFormatCondition39.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition39.Appearance.Options.UseBackColor = True
+        StyleFormatCondition39.ApplyToRow = True
+        StyleFormatCondition39.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition39.Value1 = "Suppression"
+        Me.CardView11.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition37, StyleFormatCondition38, StyleFormatCondition39})
         Me.CardView11.GridControl = Me.GC11
         Me.CardView11.GroupPanelText = " "
         Me.CardView11.Name = "CardView11"
@@ -1354,22 +1439,22 @@ Partial Class Frm_Attrb_Auto
         'GridView5
         '
         Me.GridView5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn6})
-        StyleFormatCondition19.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition19.Appearance.Options.UseBackColor = True
-        StyleFormatCondition19.ApplyToRow = True
-        StyleFormatCondition19.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition19.Value1 = "Consultation"
-        StyleFormatCondition20.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition20.Appearance.Options.UseBackColor = True
-        StyleFormatCondition20.ApplyToRow = True
-        StyleFormatCondition20.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition20.Value1 = "Ajout"
-        StyleFormatCondition21.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition21.Appearance.Options.UseBackColor = True
-        StyleFormatCondition21.ApplyToRow = True
-        StyleFormatCondition21.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition21.Value1 = "Suppression"
-        Me.GridView5.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition19, StyleFormatCondition20, StyleFormatCondition21})
+        StyleFormatCondition40.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition40.Appearance.Options.UseBackColor = True
+        StyleFormatCondition40.ApplyToRow = True
+        StyleFormatCondition40.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition40.Value1 = "Consultation"
+        StyleFormatCondition41.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition41.Appearance.Options.UseBackColor = True
+        StyleFormatCondition41.ApplyToRow = True
+        StyleFormatCondition41.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition41.Value1 = "Ajout"
+        StyleFormatCondition42.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition42.Appearance.Options.UseBackColor = True
+        StyleFormatCondition42.ApplyToRow = True
+        StyleFormatCondition42.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition42.Value1 = "Suppression"
+        Me.GridView5.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition40, StyleFormatCondition41, StyleFormatCondition42})
         Me.GridView5.GridControl = Me.GridControl2
         Me.GridView5.GroupPanelText = " "
         Me.GridView5.Name = "GridView5"
@@ -1426,22 +1511,22 @@ Partial Class Frm_Attrb_Auto
         'GridView8
         '
         Me.GridView8.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GridColumn9})
-        StyleFormatCondition22.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition22.Appearance.Options.UseBackColor = True
-        StyleFormatCondition22.ApplyToRow = True
-        StyleFormatCondition22.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition22.Value1 = "Consultation"
-        StyleFormatCondition23.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition23.Appearance.Options.UseBackColor = True
-        StyleFormatCondition23.ApplyToRow = True
-        StyleFormatCondition23.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition23.Value1 = "Ajout"
-        StyleFormatCondition24.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition24.Appearance.Options.UseBackColor = True
-        StyleFormatCondition24.ApplyToRow = True
-        StyleFormatCondition24.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition24.Value1 = "Suppression"
-        Me.GridView8.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition22, StyleFormatCondition23, StyleFormatCondition24})
+        StyleFormatCondition43.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition43.Appearance.Options.UseBackColor = True
+        StyleFormatCondition43.ApplyToRow = True
+        StyleFormatCondition43.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition43.Value1 = "Consultation"
+        StyleFormatCondition44.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition44.Appearance.Options.UseBackColor = True
+        StyleFormatCondition44.ApplyToRow = True
+        StyleFormatCondition44.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition44.Value1 = "Ajout"
+        StyleFormatCondition45.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition45.Appearance.Options.UseBackColor = True
+        StyleFormatCondition45.ApplyToRow = True
+        StyleFormatCondition45.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition45.Value1 = "Suppression"
+        Me.GridView8.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition43, StyleFormatCondition44, StyleFormatCondition45})
         Me.GridView8.GridControl = Me.GridControl5
         Me.GridView8.GroupPanelText = " "
         Me.GridView8.Name = "GridView8"
@@ -1468,7 +1553,7 @@ Partial Class Frm_Attrb_Auto
         'Frm_Attrb_Auto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.ClientSize = New System.Drawing.Size(791, 575)
+        Me.ClientSize = New System.Drawing.Size(905, 575)
         Me.Name = "Frm_Attrb_Auto"
         Me.Text = "Attribution automatique"
         Me.Pan.ResumeLayout(False)
@@ -1523,6 +1608,9 @@ Partial Class Frm_Attrb_Auto
         CType(Me.GC9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CardView5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rpbtEdit5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GC13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GV13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rpbtEdit13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabPage2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.GC12, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1613,5 +1701,9 @@ Partial Class Frm_Attrb_Auto
     Friend WithEvents CardView12 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents col1_EffetInde As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents rpbtEdit12 As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
+    Friend WithEvents GC13 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GV13 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents colPosoMinMax As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents rpbtEdit13 As DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit
 
 End Class

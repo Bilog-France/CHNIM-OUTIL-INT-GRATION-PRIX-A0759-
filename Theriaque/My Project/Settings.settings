@@ -13,22 +13,6 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=PC-DE-ADMIN;Initial Catalog=Theriaque;Persist Security Info=True;User ID=sa;Password=123</Value>
     </Setting>
-    <Setting Name="TheriaqueConnectionString" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=PC-DE-ADMIN;Initial Catalog=Theriaque;Persist Security Info=True;User ID=sa;Password=123&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=PC-DE-ADMIN;Initial Catalog=Theriaque;Persist Security Info=True;User ID=sa;Password=123</Value>
-    </Setting>
-    <Setting Name="TheriaqueConnectionString1" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=PC-DE-BILEL\THERIAQUE;Initial Catalog=Theriaque;User ID=sa;Password=vald7890&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=PC-DE-BILEL\THERIAQUE;Initial Catalog=Theriaque;User ID=sa;Password=vald7890</Value>
-    </Setting>
     <Setting Name="theriaqueDSConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
@@ -36,6 +20,14 @@
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=BILOG-SVN\MSSQLSERVER2005;Initial Catalog=theriaqueDS;User ID=sa;Password=sfmg2015</Value>
+    </Setting>
+    <Setting Name="tempConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=178.33.180.171,8008\SQLEXPRESS;Initial Catalog=temp;Persist Security Info=True;User ID=sa;Password=2cSpy2Bjgw&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=178.33.180.171,8008\SQLEXPRESS;Initial Catalog=temp;Persist Security Info=True;User ID=sa;Password=2cSpy2Bjgw</Value>
     </Setting>
   </Settings>
 </SettingsFile>

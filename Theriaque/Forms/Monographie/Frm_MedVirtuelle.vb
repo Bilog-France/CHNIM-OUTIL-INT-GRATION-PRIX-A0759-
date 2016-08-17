@@ -12,17 +12,18 @@ Public Class Frm_MedVirtuelle
             Me.DsTheriaque_Nomenclature2.SYGSP_SYNONYME_GSP.Clear()
             Me.DsTheriaque_Nomenclature2.GSP_GENERIQUE_SPECIALITE.Clear()
             Me.DsTheriaque_Nomenclature2.SP_SPECIALITE.Clear()
-
+            Me.MVPF.FillByCode(Me.DsTheriaque_Nomenclature2.MVPF_MED_VIR_PERE_FORME, f._Code)
+            Me.MVPSDU.FillByCode(Me.DsTheriaque_Nomenclature2.MVPSDU_MED_VIR_PERE_SA, f._Code)
             Me.GsP_TA.FillByCode(Me.DsTheriaque_Nomenclature2.GSP_GENERIQUE_SPECIALITE, f._Code)
             Me.SygsP_TA.FillByCode(Me.DsTheriaque_Nomenclature2.SYGSP_SYNONYME_GSP, f._Code)
             Me.SP_TA.FillByCode(Me.DsTheriaque_Nomenclature2.SP_SPECIALITE, f._Code)
+
             Dim statut As String = Me.DsTheriaque_Nomenclature2.GSP_GENERIQUE_SPECIALITE.Rows(0).Item(10).ToString()
 
             Select Case statut
 
                 Case "D"
                     Me.statutEdit.Text = "Disponible (D)"
-
                 Case "A"
                     Me.statutEdit.Text = "Archivé (A)"
                 Case "N"
@@ -46,7 +47,7 @@ Public Class Frm_MedVirtuelle
             strSSQL &= " ORDER BY SP_CODE_SQ_PK"
             GC2.DataSource = cn.MySelect(strSSQL)
 
-         
+
             Dim strSQL As String
             strSQL = ""
             If txtCode.Text <> "" Then
@@ -65,6 +66,8 @@ Public Class Frm_MedVirtuelle
         Me.DsTheriaque_Nomenclature2.SYGSP_SYNONYME_GSP.Clear()
         Me.DsTheriaque_Nomenclature2.GSP_GENERIQUE_SPECIALITE.Clear()
         Me.DsTheriaque_Nomenclature2.SP_SPECIALITE.Clear()
+        Me.DsTheriaque_Nomenclature2.MVPSDU_MED_VIR_PERE_SA.Clear()
+        Me.DsTheriaque_Nomenclature2.MVPF_MED_VIR_PERE_FORME.Clear()
         Me.BindingContext(Me.DsTheriaque_Nomenclature2, GSP_GENERIQUE_SPECIALITE).AddNew()
         Me.txtCode.Text = Code_MAx(GSP_GENERIQUE_SPECIALITE, Me.txtCode) + 1
         txtCodeVirtuelle.Text = Code_MedVirtuelle(Me.txtCode.Text, Me.DxErrorProvider)
@@ -93,15 +96,16 @@ Public Class Frm_MedVirtuelle
         statutEdit.Text = "Disponible (D)"
         Me.statutEdit.ClosePopup()
         FillCombos()
+
+
         MyBase.Ajouter()
+
     End Sub
 
     Public Overrides Sub Valider() 
 
-
         MyBase.Valider()
-        Me.GridControl1.Enabled = False
-        Me.GridControl2.Enabled = False
+       
         Me.BindingContext(Me.DsTheriaque_Nomenclature2, MasterTable).EndCurrentEdit()
         GsP_TA.Update(Me.DsTheriaque_Nomenclature2.GSP_GENERIQUE_SPECIALITE)
 
@@ -110,6 +114,12 @@ Public Class Frm_MedVirtuelle
 
         Me.BindingContext(Me.DsTheriaque_Nomenclature2, SP_SPECIALITE).EndCurrentEdit()
         SP_TA.Update(Me.DsTheriaque_Nomenclature2.SP_SPECIALITE)
+
+        Me.BindingContext(Me.DsTheriaque_Nomenclature2, "MVPSDU_MED_VIR_PERE_SA").EndCurrentEdit()
+        MVPSDU.Update(Me.DsTheriaque_Nomenclature2.MVPSDU_MED_VIR_PERE_SA)
+
+        Me.BindingContext(Me.DsTheriaque_Nomenclature2, "MVPF_MED_VIR_PERE_FORME").EndCurrentEdit()
+        MVPF.Update(Me.DsTheriaque_Nomenclature2.MVPF_MED_VIR_PERE_FORME)
 
         If GC2.DataSource Is Nothing Then
             Dim strSSQL As String = ""
@@ -142,11 +152,11 @@ Public Class Frm_MedVirtuelle
         Next
         'InitLkup(rpSP, SP_SPECIALITE, strSSQL_SP_SPECIALITE_WITHOUT_MEDV & strSQL, True, True)
         InitLkup(rpSP, SP_SPECIALITE, strSSQL_SP_SPECIALITE_WITHOUT_MEDV & " OR SP_GSP_CODE_FK = " & txtCode.Text & strSQL, True, True)
-        Me.GridControl1.Enabled = True
-        Me.GridControl2.Enabled = True
+
     End Sub
 
     Public Overrides Sub Annuler()
+
         MyBase.Annuler()
 
         Me.BindingContext(Me.DsTheriaque_Nomenclature2, SYGSP_SYNONYME_GSP).CancelCurrentEdit()
@@ -157,6 +167,12 @@ Public Class Frm_MedVirtuelle
 
         Me.BindingContext(Me.DsTheriaque_Nomenclature2, MasterTable).CancelCurrentEdit()
         Me.DsTheriaque_Nomenclature2.GSP_GENERIQUE_SPECIALITE.RejectChanges()
+
+        Me.BindingContext(Me.DsTheriaque_Nomenclature2, "MVPSDU_MED_VIR_PERE_SA").CancelCurrentEdit()
+        Me.DsTheriaque_Nomenclature2.MVPSDU_MED_VIR_PERE_SA.RejectChanges()
+
+        Me.BindingContext(Me.DsTheriaque_Nomenclature2, "MVPF_MED_VIR_PERE_FORME").CancelCurrentEdit()
+        Me.DsTheriaque_Nomenclature2.MVPF_MED_VIR_PERE_FORME.RejectChanges()
 
         If txtCode.Text <> "" Then
             Dim strSSQL As String = ""
@@ -173,6 +189,7 @@ Public Class Frm_MedVirtuelle
         For iCount As Integer = 0 To GV2.RowCount - 1
             GV2.DeleteRow(0)
         Next
+
     End Sub
 
     Public Overrides Function Supprimer() As Boolean
@@ -210,6 +227,7 @@ Public Class Frm_MedVirtuelle
     End Function
 
     Private Sub Frm_MedVirtuelle_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         MasterTable = GSP_GENERIQUE_SPECIALITE
         MasterDataSet = Me.DsTheriaque_Nomenclature2
         FirstFocus = Me.txtCode
@@ -243,6 +261,12 @@ Public Class Frm_MedVirtuelle
         statutEdit.Text = "Disponible (D)"
         Me.GridControl1.Enabled = False
         Me.GridControl2.Enabled = False
+
+        GridControl1.DataSource = DsTheriaque_Nomenclature2
+        GridControl1.DataMember = "MVPSDU_MED_VIR_PERE_SA"
+
+        GC1.DataSource = DsTheriaque_Nomenclature2
+        GC1.DataMember = "SYGSP_SYNONYME_GSP"
 
     End Sub
 
@@ -335,7 +359,7 @@ Public Class Frm_MedVirtuelle
         Return True
     End Function
 
-    Private Sub GV_ValidatingEditor(ByVal sender As Object, ByVal e As DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventArgs) Handles GV.ValidatingEditor
+    Private Sub GV_ValidatingEditor(ByVal sender As Object, ByVal e As DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventArgs) Handles GV1.ValidatingEditor
         If e.Value IsNot Nothing Then
             Dim strSSQL As String = ""
             If e.Value = txtLibelle.Text Then
@@ -386,7 +410,8 @@ Public Class Frm_MedVirtuelle
 
     Private Sub FillCombos()
         Dim query2 As String = "select SAV_CODE_SQ_PK as code, SAV_LIBELLE as libelle, SAV_CODE_REF as reference from  THERIAQUE.SAV_SUBSTANCE_VIRTUELLE  "
-        Dim query3 As String = "SELECT CDF_NUMERO_PK as code,CDF_CODE_PK,CDF_NOM as libelle FROM THERIAQUE.CDF_CODIF where CDF_CODE_PK = '19' "
+        Dim query3 As String = "SELECT  CDF_CODE_PK as code,CDF_NOM as libelle FROM THERIAQUE.CDF_CODIF where CDF_NUMERO_PK = '19' "
+        query3 = " select top 0 FOV_CODE_SQ_PK as code, FOV_LIBELLE as libelle  from  THERIAQUE.FOV_FORME_VIRTUELLE union " & query3
         Dim query4 As String = "select FOV_CODE_SQ_PK as code, FOV_LIBELLE as libelle, FOV_CODE_REF as reference from  THERIAQUE.FOV_FORME_VIRTUELLE  "
         InitLkup(savlib, "SAV_SUBSTANCE_VIRTUELLE", query2, True, True)
         InitLkup(cdfnom, "CDF_CODIF", query3, True, True)
@@ -394,11 +419,37 @@ Public Class Frm_MedVirtuelle
     End Sub
 
     Private Sub GridView1_InitNewRow(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GridView1.InitNewRow
+
         GridView1.SetFocusedRowCellValue(colGSPCODEFKPK, txtCode.Text)
+        Dim m As Integer = GetMaxN() + 1
+        GridView1.SetFocusedRowCellValue(colN, m)
+
     End Sub
+
+    Private Function GetMaxN() As Integer
+
+        Dim max As Integer = 0
+        For i As Integer = 0 To GridView1.RowCount - 1
+            If (GridView1.GetDataRow(i) IsNot Nothing) Then
+                If (GridView1.GetDataRow(i)("MVPSDU_NUM_ORD") > max) Then
+                    max = GridView1.GetDataRow(i)("MVPSDU_NUM_ORD")
+                End If
+            End If
+        Next
+
+        Return max
+    End Function
 
     Private Sub GridView2_InitNewRow(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GridView2.InitNewRow
         GridView2.SetFocusedRowCellValue(col_GSP_CODE_FK_PK, txtCode.Text)
+    End Sub
+
+    Private Sub GridView1_FocusedRowChanged(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs) Handles GridView1.FocusedRowChanged
+
+    End Sub
+
+    Private Sub GV_InitNewRow(ByVal sender As System.Object, ByVal e As DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs) Handles GV1.InitNewRow
+        GV1.SetFocusedRowCellValue(colSYGSP_GSP_CODE_FK1, txtCode.Text)
     End Sub
 End Class
 Public Class Data

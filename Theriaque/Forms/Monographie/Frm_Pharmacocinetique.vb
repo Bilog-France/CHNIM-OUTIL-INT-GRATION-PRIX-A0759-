@@ -44,6 +44,7 @@ Public Class Frm_Pharmacocinetique
             Return False
         End If
     End Function
+
     Public Overrides Function Chercheravance() As Boolean
         MyBase.Chercher()
         Dim f As New Frm_Recherche
@@ -234,6 +235,7 @@ Public Class Frm_Pharmacocinetique
         bModeDuplication = False
         XtraTabControl1.SelectedTabPageIndex = 0
     End Sub
+
     Public Overrides Function supprimer() As Boolean
         MyBase.Supprimer()
         Dim iCount As Integer
@@ -290,6 +292,7 @@ Public Class Frm_Pharmacocinetique
             Process_Message(strChargementOnglet, MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Function
+
     Public Overrides Sub valider()
         MyBase.Valider()
         Me.BindingContext(Me.MasterDataSet, MasterTable).EndCurrentEdit()

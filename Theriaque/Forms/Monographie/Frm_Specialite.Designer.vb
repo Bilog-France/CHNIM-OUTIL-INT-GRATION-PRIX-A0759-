@@ -2149,7 +2149,7 @@ Partial Class Frm_Specialite
         Me.XtraTabPage4.Controls.Add(Me.GroupBox3)
         Me.XtraTabPage4.Controls.Add(Me.Panel9)
         Me.XtraTabPage4.Name = "XtraTabPage4"
-        Me.XtraTabPage4.Size = New System.Drawing.Size(695, 409)
+        Me.XtraTabPage4.Size = New System.Drawing.Size(494, 402)
         Me.XtraTabPage4.Tag = "[EDIT][ADD]"
         Me.XtraTabPage4.Text = "Classes"
         '
@@ -2165,7 +2165,7 @@ Partial Class Frm_Specialite
         Me.TableLayoutPanel7.RowCount = 2
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(695, 161)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(494, 154)
         Me.TableLayoutPanel7.TabIndex = 44
         '
         'GC13
@@ -2181,11 +2181,11 @@ Partial Class Frm_Specialite
         Me.GC13.EmbeddedNavigator.Buttons.PrevPage.Visible = False
         Me.GC13.EmbeddedNavigator.Name = ""
         Me.GC13.EmbeddedNavigator.TextStringFormat = " {0} - Total {1}"
-        Me.GC13.Location = New System.Drawing.Point(3, 83)
+        Me.GC13.Location = New System.Drawing.Point(3, 80)
         Me.GC13.MainView = Me.GV13
         Me.GC13.Name = "GC13"
         Me.GC13.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpClasseEphmra, Me.rpClasseEphmra2})
-        Me.GC13.Size = New System.Drawing.Size(689, 75)
+        Me.GC13.Size = New System.Drawing.Size(488, 71)
         Me.GC13.TabIndex = 1
         Me.GC13.UseEmbeddedNavigator = True
         Me.GC13.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV13})
@@ -2251,7 +2251,7 @@ Partial Class Frm_Specialite
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel13.Location = New System.Drawing.Point(3, 3)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(689, 74)
+        Me.Panel13.Size = New System.Drawing.Size(488, 71)
         Me.Panel13.TabIndex = 42
         '
         'TableLayoutPanel2
@@ -2266,7 +2266,7 @@ Partial Class Frm_Specialite
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(689, 74)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(488, 71)
         Me.TableLayoutPanel2.TabIndex = 44
         '
         'TableLayoutPanel3
@@ -2276,12 +2276,12 @@ Partial Class Frm_Specialite
         Me.TableLayoutPanel3.Controls.Add(Me.Label25, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.GC25, 0, 1)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(347, 3)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(247, 3)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 106.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(339, 68)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(238, 65)
         Me.TableLayoutPanel3.TabIndex = 44
         '
         'Label25
@@ -2319,7 +2319,7 @@ Partial Class Frm_Specialite
         Me.GC25.MainView = Me.GV25
         Me.GC25.Name = "GC25"
         Me.GC25.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpSPADMLIBELLE})
-        Me.GC25.Size = New System.Drawing.Size(333, 100)
+        Me.GC25.Size = New System.Drawing.Size(232, 100)
         Me.GC25.TabIndex = 44
         Me.GC25.UseEmbeddedNavigator = True
         Me.GC25.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV25})
@@ -2374,7 +2374,7 @@ Partial Class Frm_Specialite
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(338, 68)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(238, 65)
         Me.TableLayoutPanel4.TabIndex = 45
         '
         'GC24
@@ -2403,7 +2403,7 @@ Partial Class Frm_Specialite
         Me.GC24.MainView = Me.GV24
         Me.GC24.Name = "GC24"
         Me.GC24.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpSPTENLIBELLE})
-        Me.GC24.Size = New System.Drawing.Size(332, 42)
+        Me.GC24.Size = New System.Drawing.Size(232, 39)
         Me.GC24.TabIndex = 43
         Me.GC24.UseEmbeddedNavigator = True
         Me.GC24.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV24})
@@ -2467,9 +2467,9 @@ Partial Class Frm_Specialite
         Me.GroupBox3.Controls.Add(Me.Label27)
         Me.GroupBox3.Controls.Add(Me.Label30)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.GroupBox3.Location = New System.Drawing.Point(0, 161)
+        Me.GroupBox3.Location = New System.Drawing.Point(0, 154)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(695, 194)
+        Me.GroupBox3.Size = New System.Drawing.Size(494, 194)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         '
@@ -2490,7 +2490,7 @@ Partial Class Frm_Specialite
         Me.PanDDD.Controls.Add(Me.GCDDD)
         Me.PanDDD.Location = New System.Drawing.Point(54, 39)
         Me.PanDDD.Name = "PanDDD"
-        Me.PanDDD.Size = New System.Drawing.Size(622, 93)
+        Me.PanDDD.Size = New System.Drawing.Size(421, 93)
         Me.PanDDD.TabIndex = 48
         Me.PanDDD.Tag = "[NOADD][EDIT]"
         '
@@ -2521,7 +2521,7 @@ Partial Class Frm_Specialite
         Me.GCDDD.MainView = Me.GVDDD
         Me.GCDDD.Name = "GCDDD"
         Me.GCDDD.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkupDDD, Me.lkupDDD1})
-        Me.GCDDD.Size = New System.Drawing.Size(622, 93)
+        Me.GCDDD.Size = New System.Drawing.Size(421, 93)
         Me.GCDDD.TabIndex = 1
         Me.GCDDD.Tag = "[ADD]"
         Me.GCDDD.UseEmbeddedNavigator = True
@@ -2619,7 +2619,7 @@ Partial Class Frm_Specialite
         Me.lkupATC2.Location = New System.Drawing.Point(137, 13)
         Me.lkupATC2.Name = "lkupATC2"
         Me.lkupATC2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lkupATC2.Size = New System.Drawing.Size(539, 20)
+        Me.lkupATC2.Size = New System.Drawing.Size(338, 20)
         Me.lkupATC2.TabIndex = 1
         '
         'lkupEphemra2
@@ -2630,7 +2630,7 @@ Partial Class Frm_Specialite
         Me.lkupEphemra2.Location = New System.Drawing.Point(137, 167)
         Me.lkupEphemra2.Name = "lkupEphemra2"
         Me.lkupEphemra2.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.lkupEphemra2.Size = New System.Drawing.Size(539, 20)
+        Me.lkupEphemra2.Size = New System.Drawing.Size(338, 20)
         Me.lkupEphemra2.TabIndex = 8
         '
         'TextEdit21
@@ -2640,7 +2640,7 @@ Partial Class Frm_Specialite
         Me.TextEdit21.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Nomenclature1, "SP_SPECIALITE.SP_ATC_DDD_TEXTE", True))
         Me.TextEdit21.Location = New System.Drawing.Point(54, 141)
         Me.TextEdit21.Name = "TextEdit21"
-        Me.TextEdit21.Size = New System.Drawing.Size(622, 20)
+        Me.TextEdit21.Size = New System.Drawing.Size(421, 20)
         Me.TextEdit21.TabIndex = 6
         '
         'Label29
@@ -2678,9 +2678,9 @@ Partial Class Frm_Specialite
         Me.Panel9.Controls.Add(Me.Label32)
         Me.Panel9.Controls.Add(Me.TxtEdit_APHP)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel9.Location = New System.Drawing.Point(0, 355)
+        Me.Panel9.Location = New System.Drawing.Point(0, 348)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(695, 54)
+        Me.Panel9.Size = New System.Drawing.Size(494, 54)
         Me.Panel9.TabIndex = 43
         '
         'lkupGestion

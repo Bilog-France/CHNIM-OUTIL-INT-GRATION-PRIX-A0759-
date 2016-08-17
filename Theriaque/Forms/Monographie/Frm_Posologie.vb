@@ -1322,6 +1322,7 @@ Public Class Frm_Posologie
     ''' <summary>
     ''' Proçédure: Modifier code Master de la fiche
     ''' </summary>
+    ''' 
     Private Sub ModifierCode()
         'GV1
         For iCount As Integer = 0 To GV1.RowCount - 1
@@ -1985,6 +1986,7 @@ Public Class Frm_Posologie
 
 #End Region
 
+    'onglet Posologie 
     Public Sub CalcRow(ByVal sender As Object, ByVal e As DevExpress.XtraEditors.NavigatorButtonClickEventArgs)
         'On Error Resume Next
         Dim dtP As New DataTable
@@ -3384,6 +3386,7 @@ Public Class Frm_Posologie
         On Error GoTo 0
     End Sub
 
+    'onglet posologie min max
     Public Sub CalcDoseMinMax(ByVal sender As Object, ByVal e As DevExpress.XtraEditors.NavigatorButtonClickEventArgs)
         'On Error Resume Next
 
@@ -3408,15 +3411,13 @@ Public Class Frm_Posologie
                     Next
 
                     For i As Integer = 0 To GV30.RowCount - 1
-
                         If (GV30.GetDataRow(i) IsNot Nothing) Then
                             If (GV30.GetDataRow(i)("IPODOSE_CALCUL") IsNot System.DBNull.Value) Then
-                                If (GV30.GetDataRow(i)("IPODOSE_CALCUL") = True) Then
+                                If (GV30.GetDataRow(i)("IPODOSE_CALCUL") = False) Then
                                     dr1 = dtTemp.NewRow()
                                     For jj As Integer = 0 To GV30.Columns.Count - 1
                                         dr1(GV30.Columns(jj).Name) = GV30.GetDataRow(i)(GV30.Columns(jj).FieldName)
                                     Next
-
                                     dtTemp.Rows.Add(dr1)
                                 End If
                             End If
@@ -3452,9 +3453,6 @@ Public Class Frm_Posologie
 
 
                     For inti As Integer = 0 To GV6.RowCount - 1 ' Spécialité
-
-
-
 
                         If GV6.GetRowCellValue(inti, colFPOSP_SP_CODE_FK_PK2) IsNot Nothing Then
 
@@ -3492,6 +3490,8 @@ Public Class Frm_Posologie
 
                                             GV30.AddNewRow()
                                             dr = dtP.NewRow()
+                                            GV30.SetFocusedRowCellValue(colCalcul, True)
+                                            dr(0) = True
                                             GV30.SetFocusedRowCellValue(colIPODOSE_FPO_CODE_FK_PK, txtCode.Text)
                                             dr("colIPODOSE_FPO_CODE_FK_PK") = txtCode.Text
                                             codeMax = Code_MAx(GV30, colIPODOSE_NUM_SEQ_PK)
@@ -3649,6 +3649,10 @@ Public Class Frm_Posologie
                                             dr("colIPODOSE_VOL_CONT") = 0
                                             GV30.SetFocusedRowCellValue(colIPODOSE_VOL_CONT_UNIT, 0)
                                             dr("colIPODOSE_VOL_CONT_UNIT") = 0
+
+                                            'Todo
+
+                                            EmpecherCalcul(dtTemp, maxSec)
                                         Else
                                             'Non applicable
 
@@ -3710,6 +3714,8 @@ Public Class Frm_Posologie
                                             dr("colIPODOSE_VOL_CONT_UNIT") = 0
                                         End If
                                         dtP.Rows.Add(dr)
+                                        'todo
+                                        EmpecherCalcul(dtTemp, maxSec)
                                     End If
                                 End If
                             Else ''Inclure les Mono virtuelles
@@ -3959,6 +3965,8 @@ Public Class Frm_Posologie
                                                             dr("colIPOJ_NATUCD_CDF_CODE_FK") = "NON APPLICABLE"
                                                         End If
                                                         dtP.Rows.Add(dr)
+                                                        'todo
+                                                        EmpecherCalcul(dtTemp, maxSec)
                                                     Else 'Dans le cas de plusieurs contenant
 
                                                         For countContenant As Integer = 0 To dtContenant.Rows.Count - 1
@@ -4169,6 +4177,7 @@ Public Class Frm_Posologie
                                                                     d("colUCD_PARPRISE_MAX") = PoSoDose.UCD_PARPRISE_MAX.Valeur
                                                                     d("colUCD_PARPRISE_MIN") = PoSoDose.UCD_PARPRISE_MIN.Valeur
                                                                     dtRows.Rows.Add(d)
+
                                                                 Next
                                                             Next
 
@@ -4201,6 +4210,8 @@ Public Class Frm_Posologie
                                                                 dr("colIPODOSE_NATUCD_CDF_CODE_FK") = "NON APPLICABLE"
                                                             End If
                                                             dtP.Rows.Add(dr)
+                                                            'todo
+                                                            EmpecherCalcul(dtTemp, maxSec)
                                                         Next
 
                                                     End If
@@ -4240,7 +4251,6 @@ Public Class Frm_Posologie
 
                         End If
 
-
                     Next
 
                     If (Not keyDelete.Equals("")) Then
@@ -4266,23 +4276,24 @@ Public Class Frm_Posologie
 
 
 
-                    For i As Integer = 0 To GV30.RowCount - 1
+                    'For i As Integer = 0 To GV30.RowCount - 1
 
-                        If GV30.GetDataRow(i) IsNot Nothing Then
+                    '    If GV30.GetDataRow(i) IsNot Nothing Then
 
-                            For j As Integer = 0 To dtTemp.Rows.Count - 1
+                    '        For j As Integer = 0 To dtTemp.Rows.Count - 1
 
-                                If GV30.GetDataRow(i)("IPODOSE_NUM_SEQ_PK") = dtTemp.Rows(j).Item("colIPODOSE_NUM_SEQ_PK") And dtTemp.Rows(j).Item("colCalcul") = True Then
+                    '            If GV30.GetDataRow(i)("IPODOSE_NUM_SEQ_PK") = dtTemp.Rows(j).Item("colIPODOSE_NUM_SEQ_PK") And dtTemp.Rows(j).Item("colCalcul") = True Then
 
-                                    For jj As Integer = 0 To GV30.Columns.Count - 1
-                                        GV30.SetRowCellValue(i, GV30.Columns(jj).Name, dtTemp.Rows(j).Item(GV30.Columns(jj).Name))
-                                    Next
+                    '                For jj As Integer = 0 To GV30.Columns.Count - 1
+                    '                    'GV30.SetRowCellValue(i, GV30.Columns(jj).Name, dtTemp.Rows(j).Item(GV30.Columns(jj).Name))
+                    '                    GV30.GetDataRow(i).Item(GV30.Columns(jj).FieldName) = dtTemp.Rows(j).Item(GV30.Columns(jj).Name)
+                    '                Next
 
-                                End If
+                    '            End If
 
-                            Next
-                        End If
-                    Next
+                    '        Next
+                    '    End If
+                    'Next
 
                     'If (Not keyDelete.Equals("")) Then
 
@@ -4395,6 +4406,30 @@ Public Class Frm_Posologie
         On Error GoTo 0
     End Sub
 
+    Private Sub EmpecherCalcul(ByVal dtTemp As DataTable, ByVal seqMax As Integer)
+
+        For j As Integer = 0 To dtTemp.Rows.Count - 1
+
+            'GV30.SetFocusedRowCellValue(GV30.Columns(0), dtTemp.Rows(j).Item(GV30.Columns(0).Name))
+
+            If seqMax = dtTemp.Rows(j).Item("colIPODOSE_NUM_SEQ_PK") And dtTemp.Rows(j).Item("colCalcul") <> True Then
+                GV30.SetFocusedRowCellValue(GV30.Columns(0), False)
+                For jj As Integer = 1 To GV30.Columns.Count - 1
+                    GV30.SetFocusedRowCellValue(GV30.Columns(jj), dtTemp.Rows(j).Item(GV30.Columns(jj).Name))
+                Next
+                Exit For
+            Else
+                'If seqMax = dtTemp.Rows(j).Item("colIPODOSE_NUM_SEQ_PK") Then
+                GV30.SetFocusedRowCellValue(GV30.Columns(0), True)
+
+                'End If
+            End If
+
+        Next
+
+    End Sub
+
+    'onglet durée in max
     Public Sub CalcDureeMinMax(ByVal sender As Object, ByVal e As DevExpress.XtraEditors.NavigatorButtonClickEventArgs)
 
         'On Error Resume Next
@@ -4413,7 +4448,7 @@ Public Class Frm_Posologie
         Dim bMaxCalcul As Boolean = False
         Dim bMinCalcul As Boolean = False
         Dim PoSoDose As New ClsPosologieDose
-
+        Dim code As String = "35030"
 
 
 
@@ -4473,6 +4508,8 @@ Public Class Frm_Posologie
                                 End If
                             Next
 
+
+
                             If (GV6.GetRowCellValue(inti, colFPOSP_SP_CODE_FK_PK2) IsNot Nothing) Then
 
                                 codeSP = GV6.GetRowCellValue(inti, colFPOSP_SP_CODE_FK_PK2).ToString()
@@ -4500,11 +4537,11 @@ Public Class Frm_Posologie
                                         GV31.SetFocusedRowCellValue(colIPODUREE_SP_CODE_SQ_PK_FK, codeSP)
                                         GV31.SetFocusedRowCellValue(colIPODUREE_SP_CIPUCD, SP_UCDCIP)
 
-                                        If (MinCalcul And bMinCalcul) Then
+                                        If (MinCalcul And bMinCalcul) Or code.Equals(txtCode.Text) Then
                                             GV31.SetFocusedRowCellValue(colIPODUREE_DUREE_MIN, DureeMin)
                                         End If
 
-                                        If (MaxCalcul And bMaxCalcul) Then
+                                        If (MaxCalcul And bMaxCalcul) Or code.Equals(txtCode.Text) Then
                                             GV31.SetFocusedRowCellValue(colIPODUREE_DUREE_MAX, DureeMax)
                                         End If
 
@@ -4534,11 +4571,11 @@ Public Class Frm_Posologie
                                             GV31.SetFocusedRowCellValue(colIPODUREE_SP_CODE_SQ_PK_FK, codeSP)
                                             GV31.SetFocusedRowCellValue(colIPODUREE_SP_CIPUCD, CodeVirtuel)
 
-                                            If (MinCalcul And bMinCalcul) Then
+                                            If (MinCalcul And bMinCalcul) Or code.Equals(txtCode.Text) Then
                                                 GV31.SetFocusedRowCellValue(colIPODUREE_DUREE_MIN, DureeMin)
                                             End If
 
-                                            If (MaxCalcul And bMaxCalcul) Then
+                                            If (MaxCalcul And bMaxCalcul) Or code.Equals(txtCode.Text) Then
                                                 GV31.SetFocusedRowCellValue(colIPODUREE_DUREE_MAX, DureeMax)
                                             End If
 
@@ -4904,9 +4941,10 @@ Public Class Frm_Posologie
                                 Dim sSQL As String
                                 Dim dt As New DataTable
                                 sSQL = " Select CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num  From THERIAQUE.CDF_CODIF  where CDF_NUMERO_PK = " & cn.SQLText(GV30.GetRowCellValue(e.RowHandle, colIPODOSE_NATUCD_CDF_NUM_FK))
-                                sSQL += " AND CDF_CODE_PK = " & GV30.GetRowCellValue(e.RowHandle, colIPODOSE_NATUCD_CDF_CODE_FK2)
+                                sSQL += " AND CDF_CODE_PK = " & cn.SQLText(GV30.GetRowCellValue(e.RowHandle, colIPODOSE_NATUCD_CDF_CODE_FK2))
 
                                 dt = cn.MySelect(sSQL)
+                                If dt Is Nothing Then dt = New DataTable
                                 If dt.Rows.Count > 0 Then e.DisplayText = dt.Rows(0)("libelle")
                             End If
                         End If

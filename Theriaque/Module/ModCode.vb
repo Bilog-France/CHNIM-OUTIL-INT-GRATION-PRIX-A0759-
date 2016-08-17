@@ -116,7 +116,7 @@ Public Module Code
     Public Function Code_MAx(ByVal strTable As String, ByVal Ctrl As Control) As Integer
 
         Dim strField As String = Ctrl.DataBindings("EditValue").BindingMemberInfo.BindingField()
-        Dim dt As DataTable = cn.MySelect("Select max(" & strField & ") From THERIAQUE." & strTable)
+        Dim dt As DataTable = cn.MySelect("Select isnull(max(" & strField & "),0) From THERIAQUE." & strTable)
         Return dt.Rows(0)(0)
 
     End Function
@@ -169,6 +169,9 @@ Public Module Code
 
         Dim id As Integer
         Dim cmd As New SqlCommand
+        If cn.SQlCon.State = ConnectionState.Closed Then
+            cn.SQlCon.Open()
+        End If
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Connection = cn.SQlCon
         cmd.CommandText = "GETSPID"
@@ -181,6 +184,48 @@ Public Module Code
         Dim strField As String = Ctrl.DataBindings("EditValue").BindingMemberInfo.BindingField()
         Dim strCode As String = Ctrl.Text
         Dim dt As DataTable = cn.MySelect("Select max(" & strField & ") From THERIAQUE." & strTable)
+
+        If (dt IsNot Nothing) Then
+
+
+            If dt.Rows(0)(0) IsNot DBNull.Value Then
+                Ctrl.Text = dt.Rows(0)(0) + 1
+            Else
+                Ctrl.Text = 1
+            End If
+        End If
+        If Off Then
+            Ctl_Off(Ctrl)
+            Ctrl.Tag = "[NOEDIT][NOADD]"
+        End If
+        Return True
+    End Function
+
+    Public Function SetCode_MAxByField(ByVal strTable As String, ByVal Ctrl As Control, ByVal strField As String, Optional ByVal Off As Boolean = True) As Integer
+        'Dim strField As String = Ctrl.DataBindings("EditValue").BindingMemberInfo.BindingField()
+        Dim strCode As String = Ctrl.Text
+        Dim dt As DataTable = cn.MySelect("Select max(" & strField & ") From THERIAQUE." & strTable)
+
+        If (dt IsNot Nothing) Then
+
+
+            If dt.Rows(0)(0) IsNot DBNull.Value Then
+                Ctrl.Text = dt.Rows(0)(0) + 1
+            Else
+                Ctrl.Text = 1
+            End If
+        End If
+        If Off Then
+            Ctl_Off(Ctrl)
+            Ctrl.Tag = "[NOEDIT][NOADD]"
+        End If
+        Return True
+    End Function
+
+    Public Function SetCode_MAxId(ByVal strTable As String, ByVal Ctrl As Control, Optional ByVal Off As Boolean = True) As Integer
+        Dim strField As String = Ctrl.DataBindings("EditValue").BindingMemberInfo.BindingField()
+        Dim strCode As String = Ctrl.Text
+        Dim dt As DataTable = cn.MySelect("SELECT IDENT_CURRENT( '[theriaque].[theriaque].[CDFUCUM_UCUM]')")
 
         If (dt IsNot Nothing) Then
 
@@ -748,6 +793,21 @@ Public Module Code
                     ctrl.Select()
                 End If
         End Select
+    End Function
+
+    Public Function GetMaxByColumn(ByVal gv As DevExpress.XtraGrid.Views.Grid.GridView, ByVal col As DevExpress.XtraGrid.Columns.GridColumn) As Integer
+
+        Dim max As Integer = 0
+        For i As Integer = 0 To gv.RowCount - 2
+            If gv.GetDataRow(i)(col.FieldName) > max Then
+
+                max = gv.GetDataRow(i)(col.FieldName)
+
+            End If
+        Next
+
+        Return max + 1
+
     End Function
 
 End Module
