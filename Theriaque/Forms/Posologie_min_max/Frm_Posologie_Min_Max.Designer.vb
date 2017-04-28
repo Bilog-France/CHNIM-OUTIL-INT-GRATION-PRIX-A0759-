@@ -427,7 +427,7 @@ Partial Class Frm_Posologie_Min_Max
         '
         'GridControl3
         '
-        Me.GridControl3.DataMember = "FPOMM_POSOLOGIE_MIN_MAX.FK_FPOMM"
+        Me.GridControl3.DataMember = "FPOMMSP_POSOMINMAX_SPE"
         Me.GridControl3.DataSource = Me.DsTheriaque_Pos_Min_Max1
         Me.GridControl3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl3.EmbeddedNavigator.Buttons.Edit.Visible = False
@@ -574,7 +574,7 @@ Partial Class Frm_Posologie_Min_Max
         '
         'GridControl2
         '
-        Me.GridControl2.DataMember = "FPOMM_POSOLOGIE_MIN_MAX.FK_FPOMMSAC_FPOMM"
+        Me.GridControl2.DataMember = "FPOMMSAC_POSOMINMAX_SUBACT"
         Me.GridControl2.DataSource = Me.DsTheriaque_Pos_Min_Max1
         Me.GridControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl2.EmbeddedNavigator.Buttons.Edit.Visible = False
@@ -1010,7 +1010,7 @@ Partial Class Frm_Posologie_Min_Max
         '
         'GridControl1
         '
-        Me.GridControl1.DataMember = "FPOMM_POSOLOGIE_MIN_MAX.FK_FPOMMDO"
+        Me.GridControl1.DataMember = "FPOMMDO_POSOMINMAX_DOSES"
         Me.GridControl1.DataSource = Me.DsTheriaque_Pos_Min_Max1
         Me.GridControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GridControl1.EmbeddedNavigator.Buttons.Edit.Visible = False

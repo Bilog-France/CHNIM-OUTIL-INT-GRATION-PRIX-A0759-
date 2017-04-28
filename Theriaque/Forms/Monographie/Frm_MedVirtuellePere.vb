@@ -127,7 +127,7 @@ Public Class Frm_MedVirtuellePere
         'Me.GridControl2.Enabled = False
 
         
-
+        'Libelle-libellé
         Dim strSSQL As String
         strSSQL = " select MVPR_CODE_SQ_PK from theriaque.MVPR_MEDICAMENT_VIRTUEL_PERE where MVPR_LIBELLE = " & cn.SQLText(txtLibelle.Text)
         Dim dt As DataTable = cn.MySelect(strSSQL)
@@ -140,6 +140,33 @@ Public Class Frm_MedVirtuellePere
                 Exit Sub
             End If
         End If
+
+        'Libellé - Synonyme
+
+        strSSQL = " select SYMVPR_MVPR_CODE_FK_PK from theriaque.SYMVPR_SYN_MEDIC_VIRTUEL_PERE where SYMVPR_LIBELLE = " & cn.SQLText(txtLibelle.Text)
+        dt = cn.MySelect(strSSQL)
+        MyBase.IsValider = True
+
+        If dt.Rows.Count > 0 Then
+            If dt.Rows(0).Item(0) <> txtCode.Text Then
+                MsgBox("Le libellé du médicament virtuel père existe déjà dans le synonyme de la fiche " & dt.Rows(0)(0))
+                MyBase.IsValider = False
+                Exit Sub
+            End If
+        End If
+
+        For i As Integer = 0 To GV.RowCount - 1
+
+            If GV.GetDataRow(i) IsNot Nothing Then
+                If (GV.GetDataRow(i)("SYMVPR_LIBELLE")).ToString().ToLower().Equals(txtLibelle.Text.ToLower()) Then
+                    MsgBox("Le libellé de la fiche existe comme libellé de synonyme")
+                    Exit Sub
+                    MyBase.IsValider = False
+                End If
+            End If
+
+        Next
+
 
         Dim dtexist As DataTable = cn.MySelect(" select null from theriaque.MVPR_MEDICAMENT_VIRTUEL_PERE where MVPR_CODE_SQ_PK = " & txtCode.Text)
 
@@ -417,26 +444,26 @@ Public Class Frm_MedVirtuellePere
         MyBase.ValideControl(Ctrl)
         If Ctrl.Name.ToLower = "txtLibelle".ToLower Or AllCtrl Then
             'If ModeFiche = eMode.Ajout Then
-            strSSQL = "  Select * from THERIAQUE.GSP_GENERIQUE_SPECIALITE where GSP_CODE_SQ_PK <> " & cn.SQLText(txtCode.Text)
-            strSSQL &= " and UPPER(GSP_NOM) = " & UCase(cn.SQLText(txtLibelle.Text))
-            Dim dt As DataTable = cn.MySelect(strSSQL)
-            If dt.Rows.Count > 0 Then
-                Me.DxErrorProvider.SetError(txtLibelle, StrValeurExist)
-                Return False
-            Else
-                Me.DxErrorProvider.SetError(txtLibelle, "")
-            End If
+            'strSSQL = "  Select * from THERIAQUE.GSP_GENERIQUE_SPECIALITE where GSP_CODE_SQ_PK <> " & cn.SQLText(txtCode.Text)
+            'strSSQL &= " and UPPER(GSP_NOM) = " & UCase(cn.SQLText(txtLibelle.Text))
+            'Dim dt As DataTable = cn.MySelect(strSSQL)
+            'If dt.Rows.Count > 0 Then
+            '    Me.DxErrorProvider.SetError(txtLibelle, StrValeurExist)
+            '    Return False
+            'Else
+            '    Me.DxErrorProvider.SetError(txtLibelle, "")
+            'End If
             'End If
             ''----------------------------------------------
             '' Test sur les synonymes
             ''----------------------------------------------
             ''----------------------------------------------
-            strSSQL = " Select * from THERIAQUE.SYGSP_SYNONYME_GSP where UPPER(SYGSP_NOM_PK) = " & cn.SQLText(UCase(txtLibelle.Text))
-            Dim dt1 As DataTable = cn.MySelect(strSSQL)
-            If dt1.Rows.Count > 0 Then
-                Me.DxErrorProvider.SetError(txtLibelle, StrValeurExist)
-                Return False
-            End If
+            'strSSQL = " Select * from THERIAQUE.SYGSP_SYNONYME_GSP where UPPER(SYGSP_NOM_PK) = " & cn.SQLText(UCase(txtLibelle.Text))
+            'Dim dt1 As DataTable = cn.MySelect(strSSQL)
+            'If dt1.Rows.Count > 0 Then
+            '    Me.DxErrorProvider.SetError(txtLibelle, StrValeurExist)
+            '    Return False
+            'End If
         End If
 
         'If GV2.RowCount = 0 Then
@@ -472,8 +499,10 @@ Public Class Frm_MedVirtuellePere
                 e.ErrorText = " Ce libellé existe comme libellé médicament virtuel n° " & dt2.Rows(0).Item(0)
             Else
                 If dt.Rows.Count > 0 Then
-                    e.Valid = False
-                    e.ErrorText = " Cette valeur existe déja dans la fiche " & dt.Rows(0).Item("SYMVPR_MVPR_CODE_FK_PK")
+                    If Not dt.Rows(0)("SYMVPR_MVPR_CODE_FK_PK").ToString().ToLower().Equals(txtCode.Text.ToLower()) Then
+                        e.Valid = False
+                        e.ErrorText = " Cette valeur existe déja dans la fiche " & dt.Rows(0).Item("SYMVPR_MVPR_CODE_FK_PK")
+                    End If
                 Else
                     For i As Integer = 0 To GV.RowCount - 2
 
@@ -490,7 +519,7 @@ Public Class Frm_MedVirtuellePere
                     Next
                 End If
 
-            End If
+                End If
         End If
 
 

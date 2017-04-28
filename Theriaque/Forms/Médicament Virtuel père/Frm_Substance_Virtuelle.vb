@@ -84,8 +84,10 @@ Public Class Frm_Substance_Virtuelle
         Me.SYSAV.Update(DsTheriaqueVirtuelPere)
 
 
-        Dim delreq As String = " Delete from theriaque.MVPRSAV_MED_VIR_PERE_SUBSTANCE_VIRTUELLE where MVPRSAV_SAV_CODE_FK_PK=" & EditCode.Text
+        Dim delreq As String = " Delete from theriaque.MVPRSAV_MED_VIR_PER_SUBS_VIRT where MVPRSAV_SAV_CODE_FK_PK=" & EditCode.Text
         cn.Execute(delreq)
+       
+
 
         '' Master
         Me.DsTheriaqueVirtuelPere.SAV_SUBSTANCE_VIRTUELLE.Rows(0).Delete()
@@ -104,7 +106,7 @@ Public Class Frm_Substance_Virtuelle
         End If
 
         Dim strSSQL As String
-
+        'Doublon libellé-libellé entre deux fiches différentes
         strSSQL = " select SAV_CODE_SQ_PK from theriaque.SAV_SUBSTANCE_VIRTUELLE where SAV_LIBELLE = " & cn.SQLText(EditLibelle.Text)
         Dim dt As DataTable = cn.MySelect(strSSQL)
         MyBase.IsValider = True
@@ -120,6 +122,29 @@ Public Class Frm_Substance_Virtuelle
             End If
 
         End If
+
+        'doublon Libellé - synonyme dans la même fiche 
+        strSSQL = " select SYSAV_SAV_CODE_FK_PK from theriaque.SYSAV_SYNONYME_SUBST_VIRT where SYSAV_LIBELLE = " & cn.SQLText(EditLibelle.Text)
+        dt = cn.MySelect(strSSQL)
+
+        MyBase.IsValider = True
+        If dt.Rows.Count > 0 Then
+            MsgBox("Le libellé de la substance virtuelle existe déjà dans le synonyme de la fiche " & dt.Rows(0).Item(0))
+            MyBase.IsValider = False
+            Exit Sub
+        End If
+
+
+        For i As Integer = 0 To GV2.RowCount - 1
+
+            If (GV2.GetDataRow(i)("SYSAV_LIBELLE")).ToString().ToLower().Equals(EditLibelle.Text.ToLower()) Then
+                MsgBox("Le libellé de la fiche existe comme libellé de synonyme")
+                Exit Sub
+                MyBase.IsValider = False
+            End If
+
+
+        Next
 
         MyBase.Valider()
         Me.BindingContext(Me.MasterDataSet, MasterTable).EndCurrentEdit()
@@ -234,8 +259,10 @@ Public Class Frm_Substance_Virtuelle
                     e.ErrorText = " Ce libellé existe comme libellé substance virtuelle n° " & dt2.Rows(0).Item(0)
                 Else
                     If dt.Rows.Count > 0 Then
-                        e.Valid = False
-                        e.ErrorText = " Cette valeur existe déja dans la fiche " & dt.Rows(0).Item("SYSAV_SAV_CODE_FK_PK")
+                        If Not (EditCode.Text.ToLower().Equals(dt.Rows(0).Item("SYSAV_SAV_CODE_FK_PK").ToString().ToLower())) Then
+                            e.Valid = False
+                            e.ErrorText = " Cette valeur existe déja dans la fiche " & dt.Rows(0).Item("SYSAV_SAV_CODE_FK_PK")
+                        End If
                     Else
                         For i As Integer = 0 To GV2.RowCount - 2
 
@@ -251,7 +278,7 @@ Public Class Frm_Substance_Virtuelle
 
                         Next
                     End If
-                End If
+                    End If
             End If
         End If
 

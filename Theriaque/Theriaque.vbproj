@@ -1,0 +1,1728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67AEACFB-829B-4FC9-8693-CB1CB590F6F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Theriaque</RootNamespace>
+    <AssemblyName>Theriaque</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>THGreen.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Theriaque.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Theriaque.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.Utils.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.Xpo.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraBars.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraEditors.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraGrid.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraLayout.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraNavBar.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraSpellChecker.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraSpellChecker.v7.1.Core, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v7.1, Version=7.1.3.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Ressources\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ClsCCH.vb" />
+    <Compile Include="Classes\ClsCPH.vb" />
+    <Compile Include="Classes\ClsPosologie.vb" />
+    <Compile Include="Classes\ClsPosologieDose.vb" />
+    <Compile Include="Classes\ClsPRE.vb" />
+    <Compile Include="Classes\ClsSAC.vb" />
+    <Compile Include="Classes\ClsSAU.vb" />
+    <Compile Include="Classes\ClsSP.vb" />
+    <Compile Include="Classes\ClsSQLcn.vb" />
+    <Compile Include="Classes\PrixJO.vb" />
+    <Compile Include="DataSet\dsTheriaque.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque.vb">
+      <DependentUpon>dsTheriaque.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque2.designer.vb">
+      <DependentUpon>dsTheriaque2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque2.vb">
+      <DependentUpon>dsTheriaque2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaqueCategorie.designer.vb">
+      <DependentUpon>dsTheriaqueCategorie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaqueCategorie.vb">
+      <DependentUpon>dsTheriaqueCategorie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaqueURL.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaqueURL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_AnalyseOrdonance.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_AnalyseOrdonance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_AnalyseOrdonance.vb">
+      <DependentUpon>dsTheriaque_AnalyseOrdonance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_AnalyseOrdonance2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_AnalyseOrdonance2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Cipemg_Code.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Cipemg_Code.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Cipemg_Code.vb">
+      <DependentUpon>dsTheriaque_Cipemg_Code.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Cipemg_Texte.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Cipemg_Texte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Conducteur.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Conducteur.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_CriteresChoix.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_CriteresChoix.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_CriteresChoix.vb">
+      <DependentUpon>dsTheriaque_CriteresChoix.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Effets_Indesirables.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Effets_Indesirables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Effets_Indesirables.vb">
+      <DependentUpon>dsTheriaque_Effets_Indesirables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Etiologie.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Etiologie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Etiologie.vb">
+      <DependentUpon>dsTheriaque_Etiologie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Excipient.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Excipient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_GrosseRequete.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_GrosseRequete.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Grossesse_Allaitement.Designer.vb">
+      <DependentUpon>dsTheriaque_Grossesse_Allaitement.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Grossesse_Allaitement.vb">
+      <DependentUpon>dsTheriaque_Grossesse_Allaitement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Indication.Designer.vb">
+      <DependentUpon>dsTheriaque_Indication.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Indication.vb">
+      <DependentUpon>dsTheriaque_Indication.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_InteractionRCP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_InteractionRCP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Interoperable.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Interoperable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Nomenclature1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Nomenclature1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Nomenclature1.vb">
+      <DependentUpon>dsTheriaque_Nomenclature1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Nomenclature2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Nomenclature2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Nomenclature2.vb">
+      <DependentUpon>dsTheriaque_Nomenclature2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Nomenclature3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Nomenclature3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Nomenclature3.vb">
+      <DependentUpon>dsTheriaque_Nomenclature3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Pharmacocinetique.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Pharmacocinetique.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Pharmacocinetique.vb">
+      <DependentUpon>dsTheriaque_Pharmacocinetique.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Posologie.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Posologie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Posologie.vb">
+      <DependentUpon>dsTheriaque_Posologie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Pos_Min_Max.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Pos_Min_Max.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Pos_Min_Max.vb">
+      <DependentUpon>dsTheriaque_Pos_Min_Max.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Produit.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Produit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Recap.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Recap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Reconst_Administ.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Reconst_Administ.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Ref.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Ref.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Ref.vb">
+      <DependentUpon>dsTheriaque_Ref.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_SecuritePreclinique.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_SecuritePreclinique.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Virtuel_Pere.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTheriaque_Virtuel_Pere.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsTheriaque_Virtuel_Pere.vb">
+      <DependentUpon>dsTheriaque_Virtuel_Pere.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Declinaison\Frm_Declinaison.Designer.vb">
+      <DependentUpon>Frm_Declinaison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Declinaison\Frm_Declinaison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Declinaison\Frm_Declinaison_Filtre.Designer.vb">
+      <DependentUpon>Frm_Declinaison_Filtre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Declinaison\Frm_Declinaison_Filtre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Declinaison\Frm_Dictionnaire_Declinaison.Designer.vb">
+      <DependentUpon>Frm_Dictionnaire_Declinaison.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Declinaison\Frm_Dictionnaire_Declinaison.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Attrb_Auto_Anlys_Ordo_Incomp.Designer.vb">
+      <DependentUpon>Frm_Attrb_Auto_Anlys_Ordo_Incomp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Attrb_Auto_Anlys_Ordo_Incomp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Attrb_Auto_Anlys_Ordo_Inter.Designer.vb">
+      <DependentUpon>Frm_Attrb_Auto_Anlys_Ordo_Inter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Attrb_Auto_Anlys_Ordo_Inter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Incompatibilites_Fiche.Designer.vb">
+      <DependentUpon>Frm_Incompatibilites_Fiche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Incompatibilites_Fiche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Interactions_Fiche.Designer.vb">
+      <DependentUpon>Frm_Interactions_Fiche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Analyse_Ordonnance\Frm_Interactions_Fiche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_ATC.Designer.vb">
+      <DependentUpon>Frm_ATC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_ATC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF.Designer.vb">
+      <DependentUpon>Frm_CDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10.Designer.vb">
+      <DependentUpon>Frm_CDF_CIM10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10_CISP.Designer.vb">
+      <DependentUpon>Frm_CDF_CIM10_CISP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10_CISP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10_Medra.Designer.vb">
+      <DependentUpon>Frm_CDF_CIM10_Medra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10_Medra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10_Orphanet.Designer.vb">
+      <DependentUpon>Frm_CDF_CIM10_Orphanet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_CIM10_Orphanet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_Contenance.Designer.vb">
+      <DependentUpon>Frm_CDF_Contenance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_Contenance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_IVO.Designer.vb">
+      <DependentUpon>Frm_CDF_IVO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_IVO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_PP.Designer.vb">
+      <DependentUpon>Frm_CDF_PP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_PP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_TEQ.Designer.vb">
+      <DependentUpon>Frm_CDF_TEQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_TEQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_TEQ1.Designer.vb">
+      <DependentUpon>Frm_CDF_TEQ1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CDF_TEQ1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CISP.Designer.vb">
+      <DependentUpon>Frm_CISP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CISP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_ClasseEphmra.Designer.vb">
+      <DependentUpon>Frm_ClasseEphmra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_ClasseEphmra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CIM10.Designer.vb">
+      <DependentUpon>Frm_CIM10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_CIM10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_Gestion.Designer.vb">
+      <DependentUpon>Frm_Gestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_Gestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_ClasseChimique.Designer.vb">
+      <DependentUpon>Frm_ClasseChimique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_ClasseChimique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_PharmacoTherapeutiques.Designer.vb">
+      <DependentUpon>Frm_PharmacoTherapeutiques.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_PharmacoTherapeutiques.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_Recherche.Designer.vb">
+      <DependentUpon>Frm_Recherche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_Recherche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_Rubrique_Codification.Designer.vb">
+      <DependentUpon>Frm_Rubrique_Codification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_Rubrique_Codification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_uniteUCUM.Designer.vb">
+      <DependentUpon>Frm_uniteUCUM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Codification\Frm_uniteUCUM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Commission_Transparence.Designer.vb">
+      <DependentUpon>Frm_Commission_Transparence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Commission_Transparence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Criteres_Choix.Designer.vb">
+      <DependentUpon>Frm_Criteres_Choix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Criteres_Choix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Fiche_Infotherapeutique.Designer.vb">
+      <DependentUpon>Frm_Fiche_Infotherapeutique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Fiche_Infotherapeutique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Fiche_Transparence.Designer.vb">
+      <DependentUpon>Frm_Fiche_Transparence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_Fiche_Transparence.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_RMO.Designer.vb">
+      <DependentUpon>Frm_RMO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Criteres_Choix\Frm_RMO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Main.Designer.vb">
+      <DependentUpon>Frm_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Validation.Designer.vb">
+      <DependentUpon>Frm_Validation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Validation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\FrmApercu.Designer.vb">
+      <DependentUpon>FrmApercu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\FrmApercu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Categorie.Designer.vb">
+      <DependentUpon>Frm_Categorie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Categorie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Doc_SP.Designer.vb">
+      <DependentUpon>Frm_Doc_SP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Doc_SP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_GestionDocuments.Designer.vb">
+      <DependentUpon>Frm_GestionDocuments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_GestionDocuments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_ImportDirect.Designer.vb">
+      <DependentUpon>Frm_ImportDirect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_ImportDirect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Import_Selection.Designer.vb">
+      <DependentUpon>Frm_Import_Selection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Import_Selection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Partage.Designer.vb">
+      <DependentUpon>Frm_Partage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_Partage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_PreSelection.Designer.vb">
+      <DependentUpon>Frm_PreSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\Frm_PreSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\UcApercu.Designer.vb">
+      <DependentUpon>UcApercu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionDoc\UcApercu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Interopérabilité\Frm_Interoperable.Designer.vb">
+      <DependentUpon>Frm_Interoperable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Interopérabilité\Frm_Interoperable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\CIPEMG\Frm_Cipemg_Code.designer.vb">
+      <DependentUpon>Frm_Cipemg_Code.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\CIPEMG\Frm_Cipemg_Code.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Attrb_Auto.Designer.vb">
+      <DependentUpon>Frm_Attrb_Auto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Attrb_Auto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Cipemg_Code1.Designer.vb">
+      <DependentUpon>Frm_Cipemg_Code1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Cipemg_Code1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Cipemg_Texte.Designer.vb">
+      <DependentUpon>Frm_Cipemg_Texte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Cipemg_Texte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Conducteur.Designer.vb">
+      <DependentUpon>Frm_Conducteur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Conducteur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Effets_Indiserables.Designer.vb">
+      <DependentUpon>Frm_Effets_Indiserables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Effets_Indiserables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Etiologie.Designer.vb">
+      <DependentUpon>Frm_Etiologie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Etiologie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ExcipientFils.Designer.vb">
+      <DependentUpon>Frm_ExcipientFils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ExcipientFils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ExcipientPere.Designer.vb">
+      <DependentUpon>Frm_ExcipientPere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ExcipientPere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Generique.Designer.vb">
+      <DependentUpon>Frm_Generique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Generique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Grossesse_Allaitement.Designer.vb">
+      <DependentUpon>Frm_Grossesse_Allaitement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Grossesse_Allaitement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Indication.Designer.vb">
+      <DependentUpon>Frm_Indication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Indication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_InteractionsRCP.Designer.vb">
+      <DependentUpon>Frm_InteractionsRCP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_InteractionsRCP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_MedVirtuellePere.Designer.vb">
+      <DependentUpon>Frm_MedVirtuellePere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_MedVirtuellePere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Pharmacocinetique.Designer.vb">
+      <DependentUpon>Frm_Pharmacocinetique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Pharmacocinetique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Posologie.Designer.vb">
+      <DependentUpon>Frm_Posologie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Posologie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ProduitFils.Designer.vb">
+      <DependentUpon>Frm_ProduitFils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ProduitFils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ProduitPere.Designer.vb">
+      <DependentUpon>Frm_ProduitPere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_ProduitPere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Reconst_Administ.Designer.vb">
+      <DependentUpon>Frm_Reconst_Administ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Reconst_Administ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_References_offc.Designer.vb">
+      <DependentUpon>Frm_References_offc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_References_offc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Securite_Preclinique.Designer.vb">
+      <DependentUpon>Frm_Securite_Preclinique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Securite_Preclinique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_SubstanceActivFils.Designer.vb">
+      <DependentUpon>Frm_SubstanceActivFils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_SubstanceActivFils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_SubstanceActivPere.Designer.vb">
+      <DependentUpon>Frm_SubstanceActivPere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_SubstanceActivPere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_MedVirtuelle.Designer.vb">
+      <DependentUpon>Frm_MedVirtuelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_MedVirtuelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Presentation.Designer.vb">
+      <DependentUpon>Frm_Presentation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Presentation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Presentation_Prix.Designer.vb">
+      <DependentUpon>Frm_Presentation_Prix.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Presentation_Prix.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Specialite.Designer.vb">
+      <DependentUpon>Frm_Specialite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Frm_Specialite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Monographie\Posologie_min_max\Frm_Posologie_Min_Max1.Designer.vb">
+      <DependentUpon>Frm_Posologie_Min_Max1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Monographie\Posologie_min_max\Frm_Posologie_Min_Max1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Médicament Virtuel père\Frm_Forme_Virtuelle.Designer.vb">
+      <DependentUpon>Frm_Forme_Virtuelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Médicament Virtuel père\Frm_Forme_Virtuelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Médicament Virtuel père\Frm_Substance_Virtuelle.Designer.vb">
+      <DependentUpon>Frm_Substance_Virtuelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Médicament Virtuel père\Frm_Substance_Virtuelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Frm_GrosseRequete.Designer.vb">
+      <DependentUpon>Frm_GrosseRequete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Frm_GrosseRequete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Frm_RechercheGlobale.Designer.vb">
+      <DependentUpon>Frm_RechercheGlobale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Frm_RechercheGlobale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_CipemgCodeMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_CipemgCodeMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_CipemgCodeMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_CipemgTxtMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_CipemgTxtMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_CipemgTxtMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_ConducteurMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_ConducteurMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_ConducteurMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_EffetsIndesirablesMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_EffetsIndesirablesMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_EffetsIndesirablesMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_EtiologieMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_EtiologieMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_EtiologieMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_GrossAllaitementMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_GrossAllaitementMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_GrossAllaitementMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_IncompatibiliteMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_IncompatibiliteMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_IncompatibiliteMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_IndicationMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_IndicationMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_IndicationMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_InteractionMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_InteractionMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_InteractionMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_InteractionRCPMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_InteractionRCPMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_InteractionRCPMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_PharmacocinetiqueMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_PharmacocinetiqueMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_PharmacocinetiqueMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_PosologieMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_PosologieMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_PosologieMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_PresentationMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_PresentationMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_PresentationMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_ReconstAdminMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_ReconstAdminMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_ReconstAdminMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SacFilsMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_SacFilsMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SacFilsMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SauFilsMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_SauFilsMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SauFilsMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SecuritePrecMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_SecuritePrecMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SecuritePrecMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SpecialiteMultiCriteres.Designer.vb">
+      <DependentUpon>Frm_SpecialiteMultiCriteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recherche\Multicriteres\Frm_SpecialiteMultiCriteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\URL\Frm_URL.Designer.vb">
+      <DependentUpon>Frm_URL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\URL\Frm_URL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modeles\Frm_CNHIM.Designer.vb">
+      <DependentUpon>Frm_CNHIM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modeles\Frm_CNHIM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modeles\Frm_Config.Designer.vb">
+      <DependentUpon>Frm_Config.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modeles\Frm_Config.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modeles\Frm_Dictionnaire.Designer.vb">
+      <DependentUpon>Frm_Dictionnaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modeles\Frm_Dictionnaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modeles\Frm_Edit.Designer.vb">
+      <DependentUpon>Frm_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modeles\Frm_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modeles\Frm_Formulaire.Designer.vb">
+      <DependentUpon>Frm_Formulaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modeles\Frm_Formulaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modeles\Frm_password.Designer.vb">
+      <DependentUpon>Frm_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modeles\Frm_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ModDeclinaison.vb" />
+    <Compile Include="Module\ModMain.vb" />
+    <Compile Include="Module\ModNotify.vb" />
+    <Compile Include="Module\ModSQLData2.vb" />
+    <Compile Include="Module\ModAlgoCode.vb" />
+    <Compile Include="Module\ModCode.vb" />
+    <Compile Include="Module\ModConstantes.vb" />
+    <Compile Include="Module\ModFormulaire.vb" />
+    <Compile Include="Module\ModInterface.vb" />
+    <Compile Include="Module\ModMessage.vb" />
+    <Compile Include="Module\ModMessageText.vb" />
+    <Compile Include="Module\ModOutil.vb" />
+    <Compile Include="Module\ModSQLData.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Declinaison\Frm_Declinaison.resx">
+      <DependentUpon>Frm_Declinaison.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Declinaison\Frm_Dictionnaire_Declinaison.resx">
+      <DependentUpon>Frm_Dictionnaire_Declinaison.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analyse_Ordonnance\Frm_Attrb_Auto_Anlys_Ordo_Incomp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Attrb_Auto_Anlys_Ordo_Incomp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analyse_Ordonnance\Frm_Attrb_Auto_Anlys_Ordo_Inter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Attrb_Auto_Anlys_Ordo_Inter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analyse_Ordonnance\Frm_Incompatibilites_Fiche.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Incompatibilites_Fiche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Analyse_Ordonnance\Frm_Interactions_Fiche.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Interactions_Fiche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_ATC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ATC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_CIM10.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF_CIM10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_CIM10_CISP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF_CIM10_CISP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_CIM10_Medra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF_CIM10_Medra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_CIM10_Orphanet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF_CIM10_Orphanet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_Contenance.resx">
+      <DependentUpon>Frm_CDF_Contenance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_IVO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF_IVO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_PP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF_PP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_TEQ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CDF_TEQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CDF_TEQ1.resx">
+      <DependentUpon>Frm_CDF_TEQ1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CIM10.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CIM10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_CISP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CISP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_ClasseEphmra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ClasseEphmra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_Gestion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Gestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_ClasseChimique.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ClasseChimique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_PharmacoTherapeutiques.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_PharmacoTherapeutiques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_Recherche.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Recherche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_uniteUCUM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_uniteUCUM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criteres_Choix\Frm_Commission_Transparence.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Commission_Transparence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criteres_Choix\Frm_Criteres_Choix.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Criteres_Choix.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criteres_Choix\Frm_Fiche_Infotherapeutique.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Fiche_Infotherapeutique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criteres_Choix\Frm_Fiche_Transparence.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Fiche_Transparence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Criteres_Choix\Frm_RMO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_RMO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPreview.resx">
+      <DependentUpon>frmPreview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Codification\Frm_Rubrique_Codification.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Rubrique_Codification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Main.resx">
+      <DependentUpon>Frm_Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Validation.resx">
+      <DependentUpon>Frm_Validation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\FrmApercu.resx">
+      <DependentUpon>FrmApercu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Frm_Categorie.resx">
+      <DependentUpon>Frm_Categorie.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Frm_Doc_SP.resx">
+      <DependentUpon>Frm_Doc_SP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Frm_GestionDocuments.resx">
+      <DependentUpon>Frm_GestionDocuments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Frm_ImportDirect.resx">
+      <DependentUpon>Frm_ImportDirect.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Frm_Import_Selection.resx">
+      <DependentUpon>Frm_Import_Selection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Frm_Partage.resx">
+      <DependentUpon>Frm_Partage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\Frm_PreSelection.resx">
+      <DependentUpon>Frm_PreSelection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionDoc\UcApercu.resx">
+      <DependentUpon>UcApercu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Interopérabilité\Frm_Interoperable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Interoperable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\CIPEMG\Frm_Cipemg_Code.resx">
+      <DependentUpon>Frm_Cipemg_Code.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Attrb_Auto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Attrb_Auto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Cipemg_Code1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Cipemg_Code1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Cipemg_Texte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Cipemg_Texte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Conducteur.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Conducteur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Effets_Indiserables.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Effets_Indiserables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Etiologie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Etiologie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_ExcipientFils.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ExcipientFils.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_ExcipientPere.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ExcipientPere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Generique.resx">
+      <DependentUpon>Frm_Generique.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Grossesse_Allaitement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Grossesse_Allaitement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Indication.resx">
+      <DependentUpon>Frm_Indication.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_InteractionsRCP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_InteractionsRCP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_MedVirtuelle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_MedVirtuelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_MedVirtuellePere.resx">
+      <DependentUpon>Frm_MedVirtuellePere.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Pharmacocinetique.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Pharmacocinetique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Posologie.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Posologie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Presentation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Presentation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Presentation_Prix.resx">
+      <DependentUpon>Frm_Presentation_Prix.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_ProduitFils.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ProduitFils.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_ProduitPere.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ProduitPere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Reconst_Administ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Reconst_Administ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_References_offc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_References_offc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Securite_Preclinique.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Securite_Preclinique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_SubstanceActivFils.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SubstanceActivFils.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_SubstanceActivPere.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SubstanceActivPere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Frm_Specialite.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Specialite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Monographie\Posologie_min_max\Frm_Posologie_Min_Max1.resx">
+      <DependentUpon>Frm_Posologie_Min_Max1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Médicament Virtuel père\Frm_Forme_Virtuelle.resx">
+      <DependentUpon>Frm_Forme_Virtuelle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Médicament Virtuel père\Frm_Substance_Virtuelle.resx">
+      <DependentUpon>Frm_Substance_Virtuelle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Frm_GrosseRequete.resx">
+      <DependentUpon>Frm_GrosseRequete.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Frm_RechercheGlobale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_RechercheGlobale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_CipemgCodeMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CipemgCodeMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_CipemgTxtMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CipemgTxtMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_ConducteurMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ConducteurMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_EffetsIndesirablesMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_EffetsIndesirablesMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_EtiologieMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_EtiologieMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_GrossAllaitementMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_GrossAllaitementMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_IncompatibiliteMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_IncompatibiliteMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_IndicationMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_IndicationMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_InteractionMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_InteractionMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_InteractionRCPMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_InteractionRCPMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_PharmacocinetiqueMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_PharmacocinetiqueMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_PosologieMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_PosologieMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_PresentationMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_PresentationMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_ReconstAdminMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_ReconstAdminMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_SacFilsMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SacFilsMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_SauFilsMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SauFilsMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_SecuritePrecMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SecuritePrecMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recherche\Multicriteres\Frm_SpecialiteMultiCriteres.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_SpecialiteMultiCriteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\URL\Frm_URL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_URL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeles\Frm_CNHIM.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_CNHIM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeles\Frm_Config.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Config.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeles\Frm_Dictionnaire.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Dictionnaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeles\Frm_Edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeles\Frm_Formulaire.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Formulaire.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modeles\Frm_password.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet\dsTheriaque.xsc">
+      <DependentUpon>dsTheriaque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque.xss">
+      <DependentUpon>dsTheriaque.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque2.xsc">
+      <DependentUpon>dsTheriaque2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="DataSet\dsTheriaque2.xss">
+      <DependentUpon>dsTheriaque2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaqueCategorie.xsc">
+      <DependentUpon>dsTheriaqueCategorie.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaqueCategorie.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsTheriaqueCategorie.xss">
+      <DependentUpon>dsTheriaqueCategorie.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaqueURL.xsc">
+      <DependentUpon>dsTheriaqueURL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaqueURL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaqueURL.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaqueURL.xss">
+      <DependentUpon>dsTheriaqueURL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_AnalyseOrdonance.xsc">
+      <DependentUpon>dsTheriaque_AnalyseOrdonance.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_AnalyseOrdonance.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_AnalyseOrdonance.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_AnalyseOrdonance.xss">
+      <DependentUpon>dsTheriaque_AnalyseOrdonance.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_AnalyseOrdonance2.xsc">
+      <DependentUpon>dsTheriaque_AnalyseOrdonance2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_AnalyseOrdonance2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_AnalyseOrdonance2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_AnalyseOrdonance2.xss">
+      <DependentUpon>dsTheriaque_AnalyseOrdonance2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Cipemg_Code.xsc">
+      <DependentUpon>dsTheriaque_Cipemg_Code.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Cipemg_Code.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Cipemg_Code.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Cipemg_Code.xss">
+      <DependentUpon>dsTheriaque_Cipemg_Code.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Cipemg_Texte.xsc">
+      <DependentUpon>dsTheriaque_Cipemg_Texte.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Cipemg_Texte.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Cipemg_Texte.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Cipemg_Texte.xss">
+      <DependentUpon>dsTheriaque_Cipemg_Texte.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Conducteur.xsc">
+      <DependentUpon>dsTheriaque_Conducteur.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Conducteur.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Conducteur.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Conducteur.xss">
+      <DependentUpon>dsTheriaque_Conducteur.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_CriteresChoix.xsc">
+      <DependentUpon>dsTheriaque_CriteresChoix.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_CriteresChoix.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_CriteresChoix.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_CriteresChoix.xss">
+      <DependentUpon>dsTheriaque_CriteresChoix.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Effets_Indesirables.xsc">
+      <DependentUpon>dsTheriaque_Effets_Indesirables.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Effets_Indesirables.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Effets_Indesirables.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Effets_Indesirables.xss">
+      <DependentUpon>dsTheriaque_Effets_Indesirables.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Etiologie.xsc">
+      <DependentUpon>dsTheriaque_Etiologie.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Etiologie.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Etiologie.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Etiologie.xss">
+      <DependentUpon>dsTheriaque_Etiologie.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Excipient.xsc">
+      <DependentUpon>dsTheriaque_Excipient.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Excipient.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Excipient.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Excipient.xss">
+      <DependentUpon>dsTheriaque_Excipient.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_GrosseRequete.xsc">
+      <DependentUpon>dsTheriaque_GrosseRequete.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_GrosseRequete.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_GrosseRequete.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_GrosseRequete.xss">
+      <DependentUpon>dsTheriaque_GrosseRequete.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Grossesse_Allaitement.xsc">
+      <DependentUpon>dsTheriaque_Grossesse_Allaitement.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Grossesse_Allaitement.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Grossesse_Allaitement.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Grossesse_Allaitement.xss">
+      <DependentUpon>dsTheriaque_Grossesse_Allaitement.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Indication.xsc">
+      <DependentUpon>dsTheriaque_Indication.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Indication.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Indication.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsTheriaque_Indication.xss">
+      <DependentUpon>dsTheriaque_Indication.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_InteractionRCP.xsc">
+      <DependentUpon>dsTheriaque_InteractionRCP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_InteractionRCP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_InteractionRCP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_InteractionRCP.xss">
+      <DependentUpon>dsTheriaque_InteractionRCP.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Interoperable.xsc">
+      <DependentUpon>dsTheriaque_Interoperable.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Interoperable.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Interoperable.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Interoperable.xss">
+      <DependentUpon>dsTheriaque_Interoperable.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature1.xsc">
+      <DependentUpon>dsTheriaque_Nomenclature1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Nomenclature1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature1.xss">
+      <DependentUpon>dsTheriaque_Nomenclature1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature2.xsc">
+      <DependentUpon>dsTheriaque_Nomenclature2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Nomenclature2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature2.xss">
+      <DependentUpon>dsTheriaque_Nomenclature2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature3.xsc">
+      <DependentUpon>dsTheriaque_Nomenclature3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Nomenclature3.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Nomenclature3.xss">
+      <DependentUpon>dsTheriaque_Nomenclature3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Pharmacocinetique.xsc">
+      <DependentUpon>dsTheriaque_Pharmacocinetique.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Pharmacocinetique.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Pharmacocinetique.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Pharmacocinetique.xss">
+      <DependentUpon>dsTheriaque_Pharmacocinetique.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Posologie.xsc">
+      <DependentUpon>dsTheriaque_Posologie.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Posologie.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Posologie.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Posologie.xss">
+      <DependentUpon>dsTheriaque_Posologie.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Pos_Min_Max.xsc">
+      <DependentUpon>dsTheriaque_Pos_Min_Max.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Pos_Min_Max.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Pos_Min_Max.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsTheriaque_Pos_Min_Max.xss">
+      <DependentUpon>dsTheriaque_Pos_Min_Max.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Produit.xsc">
+      <DependentUpon>dsTheriaque_Produit.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Produit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Produit.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Produit.xss">
+      <DependentUpon>dsTheriaque_Produit.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Recap.xsc">
+      <DependentUpon>dsTheriaque_Recap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Recap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Recap.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Recap.xss">
+      <DependentUpon>dsTheriaque_Recap.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Reconst_Administ.xsc">
+      <DependentUpon>dsTheriaque_Reconst_Administ.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Reconst_Administ.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Reconst_Administ.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Reconst_Administ.xss">
+      <DependentUpon>dsTheriaque_Reconst_Administ.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Ref.xsc">
+      <DependentUpon>dsTheriaque_Ref.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Ref.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Ref.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_Ref.xss">
+      <DependentUpon>dsTheriaque_Ref.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_SecuritePreclinique.xsc">
+      <DependentUpon>dsTheriaque_SecuritePreclinique.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_SecuritePreclinique.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_SecuritePreclinique.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsTheriaque_SecuritePreclinique.xss">
+      <DependentUpon>dsTheriaque_SecuritePreclinique.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Virtuel_Pere.xsc">
+      <DependentUpon>dsTheriaque_Virtuel_Pere.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsTheriaque_Virtuel_Pere.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTheriaque_Virtuel_Pere.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet\dsTheriaque_Virtuel_Pere.xss">
+      <DependentUpon>dsTheriaque_Virtuel_Pere.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\10TH.ico" />
+    <Content Include="Image\7888TH.ico" />
+    <Content Include="Image\888TH.ico" />
+    <Content Include="Image\88TH.ico" />
+    <Content Include="Image\TH.ico" />
+    <Content Include="TH.ico" />
+    <Content Include="THGreen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentService\DocumentService.vbproj">
+      <Project>{79BAD2A0-5F62-4AEA-919A-557C9328A668}</Project>
+      <Name>DocumentService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Posologie_min_max\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

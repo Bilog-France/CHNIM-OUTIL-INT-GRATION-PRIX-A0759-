@@ -3495,7 +3495,6 @@ Partial Class Frm_Posologie
         '
         'GC30
         '
-        Me.GC30.DataMember = "IPODOSE_INFOPOSO"
         Me.GC30.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GC30.EmbeddedNavigator.Buttons.Edit.Visible = False
         Me.GC30.EmbeddedNavigator.Buttons.First.Visible = False
@@ -3692,7 +3691,7 @@ Partial Class Frm_Posologie
         '
         Me.XtraTabPage7.Controls.Add(Me.GC31)
         Me.XtraTabPage7.Name = "XtraTabPage7"
-        Me.XtraTabPage7.Size = New System.Drawing.Size(503, 429)
+        Me.XtraTabPage7.Size = New System.Drawing.Size(892, 438)
         Me.XtraTabPage7.Text = "Durée min/max absolue"
         '
         'GC31
@@ -3713,7 +3712,7 @@ Partial Class Frm_Posologie
         Me.GC31.MainView = Me.GV31
         Me.GC31.Name = "GC31"
         Me.GC31.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemLookUpEdit6, Me.RepositoryItemLookUpEdit7, Me.RepositoryItemLookUpEdit8, Me.RepositoryItemLookUpEdit4, Me.RepositoryItemLookUpEdit5})
-        Me.GC31.Size = New System.Drawing.Size(503, 429)
+        Me.GC31.Size = New System.Drawing.Size(892, 438)
         Me.GC31.TabIndex = 17
         Me.GC31.Tag = "[EDIT][ADD]"
         Me.GC31.UseEmbeddedNavigator = True

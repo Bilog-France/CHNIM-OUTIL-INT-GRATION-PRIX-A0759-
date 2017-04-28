@@ -295,7 +295,7 @@ Public Class Frm_RechercheGlobale
     ''' <remarks></remarks>
     Private Sub rpbtEdit13_ButtonClick(ByVal sender As System.Object, ByVal e As DevExpress.XtraEditors.Controls.ButtonPressedEventArgs) Handles rpbtEdit13.ButtonClick
         If Me.GV14.GetFocusedRowCellValue(Me.col1_CipemgC) IsNot Nothing Then
-            Dim f As New Frm_Cipemg_Code1
+            Dim f As New Frm_Cipemg_Code
             f._Code = Me.GV14.GetFocusedRowCellValue(Me.col1_CipemgC)
             f.MdiParent = FMain
             f.Show()

@@ -100,17 +100,40 @@ Public Class Frm_Forme_Virtuelle
             Return
         End If
 
+        For i As Integer = 0 To GV2.RowCount - 1
+
+            If (GV2.GetDataRow(i)("SYFOV_LIBELLE")).ToString().ToLower().Equals(EditLibelle.Text.ToLower()) Then
+                MsgBox("Le libellé de la fiche existe comme libellé de synonyme")
+                Exit Sub
+                MyBase.IsValider = False
+            End If
+
+
+        Next
+
+        'Doublon libellé-libellé entre deux fiches différentes
         Dim strSSQL As String
         strSSQL = " select FOV_CODE_SQ_PK from theriaque.FOV_FORME_VIRTUELLE where FOV_LIBELLE = " & cn.SQLText(EditLibelle.Text)
         Dim dt As DataTable = cn.MySelect(strSSQL)
-        MyBase.IsValider = True
 
+        MyBase.IsValider = True
         If dt.Rows.Count > 0 Then
             If dt.Rows(0).Item(0) <> EditCode.Text Then
-                MsgBox("Le libellé de la forme virtuelle existe déjà")
+                MsgBox("Le libellé de la forme virtuelle existe déjà dans la fiche " & dt.Rows(0).Item(0))
                 MyBase.IsValider = False
                 Exit Sub
             End If
+        End If
+
+        'doublon Libellé - synonyme dans la même fiche 
+        strSSQL = " select SYFOV_FOV_CODE_FK_PK from theriaque.SYFOV_SYNONYME_FORME_VIRT where SYFOV_LIBELLE = " & cn.SQLText(EditLibelle.Text)
+        dt = cn.MySelect(strSSQL)
+
+        MyBase.IsValider = True
+        If dt.Rows.Count > 0 Then
+            MsgBox("Le libellé de la forme virtuelle existe déjà dans le synonyme de la fiche " & dt.Rows(0).Item(0))
+            MyBase.IsValider = False
+            Exit Sub
         End If
 
         MyBase.Valider()
@@ -212,8 +235,12 @@ Public Class Frm_Forme_Virtuelle
 
         If e.Value IsNot Nothing Then
 
+            If (e.Value.ToString().ToLower().Equals(EditLibelle.Text.ToLower())) Then
+                e.Valid = False
+                e.ErrorText = "Ce libellé est le meme que celui de la fiche courante"
+                Exit Sub
+            End If
             Dim strSSQL As String
-
 
             strSSQL = "select * from theriaque.SYFOV_SYNONYME_FORME_VIRT where SYFOV_LIBELLE = " & cn.SQLText(e.Value)
 
@@ -224,12 +251,16 @@ Public Class Frm_Forme_Virtuelle
             Dim dt2 As DataTable = cn.MySelect(strSSQL)
 
             If dt2.Rows.Count > 0 Then
+
                 e.Valid = False
                 e.ErrorText = " Ce libellé existe comme libellé forme virtuelle n° " & dt2.Rows(0).Item(0)
+
             Else
                 If dt.Rows.Count > 0 Then
-                    e.Valid = False
-                    e.ErrorText = " Cette valeur existe déja dans la fiche " & dt.Rows(0).Item("SYFOV_FOV_CODE_FK_PK")
+                    If Not (EditCode.Text.ToLower().Equals(dt.Rows(0).Item("SYFOV_FOV_CODE_FK_PK").ToString().ToLower())) Then
+                        e.Valid = False
+                        e.ErrorText = " Cette valeur existe déja dans la fiche " & dt.Rows(0).Item("SYFOV_FOV_CODE_FK_PK")
+                    End If
                 Else
                     For i As Integer = 0 To GV2.RowCount - 2
 
@@ -246,7 +277,7 @@ Public Class Frm_Forme_Virtuelle
                     Next
                 End If
 
-            End If
+                End If
         End If
 
     End Sub

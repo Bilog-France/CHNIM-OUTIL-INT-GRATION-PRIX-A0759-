@@ -188,13 +188,20 @@ Public Class Frm_Posologie_Min_Max
     End Function
 
     Public Overrides Sub Ajouter()
-
+        MyBase.Ajouter()
         InitDataTable()
         FillCombos()
         DesactivationGrid()
-        MyBase.Ajouter()
-
     End Sub
+    'Public Overrides Sub Ajouter()
+
+    '    MyBase.Ajouter()
+    '    InitDataTable()
+    '    FillCombos()
+    '    DesactivationGrid()
+
+
+    'End Sub
 
     Public Overrides Function supprimer() As Boolean
         MyBase.Supprimer()
@@ -359,4 +366,7 @@ Public Class Frm_Posologie_Min_Max
     End Sub
 
 #End Region
+
+
+
 End Class

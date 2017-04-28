@@ -1,0 +1,12 @@
+bin\App_Param.exe.config
+obj\Debug\App_Param.exe
+obj\Debug\App_Param.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\App_Param.frmMain.resources
+obj\Debug\App_Param.frmProgressBar.resources
+obj\Debug\App_Param.vbproj.GenerateResource.Cache
+bin\App_Param.exe
+bin\App_Param.pdb
+bin\App_Param.xml
+bin\Interop.HeocxLib.dll
+obj\Debug\App_Param.xml

@@ -723,7 +723,7 @@ Partial Class Frm_Commission_Transparence
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(504, 453)
+        Me.TabPage2.Size = New System.Drawing.Size(657, 489)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Document"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -735,7 +735,7 @@ Partial Class Frm_Commission_Transparence
         Me.PanelControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl2.Location = New System.Drawing.Point(3, 34)
         Me.PanelControl2.Name = "PanelControl2"
-        Me.PanelControl2.Size = New System.Drawing.Size(498, 416)
+        Me.PanelControl2.Size = New System.Drawing.Size(651, 452)
         Me.PanelControl2.TabIndex = 10
         Me.PanelControl2.Text = "PanelControl2"
         '
@@ -745,7 +745,7 @@ Partial Class Frm_Commission_Transparence
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel10.Location = New System.Drawing.Point(2, 2)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(407, 412)
+        Me.Panel10.Size = New System.Drawing.Size(560, 448)
         Me.Panel10.TabIndex = 6
         '
         'gcPropDoc
@@ -759,7 +759,7 @@ Partial Class Frm_Commission_Transparence
         Me.gcPropDoc.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gcPropDoc.Location = New System.Drawing.Point(0, 0)
         Me.gcPropDoc.Name = "gcPropDoc"
-        Me.gcPropDoc.Size = New System.Drawing.Size(407, 412)
+        Me.gcPropDoc.Size = New System.Drawing.Size(560, 448)
         Me.gcPropDoc.TabIndex = 10
         Me.gcPropDoc.Text = "Propriété document"
         '
@@ -823,9 +823,9 @@ Partial Class Frm_Commission_Transparence
         Me.Panel9.Controls.Add(Me.btAperçu)
         Me.Panel9.Controls.Add(Me.btnImporter)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel9.Location = New System.Drawing.Point(409, 2)
+        Me.Panel9.Location = New System.Drawing.Point(562, 2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(87, 412)
+        Me.Panel9.Size = New System.Drawing.Size(87, 448)
         Me.Panel9.TabIndex = 5
         '
         'cmdAnnuler
@@ -875,7 +875,7 @@ Partial Class Frm_Commission_Transparence
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl1.Location = New System.Drawing.Point(3, 3)
         Me.PanelControl1.Name = "PanelControl1"
-        Me.PanelControl1.Size = New System.Drawing.Size(498, 31)
+        Me.PanelControl1.Size = New System.Drawing.Size(651, 31)
         Me.PanelControl1.TabIndex = 9
         Me.PanelControl1.Text = "PanelControl1"
         '
@@ -886,7 +886,7 @@ Partial Class Frm_Commission_Transparence
         Me.bePath.Location = New System.Drawing.Point(5, 5)
         Me.bePath.Name = "bePath"
         Me.bePath.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton("explorer", DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis), New DevExpress.XtraEditors.Controls.EditorButton("effacer", DevExpress.XtraEditors.Controls.ButtonPredefines.Minus)})
-        Me.bePath.Size = New System.Drawing.Size(332, 20)
+        Me.bePath.Size = New System.Drawing.Size(485, 20)
         Me.bePath.TabIndex = 4
         '
         'Frm_Commission_Transparence

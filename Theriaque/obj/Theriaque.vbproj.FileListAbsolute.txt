@@ -81,7 +81,6 @@ E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.Frm_Posologie_Min_Max1.resources
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.Frm_Forme_Virtuelle.resources
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.Frm_Substance_Virtuelle.resources
-E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.Frm_Posologie_Min_Max.resources
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.Frm_GrosseRequete.resources
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.Frm_RechercheGlobale.resources
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.Frm_CipemgCodeMultiCriteres.resources
@@ -236,3 +235,5 @@ E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\Theriaque
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\Theriaque\obj\Release\Theriaque.Resources.resources
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\Theriaque\obj\Release\Theriaque.vbproj.GenerateResource.Cache
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\Theriaque\obj\Release\Theriaque.exe.licenses
+E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\bin\Debug\Theriaque.exe.config
+E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_\Theriaque\obj\Release\Theriaque.exe.licenses

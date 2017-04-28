@@ -401,12 +401,13 @@ Public Class Frm_Commission_Transparence
         If (Not String.IsNullOrEmpty(txtCode.Text)) Then
             'importer
             If (Not String.IsNullOrEmpty(bePath.Text)) Then
+                doc = New DocumentService.DocumentProvider(cn.sConnexion)
                 If (doc.ExistATR(txtCode.Text)) Then
                     SaveDocument(bePath.Text)
                     doc.AddDocumentToAssociation(doc.DO_ID, txtCode.Text, DocumentService.DocumentProvider.TypeDoc.CommiTrans)
                     Me.txtLibelle.Text = doc.DO_Label
                     Me.meNote.Text = doc.DO_Note
-                    Me.lueCategorie.EditValue = CType(doc.ID_Categorie, Short)
+                    'Me.lueCategorie.EditValue = CType(doc.ID_Categorie, Short)
 
                     MsgBox("Document importé avec succès")
                 End If

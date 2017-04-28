@@ -79,6 +79,17 @@ Public Class Frm_Attrb_Auto
             Next
         End If
 
+        'Posologie Min Max
+        strSSQL = " Select distinct cast(FPOMMSP_FPOMM_CODE_FK_PK as varchar) as code from THERIAQUE.FPOMMSP_POSOMINMAX_SPE "
+        strSSQL &= " where FPOMMSP_SP_CODE_FK_PK = " & cn.SQLText(txtCode2.Text)
+        dtTemp = cn.MySelect(strSSQL)
+        If dtTemp.Rows.Count > 0 Then
+            For iCount As Integer = 0 To dtTemp.Rows.Count - 1
+                cn.Execute("DELETE FROM THERIAQUE.FPOMMSP_POSOMINMAX_SPE WHERE FPOMMSP_SP_CODE_FK_PK = " & cn.SQLText(txtCode2.Text) & " AND FPOMMSP_FPOMM_CODE_FK_PK = " & dtTemp.Rows(iCount)(0))
+                'cn.Execute("DELETE FROM THERIAQUE.FPOAFS_POSO_AFSSAPS WHERE FPOAFS_SP_CODE_FK_PK = " & cn.SQLText(txtCode2.Text) & " AND FPOAFS_FPO_CODE_FK_PK = " & dtTemp.Rows(iCount)(0))
+            Next
+        End If
+
         'Cipemg code 
         strSSQL = " Select distinct cast(FCPMSP_FCPM_CODE_FK_PK as varchar) as code from THERIAQUE.FCPMSP_CIPEMG_SPE "
         strSSQL &= " where FCPMSP_SP_CODE_FK_PK  = " & cn.SQLText(txtCode2.Text)

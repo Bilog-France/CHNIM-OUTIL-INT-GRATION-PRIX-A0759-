@@ -729,6 +729,11 @@ Public Class Frm_Presentation
             Me.PrevolsoL.Update(Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION)
         End If
 
+        For i As Integer = 0 To Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE.Rows.Count - 1
+            Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE.Rows(i).Item("PREDISPMAX_PRE_CODE_FK_PK") = txtCode.Text
+        Next
+        Me.PREDISPMAX.Update(DsTheriaque_Nomenclature2)
+
         Me.BindingContext(Me.MasterDataSet, "PREDISPMAX_PRE_DISP_MAXIMALE").EndCurrentEdit()
         Me.PREDISPMAX.Update(Me.DsTheriaque_Nomenclature2.PREDISPMAX_PRE_DISP_MAXIMALE)
 
