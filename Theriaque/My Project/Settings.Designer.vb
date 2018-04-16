@@ -97,6 +97,17 @@ Partial Friend NotInheritable Class MySettings
             Return CType(Me("tempConnectionString"),String)
         End Get
     End Property
+    
+    <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("Data Source=172.16.1.111;Initial Catalog=theriak;Persist Security Info=True;User "& _ 
+        "ID=bechir;Password=k4Tj9fPdL")>  _
+    Public ReadOnly Property theriakConnectionString() As String
+        Get
+            Return CType(Me("theriakConnectionString"),String)
+        End Get
+    End Property
 End Class
 
 Namespace My

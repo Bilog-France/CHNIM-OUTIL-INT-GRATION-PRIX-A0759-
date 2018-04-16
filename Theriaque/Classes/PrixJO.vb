@@ -10,19 +10,22 @@ Public Class PrixJO
         Dim fopen As New OpenFileDialog
         Dim Err As ErrorFormat
 
-        If (Not Directory.Exists("Log")) Then
-            Directory.CreateDirectory("Log")
-        End If
-
-        Dim fileName As String = "Log/PrixLog-" & DateTime.Now.ToShortDateString().Replace("/", "-") & " " & DateTime.Now.TimeOfDay.ToString().Substring(0, 8).Replace(":", "-") & ".csv"
-        Dim fStr As FileStream = File.Create(fileName)
-        fStr.Close()
-        swLog = File.CreateText(fileName)
-        swLog.WriteLine("CIP;Erreur")
         fopen.Filter = "Excel Worksheets|*.csv*|*.|*.*"
         fopen.ShowDialog()
 
         If (Not String.IsNullOrEmpty(fopen.FileName)) Then
+
+            Dim dr As String = fopen.FileName.Replace("\" + fopen.SafeFileName, "")
+
+            If (Not Directory.Exists(dr + "\Log")) Then
+                Directory.CreateDirectory(dr + "\Log")
+            End If
+
+            Dim fileName As String = dr + "\Log/PrixLog-" & DateTime.Now.ToShortDateString().Replace("/", "-") & " " & DateTime.Now.TimeOfDay.ToString().Substring(0, 8).Replace(":", "-") & ".csv"
+            Dim fStr As FileStream = File.Create(fileName)
+            fStr.Close()
+            swLog = File.CreateText(fileName)
+            swLog.WriteLine("CIP;Erreur")
 
             Dim afile As FileIO.TextFieldParser = New FileIO.TextFieldParser(fopen.FileName)
             Dim CurrentRecord As String ' this array will hold each line of data
@@ -46,6 +49,7 @@ Public Class PrixJO
                 Catch ex As FileIO.MalformedLineException
                     MsgBox(ex.Message)
                     swLog.Close()
+                    fStr.Close()
                     Exit Sub
                 End Try
             Loop
@@ -55,9 +59,11 @@ Public Class PrixJO
                 AlgorithmePrix(typeCalcul, fopen.FileName)
 
             End If
-
+            fStr.Close()
         End If
+
         swLog.Close()
+
     End Sub
 
     Shared Function TestFormat(ByVal Line As String) As ErrorFormat

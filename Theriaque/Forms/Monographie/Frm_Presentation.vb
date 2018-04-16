@@ -682,8 +682,16 @@ Public Class Frm_Presentation
         Me.BindingContext(Me.MasterDataSet, "PRECPSS").EndCurrentEdit()
         Me.Precpss_TA.Update(Me.DsTheriaque_Nomenclature2.PRECPSS)
 
-
+        Dim newRow As Boolean = False
         If Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Count = 0 Then
+            newRow = True
+        Else
+            If Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_PRE_CODE_FK_PK") <> txtCode.Text Then
+                newRow = True
+            End If
+        End If
+
+        If newRow Then
 
             If lkupUnite.EditValue Is System.DBNull.Value Then
                 unite = Nothing
@@ -718,6 +726,19 @@ Public Class Frm_Presentation
                 'Me.DsTheriaque_Nomenclature2.PREVOLSOL_VOLUME_SOLUTION.Rows(0).Delete()
                 cn.Execute(" Delete from theriaque.PREVOLSOL_VOLUME_SOLUTION where PREVOLSOL_PRE_CODE_FK_PK =" & cn.SQLText(txtCode.Text))
             Else
+
+                'If (Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_PRE_CODE_FK_PK") <> txtCode.Text) Then
+                '    Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").AddNew()
+
+                '    If lkupUnite.EditValue Is System.DBNull.Value Then
+                '        unite = Nothing
+                '    Else
+                '        unite = lkupUnite.EditValue
+                '    End If
+                '    volume = txtVolume.Text
+
+
+                'End If
                 Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_PRE_CODE_FK_PK") = txtCode.Text
                 Me.BindingContext(Me.MasterDataSet, "PREVOLSOL_VOLUME_SOLUTION").Current("PREVOLSOL_CIP13") = txtEAN.Text
             End If

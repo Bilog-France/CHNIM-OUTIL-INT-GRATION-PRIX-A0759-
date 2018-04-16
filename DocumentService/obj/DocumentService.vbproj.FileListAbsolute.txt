@@ -52,3 +52,12 @@ E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\DocumentS
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\DocumentService\obj\Release\DocumentService.dll
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\DocumentService\obj\Release\DocumentService.xml
 E:\Repositorie\theriaque\THERIAQUE\Sources\V1.0\Theriaque_1\Theriaque_\DocumentService\obj\Release\DocumentService.pdb
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\bin\Release\DocumentService.dll
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\bin\Release\DocumentService.pdb
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\bin\Release\DocumentService.xml
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\obj\Release\ResolveAssemblyReference.cache
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\obj\Release\DocumentService.Resources.resources
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\obj\Release\DocumentService.vbproj.GenerateResource.Cache
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\obj\Release\DocumentService.dll
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\obj\Release\DocumentService.xml
+E:\Repositorie\GITHUB CNHIM\CHNIM-OUTIL-INT-GRATION-PRIX-A0759-\DocumentService\obj\Release\DocumentService.pdb

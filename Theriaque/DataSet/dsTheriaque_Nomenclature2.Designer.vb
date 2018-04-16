@@ -140,8 +140,6 @@ Partial Public Class dsTheriaque_Nomenclature2
     
     Private tablePREVOLSOL_VOLUME_SOLUTION As PREVOLSOL_VOLUME_SOLUTIONDataTable
     
-    Private tableCDFUCUM_UCUM As CDFUCUM_UCUMDataTable
-    
     Private tableMVPR_MEDICAMENT_VIRTUEL_PERE As MVPR_MEDICAMENT_VIRTUEL_PEREDataTable
     
     Private tableMVPRFOV_MED_VIR_PER_FORM_VIRT As MVPRFOV_MED_VIR_PER_FORM_VIRTDataTable
@@ -149,6 +147,8 @@ Partial Public Class dsTheriaque_Nomenclature2
     Private tableMVPRMV_MED_VIR_VIR_PERE As MVPRMV_MED_VIR_VIR_PEREDataTable
     
     Private tableSYMVPR_SYN_MEDIC_VIRTUEL_PERE As SYMVPR_SYN_MEDIC_VIRTUEL_PEREDataTable
+    
+    Private tableCDFUCUM_UCUM As CDFUCUM_UCUMDataTable
     
     Private relationFK1_GREFTX As Global.System.Data.DataRelation
     
@@ -167,8 +167,6 @@ Partial Public Class dsTheriaque_Nomenclature2
     Private relationFK_SAV As Global.System.Data.DataRelation
     
     Private relationFK__MVPRSAV_M__MVPRS__43E1002F As Global.System.Data.DataRelation
-    
-    Private relationFK__CDFCDFU_C__CDFCD__292D09F3 As Global.System.Data.DataRelation
     
     Private relationFK__MVPRSAV_M__MVPRS__42ECDBF6 As Global.System.Data.DataRelation
     
@@ -370,9 +368,6 @@ Partial Public Class dsTheriaque_Nomenclature2
             If (Not (ds.Tables("PREVOLSOL_VOLUME_SOLUTION")) Is Nothing) Then
                 MyBase.Tables.Add(New PREVOLSOL_VOLUME_SOLUTIONDataTable(ds.Tables("PREVOLSOL_VOLUME_SOLUTION")))
             End If
-            If (Not (ds.Tables("CDFUCUM_UCUM")) Is Nothing) Then
-                MyBase.Tables.Add(New CDFUCUM_UCUMDataTable(ds.Tables("CDFUCUM_UCUM")))
-            End If
             If (Not (ds.Tables("MVPR_MEDICAMENT_VIRTUEL_PERE")) Is Nothing) Then
                 MyBase.Tables.Add(New MVPR_MEDICAMENT_VIRTUEL_PEREDataTable(ds.Tables("MVPR_MEDICAMENT_VIRTUEL_PERE")))
             End If
@@ -384,6 +379,9 @@ Partial Public Class dsTheriaque_Nomenclature2
             End If
             If (Not (ds.Tables("SYMVPR_SYN_MEDIC_VIRTUEL_PERE")) Is Nothing) Then
                 MyBase.Tables.Add(New SYMVPR_SYN_MEDIC_VIRTUEL_PEREDataTable(ds.Tables("SYMVPR_SYN_MEDIC_VIRTUEL_PERE")))
+            End If
+            If (Not (ds.Tables("CDFUCUM_UCUM")) Is Nothing) Then
+                MyBase.Tables.Add(New CDFUCUM_UCUMDataTable(ds.Tables("CDFUCUM_UCUM")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -918,15 +916,6 @@ Partial Public Class dsTheriaque_Nomenclature2
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
-    Public ReadOnly Property CDFUCUM_UCUM() As CDFUCUM_UCUMDataTable
-        Get
-            Return Me.tableCDFUCUM_UCUM
-        End Get
-    End Property
-    
-    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.ComponentModel.Browsable(false),  _
-     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
     Public ReadOnly Property MVPR_MEDICAMENT_VIRTUEL_PERE() As MVPR_MEDICAMENT_VIRTUEL_PEREDataTable
         Get
             Return Me.tableMVPR_MEDICAMENT_VIRTUEL_PERE
@@ -957,6 +946,15 @@ Partial Public Class dsTheriaque_Nomenclature2
     Public ReadOnly Property SYMVPR_SYN_MEDIC_VIRTUEL_PERE() As SYMVPR_SYN_MEDIC_VIRTUEL_PEREDataTable
         Get
             Return Me.tableSYMVPR_SYN_MEDIC_VIRTUEL_PERE
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property CDFUCUM_UCUM() As CDFUCUM_UCUMDataTable
+        Get
+            Return Me.tableCDFUCUM_UCUM
         End Get
     End Property
     
@@ -1190,9 +1188,6 @@ Partial Public Class dsTheriaque_Nomenclature2
             If (Not (ds.Tables("PREVOLSOL_VOLUME_SOLUTION")) Is Nothing) Then
                 MyBase.Tables.Add(New PREVOLSOL_VOLUME_SOLUTIONDataTable(ds.Tables("PREVOLSOL_VOLUME_SOLUTION")))
             End If
-            If (Not (ds.Tables("CDFUCUM_UCUM")) Is Nothing) Then
-                MyBase.Tables.Add(New CDFUCUM_UCUMDataTable(ds.Tables("CDFUCUM_UCUM")))
-            End If
             If (Not (ds.Tables("MVPR_MEDICAMENT_VIRTUEL_PERE")) Is Nothing) Then
                 MyBase.Tables.Add(New MVPR_MEDICAMENT_VIRTUEL_PEREDataTable(ds.Tables("MVPR_MEDICAMENT_VIRTUEL_PERE")))
             End If
@@ -1204,6 +1199,9 @@ Partial Public Class dsTheriaque_Nomenclature2
             End If
             If (Not (ds.Tables("SYMVPR_SYN_MEDIC_VIRTUEL_PERE")) Is Nothing) Then
                 MyBase.Tables.Add(New SYMVPR_SYN_MEDIC_VIRTUEL_PEREDataTable(ds.Tables("SYMVPR_SYN_MEDIC_VIRTUEL_PERE")))
+            End If
+            If (Not (ds.Tables("CDFUCUM_UCUM")) Is Nothing) Then
+                MyBase.Tables.Add(New CDFUCUM_UCUMDataTable(ds.Tables("CDFUCUM_UCUM")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -1576,12 +1574,6 @@ Partial Public Class dsTheriaque_Nomenclature2
                 Me.tablePREVOLSOL_VOLUME_SOLUTION.InitVars
             End If
         End If
-        Me.tableCDFUCUM_UCUM = CType(MyBase.Tables("CDFUCUM_UCUM"),CDFUCUM_UCUMDataTable)
-        If (initTable = true) Then
-            If (Not (Me.tableCDFUCUM_UCUM) Is Nothing) Then
-                Me.tableCDFUCUM_UCUM.InitVars
-            End If
-        End If
         Me.tableMVPR_MEDICAMENT_VIRTUEL_PERE = CType(MyBase.Tables("MVPR_MEDICAMENT_VIRTUEL_PERE"),MVPR_MEDICAMENT_VIRTUEL_PEREDataTable)
         If (initTable = true) Then
             If (Not (Me.tableMVPR_MEDICAMENT_VIRTUEL_PERE) Is Nothing) Then
@@ -1606,6 +1598,12 @@ Partial Public Class dsTheriaque_Nomenclature2
                 Me.tableSYMVPR_SYN_MEDIC_VIRTUEL_PERE.InitVars
             End If
         End If
+        Me.tableCDFUCUM_UCUM = CType(MyBase.Tables("CDFUCUM_UCUM"),CDFUCUM_UCUMDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableCDFUCUM_UCUM) Is Nothing) Then
+                Me.tableCDFUCUM_UCUM.InitVars
+            End If
+        End If
         Me.relationFK1_GREFTX = Me.Relations("FK1_GREFTX")
         Me.relationFK2_PREMAT_PRE_MATERIAU = Me.Relations("FK2_PREMAT_PRE_MATERIAU")
         Me.relationFK2_PRECAR_PRESENT_CARACTCOMP = Me.Relations("FK2_PRECAR_PRESENT_CARACTCOMP")
@@ -1615,7 +1613,6 @@ Partial Public Class dsTheriaque_Nomenclature2
         Me.relationFK_GSP = Me.Relations("FK_GSP")
         Me.relationFK_SAV = Me.Relations("FK_SAV")
         Me.relationFK__MVPRSAV_M__MVPRS__43E1002F = Me.Relations("FK__MVPRSAV_M__MVPRS__43E1002F")
-        Me.relationFK__CDFCDFU_C__CDFCD__292D09F3 = Me.Relations("FK__CDFCDFU_C__CDFCD__292D09F3")
         Me.relationFK__MVPRSAV_M__MVPRS__42ECDBF6 = Me.Relations("FK__MVPRSAV_M__MVPRS__42ECDBF6")
     End Sub
     
@@ -1740,8 +1737,6 @@ Partial Public Class dsTheriaque_Nomenclature2
         MyBase.Tables.Add(Me.tableCDFCDFU_CDFU)
         Me.tablePREVOLSOL_VOLUME_SOLUTION = New PREVOLSOL_VOLUME_SOLUTIONDataTable
         MyBase.Tables.Add(Me.tablePREVOLSOL_VOLUME_SOLUTION)
-        Me.tableCDFUCUM_UCUM = New CDFUCUM_UCUMDataTable
-        MyBase.Tables.Add(Me.tableCDFUCUM_UCUM)
         Me.tableMVPR_MEDICAMENT_VIRTUEL_PERE = New MVPR_MEDICAMENT_VIRTUEL_PEREDataTable
         MyBase.Tables.Add(Me.tableMVPR_MEDICAMENT_VIRTUEL_PERE)
         Me.tableMVPRFOV_MED_VIR_PER_FORM_VIRT = New MVPRFOV_MED_VIR_PER_FORM_VIRTDataTable
@@ -1750,6 +1745,8 @@ Partial Public Class dsTheriaque_Nomenclature2
         MyBase.Tables.Add(Me.tableMVPRMV_MED_VIR_VIR_PERE)
         Me.tableSYMVPR_SYN_MEDIC_VIRTUEL_PERE = New SYMVPR_SYN_MEDIC_VIRTUEL_PEREDataTable
         MyBase.Tables.Add(Me.tableSYMVPR_SYN_MEDIC_VIRTUEL_PERE)
+        Me.tableCDFUCUM_UCUM = New CDFUCUM_UCUMDataTable
+        MyBase.Tables.Add(Me.tableCDFUCUM_UCUM)
         Dim fkc As Global.System.Data.ForeignKeyConstraint
         fkc = New Global.System.Data.ForeignKeyConstraint("FK1_GREFTX", New Global.System.Data.DataColumn() {Me.tableGREF_GROUPE_SPECIALITE_REF.GREF_CODE_SQ_PKColumn, Me.tableGREF_GROUPE_SPECIALITE_REF.GREF_DATECR_PKColumn}, New Global.System.Data.DataColumn() {Me.tableGREFTX_TEXTE_GROUPE_REF.GREFTX_GREF_CODE_FK_PKColumn, Me.tableGREFTX_TEXTE_GROUPE_REF.GREFTX_GREF_DATECR_FK_PKColumn})
         Me.tableGREFTX_TEXTE_GROUPE_REF.Constraints.Add(fkc)
@@ -1774,8 +1771,6 @@ Partial Public Class dsTheriaque_Nomenclature2
         Me.Relations.Add(Me.relationFK_SAV)
         Me.relationFK__MVPRSAV_M__MVPRS__43E1002F = New Global.System.Data.DataRelation("FK__MVPRSAV_M__MVPRS__43E1002F", New Global.System.Data.DataColumn() {Me.tableSAV_SUBSTANCE_VIRTUELLE.SAV_CODE_SQ_PKColumn}, New Global.System.Data.DataColumn() {Me.tableMVPRSAV_MED_VIR_PER_SUBS_VIRT.MVPRSAV_SAV_CODE_FK_PKColumn}, false)
         Me.Relations.Add(Me.relationFK__MVPRSAV_M__MVPRS__43E1002F)
-        Me.relationFK__CDFCDFU_C__CDFCD__292D09F3 = New Global.System.Data.DataRelation("FK__CDFCDFU_C__CDFCD__292D09F3", New Global.System.Data.DataColumn() {Me.tableCDFUCUM_UCUM.CDFUCUM_CODE_PKColumn}, New Global.System.Data.DataColumn() {Me.tableCDFCDFU_CDFU.CDFCDFU_CDFUCUM_CODE_FK_PKColumn}, false)
-        Me.Relations.Add(Me.relationFK__CDFCDFU_C__CDFCD__292D09F3)
         Me.relationFK__MVPRSAV_M__MVPRS__42ECDBF6 = New Global.System.Data.DataRelation("FK__MVPRSAV_M__MVPRS__42ECDBF6", New Global.System.Data.DataColumn() {Me.tableMVPR_MEDICAMENT_VIRTUEL_PERE.MVPR_CODE_SQ_PKColumn}, New Global.System.Data.DataColumn() {Me.tableMVPRSAV_MED_VIR_PER_SUBS_VIRT.MVPRSAV_MVPR_CODE_FK_PKColumn}, false)
         Me.Relations.Add(Me.relationFK__MVPRSAV_M__MVPRS__42ECDBF6)
     End Sub
@@ -2066,11 +2061,6 @@ Partial Public Class dsTheriaque_Nomenclature2
     End Function
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-    Private Function ShouldSerializeCDFUCUM_UCUM() As Boolean
-        Return false
-    End Function
-    
-    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
     Private Function ShouldSerializeMVPR_MEDICAMENT_VIRTUEL_PERE() As Boolean
         Return false
     End Function
@@ -2087,6 +2077,11 @@ Partial Public Class dsTheriaque_Nomenclature2
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
     Private Function ShouldSerializeSYMVPR_SYN_MEDIC_VIRTUEL_PERE() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+    Private Function ShouldSerializeCDFUCUM_UCUM() As Boolean
         Return false
     End Function
     
@@ -2260,8 +2255,6 @@ Partial Public Class dsTheriaque_Nomenclature2
     
     Public Delegate Sub PREVOLSOL_VOLUME_SOLUTIONRowChangeEventHandler(ByVal sender As Object, ByVal e As PREVOLSOL_VOLUME_SOLUTIONRowChangeEvent)
     
-    Public Delegate Sub CDFUCUM_UCUMRowChangeEventHandler(ByVal sender As Object, ByVal e As CDFUCUM_UCUMRowChangeEvent)
-    
     Public Delegate Sub MVPR_MEDICAMENT_VIRTUEL_PERERowChangeEventHandler(ByVal sender As Object, ByVal e As MVPR_MEDICAMENT_VIRTUEL_PERERowChangeEvent)
     
     Public Delegate Sub MVPRFOV_MED_VIR_PER_FORM_VIRTRowChangeEventHandler(ByVal sender As Object, ByVal e As MVPRFOV_MED_VIR_PER_FORM_VIRTRowChangeEvent)
@@ -2269,6 +2262,8 @@ Partial Public Class dsTheriaque_Nomenclature2
     Public Delegate Sub MVPRMV_MED_VIR_VIR_PERERowChangeEventHandler(ByVal sender As Object, ByVal e As MVPRMV_MED_VIR_VIR_PERERowChangeEvent)
     
     Public Delegate Sub SYMVPR_SYN_MEDIC_VIRTUEL_PERERowChangeEventHandler(ByVal sender As Object, ByVal e As SYMVPR_SYN_MEDIC_VIRTUEL_PERERowChangeEvent)
+    
+    Public Delegate Sub CDFUCUM_UCUMRowChangeEventHandler(ByVal sender As Object, ByVal e As CDFUCUM_UCUMRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -18663,12 +18658,9 @@ Partial Public Class dsTheriaque_Nomenclature2
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Overloads Function AddCDFCDFU_CDFURow(ByVal parentCDFUCUM_UCUMRowByFK__CDFCDFU_C__CDFCD__292D09F3 As CDFUCUM_UCUMRow, ByVal CDFCDFU_CDF_NUMERO_FK_PK As String, ByVal CDFCDFU_CDF_CODE_FK_PK As String) As CDFCDFU_CDFURow
+        Public Overloads Function AddCDFCDFU_CDFURow(ByVal CDFCDFU_CDFUCUM_CODE_FK_PK As Integer, ByVal CDFCDFU_CDF_NUMERO_FK_PK As String, ByVal CDFCDFU_CDF_CODE_FK_PK As String) As CDFCDFU_CDFURow
             Dim rowCDFCDFU_CDFURow As CDFCDFU_CDFURow = CType(Me.NewRow,CDFCDFU_CDFURow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, CDFCDFU_CDF_NUMERO_FK_PK, CDFCDFU_CDF_CODE_FK_PK}
-            If (Not (parentCDFUCUM_UCUMRowByFK__CDFCDFU_C__CDFCD__292D09F3) Is Nothing) Then
-                columnValuesArray(0) = parentCDFUCUM_UCUMRowByFK__CDFCDFU_C__CDFCD__292D09F3(0)
-            End If
+            Dim columnValuesArray() As Object = New Object() {CDFCDFU_CDFUCUM_CODE_FK_PK, CDFCDFU_CDF_NUMERO_FK_PK, CDFCDFU_CDF_CODE_FK_PK}
             rowCDFCDFU_CDFURow.ItemArray = columnValuesArray
             Me.Rows.Add(rowCDFCDFU_CDFURow)
             Return rowCDFCDFU_CDFURow
@@ -19071,289 +19063,6 @@ Partial Public Class dsTheriaque_Nomenclature2
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute
             attribute2.Name = "tableTypeName"
             attribute2.FixedValue = "PREVOLSOL_VOLUME_SOLUTIONDataTable"
-            type.Attributes.Add(attribute2)
-            type.Particle = sequence
-            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
-            If xs.Contains(dsSchema.TargetNamespace) Then
-                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream
-                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream
-                Try 
-                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
-                    dsSchema.Write(s1)
-                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
-                    Do While schemas.MoveNext
-                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
-                        s2.SetLength(0)
-                        schema.Write(s2)
-                        If (s1.Length = s2.Length) Then
-                            s1.Position = 0
-                            s2.Position = 0
-                            
-                            Do While ((s1.Position <> s1.Length)  _
-                                        AndAlso (s1.ReadByte = s2.ReadByte))
-                                
-                                
-                            Loop
-                            If (s1.Position = s1.Length) Then
-                                Return type
-                            End If
-                        End If
-                        
-                    Loop
-                Finally
-                    If (Not (s1) Is Nothing) Then
-                        s1.Close
-                    End If
-                    If (Not (s2) Is Nothing) Then
-                        s2.Close
-                    End If
-                End Try
-            End If
-            xs.Add(dsSchema)
-            Return type
-        End Function
-    End Class
-    
-    '''<summary>
-    '''Represents the strongly named DataTable class.
-    '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.Serializable(),  _
-     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
-    Partial Public Class CDFUCUM_UCUMDataTable
-        Inherits Global.System.Data.DataTable
-        Implements Global.System.Collections.IEnumerable
-        
-        Private columnCDFUCUM_CODE_PK As Global.System.Data.DataColumn
-        
-        Private columnCDFUCUM_SYMBOLE As Global.System.Data.DataColumn
-        
-        Private columnCDFUCUM_DATECR As Global.System.Data.DataColumn
-        
-        Private columnCDFUCUM_DATEMJ As Global.System.Data.DataColumn
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Sub New()
-            MyBase.New
-            Me.TableName = "CDFUCUM_UCUM"
-            Me.BeginInit
-            Me.InitClass
-            Me.EndInit
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Friend Sub New(ByVal table As Global.System.Data.DataTable)
-            MyBase.New
-            Me.TableName = table.TableName
-            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
-                Me.CaseSensitive = table.CaseSensitive
-            End If
-            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
-                Me.Locale = table.Locale
-            End If
-            If (table.Namespace <> table.DataSet.Namespace) Then
-                Me.Namespace = table.Namespace
-            End If
-            Me.Prefix = table.Prefix
-            Me.MinimumCapacity = table.MinimumCapacity
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
-            MyBase.New(info, context)
-            Me.InitVars
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public ReadOnly Property CDFUCUM_CODE_PKColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCDFUCUM_CODE_PK
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public ReadOnly Property CDFUCUM_SYMBOLEColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCDFUCUM_SYMBOLE
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public ReadOnly Property CDFUCUM_DATECRColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCDFUCUM_DATECR
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public ReadOnly Property CDFUCUM_DATEMJColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCDFUCUM_DATEMJ
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Browsable(false)>  _
-        Public ReadOnly Property Count() As Integer
-            Get
-                Return Me.Rows.Count
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Default ReadOnly Property Item(ByVal index As Integer) As CDFUCUM_UCUMRow
-            Get
-                Return CType(Me.Rows(index),CDFUCUM_UCUMRow)
-            End Get
-        End Property
-        
-        Public Event CDFUCUM_UCUMRowChanging As CDFUCUM_UCUMRowChangeEventHandler
-        
-        Public Event CDFUCUM_UCUMRowChanged As CDFUCUM_UCUMRowChangeEventHandler
-        
-        Public Event CDFUCUM_UCUMRowDeleting As CDFUCUM_UCUMRowChangeEventHandler
-        
-        Public Event CDFUCUM_UCUMRowDeleted As CDFUCUM_UCUMRowChangeEventHandler
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Overloads Sub AddCDFUCUM_UCUMRow(ByVal row As CDFUCUM_UCUMRow)
-            Me.Rows.Add(row)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Overloads Function AddCDFUCUM_UCUMRow(ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Date) As CDFUCUM_UCUMRow
-            Dim rowCDFUCUM_UCUMRow As CDFUCUM_UCUMRow = CType(Me.NewRow,CDFUCUM_UCUMRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ}
-            rowCDFUCUM_UCUMRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowCDFUCUM_UCUMRow)
-            Return rowCDFUCUM_UCUMRow
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Function FindByCDFUCUM_CODE_PK(ByVal CDFUCUM_CODE_PK As Integer) As CDFUCUM_UCUMRow
-            Return CType(Me.Rows.Find(New Object() {CDFUCUM_CODE_PK}),CDFUCUM_UCUMRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Overridable Function GetEnumerator() As Global.System.Collections.IEnumerator Implements Global.System.Collections.IEnumerable.GetEnumerator
-            Return Me.Rows.GetEnumerator
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As CDFUCUM_UCUMDataTable = CType(MyBase.Clone,CDFUCUM_UCUMDataTable)
-            cln.InitVars
-            Return cln
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New CDFUCUM_UCUMDataTable
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Friend Sub InitVars()
-            Me.columnCDFUCUM_CODE_PK = MyBase.Columns("CDFUCUM_CODE_PK")
-            Me.columnCDFUCUM_SYMBOLE = MyBase.Columns("CDFUCUM_SYMBOLE")
-            Me.columnCDFUCUM_DATECR = MyBase.Columns("CDFUCUM_DATECR")
-            Me.columnCDFUCUM_DATEMJ = MyBase.Columns("CDFUCUM_DATEMJ")
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Private Sub InitClass()
-            Me.columnCDFUCUM_CODE_PK = New Global.System.Data.DataColumn("CDFUCUM_CODE_PK", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCDFUCUM_CODE_PK)
-            Me.columnCDFUCUM_SYMBOLE = New Global.System.Data.DataColumn("CDFUCUM_SYMBOLE", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCDFUCUM_SYMBOLE)
-            Me.columnCDFUCUM_DATECR = New Global.System.Data.DataColumn("CDFUCUM_DATECR", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCDFUCUM_DATECR)
-            Me.columnCDFUCUM_DATEMJ = New Global.System.Data.DataColumn("CDFUCUM_DATEMJ", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCDFUCUM_DATEMJ)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCDFUCUM_CODE_PK}, true))
-            Me.columnCDFUCUM_CODE_PK.AutoIncrement = true
-            Me.columnCDFUCUM_CODE_PK.AllowDBNull = false
-            Me.columnCDFUCUM_CODE_PK.ReadOnly = true
-            Me.columnCDFUCUM_CODE_PK.Unique = true
-            Me.columnCDFUCUM_SYMBOLE.AllowDBNull = false
-            Me.columnCDFUCUM_SYMBOLE.MaxLength = 50
-            Me.columnCDFUCUM_DATECR.AllowDBNull = false
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Function NewCDFUCUM_UCUMRow() As CDFUCUM_UCUMRow
-            Return CType(Me.NewRow,CDFUCUM_UCUMRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New CDFUCUM_UCUMRow(builder)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(CDFUCUM_UCUMRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowChanged(e)
-            If (Not (Me.CDFUCUM_UCUMRowChangedEvent) Is Nothing) Then
-                RaiseEvent CDFUCUM_UCUMRowChanged(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowChanging(e)
-            If (Not (Me.CDFUCUM_UCUMRowChangingEvent) Is Nothing) Then
-                RaiseEvent CDFUCUM_UCUMRowChanging(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowDeleted(e)
-            If (Not (Me.CDFUCUM_UCUMRowDeletedEvent) Is Nothing) Then
-                RaiseEvent CDFUCUM_UCUMRowDeleted(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowDeleting(e)
-            If (Not (Me.CDFUCUM_UCUMRowDeletingEvent) Is Nothing) Then
-                RaiseEvent CDFUCUM_UCUMRowDeleting(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Sub RemoveCDFUCUM_UCUMRow(ByVal row As CDFUCUM_UCUMRow)
-            Me.Rows.Remove(row)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType
-            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence
-            Dim ds As dsTheriaque_Nomenclature2 = New dsTheriaque_Nomenclature2
-            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny
-            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
-            any1.MinOccurs = New Decimal(0)
-            any1.MaxOccurs = Decimal.MaxValue
-            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
-            sequence.Items.Add(any1)
-            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny
-            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
-            any2.MinOccurs = New Decimal(1)
-            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
-            sequence.Items.Add(any2)
-            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute
-            attribute1.Name = "namespace"
-            attribute1.FixedValue = ds.Namespace
-            type.Attributes.Add(attribute1)
-            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute
-            attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "CDFUCUM_UCUMDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -20447,6 +20156,287 @@ Partial Public Class dsTheriaque_Nomenclature2
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute
             attribute2.Name = "tableTypeName"
             attribute2.FixedValue = "SYMVPR_SYN_MEDIC_VIRTUEL_PEREDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class CDFUCUM_UCUMDataTable
+        Inherits Global.System.Data.DataTable
+        Implements Global.System.Collections.IEnumerable
+        
+        Private columnCDFUCUM_CODE_PK As Global.System.Data.DataColumn
+        
+        Private columnCDFUCUM_SYMBOLE As Global.System.Data.DataColumn
+        
+        Private columnCDFUCUM_DATECR As Global.System.Data.DataColumn
+        
+        Private columnCDFUCUM_DATEMJ As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "CDFUCUM_UCUM"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public ReadOnly Property CDFUCUM_CODE_PKColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCDFUCUM_CODE_PK
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public ReadOnly Property CDFUCUM_SYMBOLEColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCDFUCUM_SYMBOLE
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public ReadOnly Property CDFUCUM_DATECRColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCDFUCUM_DATECR
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public ReadOnly Property CDFUCUM_DATEMJColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCDFUCUM_DATEMJ
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As CDFUCUM_UCUMRow
+            Get
+                Return CType(Me.Rows(index),CDFUCUM_UCUMRow)
+            End Get
+        End Property
+        
+        Public Event CDFUCUM_UCUMRowChanging As CDFUCUM_UCUMRowChangeEventHandler
+        
+        Public Event CDFUCUM_UCUMRowChanged As CDFUCUM_UCUMRowChangeEventHandler
+        
+        Public Event CDFUCUM_UCUMRowDeleting As CDFUCUM_UCUMRowChangeEventHandler
+        
+        Public Event CDFUCUM_UCUMRowDeleted As CDFUCUM_UCUMRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Overloads Sub AddCDFUCUM_UCUMRow(ByVal row As CDFUCUM_UCUMRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Overloads Function AddCDFUCUM_UCUMRow(ByVal CDFUCUM_CODE_PK As Integer, ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Date) As CDFUCUM_UCUMRow
+            Dim rowCDFUCUM_UCUMRow As CDFUCUM_UCUMRow = CType(Me.NewRow,CDFUCUM_UCUMRow)
+            Dim columnValuesArray() As Object = New Object() {CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ}
+            rowCDFUCUM_UCUMRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowCDFUCUM_UCUMRow)
+            Return rowCDFUCUM_UCUMRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Function FindByCDFUCUM_CODE_PK(ByVal CDFUCUM_CODE_PK As Integer) As CDFUCUM_UCUMRow
+            Return CType(Me.Rows.Find(New Object() {CDFUCUM_CODE_PK}),CDFUCUM_UCUMRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Overridable Function GetEnumerator() As Global.System.Collections.IEnumerator Implements Global.System.Collections.IEnumerable.GetEnumerator
+            Return Me.Rows.GetEnumerator
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As CDFUCUM_UCUMDataTable = CType(MyBase.Clone,CDFUCUM_UCUMDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New CDFUCUM_UCUMDataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Friend Sub InitVars()
+            Me.columnCDFUCUM_CODE_PK = MyBase.Columns("CDFUCUM_CODE_PK")
+            Me.columnCDFUCUM_SYMBOLE = MyBase.Columns("CDFUCUM_SYMBOLE")
+            Me.columnCDFUCUM_DATECR = MyBase.Columns("CDFUCUM_DATECR")
+            Me.columnCDFUCUM_DATEMJ = MyBase.Columns("CDFUCUM_DATEMJ")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Private Sub InitClass()
+            Me.columnCDFUCUM_CODE_PK = New Global.System.Data.DataColumn("CDFUCUM_CODE_PK", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCDFUCUM_CODE_PK)
+            Me.columnCDFUCUM_SYMBOLE = New Global.System.Data.DataColumn("CDFUCUM_SYMBOLE", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCDFUCUM_SYMBOLE)
+            Me.columnCDFUCUM_DATECR = New Global.System.Data.DataColumn("CDFUCUM_DATECR", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCDFUCUM_DATECR)
+            Me.columnCDFUCUM_DATEMJ = New Global.System.Data.DataColumn("CDFUCUM_DATEMJ", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCDFUCUM_DATEMJ)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCDFUCUM_CODE_PK}, true))
+            Me.columnCDFUCUM_CODE_PK.AllowDBNull = false
+            Me.columnCDFUCUM_CODE_PK.Unique = true
+            Me.columnCDFUCUM_SYMBOLE.AllowDBNull = false
+            Me.columnCDFUCUM_SYMBOLE.MaxLength = 50
+            Me.columnCDFUCUM_DATECR.AllowDBNull = false
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Function NewCDFUCUM_UCUMRow() As CDFUCUM_UCUMRow
+            Return CType(Me.NewRow,CDFUCUM_UCUMRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New CDFUCUM_UCUMRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(CDFUCUM_UCUMRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.CDFUCUM_UCUMRowChangedEvent) Is Nothing) Then
+                RaiseEvent CDFUCUM_UCUMRowChanged(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.CDFUCUM_UCUMRowChangingEvent) Is Nothing) Then
+                RaiseEvent CDFUCUM_UCUMRowChanging(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.CDFUCUM_UCUMRowDeletedEvent) Is Nothing) Then
+                RaiseEvent CDFUCUM_UCUMRowDeleted(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.CDFUCUM_UCUMRowDeletingEvent) Is Nothing) Then
+                RaiseEvent CDFUCUM_UCUMRowDeleting(Me, New CDFUCUM_UCUMRowChangeEvent(CType(e.Row,CDFUCUM_UCUMRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Sub RemoveCDFUCUM_UCUMRow(ByVal row As CDFUCUM_UCUMRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence
+            Dim ds As dsTheriaque_Nomenclature2 = New dsTheriaque_Nomenclature2
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "CDFUCUM_UCUMDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -26472,16 +26462,6 @@ Partial Public Class dsTheriaque_Nomenclature2
                 Me(Me.tableCDFCDFU_CDFU.CDFCDFU_CDF_CODE_FK_PKColumn) = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property CDFUCUM_UCUMRow() As CDFUCUM_UCUMRow
-            Get
-                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FK__CDFCDFU_C__CDFCD__292D09F3")),CDFUCUM_UCUMRow)
-            End Get
-            Set
-                Me.SetParentRow(value, Me.Table.ParentRelations("FK__CDFCDFU_C__CDFCD__292D09F3"))
-            End Set
-        End Property
     End Class
     
     '''<summary>
@@ -26553,86 +26533,6 @@ Partial Public Class dsTheriaque_Nomenclature2
         Public Sub SetPREVOLSOL_CIP13Null()
             Me(Me.tablePREVOLSOL_VOLUME_SOLUTION.PREVOLSOL_CIP13Column) = Global.System.Convert.DBNull
         End Sub
-    End Class
-    
-    '''<summary>
-    '''Represents strongly named DataRow class.
-    '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>  _
-    Partial Public Class CDFUCUM_UCUMRow
-        Inherits Global.System.Data.DataRow
-        
-        Private tableCDFUCUM_UCUM As CDFUCUM_UCUMDataTable
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
-            MyBase.New(rb)
-            Me.tableCDFUCUM_UCUM = CType(Me.Table,CDFUCUM_UCUMDataTable)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property CDFUCUM_CODE_PK() As Integer
-            Get
-                Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_CODE_PKColumn),Integer)
-            End Get
-            Set
-                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_CODE_PKColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property CDFUCUM_SYMBOLE() As String
-            Get
-                Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_SYMBOLEColumn),String)
-            End Get
-            Set
-                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_SYMBOLEColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property CDFUCUM_DATECR() As Date
-            Get
-                Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATECRColumn),Date)
-            End Get
-            Set
-                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATECRColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property CDFUCUM_DATEMJ() As Date
-            Get
-                Try 
-                    Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn),Date)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("La valeur pour la colonne 'CDFUCUM_DATEMJ' dans la table 'CDFUCUM_UCUM' est DBNul"& _ 
-                            "l.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Function IsCDFUCUM_DATEMJNull() As Boolean
-            Return Me.IsNull(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Sub SetCDFUCUM_DATEMJNull()
-            Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Function GetCDFCDFU_CDFURows() As CDFCDFU_CDFURow()
-            If (Me.Table.ChildRelations("FK__CDFCDFU_C__CDFCD__292D09F3") Is Nothing) Then
-                Return New CDFCDFU_CDFURow(-1) {}
-            Else
-                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FK__CDFCDFU_C__CDFCD__292D09F3")),CDFCDFU_CDFURow())
-            End If
-        End Function
     End Class
     
     '''<summary>
@@ -26920,6 +26820,77 @@ Partial Public Class dsTheriaque_Nomenclature2
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Sub SetSYMVPR_LIBELLENull()
             Me(Me.tableSYMVPR_SYN_MEDIC_VIRTUEL_PERE.SYMVPR_LIBELLEColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>  _
+    Partial Public Class CDFUCUM_UCUMRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableCDFUCUM_UCUM As CDFUCUM_UCUMDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableCDFUCUM_UCUM = CType(Me.Table,CDFUCUM_UCUMDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property CDFUCUM_CODE_PK() As Integer
+            Get
+                Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_CODE_PKColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_CODE_PKColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property CDFUCUM_SYMBOLE() As String
+            Get
+                Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_SYMBOLEColumn),String)
+            End Get
+            Set
+                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_SYMBOLEColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property CDFUCUM_DATECR() As Date
+            Get
+                Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATECRColumn),Date)
+            End Get
+            Set
+                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATECRColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property CDFUCUM_DATEMJ() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("La valeur pour la colonne 'CDFUCUM_DATEMJ' dans la table 'CDFUCUM_UCUM' est DBNul"& _ 
+                            "l.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Function IsCDFUCUM_DATEMJNull() As Boolean
+            Return Me.IsNull(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Sub SetCDFUCUM_DATEMJNull()
+            Me(Me.tableCDFUCUM_UCUM.CDFUCUM_DATEMJColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -28808,39 +28779,6 @@ Partial Public Class dsTheriaque_Nomenclature2
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>  _
-    Public Class CDFUCUM_UCUMRowChangeEvent
-        Inherits Global.System.EventArgs
-        
-        Private eventRow As CDFUCUM_UCUMRow
-        
-        Private eventAction As Global.System.Data.DataRowAction
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Sub New(ByVal row As CDFUCUM_UCUMRow, ByVal action As Global.System.Data.DataRowAction)
-            MyBase.New
-            Me.eventRow = row
-            Me.eventAction = action
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public ReadOnly Property Row() As CDFUCUM_UCUMRow
-            Get
-                Return Me.eventRow
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
-            Get
-                Return Me.eventAction
-            End Get
-        End Property
-    End Class
-    
-    '''<summary>
-    '''Row event argument class
-    '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>  _
     Public Class MVPR_MEDICAMENT_VIRTUEL_PERERowChangeEvent
         Inherits Global.System.EventArgs
         
@@ -28956,6 +28894,39 @@ Partial Public Class dsTheriaque_Nomenclature2
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public ReadOnly Property Row() As SYMVPR_SYN_MEDIC_VIRTUEL_PERERow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0")>  _
+    Public Class CDFUCUM_UCUMRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As CDFUCUM_UCUMRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Sub New(ByVal row As CDFUCUM_UCUMRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public ReadOnly Property Row() As CDFUCUM_UCUMRow
             Get
                 Return Me.eventRow
             End Get
@@ -30512,53 +30483,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_SP_CODE_SQ_PK, SP_GSP_CODE_FK, SP_CDF_SLAB_CODE_FK, SP_CDF_LI_CODE_FK, SP_CATC_CODE_FK, SP_CEPH_CODE_FK, SP_CGE_CODE_FK, SP_PR_CODE_FK, SP_TYPE_SPE, SP_GREF_FK, SP_GREF_DATECR_FK, SP_NOM, SP_NOMCOMP, SP_PH, SP_CIPUCD, SP_DATECR, SP_DATEMJ, SP_NL, SP_APHP, SP_DATEJOGENE, SP_ORIGINE_GENE, SP_NOMLONG, SP_CDT_PRESCR_TEXTE, SP_ATC_DDD_TEXTE, Original_SP_CODE_SQ_PK, Original_SP_GSP_CODE_FK, Original_SP_CDF_SLAB_CODE_FK, Original_SP_CDF_LI_CODE_FK, Original_SP_CATC_CODE_FK, Original_SP_CEPH_CODE_FK, Original_SP_CGE_CODE_FK, Original_SP_PR_CODE_FK, Original_SP_TYPE_SPE, Original_SP_GREF_FK, Original_SP_GREF_DATECR_FK, Original_SP_NOM, Original_SP_NOMCOMP, Original_SP_PH, Original_SP_CIPUCD, Original_SP_DATECR, Original_SP_DATEMJ, Original_SP_NL, Original_SP_APHP, Original_SP_DATEJOGENE, Original_SP_ORIGINE_GENE, Original_SP_NOMLONG, Original_SP_CDT_PRESCR_TEXTE, Original_SP_ATC_DDD_TEXTE)
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class PRE_PRESENTATIONTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
+
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
+
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -30572,34 +30543,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -30636,285 +30607,285 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [THERIAQUE].[PRE_PRESENTATION] WHERE (([PRE_CODE_PK] = @Original_PRE_"& _ 
-                "CODE_PK) AND ([PRE_SP_CODE_FK] = @Original_PRE_SP_CODE_FK) AND ((@IsNull_PRE_EAN"& _ 
-                "_REF = 1 AND [PRE_EAN_REF] IS NULL) OR ([PRE_EAN_REF] = @Original_PRE_EAN_REF)) "& _ 
-                "AND ((@IsNull_PRE_NBUNITE = 1 AND [PRE_NBUNITE] IS NULL) OR ([PRE_NBUNITE] = @Or"& _ 
-                "iginal_PRE_NBUNITE)) AND ((@IsNull_PRE_CDF_UP_CODE_FK = 1 AND [PRE_CDF_UP_CODE_F"& _ 
-                "K] IS NULL) OR ([PRE_CDF_UP_CODE_FK] = @Original_PRE_CDF_UP_CODE_FK)) AND ((@IsN"& _ 
-                "ull_PRE_CACDT_TEXTE = 1 AND [PRE_CACDT_TEXTE] IS NULL) OR ([PRE_CACDT_TEXTE] = @"& _ 
-                "Original_PRE_CACDT_TEXTE)) AND ([PRE_CDF_RH_CODE_FK] = @Original_PRE_CDF_RH_CODE"& _ 
-                "_FK) AND ((@IsNull_PRE_CDF_LI_CODE_FK = 1 AND [PRE_CDF_LI_CODE_FK] IS NULL) OR ("& _ 
-                "[PRE_CDF_LI_CODE_FK] = @Original_PRE_CDF_LI_CODE_FK)) AND ((@IsNull_PRE_ETAT_COM"& _ 
-                "MER = 1 AND [PRE_ETAT_COMMER] IS NULL) OR ([PRE_ETAT_COMMER] = @Original_PRE_ETA"& _ 
-                "T_COMMER)) AND ((@IsNull_PRE_DATECOMMER = 1 AND [PRE_DATECOMMER] IS NULL) OR ([P"& _ 
-                "RE_DATECOMMER] = @Original_PRE_DATECOMMER)) AND ((@IsNull_PRE_DATESUP = 1 AND [P"& _ 
-                "RE_DATESUP] IS NULL) OR ([PRE_DATESUP] = @Original_PRE_DATESUP)) AND ((@IsNull_P"& _ 
-                "RE_CDF_PU_CODE_FK = 1 AND [PRE_CDF_PU_CODE_FK] IS NULL) OR ([PRE_CDF_PU_CODE_FK]"& _ 
-                " = @Original_PRE_CDF_PU_CODE_FK)) AND ((@IsNull_PRE_CEPH_CODE_FK = 1 AND [PRE_CE"& _ 
-                "PH_CODE_FK] IS NULL) OR ([PRE_CEPH_CODE_FK] = @Original_PRE_CEPH_CODE_FK)) AND ("& _ 
-                "(@IsNull_PRE_CATC_CODE_FK = 1 AND [PRE_CATC_CODE_FK] IS NULL) OR ([PRE_CATC_CODE"& _ 
-                "_FK] = @Original_PRE_CATC_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_CODE_FK = 1 AND"& _ 
-                " [PRE_NATUCD_CDF_CODE_FK] IS NULL) OR ([PRE_NATUCD_CDF_CODE_FK] = @Original_PRE_"& _ 
-                "NATUCD_CDF_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_NUM_FK = 1 AND [PRE_NATUCD_CDF"& _ 
-                "_NUM_FK] IS NULL) OR ([PRE_NATUCD_CDF_NUM_FK] = @Original_PRE_NATUCD_CDF_NUM_FK)"& _ 
-                ") AND ((@IsNull_PRE_DATEJOCIP = 1 AND [PRE_DATEJOCIP] IS NULL) OR ([PRE_DATEJOCI"& _ 
-                "P] = @Original_PRE_DATEJOCIP)) AND ((@IsNull_PRE_AGRCOLL = 1 AND [PRE_AGRCOLL] I"& _ 
-                "S NULL) OR ([PRE_AGRCOLL] = @Original_PRE_AGRCOLL)) AND ((@IsNull_PRE_DATEJOCOLL"& _ 
-                " = 1 AND [PRE_DATEJOCOLL] IS NULL) OR ([PRE_DATEJOCOLL] = @Original_PRE_DATEJOCO"& _ 
-                "LL)) AND ((@IsNull_PRE_DATEFINCOLL = 1 AND [PRE_DATEFINCOLL] IS NULL) OR ([PRE_D"& _ 
-                "ATEFINCOLL] = @Original_PRE_DATEFINCOLL)) AND ((@IsNull_PRE_DATE_APPLIFINCOLL = "& _ 
-                "1 AND [PRE_DATE_APPLIFINCOLL] IS NULL) OR ([PRE_DATE_APPLIFINCOLL] = @Original_P"& _ 
-                "RE_DATE_APPLIFINCOLL)) AND ((@IsNull_PRE_PARTSTATUT = 1 AND [PRE_PARTSTATUT] IS "& _ 
-                "NULL) OR ([PRE_PARTSTATUT] = @Original_PRE_PARTSTATUT)) AND ((@IsNull_PRE_TSS_TE"& _ 
-                "XTE = 1 AND [PRE_TSS_TEXTE] IS NULL) OR ([PRE_TSS_TEXTE] = @Original_PRE_TSS_TEX"& _ 
-                "TE)) AND ((@IsNull_PRE_LIB_CEPS = 1 AND [PRE_LIB_CEPS] IS NULL) OR ([PRE_LIB_CEP"& _ 
-                "S] = @Original_PRE_LIB_CEPS)) AND ((@IsNull_PRE_ADMIN = 1 AND [PRE_ADMIN] IS NUL"& _ 
-                "L) OR ([PRE_ADMIN] = @Original_PRE_ADMIN)) AND ([PRE_DATECR] = @Original_PRE_DAT"& _ 
-                "ECR) AND ((@IsNull_PRE_DATEMJ = 1 AND [PRE_DATEMJ] IS NULL) OR ([PRE_DATEMJ] = @"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [THERIAQUE].[PRE_PRESENTATION] WHERE (([PRE_CODE_PK] = @Original_PRE_" & _
+                "CODE_PK) AND ([PRE_SP_CODE_FK] = @Original_PRE_SP_CODE_FK) AND ((@IsNull_PRE_EAN" & _
+                "_REF = 1 AND [PRE_EAN_REF] IS NULL) OR ([PRE_EAN_REF] = @Original_PRE_EAN_REF)) " & _
+                "AND ((@IsNull_PRE_NBUNITE = 1 AND [PRE_NBUNITE] IS NULL) OR ([PRE_NBUNITE] = @Or" & _
+                "iginal_PRE_NBUNITE)) AND ((@IsNull_PRE_CDF_UP_CODE_FK = 1 AND [PRE_CDF_UP_CODE_F" & _
+                "K] IS NULL) OR ([PRE_CDF_UP_CODE_FK] = @Original_PRE_CDF_UP_CODE_FK)) AND ((@IsN" & _
+                "ull_PRE_CACDT_TEXTE = 1 AND [PRE_CACDT_TEXTE] IS NULL) OR ([PRE_CACDT_TEXTE] = @" & _
+                "Original_PRE_CACDT_TEXTE)) AND ([PRE_CDF_RH_CODE_FK] = @Original_PRE_CDF_RH_CODE" & _
+                "_FK) AND ((@IsNull_PRE_CDF_LI_CODE_FK = 1 AND [PRE_CDF_LI_CODE_FK] IS NULL) OR (" & _
+                "[PRE_CDF_LI_CODE_FK] = @Original_PRE_CDF_LI_CODE_FK)) AND ((@IsNull_PRE_ETAT_COM" & _
+                "MER = 1 AND [PRE_ETAT_COMMER] IS NULL) OR ([PRE_ETAT_COMMER] = @Original_PRE_ETA" & _
+                "T_COMMER)) AND ((@IsNull_PRE_DATECOMMER = 1 AND [PRE_DATECOMMER] IS NULL) OR ([P" & _
+                "RE_DATECOMMER] = @Original_PRE_DATECOMMER)) AND ((@IsNull_PRE_DATESUP = 1 AND [P" & _
+                "RE_DATESUP] IS NULL) OR ([PRE_DATESUP] = @Original_PRE_DATESUP)) AND ((@IsNull_P" & _
+                "RE_CDF_PU_CODE_FK = 1 AND [PRE_CDF_PU_CODE_FK] IS NULL) OR ([PRE_CDF_PU_CODE_FK]" & _
+                " = @Original_PRE_CDF_PU_CODE_FK)) AND ((@IsNull_PRE_CEPH_CODE_FK = 1 AND [PRE_CE" & _
+                "PH_CODE_FK] IS NULL) OR ([PRE_CEPH_CODE_FK] = @Original_PRE_CEPH_CODE_FK)) AND (" & _
+                "(@IsNull_PRE_CATC_CODE_FK = 1 AND [PRE_CATC_CODE_FK] IS NULL) OR ([PRE_CATC_CODE" & _
+                "_FK] = @Original_PRE_CATC_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_CODE_FK = 1 AND" & _
+                " [PRE_NATUCD_CDF_CODE_FK] IS NULL) OR ([PRE_NATUCD_CDF_CODE_FK] = @Original_PRE_" & _
+                "NATUCD_CDF_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_NUM_FK = 1 AND [PRE_NATUCD_CDF" & _
+                "_NUM_FK] IS NULL) OR ([PRE_NATUCD_CDF_NUM_FK] = @Original_PRE_NATUCD_CDF_NUM_FK)" & _
+                ") AND ((@IsNull_PRE_DATEJOCIP = 1 AND [PRE_DATEJOCIP] IS NULL) OR ([PRE_DATEJOCI" & _
+                "P] = @Original_PRE_DATEJOCIP)) AND ((@IsNull_PRE_AGRCOLL = 1 AND [PRE_AGRCOLL] I" & _
+                "S NULL) OR ([PRE_AGRCOLL] = @Original_PRE_AGRCOLL)) AND ((@IsNull_PRE_DATEJOCOLL" & _
+                " = 1 AND [PRE_DATEJOCOLL] IS NULL) OR ([PRE_DATEJOCOLL] = @Original_PRE_DATEJOCO" & _
+                "LL)) AND ((@IsNull_PRE_DATEFINCOLL = 1 AND [PRE_DATEFINCOLL] IS NULL) OR ([PRE_D" & _
+                "ATEFINCOLL] = @Original_PRE_DATEFINCOLL)) AND ((@IsNull_PRE_DATE_APPLIFINCOLL = " & _
+                "1 AND [PRE_DATE_APPLIFINCOLL] IS NULL) OR ([PRE_DATE_APPLIFINCOLL] = @Original_P" & _
+                "RE_DATE_APPLIFINCOLL)) AND ((@IsNull_PRE_PARTSTATUT = 1 AND [PRE_PARTSTATUT] IS " & _
+                "NULL) OR ([PRE_PARTSTATUT] = @Original_PRE_PARTSTATUT)) AND ((@IsNull_PRE_TSS_TE" & _
+                "XTE = 1 AND [PRE_TSS_TEXTE] IS NULL) OR ([PRE_TSS_TEXTE] = @Original_PRE_TSS_TEX" & _
+                "TE)) AND ((@IsNull_PRE_LIB_CEPS = 1 AND [PRE_LIB_CEPS] IS NULL) OR ([PRE_LIB_CEP" & _
+                "S] = @Original_PRE_LIB_CEPS)) AND ((@IsNull_PRE_ADMIN = 1 AND [PRE_ADMIN] IS NUL" & _
+                "L) OR ([PRE_ADMIN] = @Original_PRE_ADMIN)) AND ([PRE_DATECR] = @Original_PRE_DAT" & _
+                "ECR) AND ((@IsNull_PRE_DATEMJ = 1 AND [PRE_DATEMJ] IS NULL) OR ([PRE_DATEMJ] = @" & _
                 "Original_PRE_DATEMJ)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_EAN_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NBUNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATECOMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATESUP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_AGRCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_PARTSTATUT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_LIB_CEPS", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ADMIN", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_EAN_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NBUNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATECOMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATESUP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_AGRCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_PARTSTATUT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_LIB_CEPS", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ADMIN", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [THERIAQUE].[PRE_PRESENTATION] ([PRE_CODE_PK], [PRE_SP_CODE_FK], [PRE"& _ 
-                "_EAN_REF], [PRE_NBUNITE], [PRE_CDF_UP_CODE_FK], [PRE_CACDT_TEXTE], [PRE_CDF_RH_C"& _ 
-                "ODE_FK], [PRE_CDF_LI_CODE_FK], [PRE_ETAT_COMMER], [PRE_DATECOMMER], [PRE_DATESUP"& _ 
-                "], [PRE_CDF_PU_CODE_FK], [PRE_CEPH_CODE_FK], [PRE_CATC_CODE_FK], [PRE_NATUCD_CDF"& _ 
-                "_CODE_FK], [PRE_NATUCD_CDF_NUM_FK], [PRE_DATEJOCIP], [PRE_AGRCOLL], [PRE_DATEJOC"& _ 
-                "OLL], [PRE_DATEFINCOLL], [PRE_DATE_APPLIFINCOLL], [PRE_PARTSTATUT], [PRE_TSS_TEX"& _ 
-                "TE], [PRE_CONSAPOUV], [PRE_LIB_CEPS], [PRE_ADMIN], [PRE_DATECR], [PRE_DATEMJ]) V"& _ 
-                "ALUES (@PRE_CODE_PK, @PRE_SP_CODE_FK, @PRE_EAN_REF, @PRE_NBUNITE, @PRE_CDF_UP_CO"& _ 
-                "DE_FK, @PRE_CACDT_TEXTE, @PRE_CDF_RH_CODE_FK, @PRE_CDF_LI_CODE_FK, @PRE_ETAT_COM"& _ 
-                "MER, @PRE_DATECOMMER, @PRE_DATESUP, @PRE_CDF_PU_CODE_FK, @PRE_CEPH_CODE_FK, @PRE"& _ 
-                "_CATC_CODE_FK, @PRE_NATUCD_CDF_CODE_FK, @PRE_NATUCD_CDF_NUM_FK, @PRE_DATEJOCIP, "& _ 
-                "@PRE_AGRCOLL, @PRE_DATEJOCOLL, @PRE_DATEFINCOLL, @PRE_DATE_APPLIFINCOLL, @PRE_PA"& _ 
-                "RTSTATUT, @PRE_TSS_TEXTE, @PRE_CONSAPOUV, @PRE_LIB_CEPS, @PRE_ADMIN, @PRE_DATECR"& _ 
-                ", @PRE_DATEMJ);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PRE_CODE_PK, PRE_SP_CODE_FK, PRE_EAN_REF, PRE_NBUNITE, P"& _ 
-                "RE_CDF_UP_CODE_FK, PRE_CACDT_TEXTE, PRE_CDF_RH_CODE_FK, PRE_CDF_LI_CODE_FK, PRE_"& _ 
-                "ETAT_COMMER, PRE_DATECOMMER, PRE_DATESUP, PRE_CDF_PU_CODE_FK, PRE_CEPH_CODE_FK, "& _ 
-                "PRE_CATC_CODE_FK, PRE_NATUCD_CDF_CODE_FK, PRE_NATUCD_CDF_NUM_FK, PRE_DATEJOCIP, "& _ 
-                "PRE_AGRCOLL, PRE_DATEJOCOLL, PRE_DATEFINCOLL, PRE_DATE_APPLIFINCOLL, PRE_PARTSTA"& _ 
-                "TUT, PRE_TSS_TEXTE, PRE_CONSAPOUV, PRE_LIB_CEPS, PRE_ADMIN, PRE_DATECR, PRE_DATE"& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [THERIAQUE].[PRE_PRESENTATION] ([PRE_CODE_PK], [PRE_SP_CODE_FK], [PRE" & _
+                "_EAN_REF], [PRE_NBUNITE], [PRE_CDF_UP_CODE_FK], [PRE_CACDT_TEXTE], [PRE_CDF_RH_C" & _
+                "ODE_FK], [PRE_CDF_LI_CODE_FK], [PRE_ETAT_COMMER], [PRE_DATECOMMER], [PRE_DATESUP" & _
+                "], [PRE_CDF_PU_CODE_FK], [PRE_CEPH_CODE_FK], [PRE_CATC_CODE_FK], [PRE_NATUCD_CDF" & _
+                "_CODE_FK], [PRE_NATUCD_CDF_NUM_FK], [PRE_DATEJOCIP], [PRE_AGRCOLL], [PRE_DATEJOC" & _
+                "OLL], [PRE_DATEFINCOLL], [PRE_DATE_APPLIFINCOLL], [PRE_PARTSTATUT], [PRE_TSS_TEX" & _
+                "TE], [PRE_CONSAPOUV], [PRE_LIB_CEPS], [PRE_ADMIN], [PRE_DATECR], [PRE_DATEMJ]) V" & _
+                "ALUES (@PRE_CODE_PK, @PRE_SP_CODE_FK, @PRE_EAN_REF, @PRE_NBUNITE, @PRE_CDF_UP_CO" & _
+                "DE_FK, @PRE_CACDT_TEXTE, @PRE_CDF_RH_CODE_FK, @PRE_CDF_LI_CODE_FK, @PRE_ETAT_COM" & _
+                "MER, @PRE_DATECOMMER, @PRE_DATESUP, @PRE_CDF_PU_CODE_FK, @PRE_CEPH_CODE_FK, @PRE" & _
+                "_CATC_CODE_FK, @PRE_NATUCD_CDF_CODE_FK, @PRE_NATUCD_CDF_NUM_FK, @PRE_DATEJOCIP, " & _
+                "@PRE_AGRCOLL, @PRE_DATEJOCOLL, @PRE_DATEFINCOLL, @PRE_DATE_APPLIFINCOLL, @PRE_PA" & _
+                "RTSTATUT, @PRE_TSS_TEXTE, @PRE_CONSAPOUV, @PRE_LIB_CEPS, @PRE_ADMIN, @PRE_DATECR" & _
+                ", @PRE_DATEMJ);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PRE_CODE_PK, PRE_SP_CODE_FK, PRE_EAN_REF, PRE_NBUNITE, P" & _
+                "RE_CDF_UP_CODE_FK, PRE_CACDT_TEXTE, PRE_CDF_RH_CODE_FK, PRE_CDF_LI_CODE_FK, PRE_" & _
+                "ETAT_COMMER, PRE_DATECOMMER, PRE_DATESUP, PRE_CDF_PU_CODE_FK, PRE_CEPH_CODE_FK, " & _
+                "PRE_CATC_CODE_FK, PRE_NATUCD_CDF_CODE_FK, PRE_NATUCD_CDF_NUM_FK, PRE_DATEJOCIP, " & _
+                "PRE_AGRCOLL, PRE_DATEJOCOLL, PRE_DATEFINCOLL, PRE_DATE_APPLIFINCOLL, PRE_PARTSTA" & _
+                "TUT, PRE_TSS_TEXTE, PRE_CONSAPOUV, PRE_LIB_CEPS, PRE_ADMIN, PRE_DATECR, PRE_DATE" & _
                 "MJ FROM THERIAQUE.PRE_PRESENTATION WHERE (PRE_CODE_PK = @PRE_CODE_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CONSAPOUV", Global.System.Data.SqlDbType.Text, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CONSAPOUV", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CONSAPOUV", Global.System.Data.SqlDbType.Text, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CONSAPOUV", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [THERIAQUE].[PRE_PRESENTATION] SET [PRE_CODE_PK] = @PRE_CODE_PK, [PRE_SP_C"& _ 
-                "ODE_FK] = @PRE_SP_CODE_FK, [PRE_EAN_REF] = @PRE_EAN_REF, [PRE_NBUNITE] = @PRE_NB"& _ 
-                "UNITE, [PRE_CDF_UP_CODE_FK] = @PRE_CDF_UP_CODE_FK, [PRE_CACDT_TEXTE] = @PRE_CACD"& _ 
-                "T_TEXTE, [PRE_CDF_RH_CODE_FK] = @PRE_CDF_RH_CODE_FK, [PRE_CDF_LI_CODE_FK] = @PRE"& _ 
-                "_CDF_LI_CODE_FK, [PRE_ETAT_COMMER] = @PRE_ETAT_COMMER, [PRE_DATECOMMER] = @PRE_D"& _ 
-                "ATECOMMER, [PRE_DATESUP] = @PRE_DATESUP, [PRE_CDF_PU_CODE_FK] = @PRE_CDF_PU_CODE"& _ 
-                "_FK, [PRE_CEPH_CODE_FK] = @PRE_CEPH_CODE_FK, [PRE_CATC_CODE_FK] = @PRE_CATC_CODE"& _ 
-                "_FK, [PRE_NATUCD_CDF_CODE_FK] = @PRE_NATUCD_CDF_CODE_FK, [PRE_NATUCD_CDF_NUM_FK]"& _ 
-                " = @PRE_NATUCD_CDF_NUM_FK, [PRE_DATEJOCIP] = @PRE_DATEJOCIP, [PRE_AGRCOLL] = @PR"& _ 
-                "E_AGRCOLL, [PRE_DATEJOCOLL] = @PRE_DATEJOCOLL, [PRE_DATEFINCOLL] = @PRE_DATEFINC"& _ 
-                "OLL, [PRE_DATE_APPLIFINCOLL] = @PRE_DATE_APPLIFINCOLL, [PRE_PARTSTATUT] = @PRE_P"& _ 
-                "ARTSTATUT, [PRE_TSS_TEXTE] = @PRE_TSS_TEXTE, [PRE_CONSAPOUV] = @PRE_CONSAPOUV, ["& _ 
-                "PRE_LIB_CEPS] = @PRE_LIB_CEPS, [PRE_ADMIN] = @PRE_ADMIN, [PRE_DATECR] = @PRE_DAT"& _ 
-                "ECR, [PRE_DATEMJ] = @PRE_DATEMJ WHERE (([PRE_CODE_PK] = @Original_PRE_CODE_PK) A"& _ 
-                "ND ([PRE_SP_CODE_FK] = @Original_PRE_SP_CODE_FK) AND ((@IsNull_PRE_EAN_REF = 1 A"& _ 
-                "ND [PRE_EAN_REF] IS NULL) OR ([PRE_EAN_REF] = @Original_PRE_EAN_REF)) AND ((@IsN"& _ 
-                "ull_PRE_NBUNITE = 1 AND [PRE_NBUNITE] IS NULL) OR ([PRE_NBUNITE] = @Original_PRE"& _ 
-                "_NBUNITE)) AND ((@IsNull_PRE_CDF_UP_CODE_FK = 1 AND [PRE_CDF_UP_CODE_FK] IS NULL"& _ 
-                ") OR ([PRE_CDF_UP_CODE_FK] = @Original_PRE_CDF_UP_CODE_FK)) AND ((@IsNull_PRE_CA"& _ 
-                "CDT_TEXTE = 1 AND [PRE_CACDT_TEXTE] IS NULL) OR ([PRE_CACDT_TEXTE] = @Original_P"& _ 
-                "RE_CACDT_TEXTE)) AND ([PRE_CDF_RH_CODE_FK] = @Original_PRE_CDF_RH_CODE_FK) AND ("& _ 
-                "(@IsNull_PRE_CDF_LI_CODE_FK = 1 AND [PRE_CDF_LI_CODE_FK] IS NULL) OR ([PRE_CDF_L"& _ 
-                "I_CODE_FK] = @Original_PRE_CDF_LI_CODE_FK)) AND ((@IsNull_PRE_ETAT_COMMER = 1 AN"& _ 
-                "D [PRE_ETAT_COMMER] IS NULL) OR ([PRE_ETAT_COMMER] = @Original_PRE_ETAT_COMMER))"& _ 
-                " AND ((@IsNull_PRE_DATECOMMER = 1 AND [PRE_DATECOMMER] IS NULL) OR ([PRE_DATECOM"& _ 
-                "MER] = @Original_PRE_DATECOMMER)) AND ((@IsNull_PRE_DATESUP = 1 AND [PRE_DATESUP"& _ 
-                "] IS NULL) OR ([PRE_DATESUP] = @Original_PRE_DATESUP)) AND ((@IsNull_PRE_CDF_PU_"& _ 
-                "CODE_FK = 1 AND [PRE_CDF_PU_CODE_FK] IS NULL) OR ([PRE_CDF_PU_CODE_FK] = @Origin"& _ 
-                "al_PRE_CDF_PU_CODE_FK)) AND ((@IsNull_PRE_CEPH_CODE_FK = 1 AND [PRE_CEPH_CODE_FK"& _ 
-                "] IS NULL) OR ([PRE_CEPH_CODE_FK] = @Original_PRE_CEPH_CODE_FK)) AND ((@IsNull_P"& _ 
-                "RE_CATC_CODE_FK = 1 AND [PRE_CATC_CODE_FK] IS NULL) OR ([PRE_CATC_CODE_FK] = @Or"& _ 
-                "iginal_PRE_CATC_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_CODE_FK = 1 AND [PRE_NATU"& _ 
-                "CD_CDF_CODE_FK] IS NULL) OR ([PRE_NATUCD_CDF_CODE_FK] = @Original_PRE_NATUCD_CDF"& _ 
-                "_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_NUM_FK = 1 AND [PRE_NATUCD_CDF_NUM_FK] I"& _ 
-                "S NULL) OR ([PRE_NATUCD_CDF_NUM_FK] = @Original_PRE_NATUCD_CDF_NUM_FK)) AND ((@I"& _ 
-                "sNull_PRE_DATEJOCIP = 1 AND [PRE_DATEJOCIP] IS NULL) OR ([PRE_DATEJOCIP] = @Orig"& _ 
-                "inal_PRE_DATEJOCIP)) AND ((@IsNull_PRE_AGRCOLL = 1 AND [PRE_AGRCOLL] IS NULL) OR"& _ 
-                " ([PRE_AGRCOLL] = @Original_PRE_AGRCOLL)) AND ((@IsNull_PRE_DATEJOCOLL = 1 AND ["& _ 
-                "PRE_DATEJOCOLL] IS NULL) OR ([PRE_DATEJOCOLL] = @Original_PRE_DATEJOCOLL)) AND ("& _ 
-                "(@IsNull_PRE_DATEFINCOLL = 1 AND [PRE_DATEFINCOLL] IS NULL) OR ([PRE_DATEFINCOLL"& _ 
-                "] = @Original_PRE_DATEFINCOLL)) AND ((@IsNull_PRE_DATE_APPLIFINCOLL = 1 AND [PRE"& _ 
-                "_DATE_APPLIFINCOLL] IS NULL) OR ([PRE_DATE_APPLIFINCOLL] = @Original_PRE_DATE_AP"& _ 
-                "PLIFINCOLL)) AND ((@IsNull_PRE_PARTSTATUT = 1 AND [PRE_PARTSTATUT] IS NULL) OR ("& _ 
-                "[PRE_PARTSTATUT] = @Original_PRE_PARTSTATUT)) AND ((@IsNull_PRE_TSS_TEXTE = 1 AN"& _ 
-                "D [PRE_TSS_TEXTE] IS NULL) OR ([PRE_TSS_TEXTE] = @Original_PRE_TSS_TEXTE)) AND ("& _ 
-                "(@IsNull_PRE_LIB_CEPS = 1 AND [PRE_LIB_CEPS] IS NULL) OR ([PRE_LIB_CEPS] = @Orig"& _ 
-                "inal_PRE_LIB_CEPS)) AND ((@IsNull_PRE_ADMIN = 1 AND [PRE_ADMIN] IS NULL) OR ([PR"& _ 
-                "E_ADMIN] = @Original_PRE_ADMIN)) AND ([PRE_DATECR] = @Original_PRE_DATECR) AND ("& _ 
-                "(@IsNull_PRE_DATEMJ = 1 AND [PRE_DATEMJ] IS NULL) OR ([PRE_DATEMJ] = @Original_P"& _ 
-                "RE_DATEMJ)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PRE_CODE_PK, PRE_SP_CODE_FK, PRE_EAN_REF, PRE_NBUNITE, PRE"& _ 
-                "_CDF_UP_CODE_FK, PRE_CACDT_TEXTE, PRE_CDF_RH_CODE_FK, PRE_CDF_LI_CODE_FK, PRE_ET"& _ 
-                "AT_COMMER, PRE_DATECOMMER, PRE_DATESUP, PRE_CDF_PU_CODE_FK, PRE_CEPH_CODE_FK, PR"& _ 
-                "E_CATC_CODE_FK, PRE_NATUCD_CDF_CODE_FK, PRE_NATUCD_CDF_NUM_FK, PRE_DATEJOCIP, PR"& _ 
-                "E_AGRCOLL, PRE_DATEJOCOLL, PRE_DATEFINCOLL, PRE_DATE_APPLIFINCOLL, PRE_PARTSTATU"& _ 
-                "T, PRE_TSS_TEXTE, PRE_CONSAPOUV, PRE_LIB_CEPS, PRE_ADMIN, PRE_DATECR, PRE_DATEMJ"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [THERIAQUE].[PRE_PRESENTATION] SET [PRE_CODE_PK] = @PRE_CODE_PK, [PRE_SP_C" & _
+                "ODE_FK] = @PRE_SP_CODE_FK, [PRE_EAN_REF] = @PRE_EAN_REF, [PRE_NBUNITE] = @PRE_NB" & _
+                "UNITE, [PRE_CDF_UP_CODE_FK] = @PRE_CDF_UP_CODE_FK, [PRE_CACDT_TEXTE] = @PRE_CACD" & _
+                "T_TEXTE, [PRE_CDF_RH_CODE_FK] = @PRE_CDF_RH_CODE_FK, [PRE_CDF_LI_CODE_FK] = @PRE" & _
+                "_CDF_LI_CODE_FK, [PRE_ETAT_COMMER] = @PRE_ETAT_COMMER, [PRE_DATECOMMER] = @PRE_D" & _
+                "ATECOMMER, [PRE_DATESUP] = @PRE_DATESUP, [PRE_CDF_PU_CODE_FK] = @PRE_CDF_PU_CODE" & _
+                "_FK, [PRE_CEPH_CODE_FK] = @PRE_CEPH_CODE_FK, [PRE_CATC_CODE_FK] = @PRE_CATC_CODE" & _
+                "_FK, [PRE_NATUCD_CDF_CODE_FK] = @PRE_NATUCD_CDF_CODE_FK, [PRE_NATUCD_CDF_NUM_FK]" & _
+                " = @PRE_NATUCD_CDF_NUM_FK, [PRE_DATEJOCIP] = @PRE_DATEJOCIP, [PRE_AGRCOLL] = @PR" & _
+                "E_AGRCOLL, [PRE_DATEJOCOLL] = @PRE_DATEJOCOLL, [PRE_DATEFINCOLL] = @PRE_DATEFINC" & _
+                "OLL, [PRE_DATE_APPLIFINCOLL] = @PRE_DATE_APPLIFINCOLL, [PRE_PARTSTATUT] = @PRE_P" & _
+                "ARTSTATUT, [PRE_TSS_TEXTE] = @PRE_TSS_TEXTE, [PRE_CONSAPOUV] = @PRE_CONSAPOUV, [" & _
+                "PRE_LIB_CEPS] = @PRE_LIB_CEPS, [PRE_ADMIN] = @PRE_ADMIN, [PRE_DATECR] = @PRE_DAT" & _
+                "ECR, [PRE_DATEMJ] = @PRE_DATEMJ WHERE (([PRE_CODE_PK] = @Original_PRE_CODE_PK) A" & _
+                "ND ([PRE_SP_CODE_FK] = @Original_PRE_SP_CODE_FK) AND ((@IsNull_PRE_EAN_REF = 1 A" & _
+                "ND [PRE_EAN_REF] IS NULL) OR ([PRE_EAN_REF] = @Original_PRE_EAN_REF)) AND ((@IsN" & _
+                "ull_PRE_NBUNITE = 1 AND [PRE_NBUNITE] IS NULL) OR ([PRE_NBUNITE] = @Original_PRE" & _
+                "_NBUNITE)) AND ((@IsNull_PRE_CDF_UP_CODE_FK = 1 AND [PRE_CDF_UP_CODE_FK] IS NULL" & _
+                ") OR ([PRE_CDF_UP_CODE_FK] = @Original_PRE_CDF_UP_CODE_FK)) AND ((@IsNull_PRE_CA" & _
+                "CDT_TEXTE = 1 AND [PRE_CACDT_TEXTE] IS NULL) OR ([PRE_CACDT_TEXTE] = @Original_P" & _
+                "RE_CACDT_TEXTE)) AND ([PRE_CDF_RH_CODE_FK] = @Original_PRE_CDF_RH_CODE_FK) AND (" & _
+                "(@IsNull_PRE_CDF_LI_CODE_FK = 1 AND [PRE_CDF_LI_CODE_FK] IS NULL) OR ([PRE_CDF_L" & _
+                "I_CODE_FK] = @Original_PRE_CDF_LI_CODE_FK)) AND ((@IsNull_PRE_ETAT_COMMER = 1 AN" & _
+                "D [PRE_ETAT_COMMER] IS NULL) OR ([PRE_ETAT_COMMER] = @Original_PRE_ETAT_COMMER))" & _
+                " AND ((@IsNull_PRE_DATECOMMER = 1 AND [PRE_DATECOMMER] IS NULL) OR ([PRE_DATECOM" & _
+                "MER] = @Original_PRE_DATECOMMER)) AND ((@IsNull_PRE_DATESUP = 1 AND [PRE_DATESUP" & _
+                "] IS NULL) OR ([PRE_DATESUP] = @Original_PRE_DATESUP)) AND ((@IsNull_PRE_CDF_PU_" & _
+                "CODE_FK = 1 AND [PRE_CDF_PU_CODE_FK] IS NULL) OR ([PRE_CDF_PU_CODE_FK] = @Origin" & _
+                "al_PRE_CDF_PU_CODE_FK)) AND ((@IsNull_PRE_CEPH_CODE_FK = 1 AND [PRE_CEPH_CODE_FK" & _
+                "] IS NULL) OR ([PRE_CEPH_CODE_FK] = @Original_PRE_CEPH_CODE_FK)) AND ((@IsNull_P" & _
+                "RE_CATC_CODE_FK = 1 AND [PRE_CATC_CODE_FK] IS NULL) OR ([PRE_CATC_CODE_FK] = @Or" & _
+                "iginal_PRE_CATC_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_CODE_FK = 1 AND [PRE_NATU" & _
+                "CD_CDF_CODE_FK] IS NULL) OR ([PRE_NATUCD_CDF_CODE_FK] = @Original_PRE_NATUCD_CDF" & _
+                "_CODE_FK)) AND ((@IsNull_PRE_NATUCD_CDF_NUM_FK = 1 AND [PRE_NATUCD_CDF_NUM_FK] I" & _
+                "S NULL) OR ([PRE_NATUCD_CDF_NUM_FK] = @Original_PRE_NATUCD_CDF_NUM_FK)) AND ((@I" & _
+                "sNull_PRE_DATEJOCIP = 1 AND [PRE_DATEJOCIP] IS NULL) OR ([PRE_DATEJOCIP] = @Orig" & _
+                "inal_PRE_DATEJOCIP)) AND ((@IsNull_PRE_AGRCOLL = 1 AND [PRE_AGRCOLL] IS NULL) OR" & _
+                " ([PRE_AGRCOLL] = @Original_PRE_AGRCOLL)) AND ((@IsNull_PRE_DATEJOCOLL = 1 AND [" & _
+                "PRE_DATEJOCOLL] IS NULL) OR ([PRE_DATEJOCOLL] = @Original_PRE_DATEJOCOLL)) AND (" & _
+                "(@IsNull_PRE_DATEFINCOLL = 1 AND [PRE_DATEFINCOLL] IS NULL) OR ([PRE_DATEFINCOLL" & _
+                "] = @Original_PRE_DATEFINCOLL)) AND ((@IsNull_PRE_DATE_APPLIFINCOLL = 1 AND [PRE" & _
+                "_DATE_APPLIFINCOLL] IS NULL) OR ([PRE_DATE_APPLIFINCOLL] = @Original_PRE_DATE_AP" & _
+                "PLIFINCOLL)) AND ((@IsNull_PRE_PARTSTATUT = 1 AND [PRE_PARTSTATUT] IS NULL) OR (" & _
+                "[PRE_PARTSTATUT] = @Original_PRE_PARTSTATUT)) AND ((@IsNull_PRE_TSS_TEXTE = 1 AN" & _
+                "D [PRE_TSS_TEXTE] IS NULL) OR ([PRE_TSS_TEXTE] = @Original_PRE_TSS_TEXTE)) AND (" & _
+                "(@IsNull_PRE_LIB_CEPS = 1 AND [PRE_LIB_CEPS] IS NULL) OR ([PRE_LIB_CEPS] = @Orig" & _
+                "inal_PRE_LIB_CEPS)) AND ((@IsNull_PRE_ADMIN = 1 AND [PRE_ADMIN] IS NULL) OR ([PR" & _
+                "E_ADMIN] = @Original_PRE_ADMIN)) AND ([PRE_DATECR] = @Original_PRE_DATECR) AND (" & _
+                "(@IsNull_PRE_DATEMJ = 1 AND [PRE_DATEMJ] IS NULL) OR ([PRE_DATEMJ] = @Original_P" & _
+                "RE_DATEMJ)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PRE_CODE_PK, PRE_SP_CODE_FK, PRE_EAN_REF, PRE_NBUNITE, PRE" & _
+                "_CDF_UP_CODE_FK, PRE_CACDT_TEXTE, PRE_CDF_RH_CODE_FK, PRE_CDF_LI_CODE_FK, PRE_ET" & _
+                "AT_COMMER, PRE_DATECOMMER, PRE_DATESUP, PRE_CDF_PU_CODE_FK, PRE_CEPH_CODE_FK, PR" & _
+                "E_CATC_CODE_FK, PRE_NATUCD_CDF_CODE_FK, PRE_NATUCD_CDF_NUM_FK, PRE_DATEJOCIP, PR" & _
+                "E_AGRCOLL, PRE_DATEJOCOLL, PRE_DATEFINCOLL, PRE_DATE_APPLIFINCOLL, PRE_PARTSTATU" & _
+                "T, PRE_TSS_TEXTE, PRE_CONSAPOUV, PRE_LIB_CEPS, PRE_ADMIN, PRE_DATECR, PRE_DATEMJ" & _
                 " FROM THERIAQUE.PRE_PRESENTATION WHERE (PRE_CODE_PK = @PRE_CODE_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CONSAPOUV", Global.System.Data.SqlDbType.Text, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CONSAPOUV", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_EAN_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NBUNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATECOMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATESUP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_AGRCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_PARTSTATUT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_LIB_CEPS", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ADMIN", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_CONSAPOUV", Global.System.Data.SqlDbType.Text, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CONSAPOUV", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CODE_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CODE_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_SP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_SP_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_EAN_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_EAN_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_EAN_REF", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NBUNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NBUNITE", Global.System.Data.SqlDbType.SmallInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NBUNITE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_UP_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_UP_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CACDT_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CACDT_TEXTE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_RH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_RH_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_LI_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_LI_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ETAT_COMMER", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ETAT_COMMER", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATECOMMER", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECOMMER", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECOMMER", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATESUP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATESUP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATESUP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CDF_PU_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CDF_PU_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CEPH_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CEPH_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_CATC_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_CATC_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_NATUCD_CDF_NUM_FK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_NATUCD_CDF_NUM_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCIP", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCIP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_AGRCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_AGRCOLL", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_AGRCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEJOCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEJOCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEFINCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATE_APPLIFINCOLL", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATE_APPLIFINCOLL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_PARTSTATUT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_PARTSTATUT", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_PARTSTATUT", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_TSS_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_TSS_TEXTE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_LIB_CEPS", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_LIB_CEPS", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_LIB_CEPS", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_ADMIN", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_ADMIN", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_ADMIN", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATECR", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRE_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRE_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRE_DATEMJ", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -44141,567 +44112,567 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT SAC_CODE_SQ_PK, SAC_CDF_ORN_CODE_FK, SAC_SAU_CODE_FK, SAC_GSAC_CODE_FK, SA"& _ 
-                "C_NOM, SAC_NOMA, SAC_DATECR, SAC_DATEMJ, SAC_ETAT_COMMER, SAC_DATECOMMER, SAC_CO"& _ 
+            Me._commandCollection(0).CommandText = "SELECT SAC_CODE_SQ_PK, SAC_CDF_ORN_CODE_FK, SAC_SAU_CODE_FK, SAC_GSAC_CODE_FK, SA" & _
+                "C_NOM, SAC_NOMA, SAC_DATECR, SAC_DATEMJ, SAC_ETAT_COMMER, SAC_DATECOMMER, SAC_CO" & _
                 "DE_REF, SAC_LIBELLE_REF, SAC_TYPE_REF FROM theriaque.SAC_SUBACTIVE"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT SAC_CODE_SQ_PK, SAC_CDF_ORN_CODE_FK, SAC_SAU_CODE_FK, SAC_GSAC_CODE_FK, SA"& _ 
-                "C_NOM, SAC_NOMA, SAC_DATECR, SAC_DATEMJ, SAC_ETAT_COMMER, SAC_DATECOMMER, SAC_CO"& _ 
-                "DE_REF, SAC_LIBELLE_REF, SAC_TYPE_REF FROM theriaque.SAC_SUBACTIVE"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Where SAC_CO"& _ 
+            Me._commandCollection(1).CommandText = "SELECT SAC_CODE_SQ_PK, SAC_CDF_ORN_CODE_FK, SAC_SAU_CODE_FK, SAC_GSAC_CODE_FK, SA" & _
+                "C_NOM, SAC_NOMA, SAC_DATECR, SAC_DATEMJ, SAC_ETAT_COMMER, SAC_DATECOMMER, SAC_CO" & _
+                "DE_REF, SAC_LIBELLE_REF, SAC_TYPE_REF FROM theriaque.SAC_SUBACTIVE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Where SAC_CO" & _
                 "DE_SQ_PK =@SAC_CODE_SQ_PK"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAC_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "SAC_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAC_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "SAC_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable = New dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable, ByVal SAC_CODE_SQ_PK As Integer) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable, ByVal SAC_CODE_SQ_PK As Integer) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            Me.Adapter.SelectCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK,Integer)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            Me.Adapter.SelectCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK, Integer)
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataByCode(ByVal SAC_CODE_SQ_PK As Integer) As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByCode(ByVal SAC_CODE_SQ_PK As Integer) As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            Me.Adapter.SelectCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK,Integer)
+            Me.Adapter.SelectCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK, Integer)
             Dim dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable = New dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.SAC_SUBACTIVEDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
             Return Me.Adapter.Update(dataSet, "SAC_SUBACTIVE")
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(dataRows)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_SAC_CODE_SQ_PK As Integer, ByVal Original_SAC_CDF_ORN_CODE_FK As String, ByVal Original_SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), ByVal Original_SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), ByVal Original_SAC_NOM As String, ByVal Original_SAC_NOMA As String, ByVal Original_SAC_DATECR As Date, ByVal Original_SAC_DATEMJ As Global.System.Nullable(Of Date), ByVal Original_SAC_ETAT_COMMER As String, ByVal Original_SAC_DATECOMMER As Global.System.Nullable(Of Date), ByVal Original_SAC_CODE_REF As String, ByVal Original_SAC_LIBELLE_REF As String, ByVal Original_SAC_TYPE_REF As String) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_SAC_CODE_SQ_PK,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
+        Public Overridable Overloads Function Delete(ByVal Original_SAC_CODE_SQ_PK As Integer, ByVal Original_SAC_CDF_ORN_CODE_FK As String, ByVal Original_SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), ByVal Original_SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), ByVal Original_SAC_NOM As String, ByVal Original_SAC_NOMA As String, ByVal Original_SAC_DATECR As Date, ByVal Original_SAC_DATEMJ As Global.System.Nullable(Of Date), ByVal Original_SAC_ETAT_COMMER As String, ByVal Original_SAC_DATECOMMER As Global.System.Nullable(Of Date), ByVal Original_SAC_CODE_REF As String, ByVal Original_SAC_LIBELLE_REF As String, ByVal Original_SAC_TYPE_REF As String) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_SAC_CODE_SQ_PK, Integer)
             If (Original_SAC_CDF_ORN_CODE_FK Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_SAC_CDF_ORN_CODE_FK,String)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_SAC_CDF_ORN_CODE_FK, String)
             End If
-            If (Original_SAC_SAU_CODE_FK.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_SAC_SAU_CODE_FK.Value,Integer)
+            If (Original_SAC_SAU_CODE_FK.HasValue = True) Then
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_SAC_SAU_CODE_FK.Value, Integer)
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
             End If
-            If (Original_SAC_GSAC_CODE_FK.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_SAC_GSAC_CODE_FK.Value,Integer)
+            If (Original_SAC_GSAC_CODE_FK.HasValue = True) Then
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_SAC_GSAC_CODE_FK.Value, Integer)
             Else
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
             End If
             If (Original_SAC_NOM Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_SAC_NOM")
             Else
-                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(Original_SAC_NOM,String)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(Original_SAC_NOM, String)
             End If
             If (Original_SAC_NOMA Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(Original_SAC_NOMA,String)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(Original_SAC_NOMA, String)
             End If
-            Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_SAC_DATECR,Date)
-            If (Original_SAC_DATEMJ.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(Original_SAC_DATEMJ.Value,Date)
+            Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_SAC_DATECR, Date)
+            If (Original_SAC_DATEMJ.HasValue = True) Then
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(Original_SAC_DATEMJ.Value, Date)
             Else
-                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(12).Value = Global.System.DBNull.Value
             End If
             If (Original_SAC_ETAT_COMMER Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(14).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(Original_SAC_ETAT_COMMER,String)
+                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(Original_SAC_ETAT_COMMER, String)
             End If
-            If (Original_SAC_DATECOMMER.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(Original_SAC_DATECOMMER.Value,Date)
+            If (Original_SAC_DATECOMMER.HasValue = True) Then
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(Original_SAC_DATECOMMER.Value, Date)
             Else
-                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(16).Value = Global.System.DBNull.Value
             End If
             If (Original_SAC_CODE_REF Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(18).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(Original_SAC_CODE_REF,String)
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(Original_SAC_CODE_REF, String)
             End If
             If (Original_SAC_LIBELLE_REF Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(20).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(20).Value = CType(Original_SAC_LIBELLE_REF,String)
+                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(20).Value = CType(Original_SAC_LIBELLE_REF, String)
             End If
             If (Original_SAC_TYPE_REF Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(22).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(22).Value = CType(Original_SAC_TYPE_REF,String)
+                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(22).Value = CType(Original_SAC_TYPE_REF, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open
+                Me.Adapter.DeleteCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close
+                    Me.Adapter.DeleteCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal SAC_CODE_SQ_PK As Integer, ByVal SAC_CDF_ORN_CODE_FK As String, ByVal SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), ByVal SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), ByVal SAC_NOM As String, ByVal SAC_NOMA As String, ByVal SAC_DATECR As Date, ByVal SAC_DATEMJ As Global.System.Nullable(Of Date), ByVal SAC_ETAT_COMMER As String, ByVal SAC_DATECOMMER As Global.System.Nullable(Of Date), ByVal SAC_CODE_REF As String, ByVal SAC_LIBELLE_REF As String, ByVal SAC_TYPE_REF As String) As Integer
-            Me.Adapter.InsertCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK,Integer)
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
+        Public Overridable Overloads Function Insert(ByVal SAC_CODE_SQ_PK As Integer, ByVal SAC_CDF_ORN_CODE_FK As String, ByVal SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), ByVal SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), ByVal SAC_NOM As String, ByVal SAC_NOMA As String, ByVal SAC_DATECR As Date, ByVal SAC_DATEMJ As Global.System.Nullable(Of Date), ByVal SAC_ETAT_COMMER As String, ByVal SAC_DATECOMMER As Global.System.Nullable(Of Date), ByVal SAC_CODE_REF As String, ByVal SAC_LIBELLE_REF As String, ByVal SAC_TYPE_REF As String) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK, Integer)
             If (SAC_CDF_ORN_CODE_FK Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(SAC_CDF_ORN_CODE_FK,String)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(SAC_CDF_ORN_CODE_FK, String)
             End If
-            If (SAC_SAU_CODE_FK.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(SAC_SAU_CODE_FK.Value,Integer)
+            If (SAC_SAU_CODE_FK.HasValue = True) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(SAC_SAU_CODE_FK.Value, Integer)
             Else
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (SAC_GSAC_CODE_FK.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(SAC_GSAC_CODE_FK.Value,Integer)
+            If (SAC_GSAC_CODE_FK.HasValue = True) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(SAC_GSAC_CODE_FK.Value, Integer)
             Else
                 Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
             If (SAC_NOM Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("SAC_NOM")
             Else
-                Me.Adapter.InsertCommand.Parameters(4).Value = CType(SAC_NOM,String)
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(SAC_NOM, String)
             End If
             If (SAC_NOMA Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(5).Value = CType(SAC_NOMA,String)
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(SAC_NOMA, String)
             End If
-            Me.Adapter.InsertCommand.Parameters(6).Value = CType(SAC_DATECR,Date)
-            If (SAC_DATEMJ.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(7).Value = CType(SAC_DATEMJ.Value,Date)
+            Me.Adapter.InsertCommand.Parameters(6).Value = CType(SAC_DATECR, Date)
+            If (SAC_DATEMJ.HasValue = True) Then
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(SAC_DATEMJ.Value, Date)
             Else
                 Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
             End If
             If (SAC_ETAT_COMMER Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(8).Value = CType(SAC_ETAT_COMMER,String)
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(SAC_ETAT_COMMER, String)
             End If
-            If (SAC_DATECOMMER.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(9).Value = CType(SAC_DATECOMMER.Value,Date)
+            If (SAC_DATECOMMER.HasValue = True) Then
+                Me.Adapter.InsertCommand.Parameters(9).Value = CType(SAC_DATECOMMER.Value, Date)
             Else
                 Me.Adapter.InsertCommand.Parameters(9).Value = Global.System.DBNull.Value
             End If
             If (SAC_CODE_REF Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(10).Value = CType(SAC_CODE_REF,String)
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(SAC_CODE_REF, String)
             End If
             If (SAC_LIBELLE_REF Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(11).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(11).Value = CType(SAC_LIBELLE_REF,String)
+                Me.Adapter.InsertCommand.Parameters(11).Value = CType(SAC_LIBELLE_REF, String)
             End If
             If (SAC_TYPE_REF Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(12).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(12).Value = CType(SAC_TYPE_REF,String)
+                Me.Adapter.InsertCommand.Parameters(12).Value = CType(SAC_TYPE_REF, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open
+                Me.Adapter.InsertCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close
+                    Me.Adapter.InsertCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update( _
-                    ByVal SAC_CODE_SQ_PK As Integer,  _
-                    ByVal SAC_CDF_ORN_CODE_FK As String,  _
-                    ByVal SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal SAC_NOM As String,  _
-                    ByVal SAC_NOMA As String,  _
-                    ByVal SAC_DATECR As Date,  _
-                    ByVal SAC_DATEMJ As Global.System.Nullable(Of Date),  _
-                    ByVal SAC_ETAT_COMMER As String,  _
-                    ByVal SAC_DATECOMMER As Global.System.Nullable(Of Date),  _
-                    ByVal SAC_CODE_REF As String,  _
-                    ByVal SAC_LIBELLE_REF As String,  _
-                    ByVal SAC_TYPE_REF As String,  _
-                    ByVal Original_SAC_CODE_SQ_PK As Integer,  _
-                    ByVal Original_SAC_CDF_ORN_CODE_FK As String,  _
-                    ByVal Original_SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_SAC_NOM As String,  _
-                    ByVal Original_SAC_NOMA As String,  _
-                    ByVal Original_SAC_DATECR As Date,  _
-                    ByVal Original_SAC_DATEMJ As Global.System.Nullable(Of Date),  _
-                    ByVal Original_SAC_ETAT_COMMER As String,  _
-                    ByVal Original_SAC_DATECOMMER As Global.System.Nullable(Of Date),  _
-                    ByVal Original_SAC_CODE_REF As String,  _
-                    ByVal Original_SAC_LIBELLE_REF As String,  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update( _
+                    ByVal SAC_CODE_SQ_PK As Integer, _
+                    ByVal SAC_CDF_ORN_CODE_FK As String, _
+                    ByVal SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal SAC_NOM As String, _
+                    ByVal SAC_NOMA As String, _
+                    ByVal SAC_DATECR As Date, _
+                    ByVal SAC_DATEMJ As Global.System.Nullable(Of Date), _
+                    ByVal SAC_ETAT_COMMER As String, _
+                    ByVal SAC_DATECOMMER As Global.System.Nullable(Of Date), _
+                    ByVal SAC_CODE_REF As String, _
+                    ByVal SAC_LIBELLE_REF As String, _
+                    ByVal SAC_TYPE_REF As String, _
+                    ByVal Original_SAC_CODE_SQ_PK As Integer, _
+                    ByVal Original_SAC_CDF_ORN_CODE_FK As String, _
+                    ByVal Original_SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal Original_SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal Original_SAC_NOM As String, _
+                    ByVal Original_SAC_NOMA As String, _
+                    ByVal Original_SAC_DATECR As Date, _
+                    ByVal Original_SAC_DATEMJ As Global.System.Nullable(Of Date), _
+                    ByVal Original_SAC_ETAT_COMMER As String, _
+                    ByVal Original_SAC_DATECOMMER As Global.System.Nullable(Of Date), _
+                    ByVal Original_SAC_CODE_REF As String, _
+                    ByVal Original_SAC_LIBELLE_REF As String, _
                     ByVal Original_SAC_TYPE_REF As String) As Integer
-            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK,Integer)
+            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(SAC_CODE_SQ_PK, Integer)
             If (SAC_CDF_ORN_CODE_FK Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(SAC_CDF_ORN_CODE_FK,String)
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(SAC_CDF_ORN_CODE_FK, String)
             End If
-            If (SAC_SAU_CODE_FK.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(SAC_SAU_CODE_FK.Value,Integer)
+            If (SAC_SAU_CODE_FK.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(SAC_SAU_CODE_FK.Value, Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (SAC_GSAC_CODE_FK.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(SAC_GSAC_CODE_FK.Value,Integer)
+            If (SAC_GSAC_CODE_FK.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(SAC_GSAC_CODE_FK.Value, Integer)
             Else
                 Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
             If (SAC_NOM Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("SAC_NOM")
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(SAC_NOM,String)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(SAC_NOM, String)
             End If
             If (SAC_NOMA Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(SAC_NOMA,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(SAC_NOMA, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(SAC_DATECR,Date)
-            If (SAC_DATEMJ.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(SAC_DATEMJ.Value,Date)
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(SAC_DATECR, Date)
+            If (SAC_DATEMJ.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(SAC_DATEMJ.Value, Date)
             Else
                 Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
             End If
             If (SAC_ETAT_COMMER Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(SAC_ETAT_COMMER,String)
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(SAC_ETAT_COMMER, String)
             End If
-            If (SAC_DATECOMMER.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(SAC_DATECOMMER.Value,Date)
+            If (SAC_DATECOMMER.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(SAC_DATECOMMER.Value, Date)
             Else
                 Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
             End If
             If (SAC_CODE_REF Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(SAC_CODE_REF,String)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(SAC_CODE_REF, String)
             End If
             If (SAC_LIBELLE_REF Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(SAC_LIBELLE_REF,String)
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(SAC_LIBELLE_REF, String)
             End If
             If (SAC_TYPE_REF Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(SAC_TYPE_REF,String)
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(SAC_TYPE_REF, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_SAC_CODE_SQ_PK,Integer)
+            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_SAC_CODE_SQ_PK, Integer)
             If (Original_SAC_CDF_ORN_CODE_FK Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_SAC_CDF_ORN_CODE_FK,String)
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_SAC_CDF_ORN_CODE_FK, String)
             End If
-            If (Original_SAC_SAU_CODE_FK.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_SAC_SAU_CODE_FK.Value,Integer)
+            If (Original_SAC_SAU_CODE_FK.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_SAC_SAU_CODE_FK.Value, Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
             End If
-            If (Original_SAC_GSAC_CODE_FK.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_SAC_GSAC_CODE_FK.Value,Integer)
+            If (Original_SAC_GSAC_CODE_FK.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_SAC_GSAC_CODE_FK.Value, Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
             End If
             If (Original_SAC_NOM Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_SAC_NOM")
             Else
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_SAC_NOM,String)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_SAC_NOM, String)
             End If
             If (Original_SAC_NOMA Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_SAC_NOMA,String)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_SAC_NOMA, String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_SAC_DATECR,Date)
-            If (Original_SAC_DATEMJ.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_SAC_DATEMJ.Value,Date)
+            Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_SAC_DATECR, Date)
+            If (Original_SAC_DATEMJ.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_SAC_DATEMJ.Value, Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
             End If
             If (Original_SAC_ETAT_COMMER Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_SAC_ETAT_COMMER,String)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_SAC_ETAT_COMMER, String)
             End If
-            If (Original_SAC_DATECOMMER.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_SAC_DATECOMMER.Value,Date)
+            If (Original_SAC_DATECOMMER.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_SAC_DATECOMMER.Value, Date)
             Else
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
             End If
             If (Original_SAC_CODE_REF Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_SAC_CODE_REF,String)
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_SAC_CODE_REF, String)
             End If
             If (Original_SAC_LIBELLE_REF Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(33).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(Original_SAC_LIBELLE_REF,String)
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(Original_SAC_LIBELLE_REF, String)
             End If
             If (Original_SAC_TYPE_REF Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(35).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(Original_SAC_TYPE_REF,String)
+                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(Original_SAC_TYPE_REF, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
+                Me.Adapter.UpdateCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close
+                    Me.Adapter.UpdateCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update( _
-                    ByVal SAC_CDF_ORN_CODE_FK As String,  _
-                    ByVal SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal SAC_NOM As String,  _
-                    ByVal SAC_NOMA As String,  _
-                    ByVal SAC_DATECR As Date,  _
-                    ByVal SAC_DATEMJ As Global.System.Nullable(Of Date),  _
-                    ByVal SAC_ETAT_COMMER As String,  _
-                    ByVal SAC_DATECOMMER As Global.System.Nullable(Of Date),  _
-                    ByVal SAC_CODE_REF As String,  _
-                    ByVal SAC_LIBELLE_REF As String,  _
-                    ByVal SAC_TYPE_REF As String,  _
-                    ByVal Original_SAC_CODE_SQ_PK As Integer,  _
-                    ByVal Original_SAC_CDF_ORN_CODE_FK As String,  _
-                    ByVal Original_SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer),  _
-                    ByVal Original_SAC_NOM As String,  _
-                    ByVal Original_SAC_NOMA As String,  _
-                    ByVal Original_SAC_DATECR As Date,  _
-                    ByVal Original_SAC_DATEMJ As Global.System.Nullable(Of Date),  _
-                    ByVal Original_SAC_ETAT_COMMER As String,  _
-                    ByVal Original_SAC_DATECOMMER As Global.System.Nullable(Of Date),  _
-                    ByVal Original_SAC_CODE_REF As String,  _
-                    ByVal Original_SAC_LIBELLE_REF As String,  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update( _
+                    ByVal SAC_CDF_ORN_CODE_FK As String, _
+                    ByVal SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal SAC_NOM As String, _
+                    ByVal SAC_NOMA As String, _
+                    ByVal SAC_DATECR As Date, _
+                    ByVal SAC_DATEMJ As Global.System.Nullable(Of Date), _
+                    ByVal SAC_ETAT_COMMER As String, _
+                    ByVal SAC_DATECOMMER As Global.System.Nullable(Of Date), _
+                    ByVal SAC_CODE_REF As String, _
+                    ByVal SAC_LIBELLE_REF As String, _
+                    ByVal SAC_TYPE_REF As String, _
+                    ByVal Original_SAC_CODE_SQ_PK As Integer, _
+                    ByVal Original_SAC_CDF_ORN_CODE_FK As String, _
+                    ByVal Original_SAC_SAU_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal Original_SAC_GSAC_CODE_FK As Global.System.Nullable(Of Integer), _
+                    ByVal Original_SAC_NOM As String, _
+                    ByVal Original_SAC_NOMA As String, _
+                    ByVal Original_SAC_DATECR As Date, _
+                    ByVal Original_SAC_DATEMJ As Global.System.Nullable(Of Date), _
+                    ByVal Original_SAC_ETAT_COMMER As String, _
+                    ByVal Original_SAC_DATECOMMER As Global.System.Nullable(Of Date), _
+                    ByVal Original_SAC_CODE_REF As String, _
+                    ByVal Original_SAC_LIBELLE_REF As String, _
                     ByVal Original_SAC_TYPE_REF As String) As Integer
             Return Me.Update(Original_SAC_CODE_SQ_PK, SAC_CDF_ORN_CODE_FK, SAC_SAU_CODE_FK, SAC_GSAC_CODE_FK, SAC_NOM, SAC_NOMA, SAC_DATECR, SAC_DATEMJ, SAC_ETAT_COMMER, SAC_DATECOMMER, SAC_CODE_REF, SAC_LIBELLE_REF, SAC_TYPE_REF, Original_SAC_CODE_SQ_PK, Original_SAC_CDF_ORN_CODE_FK, Original_SAC_SAU_CODE_FK, Original_SAC_GSAC_CODE_FK, Original_SAC_NOM, Original_SAC_NOMA, Original_SAC_DATECR, Original_SAC_DATEMJ, Original_SAC_ETAT_COMMER, Original_SAC_DATECOMMER, Original_SAC_CODE_REF, Original_SAC_LIBELLE_REF, Original_SAC_TYPE_REF)
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class PRECPSSTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
+
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
+
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
-                Me._connection = value
+            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
+                Me._connection = Value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
-                    Me.Adapter.InsertCommand.Connection = value
+                    Me.Adapter.InsertCommand.Connection = Value
                 End If
                 If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
-                    Me.Adapter.DeleteCommand.Connection = value
+                    Me.Adapter.DeleteCommand.Connection = Value
                 End If
                 If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
-                    Me.Adapter.UpdateCommand.Connection = value
+                    Me.Adapter.UpdateCommand.Connection = Value
                 End If
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = Value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
-                Me._clearBeforeFill = value
+            Set(ByVal value As Boolean)
+                Me._clearBeforeFill = Value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -44713,273 +44684,273 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PRECPSS] WHERE (([PRECPSS_PRE_CODE_FK_PK] = @Original_PR"& _ 
-                "ECPSS_PRE_CODE_FK_PK) AND ([PRECPSS_CDF_CPSS_CODE_FK_PK] = @Original_PRECPSS_CDF"& _ 
-                "_CPSS_CODE_FK_PK) AND ((@IsNull_PRECPSS_CIP13 = 1 AND [PRECPSS_CIP13] IS NULL) O"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PRECPSS] WHERE (([PRECPSS_PRE_CODE_FK_PK] = @Original_PR" & _
+                "ECPSS_PRE_CODE_FK_PK) AND ([PRECPSS_CDF_CPSS_CODE_FK_PK] = @Original_PRECPSS_CDF" & _
+                "_CPSS_CODE_FK_PK) AND ((@IsNull_PRECPSS_CIP13 = 1 AND [PRECPSS_CIP13] IS NULL) O" & _
                 "R ([PRECPSS_CIP13] = @Original_PRECPSS_CIP13)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRECPSS_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRECPSS_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PRECPSS] ([PRECPSS_PRE_CODE_FK_PK], [PRECPSS_CDF_CPSS_CO"& _ 
-                "DE_FK_PK], [PRECPSS_CIP13]) VALUES (@PRECPSS_PRE_CODE_FK_PK, @PRECPSS_CDF_CPSS_C"& _ 
-                "ODE_FK_PK, @PRECPSS_CIP13);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_CPSS_COD"& _ 
-                "E_FK_PK, PRECPSS_CIP13 FROM theriaque.PRECPSS WHERE (PRECPSS_CDF_CPSS_CODE_FK_PK"& _ 
-                " = @PRECPSS_CDF_CPSS_CODE_FK_PK) AND (PRECPSS_PRE_CODE_FK_PK = @PRECPSS_PRE_CODE"& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PRECPSS] ([PRECPSS_PRE_CODE_FK_PK], [PRECPSS_CDF_CPSS_CO" & _
+                "DE_FK_PK], [PRECPSS_CIP13]) VALUES (@PRECPSS_PRE_CODE_FK_PK, @PRECPSS_CDF_CPSS_C" & _
+                "ODE_FK_PK, @PRECPSS_CIP13);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_CPSS_COD" & _
+                "E_FK_PK, PRECPSS_CIP13 FROM theriaque.PRECPSS WHERE (PRECPSS_CDF_CPSS_CODE_FK_PK" & _
+                " = @PRECPSS_CDF_CPSS_CODE_FK_PK) AND (PRECPSS_PRE_CODE_FK_PK = @PRECPSS_PRE_CODE" & _
                 "_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PRECPSS] SET [PRECPSS_PRE_CODE_FK_PK] = @PRECPSS_PRE_CODE_FK_"& _ 
-                "PK, [PRECPSS_CDF_CPSS_CODE_FK_PK] = @PRECPSS_CDF_CPSS_CODE_FK_PK, [PRECPSS_CIP13"& _ 
-                "] = @PRECPSS_CIP13 WHERE (([PRECPSS_PRE_CODE_FK_PK] = @Original_PRECPSS_PRE_CODE"& _ 
-                "_FK_PK) AND ([PRECPSS_CDF_CPSS_CODE_FK_PK] = @Original_PRECPSS_CDF_CPSS_CODE_FK_"& _ 
-                "PK) AND ((@IsNull_PRECPSS_CIP13 = 1 AND [PRECPSS_CIP13] IS NULL) OR ([PRECPSS_CI"& _ 
-                "P13] = @Original_PRECPSS_CIP13)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_C"& _ 
-                "PSS_CODE_FK_PK, PRECPSS_CIP13 FROM theriaque.PRECPSS WHERE (PRECPSS_CDF_CPSS_COD"& _ 
-                "E_FK_PK = @PRECPSS_CDF_CPSS_CODE_FK_PK) AND (PRECPSS_PRE_CODE_FK_PK = @PRECPSS_P"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PRECPSS] SET [PRECPSS_PRE_CODE_FK_PK] = @PRECPSS_PRE_CODE_FK_" & _
+                "PK, [PRECPSS_CDF_CPSS_CODE_FK_PK] = @PRECPSS_CDF_CPSS_CODE_FK_PK, [PRECPSS_CIP13" & _
+                "] = @PRECPSS_CIP13 WHERE (([PRECPSS_PRE_CODE_FK_PK] = @Original_PRECPSS_PRE_CODE" & _
+                "_FK_PK) AND ([PRECPSS_CDF_CPSS_CODE_FK_PK] = @Original_PRECPSS_CDF_CPSS_CODE_FK_" & _
+                "PK) AND ((@IsNull_PRECPSS_CIP13 = 1 AND [PRECPSS_CIP13] IS NULL) OR ([PRECPSS_CI" & _
+                "P13] = @Original_PRECPSS_CIP13)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_C" & _
+                "PSS_CODE_FK_PK, PRECPSS_CIP13 FROM theriaque.PRECPSS WHERE (PRECPSS_CDF_CPSS_COD" & _
+                "E_FK_PK = @PRECPSS_CDF_CPSS_CODE_FK_PK) AND (PRECPSS_PRE_CODE_FK_PK = @PRECPSS_P" & _
                 "RE_CODE_FK_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRECPSS_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CDF_CPSS_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PRECPSS_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PRECPSS_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_CPSS_CODE_FK_PK, PRECPSS_CIP13 FROM th"& _ 
+            Me._commandCollection(0).CommandText = "SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_CPSS_CODE_FK_PK, PRECPSS_CIP13 FROM th" & _
                 "eriaque.PRECPSS"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_CPSS_CODE_FK_PK, PRECPSS_CIP13 FROM th"& _ 
-                "eriaque.PRECPSS"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE PRECPSS_PRE_CODE_FK_PK = @PRECPSS_PRE_CODE_FK_PK"
+            Me._commandCollection(1).CommandText = "SELECT PRECPSS_PRE_CODE_FK_PK, PRECPSS_CDF_CPSS_CODE_FK_PK, PRECPSS_CIP13 FROM th" & _
+                "eriaque.PRECPSS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE PRECPSS_PRE_CODE_FK_PK = @PRECPSS_PRE_CODE_FK_PK"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 10, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PRECPSS_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 10, Global.System.Data.ParameterDirection.Input, 0, 0, "PRECPSS_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
+        Public Overridable Overloads Function Fill(ByVal dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As dsTheriaque_Nomenclature2.PRECPSSDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As dsTheriaque_Nomenclature2.PRECPSSDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable = New dsTheriaque_Nomenclature2.PRECPSSDataTable
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable, ByVal PRECPSS_PRE_CODE_FK_PK As String) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
+        Public Overridable Overloads Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable, ByVal PRECPSS_PRE_CODE_FK_PK As String) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(1)
             If (PRECPSS_PRE_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("PRECPSS_PRE_CODE_FK_PK")
             Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK,String)
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK, String)
             End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
+            If (Me.ClearBeforeFill = True) Then
+                dataTable.Clear()
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataByCode(ByVal PRECPSS_PRE_CODE_FK_PK As String) As dsTheriaque_Nomenclature2.PRECPSSDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByCode(ByVal PRECPSS_PRE_CODE_FK_PK As String) As dsTheriaque_Nomenclature2.PRECPSSDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(1)
             If (PRECPSS_PRE_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("PRECPSS_PRE_CODE_FK_PK")
             Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK,String)
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK, String)
             End If
             Dim dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable = New dsTheriaque_Nomenclature2.PRECPSSDataTable
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.PRECPSSDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
             Return Me.Adapter.Update(dataSet, "PRECPSS")
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(dataRows)
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_PRECPSS_PRE_CODE_FK_PK As String, ByVal Original_PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal Original_PRECPSS_CIP13 As String) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
+        Public Overridable Overloads Function Delete(ByVal Original_PRECPSS_PRE_CODE_FK_PK As String, ByVal Original_PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal Original_PRECPSS_CIP13 As String) As Integer
             If (Original_PRECPSS_PRE_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_PRECPSS_PRE_CODE_FK_PK")
             Else
-                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_PRECPSS_PRE_CODE_FK_PK,String)
+                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_PRECPSS_PRE_CODE_FK_PK, String)
             End If
             If (Original_PRECPSS_CDF_CPSS_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_PRECPSS_CDF_CPSS_CODE_FK_PK")
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_PRECPSS_CDF_CPSS_CODE_FK_PK,String)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_PRECPSS_CDF_CPSS_CODE_FK_PK, String)
             End If
             If (Original_PRECPSS_CIP13 Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(1, Object)
                 Me.Adapter.DeleteCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_PRECPSS_CIP13,String)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0, Object)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_PRECPSS_CIP13, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open
+                Me.Adapter.DeleteCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close
+                    Me.Adapter.DeleteCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal PRECPSS_PRE_CODE_FK_PK As String, ByVal PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal PRECPSS_CIP13 As String) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
+        Public Overridable Overloads Function Insert(ByVal PRECPSS_PRE_CODE_FK_PK As String, ByVal PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal PRECPSS_CIP13 As String) As Integer
             If (PRECPSS_PRE_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("PRECPSS_PRE_CODE_FK_PK")
             Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK,String)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK, String)
             End If
             If (PRECPSS_CDF_CPSS_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("PRECPSS_CDF_CPSS_CODE_FK_PK")
             Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(PRECPSS_CDF_CPSS_CODE_FK_PK,String)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(PRECPSS_CDF_CPSS_CODE_FK_PK, String)
             End If
             If (PRECPSS_CIP13 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(PRECPSS_CIP13,String)
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(PRECPSS_CIP13, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open
+                Me.Adapter.InsertCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close
+                    Me.Adapter.InsertCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal PRECPSS_PRE_CODE_FK_PK As String, ByVal PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal PRECPSS_CIP13 As String, ByVal Original_PRECPSS_PRE_CODE_FK_PK As String, ByVal Original_PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal Original_PRECPSS_CIP13 As String) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal PRECPSS_PRE_CODE_FK_PK As String, ByVal PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal PRECPSS_CIP13 As String, ByVal Original_PRECPSS_PRE_CODE_FK_PK As String, ByVal Original_PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal Original_PRECPSS_CIP13 As String) As Integer
             If (PRECPSS_PRE_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("PRECPSS_PRE_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK,String)
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(PRECPSS_PRE_CODE_FK_PK, String)
             End If
             If (PRECPSS_CDF_CPSS_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("PRECPSS_CDF_CPSS_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(PRECPSS_CDF_CPSS_CODE_FK_PK,String)
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(PRECPSS_CDF_CPSS_CODE_FK_PK, String)
             End If
             If (PRECPSS_CIP13 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(PRECPSS_CIP13,String)
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(PRECPSS_CIP13, String)
             End If
             If (Original_PRECPSS_PRE_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_PRECPSS_PRE_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_PRECPSS_PRE_CODE_FK_PK,String)
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_PRECPSS_PRE_CODE_FK_PK, String)
             End If
             If (Original_PRECPSS_CDF_CPSS_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_PRECPSS_CDF_CPSS_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_PRECPSS_CDF_CPSS_CODE_FK_PK,String)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_PRECPSS_CDF_CPSS_CODE_FK_PK, String)
             End If
             If (Original_PRECPSS_CIP13 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(1, Object)
                 Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_PRECPSS_CIP13,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(0, Object)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_PRECPSS_CIP13, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
+                Me.Adapter.UpdateCommand.Connection.Open()
             End If
-            Try 
+            Try
                 Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close
+                    Me.Adapter.UpdateCommand.Connection.Close()
                 End If
             End Try
         End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal PRECPSS_CIP13 As String, ByVal Original_PRECPSS_PRE_CODE_FK_PK As String, ByVal Original_PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal Original_PRECPSS_CIP13 As String) As Integer
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal PRECPSS_CIP13 As String, ByVal Original_PRECPSS_PRE_CODE_FK_PK As String, ByVal Original_PRECPSS_CDF_CPSS_CODE_FK_PK As String, ByVal Original_PRECPSS_CIP13 As String) As Integer
             Return Me.Update(Original_PRECPSS_PRE_CODE_FK_PK, Original_PRECPSS_CDF_CPSS_CODE_FK_PK, PRECPSS_CIP13, Original_PRECPSS_PRE_CODE_FK_PK, Original_PRECPSS_CDF_CPSS_CODE_FK_PK, Original_PRECPSS_CIP13)
         End Function
     End Class
@@ -48518,252 +48489,252 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitCommandCollection()
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT CATVO_CDF_CAT_CODE_FK_PK, CATVO_CDF_VO_CODE_FK_PK FROM theriaque.CATVO_CAT" & _
+            Me._commandCollection(0).CommandText = "SELECT CATVO_CDF_CAT_CODE_FK_PK, CATVO_CDF_VO_CODE_FK_PK FROM theriaque.CATVO_CAT"& _ 
                 "EGORIEVOIE"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT CATVO_CDF_CAT_CODE_FK_PK, CATVO_CDF_VO_CODE_FK_PK FROM theriaque.CATVO_CAT" & _
-                "EGORIEVOIE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE CATVO_CDF_VO_CODE_FK_PK=@CATVO_CDF_VO_CODE_FK_PK"
+            Me._commandCollection(1).CommandText = "SELECT CATVO_CDF_CAT_CODE_FK_PK, CATVO_CDF_VO_CODE_FK_PK FROM theriaque.CATVO_CAT"& _ 
+                "EGORIEVOIE"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE CATVO_CDF_VO_CODE_FK_PK=@CATVO_CDF_VO_CODE_FK_PK"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CATVO_CDF_VO_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 10, Global.System.Data.ParameterDirection.Input, 0, 0, "CATVO_CDF_VO_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CATVO_CDF_VO_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 10, Global.System.Data.ParameterDirection.Input, 0, 0, "CATVO_CDF_VO_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
-        Public Overridable Overloads Function Fill(ByVal dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = True) Then
-                dataTable.Clear()
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
-        Public Overridable Overloads Function GetData() As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData() As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             Dim dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable = New dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
-        Public Overridable Overloads Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable, ByVal CATVO_CDF_VO_CODE_FK_PK As String) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable, ByVal CATVO_CDF_VO_CODE_FK_PK As String) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(1)
             If (CATVO_CDF_VO_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("CATVO_CDF_VO_CODE_FK_PK")
             Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(CATVO_CDF_VO_CODE_FK_PK, String)
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(CATVO_CDF_VO_CODE_FK_PK,String)
             End If
-            If (Me.ClearBeforeFill = True) Then
-                dataTable.Clear()
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
             End If
             Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
-        Public Overridable Overloads Function GetDataByCode(ByVal CATVO_CDF_VO_CODE_FK_PK As String) As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetDataByCode(ByVal CATVO_CDF_VO_CODE_FK_PK As String) As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(1)
             If (CATVO_CDF_VO_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("CATVO_CDF_VO_CODE_FK_PK")
             Else
-                Me.Adapter.SelectCommand.Parameters(0).Value = CType(CATVO_CDF_VO_CODE_FK_PK, String)
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(CATVO_CDF_VO_CODE_FK_PK,String)
             End If
             Dim dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable = New dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.CATVO_CATEGORIEVOIEDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
             Return Me.Adapter.Update(dataSet, "CATVO_CATEGORIEVOIE")
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
             Return Me.Adapter.Update(dataRows)
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
-        Public Overridable Overloads Function Delete(ByVal Original_CATVO_CDF_CAT_CODE_FK_PK As String, ByVal Original_CATVO_CDF_VO_CODE_FK_PK As String) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal Original_CATVO_CDF_CAT_CODE_FK_PK As String, ByVal Original_CATVO_CDF_VO_CODE_FK_PK As String) As Integer
             If (Original_CATVO_CDF_CAT_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_CATVO_CDF_CAT_CODE_FK_PK")
             Else
-                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_CATVO_CDF_CAT_CODE_FK_PK, String)
+                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_CATVO_CDF_CAT_CODE_FK_PK,String)
             End If
             If (Original_CATVO_CDF_VO_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_CATVO_CDF_VO_CODE_FK_PK")
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_CATVO_CDF_VO_CODE_FK_PK, String)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_CATVO_CDF_VO_CODE_FK_PK,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open()
+                Me.Adapter.DeleteCommand.Connection.Open
             End If
-            Try
+            Try 
                 Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close()
+                    Me.Adapter.DeleteCommand.Connection.Close
                 End If
             End Try
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
-        Public Overridable Overloads Function Insert(ByVal CATVO_CDF_CAT_CODE_FK_PK As String, ByVal CATVO_CDF_VO_CODE_FK_PK As String) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal CATVO_CDF_CAT_CODE_FK_PK As String, ByVal CATVO_CDF_VO_CODE_FK_PK As String) As Integer
             If (CATVO_CDF_CAT_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("CATVO_CDF_CAT_CODE_FK_PK")
             Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(CATVO_CDF_CAT_CODE_FK_PK, String)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(CATVO_CDF_CAT_CODE_FK_PK,String)
             End If
             If (CATVO_CDF_VO_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("CATVO_CDF_VO_CODE_FK_PK")
             Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(CATVO_CDF_VO_CODE_FK_PK, String)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(CATVO_CDF_VO_CODE_FK_PK,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open()
+                Me.Adapter.InsertCommand.Connection.Open
             End If
-            Try
+            Try 
                 Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close()
+                    Me.Adapter.InsertCommand.Connection.Close
                 End If
             End Try
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
-        Public Overridable Overloads Function Update(ByVal CATVO_CDF_CAT_CODE_FK_PK As String, ByVal CATVO_CDF_VO_CODE_FK_PK As String, ByVal Original_CATVO_CDF_CAT_CODE_FK_PK As String, ByVal Original_CATVO_CDF_VO_CODE_FK_PK As String) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal CATVO_CDF_CAT_CODE_FK_PK As String, ByVal CATVO_CDF_VO_CODE_FK_PK As String, ByVal Original_CATVO_CDF_CAT_CODE_FK_PK As String, ByVal Original_CATVO_CDF_VO_CODE_FK_PK As String) As Integer
             If (CATVO_CDF_CAT_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("CATVO_CDF_CAT_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(CATVO_CDF_CAT_CODE_FK_PK, String)
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(CATVO_CDF_CAT_CODE_FK_PK,String)
             End If
             If (CATVO_CDF_VO_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("CATVO_CDF_VO_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(CATVO_CDF_VO_CODE_FK_PK, String)
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(CATVO_CDF_VO_CODE_FK_PK,String)
             End If
             If (Original_CATVO_CDF_CAT_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_CATVO_CDF_CAT_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Original_CATVO_CDF_CAT_CODE_FK_PK, String)
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Original_CATVO_CDF_CAT_CODE_FK_PK,String)
             End If
             If (Original_CATVO_CDF_VO_CODE_FK_PK Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_CATVO_CDF_VO_CODE_FK_PK")
             Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_CATVO_CDF_VO_CODE_FK_PK, String)
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_CATVO_CDF_VO_CODE_FK_PK,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open()
+                Me.Adapter.UpdateCommand.Connection.Open
             End If
-            Try
+            Try 
                 Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
                 Return returnValue
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close()
+                    Me.Adapter.UpdateCommand.Connection.Close
                 End If
             End Try
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
-        Public Overridable Overloads Function Update(ByVal Original_CATVO_CDF_CAT_CODE_FK_PK As String, ByVal Original_CATVO_CDF_VO_CODE_FK_PK As String) As Integer
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal Original_CATVO_CDF_CAT_CODE_FK_PK As String, ByVal Original_CATVO_CDF_VO_CODE_FK_PK As String) As Integer
             Return Me.Update(Original_CATVO_CDF_CAT_CODE_FK_PK, Original_CATVO_CDF_VO_CODE_FK_PK, Original_CATVO_CDF_CAT_CODE_FK_PK, Original_CATVO_CDF_VO_CODE_FK_PK)
         End Function
     End Class
-
+    
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
-     Global.System.ComponentModel.ToolboxItem(True), _
-     Global.System.ComponentModel.DataObjectAttribute(True), _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class SAV_SUBSTANCE_VIRTUELLETableAdapter
         Inherits Global.System.ComponentModel.Component
-
+        
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-
+        
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-
+        
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-
+        
         Private _clearBeforeFill As Boolean
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Sub New()
-            MyBase.New()
-            Me.ClearBeforeFill = True
+            MyBase.New
+            Me.ClearBeforeFill = true
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter()
+                    Me.InitAdapter
                 End If
                 Return Me._adapter
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection()
+                    Me.InitConnection
                 End If
                 Return Me._connection
             End Get
-            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
+            Set
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -48777,34 +48748,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection()
+                    Me.InitCommandCollection
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set(ByVal value As Boolean)
+            Set
                 Me._clearBeforeFill = value
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -48816,47 +48787,47 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[SAV_SUBSTANCE_VIRTUELLE] WHERE (([SAV_CODE_SQ_PK] = @Ori" & _
-                "ginal_SAV_CODE_SQ_PK) AND ((@IsNull_SAV_LIBELLE = 1 AND [SAV_LIBELLE] IS NULL) O" & _
-                "R ([SAV_LIBELLE] = @Original_SAV_LIBELLE)) AND ((@IsNull_SAV_CODE_REF = 1 AND [S" & _
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[SAV_SUBSTANCE_VIRTUELLE] WHERE (([SAV_CODE_SQ_PK] = @Ori"& _ 
+                "ginal_SAV_CODE_SQ_PK) AND ((@IsNull_SAV_LIBELLE = 1 AND [SAV_LIBELLE] IS NULL) O"& _ 
+                "R ([SAV_LIBELLE] = @Original_SAV_LIBELLE)) AND ((@IsNull_SAV_CODE_REF = 1 AND [S"& _ 
                 "AV_CODE_REF] IS NULL) OR ([SAV_CODE_REF] = @Original_SAV_CODE_REF)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_LIBELLE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_LIBELLE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[SAV_SUBSTANCE_VIRTUELLE] ([SAV_CODE_SQ_PK], [SAV_LIBELLE" & _
-                "], [SAV_CODE_REF]) VALUES (@SAV_CODE_SQ_PK, @SAV_LIBELLE, @SAV_CODE_REF);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELEC" & _
-                "T SAV_CODE_SQ_PK, SAV_LIBELLE, SAV_CODE_REF FROM theriaque.SAV_SUBSTANCE_VIRTUEL" & _
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[SAV_SUBSTANCE_VIRTUELLE] ([SAV_CODE_SQ_PK], [SAV_LIBELLE"& _ 
+                "], [SAV_CODE_REF]) VALUES (@SAV_CODE_SQ_PK, @SAV_LIBELLE, @SAV_CODE_REF);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELEC"& _ 
+                "T SAV_CODE_SQ_PK, SAV_LIBELLE, SAV_CODE_REF FROM theriaque.SAV_SUBSTANCE_VIRTUEL"& _ 
                 "LE WHERE (SAV_CODE_SQ_PK = @SAV_CODE_SQ_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[SAV_SUBSTANCE_VIRTUELLE] SET [SAV_CODE_SQ_PK] = @SAV_CODE_SQ_" & _
-                "PK, [SAV_LIBELLE] = @SAV_LIBELLE, [SAV_CODE_REF] = @SAV_CODE_REF WHERE (([SAV_CO" & _
-                "DE_SQ_PK] = @Original_SAV_CODE_SQ_PK) AND ((@IsNull_SAV_LIBELLE = 1 AND [SAV_LIB" & _
-                "ELLE] IS NULL) OR ([SAV_LIBELLE] = @Original_SAV_LIBELLE)) AND ((@IsNull_SAV_COD" & _
-                "E_REF = 1 AND [SAV_CODE_REF] IS NULL) OR ([SAV_CODE_REF] = @Original_SAV_CODE_RE" & _
-                "F)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT SAV_CODE_SQ_PK, SAV_LIBELLE, SAV_CODE_REF FROM theriaque.SAV_SUBST" & _
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[SAV_SUBSTANCE_VIRTUELLE] SET [SAV_CODE_SQ_PK] = @SAV_CODE_SQ_"& _ 
+                "PK, [SAV_LIBELLE] = @SAV_LIBELLE, [SAV_CODE_REF] = @SAV_CODE_REF WHERE (([SAV_CO"& _ 
+                "DE_SQ_PK] = @Original_SAV_CODE_SQ_PK) AND ((@IsNull_SAV_LIBELLE = 1 AND [SAV_LIB"& _ 
+                "ELLE] IS NULL) OR ([SAV_LIBELLE] = @Original_SAV_LIBELLE)) AND ((@IsNull_SAV_COD"& _ 
+                "E_REF = 1 AND [SAV_CODE_REF] IS NULL) OR ([SAV_CODE_REF] = @Original_SAV_CODE_RE"& _ 
+                "F)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT SAV_CODE_SQ_PK, SAV_LIBELLE, SAV_CODE_REF FROM theriaque.SAV_SUBST"& _ 
                 "ANCE_VIRTUELLE WHERE (SAV_CODE_SQ_PK = @SAV_CODE_SQ_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_LIBELLE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_LIBELLE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_LIBELLE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_LIBELLE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_SAV_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_SAV_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "SAV_CODE_REF", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -49034,53 +49005,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_SAV_CODE_SQ_PK, SAV_LIBELLE, SAV_CODE_REF, Original_SAV_CODE_SQ_PK, Original_SAV_LIBELLE, Original_SAV_CODE_REF)
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class MVPF_MED_VIR_PERE_FORMETableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
+
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
+
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -49094,34 +49065,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -49132,38 +49103,38 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[MVPF_MED_VIR_PERE_FORME] WHERE (([MVPF_GSP_CODE_FK_PK] ="& _ 
-                " @Original_MVPF_GSP_CODE_FK_PK) AND ([MVPF_FOV_CODE_FK_PK] = @Original_MVPF_FOV_"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[MVPF_MED_VIR_PERE_FORME] WHERE (([MVPF_GSP_CODE_FK_PK] =" & _
+                " @Original_MVPF_GSP_CODE_FK_PK) AND ([MVPF_FOV_CODE_FK_PK] = @Original_MVPF_FOV_" & _
                 "CODE_FK_PK))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[MVPF_MED_VIR_PERE_FORME] ([MVPF_GSP_CODE_FK_PK], [MVPF_F"& _ 
-                "OV_CODE_FK_PK]) VALUES (@MVPF_GSP_CODE_FK_PK, @MVPF_FOV_CODE_FK_PK);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT MVP"& _ 
-                "F_GSP_CODE_FK_PK, MVPF_FOV_CODE_FK_PK FROM theriaque.MVPF_MED_VIR_PERE_FORME WHE"& _ 
-                "RE (MVPF_FOV_CODE_FK_PK = @MVPF_FOV_CODE_FK_PK) AND (MVPF_GSP_CODE_FK_PK = @MVPF"& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[MVPF_MED_VIR_PERE_FORME] ([MVPF_GSP_CODE_FK_PK], [MVPF_F" & _
+                "OV_CODE_FK_PK]) VALUES (@MVPF_GSP_CODE_FK_PK, @MVPF_FOV_CODE_FK_PK);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT MVP" & _
+                "F_GSP_CODE_FK_PK, MVPF_FOV_CODE_FK_PK FROM theriaque.MVPF_MED_VIR_PERE_FORME WHE" & _
+                "RE (MVPF_FOV_CODE_FK_PK = @MVPF_FOV_CODE_FK_PK) AND (MVPF_GSP_CODE_FK_PK = @MVPF" & _
                 "_GSP_CODE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[MVPF_MED_VIR_PERE_FORME] SET [MVPF_GSP_CODE_FK_PK] = @MVPF_GS"& _ 
-                "P_CODE_FK_PK, [MVPF_FOV_CODE_FK_PK] = @MVPF_FOV_CODE_FK_PK WHERE (([MVPF_GSP_COD"& _ 
-                "E_FK_PK] = @Original_MVPF_GSP_CODE_FK_PK) AND ([MVPF_FOV_CODE_FK_PK] = @Original"& _ 
-                "_MVPF_FOV_CODE_FK_PK));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT MVPF_GSP_CODE_FK_PK, MVPF_FOV_CODE_FK_PK FROM th"& _ 
-                "eriaque.MVPF_MED_VIR_PERE_FORME WHERE (MVPF_FOV_CODE_FK_PK = @MVPF_FOV_CODE_FK_P"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[MVPF_MED_VIR_PERE_FORME] SET [MVPF_GSP_CODE_FK_PK] = @MVPF_GS" & _
+                "P_CODE_FK_PK, [MVPF_FOV_CODE_FK_PK] = @MVPF_FOV_CODE_FK_PK WHERE (([MVPF_GSP_COD" & _
+                "E_FK_PK] = @Original_MVPF_GSP_CODE_FK_PK) AND ([MVPF_FOV_CODE_FK_PK] = @Original" & _
+                "_MVPF_FOV_CODE_FK_PK));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT MVPF_GSP_CODE_FK_PK, MVPF_FOV_CODE_FK_PK FROM th" & _
+                "eriaque.MVPF_MED_VIR_PERE_FORME WHERE (MVPF_FOV_CODE_FK_PK = @MVPF_FOV_CODE_FK_P" & _
                 "K) AND (MVPF_GSP_CODE_FK_PK = @MVPF_GSP_CODE_FK_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPF_FOV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPF_FOV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -49327,53 +49298,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_MVPF_GSP_CODE_FK_PK, Original_MVPF_FOV_CODE_FK_PK, Original_MVPF_GSP_CODE_FK_PK, Original_MVPF_FOV_CODE_FK_PK)
         End Function
     End Class
-
+    
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
-     Global.System.ComponentModel.ToolboxItem(True), _
-     Global.System.ComponentModel.DataObjectAttribute(True), _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class UNITFACTEQ_FACTEUR_EQUIVALENCETableAdapter
         Inherits Global.System.ComponentModel.Component
-
+        
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-
+        
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-
+        
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-
+        
         Private _clearBeforeFill As Boolean
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Sub New()
-            MyBase.New()
-            Me.ClearBeforeFill = True
+            MyBase.New
+            Me.ClearBeforeFill = true
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter()
+                    Me.InitAdapter
                 End If
                 Return Me._adapter
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection()
+                    Me.InitConnection
                 End If
                 Return Me._connection
             End Get
-            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
+            Set
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -49387,34 +49358,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection()
+                    Me.InitCommandCollection
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set(ByVal value As Boolean)
+            Set
                 Me._clearBeforeFill = value
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -49427,58 +49398,58 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[UNITFACTEQ_FACTEUR_EQUIVALENCE] WHERE (([UNITFACTEQ_CDF_" & _
-                "CODE_FK_PK] = @Original_UNITFACTEQ_CDF_CODE_FK_PK) AND ([UNITFACTEQ_REF_CDF_CODE" & _
-                "_FK_PK] = @Original_UNITFACTEQ_REF_CDF_CODE_FK_PK) AND ([UNITFACTEQ_CDF_NUM_FK_P" & _
-                "K] = @Original_UNITFACTEQ_CDF_NUM_FK_PK) AND ([UNITFACTEQ_FACTEQ] = @Original_UN" & _
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[UNITFACTEQ_FACTEUR_EQUIVALENCE] WHERE (([UNITFACTEQ_CDF_"& _ 
+                "CODE_FK_PK] = @Original_UNITFACTEQ_CDF_CODE_FK_PK) AND ([UNITFACTEQ_REF_CDF_CODE"& _ 
+                "_FK_PK] = @Original_UNITFACTEQ_REF_CDF_CODE_FK_PK) AND ([UNITFACTEQ_CDF_NUM_FK_P"& _ 
+                "K] = @Original_UNITFACTEQ_CDF_NUM_FK_PK) AND ([UNITFACTEQ_FACTEQ] = @Original_UN"& _ 
                 "ITFACTEQ_FACTEQ))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[UNITFACTEQ_FACTEUR_EQUIVALENCE] ([UNITFACTEQ_CDF_CODE_FK" & _
-                "_PK], [UNITFACTEQ_REF_CDF_CODE_FK_PK], [UNITFACTEQ_CDF_NUM_FK_PK], [UNITFACTEQ_F" & _
-                "ACTEQ]) VALUES (@UNITFACTEQ_CDF_CODE_FK_PK, @UNITFACTEQ_REF_CDF_CODE_FK_PK, @UNI" & _
-                "TFACTEQ_CDF_NUM_FK_PK, @UNITFACTEQ_FACTEQ);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT UNITFACTEQ_CDF_CODE_FK_PK, U" & _
-                "NITFACTEQ_REF_CDF_CODE_FK_PK, UNITFACTEQ_CDF_NUM_FK_PK, UNITFACTEQ_FACTEQ FROM t" & _
-                "heriaque.UNITFACTEQ_FACTEUR_EQUIVALENCE WHERE (UNITFACTEQ_CDF_CODE_FK_PK = @UNIT" & _
-                "FACTEQ_CDF_CODE_FK_PK) AND (UNITFACTEQ_CDF_NUM_FK_PK = @UNITFACTEQ_CDF_NUM_FK_PK" & _
-                ") AND (UNITFACTEQ_FACTEQ = @UNITFACTEQ_FACTEQ) AND (UNITFACTEQ_REF_CDF_CODE_FK_P" & _
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[UNITFACTEQ_FACTEUR_EQUIVALENCE] ([UNITFACTEQ_CDF_CODE_FK"& _ 
+                "_PK], [UNITFACTEQ_REF_CDF_CODE_FK_PK], [UNITFACTEQ_CDF_NUM_FK_PK], [UNITFACTEQ_F"& _ 
+                "ACTEQ]) VALUES (@UNITFACTEQ_CDF_CODE_FK_PK, @UNITFACTEQ_REF_CDF_CODE_FK_PK, @UNI"& _ 
+                "TFACTEQ_CDF_NUM_FK_PK, @UNITFACTEQ_FACTEQ);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT UNITFACTEQ_CDF_CODE_FK_PK, U"& _ 
+                "NITFACTEQ_REF_CDF_CODE_FK_PK, UNITFACTEQ_CDF_NUM_FK_PK, UNITFACTEQ_FACTEQ FROM t"& _ 
+                "heriaque.UNITFACTEQ_FACTEUR_EQUIVALENCE WHERE (UNITFACTEQ_CDF_CODE_FK_PK = @UNIT"& _ 
+                "FACTEQ_CDF_CODE_FK_PK) AND (UNITFACTEQ_CDF_NUM_FK_PK = @UNITFACTEQ_CDF_NUM_FK_PK"& _ 
+                ") AND (UNITFACTEQ_FACTEQ = @UNITFACTEQ_FACTEQ) AND (UNITFACTEQ_REF_CDF_CODE_FK_P"& _ 
                 "K = @UNITFACTEQ_REF_CDF_CODE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[UNITFACTEQ_FACTEUR_EQUIVALENCE] SET [UNITFACTEQ_CDF_CODE_FK_P" & _
-                "K] = @UNITFACTEQ_CDF_CODE_FK_PK, [UNITFACTEQ_REF_CDF_CODE_FK_PK] = @UNITFACTEQ_R" & _
-                "EF_CDF_CODE_FK_PK, [UNITFACTEQ_CDF_NUM_FK_PK] = @UNITFACTEQ_CDF_NUM_FK_PK, [UNIT" & _
-                "FACTEQ_FACTEQ] = @UNITFACTEQ_FACTEQ WHERE (([UNITFACTEQ_CDF_CODE_FK_PK] = @Origi" & _
-                "nal_UNITFACTEQ_CDF_CODE_FK_PK) AND ([UNITFACTEQ_REF_CDF_CODE_FK_PK] = @Original_" & _
-                "UNITFACTEQ_REF_CDF_CODE_FK_PK) AND ([UNITFACTEQ_CDF_NUM_FK_PK] = @Original_UNITF" & _
-                "ACTEQ_CDF_NUM_FK_PK) AND ([UNITFACTEQ_FACTEQ] = @Original_UNITFACTEQ_FACTEQ));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & _
-                "SELECT UNITFACTEQ_CDF_CODE_FK_PK, UNITFACTEQ_REF_CDF_CODE_FK_PK, UNITFACTEQ_CDF_" & _
-                "NUM_FK_PK, UNITFACTEQ_FACTEQ FROM theriaque.UNITFACTEQ_FACTEUR_EQUIVALENCE WHERE" & _
-                " (UNITFACTEQ_CDF_CODE_FK_PK = @UNITFACTEQ_CDF_CODE_FK_PK) AND (UNITFACTEQ_CDF_NU" & _
-                "M_FK_PK = @UNITFACTEQ_CDF_NUM_FK_PK) AND (UNITFACTEQ_FACTEQ = @UNITFACTEQ_FACTEQ" & _
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[UNITFACTEQ_FACTEUR_EQUIVALENCE] SET [UNITFACTEQ_CDF_CODE_FK_P"& _ 
+                "K] = @UNITFACTEQ_CDF_CODE_FK_PK, [UNITFACTEQ_REF_CDF_CODE_FK_PK] = @UNITFACTEQ_R"& _ 
+                "EF_CDF_CODE_FK_PK, [UNITFACTEQ_CDF_NUM_FK_PK] = @UNITFACTEQ_CDF_NUM_FK_PK, [UNIT"& _ 
+                "FACTEQ_FACTEQ] = @UNITFACTEQ_FACTEQ WHERE (([UNITFACTEQ_CDF_CODE_FK_PK] = @Origi"& _ 
+                "nal_UNITFACTEQ_CDF_CODE_FK_PK) AND ([UNITFACTEQ_REF_CDF_CODE_FK_PK] = @Original_"& _ 
+                "UNITFACTEQ_REF_CDF_CODE_FK_PK) AND ([UNITFACTEQ_CDF_NUM_FK_PK] = @Original_UNITF"& _ 
+                "ACTEQ_CDF_NUM_FK_PK) AND ([UNITFACTEQ_FACTEQ] = @Original_UNITFACTEQ_FACTEQ));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)& _ 
+                "SELECT UNITFACTEQ_CDF_CODE_FK_PK, UNITFACTEQ_REF_CDF_CODE_FK_PK, UNITFACTEQ_CDF_"& _ 
+                "NUM_FK_PK, UNITFACTEQ_FACTEQ FROM theriaque.UNITFACTEQ_FACTEUR_EQUIVALENCE WHERE"& _ 
+                " (UNITFACTEQ_CDF_CODE_FK_PK = @UNITFACTEQ_CDF_CODE_FK_PK) AND (UNITFACTEQ_CDF_NU"& _ 
+                "M_FK_PK = @UNITFACTEQ_CDF_NUM_FK_PK) AND (UNITFACTEQ_FACTEQ = @UNITFACTEQ_FACTEQ"& _ 
                 ") AND (UNITFACTEQ_REF_CDF_CODE_FK_PK = @UNITFACTEQ_REF_CDF_CODE_FK_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_REF_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UNITFACTEQ_CDF_NUM_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_UNITFACTEQ_FACTEQ", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 24, 12, "UNITFACTEQ_FACTEQ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -49719,53 +49690,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_UNITFACTEQ_CDF_CODE_FK_PK, Original_UNITFACTEQ_REF_CDF_CODE_FK_PK, Original_UNITFACTEQ_CDF_NUM_FK_PK, Original_UNITFACTEQ_FACTEQ, Original_UNITFACTEQ_CDF_CODE_FK_PK, Original_UNITFACTEQ_REF_CDF_CODE_FK_PK, Original_UNITFACTEQ_CDF_NUM_FK_PK, Original_UNITFACTEQ_FACTEQ)
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class GSP_GENERIQUE_SPECIALITETableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
+
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
+
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -49779,34 +49750,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -49828,141 +49799,141 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[GSP_GENERIQUE_SPECIALITE] WHERE (([GSP_CODE_SQ_PK] = @Or"& _ 
-                "iginal_GSP_CODE_SQ_PK) AND ([GSP_NOM] = @Original_GSP_NOM) AND ((@IsNull_GSP_COD"& _ 
-                "E_VIRTUEL = 1 AND [GSP_CODE_VIRTUEL] IS NULL) OR ([GSP_CODE_VIRTUEL] = @Original"& _ 
-                "_GSP_CODE_VIRTUEL)) AND ([GSP_DATECR] = @Original_GSP_DATECR) AND ((@IsNull_GSP_"& _ 
-                "DATEMJ = 1 AND [GSP_DATEMJ] IS NULL) OR ([GSP_DATEMJ] = @Original_GSP_DATEMJ)) A"& _ 
-                "ND ((@IsNull_GSP_PRESCRIPTION_DC = 1 AND [GSP_PRESCRIPTION_DC] IS NULL) OR ([GSP"& _ 
-                "_PRESCRIPTION_DC] = @Original_GSP_PRESCRIPTION_DC)) AND ((@IsNull_GSP_CODE_SP_RE"& _ 
-                "FERENCE = 1 AND [GSP_CODE_SP_REFERENCE] IS NULL) OR ([GSP_CODE_SP_REFERENCE] = @"& _ 
-                "Original_GSP_CODE_SP_REFERENCE)) AND ((@IsNull_GSP_INFO_GENERAL_TEXTE = 1 AND [G"& _ 
-                "SP_INFO_GENERAL_TEXTE] IS NULL) OR ([GSP_INFO_GENERAL_TEXTE] = @Original_GSP_INF"& _ 
-                "O_GENERAL_TEXTE)) AND ((@IsNull_GSP_CODE_VIRTUEL13 = 1 AND [GSP_CODE_VIRTUEL13] "& _ 
-                "IS NULL) OR ([GSP_CODE_VIRTUEL13] = @Original_GSP_CODE_VIRTUEL13)) AND ((@IsNull"& _ 
-                "_GSP_CODE_REF = 1 AND [GSP_CODE_REF] IS NULL) OR ([GSP_CODE_REF] = @Original_GSP"& _ 
-                "_CODE_REF)) AND ([GSP_ETAT_DISPO] = @Original_GSP_ETAT_DISPO) AND ((@IsNull_GSP_"& _ 
-                "DATE_DISPO = 1 AND [GSP_DATE_DISPO] IS NULL) OR ([GSP_DATE_DISPO] = @Original_GS"& _ 
-                "P_DATE_DISPO)) AND ((@IsNull_GSP_DATE_RETRAIT = 1 AND [GSP_DATE_RETRAIT] IS NULL"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[GSP_GENERIQUE_SPECIALITE] WHERE (([GSP_CODE_SQ_PK] = @Or" & _
+                "iginal_GSP_CODE_SQ_PK) AND ([GSP_NOM] = @Original_GSP_NOM) AND ((@IsNull_GSP_COD" & _
+                "E_VIRTUEL = 1 AND [GSP_CODE_VIRTUEL] IS NULL) OR ([GSP_CODE_VIRTUEL] = @Original" & _
+                "_GSP_CODE_VIRTUEL)) AND ([GSP_DATECR] = @Original_GSP_DATECR) AND ((@IsNull_GSP_" & _
+                "DATEMJ = 1 AND [GSP_DATEMJ] IS NULL) OR ([GSP_DATEMJ] = @Original_GSP_DATEMJ)) A" & _
+                "ND ((@IsNull_GSP_PRESCRIPTION_DC = 1 AND [GSP_PRESCRIPTION_DC] IS NULL) OR ([GSP" & _
+                "_PRESCRIPTION_DC] = @Original_GSP_PRESCRIPTION_DC)) AND ((@IsNull_GSP_CODE_SP_RE" & _
+                "FERENCE = 1 AND [GSP_CODE_SP_REFERENCE] IS NULL) OR ([GSP_CODE_SP_REFERENCE] = @" & _
+                "Original_GSP_CODE_SP_REFERENCE)) AND ((@IsNull_GSP_INFO_GENERAL_TEXTE = 1 AND [G" & _
+                "SP_INFO_GENERAL_TEXTE] IS NULL) OR ([GSP_INFO_GENERAL_TEXTE] = @Original_GSP_INF" & _
+                "O_GENERAL_TEXTE)) AND ((@IsNull_GSP_CODE_VIRTUEL13 = 1 AND [GSP_CODE_VIRTUEL13] " & _
+                "IS NULL) OR ([GSP_CODE_VIRTUEL13] = @Original_GSP_CODE_VIRTUEL13)) AND ((@IsNull" & _
+                "_GSP_CODE_REF = 1 AND [GSP_CODE_REF] IS NULL) OR ([GSP_CODE_REF] = @Original_GSP" & _
+                "_CODE_REF)) AND ([GSP_ETAT_DISPO] = @Original_GSP_ETAT_DISPO) AND ((@IsNull_GSP_" & _
+                "DATE_DISPO = 1 AND [GSP_DATE_DISPO] IS NULL) OR ([GSP_DATE_DISPO] = @Original_GS" & _
+                "P_DATE_DISPO)) AND ((@IsNull_GSP_DATE_RETRAIT = 1 AND [GSP_DATE_RETRAIT] IS NULL" & _
                 ") OR ([GSP_DATE_RETRAIT] = @Original_GSP_DATE_RETRAIT)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_DISPO", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_DISPO", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[GSP_GENERIQUE_SPECIALITE] ([GSP_CODE_SQ_PK], [GSP_NOM], "& _ 
-                "[GSP_CODE_VIRTUEL], [GSP_DATECR], [GSP_DATEMJ], [GSP_PRESCRIPTION_DC], [GSP_CODE"& _ 
-                "_SP_REFERENCE], [GSP_INFO_GENERAL_TEXTE], [GSP_CODE_VIRTUEL13], [GSP_CODE_REF], "& _ 
-                "[GSP_ETAT_DISPO], [GSP_DATE_DISPO], [GSP_DATE_RETRAIT]) VALUES (@GSP_CODE_SQ_PK,"& _ 
-                " @GSP_NOM, @GSP_CODE_VIRTUEL, @GSP_DATECR, @GSP_DATEMJ, @GSP_PRESCRIPTION_DC, @G"& _ 
-                "SP_CODE_SP_REFERENCE, @GSP_INFO_GENERAL_TEXTE, @GSP_CODE_VIRTUEL13, @GSP_CODE_RE"& _ 
-                "F, @GSP_ETAT_DISPO, @GSP_DATE_DISPO, @GSP_DATE_RETRAIT);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT GSP_CODE_SQ_PK,"& _ 
-                " GSP_NOM, GSP_CODE_VIRTUEL, GSP_DATECR, GSP_DATEMJ, GSP_PRESCRIPTION_DC, GSP_COD"& _ 
-                "E_SP_REFERENCE, GSP_INFO_GENERAL_TEXTE, GSP_CODE_VIRTUEL13, GSP_CODE_REF, GSP_ET"& _ 
-                "AT_DISPO, GSP_DATE_DISPO, GSP_DATE_RETRAIT FROM theriaque.GSP_GENERIQUE_SPECIALI"& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[GSP_GENERIQUE_SPECIALITE] ([GSP_CODE_SQ_PK], [GSP_NOM], " & _
+                "[GSP_CODE_VIRTUEL], [GSP_DATECR], [GSP_DATEMJ], [GSP_PRESCRIPTION_DC], [GSP_CODE" & _
+                "_SP_REFERENCE], [GSP_INFO_GENERAL_TEXTE], [GSP_CODE_VIRTUEL13], [GSP_CODE_REF], " & _
+                "[GSP_ETAT_DISPO], [GSP_DATE_DISPO], [GSP_DATE_RETRAIT]) VALUES (@GSP_CODE_SQ_PK," & _
+                " @GSP_NOM, @GSP_CODE_VIRTUEL, @GSP_DATECR, @GSP_DATEMJ, @GSP_PRESCRIPTION_DC, @G" & _
+                "SP_CODE_SP_REFERENCE, @GSP_INFO_GENERAL_TEXTE, @GSP_CODE_VIRTUEL13, @GSP_CODE_RE" & _
+                "F, @GSP_ETAT_DISPO, @GSP_DATE_DISPO, @GSP_DATE_RETRAIT);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT GSP_CODE_SQ_PK," & _
+                " GSP_NOM, GSP_CODE_VIRTUEL, GSP_DATECR, GSP_DATEMJ, GSP_PRESCRIPTION_DC, GSP_COD" & _
+                "E_SP_REFERENCE, GSP_INFO_GENERAL_TEXTE, GSP_CODE_VIRTUEL13, GSP_CODE_REF, GSP_ET" & _
+                "AT_DISPO, GSP_DATE_DISPO, GSP_DATE_RETRAIT FROM theriaque.GSP_GENERIQUE_SPECIALI" & _
                 "TE WHERE (GSP_CODE_SQ_PK = @GSP_CODE_SQ_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[GSP_GENERIQUE_SPECIALITE] SET [GSP_CODE_SQ_PK] = @GSP_CODE_SQ"& _ 
-                "_PK, [GSP_NOM] = @GSP_NOM, [GSP_CODE_VIRTUEL] = @GSP_CODE_VIRTUEL, [GSP_DATECR] "& _ 
-                "= @GSP_DATECR, [GSP_DATEMJ] = @GSP_DATEMJ, [GSP_PRESCRIPTION_DC] = @GSP_PRESCRIP"& _ 
-                "TION_DC, [GSP_CODE_SP_REFERENCE] = @GSP_CODE_SP_REFERENCE, [GSP_INFO_GENERAL_TEX"& _ 
-                "TE] = @GSP_INFO_GENERAL_TEXTE, [GSP_CODE_VIRTUEL13] = @GSP_CODE_VIRTUEL13, [GSP_"& _ 
-                "CODE_REF] = @GSP_CODE_REF, [GSP_ETAT_DISPO] = @GSP_ETAT_DISPO, [GSP_DATE_DISPO] "& _ 
-                "= @GSP_DATE_DISPO, [GSP_DATE_RETRAIT] = @GSP_DATE_RETRAIT WHERE (([GSP_CODE_SQ_P"& _ 
-                "K] = @Original_GSP_CODE_SQ_PK) AND ([GSP_NOM] = @Original_GSP_NOM) AND ((@IsNull"& _ 
-                "_GSP_CODE_VIRTUEL = 1 AND [GSP_CODE_VIRTUEL] IS NULL) OR ([GSP_CODE_VIRTUEL] = @"& _ 
-                "Original_GSP_CODE_VIRTUEL)) AND ([GSP_DATECR] = @Original_GSP_DATECR) AND ((@IsN"& _ 
-                "ull_GSP_DATEMJ = 1 AND [GSP_DATEMJ] IS NULL) OR ([GSP_DATEMJ] = @Original_GSP_DA"& _ 
-                "TEMJ)) AND ((@IsNull_GSP_PRESCRIPTION_DC = 1 AND [GSP_PRESCRIPTION_DC] IS NULL) "& _ 
-                "OR ([GSP_PRESCRIPTION_DC] = @Original_GSP_PRESCRIPTION_DC)) AND ((@IsNull_GSP_CO"& _ 
-                "DE_SP_REFERENCE = 1 AND [GSP_CODE_SP_REFERENCE] IS NULL) OR ([GSP_CODE_SP_REFERE"& _ 
-                "NCE] = @Original_GSP_CODE_SP_REFERENCE)) AND ((@IsNull_GSP_INFO_GENERAL_TEXTE = "& _ 
-                "1 AND [GSP_INFO_GENERAL_TEXTE] IS NULL) OR ([GSP_INFO_GENERAL_TEXTE] = @Original"& _ 
-                "_GSP_INFO_GENERAL_TEXTE)) AND ((@IsNull_GSP_CODE_VIRTUEL13 = 1 AND [GSP_CODE_VIR"& _ 
-                "TUEL13] IS NULL) OR ([GSP_CODE_VIRTUEL13] = @Original_GSP_CODE_VIRTUEL13)) AND ("& _ 
-                "(@IsNull_GSP_CODE_REF = 1 AND [GSP_CODE_REF] IS NULL) OR ([GSP_CODE_REF] = @Orig"& _ 
-                "inal_GSP_CODE_REF)) AND ([GSP_ETAT_DISPO] = @Original_GSP_ETAT_DISPO) AND ((@IsN"& _ 
-                "ull_GSP_DATE_DISPO = 1 AND [GSP_DATE_DISPO] IS NULL) OR ([GSP_DATE_DISPO] = @Ori"& _ 
-                "ginal_GSP_DATE_DISPO)) AND ((@IsNull_GSP_DATE_RETRAIT = 1 AND [GSP_DATE_RETRAIT]"& _ 
-                " IS NULL) OR ([GSP_DATE_RETRAIT] = @Original_GSP_DATE_RETRAIT)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT GSP_CO"& _ 
-                "DE_SQ_PK, GSP_NOM, GSP_CODE_VIRTUEL, GSP_DATECR, GSP_DATEMJ, GSP_PRESCRIPTION_DC"& _ 
-                ", GSP_CODE_SP_REFERENCE, GSP_INFO_GENERAL_TEXTE, GSP_CODE_VIRTUEL13, GSP_CODE_RE"& _ 
-                "F, GSP_ETAT_DISPO, GSP_DATE_DISPO, GSP_DATE_RETRAIT FROM theriaque.GSP_GENERIQUE"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[GSP_GENERIQUE_SPECIALITE] SET [GSP_CODE_SQ_PK] = @GSP_CODE_SQ" & _
+                "_PK, [GSP_NOM] = @GSP_NOM, [GSP_CODE_VIRTUEL] = @GSP_CODE_VIRTUEL, [GSP_DATECR] " & _
+                "= @GSP_DATECR, [GSP_DATEMJ] = @GSP_DATEMJ, [GSP_PRESCRIPTION_DC] = @GSP_PRESCRIP" & _
+                "TION_DC, [GSP_CODE_SP_REFERENCE] = @GSP_CODE_SP_REFERENCE, [GSP_INFO_GENERAL_TEX" & _
+                "TE] = @GSP_INFO_GENERAL_TEXTE, [GSP_CODE_VIRTUEL13] = @GSP_CODE_VIRTUEL13, [GSP_" & _
+                "CODE_REF] = @GSP_CODE_REF, [GSP_ETAT_DISPO] = @GSP_ETAT_DISPO, [GSP_DATE_DISPO] " & _
+                "= @GSP_DATE_DISPO, [GSP_DATE_RETRAIT] = @GSP_DATE_RETRAIT WHERE (([GSP_CODE_SQ_P" & _
+                "K] = @Original_GSP_CODE_SQ_PK) AND ([GSP_NOM] = @Original_GSP_NOM) AND ((@IsNull" & _
+                "_GSP_CODE_VIRTUEL = 1 AND [GSP_CODE_VIRTUEL] IS NULL) OR ([GSP_CODE_VIRTUEL] = @" & _
+                "Original_GSP_CODE_VIRTUEL)) AND ([GSP_DATECR] = @Original_GSP_DATECR) AND ((@IsN" & _
+                "ull_GSP_DATEMJ = 1 AND [GSP_DATEMJ] IS NULL) OR ([GSP_DATEMJ] = @Original_GSP_DA" & _
+                "TEMJ)) AND ((@IsNull_GSP_PRESCRIPTION_DC = 1 AND [GSP_PRESCRIPTION_DC] IS NULL) " & _
+                "OR ([GSP_PRESCRIPTION_DC] = @Original_GSP_PRESCRIPTION_DC)) AND ((@IsNull_GSP_CO" & _
+                "DE_SP_REFERENCE = 1 AND [GSP_CODE_SP_REFERENCE] IS NULL) OR ([GSP_CODE_SP_REFERE" & _
+                "NCE] = @Original_GSP_CODE_SP_REFERENCE)) AND ((@IsNull_GSP_INFO_GENERAL_TEXTE = " & _
+                "1 AND [GSP_INFO_GENERAL_TEXTE] IS NULL) OR ([GSP_INFO_GENERAL_TEXTE] = @Original" & _
+                "_GSP_INFO_GENERAL_TEXTE)) AND ((@IsNull_GSP_CODE_VIRTUEL13 = 1 AND [GSP_CODE_VIR" & _
+                "TUEL13] IS NULL) OR ([GSP_CODE_VIRTUEL13] = @Original_GSP_CODE_VIRTUEL13)) AND (" & _
+                "(@IsNull_GSP_CODE_REF = 1 AND [GSP_CODE_REF] IS NULL) OR ([GSP_CODE_REF] = @Orig" & _
+                "inal_GSP_CODE_REF)) AND ([GSP_ETAT_DISPO] = @Original_GSP_ETAT_DISPO) AND ((@IsN" & _
+                "ull_GSP_DATE_DISPO = 1 AND [GSP_DATE_DISPO] IS NULL) OR ([GSP_DATE_DISPO] = @Ori" & _
+                "ginal_GSP_DATE_DISPO)) AND ((@IsNull_GSP_DATE_RETRAIT = 1 AND [GSP_DATE_RETRAIT]" & _
+                " IS NULL) OR ([GSP_DATE_RETRAIT] = @Original_GSP_DATE_RETRAIT)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT GSP_CO" & _
+                "DE_SQ_PK, GSP_NOM, GSP_CODE_VIRTUEL, GSP_DATECR, GSP_DATEMJ, GSP_PRESCRIPTION_DC" & _
+                ", GSP_CODE_SP_REFERENCE, GSP_INFO_GENERAL_TEXTE, GSP_CODE_VIRTUEL13, GSP_CODE_RE" & _
+                "F, GSP_ETAT_DISPO, GSP_DATE_DISPO, GSP_DATE_RETRAIT FROM theriaque.GSP_GENERIQUE" & _
                 "_SPECIALITE WHERE (GSP_CODE_SQ_PK = @GSP_CODE_SQ_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_DISPO", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SQ_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SQ_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_NOM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_NOM", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATECR", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATEMJ", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_PRESCRIPTION_DC", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_PRESCRIPTION_DC", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_SP_REFERENCE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_SP_REFERENCE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_INFO_GENERAL_TEXTE", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_INFO_GENERAL_TEXTE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_VIRTUEL13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_VIRTUEL13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_CODE_REF", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_CODE_REF", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_CODE_REF", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_ETAT_DISPO", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_ETAT_DISPO", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_DISPO", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_DISPO", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_DISPO", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_GSP_DATE_RETRAIT", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "GSP_DATE_RETRAIT", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -50437,53 +50408,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_GSP_CODE_SQ_PK, GSP_NOM, GSP_CODE_VIRTUEL, GSP_DATECR, GSP_DATEMJ, GSP_PRESCRIPTION_DC, GSP_CODE_SP_REFERENCE, GSP_INFO_GENERAL_TEXTE, GSP_CODE_VIRTUEL13, GSP_CODE_REF, GSP_ETAT_DISPO, GSP_DATE_DISPO, GSP_DATE_RETRAIT, Original_GSP_CODE_SQ_PK, Original_GSP_NOM, Original_GSP_CODE_VIRTUEL, Original_GSP_DATECR, Original_GSP_DATEMJ, Original_GSP_PRESCRIPTION_DC, Original_GSP_CODE_SP_REFERENCE, Original_GSP_INFO_GENERAL_TEXTE, Original_GSP_CODE_VIRTUEL13, Original_GSP_CODE_REF, Original_GSP_ETAT_DISPO, Original_GSP_DATE_DISPO, Original_GSP_DATE_RETRAIT)
         End Function
     End Class
-
+    
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
-     Global.System.ComponentModel.ToolboxItem(True), _
-     Global.System.ComponentModel.DataObjectAttribute(True), _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class MVPSDU_MED_VIR_PERE_SATableAdapter
         Inherits Global.System.ComponentModel.Component
-
+        
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-
+        
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-
+        
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-
+        
         Private _clearBeforeFill As Boolean
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Sub New()
-            MyBase.New()
-            Me.ClearBeforeFill = True
+            MyBase.New
+            Me.ClearBeforeFill = true
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter()
+                    Me.InitAdapter
                 End If
                 Return Me._adapter
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection()
+                    Me.InitConnection
                 End If
                 Return Me._connection
             End Get
-            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
+            Set
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -50497,34 +50468,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection()
+                    Me.InitCommandCollection
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set(ByVal value As Boolean)
+            Set
                 Me._clearBeforeFill = value
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -50539,76 +50510,76 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[MVPSDU_MED_VIR_PERE_SA] WHERE (([MVPSDU_GSP_CODE_FK_PK] " & _
-                "= @Original_MVPSDU_GSP_CODE_FK_PK) AND ([MVPSDU_SAV_CODE_FK_PK] = @Original_MVPS" & _
-                "DU_SAV_CODE_FK_PK) AND ((@IsNull_MVPSDU_DOSAGE = 1 AND [MVPSDU_DOSAGE] IS NULL) " & _
-                "OR ([MVPSDU_DOSAGE] = @Original_MVPSDU_DOSAGE)) AND ((@IsNull_MVPSDU_CDF_UNITE =" & _
-                " 1 AND [MVPSDU_CDF_UNITE] IS NULL) OR ([MVPSDU_CDF_UNITE] = @Original_MVPSDU_CDF" & _
-                "_UNITE)) AND ((@IsNull_MVPSDU_CODE_ANSM = 1 AND [MVPSDU_CODE_ANSM] IS NULL) OR (" & _
-                "[MVPSDU_CODE_ANSM] = @Original_MVPSDU_CODE_ANSM)) AND ([MVPSDU_NUM_ORD] = @Origi" & _
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[MVPSDU_MED_VIR_PERE_SA] WHERE (([MVPSDU_GSP_CODE_FK_PK] "& _ 
+                "= @Original_MVPSDU_GSP_CODE_FK_PK) AND ([MVPSDU_SAV_CODE_FK_PK] = @Original_MVPS"& _ 
+                "DU_SAV_CODE_FK_PK) AND ((@IsNull_MVPSDU_DOSAGE = 1 AND [MVPSDU_DOSAGE] IS NULL) "& _ 
+                "OR ([MVPSDU_DOSAGE] = @Original_MVPSDU_DOSAGE)) AND ((@IsNull_MVPSDU_CDF_UNITE ="& _ 
+                " 1 AND [MVPSDU_CDF_UNITE] IS NULL) OR ([MVPSDU_CDF_UNITE] = @Original_MVPSDU_CDF"& _ 
+                "_UNITE)) AND ((@IsNull_MVPSDU_CODE_ANSM = 1 AND [MVPSDU_CODE_ANSM] IS NULL) OR ("& _ 
+                "[MVPSDU_CODE_ANSM] = @Original_MVPSDU_CODE_ANSM)) AND ([MVPSDU_NUM_ORD] = @Origi"& _ 
                 "nal_MVPSDU_NUM_ORD))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[MVPSDU_MED_VIR_PERE_SA] ([MVPSDU_GSP_CODE_FK_PK], [MVPSD" & _
-                "U_SAV_CODE_FK_PK], [MVPSDU_DOSAGE], [MVPSDU_CDF_UNITE], [MVPSDU_CODE_ANSM], [MVP" & _
-                "SDU_NUM_ORD]) VALUES (@MVPSDU_GSP_CODE_FK_PK, @MVPSDU_SAV_CODE_FK_PK, @MVPSDU_DO" & _
-                "SAGE, @MVPSDU_CDF_UNITE, @MVPSDU_CODE_ANSM, @MVPSDU_NUM_ORD);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT MVPSDU_GSP" & _
-                "_CODE_FK_PK, MVPSDU_SAV_CODE_FK_PK, MVPSDU_DOSAGE, MVPSDU_CDF_UNITE, MVPSDU_CODE" & _
-                "_ANSM, MVPSDU_NUM_ORD FROM theriaque.MVPSDU_MED_VIR_PERE_SA WHERE (MVPSDU_GSP_CO" & _
-                "DE_FK_PK = @MVPSDU_GSP_CODE_FK_PK) AND (MVPSDU_SAV_CODE_FK_PK = @MVPSDU_SAV_CODE" & _
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[MVPSDU_MED_VIR_PERE_SA] ([MVPSDU_GSP_CODE_FK_PK], [MVPSD"& _ 
+                "U_SAV_CODE_FK_PK], [MVPSDU_DOSAGE], [MVPSDU_CDF_UNITE], [MVPSDU_CODE_ANSM], [MVP"& _ 
+                "SDU_NUM_ORD]) VALUES (@MVPSDU_GSP_CODE_FK_PK, @MVPSDU_SAV_CODE_FK_PK, @MVPSDU_DO"& _ 
+                "SAGE, @MVPSDU_CDF_UNITE, @MVPSDU_CODE_ANSM, @MVPSDU_NUM_ORD);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT MVPSDU_GSP"& _ 
+                "_CODE_FK_PK, MVPSDU_SAV_CODE_FK_PK, MVPSDU_DOSAGE, MVPSDU_CDF_UNITE, MVPSDU_CODE"& _ 
+                "_ANSM, MVPSDU_NUM_ORD FROM theriaque.MVPSDU_MED_VIR_PERE_SA WHERE (MVPSDU_GSP_CO"& _ 
+                "DE_FK_PK = @MVPSDU_GSP_CODE_FK_PK) AND (MVPSDU_SAV_CODE_FK_PK = @MVPSDU_SAV_CODE"& _ 
                 "_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[MVPSDU_MED_VIR_PERE_SA] SET [MVPSDU_GSP_CODE_FK_PK] = @MVPSDU" & _
-                "_GSP_CODE_FK_PK, [MVPSDU_SAV_CODE_FK_PK] = @MVPSDU_SAV_CODE_FK_PK, [MVPSDU_DOSAG" & _
-                "E] = @MVPSDU_DOSAGE, [MVPSDU_CDF_UNITE] = @MVPSDU_CDF_UNITE, [MVPSDU_CODE_ANSM] " & _
-                "= @MVPSDU_CODE_ANSM, [MVPSDU_NUM_ORD] = @MVPSDU_NUM_ORD WHERE (([MVPSDU_GSP_CODE" & _
-                "_FK_PK] = @Original_MVPSDU_GSP_CODE_FK_PK) AND ([MVPSDU_SAV_CODE_FK_PK] = @Origi" & _
-                "nal_MVPSDU_SAV_CODE_FK_PK) AND ((@IsNull_MVPSDU_DOSAGE = 1 AND [MVPSDU_DOSAGE] I" & _
-                "S NULL) OR ([MVPSDU_DOSAGE] = @Original_MVPSDU_DOSAGE)) AND ((@IsNull_MVPSDU_CDF" & _
-                "_UNITE = 1 AND [MVPSDU_CDF_UNITE] IS NULL) OR ([MVPSDU_CDF_UNITE] = @Original_MV" & _
-                "PSDU_CDF_UNITE)) AND ((@IsNull_MVPSDU_CODE_ANSM = 1 AND [MVPSDU_CODE_ANSM] IS NU" & _
-                "LL) OR ([MVPSDU_CODE_ANSM] = @Original_MVPSDU_CODE_ANSM)) AND ([MVPSDU_NUM_ORD] " & _
-                "= @Original_MVPSDU_NUM_ORD));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT MVPSDU_GSP_CODE_FK_PK, MVPSDU_SAV_CODE_FK_" & _
-                "PK, MVPSDU_DOSAGE, MVPSDU_CDF_UNITE, MVPSDU_CODE_ANSM, MVPSDU_NUM_ORD FROM theri" & _
-                "aque.MVPSDU_MED_VIR_PERE_SA WHERE (MVPSDU_GSP_CODE_FK_PK = @MVPSDU_GSP_CODE_FK_P" & _
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[MVPSDU_MED_VIR_PERE_SA] SET [MVPSDU_GSP_CODE_FK_PK] = @MVPSDU"& _ 
+                "_GSP_CODE_FK_PK, [MVPSDU_SAV_CODE_FK_PK] = @MVPSDU_SAV_CODE_FK_PK, [MVPSDU_DOSAG"& _ 
+                "E] = @MVPSDU_DOSAGE, [MVPSDU_CDF_UNITE] = @MVPSDU_CDF_UNITE, [MVPSDU_CODE_ANSM] "& _ 
+                "= @MVPSDU_CODE_ANSM, [MVPSDU_NUM_ORD] = @MVPSDU_NUM_ORD WHERE (([MVPSDU_GSP_CODE"& _ 
+                "_FK_PK] = @Original_MVPSDU_GSP_CODE_FK_PK) AND ([MVPSDU_SAV_CODE_FK_PK] = @Origi"& _ 
+                "nal_MVPSDU_SAV_CODE_FK_PK) AND ((@IsNull_MVPSDU_DOSAGE = 1 AND [MVPSDU_DOSAGE] I"& _ 
+                "S NULL) OR ([MVPSDU_DOSAGE] = @Original_MVPSDU_DOSAGE)) AND ((@IsNull_MVPSDU_CDF"& _ 
+                "_UNITE = 1 AND [MVPSDU_CDF_UNITE] IS NULL) OR ([MVPSDU_CDF_UNITE] = @Original_MV"& _ 
+                "PSDU_CDF_UNITE)) AND ((@IsNull_MVPSDU_CODE_ANSM = 1 AND [MVPSDU_CODE_ANSM] IS NU"& _ 
+                "LL) OR ([MVPSDU_CODE_ANSM] = @Original_MVPSDU_CODE_ANSM)) AND ([MVPSDU_NUM_ORD] "& _ 
+                "= @Original_MVPSDU_NUM_ORD));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT MVPSDU_GSP_CODE_FK_PK, MVPSDU_SAV_CODE_FK_"& _ 
+                "PK, MVPSDU_DOSAGE, MVPSDU_CDF_UNITE, MVPSDU_CODE_ANSM, MVPSDU_NUM_ORD FROM theri"& _ 
+                "aque.MVPSDU_MED_VIR_PERE_SA WHERE (MVPSDU_GSP_CODE_FK_PK = @MVPSDU_GSP_CODE_FK_P"& _ 
                 "K) AND (MVPSDU_SAV_CODE_FK_PK = @MVPSDU_SAV_CODE_FK_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_GSP_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_GSP_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_DOSAGE", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "MVPSDU_DOSAGE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CDF_UNITE", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CDF_UNITE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_CODE_ANSM", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_CODE_ANSM", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPSDU_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPSDU_NUM_ORD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -50849,53 +50820,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_MVPSDU_GSP_CODE_FK_PK, Original_MVPSDU_SAV_CODE_FK_PK, MVPSDU_DOSAGE, MVPSDU_CDF_UNITE, MVPSDU_CODE_ANSM, MVPSDU_NUM_ORD, Original_MVPSDU_GSP_CODE_FK_PK, Original_MVPSDU_SAV_CODE_FK_PK, Original_MVPSDU_DOSAGE, Original_MVPSDU_CDF_UNITE, Original_MVPSDU_CODE_ANSM, Original_MVPSDU_NUM_ORD)
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class PREDISPMAX_PRE_DISP_MAXIMALE1TableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
+
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
+
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -50909,34 +50880,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -50950,73 +50921,73 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] WHERE (([PREDISPMAX_PRE_CO"& _ 
-                "DE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_PRE_CI"& _ 
-                "P13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @Origin"& _ 
-                "al_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISPMAX_MA"& _ 
-                "XUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND ((@Is"& _ 
-                "Null_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMAX_MAXC"& _ 
-                "IP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Original"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] WHERE (([PREDISPMAX_PRE_CO" & _
+                "DE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_PRE_CI" & _
+                "P13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @Origin" & _
+                "al_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISPMAX_MA" & _
+                "XUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND ((@Is" & _
+                "Null_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMAX_MAXC" & _
+                "IP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Original" & _
                 "_PREDISPMAX_CDF_TYPE_FK_PK))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] ([PREDISPMAX_PRE_CODE_FK_P"& _ 
-                "K], [PREDISPMAX_PRE_CIP13], [PREDISPMAX_MAXUCD], [PREDISPMAX_MAXCIP], [PREDISPMA"& _ 
-                "X_CDF_TYPE_FK_PK]) VALUES (@PREDISPMAX_PRE_CODE_FK_PK, @PREDISPMAX_PRE_CIP13, @P"& _ 
-                "REDISPMAX_MAXUCD, @PREDISPMAX_MAXCIP, @PREDISPMAX_CDF_TYPE_FK_PK);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREDI"& _ 
-                "SPMAX_PRE_CODE_FK_PK, PREDISPMAX_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP"& _ 
-                ", PREDISPMAX_CDF_TYPE_FK_PK FROM theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (P"& _ 
-                "REDISPMAX_CDF_TYPE_FK_PK = @PREDISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_"& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] ([PREDISPMAX_PRE_CODE_FK_P" & _
+                "K], [PREDISPMAX_PRE_CIP13], [PREDISPMAX_MAXUCD], [PREDISPMAX_MAXCIP], [PREDISPMA" & _
+                "X_CDF_TYPE_FK_PK]) VALUES (@PREDISPMAX_PRE_CODE_FK_PK, @PREDISPMAX_PRE_CIP13, @P" & _
+                "REDISPMAX_MAXUCD, @PREDISPMAX_MAXCIP, @PREDISPMAX_CDF_TYPE_FK_PK);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREDI" & _
+                "SPMAX_PRE_CODE_FK_PK, PREDISPMAX_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP" & _
+                ", PREDISPMAX_CDF_TYPE_FK_PK FROM theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (P" & _
+                "REDISPMAX_CDF_TYPE_FK_PK = @PREDISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_" & _
                 "FK_PK = @PREDISPMAX_PRE_CODE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] SET [PREDISPMAX_PRE_CODE_FK_PK]"& _ 
-                " = @PREDISPMAX_PRE_CODE_FK_PK, [PREDISPMAX_PRE_CIP13] = @PREDISPMAX_PRE_CIP13, ["& _ 
-                "PREDISPMAX_MAXUCD] = @PREDISPMAX_MAXUCD, [PREDISPMAX_MAXCIP] = @PREDISPMAX_MAXCI"& _ 
-                "P, [PREDISPMAX_CDF_TYPE_FK_PK] = @PREDISPMAX_CDF_TYPE_FK_PK WHERE (([PREDISPMAX_"& _ 
-                "PRE_CODE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_"& _ 
-                "PRE_CIP13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @"& _ 
-                "Original_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISP"& _ 
-                "MAX_MAXUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND"& _ 
-                " ((@IsNull_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMA"& _ 
-                "X_MAXCIP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Or"& _ 
-                "iginal_PREDISPMAX_CDF_TYPE_FK_PK));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREDISPMAX_PRE_CODE_FK_PK, PREDISPMA"& _ 
-                "X_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP, PREDISPMAX_CDF_TYPE_FK_PK FRO"& _ 
-                "M theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (PREDISPMAX_CDF_TYPE_FK_PK = @PRE"& _ 
-                "DISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_FK_PK = @PREDISPMAX_PRE_CODE_FK"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] SET [PREDISPMAX_PRE_CODE_FK_PK]" & _
+                " = @PREDISPMAX_PRE_CODE_FK_PK, [PREDISPMAX_PRE_CIP13] = @PREDISPMAX_PRE_CIP13, [" & _
+                "PREDISPMAX_MAXUCD] = @PREDISPMAX_MAXUCD, [PREDISPMAX_MAXCIP] = @PREDISPMAX_MAXCI" & _
+                "P, [PREDISPMAX_CDF_TYPE_FK_PK] = @PREDISPMAX_CDF_TYPE_FK_PK WHERE (([PREDISPMAX_" & _
+                "PRE_CODE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_" & _
+                "PRE_CIP13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @" & _
+                "Original_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISP" & _
+                "MAX_MAXUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND" & _
+                " ((@IsNull_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMA" & _
+                "X_MAXCIP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Or" & _
+                "iginal_PREDISPMAX_CDF_TYPE_FK_PK));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREDISPMAX_PRE_CODE_FK_PK, PREDISPMA" & _
+                "X_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP, PREDISPMAX_CDF_TYPE_FK_PK FRO" & _
+                "M theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (PREDISPMAX_CDF_TYPE_FK_PK = @PRE" & _
+                "DISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_FK_PK = @PREDISPMAX_PRE_CODE_FK" & _
                 "_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 18, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -51294,53 +51265,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_PREDISPMAX_PRE_CODE_FK_PK, PREDISPMAX_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP, Original_PREDISPMAX_CDF_TYPE_FK_PK, Original_PREDISPMAX_PRE_CODE_FK_PK, Original_PREDISPMAX_PRE_CIP13, Original_PREDISPMAX_MAXUCD, Original_PREDISPMAX_MAXCIP, Original_PREDISPMAX_CDF_TYPE_FK_PK)
         End Function
     End Class
-
+    
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
-     Global.System.ComponentModel.ToolboxItem(True), _
-     Global.System.ComponentModel.DataObjectAttribute(True), _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class PREDISP_PRE_DISPENSATIONTableAdapter
         Inherits Global.System.ComponentModel.Component
-
+        
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-
+        
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-
+        
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-
+        
         Private _clearBeforeFill As Boolean
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Sub New()
-            MyBase.New()
-            Me.ClearBeforeFill = True
+            MyBase.New
+            Me.ClearBeforeFill = true
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter()
+                    Me.InitAdapter
                 End If
                 Return Me._adapter
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection()
+                    Me.InitConnection
                 End If
                 Return Me._connection
             End Get
-            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
+            Set
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -51354,34 +51325,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection()
+                    Me.InitCommandCollection
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set(ByVal value As Boolean)
+            Set
                 Me._clearBeforeFill = value
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -51397,84 +51368,84 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREDISP_PRE_DISPENSATION] WHERE (([PREDISP_PRE_CODE_FK_P" & _
-                "K] = @Original_PREDISP_PRE_CODE_FK_PK) AND ([PREDISP_NUMSEQ_PK] = @Original_PRED" & _
-                "ISP_NUMSEQ_PK) AND ((@IsNull_PREDISP_SAC_CODE_FK = 1 AND [PREDISP_SAC_CODE_FK] I" & _
-                "S NULL) OR ([PREDISP_SAC_CODE_FK] = @Original_PREDISP_SAC_CODE_FK)) AND ([PREDIS" & _
-                "P_UNITEDISP] = @Original_PREDISP_UNITEDISP) AND ([PREDISP_CDF_UD_CODE_FK] = @Ori" & _
-                "ginal_PREDISP_CDF_UD_CODE_FK) AND ((@IsNull_PREDISP_CIP13 = 1 AND [PREDISP_CIP13" & _
-                "] IS NULL) OR ([PREDISP_CIP13] = @Original_PREDISP_CIP13)) AND ((@IsNull_PREDISP" & _
-                "_DOSEFRAC = 1 AND [PREDISP_DOSEFRAC] IS NULL) OR ([PREDISP_DOSEFRAC] = @Original" & _
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREDISP_PRE_DISPENSATION] WHERE (([PREDISP_PRE_CODE_FK_P"& _ 
+                "K] = @Original_PREDISP_PRE_CODE_FK_PK) AND ([PREDISP_NUMSEQ_PK] = @Original_PRED"& _ 
+                "ISP_NUMSEQ_PK) AND ((@IsNull_PREDISP_SAC_CODE_FK = 1 AND [PREDISP_SAC_CODE_FK] I"& _ 
+                "S NULL) OR ([PREDISP_SAC_CODE_FK] = @Original_PREDISP_SAC_CODE_FK)) AND ([PREDIS"& _ 
+                "P_UNITEDISP] = @Original_PREDISP_UNITEDISP) AND ([PREDISP_CDF_UD_CODE_FK] = @Ori"& _ 
+                "ginal_PREDISP_CDF_UD_CODE_FK) AND ((@IsNull_PREDISP_CIP13 = 1 AND [PREDISP_CIP13"& _ 
+                "] IS NULL) OR ([PREDISP_CIP13] = @Original_PREDISP_CIP13)) AND ((@IsNull_PREDISP"& _ 
+                "_DOSEFRAC = 1 AND [PREDISP_DOSEFRAC] IS NULL) OR ([PREDISP_DOSEFRAC] = @Original"& _ 
                 "_PREDISP_DOSEFRAC)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREDISP_PRE_DISPENSATION] ([PREDISP_PRE_CODE_FK_PK], [PR" & _
-                "EDISP_NUMSEQ_PK], [PREDISP_SAC_CODE_FK], [PREDISP_UNITEDISP], [PREDISP_CDF_UD_CO" & _
-                "DE_FK], [PREDISP_CIP13], [PREDISP_DOSEFRAC]) VALUES (@PREDISP_PRE_CODE_FK_PK, @P" & _
-                "REDISP_NUMSEQ_PK, @PREDISP_SAC_CODE_FK, @PREDISP_UNITEDISP, @PREDISP_CDF_UD_CODE" & _
-                "_FK, @PREDISP_CIP13, @PREDISP_DOSEFRAC);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREDISP_PRE_CODE_FK_PK, PREDISP" & _
-                "_NUMSEQ_PK, PREDISP_SAC_CODE_FK, PREDISP_UNITEDISP, PREDISP_CDF_UD_CODE_FK, PRED" & _
-                "ISP_CIP13, PREDISP_DOSEFRAC FROM theriaque.PREDISP_PRE_DISPENSATION WHERE (PREDI" & _
-                "SP_NUMSEQ_PK = @PREDISP_NUMSEQ_PK) AND (PREDISP_PRE_CODE_FK_PK = @PREDISP_PRE_CO" & _
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREDISP_PRE_DISPENSATION] ([PREDISP_PRE_CODE_FK_PK], [PR"& _ 
+                "EDISP_NUMSEQ_PK], [PREDISP_SAC_CODE_FK], [PREDISP_UNITEDISP], [PREDISP_CDF_UD_CO"& _ 
+                "DE_FK], [PREDISP_CIP13], [PREDISP_DOSEFRAC]) VALUES (@PREDISP_PRE_CODE_FK_PK, @P"& _ 
+                "REDISP_NUMSEQ_PK, @PREDISP_SAC_CODE_FK, @PREDISP_UNITEDISP, @PREDISP_CDF_UD_CODE"& _ 
+                "_FK, @PREDISP_CIP13, @PREDISP_DOSEFRAC);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREDISP_PRE_CODE_FK_PK, PREDISP"& _ 
+                "_NUMSEQ_PK, PREDISP_SAC_CODE_FK, PREDISP_UNITEDISP, PREDISP_CDF_UD_CODE_FK, PRED"& _ 
+                "ISP_CIP13, PREDISP_DOSEFRAC FROM theriaque.PREDISP_PRE_DISPENSATION WHERE (PREDI"& _ 
+                "SP_NUMSEQ_PK = @PREDISP_NUMSEQ_PK) AND (PREDISP_PRE_CODE_FK_PK = @PREDISP_PRE_CO"& _ 
                 "DE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREDISP_PRE_DISPENSATION] SET [PREDISP_PRE_CODE_FK_PK] = @PRE" & _
-                "DISP_PRE_CODE_FK_PK, [PREDISP_NUMSEQ_PK] = @PREDISP_NUMSEQ_PK, [PREDISP_SAC_CODE" & _
-                "_FK] = @PREDISP_SAC_CODE_FK, [PREDISP_UNITEDISP] = @PREDISP_UNITEDISP, [PREDISP_" & _
-                "CDF_UD_CODE_FK] = @PREDISP_CDF_UD_CODE_FK, [PREDISP_CIP13] = @PREDISP_CIP13, [PR" & _
-                "EDISP_DOSEFRAC] = @PREDISP_DOSEFRAC WHERE (([PREDISP_PRE_CODE_FK_PK] = @Original" & _
-                "_PREDISP_PRE_CODE_FK_PK) AND ([PREDISP_NUMSEQ_PK] = @Original_PREDISP_NUMSEQ_PK)" & _
-                " AND ((@IsNull_PREDISP_SAC_CODE_FK = 1 AND [PREDISP_SAC_CODE_FK] IS NULL) OR ([P" & _
-                "REDISP_SAC_CODE_FK] = @Original_PREDISP_SAC_CODE_FK)) AND ([PREDISP_UNITEDISP] =" & _
-                " @Original_PREDISP_UNITEDISP) AND ([PREDISP_CDF_UD_CODE_FK] = @Original_PREDISP_" & _
-                "CDF_UD_CODE_FK) AND ((@IsNull_PREDISP_CIP13 = 1 AND [PREDISP_CIP13] IS NULL) OR " & _
-                "([PREDISP_CIP13] = @Original_PREDISP_CIP13)) AND ((@IsNull_PREDISP_DOSEFRAC = 1 " & _
-                "AND [PREDISP_DOSEFRAC] IS NULL) OR ([PREDISP_DOSEFRAC] = @Original_PREDISP_DOSEF" & _
-                "RAC)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREDISP_PRE_CODE_FK_PK, PREDISP_NUMSEQ_PK, PREDISP_SAC_CODE_FK, " & _
-                "PREDISP_UNITEDISP, PREDISP_CDF_UD_CODE_FK, PREDISP_CIP13, PREDISP_DOSEFRAC FROM " & _
-                "theriaque.PREDISP_PRE_DISPENSATION WHERE (PREDISP_NUMSEQ_PK = @PREDISP_NUMSEQ_PK" & _
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREDISP_PRE_DISPENSATION] SET [PREDISP_PRE_CODE_FK_PK] = @PRE"& _ 
+                "DISP_PRE_CODE_FK_PK, [PREDISP_NUMSEQ_PK] = @PREDISP_NUMSEQ_PK, [PREDISP_SAC_CODE"& _ 
+                "_FK] = @PREDISP_SAC_CODE_FK, [PREDISP_UNITEDISP] = @PREDISP_UNITEDISP, [PREDISP_"& _ 
+                "CDF_UD_CODE_FK] = @PREDISP_CDF_UD_CODE_FK, [PREDISP_CIP13] = @PREDISP_CIP13, [PR"& _ 
+                "EDISP_DOSEFRAC] = @PREDISP_DOSEFRAC WHERE (([PREDISP_PRE_CODE_FK_PK] = @Original"& _ 
+                "_PREDISP_PRE_CODE_FK_PK) AND ([PREDISP_NUMSEQ_PK] = @Original_PREDISP_NUMSEQ_PK)"& _ 
+                " AND ((@IsNull_PREDISP_SAC_CODE_FK = 1 AND [PREDISP_SAC_CODE_FK] IS NULL) OR ([P"& _ 
+                "REDISP_SAC_CODE_FK] = @Original_PREDISP_SAC_CODE_FK)) AND ([PREDISP_UNITEDISP] ="& _ 
+                " @Original_PREDISP_UNITEDISP) AND ([PREDISP_CDF_UD_CODE_FK] = @Original_PREDISP_"& _ 
+                "CDF_UD_CODE_FK) AND ((@IsNull_PREDISP_CIP13 = 1 AND [PREDISP_CIP13] IS NULL) OR "& _ 
+                "([PREDISP_CIP13] = @Original_PREDISP_CIP13)) AND ((@IsNull_PREDISP_DOSEFRAC = 1 "& _ 
+                "AND [PREDISP_DOSEFRAC] IS NULL) OR ([PREDISP_DOSEFRAC] = @Original_PREDISP_DOSEF"& _ 
+                "RAC)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREDISP_PRE_CODE_FK_PK, PREDISP_NUMSEQ_PK, PREDISP_SAC_CODE_FK, "& _ 
+                "PREDISP_UNITEDISP, PREDISP_CDF_UD_CODE_FK, PREDISP_CIP13, PREDISP_DOSEFRAC FROM "& _ 
+                "theriaque.PREDISP_PRE_DISPENSATION WHERE (PREDISP_NUMSEQ_PK = @PREDISP_NUMSEQ_PK"& _ 
                 ") AND (PREDISP_PRE_CODE_FK_PK = @PREDISP_PRE_CODE_FK_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_NUMSEQ_PK", Global.System.Data.SqlDbType.TinyInt, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_NUMSEQ_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_SAC_CODE_FK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_SAC_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_UNITEDISP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_UNITEDISP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CDF_UD_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CDF_UD_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISP_DOSEFRAC", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 10, "PREDISP_DOSEFRAC", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -51760,53 +51731,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_PREDISP_PRE_CODE_FK_PK, Original_PREDISP_NUMSEQ_PK, PREDISP_SAC_CODE_FK, PREDISP_UNITEDISP, PREDISP_CDF_UD_CODE_FK, PREDISP_CIP13, PREDISP_DOSEFRAC, Original_PREDISP_PRE_CODE_FK_PK, Original_PREDISP_NUMSEQ_PK, Original_PREDISP_SAC_CODE_FK, Original_PREDISP_UNITEDISP, Original_PREDISP_CDF_UD_CODE_FK, Original_PREDISP_CIP13, Original_PREDISP_DOSEFRAC)
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class PREDISPMAX_PRE_DISP_MAXIMALETableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
+
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
+
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -51820,34 +51791,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -51861,73 +51832,73 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] WHERE (([PREDISPMAX_PRE_CO"& _ 
-                "DE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_PRE_CI"& _ 
-                "P13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @Origin"& _ 
-                "al_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISPMAX_MA"& _ 
-                "XUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND ((@Is"& _ 
-                "Null_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMAX_MAXC"& _ 
-                "IP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Original"& _ 
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] WHERE (([PREDISPMAX_PRE_CO" & _
+                "DE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_PRE_CI" & _
+                "P13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @Origin" & _
+                "al_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISPMAX_MA" & _
+                "XUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND ((@Is" & _
+                "Null_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMAX_MAXC" & _
+                "IP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Original" & _
                 "_PREDISPMAX_CDF_TYPE_FK_PK))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] ([PREDISPMAX_PRE_CODE_FK_P"& _ 
-                "K], [PREDISPMAX_PRE_CIP13], [PREDISPMAX_MAXUCD], [PREDISPMAX_MAXCIP], [PREDISPMA"& _ 
-                "X_CDF_TYPE_FK_PK]) VALUES (@PREDISPMAX_PRE_CODE_FK_PK, @PREDISPMAX_PRE_CIP13, @P"& _ 
-                "REDISPMAX_MAXUCD, @PREDISPMAX_MAXCIP, @PREDISPMAX_CDF_TYPE_FK_PK);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREDI"& _ 
-                "SPMAX_PRE_CODE_FK_PK, PREDISPMAX_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP"& _ 
-                ", PREDISPMAX_CDF_TYPE_FK_PK FROM theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (P"& _ 
-                "REDISPMAX_CDF_TYPE_FK_PK = @PREDISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_"& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] ([PREDISPMAX_PRE_CODE_FK_P" & _
+                "K], [PREDISPMAX_PRE_CIP13], [PREDISPMAX_MAXUCD], [PREDISPMAX_MAXCIP], [PREDISPMA" & _
+                "X_CDF_TYPE_FK_PK]) VALUES (@PREDISPMAX_PRE_CODE_FK_PK, @PREDISPMAX_PRE_CIP13, @P" & _
+                "REDISPMAX_MAXUCD, @PREDISPMAX_MAXCIP, @PREDISPMAX_CDF_TYPE_FK_PK);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREDI" & _
+                "SPMAX_PRE_CODE_FK_PK, PREDISPMAX_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP" & _
+                ", PREDISPMAX_CDF_TYPE_FK_PK FROM theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (P" & _
+                "REDISPMAX_CDF_TYPE_FK_PK = @PREDISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_" & _
                 "FK_PK = @PREDISPMAX_PRE_CODE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] SET [PREDISPMAX_PRE_CODE_FK_PK]"& _ 
-                " = @PREDISPMAX_PRE_CODE_FK_PK, [PREDISPMAX_PRE_CIP13] = @PREDISPMAX_PRE_CIP13, ["& _ 
-                "PREDISPMAX_MAXUCD] = @PREDISPMAX_MAXUCD, [PREDISPMAX_MAXCIP] = @PREDISPMAX_MAXCI"& _ 
-                "P, [PREDISPMAX_CDF_TYPE_FK_PK] = @PREDISPMAX_CDF_TYPE_FK_PK WHERE (([PREDISPMAX_"& _ 
-                "PRE_CODE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_"& _ 
-                "PRE_CIP13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @"& _ 
-                "Original_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISP"& _ 
-                "MAX_MAXUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND"& _ 
-                " ((@IsNull_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMA"& _ 
-                "X_MAXCIP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Or"& _ 
-                "iginal_PREDISPMAX_CDF_TYPE_FK_PK));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREDISPMAX_PRE_CODE_FK_PK, PREDISPMA"& _ 
-                "X_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP, PREDISPMAX_CDF_TYPE_FK_PK FRO"& _ 
-                "M theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (PREDISPMAX_CDF_TYPE_FK_PK = @PRE"& _ 
-                "DISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_FK_PK = @PREDISPMAX_PRE_CODE_FK"& _ 
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREDISPMAX_PRE_DISP_MAXIMALE] SET [PREDISPMAX_PRE_CODE_FK_PK]" & _
+                " = @PREDISPMAX_PRE_CODE_FK_PK, [PREDISPMAX_PRE_CIP13] = @PREDISPMAX_PRE_CIP13, [" & _
+                "PREDISPMAX_MAXUCD] = @PREDISPMAX_MAXUCD, [PREDISPMAX_MAXCIP] = @PREDISPMAX_MAXCI" & _
+                "P, [PREDISPMAX_CDF_TYPE_FK_PK] = @PREDISPMAX_CDF_TYPE_FK_PK WHERE (([PREDISPMAX_" & _
+                "PRE_CODE_FK_PK] = @Original_PREDISPMAX_PRE_CODE_FK_PK) AND ((@IsNull_PREDISPMAX_" & _
+                "PRE_CIP13 = 1 AND [PREDISPMAX_PRE_CIP13] IS NULL) OR ([PREDISPMAX_PRE_CIP13] = @" & _
+                "Original_PREDISPMAX_PRE_CIP13)) AND ((@IsNull_PREDISPMAX_MAXUCD = 1 AND [PREDISP" & _
+                "MAX_MAXUCD] IS NULL) OR ([PREDISPMAX_MAXUCD] = @Original_PREDISPMAX_MAXUCD)) AND" & _
+                " ((@IsNull_PREDISPMAX_MAXCIP = 1 AND [PREDISPMAX_MAXCIP] IS NULL) OR ([PREDISPMA" & _
+                "X_MAXCIP] = @Original_PREDISPMAX_MAXCIP)) AND ([PREDISPMAX_CDF_TYPE_FK_PK] = @Or" & _
+                "iginal_PREDISPMAX_CDF_TYPE_FK_PK));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREDISPMAX_PRE_CODE_FK_PK, PREDISPMA" & _
+                "X_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP, PREDISPMAX_CDF_TYPE_FK_PK FRO" & _
+                "M theriaque.PREDISPMAX_PRE_DISP_MAXIMALE WHERE (PREDISPMAX_CDF_TYPE_FK_PK = @PRE" & _
+                "DISPMAX_CDF_TYPE_FK_PK) AND (PREDISPMAX_PRE_CODE_FK_PK = @PREDISPMAX_PRE_CODE_FK" & _
                 "_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_PRE_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_PRE_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXUCD", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXUCD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_MAXCIP", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 20, 12, "PREDISPMAX_MAXCIP", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREDISPMAX_CDF_TYPE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -52205,53 +52176,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_PREDISPMAX_PRE_CODE_FK_PK, PREDISPMAX_PRE_CIP13, PREDISPMAX_MAXUCD, PREDISPMAX_MAXCIP, Original_PREDISPMAX_CDF_TYPE_FK_PK, Original_PREDISPMAX_PRE_CODE_FK_PK, Original_PREDISPMAX_PRE_CIP13, Original_PREDISPMAX_MAXUCD, Original_PREDISPMAX_MAXCIP, Original_PREDISPMAX_CDF_TYPE_FK_PK)
         End Function
     End Class
-
+    
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
-     Global.System.ComponentModel.ToolboxItem(True), _
-     Global.System.ComponentModel.DataObjectAttribute(True), _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class MVPRSAV_MED_VIR_PER_SUBS_VIRTTableAdapter
         Inherits Global.System.ComponentModel.Component
-
+        
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-
+        
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-
+        
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-
+        
         Private _clearBeforeFill As Boolean
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Sub New()
-            MyBase.New()
-            Me.ClearBeforeFill = True
+            MyBase.New
+            Me.ClearBeforeFill = true
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter()
+                    Me.InitAdapter
                 End If
                 Return Me._adapter
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection()
+                    Me.InitConnection
                 End If
                 Return Me._connection
             End Get
-            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
+            Set
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -52265,34 +52236,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection()
+                    Me.InitCommandCollection
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set(ByVal value As Boolean)
+            Set
                 Me._clearBeforeFill = value
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -52304,49 +52275,49 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[MVPRSAV_MED_VIR_PER_SUBS_VIRT] WHERE (([MVPRSAV_MVPR_COD" & _
-                "E_FK_PK] = @Original_MVPRSAV_MVPR_CODE_FK_PK) AND ([MVPRSAV_SAV_CODE_FK_PK] = @O" & _
-                "riginal_MVPRSAV_SAV_CODE_FK_PK) AND ((@IsNull_MVPRSAV_NUM_ORD = 1 AND [MVPRSAV_N" & _
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[MVPRSAV_MED_VIR_PER_SUBS_VIRT] WHERE (([MVPRSAV_MVPR_COD"& _ 
+                "E_FK_PK] = @Original_MVPRSAV_MVPR_CODE_FK_PK) AND ([MVPRSAV_SAV_CODE_FK_PK] = @O"& _ 
+                "riginal_MVPRSAV_SAV_CODE_FK_PK) AND ((@IsNull_MVPRSAV_NUM_ORD = 1 AND [MVPRSAV_N"& _ 
                 "UM_ORD] IS NULL) OR ([MVPRSAV_NUM_ORD] = @Original_MVPRSAV_NUM_ORD)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[MVPRSAV_MED_VIR_PER_SUBS_VIRT] ([MVPRSAV_MVPR_CODE_FK_PK" & _
-                "], [MVPRSAV_SAV_CODE_FK_PK], [MVPRSAV_NUM_ORD]) VALUES (@MVPRSAV_MVPR_CODE_FK_PK" & _
-                ", @MVPRSAV_SAV_CODE_FK_PK, @MVPRSAV_NUM_ORD);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT MVPRSAV_MVPR_CODE_FK_PK, M" & _
-                "VPRSAV_SAV_CODE_FK_PK, MVPRSAV_NUM_ORD FROM theriaque.MVPRSAV_MED_VIR_PER_SUBS_V" & _
-                "IRT WHERE (MVPRSAV_MVPR_CODE_FK_PK = @MVPRSAV_MVPR_CODE_FK_PK) AND (MVPRSAV_SAV_" & _
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[MVPRSAV_MED_VIR_PER_SUBS_VIRT] ([MVPRSAV_MVPR_CODE_FK_PK"& _ 
+                "], [MVPRSAV_SAV_CODE_FK_PK], [MVPRSAV_NUM_ORD]) VALUES (@MVPRSAV_MVPR_CODE_FK_PK"& _ 
+                ", @MVPRSAV_SAV_CODE_FK_PK, @MVPRSAV_NUM_ORD);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT MVPRSAV_MVPR_CODE_FK_PK, M"& _ 
+                "VPRSAV_SAV_CODE_FK_PK, MVPRSAV_NUM_ORD FROM theriaque.MVPRSAV_MED_VIR_PER_SUBS_V"& _ 
+                "IRT WHERE (MVPRSAV_MVPR_CODE_FK_PK = @MVPRSAV_MVPR_CODE_FK_PK) AND (MVPRSAV_SAV_"& _ 
                 "CODE_FK_PK = @MVPRSAV_SAV_CODE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[MVPRSAV_MED_VIR_PER_SUBS_VIRT] SET [MVPRSAV_MVPR_CODE_FK_PK] " & _
-                "= @MVPRSAV_MVPR_CODE_FK_PK, [MVPRSAV_SAV_CODE_FK_PK] = @MVPRSAV_SAV_CODE_FK_PK, " & _
-                "[MVPRSAV_NUM_ORD] = @MVPRSAV_NUM_ORD WHERE (([MVPRSAV_MVPR_CODE_FK_PK] = @Origin" & _
-                "al_MVPRSAV_MVPR_CODE_FK_PK) AND ([MVPRSAV_SAV_CODE_FK_PK] = @Original_MVPRSAV_SA" & _
-                "V_CODE_FK_PK) AND ((@IsNull_MVPRSAV_NUM_ORD = 1 AND [MVPRSAV_NUM_ORD] IS NULL) O" & _
-                "R ([MVPRSAV_NUM_ORD] = @Original_MVPRSAV_NUM_ORD)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT MVPRSAV_MVPR_CODE_F" & _
-                "K_PK, MVPRSAV_SAV_CODE_FK_PK, MVPRSAV_NUM_ORD FROM theriaque.MVPRSAV_MED_VIR_PER" & _
-                "_SUBS_VIRT WHERE (MVPRSAV_MVPR_CODE_FK_PK = @MVPRSAV_MVPR_CODE_FK_PK) AND (MVPRS" & _
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[MVPRSAV_MED_VIR_PER_SUBS_VIRT] SET [MVPRSAV_MVPR_CODE_FK_PK] "& _ 
+                "= @MVPRSAV_MVPR_CODE_FK_PK, [MVPRSAV_SAV_CODE_FK_PK] = @MVPRSAV_SAV_CODE_FK_PK, "& _ 
+                "[MVPRSAV_NUM_ORD] = @MVPRSAV_NUM_ORD WHERE (([MVPRSAV_MVPR_CODE_FK_PK] = @Origin"& _ 
+                "al_MVPRSAV_MVPR_CODE_FK_PK) AND ([MVPRSAV_SAV_CODE_FK_PK] = @Original_MVPRSAV_SA"& _ 
+                "V_CODE_FK_PK) AND ((@IsNull_MVPRSAV_NUM_ORD = 1 AND [MVPRSAV_NUM_ORD] IS NULL) O"& _ 
+                "R ([MVPRSAV_NUM_ORD] = @Original_MVPRSAV_NUM_ORD)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT MVPRSAV_MVPR_CODE_F"& _ 
+                "K_PK, MVPRSAV_SAV_CODE_FK_PK, MVPRSAV_NUM_ORD FROM theriaque.MVPRSAV_MED_VIR_PER"& _ 
+                "_SUBS_VIRT WHERE (MVPRSAV_MVPR_CODE_FK_PK = @MVPRSAV_MVPR_CODE_FK_PK) AND (MVPRS"& _ 
                 "AV_SAV_CODE_FK_PK = @MVPRSAV_SAV_CODE_FK_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_MVPR_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_SAV_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_MVPRSAV_NUM_ORD", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "MVPRSAV_NUM_ORD", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -52535,53 +52506,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Return Me.Update(Original_MVPRSAV_MVPR_CODE_FK_PK, Original_MVPRSAV_SAV_CODE_FK_PK, MVPRSAV_NUM_ORD, Original_MVPRSAV_MVPR_CODE_FK_PK, Original_MVPRSAV_SAV_CODE_FK_PK, Original_MVPRSAV_NUM_ORD)
         End Function
     End Class
-    
+
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
     Partial Public Class CDFCDFU_CDFUTableAdapter
         Inherits Global.System.ComponentModel.Component
-        
+
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
+
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
+
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
+
         Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
+            MyBase.New()
+            Me.ClearBeforeFill = True
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
+                    Me.InitAdapter()
                 End If
                 Return Me._adapter
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection
+                    Me.InitConnection()
                 End If
                 Return Me._connection
             End Get
-            Set
+            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -52595,34 +52566,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
+                    Me.InitCommandCollection()
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set
+            Set(ByVal value As Boolean)
                 Me._clearBeforeFill = value
             End Set
         End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -52634,16 +52605,16 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[CDFCDFU_CDFU] ([CDFCDFU_CDFUCUM_CODE_FK_PK], [CDFCDFU_CD"& _ 
-                "F_NUMERO_FK_PK], [CDFCDFU_CDF_CODE_FK_PK]) VALUES (@CDFCDFU_CDFUCUM_CODE_FK_PK, "& _ 
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[CDFCDFU_CDFU] ([CDFCDFU_CDFUCUM_CODE_FK_PK], [CDFCDFU_CD" & _
+                "F_NUMERO_FK_PK], [CDFCDFU_CDF_CODE_FK_PK]) VALUES (@CDFCDFU_CDFUCUM_CODE_FK_PK, " & _
                 "@CDFCDFU_CDF_NUMERO_FK_PK, @CDFCDFU_CDF_CODE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFCDFU_CDFUCUM_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFCDFU_CDFUCUM_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFCDFU_CDF_NUMERO_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFCDFU_CDF_NUMERO_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFCDFU_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFCDFU_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFCDFU_CDFUCUM_CODE_FK_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFCDFU_CDFUCUM_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFCDFU_CDF_NUMERO_FK_PK", Global.System.Data.SqlDbType.[Char], 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFCDFU_CDF_NUMERO_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFCDFU_CDF_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFCDFU_CDF_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
         End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -52785,53 +52756,53 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             End Try
         End Function
     End Class
-
+    
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"), _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
-     Global.System.ComponentModel.ToolboxItem(True), _
-     Global.System.ComponentModel.DataObjectAttribute(True), _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class PREVOLSOL_VOLUME_SOLUTIONTableAdapter
         Inherits Global.System.ComponentModel.Component
-
+        
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-
+        
         Private _connection As Global.System.Data.SqlClient.SqlConnection
-
+        
         Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-
+        
         Private _clearBeforeFill As Boolean
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Sub New()
-            MyBase.New()
-            Me.ClearBeforeFill = True
+            MyBase.New
+            Me.ClearBeforeFill = true
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
             Get
                 If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter()
+                    Me.InitAdapter
                 End If
                 Return Me._adapter
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
             Get
                 If (Me._connection Is Nothing) Then
-                    Me.InitConnection()
+                    Me.InitConnection
                 End If
                 Return Me._connection
             End Get
-            Set(ByVal value As Global.System.Data.SqlClient.SqlConnection)
+            Set
                 Me._connection = value
                 If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
                     Me.Adapter.InsertCommand.Connection = value
@@ -52845,34 +52816,34 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
                 Dim i As Integer = 0
                 Do While (i < Me.CommandCollection.Length)
                     If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
                     End If
                     i = (i + 1)
                 Loop
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
             Get
                 If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection()
+                    Me.InitCommandCollection
                 End If
                 Return Me._commandCollection
             End Get
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Public Property ClearBeforeFill() As Boolean
             Get
                 Return Me._clearBeforeFill
             End Get
-            Set(ByVal value As Boolean)
+            Set
                 Me._clearBeforeFill = value
             End Set
         End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitAdapter()
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
@@ -52885,55 +52856,55 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREVOLSOL_VOLUME_SOLUTION] WHERE (([PREVOLSOL_PRE_CODE_F" & _
-                "K_PK] = @Original_PREVOLSOL_PRE_CODE_FK_PK) AND ([PREVOLSOL_VOLSOLUTION] = @Orig" & _
-                "inal_PREVOLSOL_VOLSOLUTION) AND ([PREVOLSOL_CDF_VOL_CODE_FK] = @Original_PREVOLS" & _
-                "OL_CDF_VOL_CODE_FK) AND ((@IsNull_PREVOLSOL_CIP13 = 1 AND [PREVOLSOL_CIP13] IS N" & _
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[PREVOLSOL_VOLUME_SOLUTION] WHERE (([PREVOLSOL_PRE_CODE_F"& _ 
+                "K_PK] = @Original_PREVOLSOL_PRE_CODE_FK_PK) AND ([PREVOLSOL_VOLSOLUTION] = @Orig"& _ 
+                "inal_PREVOLSOL_VOLSOLUTION) AND ([PREVOLSOL_CDF_VOL_CODE_FK] = @Original_PREVOLS"& _ 
+                "OL_CDF_VOL_CODE_FK) AND ((@IsNull_PREVOLSOL_CIP13 = 1 AND [PREVOLSOL_CIP13] IS N"& _ 
                 "ULL) OR ([PREVOLSOL_CIP13] = @Original_PREVOLSOL_CIP13)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREVOLSOL_VOLUME_SOLUTION] ([PREVOLSOL_PRE_CODE_FK_PK], " & _
-                "[PREVOLSOL_VOLSOLUTION], [PREVOLSOL_CDF_VOL_CODE_FK], [PREVOLSOL_CIP13]) VALUES " & _
-                "(@PREVOLSOL_PRE_CODE_FK_PK, @PREVOLSOL_VOLSOLUTION, @PREVOLSOL_CDF_VOL_CODE_FK, " & _
-                "@PREVOLSOL_CIP13);" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREVOLSOL_PRE_CODE_FK_PK, PREVOLSOL_VOLSOLUTION, PREV" & _
-                "OLSOL_CDF_VOL_CODE_FK, PREVOLSOL_CIP13 FROM theriaque.PREVOLSOL_VOLUME_SOLUTION " & _
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[PREVOLSOL_VOLUME_SOLUTION] ([PREVOLSOL_PRE_CODE_FK_PK], "& _ 
+                "[PREVOLSOL_VOLSOLUTION], [PREVOLSOL_CDF_VOL_CODE_FK], [PREVOLSOL_CIP13]) VALUES "& _ 
+                "(@PREVOLSOL_PRE_CODE_FK_PK, @PREVOLSOL_VOLSOLUTION, @PREVOLSOL_CDF_VOL_CODE_FK, "& _ 
+                "@PREVOLSOL_CIP13);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREVOLSOL_PRE_CODE_FK_PK, PREVOLSOL_VOLSOLUTION, PREV"& _ 
+                "OLSOL_CDF_VOL_CODE_FK, PREVOLSOL_CIP13 FROM theriaque.PREVOLSOL_VOLUME_SOLUTION "& _ 
                 "WHERE (PREVOLSOL_PRE_CODE_FK_PK = @PREVOLSOL_PRE_CODE_FK_PK)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREVOLSOL_VOLUME_SOLUTION] SET [PREVOLSOL_PRE_CODE_FK_PK] = @" & _
-                "PREVOLSOL_PRE_CODE_FK_PK, [PREVOLSOL_VOLSOLUTION] = @PREVOLSOL_VOLSOLUTION, [PRE" & _
-                "VOLSOL_CDF_VOL_CODE_FK] = @PREVOLSOL_CDF_VOL_CODE_FK, [PREVOLSOL_CIP13] = @PREVO" & _
-                "LSOL_CIP13 WHERE (([PREVOLSOL_PRE_CODE_FK_PK] = @Original_PREVOLSOL_PRE_CODE_FK_" & _
-                "PK) AND ([PREVOLSOL_VOLSOLUTION] = @Original_PREVOLSOL_VOLSOLUTION) AND ([PREVOL" & _
-                "SOL_CDF_VOL_CODE_FK] = @Original_PREVOLSOL_CDF_VOL_CODE_FK) AND ((@IsNull_PREVOL" & _
-                "SOL_CIP13 = 1 AND [PREVOLSOL_CIP13] IS NULL) OR ([PREVOLSOL_CIP13] = @Original_P" & _
-                "REVOLSOL_CIP13)));" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "SELECT PREVOLSOL_PRE_CODE_FK_PK, PREVOLSOL_VOLSOLUTION, PREV" & _
-                "OLSOL_CDF_VOL_CODE_FK, PREVOLSOL_CIP13 FROM theriaque.PREVOLSOL_VOLUME_SOLUTION " & _
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[PREVOLSOL_VOLUME_SOLUTION] SET [PREVOLSOL_PRE_CODE_FK_PK] = @"& _ 
+                "PREVOLSOL_PRE_CODE_FK_PK, [PREVOLSOL_VOLSOLUTION] = @PREVOLSOL_VOLSOLUTION, [PRE"& _ 
+                "VOLSOL_CDF_VOL_CODE_FK] = @PREVOLSOL_CDF_VOL_CODE_FK, [PREVOLSOL_CIP13] = @PREVO"& _ 
+                "LSOL_CIP13 WHERE (([PREVOLSOL_PRE_CODE_FK_PK] = @Original_PREVOLSOL_PRE_CODE_FK_"& _ 
+                "PK) AND ([PREVOLSOL_VOLSOLUTION] = @Original_PREVOLSOL_VOLSOLUTION) AND ([PREVOL"& _ 
+                "SOL_CDF_VOL_CODE_FK] = @Original_PREVOLSOL_CDF_VOL_CODE_FK) AND ((@IsNull_PREVOL"& _ 
+                "SOL_CIP13 = 1 AND [PREVOLSOL_CIP13] IS NULL) OR ([PREVOLSOL_CIP13] = @Original_P"& _ 
+                "REVOLSOL_CIP13)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT PREVOLSOL_PRE_CODE_FK_PK, PREVOLSOL_VOLSOLUTION, PREV"& _ 
+                "OLSOL_CDF_VOL_CODE_FK, PREVOLSOL_CIP13 FROM theriaque.PREVOLSOL_VOLUME_SOLUTION "& _ 
                 "WHERE (PREVOLSOL_PRE_CODE_FK_PK = @PREVOLSOL_PRE_CODE_FK_PK)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, True, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_PRE_CODE_FK_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_VOLSOLUTION", Global.System.Data.SqlDbType.[Decimal], 0, Global.System.Data.ParameterDirection.Input, 10, 6, "PREVOLSOL_VOLSOLUTION", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CDF_VOL_CODE_FK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_PREVOLSOL_CIP13", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "PREVOLSOL_CIP13", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.SqlClient.SqlConnection
             Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
@@ -53164,355 +53135,6 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
         Public Overridable Overloads Function Update(ByVal PREVOLSOL_VOLSOLUTION As Decimal, ByVal PREVOLSOL_CDF_VOL_CODE_FK As String, ByVal PREVOLSOL_CIP13 As String, ByVal Original_PREVOLSOL_PRE_CODE_FK_PK As String, ByVal Original_PREVOLSOL_VOLSOLUTION As Decimal, ByVal Original_PREVOLSOL_CDF_VOL_CODE_FK As String, ByVal Original_PREVOLSOL_CIP13 As String) As Integer
             Return Me.Update(Original_PREVOLSOL_PRE_CODE_FK_PK, PREVOLSOL_VOLSOLUTION, PREVOLSOL_CDF_VOL_CODE_FK, PREVOLSOL_CIP13, Original_PREVOLSOL_PRE_CODE_FK_PK, Original_PREVOLSOL_VOLSOLUTION, Original_PREVOLSOL_CDF_VOL_CODE_FK, Original_PREVOLSOL_CIP13)
-        End Function
-    End Class
-    
-    '''<summary>
-    '''Represents the connection and commands used to retrieve and save data.
-    '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
-     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-    Partial Public Class CDFUCUM_UCUMTableAdapter
-        Inherits Global.System.ComponentModel.Component
-        
-        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
-        Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
-        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
-        Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
-            Get
-                If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
-                End If
-                Return Me._adapter
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
-            Get
-                If (Me._connection Is Nothing) Then
-                    Me.InitConnection
-                End If
-                Return Me._connection
-            End Get
-            Set
-                Me._connection = value
-                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
-                    Me.Adapter.InsertCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
-                    Me.Adapter.DeleteCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
-                    Me.Adapter.UpdateCommand.Connection = value
-                End If
-                Dim i As Integer = 0
-                Do While (i < Me.CommandCollection.Length)
-                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
-                    End If
-                    i = (i + 1)
-                Loop
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
-            Get
-                If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
-                End If
-                Return Me._commandCollection
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Public Property ClearBeforeFill() As Boolean
-            Get
-                Return Me._clearBeforeFill
-            End Get
-            Set
-                Me._clearBeforeFill = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Private Sub InitAdapter()
-            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
-            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
-            tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "CDFUCUM_UCUM"
-            tableMapping.ColumnMappings.Add("CDFUCUM_CODE_PK", "CDFUCUM_CODE_PK")
-            tableMapping.ColumnMappings.Add("CDFUCUM_SYMBOLE", "CDFUCUM_SYMBOLE")
-            tableMapping.ColumnMappings.Add("CDFUCUM_DATECR", "CDFUCUM_DATECR")
-            tableMapping.ColumnMappings.Add("CDFUCUM_DATEMJ", "CDFUCUM_DATEMJ")
-            Me._adapter.TableMappings.Add(tableMapping)
-            Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
-            Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[CDFUCUM_UCUM] WHERE (([CDFUCUM_CODE_PK] = @Original_CDFU"& _ 
-                "CUM_CODE_PK) AND ([CDFUCUM_SYMBOLE] = @Original_CDFUCUM_SYMBOLE) AND ([CDFUCUM_D"& _ 
-                "ATECR] = @Original_CDFUCUM_DATECR) AND ((@IsNull_CDFUCUM_DATEMJ = 1 AND [CDFUCUM"& _ 
-                "_DATEMJ] IS NULL) OR ([CDFUCUM_DATEMJ] = @Original_CDFUCUM_DATEMJ)))"
-            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
-            Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[CDFUCUM_UCUM] ([CDFUCUM_SYMBOLE], [CDFUCUM_DATECR], [CDF"& _ 
-                "UCUM_DATEMJ]) VALUES (@CDFUCUM_SYMBOLE, @CDFUCUM_DATECR, @CDFUCUM_DATEMJ);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELE"& _ 
-                "CT CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ FROM theriaq"& _ 
-                "ue.CDFUCUM_UCUM WHERE (CDFUCUM_CODE_PK = SCOPE_IDENTITY())"
-            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
-            Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[CDFUCUM_UCUM] SET [CDFUCUM_SYMBOLE] = @CDFUCUM_SYMBOLE, [CDFU"& _ 
-                "CUM_DATECR] = @CDFUCUM_DATECR, [CDFUCUM_DATEMJ] = @CDFUCUM_DATEMJ WHERE (([CDFUC"& _ 
-                "UM_CODE_PK] = @Original_CDFUCUM_CODE_PK) AND ([CDFUCUM_SYMBOLE] = @Original_CDFU"& _ 
-                "CUM_SYMBOLE) AND ([CDFUCUM_DATECR] = @Original_CDFUCUM_DATECR) AND ((@IsNull_CDF"& _ 
-                "UCUM_DATEMJ = 1 AND [CDFUCUM_DATEMJ] IS NULL) OR ([CDFUCUM_DATEMJ] = @Original_C"& _ 
-                "DFUCUM_DATEMJ)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFU"& _ 
-                "CUM_DATEMJ FROM theriaque.CDFUCUM_UCUM WHERE (CDFUCUM_CODE_PK = @CDFUCUM_CODE_PK"& _ 
-                ")"
-            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
-        Private Sub InitConnection()
-            Me._connection = New Global.System.Data.SqlClient.SqlConnection
-            Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
-        Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
-            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand
-            Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ FROM ther" & _
-                "iaque.CDFUCUM_UCUM"
-            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand
-            Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ FROM ther" & _
-                "iaque.CDFUCUM_UCUM" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "where CDFUCUM_CODE_PK=@CDFUCUM_CODE_PK"
-            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, True)> _
-        Public Overridable Overloads Function Fill(ByVal dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (Me.ClearBeforeFill = True) Then
-                dataTable.Clear()
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
-        Public Overridable Overloads Function GetData() As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable = New dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, False)> _
-        Public Overridable Overloads Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable, ByVal CDFUCUM_CODE_PK As Integer) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            Me.Adapter.SelectCommand.Parameters(0).Value = CType(CDFUCUM_CODE_PK, Integer)
-            If (Me.ClearBeforeFill = True) Then
-                dataTable.Clear()
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
-        Public Overridable Overloads Function GetDataByCode(ByVal CDFUCUM_CODE_PK As Integer) As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(1)
-            Me.Adapter.SelectCommand.Parameters(0).Value = CType(CDFUCUM_CODE_PK, Integer)
-            Dim dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable = New dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable) As Integer
-            Return Me.Adapter.Update(dataTable)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
-            Return Me.Adapter.Update(dataSet, "CDFUCUM_UCUM")
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(dataRows)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
-        Public Overridable Overloads Function Delete(ByVal Original_CDFUCUM_CODE_PK As Integer, ByVal Original_CDFUCUM_SYMBOLE As String, ByVal Original_CDFUCUM_DATECR As Date, ByVal Original_CDFUCUM_DATEMJ As Global.System.Nullable(Of Date)) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_CDFUCUM_CODE_PK, Integer)
-            If (Original_CDFUCUM_SYMBOLE Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_CDFUCUM_SYMBOLE")
-            Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_CDFUCUM_SYMBOLE, String)
-            End If
-            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_CDFUCUM_DATECR, Date)
-            If (Original_CDFUCUM_DATEMJ.HasValue = True) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0, Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_CDFUCUM_DATEMJ.Value, Date)
-            Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1, Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open()
-            End If
-            Try
-                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close()
-                End If
-            End Try
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
-        Public Overridable Overloads Function Insert(ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Global.System.Nullable(Of Date)) As Integer
-            If (CDFUCUM_SYMBOLE Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("CDFUCUM_SYMBOLE")
-            Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(CDFUCUM_SYMBOLE, String)
-            End If
-            Me.Adapter.InsertCommand.Parameters(1).Value = CType(CDFUCUM_DATECR, Date)
-            If (CDFUCUM_DATEMJ.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(CDFUCUM_DATEMJ.Value, Date)
-            Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open()
-            End If
-            Try
-                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close()
-                End If
-            End Try
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
-        Public Overridable Overloads Function Update(ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Global.System.Nullable(Of Date), ByVal Original_CDFUCUM_CODE_PK As Integer, ByVal Original_CDFUCUM_SYMBOLE As String, ByVal Original_CDFUCUM_DATECR As Date, ByVal Original_CDFUCUM_DATEMJ As Global.System.Nullable(Of Date), ByVal CDFUCUM_CODE_PK As Integer) As Integer
-            If (CDFUCUM_SYMBOLE Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("CDFUCUM_SYMBOLE")
-            Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(CDFUCUM_SYMBOLE, String)
-            End If
-            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(CDFUCUM_DATECR, Date)
-            If (CDFUCUM_DATEMJ.HasValue = True) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(CDFUCUM_DATEMJ.Value, Date)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_CDFUCUM_CODE_PK, Integer)
-            If (Original_CDFUCUM_SYMBOLE Is Nothing) Then
-                Throw New Global.System.ArgumentNullException("Original_CDFUCUM_SYMBOLE")
-            Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_CDFUCUM_SYMBOLE, String)
-            End If
-            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_CDFUCUM_DATECR, Date)
-            If (Original_CDFUCUM_DATEMJ.HasValue = True) Then
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0, Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_CDFUCUM_DATEMJ.Value, Date)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1, Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
-            End If
-            Me.Adapter.UpdateCommand.Parameters(8).Value = CType(CDFUCUM_CODE_PK, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open()
-            End If
-            Try
-                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close()
-                End If
-            End Try
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
-        Public Overridable Overloads Function Update(ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Global.System.Nullable(Of Date), ByVal Original_CDFUCUM_CODE_PK As Integer, ByVal Original_CDFUCUM_SYMBOLE As String, ByVal Original_CDFUCUM_DATECR As Date, ByVal Original_CDFUCUM_DATEMJ As Global.System.Nullable(Of Date)) As Integer
-            Return Me.Update(CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ, Original_CDFUCUM_CODE_PK, Original_CDFUCUM_SYMBOLE, Original_CDFUCUM_DATECR, Original_CDFUCUM_DATEMJ, Original_CDFUCUM_CODE_PK)
         End Function
     End Class
 
@@ -54887,6 +54509,331 @@ Namespace dsTheriaque_Nomenclature2TableAdapters
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
         Public Overridable Overloads Function Update(ByVal SYMVPR_LIBELLE As String, ByVal Original_SYMVPR_CODE_SQ_PK As Integer, ByVal Original_SYMVPR_MVPR_CODE_FK_PK As Integer, ByVal Original_SYMVPR_LIBELLE As String) As Integer
             Return Me.Update(Original_SYMVPR_CODE_SQ_PK, Original_SYMVPR_MVPR_CODE_FK_PK, SYMVPR_LIBELLE, Original_SYMVPR_CODE_SQ_PK, Original_SYMVPR_MVPR_CODE_FK_PK, Original_SYMVPR_LIBELLE)
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "2.0.0.0"),  _
+     Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class CDFUCUM_UCUMTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
+        
+        Private _connection As Global.System.Data.SqlClient.SqlConnection
+        
+        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Private ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "CDFUCUM_UCUM"
+            tableMapping.ColumnMappings.Add("CDFUCUM_CODE_PK", "CDFUCUM_CODE_PK")
+            tableMapping.ColumnMappings.Add("CDFUCUM_SYMBOLE", "CDFUCUM_SYMBOLE")
+            tableMapping.ColumnMappings.Add("CDFUCUM_DATECR", "CDFUCUM_DATECR")
+            tableMapping.ColumnMappings.Add("CDFUCUM_DATEMJ", "CDFUCUM_DATEMJ")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [theriaque].[CDFUCUM_UCUM] WHERE (([CDFUCUM_CODE_PK] = @Original_CDFU"& _ 
+                "CUM_CODE_PK) AND ([CDFUCUM_SYMBOLE] = @Original_CDFUCUM_SYMBOLE) AND ([CDFUCUM_D"& _ 
+                "ATECR] = @Original_CDFUCUM_DATECR) AND ((@IsNull_CDFUCUM_DATEMJ = 1 AND [CDFUCUM"& _ 
+                "_DATEMJ] IS NULL) OR ([CDFUCUM_DATEMJ] = @Original_CDFUCUM_DATEMJ)))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [theriaque].[CDFUCUM_UCUM] ([CDFUCUM_CODE_PK], [CDFUCUM_SYMBOLE], [CD"& _ 
+                "FUCUM_DATECR], [CDFUCUM_DATEMJ]) VALUES (@CDFUCUM_CODE_PK, @CDFUCUM_SYMBOLE, @CD"& _ 
+                "FUCUM_DATECR, @CDFUCUM_DATEMJ);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCU"& _ 
+                "M_DATECR, CDFUCUM_DATEMJ FROM CDFUCUM_UCUM WHERE (CDFUCUM_CODE_PK = @CDFUCUM_COD"& _ 
+                "E_PK)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [theriaque].[CDFUCUM_UCUM] SET [CDFUCUM_CODE_PK] = @CDFUCUM_CODE_PK, [CDFU"& _ 
+                "CUM_SYMBOLE] = @CDFUCUM_SYMBOLE, [CDFUCUM_DATECR] = @CDFUCUM_DATECR, [CDFUCUM_DA"& _ 
+                "TEMJ] = @CDFUCUM_DATEMJ WHERE (([CDFUCUM_CODE_PK] = @Original_CDFUCUM_CODE_PK) A"& _ 
+                "ND ([CDFUCUM_SYMBOLE] = @Original_CDFUCUM_SYMBOLE) AND ([CDFUCUM_DATECR] = @Orig"& _ 
+                "inal_CDFUCUM_DATECR) AND ((@IsNull_CDFUCUM_DATEMJ = 1 AND [CDFUCUM_DATEMJ] IS NU"& _ 
+                "LL) OR ([CDFUCUM_DATEMJ] = @Original_CDFUCUM_DATEMJ)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT CDFUCUM_CODE_PK,"& _ 
+                " CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ FROM CDFUCUM_UCUM WHERE (CDFUCU"& _ 
+                "M_CODE_PK = @CDFUCUM_CODE_PK)"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_SYMBOLE", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_SYMBOLE", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATECR", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATECR", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CDFUCUM_DATEMJ", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_DATEMJ", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlClient.SqlConnection
+            Me._connection.ConnectionString = Global.Theriaque.My.Settings.ConnectionString
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ FROM ther"& _ 
+                "iaque.CDFUCUM_UCUM"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"where CDFUCUM_CODE_PK=@CDFUCUM_CODE_PK"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CDFUCUM_CODE_PK", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "CDFUCUM_CODE_PK", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function FillByCode(ByVal dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable, ByVal CDFUCUM_CODE_PK As Integer) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Me.Adapter.SelectCommand.Parameters(0).Value = CType(CDFUCUM_CODE_PK,Integer)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetDataByCode(ByVal CDFUCUM_CODE_PK As Integer) As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Me.Adapter.SelectCommand.Parameters(0).Value = CType(CDFUCUM_CODE_PK,Integer)
+            Dim dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable = New dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As dsTheriaque_Nomenclature2.CDFUCUM_UCUMDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As dsTheriaque_Nomenclature2) As Integer
+            Return Me.Adapter.Update(dataSet, "CDFUCUM_UCUM")
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal Original_CDFUCUM_CODE_PK As Integer, ByVal Original_CDFUCUM_SYMBOLE As String, ByVal Original_CDFUCUM_DATECR As Date, ByVal Original_CDFUCUM_DATEMJ As Global.System.Nullable(Of Date)) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_CDFUCUM_CODE_PK,Integer)
+            If (Original_CDFUCUM_SYMBOLE Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_CDFUCUM_SYMBOLE")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_CDFUCUM_SYMBOLE,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_CDFUCUM_DATECR,Date)
+            If (Original_CDFUCUM_DATEMJ.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_CDFUCUM_DATEMJ.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal CDFUCUM_CODE_PK As Integer, ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Global.System.Nullable(Of Date)) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(CDFUCUM_CODE_PK,Integer)
+            If (CDFUCUM_SYMBOLE Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("CDFUCUM_SYMBOLE")
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(CDFUCUM_SYMBOLE,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(CDFUCUM_DATECR,Date)
+            If (CDFUCUM_DATEMJ.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(CDFUCUM_DATEMJ.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal CDFUCUM_CODE_PK As Integer, ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Global.System.Nullable(Of Date), ByVal Original_CDFUCUM_CODE_PK As Integer, ByVal Original_CDFUCUM_SYMBOLE As String, ByVal Original_CDFUCUM_DATECR As Date, ByVal Original_CDFUCUM_DATEMJ As Global.System.Nullable(Of Date)) As Integer
+            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(CDFUCUM_CODE_PK,Integer)
+            If (CDFUCUM_SYMBOLE Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("CDFUCUM_SYMBOLE")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(CDFUCUM_SYMBOLE,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(CDFUCUM_DATECR,Date)
+            If (CDFUCUM_DATEMJ.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(CDFUCUM_DATEMJ.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_CDFUCUM_CODE_PK,Integer)
+            If (Original_CDFUCUM_SYMBOLE Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_CDFUCUM_SYMBOLE")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_CDFUCUM_SYMBOLE,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_CDFUCUM_DATECR,Date)
+            If (Original_CDFUCUM_DATEMJ.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Original_CDFUCUM_DATEMJ.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal CDFUCUM_SYMBOLE As String, ByVal CDFUCUM_DATECR As Date, ByVal CDFUCUM_DATEMJ As Global.System.Nullable(Of Date), ByVal Original_CDFUCUM_CODE_PK As Integer, ByVal Original_CDFUCUM_SYMBOLE As String, ByVal Original_CDFUCUM_DATECR As Date, ByVal Original_CDFUCUM_DATEMJ As Global.System.Nullable(Of Date)) As Integer
+            Return Me.Update(Original_CDFUCUM_CODE_PK, CDFUCUM_SYMBOLE, CDFUCUM_DATECR, CDFUCUM_DATEMJ, Original_CDFUCUM_CODE_PK, Original_CDFUCUM_SYMBOLE, Original_CDFUCUM_DATECR, Original_CDFUCUM_DATEMJ)
         End Function
     End Class
 End Namespace

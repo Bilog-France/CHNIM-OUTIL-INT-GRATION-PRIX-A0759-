@@ -47,7 +47,7 @@ Partial Class SplashScreen
         Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.TextBox1.Size = New System.Drawing.Size(363, 212)
         Me.TextBox1.TabIndex = 2
-        Me.TextBox1.Text = "Le 07/03/2017 : Traitement des tickets  rouverts"
+        Me.TextBox1.Text = "Le 17/01/2018 : Traitement des tickets bloquant"
         '
         'ApplicationTitle
         '
@@ -86,7 +86,7 @@ Partial Class SplashScreen
         Me.Copyright.Name = "Copyright"
         Me.Copyright.Size = New System.Drawing.Size(241, 26)
         Me.Copyright.TabIndex = 2
-        Me.Copyright.Text = "Copyright  2017"
+        Me.Copyright.Text = "Copyright  2018"
         '
         'Version
         '
@@ -97,7 +97,7 @@ Partial Class SplashScreen
         Me.Version.Name = "Version"
         Me.Version.Size = New System.Drawing.Size(241, 20)
         Me.Version.TabIndex = 1
-        Me.Version.Text = "Version: 1.12.7"
+        Me.Version.Text = "Version: 1.13.3"
         Me.Version.TextAlign = System.Drawing.ContentAlignment.BottomLeft
         '
         'MainLayoutPanel

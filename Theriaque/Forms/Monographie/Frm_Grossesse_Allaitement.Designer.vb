@@ -1118,7 +1118,7 @@ Partial Class Frm_Grossesse_Allaitement
         '
         Me.XtraTabPage2.Controls.Add(Me.XtraTabControl2)
         Me.XtraTabPage2.Name = "XtraTabPage2"
-        Me.XtraTabPage2.Size = New System.Drawing.Size(786, 495)
+        Me.XtraTabPage2.Size = New System.Drawing.Size(503, 421)
         Me.XtraTabPage2.Tag = ""
         Me.XtraTabPage2.Text = "Grossesse"
         '
@@ -1128,7 +1128,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.XtraTabControl2.Location = New System.Drawing.Point(0, 0)
         Me.XtraTabControl2.Name = "XtraTabControl2"
         Me.XtraTabControl2.SelectedTabPage = Me.XtraTabPage5
-        Me.XtraTabControl2.Size = New System.Drawing.Size(786, 495)
+        Me.XtraTabControl2.Size = New System.Drawing.Size(503, 421)
         Me.XtraTabControl2.TabIndex = 0
         Me.XtraTabControl2.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.XtraTabPage5, Me.XtraTabPage6, Me.XtraTabPage7, Me.XtraTabPage8})
         Me.XtraTabControl2.Tag = ""
@@ -1141,7 +1141,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.XtraTabPage5.Controls.Add(Me.Panel2)
         Me.XtraTabPage5.Controls.Add(Me.Panel8)
         Me.XtraTabPage5.Name = "XtraTabPage5"
-        Me.XtraTabPage5.Size = New System.Drawing.Size(777, 464)
+        Me.XtraTabPage5.Size = New System.Drawing.Size(494, 390)
         Me.XtraTabPage5.Text = "Données expérimentales "
         '
         'Panel12
@@ -1151,7 +1151,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel12.Location = New System.Drawing.Point(0, 321)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(777, 143)
+        Me.Panel12.Size = New System.Drawing.Size(494, 69)
         Me.Panel12.TabIndex = 44
         Me.Panel12.Tag = ""
         '
@@ -1161,7 +1161,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.Panel27.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel27.Location = New System.Drawing.Point(0, 24)
         Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(777, 119)
+        Me.Panel27.Size = New System.Drawing.Size(494, 45)
         Me.Panel27.TabIndex = 38
         Me.Panel27.Tag = "[ADD][EDIT]"
         '
@@ -1189,7 +1189,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.GC13.MainView = Me.GV13
         Me.GC13.Name = "GC13"
         Me.GC13.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rm_Memo1})
-        Me.GC13.Size = New System.Drawing.Size(777, 119)
+        Me.GC13.Size = New System.Drawing.Size(494, 45)
         Me.GC13.TabIndex = 5
         Me.GC13.UseEmbeddedNavigator = True
         Me.GC13.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV13})
@@ -1238,7 +1238,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.Panel28.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel28.Location = New System.Drawing.Point(0, 0)
         Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(777, 24)
+        Me.Panel28.Size = New System.Drawing.Size(494, 24)
         Me.Panel28.TabIndex = 37
         '
         'LabelControl7
@@ -1255,7 +1255,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 214)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(777, 107)
+        Me.Panel3.Size = New System.Drawing.Size(494, 107)
         Me.Panel3.TabIndex = 43
         '
         'GC14
@@ -1275,7 +1275,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.GC14.MainView = Me.GV14
         Me.GC14.Name = "GC14"
         Me.GC14.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rp_FGARIA})
-        Me.GC14.Size = New System.Drawing.Size(777, 107)
+        Me.GC14.Size = New System.Drawing.Size(494, 107)
         Me.GC14.TabIndex = 2
         Me.GC14.Tag = "[EDIT][ADD]"
         Me.GC14.UseEmbeddedNavigator = True
@@ -1327,7 +1327,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 107)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(777, 107)
+        Me.Panel2.Size = New System.Drawing.Size(494, 107)
         Me.Panel2.TabIndex = 26
         '
         'GC12
@@ -1347,7 +1347,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.GC12.MainView = Me.GV12
         Me.GC12.Name = "GC12"
         Me.GC12.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rp_FGACFA})
-        Me.GC12.Size = New System.Drawing.Size(777, 102)
+        Me.GC12.Size = New System.Drawing.Size(494, 102)
         Me.GC12.TabIndex = 2
         Me.GC12.Tag = "[EDIT][ADD]"
         Me.GC12.UseEmbeddedNavigator = True
@@ -1399,7 +1399,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(777, 107)
+        Me.Panel8.Size = New System.Drawing.Size(494, 107)
         Me.Panel8.TabIndex = 25
         '
         'GC11
@@ -1419,7 +1419,7 @@ Partial Class Frm_Grossesse_Allaitement
         Me.GC11.MainView = Me.GV11
         Me.GC11.Name = "GC11"
         Me.GC11.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rp_FGAOA})
-        Me.GC11.Size = New System.Drawing.Size(777, 102)
+        Me.GC11.Size = New System.Drawing.Size(494, 102)
         Me.GC11.TabIndex = 2
         Me.GC11.Tag = "[EDIT][ADD]"
         Me.GC11.UseEmbeddedNavigator = True

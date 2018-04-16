@@ -173,23 +173,28 @@ Public Class Frm_Formulaire
             '' Declinaison Classique
             ''-----------------------------------------
             If CInt(e.KeyCode) = eKeyPressed.KeyDeclinaisonClassique Then
-                If txtTag.Declinaison IsNot Nothing Then
-                    Select Case txtTag.Declinaison.Start
-                        Case eDeclinaison.CCH
-                            DeclinaisonCCH_Classique(Me, rp.Tag)
-                        Case eDeclinaison.CPH
-                            DeclinaisonCPH_Classique(Me, rp.Tag)
-                        Case eDeclinaison.SAC
-                            DeclinaisonSAC_Classique(Me, rp.Tag)
-                        Case eDeclinaison.SAU
-                            DeclinaisonSAU_Classique(Me, rp.Tag)
-                        Case eDeclinaison.PR
-                            DeclinaisonPR_Classique(Me, rp.Tag)
-                        Case eDeclinaison.SP
-                            DeclinaisonSP_Globale(Me, rp.Tag)
-                        Case eDeclinaison.ATC
-                            DeclinaisonATC_Classique(Me, rp.Tag)
-                    End Select
+                If (rp.Name = "lstcodif") Then
+                    DeclinaisonTPP_Classique(Me, rp.Tag)
+                Else
+
+                    If txtTag.Declinaison IsNot Nothing Then
+                        Select Case txtTag.Declinaison.Start
+                            Case eDeclinaison.CCH
+                                DeclinaisonCCH_Classique(Me, rp.Tag)
+                            Case eDeclinaison.CPH
+                                DeclinaisonCPH_Classique(Me, rp.Tag)
+                            Case eDeclinaison.SAC
+                                DeclinaisonSAC_Classique(Me, rp.Tag)
+                            Case eDeclinaison.SAU
+                                DeclinaisonSAU_Classique(Me, rp.Tag)
+                            Case eDeclinaison.PR
+                                DeclinaisonPR_Classique(Me, rp.Tag)
+                            Case eDeclinaison.SP
+                                DeclinaisonSP_Globale(Me, rp.Tag)
+                            Case eDeclinaison.ATC
+                                DeclinaisonATC_Classique(Me, rp.Tag)
+                        End Select
+                    End If
                 End If
             End If
         End If
@@ -612,7 +617,14 @@ Public Class Frm_Formulaire
                 End If
             End If
         Catch ex As Exception
+
+            'If (Not ex.Message.Equals("Nom d'objet 'CDFUCUM_UCUM' non valide.")) Then
             MessageBox.Show(ex.Message, Me.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, Nothing, False)
+            'Else
+            'ModeFiche = eMode.Consultation
+            'UpdateStateBouton()
+            'Initcomponent()
+            'End If
         End Try
     End Sub
 

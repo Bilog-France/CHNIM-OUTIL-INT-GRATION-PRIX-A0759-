@@ -154,6 +154,7 @@ Partial Class Frm_Cipemg_Code
         Me.colFCPMTER_NATURE_CIPEMG_PK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.colATCD = New DevExpress.XtraGrid.Columns.GridColumn
         Me.lkupATCD = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.lkATCD = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage
         Me.Panel51 = New System.Windows.Forms.Panel
         Me.GC31 = New DevExpress.XtraGrid.GridControl
@@ -252,6 +253,7 @@ Partial Class Frm_Cipemg_Code
         CType(Me.GV21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rp_FCPMTER, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupATCD, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lkATCD, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage2.SuspendLayout()
         Me.Panel51.SuspendLayout()
         CType(Me.GC31, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1616,7 +1618,7 @@ Partial Class Frm_Cipemg_Code
         Me.GC21.Location = New System.Drawing.Point(0, 0)
         Me.GC21.MainView = Me.GV21
         Me.GC21.Name = "GC21"
-        Me.GC21.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rp_FCPMTER, Me.lkupATCD})
+        Me.GC21.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rp_FCPMTER, Me.lkupATCD, Me.lkATCD})
         Me.GC21.Size = New System.Drawing.Size(503, 95)
         Me.GC21.TabIndex = 3
         Me.GC21.Tag = "[EDIT][ADD]"
@@ -1700,6 +1702,12 @@ Partial Class Frm_Cipemg_Code
         Me.lkupATCD.AutoHeight = False
         Me.lkupATCD.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lkupATCD.Name = "lkupATCD"
+        '
+        'lkATCD
+        '
+        Me.lkATCD.AutoHeight = False
+        Me.lkATCD.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lkATCD.Name = "lkATCD"
         '
         'XtraTabPage2
         '
@@ -1932,6 +1940,7 @@ Partial Class Frm_Cipemg_Code
         CType(Me.GV21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rp_FCPMTER, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkupATCD, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lkATCD, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabPage2.ResumeLayout(False)
         Me.Panel51.ResumeLayout(False)
         CType(Me.GC31, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2099,5 +2108,6 @@ Partial Class Frm_Cipemg_Code
     Friend WithEvents cmbOrigine As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents colATCD As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lkupATCD As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents lkATCD As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
 
 End Class

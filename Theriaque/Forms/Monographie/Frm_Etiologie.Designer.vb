@@ -876,7 +876,7 @@ Partial Class Frm_Etiologie
         Me.XtraTabPage1.Controls.Add(Me.GC22)
         Me.XtraTabPage1.Controls.Add(Me.GC21)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(643, 399)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(493, 391)
         Me.XtraTabPage1.Tag = "[EDIT][ADD]"
         Me.XtraTabPage1.Text = "Esp habituellement sensibles"
         '
@@ -887,7 +887,7 @@ Partial Class Frm_Etiologie
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel12.Location = New System.Drawing.Point(0, 275)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(643, 124)
+        Me.Panel12.Size = New System.Drawing.Size(493, 116)
         Me.Panel12.TabIndex = 38
         Me.Panel12.Tag = ""
         '
@@ -897,7 +897,7 @@ Partial Class Frm_Etiologie
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel14.Location = New System.Drawing.Point(0, 24)
         Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(643, 100)
+        Me.Panel14.Size = New System.Drawing.Size(493, 92)
         Me.Panel14.TabIndex = 38
         Me.Panel14.Tag = "[ADD][EDIT]"
         '
@@ -973,7 +973,7 @@ Partial Class Frm_Etiologie
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel13.Location = New System.Drawing.Point(0, 0)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(643, 24)
+        Me.Panel13.Size = New System.Drawing.Size(493, 24)
         Me.Panel13.TabIndex = 37
         '
         'LabelControl6
@@ -992,7 +992,7 @@ Partial Class Frm_Etiologie
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel8.Location = New System.Drawing.Point(0, 240)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(643, 35)
+        Me.Panel8.Size = New System.Drawing.Size(493, 35)
         Me.Panel8.TabIndex = 39
         '
         'LookUp_FET
@@ -1007,7 +1007,6 @@ Partial Class Frm_Etiologie
         '
         'TextEdit1
         '
-        Me.TextEdit1.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Etiologie, "FET_FICHEETIOLOGIE.FET_CMIHS", True))
         Me.TextEdit1.Location = New System.Drawing.Point(67, 7)
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Size = New System.Drawing.Size(46, 20)
@@ -1039,7 +1038,7 @@ Partial Class Frm_Etiologie
         Me.GC22.MainView = Me.GV22
         Me.GC22.Name = "GC22"
         Me.GC22.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkup_FETCHS})
-        Me.GC22.Size = New System.Drawing.Size(643, 126)
+        Me.GC22.Size = New System.Drawing.Size(493, 126)
         Me.GC22.TabIndex = 8
         Me.GC22.Tag = "[EDIT][ADD]"
         Me.GC22.UseEmbeddedNavigator = True
@@ -1097,7 +1096,7 @@ Partial Class Frm_Etiologie
         Me.GC21.MainView = Me.GV21
         Me.GC21.Name = "GC21"
         Me.GC21.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkup_FETHS})
-        Me.GC21.Size = New System.Drawing.Size(643, 114)
+        Me.GC21.Size = New System.Drawing.Size(493, 114)
         Me.GC21.TabIndex = 3
         Me.GC21.Tag = "[EDIT][ADD]"
         Me.GC21.UseEmbeddedNavigator = True
@@ -1289,7 +1288,6 @@ Partial Class Frm_Etiologie
         '
         'TextEdit2
         '
-        Me.TextEdit2.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Etiologie, "FET_FICHEETIOLOGIE.FET_CMIIS", True))
         Me.TextEdit2.Location = New System.Drawing.Point(33, 7)
         Me.TextEdit2.Name = "TextEdit2"
         Me.TextEdit2.Size = New System.Drawing.Size(46, 20)
@@ -1571,7 +1569,6 @@ Partial Class Frm_Etiologie
         '
         'TextEdit4
         '
-        Me.TextEdit4.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Etiologie, "FET_FICHEETIOLOGIE.FET_CMIMS", True))
         Me.TextEdit4.Location = New System.Drawing.Point(33, 7)
         Me.TextEdit4.Name = "TextEdit4"
         Me.TextEdit4.Size = New System.Drawing.Size(46, 20)
@@ -1721,7 +1718,7 @@ Partial Class Frm_Etiologie
         Me.XtraTabPage5.Controls.Add(Me.GC52)
         Me.XtraTabPage5.Controls.Add(Me.GC51)
         Me.XtraTabPage5.Name = "XtraTabPage5"
-        Me.XtraTabPage5.Size = New System.Drawing.Size(493, 391)
+        Me.XtraTabPage5.Size = New System.Drawing.Size(643, 399)
         Me.XtraTabPage5.Tag = "[EDIT][ADD]"
         Me.XtraTabPage5.Text = "Esp résistantes"
         '
@@ -1732,7 +1729,7 @@ Partial Class Frm_Etiologie
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 274)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(493, 117)
+        Me.Panel7.Size = New System.Drawing.Size(643, 125)
         Me.Panel7.TabIndex = 41
         Me.Panel7.Tag = ""
         '
@@ -1742,7 +1739,7 @@ Partial Class Frm_Etiologie
         Me.Panel19.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel19.Location = New System.Drawing.Point(0, 24)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(493, 93)
+        Me.Panel19.Size = New System.Drawing.Size(643, 101)
         Me.Panel19.TabIndex = 38
         Me.Panel19.Tag = "[ADD][EDIT]"
         '
@@ -1770,7 +1767,7 @@ Partial Class Frm_Etiologie
         Me.GC53.MainView = Me.GV53
         Me.GC53.Name = "GC53"
         Me.GC53.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rm_Memo4})
-        Me.GC53.Size = New System.Drawing.Size(493, 93)
+        Me.GC53.Size = New System.Drawing.Size(643, 101)
         Me.GC53.TabIndex = 6
         Me.GC53.UseEmbeddedNavigator = True
         Me.GC53.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV53})
@@ -1819,7 +1816,7 @@ Partial Class Frm_Etiologie
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel20.Location = New System.Drawing.Point(0, 0)
         Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(493, 24)
+        Me.Panel20.Size = New System.Drawing.Size(643, 24)
         Me.Panel20.TabIndex = 37
         '
         'LabelControl13
@@ -1838,7 +1835,7 @@ Partial Class Frm_Etiologie
         Me.Panel18.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel18.Location = New System.Drawing.Point(0, 240)
         Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(493, 34)
+        Me.Panel18.Size = New System.Drawing.Size(643, 34)
         Me.Panel18.TabIndex = 40
         '
         'LookUp_FETRE
@@ -1853,7 +1850,6 @@ Partial Class Frm_Etiologie
         '
         'TextEdit5
         '
-        Me.TextEdit5.DataBindings.Add(New System.Windows.Forms.Binding("EditValue", Me.DsTheriaque_Etiologie, "FET_FICHEETIOLOGIE.FET_CMIRE", True))
         Me.TextEdit5.Location = New System.Drawing.Point(38, 6)
         Me.TextEdit5.Name = "TextEdit5"
         Me.TextEdit5.Size = New System.Drawing.Size(46, 20)
@@ -1885,7 +1881,7 @@ Partial Class Frm_Etiologie
         Me.GC52.MainView = Me.GV52
         Me.GC52.Name = "GC52"
         Me.GC52.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkup_FETCRE})
-        Me.GC52.Size = New System.Drawing.Size(493, 126)
+        Me.GC52.Size = New System.Drawing.Size(643, 126)
         Me.GC52.TabIndex = 12
         Me.GC52.Tag = "[EDIT][ADD]"
         Me.GC52.UseEmbeddedNavigator = True
@@ -1943,7 +1939,7 @@ Partial Class Frm_Etiologie
         Me.GC51.MainView = Me.GV51
         Me.GC51.Name = "GC51"
         Me.GC51.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkup_FETRE})
-        Me.GC51.Size = New System.Drawing.Size(493, 114)
+        Me.GC51.Size = New System.Drawing.Size(643, 114)
         Me.GC51.TabIndex = 11
         Me.GC51.Tag = "[EDIT][ADD]"
         Me.GC51.UseEmbeddedNavigator = True

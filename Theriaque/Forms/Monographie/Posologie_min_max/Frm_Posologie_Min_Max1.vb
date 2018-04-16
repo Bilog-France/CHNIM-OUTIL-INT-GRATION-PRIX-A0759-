@@ -19,7 +19,7 @@ Public Class Frm_Posologie_Min_Max1
         InitLkup(lkupUnitMax, "CDF_CODIF", strSSQL_CDF_CODIF("PU"), True, True)
         InitLkup(lkupUnite, "CDF_CODIF", strSSQL_CDF_CODIF_UNION(), True, True)
 
-
+        Declinaison_Global = True
         If _Code <> Nothing Then
             Load_On(Me)
             Open_Fiche(_Code)
@@ -28,6 +28,7 @@ Public Class Frm_Posologie_Min_Max1
             Initcomponent()
             Load_Off(Me)
         End If
+
 
 
     End Sub
@@ -178,14 +179,14 @@ Public Class Frm_Posologie_Min_Max1
 
 #Region " Init Data  "
 
-
-    Private Sub InitDeclinaison()
+    Public Overrides Sub InitData()
+        MyBase.InitData()
 
         Dim List5 As New System.Collections.Generic.List(Of StructGVTable)
         List5.Add(New StructGVTable("GC_D1", eDeclinaison.CPH, colFPOMMCPH_CPH_CODE_FK_PK))
         List5.Add(New StructGVTable("GC_D2", eDeclinaison.CCH, colFPOMMCCH_CCH_CODE_FK_PK))
         List5.Add(New StructGVTable("GC_D4", eDeclinaison.SAC, colCHSAC_SAC_CODE_SQ_PK_FK2))
-        'List5.Add(New StructGVTable("GC15", eDeclinaison.SP, colSPCH_SP_CODE_FK_PK2))
+        'List5.Add(New StructGVTable("GC11", eDeclinaison.CPH, colSPCH_SP_CODE_FK_PK2))
         Dim dec5 As New ClsDeclinaison(eDeclinaison.CPH, List5)
         InitLkup(Me.clphlst, CPH_CLASSEPHARMTHER, strSSQL_CPH_CLASSEPHARMTHER, True, , , , , , dec5)
 
@@ -227,6 +228,16 @@ Public Class Frm_Posologie_Min_Max1
 
         InitLkup(Me.lkup_IT1SP, IT1SP_TERME1SPECIALITE, strSSQL_SP_SPECIALITE, True)
 
+
+        Dim List13 As New System.Collections.Generic.List(Of StructGVTable)
+        List13.Add(New StructGVTable("GC_D1", eDeclinaison.CPH, colFPOMMCPH_CPH_CODE_FK_PK))
+        List13.Add(New StructGVTable("GC_D2", eDeclinaison.CCH, colFPOMMCCH_CCH_CODE_FK_PK))
+        List13.Add(New StructGVTable("GC_D4", eDeclinaison.SAC, colCHSAC_SAC_CODE_SQ_PK_FK2))
+        'List5.Add(New StructGVTable("GC11", eDeclinaison.CPH, colSPCH_SP_CODE_FK_PK2))
+        Dim dec13 As New ClsDeclinaison(eDeclinaison.CPH, List13)
+
+        Dim query7 As String = "select CDF_CODE_PK as code, CDF_NOM as libelle from  THERIAQUE.CDF_CODIF where CDF_NUMERO_PK = 'TP' "
+        InitLkup(lstcodif, "CDF_CODIF", query7, True, , , , , , dec13)
 
     End Sub
 

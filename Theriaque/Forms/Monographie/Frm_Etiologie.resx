@@ -136,51 +136,51 @@
     <value>635, 17</value>
   </metadata>
   <metadata name="FetpR_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 17</value>
-  </metadata>
-  <metadata name="FetsP_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>
   </metadata>
+  <metadata name="FetsP_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>119, 56</value>
+  </metadata>
   <metadata name="FettxtI_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>122, 95</value>
+    <value>339, 95</value>
   </metadata>
   <metadata name="FethS_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>431, 56</value>
+    <value>533, 56</value>
   </metadata>
   <metadata name="FetchS_Ta.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>227, 95</value>
+    <value>444, 95</value>
   </metadata>
   <metadata name="FettX1_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>332, 95</value>
+    <value>549, 95</value>
   </metadata>
   <metadata name="FetiS_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>438, 95</value>
+    <value>655, 95</value>
   </metadata>
   <metadata name="FetciS_Ta.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>535, 95</value>
+    <value>17, 134</value>
   </metadata>
   <metadata name="FettX2_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>636, 95</value>
+    <value>118, 134</value>
   </metadata>
   <metadata name="FetmS_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
+    <value>234, 95</value>
   </metadata>
   <metadata name="FetcmS_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>736, 56</value>
+    <value>123, 95</value>
   </metadata>
   <metadata name="FettX3_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>630, 56</value>
+    <value>17, 95</value>
   </metadata>
   <metadata name="FetrE_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>532, 56</value>
+    <value>634, 56</value>
   </metadata>
   <metadata name="FetcrE_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>327, 56</value>
+    <value>429, 56</value>
   </metadata>
   <metadata name="FettX4_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>221, 56</value>
+    <value>323, 56</value>
   </metadata>
   <metadata name="FetafS_TA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>117, 56</value>
+    <value>219, 56</value>
   </metadata>
 </root>

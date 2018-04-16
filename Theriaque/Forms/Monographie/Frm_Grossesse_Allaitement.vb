@@ -1705,7 +1705,7 @@ Public Class Frm_Grossesse_Allaitement
             InitLkup(Me.rp_FGARIH, FGARIH_RISQUE_HUMAINE, strSSQL_CDF_CODIF("GR", " and substring(CDF_CODE_PK, 1, 1) =  'H'"), True)
             'Onglet Grossesse - Recommandations
             InitLkup(Me.rp_FGARIG_CDF_TC, FGARIG_RISQUE_GROSSESSE, strSSQL_CDF_CODIF("GP"), True)
-            InitLkup(Me.rp_FGARIG_CDF_RI, FGARIG_RISQUE_GROSSESSE, strSSQL_CDF_CODIF("GR", " and substring(CDF_CODE_PK, 1, 1) IN('R','C', 'P', 'Z')"), True)
+            InitLkup(Me.rp_FGARIG_CDF_RI, FGARIG_RISQUE_GROSSESSE, strSSQL_CDF_CODIF("GR", " and substring(CDF_CODE_PK, 1, 1) IN('R','C', 'P', 'Z', 'L')"), True)
 
             'Onglet Grossesse - Conduite à tenir
             InitLkup(Me.rp_FGACF, FGACF_CATFEMMEENCEINTE, strSSQL_CDF_CODIF("GT"), True)
@@ -1749,7 +1749,7 @@ Public Class Frm_Grossesse_Allaitement
         Load_On(Me)
         OnLoading = True
         If Not Tab_lkup2 Then
-            InitLkup(Me.rp_FGARIFAP, FGARIFAP_RISQUEFEMMEENAGE, strSSQL_CDF_CODIF("GR", " and substring(CDF_CODE_PK, 1, 1) IN('R','C', 'P', 'Z')"), True)
+            InitLkup(Me.rp_FGARIFAP, FGARIFAP_RISQUEFEMMEENAGE, strSSQL_CDF_CODIF("GR", " and substring(CDF_CODE_PK, 1, 1) IN('R','C', 'P', 'Z', 'L')"), True)
             InitLkup(Me.rp_FGACFAP, FGACFAP_CATFEMMEENAGE, strSSQL_CDF_CODIF("GT"), True)
             Tab_lkup2 = True
         End If

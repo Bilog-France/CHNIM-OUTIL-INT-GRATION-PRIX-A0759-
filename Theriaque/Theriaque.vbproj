@@ -151,10 +151,10 @@
     <Compile Include="DataSet\dsTheriaque_Effets_Indesirables.vb">
       <DependentUpon>dsTheriaque_Effets_Indesirables.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSet\dsTheriaque_Etiologie.Designer.vb">
+    <Compile Include="DataSet\dsTheriaque_Etiologie.designer.vb">
+      <DependentUpon>dsTheriaque_Etiologie.xsd</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dsTheriaque_Etiologie.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSet\dsTheriaque_Etiologie.vb">
       <DependentUpon>dsTheriaque_Etiologie.xsd</DependentUpon>

@@ -1157,6 +1157,8 @@ Public Class Frm_Cipemg_Code1
 
         InitLkup(lkupATCD, CDF_CODIF, query, True)
 
+        InitLkup(lkATCD, CDF_CODIF, query, True)
+
         If _Code <> Nothing Then
             Load_On(Me)
             Open_Fiche(_Code)

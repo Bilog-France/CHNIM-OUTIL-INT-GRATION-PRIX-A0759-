@@ -154,6 +154,9 @@ Partial Class Frm_Cipemg_Code1
         Me.colFCPMTER_NATURE_CIPEMG_PK = New DevExpress.XtraGrid.Columns.GridColumn
         Me.colATCD = New DevExpress.XtraGrid.Columns.GridColumn
         Me.lkupATCD = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.ColATCD2 = New DevExpress.XtraGrid.Columns.GridColumn
+        Me.lkATCD = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+        Me.RepositoryItemMRUEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMRUEdit
         Me.XtraTabPage2 = New DevExpress.XtraTab.XtraTabPage
         Me.Panel51 = New System.Windows.Forms.Panel
         Me.GC31 = New DevExpress.XtraGrid.GridControl
@@ -252,6 +255,8 @@ Partial Class Frm_Cipemg_Code1
         CType(Me.GV21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rp_FCPMTER, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lkupATCD, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lkATCD, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemMRUEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabPage2.SuspendLayout()
         Me.Panel51.SuspendLayout()
         CType(Me.GC31, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1614,7 +1619,7 @@ Partial Class Frm_Cipemg_Code1
         Me.GC21.Location = New System.Drawing.Point(0, 0)
         Me.GC21.MainView = Me.GV21
         Me.GC21.Name = "GC21"
-        Me.GC21.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rp_FCPMTER, Me.lkupATCD})
+        Me.GC21.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rp_FCPMTER, Me.lkupATCD, Me.RepositoryItemMRUEdit1, Me.lkATCD})
         Me.GC21.Size = New System.Drawing.Size(503, 95)
         Me.GC21.TabIndex = 3
         Me.GC21.Tag = "[EDIT][ADD]"
@@ -1623,7 +1628,7 @@ Partial Class Frm_Cipemg_Code1
         '
         'GV21
         '
-        Me.GV21.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colFCPMTER_FCPM_CODE_FK_PK, Me.colFCPMTER_CDF_TER_CODE_FK_PK, Me.colFCPMTER_NUMSEQ_PK, Me.colFCPMTER_NUMORD, Me.GridColumn8, Me.colFCPMTER_NATURE_CIPEMG_PK, Me.colATCD})
+        Me.GV21.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colFCPMTER_FCPM_CODE_FK_PK, Me.colFCPMTER_CDF_TER_CODE_FK_PK, Me.colFCPMTER_NUMSEQ_PK, Me.colFCPMTER_NUMORD, Me.GridColumn8, Me.colFCPMTER_NATURE_CIPEMG_PK, Me.colATCD, Me.ColATCD2})
         Me.GV21.GridControl = Me.GC21
         Me.GV21.Name = "GV21"
         Me.GV21.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Bottom
@@ -1701,6 +1706,27 @@ Partial Class Frm_Cipemg_Code1
         Me.lkupATCD.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.lkupATCD.Name = "lkupATCD"
         Me.lkupATCD.NullText = ""
+        '
+        'ColATCD2
+        '
+        Me.ColATCD2.Caption = "ATCD"
+        Me.ColATCD2.ColumnEdit = Me.lkATCD
+        Me.ColATCD2.FieldName = "FCPMTER_ATCD"
+        Me.ColATCD2.Name = "ColATCD2"
+        Me.ColATCD2.Visible = True
+        Me.ColATCD2.VisibleIndex = 4
+        '
+        'lkATCD
+        '
+        Me.lkATCD.AutoHeight = False
+        Me.lkATCD.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.lkATCD.Name = "lkATCD"
+        '
+        'RepositoryItemMRUEdit1
+        '
+        Me.RepositoryItemMRUEdit1.AutoHeight = False
+        Me.RepositoryItemMRUEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemMRUEdit1.Name = "RepositoryItemMRUEdit1"
         '
         'XtraTabPage2
         '
@@ -1933,6 +1959,8 @@ Partial Class Frm_Cipemg_Code1
         CType(Me.GV21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rp_FCPMTER, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lkupATCD, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lkATCD, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemMRUEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.XtraTabPage2.ResumeLayout(False)
         Me.Panel51.ResumeLayout(False)
         CType(Me.GC31, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2100,5 +2128,8 @@ Partial Class Frm_Cipemg_Code1
     Friend WithEvents cmbOrigine As DevExpress.XtraEditors.ComboBoxEdit
     Friend WithEvents colATCD As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents lkupATCD As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents ColATCD2 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents lkATCD As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents RepositoryItemMRUEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemMRUEdit
 
 End Class

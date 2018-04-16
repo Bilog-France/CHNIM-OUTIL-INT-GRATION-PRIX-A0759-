@@ -977,13 +977,14 @@ Public Class Frm_Cipemg_Code
         InitLkup(Me.rp_FCPMSP, FCPMSP_CIPEMG_SPE, strSSQL_SP_SPECIALITE, True)
         InitLkup(Me.rp_FCPMCH, FCPMCH_CIPEMGCH, strSSQL_CH_CHOIX, True)
 
-        Dim query As String = " select distinct 1 as code, 'En Cours' as libelle from  theriaque.CDF_CODIF "
-        query &= " union select distinct 2 as code, 'En cours et ATCD perso' as libelle from  theriaque.CDF_CODIF"
-        query &= " union select distinct 3 as code, 'ATCD Perso' as libelle from  theriaque.CDF_CODIF"
-        query &= " union select distinct 4 as code, 'ATCD Familial' as libelle from  theriaque.CDF_CODIF"
-        query &= " union select distinct 5 as code, 'En cours Tierce Personne' as libelle from  theriaque.CDF_CODIF"
+        Dim query As String = " select distinct 'A1' as code, 'En Cours' as libelle from  theriaque.CDF_CODIF "
+        query &= " union select distinct 'A2' as code, 'En cours et ATCD perso' as libelle from  theriaque.CDF_CODIF"
+        query &= " union select distinct 'A3' as code, 'ATCD Perso' as libelle from  theriaque.CDF_CODIF"
+        query &= " union select distinct 'A4' as code, 'ATCD Familial' as libelle from  theriaque.CDF_CODIF"
+        query &= " union select distinct 'A5' as code, 'En cours Tierce Personne' as libelle from  theriaque.CDF_CODIF"
 
         InitLkup(lkupATCD, CDF_CODIF, query, True)
+
         InitDataSource()
         FirstFocus = txtCode
         RG.SelectedIndex = 0

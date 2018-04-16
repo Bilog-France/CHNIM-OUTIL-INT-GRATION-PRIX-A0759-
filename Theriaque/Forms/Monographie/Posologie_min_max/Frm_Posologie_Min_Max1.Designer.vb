@@ -349,7 +349,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(2, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(499, 426)
+        Me.Panel5.Size = New System.Drawing.Size(679, 426)
         Me.Panel5.TabIndex = 19
         '
         'GC11
@@ -368,7 +368,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.GC11.MainView = Me.GV11
         Me.GC11.Name = "GC11"
         Me.GC11.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.lkup_CHTIT, Me.lstcodif})
-        Me.GC11.Size = New System.Drawing.Size(499, 426)
+        Me.GC11.Size = New System.Drawing.Size(679, 426)
         Me.GC11.TabIndex = 2
         Me.GC11.Tag = "[EDIT][ADD]"
         Me.GC11.UseEmbeddedNavigator = True
@@ -994,7 +994,7 @@ Partial Class Frm_Posologie_Min_Max1
         '
         Me.xtpCritere.Controls.Add(Me.PanelControl3)
         Me.xtpCritere.Name = "xtpCritere"
-        Me.xtpCritere.Size = New System.Drawing.Size(503, 430)
+        Me.xtpCritere.Size = New System.Drawing.Size(683, 430)
         Me.xtpCritere.TabStop = True
         Me.xtpCritere.Tag = "[ADD][EDIT]"
         Me.xtpCritere.Text = "Terrains pères physio-pathologiques"
@@ -1005,7 +1005,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.PanelControl3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl3.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl3.Name = "PanelControl3"
-        Me.PanelControl3.Size = New System.Drawing.Size(503, 430)
+        Me.PanelControl3.Size = New System.Drawing.Size(683, 430)
         Me.PanelControl3.TabIndex = 9
         Me.PanelControl3.Text = "PanelControl3"
         '
@@ -1013,7 +1013,7 @@ Partial Class Frm_Posologie_Min_Max1
         '
         Me.XtraTabPage6.Controls.Add(Me.PanelControl2)
         Me.XtraTabPage6.Name = "XtraTabPage6"
-        Me.XtraTabPage6.Size = New System.Drawing.Size(683, 430)
+        Me.XtraTabPage6.Size = New System.Drawing.Size(503, 430)
         Me.XtraTabPage6.Text = "Posologie Min/Max"
         '
         'PanelControl2
@@ -1022,7 +1022,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.PanelControl2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl2.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl2.Name = "PanelControl2"
-        Me.PanelControl2.Size = New System.Drawing.Size(683, 430)
+        Me.PanelControl2.Size = New System.Drawing.Size(503, 430)
         Me.PanelControl2.TabIndex = 8
         Me.PanelControl2.Text = "PanelControl2"
         '
@@ -1032,7 +1032,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelControl1.Location = New System.Drawing.Point(2, 2)
         Me.PanelControl1.Name = "PanelControl1"
-        Me.PanelControl1.Size = New System.Drawing.Size(679, 426)
+        Me.PanelControl1.Size = New System.Drawing.Size(499, 426)
         Me.PanelControl1.TabIndex = 10
         Me.PanelControl1.Text = "PanelControl1"
         '
@@ -1042,7 +1042,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(2, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(675, 422)
+        Me.Panel2.Size = New System.Drawing.Size(495, 422)
         Me.Panel2.TabIndex = 19
         '
         'GridControl1
@@ -1062,7 +1062,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.GridControl1.MainView = Me.GridView1
         Me.GridControl1.Name = "GridControl1"
         Me.GridControl1.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemLookUpEdit2, Me.lstunite, Me.lstanthropo})
-        Me.GridControl1.Size = New System.Drawing.Size(675, 422)
+        Me.GridControl1.Size = New System.Drawing.Size(495, 422)
         Me.GridControl1.TabIndex = 2
         Me.GridControl1.Tag = "[EDIT][ADD]"
         Me.GridControl1.UseEmbeddedNavigator = True
@@ -1191,7 +1191,7 @@ Partial Class Frm_Posologie_Min_Max1
         Me.XtraTabPage1.Controls.Add(Me.txtIntervalMin)
         Me.XtraTabPage1.Controls.Add(Me.LabelControl3)
         Me.XtraTabPage1.Name = "XtraTabPage1"
-        Me.XtraTabPage1.Size = New System.Drawing.Size(683, 430)
+        Me.XtraTabPage1.Size = New System.Drawing.Size(503, 430)
         Me.XtraTabPage1.Text = "Intervalles min max"
         '
         'lkupUnitMax

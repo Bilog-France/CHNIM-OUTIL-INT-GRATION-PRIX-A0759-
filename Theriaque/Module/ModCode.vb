@@ -225,17 +225,18 @@ Public Module Code
     Public Function SetCode_MAxId(ByVal strTable As String, ByVal Ctrl As Control, Optional ByVal Off As Boolean = True) As Integer
         Dim strField As String = Ctrl.DataBindings("EditValue").BindingMemberInfo.BindingField()
         Dim strCode As String = Ctrl.Text
-        Dim dt As DataTable = cn.MySelect("SELECT IDENT_CURRENT( '[theriaque].[theriaque].[CDFUCUM_UCUM]')")
+        Dim dt As DataTable = cn.MySelect("select isnull(max(CDFUCUM_CODE_PK),0) + 1 from [theriaque].[theriaque].[CDFUCUM_UCUM]")
+        Ctrl.Text = dt.Rows(0)(0)
 
-        If (dt IsNot Nothing) Then
+        'If (dt IsNot Nothing) Then
 
 
-            If dt.Rows(0)(0) IsNot DBNull.Value Then
-                Ctrl.Text = dt.Rows(0)(0) + 1
-            Else
-                Ctrl.Text = 1
-            End If
-        End If
+        '    If dt.Rows(0)(0) IsNot DBNull.Value Then
+        '        Ctrl.Text = dt.Rows(0)(0) + 1
+        '    Else
+        '        Ctrl.Text = 1
+        '    End If
+        'End If
         If Off Then
             Ctl_Off(Ctrl)
             Ctrl.Tag = "[NOEDIT][NOADD]"

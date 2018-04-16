@@ -89,7 +89,7 @@ Partial Class Frm_Config
         '
         Me.txtDB.Location = New System.Drawing.Point(116, 45)
         Me.txtDB.Name = "txtDB"
-        Me.txtDB.Size = New System.Drawing.Size(216, 19)
+        Me.txtDB.Size = New System.Drawing.Size(216, 20)
         Me.txtDB.TabIndex = 2
         '
         'Label2
@@ -97,7 +97,7 @@ Partial Class Frm_Config
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(20, 49)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(89, 13)
+        Me.Label2.Size = New System.Drawing.Size(90, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Base de données"
         '
@@ -106,7 +106,7 @@ Partial Class Frm_Config
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(66, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Serveur"
         '
@@ -116,8 +116,8 @@ Partial Class Frm_Config
         Me.txtServeur.Location = New System.Drawing.Point(116, 19)
         Me.txtServeur.Name = "txtServeur"
         Me.txtServeur.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.txtServeur.Properties.Items.AddRange(New Object() {"172.16.1.170,8008", "172.16.1.171,8008", ".\THERIAQUE"})
-        Me.txtServeur.Size = New System.Drawing.Size(216, 19)
+        Me.txtServeur.Properties.Items.AddRange(New Object() {"172.16.1.235", "172.16.1.170,8008", "172.16.1.171,8008", ".\THERIAQUE"})
+        Me.txtServeur.Size = New System.Drawing.Size(216, 20)
         Me.txtServeur.TabIndex = 0
         '
         'Frm_Config

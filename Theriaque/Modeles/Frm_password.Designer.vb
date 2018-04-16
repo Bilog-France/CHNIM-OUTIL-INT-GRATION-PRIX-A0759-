@@ -70,11 +70,12 @@ Partial Class Frm_password
         Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPass.Size = New System.Drawing.Size(208, 20)
         Me.txtPass.TabIndex = 1
-        Me.txtPass.Text = "vald7890"
+        Me.txtPass.Text = "Bilog@2014"
         '
         'txtUser
         '
         Me.txtUser.FormattingEnabled = True
+        Me.txtUser.Items.AddRange(New Object() {"bechir"})
         Me.txtUser.Location = New System.Drawing.Point(103, 106)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(212, 21)

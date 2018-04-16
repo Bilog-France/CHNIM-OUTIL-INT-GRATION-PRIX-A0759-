@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString2 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Theriaque.My.MySettings.GlobalReference.Default.ConnectionString2" Provider="System.Data.SqlClient">
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString2" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString2 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Theriaque.MySettings.GlobalReference.Default.ConnectionString2" Provider="System.Data.SqlClient">
           </Connection>
         </Connections>
         <Tables>
@@ -1587,101 +1587,101 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FET_FICHEETIOLOGIE" msprop:Generator_UserTableName="FET_FICHEETIOLOGIE" msprop:Generator_RowDeletedName="FET_FICHEETIOLOGIERowDeleted" msprop:Generator_RowChangedName="FET_FICHEETIOLOGIERowChanged" msprop:Generator_RowClassName="FET_FICHEETIOLOGIERow" msprop:Generator_RowChangingName="FET_FICHEETIOLOGIERowChanging" msprop:Generator_RowEvArgName="FET_FICHEETIOLOGIERowChangeEvent" msprop:Generator_RowEvHandlerName="FET_FICHEETIOLOGIERowChangeEventHandler" msprop:Generator_TableClassName="FET_FICHEETIOLOGIEDataTable" msprop:Generator_TableVarName="tableFET_FICHEETIOLOGIE" msprop:Generator_RowDeletingName="FET_FICHEETIOLOGIERowDeleting" msprop:Generator_TablePropName="FET_FICHEETIOLOGIE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FET_CODE_SQ_PK" msprop:Generator_UserColumnName="FET_CODE_SQ_PK" msprop:Generator_ColumnVarNameInTable="columnFET_CODE_SQ_PK" msprop:Generator_ColumnPropNameInRow="FET_CODE_SQ_PK" msprop:Generator_ColumnPropNameInTable="FET_CODE_SQ_PKColumn" type="xs:int" />
-              <xs:element name="FET_CMIHS" msprop:Generator_UserColumnName="FET_CMIHS" msprop:Generator_ColumnVarNameInTable="columnFET_CMIHS" msprop:Generator_ColumnPropNameInRow="FET_CMIHS" msprop:Generator_ColumnPropNameInTable="FET_CMIHSColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FET_CDF_UDHS_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDHS_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDHS_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDHS_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDHS_CODE_FKColumn" minOccurs="0">
+              <xs:element name="FET_CODE_SQ_PK" msprop:Generator_UserColumnName="FET_CODE_SQ_PK" msprop:Generator_ColumnPropNameInRow="FET_CODE_SQ_PK" msprop:Generator_ColumnVarNameInTable="columnFET_CODE_SQ_PK" msprop:Generator_ColumnPropNameInTable="FET_CODE_SQ_PKColumn" type="xs:int" />
+              <xs:element name="FET_CMIHS" msprop:Generator_UserColumnName="FET_CMIHS" msprop:Generator_ColumnPropNameInRow="FET_CMIHS" msprop:Generator_ColumnVarNameInTable="columnFET_CMIHS" msprop:Generator_ColumnPropNameInTable="FET_CMIHSColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FET_CDF_UDHS_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDHS_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDHS_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDHS_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDHS_CODE_FKColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FET_CMIIS" msprop:Generator_UserColumnName="FET_CMIIS" msprop:Generator_ColumnVarNameInTable="columnFET_CMIIS" msprop:Generator_ColumnPropNameInRow="FET_CMIIS" msprop:Generator_ColumnPropNameInTable="FET_CMIISColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FET_CDF_UDIS_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDIS_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDIS_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDIS_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDIS_CODE_FKColumn" minOccurs="0">
+              <xs:element name="FET_CMIIS" msprop:Generator_UserColumnName="FET_CMIIS" msprop:Generator_ColumnPropNameInRow="FET_CMIIS" msprop:Generator_ColumnVarNameInTable="columnFET_CMIIS" msprop:Generator_ColumnPropNameInTable="FET_CMIISColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FET_CDF_UDIS_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDIS_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDIS_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDIS_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDIS_CODE_FKColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FET_CMIMS" msprop:Generator_UserColumnName="FET_CMIMS" msprop:Generator_ColumnVarNameInTable="columnFET_CMIMS" msprop:Generator_ColumnPropNameInRow="FET_CMIMS" msprop:Generator_ColumnPropNameInTable="FET_CMIMSColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FET_CDF_UDMS_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDMS_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDMS_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDMS_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDMS_CODE_FKColumn" minOccurs="0">
+              <xs:element name="FET_CMIMS" msprop:Generator_UserColumnName="FET_CMIMS" msprop:Generator_ColumnPropNameInRow="FET_CMIMS" msprop:Generator_ColumnVarNameInTable="columnFET_CMIMS" msprop:Generator_ColumnPropNameInTable="FET_CMIMSColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FET_CDF_UDMS_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDMS_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDMS_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDMS_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDMS_CODE_FKColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FET_CMIRE" msprop:Generator_UserColumnName="FET_CMIRE" msprop:Generator_ColumnVarNameInTable="columnFET_CMIRE" msprop:Generator_ColumnPropNameInRow="FET_CMIRE" msprop:Generator_ColumnPropNameInTable="FET_CMIREColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FET_CDF_UDRE_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDRE_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDRE_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDRE_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDRE_CODE_FKColumn" minOccurs="0">
+              <xs:element name="FET_CMIRE" msprop:Generator_UserColumnName="FET_CMIRE" msprop:Generator_ColumnPropNameInRow="FET_CMIRE" msprop:Generator_ColumnVarNameInTable="columnFET_CMIRE" msprop:Generator_ColumnPropNameInTable="FET_CMIREColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FET_CDF_UDRE_CODE_FK" msprop:Generator_UserColumnName="FET_CDF_UDRE_CODE_FK" msprop:Generator_ColumnPropNameInRow="FET_CDF_UDRE_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFET_CDF_UDRE_CODE_FK" msprop:Generator_ColumnPropNameInTable="FET_CDF_UDRE_CODE_FKColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FET_DATECR" msprop:Generator_UserColumnName="FET_DATECR" msprop:Generator_ColumnVarNameInTable="columnFET_DATECR" msprop:Generator_ColumnPropNameInRow="FET_DATECR" msprop:Generator_ColumnPropNameInTable="FET_DATECRColumn" type="xs:dateTime" />
-              <xs:element name="FET_DATEMJ" msprop:Generator_UserColumnName="FET_DATEMJ" msprop:Generator_ColumnVarNameInTable="columnFET_DATEMJ" msprop:Generator_ColumnPropNameInRow="FET_DATEMJ" msprop:Generator_ColumnPropNameInTable="FET_DATEMJColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FET_DATECR" msprop:Generator_UserColumnName="FET_DATECR" msprop:Generator_ColumnPropNameInRow="FET_DATECR" msprop:Generator_ColumnVarNameInTable="columnFET_DATECR" msprop:Generator_ColumnPropNameInTable="FET_DATECRColumn" type="xs:dateTime" />
+              <xs:element name="FET_DATEMJ" msprop:Generator_UserColumnName="FET_DATEMJ" msprop:Generator_ColumnPropNameInRow="FET_DATEMJ" msprop:Generator_ColumnVarNameInTable="columnFET_DATEMJ" msprop:Generator_ColumnPropNameInTable="FET_DATEMJColumn" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FETCPH_ETIOCPH" msprop:Generator_UserTableName="FETCPH_ETIOCPH" msprop:Generator_RowDeletedName="FETCPH_ETIOCPHRowDeleted" msprop:Generator_RowChangedName="FETCPH_ETIOCPHRowChanged" msprop:Generator_RowClassName="FETCPH_ETIOCPHRow" msprop:Generator_RowChangingName="FETCPH_ETIOCPHRowChanging" msprop:Generator_RowEvArgName="FETCPH_ETIOCPHRowChangeEvent" msprop:Generator_RowEvHandlerName="FETCPH_ETIOCPHRowChangeEventHandler" msprop:Generator_TableClassName="FETCPH_ETIOCPHDataTable" msprop:Generator_TableVarName="tableFETCPH_ETIOCPH" msprop:Generator_RowDeletingName="FETCPH_ETIOCPHRowDeleting" msprop:Generator_TablePropName="FETCPH_ETIOCPH">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETCPH_CPH_CODE_FK_PK" msprop:Generator_UserColumnName="FETCPH_CPH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCPH_CPH_CODE_FK_PKColumn">
+              <xs:element name="FETCPH_CPH_CODE_FK_PK" msprop:Generator_UserColumnName="FETCPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCPH_CPH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCPH_CPH_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FETCPH_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCPH_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCPH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCPH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCPH_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETCPH_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCPH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCPH_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCPH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCPH_FET_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FETCCH_ETIOCCH" msprop:Generator_UserTableName="FETCCH_ETIOCCH" msprop:Generator_RowDeletedName="FETCCH_ETIOCCHRowDeleted" msprop:Generator_RowChangedName="FETCCH_ETIOCCHRowChanged" msprop:Generator_RowClassName="FETCCH_ETIOCCHRow" msprop:Generator_RowChangingName="FETCCH_ETIOCCHRowChanging" msprop:Generator_RowEvArgName="FETCCH_ETIOCCHRowChangeEvent" msprop:Generator_RowEvHandlerName="FETCCH_ETIOCCHRowChangeEventHandler" msprop:Generator_TableClassName="FETCCH_ETIOCCHDataTable" msprop:Generator_TableVarName="tableFETCCH_ETIOCCH" msprop:Generator_RowDeletingName="FETCCH_ETIOCCHRowDeleting" msprop:Generator_TablePropName="FETCCH_ETIOCCH">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETCCH_CCH_CODE_FK_PK" msprop:Generator_UserColumnName="FETCCH_CCH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCCH_CCH_CODE_FK_PKColumn">
+              <xs:element name="FETCCH_CCH_CODE_FK_PK" msprop:Generator_UserColumnName="FETCCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCCH_CCH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCCH_CCH_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FETCCH_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCCH_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCCH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCCH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCCH_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETCCH_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCCH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCCH_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCCH_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCCH_FET_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FETSAC_ETIOSUBAC" msprop:Generator_UserTableName="FETSAC_ETIOSUBAC" msprop:Generator_RowDeletedName="FETSAC_ETIOSUBACRowDeleted" msprop:Generator_RowChangedName="FETSAC_ETIOSUBACRowChanged" msprop:Generator_RowClassName="FETSAC_ETIOSUBACRow" msprop:Generator_RowChangingName="FETSAC_ETIOSUBACRowChanging" msprop:Generator_RowEvArgName="FETSAC_ETIOSUBACRowChangeEvent" msprop:Generator_RowEvHandlerName="FETSAC_ETIOSUBACRowChangeEventHandler" msprop:Generator_TableClassName="FETSAC_ETIOSUBACDataTable" msprop:Generator_TableVarName="tableFETSAC_ETIOSUBAC" msprop:Generator_RowDeletingName="FETSAC_ETIOSUBACRowDeleting" msprop:Generator_TablePropName="FETSAC_ETIOSUBAC">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETSAC_SAC_CODE_FK_PK" msprop:Generator_UserColumnName="FETSAC_SAC_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSAC_SAC_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETSAC_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETSAC_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSAC_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSAC_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSAC_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETSAC_SAC_CODE_FK_PK" msprop:Generator_UserColumnName="FETSAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSAC_SAC_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSAC_SAC_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETSAC_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETSAC_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSAC_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSAC_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSAC_FET_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FETPR_ETIOPROD" msprop:Generator_UserTableName="FETPR_ETIOPROD" msprop:Generator_RowDeletedName="FETPR_ETIOPRODRowDeleted" msprop:Generator_RowChangedName="FETPR_ETIOPRODRowChanged" msprop:Generator_RowClassName="FETPR_ETIOPRODRow" msprop:Generator_RowChangingName="FETPR_ETIOPRODRowChanging" msprop:Generator_RowEvArgName="FETPR_ETIOPRODRowChangeEvent" msprop:Generator_RowEvHandlerName="FETPR_ETIOPRODRowChangeEventHandler" msprop:Generator_TableClassName="FETPR_ETIOPRODDataTable" msprop:Generator_TableVarName="tableFETPR_ETIOPROD" msprop:Generator_RowDeletingName="FETPR_ETIOPRODRowDeleting" msprop:Generator_TablePropName="FETPR_ETIOPROD">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETPR_PR_CODE_FK_PK" msprop:Generator_UserColumnName="FETPR_PR_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETPR_PR_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETPR_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETPR_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETPR_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETPR_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETPR_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETPR_PR_CODE_FK_PK" msprop:Generator_UserColumnName="FETPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETPR_PR_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETPR_PR_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETPR_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETPR_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETPR_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETPR_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETPR_FET_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FETSP_ETIOSPE" msprop:Generator_UserTableName="FETSP_ETIOSPE" msprop:Generator_RowDeletedName="FETSP_ETIOSPERowDeleted" msprop:Generator_RowChangedName="FETSP_ETIOSPERowChanged" msprop:Generator_RowClassName="FETSP_ETIOSPERow" msprop:Generator_RowChangingName="FETSP_ETIOSPERowChanging" msprop:Generator_RowEvArgName="FETSP_ETIOSPERowChangeEvent" msprop:Generator_RowEvHandlerName="FETSP_ETIOSPERowChangeEventHandler" msprop:Generator_TableClassName="FETSP_ETIOSPEDataTable" msprop:Generator_TableVarName="tableFETSP_ETIOSPE" msprop:Generator_RowDeletingName="FETSP_ETIOSPERowDeleting" msprop:Generator_TablePropName="FETSP_ETIOSPE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETSP_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FETSP_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSP_SP_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETSP_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETSP_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSP_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSP_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSP_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETSP_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FETSP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSP_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSP_SP_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETSP_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETSP_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETSP_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETSP_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETSP_FET_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FETTXTI_TEXTINTRO_CMI" msprop:Generator_UserTableName="FETTXTI_TEXTINTRO_CMI" msprop:Generator_RowDeletedName="FETTXTI_TEXTINTRO_CMIRowDeleted" msprop:Generator_RowChangedName="FETTXTI_TEXTINTRO_CMIRowChanged" msprop:Generator_RowClassName="FETTXTI_TEXTINTRO_CMIRow" msprop:Generator_RowChangingName="FETTXTI_TEXTINTRO_CMIRowChanging" msprop:Generator_RowEvArgName="FETTXTI_TEXTINTRO_CMIRowChangeEvent" msprop:Generator_RowEvHandlerName="FETTXTI_TEXTINTRO_CMIRowChangeEventHandler" msprop:Generator_TableClassName="FETTXTI_TEXTINTRO_CMIDataTable" msprop:Generator_TableVarName="tableFETTXTI_TEXTINTRO_CMI" msprop:Generator_RowDeletingName="FETTXTI_TEXTINTRO_CMIRowDeleting" msprop:Generator_TablePropName="FETTXTI_TEXTINTRO_CMI">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETTXTI_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTXTI_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTXTI_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTXTI_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTXTI_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETTXTI_TXT_INTRO" msprop:Generator_UserColumnName="FETTXTI_TXT_INTRO" msprop:Generator_ColumnVarNameInTable="columnFETTXTI_TXT_INTRO" msprop:Generator_ColumnPropNameInRow="FETTXTI_TXT_INTRO" msprop:Generator_ColumnPropNameInTable="FETTXTI_TXT_INTROColumn" minOccurs="0">
+              <xs:element name="FETTXTI_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTXTI_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTXTI_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTXTI_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTXTI_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETTXTI_TXT_INTRO" msprop:Generator_UserColumnName="FETTXTI_TXT_INTRO" msprop:Generator_ColumnPropNameInRow="FETTXTI_TXT_INTRO" msprop:Generator_ColumnVarNameInTable="columnFETTXTI_TXT_INTRO" msprop:Generator_ColumnPropNameInTable="FETTXTI_TXT_INTROColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -1694,15 +1694,15 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETHS_ETIOLOGIE_HABITU_SENSIB" msprop:Generator_UserTableName="FETHS_ETIOLOGIE_HABITU_SENSIB" msprop:Generator_RowDeletedName="FETHS_ETIOLOGIE_HABITU_SENSIBRowDeleted" msprop:Generator_RowChangedName="FETHS_ETIOLOGIE_HABITU_SENSIBRowChanged" msprop:Generator_RowClassName="FETHS_ETIOLOGIE_HABITU_SENSIBRow" msprop:Generator_RowChangingName="FETHS_ETIOLOGIE_HABITU_SENSIBRowChanging" msprop:Generator_RowEvArgName="FETHS_ETIOLOGIE_HABITU_SENSIBRowChangeEvent" msprop:Generator_RowEvHandlerName="FETHS_ETIOLOGIE_HABITU_SENSIBRowChangeEventHandler" msprop:Generator_TableClassName="FETHS_ETIOLOGIE_HABITU_SENSIBDataTable" msprop:Generator_TableVarName="tableFETHS_ETIOLOGIE_HABITU_SENSIB" msprop:Generator_RowDeletingName="FETHS_ETIOLOGIE_HABITU_SENSIBRowDeleting" msprop:Generator_TablePropName="FETHS_ETIOLOGIE_HABITU_SENSIB">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETHS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETHS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETHS_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETHS_CDF_ETIN_CODE_FK_PKColumn">
+              <xs:element name="FETHS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETHS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETHS_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETHS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETHS_CDF_ETIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FETHS_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETHS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETHS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETHS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETHS_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
+              <xs:element name="FETHS_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETHS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETHS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETHS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETHS_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
@@ -1715,8 +1715,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETCHS_COMMENT_HABITU_SENSIBLE" msprop:Generator_UserTableName="FETCHS_COMMENT_HABITU_SENSIBLE" msprop:Generator_RowDeletedName="FETCHS_COMMENT_HABITU_SENSIBLERowDeleted" msprop:Generator_RowChangedName="FETCHS_COMMENT_HABITU_SENSIBLERowChanged" msprop:Generator_RowClassName="FETCHS_COMMENT_HABITU_SENSIBLERow" msprop:Generator_RowChangingName="FETCHS_COMMENT_HABITU_SENSIBLERowChanging" msprop:Generator_RowEvArgName="FETCHS_COMMENT_HABITU_SENSIBLERowChangeEvent" msprop:Generator_RowEvHandlerName="FETCHS_COMMENT_HABITU_SENSIBLERowChangeEventHandler" msprop:Generator_TableClassName="FETCHS_COMMENT_HABITU_SENSIBLEDataTable" msprop:Generator_TableVarName="tableFETCHS_COMMENT_HABITU_SENSIBLE" msprop:Generator_RowDeletingName="FETCHS_COMMENT_HABITU_SENSIBLERowDeleting" msprop:Generator_TablePropName="FETCHS_COMMENT_HABITU_SENSIBLE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETCHS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCHS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCHS_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCHS_CDF_COIN_CODE_FK_PKColumn">
+              <xs:element name="FETCHS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCHS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCHS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCHS_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCHS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCHS_CDF_COIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -1729,8 +1729,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETTX1_ET_TXHS" msprop:Generator_UserTableName="FETTX1_ET_TXHS" msprop:Generator_RowDeletedName="FETTX1_ET_TXHSRowDeleted" msprop:Generator_RowChangedName="FETTX1_ET_TXHSRowChanged" msprop:Generator_RowClassName="FETTX1_ET_TXHSRow" msprop:Generator_RowChangingName="FETTX1_ET_TXHSRowChanging" msprop:Generator_RowEvArgName="FETTX1_ET_TXHSRowChangeEvent" msprop:Generator_RowEvHandlerName="FETTX1_ET_TXHSRowChangeEventHandler" msprop:Generator_TableClassName="FETTX1_ET_TXHSDataTable" msprop:Generator_TableVarName="tableFETTX1_ET_TXHS" msprop:Generator_RowDeletingName="FETTX1_ET_TXHSRowDeleting" msprop:Generator_TablePropName="FETTX1_ET_TXHS">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETTX1_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX1_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX1_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX1_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX1_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETTX1_TEXTE" msprop:Generator_UserColumnName="FETTX1_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX1_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX1_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX1_TEXTEColumn" minOccurs="0">
+              <xs:element name="FETTX1_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX1_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX1_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX1_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX1_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETTX1_TEXTE" msprop:Generator_UserColumnName="FETTX1_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX1_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX1_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX1_TEXTEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -1743,15 +1743,15 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETIS_ETIOLOGIE_INCONST_SENSIB" msprop:Generator_UserTableName="FETIS_ETIOLOGIE_INCONST_SENSIB" msprop:Generator_RowDeletedName="FETIS_ETIOLOGIE_INCONST_SENSIBRowDeleted" msprop:Generator_RowChangedName="FETIS_ETIOLOGIE_INCONST_SENSIBRowChanged" msprop:Generator_RowClassName="FETIS_ETIOLOGIE_INCONST_SENSIBRow" msprop:Generator_RowChangingName="FETIS_ETIOLOGIE_INCONST_SENSIBRowChanging" msprop:Generator_RowEvArgName="FETIS_ETIOLOGIE_INCONST_SENSIBRowChangeEvent" msprop:Generator_RowEvHandlerName="FETIS_ETIOLOGIE_INCONST_SENSIBRowChangeEventHandler" msprop:Generator_TableClassName="FETIS_ETIOLOGIE_INCONST_SENSIBDataTable" msprop:Generator_TableVarName="tableFETIS_ETIOLOGIE_INCONST_SENSIB" msprop:Generator_RowDeletingName="FETIS_ETIOLOGIE_INCONST_SENSIBRowDeleting" msprop:Generator_TablePropName="FETIS_ETIOLOGIE_INCONST_SENSIB">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETIS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETIS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETIS_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETIS_CDF_ETIN_CODE_FK_PKColumn">
+              <xs:element name="FETIS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETIS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETIS_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETIS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETIS_CDF_ETIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FETIS_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETIS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETIS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETIS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETIS_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
+              <xs:element name="FETIS_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETIS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETIS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETIS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETIS_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
@@ -1764,8 +1764,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETCIS_COMMENT_INCONS_SENSIBLE" msprop:Generator_UserTableName="FETCIS_COMMENT_INCONS_SENSIBLE" msprop:Generator_RowDeletedName="FETCIS_COMMENT_INCONS_SENSIBLERowDeleted" msprop:Generator_RowChangedName="FETCIS_COMMENT_INCONS_SENSIBLERowChanged" msprop:Generator_RowClassName="FETCIS_COMMENT_INCONS_SENSIBLERow" msprop:Generator_RowChangingName="FETCIS_COMMENT_INCONS_SENSIBLERowChanging" msprop:Generator_RowEvArgName="FETCIS_COMMENT_INCONS_SENSIBLERowChangeEvent" msprop:Generator_RowEvHandlerName="FETCIS_COMMENT_INCONS_SENSIBLERowChangeEventHandler" msprop:Generator_TableClassName="FETCIS_COMMENT_INCONS_SENSIBLEDataTable" msprop:Generator_TableVarName="tableFETCIS_COMMENT_INCONS_SENSIBLE" msprop:Generator_RowDeletingName="FETCIS_COMMENT_INCONS_SENSIBLERowDeleting" msprop:Generator_TablePropName="FETCIS_COMMENT_INCONS_SENSIBLE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETCIS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCIS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCIS_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCIS_CDF_COIN_CODE_FK_PKColumn">
+              <xs:element name="FETCIS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCIS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCIS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCIS_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCIS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCIS_CDF_COIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -1778,8 +1778,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETTX2_ET_TXIS" msprop:Generator_UserTableName="FETTX2_ET_TXIS" msprop:Generator_RowDeletedName="FETTX2_ET_TXISRowDeleted" msprop:Generator_RowChangedName="FETTX2_ET_TXISRowChanged" msprop:Generator_RowClassName="FETTX2_ET_TXISRow" msprop:Generator_RowChangingName="FETTX2_ET_TXISRowChanging" msprop:Generator_RowEvArgName="FETTX2_ET_TXISRowChangeEvent" msprop:Generator_RowEvHandlerName="FETTX2_ET_TXISRowChangeEventHandler" msprop:Generator_TableClassName="FETTX2_ET_TXISDataTable" msprop:Generator_TableVarName="tableFETTX2_ET_TXIS" msprop:Generator_RowDeletingName="FETTX2_ET_TXISRowDeleting" msprop:Generator_TablePropName="FETTX2_ET_TXIS">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETTX2_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX2_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX2_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX2_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX2_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETTX2_TEXTE" msprop:Generator_UserColumnName="FETTX2_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX2_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX2_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX2_TEXTEColumn" minOccurs="0">
+              <xs:element name="FETTX2_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX2_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX2_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX2_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX2_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETTX2_TEXTE" msprop:Generator_UserColumnName="FETTX2_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX2_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX2_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX2_TEXTEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -1792,15 +1792,15 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETMS_ETIOLOGIE_MODEREM_SENSIB" msprop:Generator_UserTableName="FETMS_ETIOLOGIE_MODEREM_SENSIB" msprop:Generator_RowDeletedName="FETMS_ETIOLOGIE_MODEREM_SENSIBRowDeleted" msprop:Generator_RowChangedName="FETMS_ETIOLOGIE_MODEREM_SENSIBRowChanged" msprop:Generator_RowClassName="FETMS_ETIOLOGIE_MODEREM_SENSIBRow" msprop:Generator_RowChangingName="FETMS_ETIOLOGIE_MODEREM_SENSIBRowChanging" msprop:Generator_RowEvArgName="FETMS_ETIOLOGIE_MODEREM_SENSIBRowChangeEvent" msprop:Generator_RowEvHandlerName="FETMS_ETIOLOGIE_MODEREM_SENSIBRowChangeEventHandler" msprop:Generator_TableClassName="FETMS_ETIOLOGIE_MODEREM_SENSIBDataTable" msprop:Generator_TableVarName="tableFETMS_ETIOLOGIE_MODEREM_SENSIB" msprop:Generator_RowDeletingName="FETMS_ETIOLOGIE_MODEREM_SENSIBRowDeleting" msprop:Generator_TablePropName="FETMS_ETIOLOGIE_MODEREM_SENSIB">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETMS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETMS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETMS_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETMS_CDF_ETIN_CODE_FK_PKColumn">
+              <xs:element name="FETMS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETMS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETMS_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETMS_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETMS_CDF_ETIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FETMS_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETMS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETMS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETMS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETMS_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
+              <xs:element name="FETMS_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETMS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETMS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETMS_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETMS_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
@@ -1813,8 +1813,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETCMS_COMMENT_MODERE_SENSIBLE" msprop:Generator_UserTableName="FETCMS_COMMENT_MODERE_SENSIBLE" msprop:Generator_RowDeletedName="FETCMS_COMMENT_MODERE_SENSIBLERowDeleted" msprop:Generator_RowChangedName="FETCMS_COMMENT_MODERE_SENSIBLERowChanged" msprop:Generator_RowClassName="FETCMS_COMMENT_MODERE_SENSIBLERow" msprop:Generator_RowChangingName="FETCMS_COMMENT_MODERE_SENSIBLERowChanging" msprop:Generator_RowEvArgName="FETCMS_COMMENT_MODERE_SENSIBLERowChangeEvent" msprop:Generator_RowEvHandlerName="FETCMS_COMMENT_MODERE_SENSIBLERowChangeEventHandler" msprop:Generator_TableClassName="FETCMS_COMMENT_MODERE_SENSIBLEDataTable" msprop:Generator_TableVarName="tableFETCMS_COMMENT_MODERE_SENSIBLE" msprop:Generator_RowDeletingName="FETCMS_COMMENT_MODERE_SENSIBLERowDeleting" msprop:Generator_TablePropName="FETCMS_COMMENT_MODERE_SENSIBLE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETCMS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCMS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCMS_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCMS_CDF_COIN_CODE_FK_PKColumn">
+              <xs:element name="FETCMS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCMS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCMS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCMS_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCMS_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCMS_CDF_COIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -1827,8 +1827,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETTX3_ET_TXMS" msprop:Generator_UserTableName="FETTX3_ET_TXMS" msprop:Generator_RowDeletedName="FETTX3_ET_TXMSRowDeleted" msprop:Generator_RowChangedName="FETTX3_ET_TXMSRowChanged" msprop:Generator_RowClassName="FETTX3_ET_TXMSRow" msprop:Generator_RowChangingName="FETTX3_ET_TXMSRowChanging" msprop:Generator_RowEvArgName="FETTX3_ET_TXMSRowChangeEvent" msprop:Generator_RowEvHandlerName="FETTX3_ET_TXMSRowChangeEventHandler" msprop:Generator_TableClassName="FETTX3_ET_TXMSDataTable" msprop:Generator_TableVarName="tableFETTX3_ET_TXMS" msprop:Generator_RowDeletingName="FETTX3_ET_TXMSRowDeleting" msprop:Generator_TablePropName="FETTX3_ET_TXMS">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETTX3_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX3_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX3_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX3_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX3_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETTX3_TEXTE" msprop:Generator_UserColumnName="FETTX3_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX3_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX3_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX3_TEXTEColumn" minOccurs="0">
+              <xs:element name="FETTX3_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX3_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX3_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX3_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX3_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETTX3_TEXTE" msprop:Generator_UserColumnName="FETTX3_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX3_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX3_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX3_TEXTEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -1841,15 +1841,15 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETRE_ETIOLOGIE_RESISTANTES" msprop:Generator_UserTableName="FETRE_ETIOLOGIE_RESISTANTES" msprop:Generator_RowDeletedName="FETRE_ETIOLOGIE_RESISTANTESRowDeleted" msprop:Generator_RowChangedName="FETRE_ETIOLOGIE_RESISTANTESRowChanged" msprop:Generator_RowClassName="FETRE_ETIOLOGIE_RESISTANTESRow" msprop:Generator_RowChangingName="FETRE_ETIOLOGIE_RESISTANTESRowChanging" msprop:Generator_RowEvArgName="FETRE_ETIOLOGIE_RESISTANTESRowChangeEvent" msprop:Generator_RowEvHandlerName="FETRE_ETIOLOGIE_RESISTANTESRowChangeEventHandler" msprop:Generator_TableClassName="FETRE_ETIOLOGIE_RESISTANTESDataTable" msprop:Generator_TableVarName="tableFETRE_ETIOLOGIE_RESISTANTES" msprop:Generator_RowDeletingName="FETRE_ETIOLOGIE_RESISTANTESRowDeleting" msprop:Generator_TablePropName="FETRE_ETIOLOGIE_RESISTANTES">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETRE_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETRE_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETRE_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETRE_CDF_ETIN_CODE_FK_PKColumn">
+              <xs:element name="FETRE_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETRE_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETRE_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETRE_CDF_ETIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETRE_CDF_ETIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FETRE_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETRE_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETRE_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETRE_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETRE_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
+              <xs:element name="FETRE_POURCENTAGE_RESISTANCE" msprop:Generator_UserColumnName="FETRE_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnVarNameInTable="columnFETRE_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInRow="FETRE_POURCENTAGE_RESISTANCE" msprop:Generator_ColumnPropNameInTable="FETRE_POURCENTAGE_RESISTANCEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="40" />
@@ -1862,8 +1862,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETCRE_COMMENT_RESISTANTE" msprop:Generator_UserTableName="FETCRE_COMMENT_RESISTANTE" msprop:Generator_RowDeletedName="FETCRE_COMMENT_RESISTANTERowDeleted" msprop:Generator_RowChangedName="FETCRE_COMMENT_RESISTANTERowChanged" msprop:Generator_RowClassName="FETCRE_COMMENT_RESISTANTERow" msprop:Generator_RowChangingName="FETCRE_COMMENT_RESISTANTERowChanging" msprop:Generator_RowEvArgName="FETCRE_COMMENT_RESISTANTERowChangeEvent" msprop:Generator_RowEvHandlerName="FETCRE_COMMENT_RESISTANTERowChangeEventHandler" msprop:Generator_TableClassName="FETCRE_COMMENT_RESISTANTEDataTable" msprop:Generator_TableVarName="tableFETCRE_COMMENT_RESISTANTE" msprop:Generator_RowDeletingName="FETCRE_COMMENT_RESISTANTERowDeleting" msprop:Generator_TablePropName="FETCRE_COMMENT_RESISTANTE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETCRE_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCRE_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCRE_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCRE_CDF_COIN_CODE_FK_PKColumn">
+              <xs:element name="FETCRE_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETCRE_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCRE_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCRE_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_UserColumnName="FETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETCRE_CDF_COIN_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETCRE_CDF_COIN_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -1876,8 +1876,8 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETTX4_ET_TXRE" msprop:Generator_UserTableName="FETTX4_ET_TXRE" msprop:Generator_RowDeletedName="FETTX4_ET_TXRERowDeleted" msprop:Generator_RowChangedName="FETTX4_ET_TXRERowChanged" msprop:Generator_RowClassName="FETTX4_ET_TXRERow" msprop:Generator_RowChangingName="FETTX4_ET_TXRERowChanging" msprop:Generator_RowEvArgName="FETTX4_ET_TXRERowChangeEvent" msprop:Generator_RowEvHandlerName="FETTX4_ET_TXRERowChangeEventHandler" msprop:Generator_TableClassName="FETTX4_ET_TXREDataTable" msprop:Generator_TableVarName="tableFETTX4_ET_TXRE" msprop:Generator_RowDeletingName="FETTX4_ET_TXRERowDeleting" msprop:Generator_TablePropName="FETTX4_ET_TXRE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETTX4_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX4_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX4_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX4_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX4_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETTX4_TEXTE" msprop:Generator_UserColumnName="FETTX4_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX4_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX4_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX4_TEXTEColumn" minOccurs="0">
+              <xs:element name="FETTX4_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETTX4_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETTX4_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETTX4_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETTX4_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETTX4_TEXTE" msprop:Generator_UserColumnName="FETTX4_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFETTX4_TEXTE" msprop:Generator_ColumnPropNameInRow="FETTX4_TEXTE" msprop:Generator_ColumnPropNameInTable="FETTX4_TEXTEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -1890,10 +1890,10 @@ WHERE FETAFS_FET_CODE_FK_PK = @FETAFS_FET_CODE_FK_PK</CommandText>
         <xs:element name="FETAFS_FET_AFSSAPS" msprop:Generator_UserTableName="FETAFS_FET_AFSSAPS" msprop:Generator_RowDeletedName="FETAFS_FET_AFSSAPSRowDeleted" msprop:Generator_RowChangedName="FETAFS_FET_AFSSAPSRowChanged" msprop:Generator_RowClassName="FETAFS_FET_AFSSAPSRow" msprop:Generator_RowChangingName="FETAFS_FET_AFSSAPSRowChanging" msprop:Generator_RowEvArgName="FETAFS_FET_AFSSAPSRowChangeEvent" msprop:Generator_RowEvHandlerName="FETAFS_FET_AFSSAPSRowChangeEventHandler" msprop:Generator_TableClassName="FETAFS_FET_AFSSAPSDataTable" msprop:Generator_TableVarName="tableFETAFS_FET_AFSSAPS" msprop:Generator_RowDeletingName="FETAFS_FET_AFSSAPSRowDeleting" msprop:Generator_TablePropName="FETAFS_FET_AFSSAPS">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FETAFS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETAFS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_FET_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETAFS_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FETAFS_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_SP_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FETAFS_DATE_PK" msprop:Generator_UserColumnName="FETAFS_DATE_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_DATE_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_DATE_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_DATE_PKColumn" type="xs:dateTime" />
-              <xs:element name="FETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_UserColumnName="FETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_CDF_DOCUMENT_FK_PKColumn">
+              <xs:element name="FETAFS_FET_CODE_FK_PK" msprop:Generator_UserColumnName="FETAFS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_FET_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_FET_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_FET_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETAFS_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FETAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_SP_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FETAFS_DATE_PK" msprop:Generator_UserColumnName="FETAFS_DATE_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_DATE_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_DATE_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_DATE_PKColumn" type="xs:dateTime" />
+              <xs:element name="FETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_UserColumnName="FETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInRow="FETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFETAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInTable="FETAFS_CDF_DOCUMENT_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />

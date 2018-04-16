@@ -1245,6 +1245,94 @@ Public Module ModDeclinaison
         '----------------------------------------------------
     End Sub
 
+    Public Sub DeclinaisonTPP_Classique(ByRef FrmFormulaire As Frm_Formulaire, ByVal txtTag As StructTxtProperty)
+        Dim ColCPHADD As New Collection
+        Dim ColCPHDelete As New Collection
+        Dim ColCPH As New Collection
+
+        Dim ColCCHADD As New Collection
+        Dim ColCCHDelete As New Collection
+        Dim ColCCH As New Collection
+
+        Dim ColSACADD As New Collection
+        Dim ColSACDelete As New Collection
+        Dim ColSAC As New Collection
+
+        Dim ColVoie As New Collection
+        Dim ColTeneur As New Collection
+
+        Dim ColEP As New Collection
+        Dim ColEPDelete As New Collection
+        Dim ColEPADD As New Collection
+
+        Dim StrSSQLEP As String = strSSQL_SP_SPECIALITE_Distinct
+        Dim StrVoie As String = strSSQL_CDF_CODIF_Distinct("18")
+
+        Dim gvCPH As DevExpress.XtraGrid.Views.Grid.GridView
+        Dim gvCCH As DevExpress.XtraGrid.Views.Grid.GridView
+        Dim gvSAC As DevExpress.XtraGrid.Views.Grid.GridView
+
+        Dim gvEP As DevExpress.XtraGrid.Views.Grid.GridView
+        Dim gvTemp As DevExpress.XtraGrid.Views.Grid.GridView
+        Dim gvTPP As DevExpress.XtraGrid.Views.Grid.GridView
+
+        Dim CollectionContent As New System.Collections.Generic.List(Of StructGVTable)
+        'CollectionContent = txtTag.Declinaison.ContentIn
+        ''---------------------------------------
+        '' Affichage des Classe pharmaco-thérapeutique
+        ''---------------------------------------
+        Dim f As New Frm_Dictionnaire_Declinaison
+        f._strTable = "CDF_CODIF"
+        f._Libelle = "Terrains pères physio-pathologiques"
+        Dim strSSQL_TPP As String = ""
+
+        strSSQL_TPP = " select CDF_CODE_PK as code, CDF_NOM as libelle,0 as disable ,0 as chk ,0 as chkFixe from  THERIAQUE.CDF_CODIF where CDF_NUMERO_PK = 'TP'"
+        'strSSQL_TPP &= " union"
+        'strSSQL_TPP &= " select CDF_CODE_PK as code, CDF_NOM as libelle,1 as disable ,0 as chk ,0 as chkFixe from  THERIAQUE.CDF_CODIF where CDF_NUMERO_PK = 'TP'"
+        f._SSQL = strSSQL_TPP
+
+
+        'For Inti As Integer = 0 To CollectionContent.Count - 1
+        '    'If CollectionContent(Inti).Table = eDeclinaison.CPH Then
+        '    gvTPP = CType(FrmFormulaire.Controls.Find("GC11", True)(0), DevExpress.XtraGrid.GridControl).MainView
+        '    Dim colTemp As New Collection
+        '    If gvTPP.GetFocusedRowCellValue(CollectionContent(Inti).Column) IsNot Nothing Then
+        '        colTemp.Add(cn.SQLText(gvTPP.GetFocusedRowCellValue(CollectionContent(Inti).Column)))
+        '        f._CollectionIn = colTemp
+        '    End If
+        '    f.txtSearch.Text = ClsCPH.GetLibelle(gvCPH.GetFocusedRowCellValue(CollectionContent(Inti).Column))
+        '    Exit For
+        '    'End If
+        'Next
+        f.ShowDialog()
+        If f._Ok = False Then
+            Exit Sub
+        End If
+        ColCPH = f._CollectionOut
+        ColCPHDelete = f._CollectionOutDelete
+        ColCPHADD = f._CollectionOutADD
+        gvTPP = CType(FrmFormulaire.Controls.Find("GC11", True)(0), DevExpress.XtraGrid.GridControl).MainView
+
+
+        For intk As Integer = 1 To ColCPHADD.Count
+            gvTPP.AddNewRow()
+            gvTPP.SetFocusedRowCellValue(gvTPP.Columns(1), ColCPHADD(intk))
+        Next
+        For intk As Integer = 1 To ColCPHDelete.Count
+            For intJ As Integer = 0 To gvTPP.RowCount - 1
+                If gvTPP.GetRowCellValue(intJ, gvTPP.Columns(0)) = ColCPHDelete(intk) Then
+                    gvTPP.DeleteRow(intJ)
+                    Exit For
+                End If
+            Next
+        Next
+
+
+        f.Dispose()
+
+    End Sub
+
+
     Public Sub DeclinaisonCPH_Classique(ByRef FrmFormulaire As Frm_Formulaire, ByVal txtTag As StructTxtProperty)
         Dim ColCPHADD As New Collection
         Dim ColCPHDelete As New Collection
@@ -1304,13 +1392,13 @@ Public Module ModDeclinaison
             End If
         Next
         f.ShowDialog()
-        If f._Ok = False Then
-            Exit Sub
-        End If
-        ColCPH = f._CollectionOut
-        ColCPHDelete = f._CollectionOutDelete
-        ColCPHADD = f._CollectionOutADD
-        f.Dispose()
+        'If f._Ok = False Then
+        '    Exit Sub
+        'End If
+        'ColCPH = f._CollectionOut
+        'ColCPHDelete = f._CollectionOutDelete
+        'ColCPHADD = f._CollectionOutADD
+        'f.Dispose()
 
         ''---------------------------------------
         '' Affichage des Classe Chimique
@@ -1324,247 +1412,8 @@ Public Module ModDeclinaison
 
             End If
         Next
-        If gvCCH IsNot Nothing Then
-            'Dim f2 As New Frm_Dictionnaire_Declinaison
-            f2._strTable = "CCH_CLASSECHIMIQUE"
-            f2._Libelle = "Classe chimique"
-            Dim strSSQL_CCH_CLASSECHIMIQUE2 As String = ""
-            strSSQL_CCH_CLASSECHIMIQUE2 &= " Select CCH_CODE_PK as code, CCH_NOM as libelle,0 as disable ,0 as chk ,0 as chkFixe From THERIAQUE.CCH_CLASSECHIMIQUE"
-            strSSQL_CCH_CLASSECHIMIQUE2 &= " where CCH_CODE_PK  not in (select distinct isnull(CCH_CCH_CODE_FK,'') from THERIAQUE.CCH_CLASSECHIMIQUE) "
-            strSSQL_CCH_CLASSECHIMIQUE2 &= " union"
-            strSSQL_CCH_CLASSECHIMIQUE2 &= " Select CCH_CODE_PK as code, CCH_NOM as libelle, 1 as disable,0 as chk ,0 as chkFixe From THERIAQUE.CCH_CLASSECHIMIQUE"
-            strSSQL_CCH_CLASSECHIMIQUE2 &= " where CCH_CODE_PK in (select distinct isnull(CCH_CCH_CODE_FK,'') from THERIAQUE.CCH_CLASSECHIMIQUE) "
-            strSSQL_CCH_CLASSECHIMIQUE2 &= " order by CCH_CODE_PK "
-            f2._SSQL = strSSQL_CCH_CLASSECHIMIQUE2
-            'For Inti As Integer = 0 To CollectionContent.Count - 1
-            '    If CollectionContent(Inti).Table = eDeclinaison.CCH Then
-            '        gvCCH = CType(FrmFormulaire.Controls.Find(CollectionContent(Inti).gc, True)(0), DevExpress.XtraGrid.GridControl).MainView
-            '        f2._CollectionIn = GetCodeStringFromGV(gvCCH, CollectionContent(Inti).Column)
-            '        Exit For
 
-            '    End If
-            'Next
-            f2.ShowDialog()
-            If f2._Ok = False Then
-                Exit Sub
-            End If
-            ColCCH = f2._CollectionOut
-            ColCCHDelete = f2._CollectionOutDelete
-            ColCCHADD = f2._CollectionOutADD
-            f2.Dispose()
-        End If
-        ''---------------------------------------
-        '' Affichage des substances actives
-        ''---------------------------------------
-        Dim f4 As New Frm_Dictionnaire_Declinaison
-        f4._strTable = "SAC_SUBACTIVE"
-        f4._Libelle = "Substances actives"
-        Dim strSSQL_SAC_SUBACTIVE2 As String = ""
-        strSSQL_SAC_SUBACTIVE2 = strSSQL_SAC_SUBACTIVE
-        If ColCPH.Count > 0 Then
-            If ColCCH.Count > 0 Then
-                strSSQL_SAC_SUBACTIVE2 = " Select SAC_CODE_SQ_PK as code, SAC_NOM as libelle,0 as chk ,0 as chkFixe From THERIAQUE.SAC_SUBACTIVE"
-                strSSQL_SAC_SUBACTIVE2 &= " ,THERIAQUE.SACCCH_SUBACT_CLASSECH"
-                strSSQL_SAC_SUBACTIVE2 &= " where SACCCH_CCH_CODE_FK_PK  in " & GetCodeFromCollectionString(ColCCH)
-                strSSQL_SAC_SUBACTIVE2 &= " and SACCCH_SAC_CODE_FK_PK = SAC_CODE_SQ_PK "
-                strSSQL_SAC_SUBACTIVE2 &= " UNION "
-                strSSQL_SAC_SUBACTIVE2 &= " Select SAC_CODE_SQ_PK as code, SAC_NOM as libelle,0 as chk ,0 as chkFixe From THERIAQUE.SAC_SUBACTIVE"
-                strSSQL_SAC_SUBACTIVE2 &= " ,THERIAQUE.SACCPH_SUBACT_CLASSEPH"
-                strSSQL_SAC_SUBACTIVE2 &= " where SACCPH_CPH_CODE_FK_PK  in " & GetCodeFromCollectionString(ColCPH)
-                strSSQL_SAC_SUBACTIVE2 &= " and SACCPH_SAC_CODE_FK_PK = SAC_CODE_SQ_PK "
-            Else
-                strSSQL_SAC_SUBACTIVE2 = " Select SAC_CODE_SQ_PK as code, SAC_NOM as libelle,0 as chk ,0 as chkFixe From THERIAQUE.SAC_SUBACTIVE"
-                strSSQL_SAC_SUBACTIVE2 &= " ,THERIAQUE.SACCPH_SUBACT_CLASSEPH"
-                strSSQL_SAC_SUBACTIVE2 &= " where SACCPH_CPH_CODE_FK_PK  in " & GetCodeFromCollectionString(ColCPH)
-                strSSQL_SAC_SUBACTIVE2 &= " and SACCPH_SAC_CODE_FK_PK = SAC_CODE_SQ_PK "
-            End If
-        Else
-            If ColCCH.Count > 0 Then
-                strSSQL_SAC_SUBACTIVE2 = " Select SAC_CODE_SQ_PK as code, SAC_NOM as libelle,0 as chk ,0 as chkFixe From THERIAQUE.SAC_SUBACTIVE"
-                strSSQL_SAC_SUBACTIVE2 &= " ,THERIAQUE.SACCCH_SUBACT_CLASSECH"
-                strSSQL_SAC_SUBACTIVE2 &= " where SACCCH_CCH_CODE_FK_PK  in " & GetCodeFromCollectionString(ColCCH)
-                strSSQL_SAC_SUBACTIVE2 &= " and SACCCH_SAC_CODE_FK_PK = SAC_CODE_SQ_PK "
-            End If
-        End If
-        f4._SSQL = strSSQL_SAC_SUBACTIVE2
-        For Inti As Integer = 0 To CollectionContent.Count - 1
-            If CollectionContent(Inti).Table = eDeclinaison.SAC Then
-                gvSAC = CType(FrmFormulaire.Controls.Find(CollectionContent(Inti).gc, True)(0), DevExpress.XtraGrid.GridControl).MainView
-                'Dim colTemp As New Collection
-                'colTemp.Add(gvSAC.GetFocusedRowCellValue(CollectionContent(Inti).Column))
-                f4._CollectionIn = GetCodeFromGV(gvSAC, CollectionContent(Inti).Column)
-                'f4.txtSearch.Text = ClsSAC.GetLibelle(gvSAC.GetFocusedRowCellValue(CollectionContent(Inti).Column))
-                Exit For
-            End If
-        Next
-        f4.ShowDialog()
-        If f4._Ok = False Then
-            Exit Sub
-        End If
-        ColSAC = f4._CollectionOut
-        ColSACDelete = f4._CollectionOutDelete
-        ColSACADD = f4._CollectionOutADD
-        f4.Dispose()
-        ''---------------------------------------
-        '' Affichage des Voies
-        ''---------------------------------------
-        Dim f8 As New Frm_Dictionnaire_Declinaison
 
-        StrVoie = " Select Distinct CDF_CODE_PK as code, CDF_NOM as libelle, CDF_NUMERO_PK as num ,0 as chk From THERIAQUE.CDF_CODIF "
-        StrVoie &= " ,THERIAQUE.SPVO_SPECIALITE_VOIE"
-        StrVoie &= " where SPVO_CDF_VO_CODE_FK_PK = CDF_CODE_PK"
-        StrVoie &= " and CDF_NUMERO_PK = '18'"
-        If ColSAC.Count > 0 Then
-            StrVoie &= " and SPVO_SP_CODE_FK_PK in "
-            StrVoie &= " ("
-            StrVoie &= " Select Distinct SP_CODE_SQ_PK as code From THERIAQUE.SP_SPECIALITE"
-            StrVoie &= " ,THERIAQUE.COSAC_COMPO_SUBACT "
-            StrVoie &= " where COSAC_SP_CODE_FK_PK = SP_CODE_SQ_PK "
-            StrVoie &= " and COSAC_SAC_CODE_FK_PK in " & GetCodeFromCollection(ColSAC)
-            StrVoie &= " )"
-        End If
-        f8._SSQL = StrVoie
-        f8._strTable = "CDF_CODIF"
-        f8._Libelle = " Voie "
-        f8.ShowDialog()
-        If f8._Ok = False Then
-            Exit Sub
-        End If
-        ColVoie = f8._CollectionOut
-        f8.Dispose()
-
-        ''---------------------------------------
-        '' Affichage des Episodes
-        ''---------------------------------------
-        Dim f3 As New Frm_Dictionnaire_Declinaison
-        For Inti As Integer = 0 To CollectionContent.Count - 1
-            If CollectionContent(Inti).Table = eDeclinaison.SP Then
-                gvEP = CType(FrmFormulaire.Controls.Find(CollectionContent(Inti).gc, True)(0), DevExpress.XtraGrid.GridControl).MainView
-                f3._CollectionIn = GetCodeFromGV(gvEP, CollectionContent(Inti).Column)
-                Exit For
-            End If
-        Next
-        If ColSAC.Count > 0 Then
-            If ColVoie.Count > 0 Then
-                StrSSQLEP &= " ,THERIAQUE.COSAC_COMPO_SUBACT, THERIAQUE.SPVO_SPECIALITE_VOIE "
-                StrSSQLEP &= " where COSAC_SP_CODE_FK_PK = SP_CODE_SQ_PK "
-                StrSSQLEP &= " and SPVO_SP_CODE_FK_PK = SP_CODE_SQ_PK "
-                StrSSQLEP &= " and COSAC_SAC_CODE_FK_PK in " & GetCodeFromCollection(ColSAC)
-                StrSSQLEP &= " and SPVO_CDF_VO_CODE_FK_PK in " & GetCodeFromCollection(ColVoie)
-                'If f3._CollectionIn.Count > 0 Then
-                '    StrSSQLEP &= " Union Select Distinct SP_CODE_SQ_PK as code, SP_NOM as libelle ,0 as chk ,0 as chkFixe From THERIAQUE.SP_SPECIALITE "
-                '    StrSSQLEP &= " where  SP_CODE_SQ_PK in " & GetCodeFromCollection(f3._CollectionIn)
-                'End If
-            Else
-                StrSSQLEP &= " ,THERIAQUE.COSAC_COMPO_SUBACT "
-                StrSSQLEP &= " where COSAC_SP_CODE_FK_PK = SP_CODE_SQ_PK "
-                StrSSQLEP &= " and COSAC_SAC_CODE_FK_PK in " & GetCodeFromCollection(ColSAC)
-                'If f3._CollectionIn.Count > 0 Then
-                '    StrSSQLEP &= " Union Select Distinct SP_CODE_SQ_PK as code, SP_NOM as libelle ,0 as chk,0 as chkFixe From THERIAQUE.SP_SPECIALITE "
-                '    StrSSQLEP &= " where  SP_CODE_SQ_PK in " & GetCodeFromCollection(f3._CollectionIn)
-                'End If
-            End If
-        Else
-            If ColVoie.Count > 0 Then
-                StrSSQLEP &= ", THERIAQUE.SPVO_SPECIALITE_VOIE "
-                StrSSQLEP &= " where SPVO_SP_CODE_FK_PK = SP_CODE_SQ_PK"
-                'If f3._CollectionIn.Count > 0 Then
-                '    StrSSQLEP &= " and (SPVO_CDF_VO_CODE_FK_PK in " & GetCodeFromCollection(ColVoie)
-                '    StrSSQLEP &= " or SP_CODE_SQ_PK in " & GetCodeFromCollection(f3._CollectionIn) & ")"
-                'Else
-                StrSSQLEP &= " and SPVO_CDF_VO_CODE_FK_PK in " & GetCodeFromCollection(ColVoie)
-                'End If
-            End If
-        End If
-
-        If ColTeneur.Count > 0 Then
-            StrSSQLEP &= " Union Select DISTINCT SP_CODE_SQ_PK as code, SP_NOM as libelle ,0 as chk ,0 as chkFixe "
-            StrSSQLEP &= " FROM THERIAQUE.COTEN_COMPO_TENEUR, THERIAQUE.SP_SPECIALITE "
-            StrSSQLEP &= " where COTEN_SP_CODE_FK_PK = SP_CODE_SQ_PK "
-            StrSSQLEP &= " and COTEN_CDF_TEN_CODE_FK_PK in " & GetCodeFromCollection(ColTeneur)
-        End If
-
-        f3._SSQL = StrSSQLEP
-        f3._strTable = "SP_SPECIALITE"
-        f3._Libelle = " Spécialité"
-        f3.ShowDialog()
-        If f3._Ok = False Then
-            Exit Sub
-        End If
-        ColEP = f3._CollectionOut
-        ColEPDelete = f3._CollectionOutDelete
-        ColEPADD = f3._CollectionOutADD
-        f3.Dispose()
-        '----------------------------------------------------
-        '----------------------------------------------------
-        Load_On(Frm_Formulaire)
-        For inti As Integer = 0 To CollectionContent.Count - 1
-            If CollectionContent(inti).Table = eDeclinaison.CPH Then
-                gvTemp = CType(FrmFormulaire.Controls.Find(CollectionContent(inti).gc, True)(0), DevExpress.XtraGrid.GridControl).MainView
-
-                For intk As Integer = 1 To ColCPHADD.Count
-                    gvTemp.AddNewRow()
-                    gvTemp.SetFocusedRowCellValue(CollectionContent(inti).Column, ColCPHADD(intk))
-                Next
-                For intk As Integer = 1 To ColCPHDelete.Count
-                    For intJ As Integer = 0 To gvTemp.RowCount - 1
-                        If gvTemp.GetRowCellValue(intJ, CollectionContent(inti).Column) = ColCPHDelete(intk) Then
-                            gvTemp.DeleteRow(intJ)
-                            Exit For
-                        End If
-                    Next
-                Next
-            End If
-            If CollectionContent(inti).Table = eDeclinaison.CCH Then
-                gvTemp = CType(FrmFormulaire.Controls.Find(CollectionContent(inti).gc, True)(0), DevExpress.XtraGrid.GridControl).MainView
-
-                For intk As Integer = 1 To ColCCHADD.Count
-                    gvTemp.AddNewRow()
-                    gvTemp.SetFocusedRowCellValue(CollectionContent(inti).Column, ColCCHADD(intk))
-                Next
-                For intk As Integer = 1 To ColCCHDelete.Count
-                    For intJ As Integer = 0 To gvTemp.RowCount - 1
-                        If gvTemp.GetRowCellValue(intJ, CollectionContent(inti).Column) = ColCCHDelete(intk) Then
-                            gvTemp.DeleteRow(intJ)
-                            Exit For
-                        End If
-                    Next
-                Next
-            End If
-            If CollectionContent(inti).Table = eDeclinaison.SAC Then
-                gvTemp = CType(FrmFormulaire.Controls.Find(CollectionContent(inti).gc, True)(0), DevExpress.XtraGrid.GridControl).MainView
-
-                For intk As Integer = 1 To ColSACADD.Count
-                    gvTemp.AddNewRow()
-                    gvTemp.SetFocusedRowCellValue(CollectionContent(inti).Column, ColSACADD(intk))
-                Next
-                For intk As Integer = 1 To ColSACDelete.Count
-                    For intJ As Integer = 0 To gvTemp.RowCount - 1
-                        If gvTemp.GetRowCellValue(intJ, CollectionContent(inti).Column) = ColSACDelete(intk) Then
-                            gvTemp.DeleteRow(intJ)
-                            Exit For
-                        End If
-                    Next
-                Next
-            End If
-            If CollectionContent(inti).Table = eDeclinaison.SP Then
-                gvTemp = CType(FrmFormulaire.Controls.Find(CollectionContent(inti).gc, True)(0), DevExpress.XtraGrid.GridControl).MainView
-
-                For intk As Integer = 1 To ColEPADD.Count
-                    gvTemp.AddNewRow()
-                    gvTemp.SetFocusedRowCellValue(CollectionContent(inti).Column, ColEPADD(intk))
-                Next
-                For intk As Integer = 1 To ColEPDelete.Count
-                    For intJ As Integer = 0 To gvTemp.RowCount - 1
-                        If gvTemp.GetRowCellValue(intJ, CollectionContent(inti).Column) = ColEPDelete(intk) Then
-                            gvTemp.DeleteRow(intJ)
-                            Exit For
-                        End If
-                    Next
-                Next
-            End If
-        Next
-        Load_Off(Frm_Formulaire)
         '----------------------------------------------------
         '----------------------------------------------------
     End Sub

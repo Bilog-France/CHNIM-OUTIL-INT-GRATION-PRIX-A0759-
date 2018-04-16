@@ -62,6 +62,7 @@ Partial Class Frm_Main
         Me.PèreToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem
         Me.FicheFormeVirtuelleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.FicheFormeVirtuelleToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
+        Me.MédicamentVirtuelPèreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EtiologieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.PharmacocinétiqueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
         Me.SécuritéPrécliniqueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
@@ -250,7 +251,6 @@ Partial Class Frm_Main
         Me.ToolStripButtonWarning = New System.Windows.Forms.ToolStripButton
         Me.ToolStripButtonTest = New System.Windows.Forms.ToolStripButton
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.MédicamentVirtuelPèreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
@@ -539,6 +539,12 @@ Partial Class Frm_Main
         Me.FicheFormeVirtuelleToolStripMenuItem1.Size = New System.Drawing.Size(206, 22)
         Me.FicheFormeVirtuelleToolStripMenuItem1.Text = "Fiche forme virtuelle"
         '
+        'MédicamentVirtuelPèreToolStripMenuItem
+        '
+        Me.MédicamentVirtuelPèreToolStripMenuItem.Name = "MédicamentVirtuelPèreToolStripMenuItem"
+        Me.MédicamentVirtuelPèreToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
+        Me.MédicamentVirtuelPèreToolStripMenuItem.Text = "Médicament virtuel père"
+        '
         'EtiologieToolStripMenuItem
         '
         Me.EtiologieToolStripMenuItem.Name = "EtiologieToolStripMenuItem"
@@ -598,13 +604,13 @@ Partial Class Frm_Main
         'FicheCodeToolStripMenuItem
         '
         Me.FicheCodeToolStripMenuItem.Name = "FicheCodeToolStripMenuItem"
-        Me.FicheCodeToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.FicheCodeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FicheCodeToolStripMenuItem.Text = "Fiche code"
         '
         'FicheTexteToolStripMenuItem
         '
         Me.FicheTexteToolStripMenuItem.Name = "FicheTexteToolStripMenuItem"
-        Me.FicheTexteToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.FicheTexteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FicheTexteToolStripMenuItem.Text = "Fiche texte"
         '
         'InteractionToolStripMenuItem
@@ -1424,13 +1430,13 @@ Partial Class Frm_Main
         'PrixSousMenu
         '
         Me.PrixSousMenu.Name = "PrixSousMenu"
-        Me.PrixSousMenu.Size = New System.Drawing.Size(121, 22)
+        Me.PrixSousMenu.Size = New System.Drawing.Size(152, 22)
         Me.PrixSousMenu.Text = "Prix"
         '
         'CochageSousMenu
         '
         Me.CochageSousMenu.Name = "CochageSousMenu"
-        Me.CochageSousMenu.Size = New System.Drawing.Size(121, 22)
+        Me.CochageSousMenu.Size = New System.Drawing.Size(152, 22)
         Me.CochageSousMenu.Text = "Cochage"
         '
         'ToolStripMenuItem6
@@ -1788,12 +1794,6 @@ Partial Class Frm_Main
         '
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 120000
-        '
-        'MédicamentVirtuelPèreToolStripMenuItem
-        '
-        Me.MédicamentVirtuelPèreToolStripMenuItem.Name = "MédicamentVirtuelPèreToolStripMenuItem"
-        Me.MédicamentVirtuelPèreToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
-        Me.MédicamentVirtuelPèreToolStripMenuItem.Text = "Médicament virtuel père"
         '
         'Frm_Main
         '

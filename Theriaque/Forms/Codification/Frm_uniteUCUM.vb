@@ -32,7 +32,7 @@ Public Class Frm_uniteUCUM
     Public Overrides Sub Ajouter()
 
 
-        Me.DsTheriaque_Nomenclature21.CDFUCUM_UCUM.Clear()
+        'Me.DsTheriaque_Nomenclature21.CDFUCUM_UCUM.Clear()
 
         Me.BindingContext(Me.DsTheriaque_Nomenclature21, "CDFUCUM_UCUM").AddNew()
         SetCode_MAxId(MasterTable, txtCode)
@@ -71,8 +71,14 @@ Public Class Frm_uniteUCUM
         End If
 
         Me.BindingContext(Me.DsTheriaque_Nomenclature21, MasterTable).EndCurrentEdit()
-        CDFUCUM_UCUMTableAdapter.Update(Me.DsTheriaque_Nomenclature21.CDFUCUM_UCUM)
+        Try
+            CDFUCUM_UCUMTableAdapter.Update(Me.DsTheriaque_Nomenclature21.CDFUCUM_UCUM)
 
+        Catch ex As Exception
+            Me.CDFUCUM_UCUMTableAdapter.FillByCode(Me.DsTheriaque_Nomenclature21.CDFUCUM_UCUM, txtCode.Text)
+
+        End Try
+        
     End Sub
 
     Private Sub Frm_uniteUCUM_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

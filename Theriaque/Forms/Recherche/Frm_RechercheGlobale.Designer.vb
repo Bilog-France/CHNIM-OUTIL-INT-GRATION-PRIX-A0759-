@@ -19,9 +19,12 @@ Partial Class Frm_RechercheGlobale
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim StyleFormatCondition55 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition56 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition57 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition34 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition35 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition36 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition37 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition38 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition39 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition1 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition2 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition3 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
@@ -55,12 +58,6 @@ Partial Class Frm_RechercheGlobale
         Dim StyleFormatCondition31 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition32 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition33 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition34 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition35 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition36 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition37 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition38 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
-        Dim StyleFormatCondition39 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition40 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition41 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition42 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
@@ -73,6 +70,9 @@ Partial Class Frm_RechercheGlobale
         Dim StyleFormatCondition49 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition50 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Dim StyleFormatCondition51 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition52 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition53 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
+        Dim StyleFormatCondition54 As DevExpress.XtraGrid.StyleFormatCondition = New DevExpress.XtraGrid.StyleFormatCondition
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl
         Me.XtraTabPage1 = New DevExpress.XtraTab.XtraTabPage
@@ -366,8 +366,6 @@ Partial Class Frm_RechercheGlobale
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
-        Me.TableLayoutPanel1.Controls.Add(Me.GC2, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.GC14, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.GC, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GC3, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GC10, 4, 1)
@@ -380,6 +378,8 @@ Partial Class Frm_RechercheGlobale
         Me.TableLayoutPanel1.Controls.Add(Me.GC11, 5, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GC12, 6, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.GC15, 6, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.GC2, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.GC14, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -411,11 +411,11 @@ Partial Class Frm_RechercheGlobale
         Me.GC2.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC2.EmbeddedNavigator.Name = ""
         Me.GC2.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC2.Location = New System.Drawing.Point(3, 217)
+        Me.GC2.Location = New System.Drawing.Point(122, 217)
         Me.GC2.MainView = Me.GV2
         Me.GC2.Name = "GC2"
         Me.GC2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit6})
-        Me.GC2.Size = New System.Drawing.Size(113, 208)
+        Me.GC2.Size = New System.Drawing.Size(133, 208)
         Me.GC2.TabIndex = 15
         Me.GC2.UseEmbeddedNavigator = True
         Me.GC2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV2})
@@ -423,22 +423,22 @@ Partial Class Frm_RechercheGlobale
         'GV2
         '
         Me.GV2.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_CipemgT})
-        StyleFormatCondition55.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition55.Appearance.Options.UseBackColor = True
-        StyleFormatCondition55.ApplyToRow = True
-        StyleFormatCondition55.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition55.Value1 = "Consultation"
-        StyleFormatCondition56.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition56.Appearance.Options.UseBackColor = True
-        StyleFormatCondition56.ApplyToRow = True
-        StyleFormatCondition56.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition56.Value1 = "Ajout"
-        StyleFormatCondition57.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition57.Appearance.Options.UseBackColor = True
-        StyleFormatCondition57.ApplyToRow = True
-        StyleFormatCondition57.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition57.Value1 = "Suppression"
-        Me.GV2.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition55, StyleFormatCondition56, StyleFormatCondition57})
+        StyleFormatCondition34.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition34.Appearance.Options.UseBackColor = True
+        StyleFormatCondition34.ApplyToRow = True
+        StyleFormatCondition34.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition34.Value1 = "Consultation"
+        StyleFormatCondition35.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition35.Appearance.Options.UseBackColor = True
+        StyleFormatCondition35.ApplyToRow = True
+        StyleFormatCondition35.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition35.Value1 = "Ajout"
+        StyleFormatCondition36.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition36.Appearance.Options.UseBackColor = True
+        StyleFormatCondition36.ApplyToRow = True
+        StyleFormatCondition36.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition36.Value1 = "Suppression"
+        Me.GV2.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition34, StyleFormatCondition35, StyleFormatCondition36})
         Me.GV2.GridControl = Me.GC2
         Me.GV2.GroupPanelText = " "
         Me.GV2.Name = "GV2"
@@ -485,11 +485,11 @@ Partial Class Frm_RechercheGlobale
         Me.GC14.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC14.EmbeddedNavigator.Name = ""
         Me.GC14.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC14.Location = New System.Drawing.Point(122, 217)
+        Me.GC14.Location = New System.Drawing.Point(3, 217)
         Me.GC14.MainView = Me.GV14
         Me.GC14.Name = "GC14"
         Me.GC14.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit13})
-        Me.GC14.Size = New System.Drawing.Size(133, 208)
+        Me.GC14.Size = New System.Drawing.Size(113, 208)
         Me.GC14.TabIndex = 12
         Me.GC14.UseEmbeddedNavigator = True
         Me.GC14.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GV14})
@@ -497,22 +497,22 @@ Partial Class Frm_RechercheGlobale
         'GV14
         '
         Me.GV14.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_CipemgC})
-        StyleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition1.Appearance.Options.UseBackColor = True
-        StyleFormatCondition1.ApplyToRow = True
-        StyleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition1.Value1 = "Consultation"
-        StyleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition2.Appearance.Options.UseBackColor = True
-        StyleFormatCondition2.ApplyToRow = True
-        StyleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition2.Value1 = "Ajout"
-        StyleFormatCondition3.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition3.Appearance.Options.UseBackColor = True
-        StyleFormatCondition3.ApplyToRow = True
-        StyleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition3.Value1 = "Suppression"
-        Me.GV14.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition1, StyleFormatCondition2, StyleFormatCondition3})
+        StyleFormatCondition37.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition37.Appearance.Options.UseBackColor = True
+        StyleFormatCondition37.ApplyToRow = True
+        StyleFormatCondition37.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition37.Value1 = "Consultation"
+        StyleFormatCondition38.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition38.Appearance.Options.UseBackColor = True
+        StyleFormatCondition38.ApplyToRow = True
+        StyleFormatCondition38.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition38.Value1 = "Ajout"
+        StyleFormatCondition39.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition39.Appearance.Options.UseBackColor = True
+        StyleFormatCondition39.ApplyToRow = True
+        StyleFormatCondition39.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition39.Value1 = "Suppression"
+        Me.GV14.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition37, StyleFormatCondition38, StyleFormatCondition39})
         Me.GV14.GridControl = Me.GC14
         Me.GV14.GroupPanelText = " "
         Me.GV14.Name = "GV14"
@@ -571,22 +571,22 @@ Partial Class Frm_RechercheGlobale
         'GV
         '
         Me.GV.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_PR})
-        StyleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition4.Appearance.Options.UseBackColor = True
-        StyleFormatCondition4.ApplyToRow = True
-        StyleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition4.Value1 = "Consultation"
-        StyleFormatCondition5.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition5.Appearance.Options.UseBackColor = True
-        StyleFormatCondition5.ApplyToRow = True
-        StyleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition5.Value1 = "Ajout"
-        StyleFormatCondition6.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition6.Appearance.Options.UseBackColor = True
-        StyleFormatCondition6.ApplyToRow = True
-        StyleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition6.Value1 = "Suppression"
-        Me.GV.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition4, StyleFormatCondition5, StyleFormatCondition6})
+        StyleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition1.Appearance.Options.UseBackColor = True
+        StyleFormatCondition1.ApplyToRow = True
+        StyleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition1.Value1 = "Consultation"
+        StyleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition2.Appearance.Options.UseBackColor = True
+        StyleFormatCondition2.ApplyToRow = True
+        StyleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition2.Value1 = "Ajout"
+        StyleFormatCondition3.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition3.Appearance.Options.UseBackColor = True
+        StyleFormatCondition3.ApplyToRow = True
+        StyleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition3.Value1 = "Suppression"
+        Me.GV.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition1, StyleFormatCondition2, StyleFormatCondition3})
         Me.GV.GridControl = Me.GC
         Me.GV.GroupPanelText = " "
         Me.GV.Name = "GV"
@@ -645,22 +645,22 @@ Partial Class Frm_RechercheGlobale
         'GV3
         '
         Me.GV3.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Etio})
-        StyleFormatCondition7.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition7.Appearance.Options.UseBackColor = True
-        StyleFormatCondition7.ApplyToRow = True
-        StyleFormatCondition7.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition7.Value1 = "Consultation"
-        StyleFormatCondition8.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition8.Appearance.Options.UseBackColor = True
-        StyleFormatCondition8.ApplyToRow = True
-        StyleFormatCondition8.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition8.Value1 = "Ajout"
-        StyleFormatCondition9.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition9.Appearance.Options.UseBackColor = True
-        StyleFormatCondition9.ApplyToRow = True
-        StyleFormatCondition9.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition9.Value1 = "Suppression"
-        Me.GV3.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition7, StyleFormatCondition8, StyleFormatCondition9})
+        StyleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition4.Appearance.Options.UseBackColor = True
+        StyleFormatCondition4.ApplyToRow = True
+        StyleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition4.Value1 = "Consultation"
+        StyleFormatCondition5.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition5.Appearance.Options.UseBackColor = True
+        StyleFormatCondition5.ApplyToRow = True
+        StyleFormatCondition5.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition5.Value1 = "Ajout"
+        StyleFormatCondition6.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition6.Appearance.Options.UseBackColor = True
+        StyleFormatCondition6.ApplyToRow = True
+        StyleFormatCondition6.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition6.Value1 = "Suppression"
+        Me.GV3.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition4, StyleFormatCondition5, StyleFormatCondition6})
         Me.GV3.GridControl = Me.GC3
         Me.GV3.GroupPanelText = " "
         Me.GV3.Name = "GV3"
@@ -719,22 +719,22 @@ Partial Class Frm_RechercheGlobale
         'GV10
         '
         Me.GV10.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Effet_Indes})
-        StyleFormatCondition10.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition10.Appearance.Options.UseBackColor = True
-        StyleFormatCondition10.ApplyToRow = True
-        StyleFormatCondition10.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition10.Value1 = "Consultation"
-        StyleFormatCondition11.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition11.Appearance.Options.UseBackColor = True
-        StyleFormatCondition11.ApplyToRow = True
-        StyleFormatCondition11.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition11.Value1 = "Ajout"
-        StyleFormatCondition12.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition12.Appearance.Options.UseBackColor = True
-        StyleFormatCondition12.ApplyToRow = True
-        StyleFormatCondition12.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition12.Value1 = "Suppression"
-        Me.GV10.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition10, StyleFormatCondition11, StyleFormatCondition12})
+        StyleFormatCondition7.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition7.Appearance.Options.UseBackColor = True
+        StyleFormatCondition7.ApplyToRow = True
+        StyleFormatCondition7.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition7.Value1 = "Consultation"
+        StyleFormatCondition8.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition8.Appearance.Options.UseBackColor = True
+        StyleFormatCondition8.ApplyToRow = True
+        StyleFormatCondition8.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition8.Value1 = "Ajout"
+        StyleFormatCondition9.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition9.Appearance.Options.UseBackColor = True
+        StyleFormatCondition9.ApplyToRow = True
+        StyleFormatCondition9.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition9.Value1 = "Suppression"
+        Me.GV10.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition7, StyleFormatCondition8, StyleFormatCondition9})
         Me.GV10.GridControl = Me.GC10
         Me.GV10.GroupPanelText = " "
         Me.GV10.Name = "GV10"
@@ -781,7 +781,7 @@ Partial Class Frm_RechercheGlobale
         Me.GC8.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC8.EmbeddedNavigator.Name = ""
         Me.GC8.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC8.Location = New System.Drawing.Point(358, 217)
+        Me.GC8.Location = New System.Drawing.Point(477, 217)
         Me.GC8.MainView = Me.GV8
         Me.GC8.Name = "GC8"
         Me.GC8.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit9})
@@ -793,22 +793,22 @@ Partial Class Frm_RechercheGlobale
         'GV8
         '
         Me.GV8.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Conduct})
-        StyleFormatCondition13.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition13.Appearance.Options.UseBackColor = True
-        StyleFormatCondition13.ApplyToRow = True
-        StyleFormatCondition13.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition13.Value1 = "Consultation"
-        StyleFormatCondition14.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition14.Appearance.Options.UseBackColor = True
-        StyleFormatCondition14.ApplyToRow = True
-        StyleFormatCondition14.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition14.Value1 = "Ajout"
-        StyleFormatCondition15.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition15.Appearance.Options.UseBackColor = True
-        StyleFormatCondition15.ApplyToRow = True
-        StyleFormatCondition15.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition15.Value1 = "Suppression"
-        Me.GV8.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition13, StyleFormatCondition14, StyleFormatCondition15})
+        StyleFormatCondition10.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition10.Appearance.Options.UseBackColor = True
+        StyleFormatCondition10.ApplyToRow = True
+        StyleFormatCondition10.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition10.Value1 = "Consultation"
+        StyleFormatCondition11.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition11.Appearance.Options.UseBackColor = True
+        StyleFormatCondition11.ApplyToRow = True
+        StyleFormatCondition11.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition11.Value1 = "Ajout"
+        StyleFormatCondition12.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition12.Appearance.Options.UseBackColor = True
+        StyleFormatCondition12.ApplyToRow = True
+        StyleFormatCondition12.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition12.Value1 = "Suppression"
+        Me.GV8.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition10, StyleFormatCondition11, StyleFormatCondition12})
         Me.GV8.GridControl = Me.GC8
         Me.GV8.GroupPanelText = " "
         Me.GV8.Name = "GV8"
@@ -867,22 +867,22 @@ Partial Class Frm_RechercheGlobale
         'GV4
         '
         Me.GV4.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_InterRCP})
-        StyleFormatCondition16.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition16.Appearance.Options.UseBackColor = True
-        StyleFormatCondition16.ApplyToRow = True
-        StyleFormatCondition16.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition16.Value1 = "Consultation"
-        StyleFormatCondition17.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition17.Appearance.Options.UseBackColor = True
-        StyleFormatCondition17.ApplyToRow = True
-        StyleFormatCondition17.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition17.Value1 = "Ajout"
-        StyleFormatCondition18.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition18.Appearance.Options.UseBackColor = True
-        StyleFormatCondition18.ApplyToRow = True
-        StyleFormatCondition18.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition18.Value1 = "Suppression"
-        Me.GV4.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition16, StyleFormatCondition17, StyleFormatCondition18})
+        StyleFormatCondition13.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition13.Appearance.Options.UseBackColor = True
+        StyleFormatCondition13.ApplyToRow = True
+        StyleFormatCondition13.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition13.Value1 = "Consultation"
+        StyleFormatCondition14.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition14.Appearance.Options.UseBackColor = True
+        StyleFormatCondition14.ApplyToRow = True
+        StyleFormatCondition14.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition14.Value1 = "Ajout"
+        StyleFormatCondition15.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition15.Appearance.Options.UseBackColor = True
+        StyleFormatCondition15.ApplyToRow = True
+        StyleFormatCondition15.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition15.Value1 = "Suppression"
+        Me.GV4.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition13, StyleFormatCondition14, StyleFormatCondition15})
         Me.GV4.GridControl = Me.GC4
         Me.GV4.GroupPanelText = " "
         Me.GV4.Name = "GV4"
@@ -941,22 +941,22 @@ Partial Class Frm_RechercheGlobale
         'GV5
         '
         Me.GV5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Pharma})
-        StyleFormatCondition19.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition19.Appearance.Options.UseBackColor = True
-        StyleFormatCondition19.ApplyToRow = True
-        StyleFormatCondition19.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition19.Value1 = "Consultation"
-        StyleFormatCondition20.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition20.Appearance.Options.UseBackColor = True
-        StyleFormatCondition20.ApplyToRow = True
-        StyleFormatCondition20.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition20.Value1 = "Ajout"
-        StyleFormatCondition21.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition21.Appearance.Options.UseBackColor = True
-        StyleFormatCondition21.ApplyToRow = True
-        StyleFormatCondition21.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition21.Value1 = "Suppression"
-        Me.GV5.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition19, StyleFormatCondition20, StyleFormatCondition21})
+        StyleFormatCondition16.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition16.Appearance.Options.UseBackColor = True
+        StyleFormatCondition16.ApplyToRow = True
+        StyleFormatCondition16.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition16.Value1 = "Consultation"
+        StyleFormatCondition17.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition17.Appearance.Options.UseBackColor = True
+        StyleFormatCondition17.ApplyToRow = True
+        StyleFormatCondition17.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition17.Value1 = "Ajout"
+        StyleFormatCondition18.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition18.Appearance.Options.UseBackColor = True
+        StyleFormatCondition18.ApplyToRow = True
+        StyleFormatCondition18.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition18.Value1 = "Suppression"
+        Me.GV5.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition16, StyleFormatCondition17, StyleFormatCondition18})
         Me.GV5.GridControl = Me.GC5
         Me.GV5.GroupPanelText = " "
         Me.GV5.Name = "GV5"
@@ -1015,22 +1015,22 @@ Partial Class Frm_RechercheGlobale
         'GV7
         '
         Me.GV7.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_SecPr})
-        StyleFormatCondition22.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition22.Appearance.Options.UseBackColor = True
-        StyleFormatCondition22.ApplyToRow = True
-        StyleFormatCondition22.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition22.Value1 = "Consultation"
-        StyleFormatCondition23.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition23.Appearance.Options.UseBackColor = True
-        StyleFormatCondition23.ApplyToRow = True
-        StyleFormatCondition23.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition23.Value1 = "Ajout"
-        StyleFormatCondition24.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition24.Appearance.Options.UseBackColor = True
-        StyleFormatCondition24.ApplyToRow = True
-        StyleFormatCondition24.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition24.Value1 = "Suppression"
-        Me.GV7.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition22, StyleFormatCondition23, StyleFormatCondition24})
+        StyleFormatCondition19.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition19.Appearance.Options.UseBackColor = True
+        StyleFormatCondition19.ApplyToRow = True
+        StyleFormatCondition19.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition19.Value1 = "Consultation"
+        StyleFormatCondition20.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition20.Appearance.Options.UseBackColor = True
+        StyleFormatCondition20.ApplyToRow = True
+        StyleFormatCondition20.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition20.Value1 = "Ajout"
+        StyleFormatCondition21.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition21.Appearance.Options.UseBackColor = True
+        StyleFormatCondition21.ApplyToRow = True
+        StyleFormatCondition21.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition21.Value1 = "Suppression"
+        Me.GV7.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition19, StyleFormatCondition20, StyleFormatCondition21})
         Me.GV7.GridControl = Me.GC7
         Me.GV7.GroupPanelText = " "
         Me.GV7.Name = "GV7"
@@ -1077,7 +1077,7 @@ Partial Class Frm_RechercheGlobale
         Me.GC6.EmbeddedNavigator.Buttons.Remove.Visible = False
         Me.GC6.EmbeddedNavigator.Name = ""
         Me.GC6.EmbeddedNavigator.TextStringFormat = " {0} / {1}"
-        Me.GC6.Location = New System.Drawing.Point(477, 217)
+        Me.GC6.Location = New System.Drawing.Point(358, 217)
         Me.GC6.MainView = Me.GV6
         Me.GC6.Name = "GC6"
         Me.GC6.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.rpbtEdit8})
@@ -1089,22 +1089,22 @@ Partial Class Frm_RechercheGlobale
         'GV6
         '
         Me.GV6.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_GrossAllait})
-        StyleFormatCondition25.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition25.Appearance.Options.UseBackColor = True
-        StyleFormatCondition25.ApplyToRow = True
-        StyleFormatCondition25.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition25.Value1 = "Consultation"
-        StyleFormatCondition26.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition26.Appearance.Options.UseBackColor = True
-        StyleFormatCondition26.ApplyToRow = True
-        StyleFormatCondition26.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition26.Value1 = "Ajout"
-        StyleFormatCondition27.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition27.Appearance.Options.UseBackColor = True
-        StyleFormatCondition27.ApplyToRow = True
-        StyleFormatCondition27.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition27.Value1 = "Suppression"
-        Me.GV6.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition25, StyleFormatCondition26, StyleFormatCondition27})
+        StyleFormatCondition22.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition22.Appearance.Options.UseBackColor = True
+        StyleFormatCondition22.ApplyToRow = True
+        StyleFormatCondition22.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition22.Value1 = "Consultation"
+        StyleFormatCondition23.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition23.Appearance.Options.UseBackColor = True
+        StyleFormatCondition23.ApplyToRow = True
+        StyleFormatCondition23.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition23.Value1 = "Ajout"
+        StyleFormatCondition24.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition24.Appearance.Options.UseBackColor = True
+        StyleFormatCondition24.ApplyToRow = True
+        StyleFormatCondition24.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition24.Value1 = "Suppression"
+        Me.GV6.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition22, StyleFormatCondition23, StyleFormatCondition24})
         Me.GV6.GridControl = Me.GC6
         Me.GV6.GroupPanelText = " "
         Me.GV6.Name = "GV6"
@@ -1163,22 +1163,22 @@ Partial Class Frm_RechercheGlobale
         'GV9
         '
         Me.GV9.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Indic})
-        StyleFormatCondition28.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition28.Appearance.Options.UseBackColor = True
-        StyleFormatCondition28.ApplyToRow = True
-        StyleFormatCondition28.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition28.Value1 = "Consultation"
-        StyleFormatCondition29.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition29.Appearance.Options.UseBackColor = True
-        StyleFormatCondition29.ApplyToRow = True
-        StyleFormatCondition29.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition29.Value1 = "Ajout"
-        StyleFormatCondition30.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition30.Appearance.Options.UseBackColor = True
-        StyleFormatCondition30.ApplyToRow = True
-        StyleFormatCondition30.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition30.Value1 = "Suppression"
-        Me.GV9.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition28, StyleFormatCondition29, StyleFormatCondition30})
+        StyleFormatCondition25.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition25.Appearance.Options.UseBackColor = True
+        StyleFormatCondition25.ApplyToRow = True
+        StyleFormatCondition25.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition25.Value1 = "Consultation"
+        StyleFormatCondition26.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition26.Appearance.Options.UseBackColor = True
+        StyleFormatCondition26.ApplyToRow = True
+        StyleFormatCondition26.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition26.Value1 = "Ajout"
+        StyleFormatCondition27.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition27.Appearance.Options.UseBackColor = True
+        StyleFormatCondition27.ApplyToRow = True
+        StyleFormatCondition27.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition27.Value1 = "Suppression"
+        Me.GV9.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition25, StyleFormatCondition26, StyleFormatCondition27})
         Me.GV9.GridControl = Me.GC9
         Me.GV9.GroupPanelText = " "
         Me.GV9.Name = "GV9"
@@ -1237,22 +1237,22 @@ Partial Class Frm_RechercheGlobale
         'GV11
         '
         Me.GV11.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Poso})
-        StyleFormatCondition31.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition31.Appearance.Options.UseBackColor = True
-        StyleFormatCondition31.ApplyToRow = True
-        StyleFormatCondition31.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition31.Value1 = "Consultation"
-        StyleFormatCondition32.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition32.Appearance.Options.UseBackColor = True
-        StyleFormatCondition32.ApplyToRow = True
-        StyleFormatCondition32.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition32.Value1 = "Ajout"
-        StyleFormatCondition33.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition33.Appearance.Options.UseBackColor = True
-        StyleFormatCondition33.ApplyToRow = True
-        StyleFormatCondition33.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition33.Value1 = "Suppression"
-        Me.GV11.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition31, StyleFormatCondition32, StyleFormatCondition33})
+        StyleFormatCondition28.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition28.Appearance.Options.UseBackColor = True
+        StyleFormatCondition28.ApplyToRow = True
+        StyleFormatCondition28.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition28.Value1 = "Consultation"
+        StyleFormatCondition29.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition29.Appearance.Options.UseBackColor = True
+        StyleFormatCondition29.ApplyToRow = True
+        StyleFormatCondition29.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition29.Value1 = "Ajout"
+        StyleFormatCondition30.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition30.Appearance.Options.UseBackColor = True
+        StyleFormatCondition30.ApplyToRow = True
+        StyleFormatCondition30.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition30.Value1 = "Suppression"
+        Me.GV11.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition28, StyleFormatCondition29, StyleFormatCondition30})
         Me.GV11.GridControl = Me.GC11
         Me.GV11.GroupPanelText = " "
         Me.GV11.Name = "GV11"
@@ -1311,22 +1311,22 @@ Partial Class Frm_RechercheGlobale
         'GV12
         '
         Me.GV12.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_RecAdmin})
-        StyleFormatCondition34.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition34.Appearance.Options.UseBackColor = True
-        StyleFormatCondition34.ApplyToRow = True
-        StyleFormatCondition34.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition34.Value1 = "Consultation"
-        StyleFormatCondition35.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition35.Appearance.Options.UseBackColor = True
-        StyleFormatCondition35.ApplyToRow = True
-        StyleFormatCondition35.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition35.Value1 = "Ajout"
-        StyleFormatCondition36.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition36.Appearance.Options.UseBackColor = True
-        StyleFormatCondition36.ApplyToRow = True
-        StyleFormatCondition36.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition36.Value1 = "Suppression"
-        Me.GV12.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition34, StyleFormatCondition35, StyleFormatCondition36})
+        StyleFormatCondition31.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition31.Appearance.Options.UseBackColor = True
+        StyleFormatCondition31.ApplyToRow = True
+        StyleFormatCondition31.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition31.Value1 = "Consultation"
+        StyleFormatCondition32.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition32.Appearance.Options.UseBackColor = True
+        StyleFormatCondition32.ApplyToRow = True
+        StyleFormatCondition32.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition32.Value1 = "Ajout"
+        StyleFormatCondition33.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition33.Appearance.Options.UseBackColor = True
+        StyleFormatCondition33.ApplyToRow = True
+        StyleFormatCondition33.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition33.Value1 = "Suppression"
+        Me.GV12.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition31, StyleFormatCondition32, StyleFormatCondition33})
         Me.GV12.GridControl = Me.GC12
         Me.GV12.GroupPanelText = " "
         Me.GV12.Name = "GV12"
@@ -1478,22 +1478,22 @@ Partial Class Frm_RechercheGlobale
         'GV24
         '
         Me.GV24.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_InfoTherap})
-        StyleFormatCondition37.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition37.Appearance.Options.UseBackColor = True
-        StyleFormatCondition37.ApplyToRow = True
-        StyleFormatCondition37.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition37.Value1 = "Consultation"
-        StyleFormatCondition38.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition38.Appearance.Options.UseBackColor = True
-        StyleFormatCondition38.ApplyToRow = True
-        StyleFormatCondition38.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition38.Value1 = "Ajout"
-        StyleFormatCondition39.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition39.Appearance.Options.UseBackColor = True
-        StyleFormatCondition39.ApplyToRow = True
-        StyleFormatCondition39.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition39.Value1 = "Suppression"
-        Me.GV24.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition37, StyleFormatCondition38, StyleFormatCondition39})
+        StyleFormatCondition40.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition40.Appearance.Options.UseBackColor = True
+        StyleFormatCondition40.ApplyToRow = True
+        StyleFormatCondition40.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition40.Value1 = "Consultation"
+        StyleFormatCondition41.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition41.Appearance.Options.UseBackColor = True
+        StyleFormatCondition41.ApplyToRow = True
+        StyleFormatCondition41.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition41.Value1 = "Ajout"
+        StyleFormatCondition42.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition42.Appearance.Options.UseBackColor = True
+        StyleFormatCondition42.ApplyToRow = True
+        StyleFormatCondition42.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition42.Value1 = "Suppression"
+        Me.GV24.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition40, StyleFormatCondition41, StyleFormatCondition42})
         Me.GV24.GridControl = Me.GC24
         Me.GV24.GroupPanelText = " "
         Me.GV24.Name = "GV24"
@@ -1552,22 +1552,22 @@ Partial Class Frm_RechercheGlobale
         'GV25
         '
         Me.GV25.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Choix})
-        StyleFormatCondition40.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition40.Appearance.Options.UseBackColor = True
-        StyleFormatCondition40.ApplyToRow = True
-        StyleFormatCondition40.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition40.Value1 = "Consultation"
-        StyleFormatCondition41.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition41.Appearance.Options.UseBackColor = True
-        StyleFormatCondition41.ApplyToRow = True
-        StyleFormatCondition41.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition41.Value1 = "Ajout"
-        StyleFormatCondition42.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition42.Appearance.Options.UseBackColor = True
-        StyleFormatCondition42.ApplyToRow = True
-        StyleFormatCondition42.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition42.Value1 = "Suppression"
-        Me.GV25.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition40, StyleFormatCondition41, StyleFormatCondition42})
+        StyleFormatCondition43.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition43.Appearance.Options.UseBackColor = True
+        StyleFormatCondition43.ApplyToRow = True
+        StyleFormatCondition43.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition43.Value1 = "Consultation"
+        StyleFormatCondition44.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition44.Appearance.Options.UseBackColor = True
+        StyleFormatCondition44.ApplyToRow = True
+        StyleFormatCondition44.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition44.Value1 = "Ajout"
+        StyleFormatCondition45.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition45.Appearance.Options.UseBackColor = True
+        StyleFormatCondition45.ApplyToRow = True
+        StyleFormatCondition45.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition45.Value1 = "Suppression"
+        Me.GV25.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition43, StyleFormatCondition44, StyleFormatCondition45})
         Me.GV25.GridControl = Me.GC25
         Me.GV25.GroupPanelText = " "
         Me.GV25.Name = "GV25"
@@ -1626,22 +1626,22 @@ Partial Class Frm_RechercheGlobale
         'GV23
         '
         Me.GV23.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_RMO})
-        StyleFormatCondition43.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition43.Appearance.Options.UseBackColor = True
-        StyleFormatCondition43.ApplyToRow = True
-        StyleFormatCondition43.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition43.Value1 = "Consultation"
-        StyleFormatCondition44.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition44.Appearance.Options.UseBackColor = True
-        StyleFormatCondition44.ApplyToRow = True
-        StyleFormatCondition44.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition44.Value1 = "Ajout"
-        StyleFormatCondition45.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition45.Appearance.Options.UseBackColor = True
-        StyleFormatCondition45.ApplyToRow = True
-        StyleFormatCondition45.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition45.Value1 = "Suppression"
-        Me.GV23.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition43, StyleFormatCondition44, StyleFormatCondition45})
+        StyleFormatCondition46.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition46.Appearance.Options.UseBackColor = True
+        StyleFormatCondition46.ApplyToRow = True
+        StyleFormatCondition46.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition46.Value1 = "Consultation"
+        StyleFormatCondition47.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition47.Appearance.Options.UseBackColor = True
+        StyleFormatCondition47.ApplyToRow = True
+        StyleFormatCondition47.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition47.Value1 = "Ajout"
+        StyleFormatCondition48.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition48.Appearance.Options.UseBackColor = True
+        StyleFormatCondition48.ApplyToRow = True
+        StyleFormatCondition48.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition48.Value1 = "Suppression"
+        Me.GV23.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition46, StyleFormatCondition47, StyleFormatCondition48})
         Me.GV23.GridControl = Me.GC23
         Me.GV23.GroupPanelText = " "
         Me.GV23.Name = "GV23"
@@ -1700,22 +1700,22 @@ Partial Class Frm_RechercheGlobale
         'GV22
         '
         Me.GV22.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_CommTrans})
-        StyleFormatCondition46.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition46.Appearance.Options.UseBackColor = True
-        StyleFormatCondition46.ApplyToRow = True
-        StyleFormatCondition46.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition46.Value1 = "Consultation"
-        StyleFormatCondition47.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition47.Appearance.Options.UseBackColor = True
-        StyleFormatCondition47.ApplyToRow = True
-        StyleFormatCondition47.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition47.Value1 = "Ajout"
-        StyleFormatCondition48.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition48.Appearance.Options.UseBackColor = True
-        StyleFormatCondition48.ApplyToRow = True
-        StyleFormatCondition48.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition48.Value1 = "Suppression"
-        Me.GV22.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition46, StyleFormatCondition47, StyleFormatCondition48})
+        StyleFormatCondition49.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition49.Appearance.Options.UseBackColor = True
+        StyleFormatCondition49.ApplyToRow = True
+        StyleFormatCondition49.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition49.Value1 = "Consultation"
+        StyleFormatCondition50.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition50.Appearance.Options.UseBackColor = True
+        StyleFormatCondition50.ApplyToRow = True
+        StyleFormatCondition50.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition50.Value1 = "Ajout"
+        StyleFormatCondition51.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition51.Appearance.Options.UseBackColor = True
+        StyleFormatCondition51.ApplyToRow = True
+        StyleFormatCondition51.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition51.Value1 = "Suppression"
+        Me.GV22.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition49, StyleFormatCondition50, StyleFormatCondition51})
         Me.GV22.GridControl = Me.GC22
         Me.GV22.GroupPanelText = " "
         Me.GV22.Name = "GV22"
@@ -1774,22 +1774,22 @@ Partial Class Frm_RechercheGlobale
         'GV21
         '
         Me.GV21.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.col1_Trans})
-        StyleFormatCondition49.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        StyleFormatCondition49.Appearance.Options.UseBackColor = True
-        StyleFormatCondition49.ApplyToRow = True
-        StyleFormatCondition49.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition49.Value1 = "Consultation"
-        StyleFormatCondition50.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition50.Appearance.Options.UseBackColor = True
-        StyleFormatCondition50.ApplyToRow = True
-        StyleFormatCondition50.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition50.Value1 = "Ajout"
-        StyleFormatCondition51.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        StyleFormatCondition51.Appearance.Options.UseBackColor = True
-        StyleFormatCondition51.ApplyToRow = True
-        StyleFormatCondition51.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
-        StyleFormatCondition51.Value1 = "Suppression"
-        Me.GV21.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition49, StyleFormatCondition50, StyleFormatCondition51})
+        StyleFormatCondition52.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        StyleFormatCondition52.Appearance.Options.UseBackColor = True
+        StyleFormatCondition52.ApplyToRow = True
+        StyleFormatCondition52.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition52.Value1 = "Consultation"
+        StyleFormatCondition53.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition53.Appearance.Options.UseBackColor = True
+        StyleFormatCondition53.ApplyToRow = True
+        StyleFormatCondition53.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition53.Value1 = "Ajout"
+        StyleFormatCondition54.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        StyleFormatCondition54.Appearance.Options.UseBackColor = True
+        StyleFormatCondition54.ApplyToRow = True
+        StyleFormatCondition54.Condition = DevExpress.XtraGrid.FormatConditionEnum.Equal
+        StyleFormatCondition54.Value1 = "Suppression"
+        Me.GV21.FormatConditions.AddRange(New DevExpress.XtraGrid.StyleFormatCondition() {StyleFormatCondition52, StyleFormatCondition53, StyleFormatCondition54})
         Me.GV21.GridControl = Me.GC21
         Me.GV21.GroupPanelText = " "
         Me.GV21.Name = "GV21"

@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString4" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString4 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Theriaque.My.MySettings.GlobalReference.Default.ConnectionString4" Provider="System.Data.SqlClient">
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString4" IsAppSettingsProperty="True" Modifier="Assembly" Name="ConnectionString4 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Theriaque.My.MySettings.GlobalReference.Default.ConnectionString4" Provider="System.Data.SqlClient">
           </Connection>
         </Connections>
         <Tables>
@@ -2786,65 +2786,65 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGA_FICHEGRAL" msprop:Generator_UserTableName="FGA_FICHEGRAL" msprop:Generator_RowDeletedName="FGA_FICHEGRALRowDeleted" msprop:Generator_RowChangedName="FGA_FICHEGRALRowChanged" msprop:Generator_RowClassName="FGA_FICHEGRALRow" msprop:Generator_RowChangingName="FGA_FICHEGRALRowChanging" msprop:Generator_RowEvArgName="FGA_FICHEGRALRowChangeEvent" msprop:Generator_RowEvHandlerName="FGA_FICHEGRALRowChangeEventHandler" msprop:Generator_TableClassName="FGA_FICHEGRALDataTable" msprop:Generator_TableVarName="tableFGA_FICHEGRAL" msprop:Generator_RowDeletingName="FGA_FICHEGRALRowDeleting" msprop:Generator_TablePropName="FGA_FICHEGRAL">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGA_CODE_SQ_PK" msprop:Generator_UserColumnName="FGA_CODE_SQ_PK" msprop:Generator_ColumnVarNameInTable="columnFGA_CODE_SQ_PK" msprop:Generator_ColumnPropNameInRow="FGA_CODE_SQ_PK" msprop:Generator_ColumnPropNameInTable="FGA_CODE_SQ_PKColumn" type="xs:int" />
-              <xs:element name="FGA_TYPEEFFET" msprop:Generator_UserColumnName="FGA_TYPEEFFET" msprop:Generator_ColumnVarNameInTable="columnFGA_TYPEEFFET" msprop:Generator_ColumnPropNameInRow="FGA_TYPEEFFET" msprop:Generator_ColumnPropNameInTable="FGA_TYPEEFFETColumn" minOccurs="0">
+              <xs:element name="FGA_CODE_SQ_PK" msprop:Generator_UserColumnName="FGA_CODE_SQ_PK" msprop:Generator_ColumnPropNameInRow="FGA_CODE_SQ_PK" msprop:Generator_ColumnVarNameInTable="columnFGA_CODE_SQ_PK" msprop:Generator_ColumnPropNameInTable="FGA_CODE_SQ_PKColumn" type="xs:int" />
+              <xs:element name="FGA_TYPEEFFET" msprop:Generator_UserColumnName="FGA_TYPEEFFET" msprop:Generator_ColumnPropNameInRow="FGA_TYPEEFFET" msprop:Generator_ColumnVarNameInTable="columnFGA_TYPEEFFET" msprop:Generator_ColumnPropNameInTable="FGA_TYPEEFFETColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGA_PASSAGELAIT" msprop:Generator_UserColumnName="FGA_PASSAGELAIT" msprop:Generator_ColumnVarNameInTable="columnFGA_PASSAGELAIT" msprop:Generator_ColumnPropNameInRow="FGA_PASSAGELAIT" msprop:Generator_ColumnPropNameInTable="FGA_PASSAGELAITColumn" minOccurs="0">
+              <xs:element name="FGA_PASSAGELAIT" msprop:Generator_UserColumnName="FGA_PASSAGELAIT" msprop:Generator_ColumnPropNameInRow="FGA_PASSAGELAIT" msprop:Generator_ColumnVarNameInTable="columnFGA_PASSAGELAIT" msprop:Generator_ColumnPropNameInTable="FGA_PASSAGELAITColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGA_FIXATIONPROTEIQUE" msprop:Generator_UserColumnName="FGA_FIXATIONPROTEIQUE" msprop:Generator_ColumnVarNameInTable="columnFGA_FIXATIONPROTEIQUE" msprop:Generator_ColumnPropNameInRow="FGA_FIXATIONPROTEIQUE" msprop:Generator_ColumnPropNameInTable="FGA_FIXATIONPROTEIQUEColumn" minOccurs="0">
+              <xs:element name="FGA_FIXATIONPROTEIQUE" msprop:Generator_UserColumnName="FGA_FIXATIONPROTEIQUE" msprop:Generator_ColumnPropNameInRow="FGA_FIXATIONPROTEIQUE" msprop:Generator_ColumnVarNameInTable="columnFGA_FIXATIONPROTEIQUE" msprop:Generator_ColumnPropNameInTable="FGA_FIXATIONPROTEIQUEColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_UserColumnName="FGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_ColumnVarNameInTable="columnFGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_ColumnPropNameInRow="FGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_ColumnPropNameInTable="FGA_FIXATIONPROTEIQUE_MINIColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_UserColumnName="FGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_ColumnVarNameInTable="columnFGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_ColumnPropNameInRow="FGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_ColumnPropNameInTable="FGA_FIXATIONPROTEIQUE_MAXIColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FGA_PLASMALAIT" msprop:Generator_UserColumnName="FGA_PLASMALAIT" msprop:Generator_ColumnVarNameInTable="columnFGA_PLASMALAIT" msprop:Generator_ColumnPropNameInRow="FGA_PLASMALAIT" msprop:Generator_ColumnPropNameInTable="FGA_PLASMALAITColumn" minOccurs="0">
+              <xs:element name="FGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_UserColumnName="FGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_ColumnPropNameInRow="FGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_ColumnVarNameInTable="columnFGA_FIXATIONPROTEIQUE_MINI" msprop:Generator_ColumnPropNameInTable="FGA_FIXATIONPROTEIQUE_MINIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_UserColumnName="FGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_ColumnPropNameInRow="FGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_ColumnVarNameInTable="columnFGA_FIXATIONPROTEIQUE_MAXI" msprop:Generator_ColumnPropNameInTable="FGA_FIXATIONPROTEIQUE_MAXIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FGA_PLASMALAIT" msprop:Generator_UserColumnName="FGA_PLASMALAIT" msprop:Generator_ColumnPropNameInRow="FGA_PLASMALAIT" msprop:Generator_ColumnVarNameInTable="columnFGA_PLASMALAIT" msprop:Generator_ColumnPropNameInTable="FGA_PLASMALAITColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGA_PLASMALAIT_MINI" msprop:Generator_UserColumnName="FGA_PLASMALAIT_MINI" msprop:Generator_ColumnVarNameInTable="columnFGA_PLASMALAIT_MINI" msprop:Generator_ColumnPropNameInRow="FGA_PLASMALAIT_MINI" msprop:Generator_ColumnPropNameInTable="FGA_PLASMALAIT_MINIColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FGA_PLASMALAIT_MAXI" msprop:Generator_UserColumnName="FGA_PLASMALAIT_MAXI" msprop:Generator_ColumnVarNameInTable="columnFGA_PLASMALAIT_MAXI" msprop:Generator_ColumnPropNameInRow="FGA_PLASMALAIT_MAXI" msprop:Generator_ColumnPropNameInTable="FGA_PLASMALAIT_MAXIColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FGA_CONCENTRATION" msprop:Generator_UserColumnName="FGA_CONCENTRATION" msprop:Generator_ColumnVarNameInTable="columnFGA_CONCENTRATION" msprop:Generator_ColumnPropNameInRow="FGA_CONCENTRATION" msprop:Generator_ColumnPropNameInTable="FGA_CONCENTRATIONColumn" minOccurs="0">
+              <xs:element name="FGA_PLASMALAIT_MINI" msprop:Generator_UserColumnName="FGA_PLASMALAIT_MINI" msprop:Generator_ColumnPropNameInRow="FGA_PLASMALAIT_MINI" msprop:Generator_ColumnVarNameInTable="columnFGA_PLASMALAIT_MINI" msprop:Generator_ColumnPropNameInTable="FGA_PLASMALAIT_MINIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FGA_PLASMALAIT_MAXI" msprop:Generator_UserColumnName="FGA_PLASMALAIT_MAXI" msprop:Generator_ColumnPropNameInRow="FGA_PLASMALAIT_MAXI" msprop:Generator_ColumnVarNameInTable="columnFGA_PLASMALAIT_MAXI" msprop:Generator_ColumnPropNameInTable="FGA_PLASMALAIT_MAXIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FGA_CONCENTRATION" msprop:Generator_UserColumnName="FGA_CONCENTRATION" msprop:Generator_ColumnPropNameInRow="FGA_CONCENTRATION" msprop:Generator_ColumnVarNameInTable="columnFGA_CONCENTRATION" msprop:Generator_ColumnPropNameInTable="FGA_CONCENTRATIONColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="1" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGA_CONCENTRATION_MINI" msprop:Generator_UserColumnName="FGA_CONCENTRATION_MINI" msprop:Generator_ColumnVarNameInTable="columnFGA_CONCENTRATION_MINI" msprop:Generator_ColumnPropNameInRow="FGA_CONCENTRATION_MINI" msprop:Generator_ColumnPropNameInTable="FGA_CONCENTRATION_MINIColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FGA_CONCENTRATION_MAXI" msprop:Generator_UserColumnName="FGA_CONCENTRATION_MAXI" msprop:Generator_ColumnVarNameInTable="columnFGA_CONCENTRATION_MAXI" msprop:Generator_ColumnPropNameInRow="FGA_CONCENTRATION_MAXI" msprop:Generator_ColumnPropNameInTable="FGA_CONCENTRATION_MAXIColumn" type="xs:decimal" minOccurs="0" />
-              <xs:element name="FGA_CDF_UC_CODE_FK" msprop:Generator_UserColumnName="FGA_CDF_UC_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFGA_CDF_UC_CODE_FK" msprop:Generator_ColumnPropNameInRow="FGA_CDF_UC_CODE_FK" msprop:Generator_ColumnPropNameInTable="FGA_CDF_UC_CODE_FKColumn" minOccurs="0">
+              <xs:element name="FGA_CONCENTRATION_MINI" msprop:Generator_UserColumnName="FGA_CONCENTRATION_MINI" msprop:Generator_ColumnPropNameInRow="FGA_CONCENTRATION_MINI" msprop:Generator_ColumnVarNameInTable="columnFGA_CONCENTRATION_MINI" msprop:Generator_ColumnPropNameInTable="FGA_CONCENTRATION_MINIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FGA_CONCENTRATION_MAXI" msprop:Generator_UserColumnName="FGA_CONCENTRATION_MAXI" msprop:Generator_ColumnPropNameInRow="FGA_CONCENTRATION_MAXI" msprop:Generator_ColumnVarNameInTable="columnFGA_CONCENTRATION_MAXI" msprop:Generator_ColumnPropNameInTable="FGA_CONCENTRATION_MAXIColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FGA_CDF_UC_CODE_FK" msprop:Generator_UserColumnName="FGA_CDF_UC_CODE_FK" msprop:Generator_ColumnPropNameInRow="FGA_CDF_UC_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFGA_CDF_UC_CODE_FK" msprop:Generator_ColumnPropNameInTable="FGA_CDF_UC_CODE_FKColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGA_DATECR" msprop:Generator_UserColumnName="FGA_DATECR" msprop:Generator_ColumnVarNameInTable="columnFGA_DATECR" msprop:Generator_ColumnPropNameInRow="FGA_DATECR" msprop:Generator_ColumnPropNameInTable="FGA_DATECRColumn" type="xs:dateTime" />
-              <xs:element name="FGA_DATEMJ" msprop:Generator_UserColumnName="FGA_DATEMJ" msprop:Generator_ColumnVarNameInTable="columnFGA_DATEMJ" msprop:Generator_ColumnPropNameInRow="FGA_DATEMJ" msprop:Generator_ColumnPropNameInTable="FGA_DATEMJColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FGA_DATECR" msprop:Generator_UserColumnName="FGA_DATECR" msprop:Generator_ColumnPropNameInRow="FGA_DATECR" msprop:Generator_ColumnVarNameInTable="columnFGA_DATECR" msprop:Generator_ColumnPropNameInTable="FGA_DATECRColumn" type="xs:dateTime" />
+              <xs:element name="FGA_DATEMJ" msprop:Generator_UserColumnName="FGA_DATEMJ" msprop:Generator_ColumnPropNameInRow="FGA_DATEMJ" msprop:Generator_ColumnVarNameInTable="columnFGA_DATEMJ" msprop:Generator_ColumnPropNameInTable="FGA_DATEMJColumn" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGACPH_GRALCLPH" msprop:Generator_UserTableName="FGACPH_GRALCLPH" msprop:Generator_RowDeletedName="FGACPH_GRALCLPHRowDeleted" msprop:Generator_RowChangedName="FGACPH_GRALCLPHRowChanged" msprop:Generator_RowClassName="FGACPH_GRALCLPHRow" msprop:Generator_RowChangingName="FGACPH_GRALCLPHRowChanging" msprop:Generator_RowEvArgName="FGACPH_GRALCLPHRowChangeEvent" msprop:Generator_RowEvHandlerName="FGACPH_GRALCLPHRowChangeEventHandler" msprop:Generator_TableClassName="FGACPH_GRALCLPHDataTable" msprop:Generator_TableVarName="tableFGACPH_GRALCLPH" msprop:Generator_RowDeletingName="FGACPH_GRALCLPHRowDeleting" msprop:Generator_TablePropName="FGACPH_GRALCLPH">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACPH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACPH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACPH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACPH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACPH_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACPH_CPH_CODE_FK_PK" msprop:Generator_UserColumnName="FGACPH_CPH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACPH_CPH_CODE_FK_PKColumn">
+              <xs:element name="FGACPH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACPH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACPH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACPH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACPH_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACPH_CPH_CODE_FK_PK" msprop:Generator_UserColumnName="FGACPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACPH_CPH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACPH_CPH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACPH_CPH_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -2857,8 +2857,8 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGACCH_GRALCLCH" msprop:Generator_UserTableName="FGACCH_GRALCLCH" msprop:Generator_RowDeletedName="FGACCH_GRALCLCHRowDeleted" msprop:Generator_RowChangedName="FGACCH_GRALCLCHRowChanged" msprop:Generator_RowClassName="FGACCH_GRALCLCHRow" msprop:Generator_RowChangingName="FGACCH_GRALCLCHRowChanging" msprop:Generator_RowEvArgName="FGACCH_GRALCLCHRowChangeEvent" msprop:Generator_RowEvHandlerName="FGACCH_GRALCLCHRowChangeEventHandler" msprop:Generator_TableClassName="FGACCH_GRALCLCHDataTable" msprop:Generator_TableVarName="tableFGACCH_GRALCLCH" msprop:Generator_RowDeletingName="FGACCH_GRALCLCHRowDeleting" msprop:Generator_TablePropName="FGACCH_GRALCLCH">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACCH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACCH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACCH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACCH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACCH_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACCH_CCH_CODE_FK_PK" msprop:Generator_UserColumnName="FGACCH_CCH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACCH_CCH_CODE_FK_PKColumn">
+              <xs:element name="FGACCH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACCH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACCH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACCH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACCH_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACCH_CCH_CODE_FK_PK" msprop:Generator_UserColumnName="FGACCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACCH_CCH_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACCH_CCH_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACCH_CCH_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -2871,70 +2871,70 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGAPR_GRALPROD" msprop:Generator_UserTableName="FGAPR_GRALPROD" msprop:Generator_RowDeletedName="FGAPR_GRALPRODRowDeleted" msprop:Generator_RowChangedName="FGAPR_GRALPRODRowChanged" msprop:Generator_RowClassName="FGAPR_GRALPRODRow" msprop:Generator_RowChangingName="FGAPR_GRALPRODRowChanging" msprop:Generator_RowEvArgName="FGAPR_GRALPRODRowChangeEvent" msprop:Generator_RowEvHandlerName="FGAPR_GRALPRODRowChangeEventHandler" msprop:Generator_TableClassName="FGAPR_GRALPRODDataTable" msprop:Generator_TableVarName="tableFGAPR_GRALPROD" msprop:Generator_RowDeletingName="FGAPR_GRALPRODRowDeleting" msprop:Generator_TablePropName="FGAPR_GRALPROD">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGAPR_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPR_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPR_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPR_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPR_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGAPR_PR_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPR_PR_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPR_PR_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAPR_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPR_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPR_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPR_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPR_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAPR_PR_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPR_PR_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPR_PR_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPR_PR_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGASAC_GRALSUBAC" msprop:Generator_UserTableName="FGASAC_GRALSUBAC" msprop:Generator_RowDeletedName="FGASAC_GRALSUBACRowDeleted" msprop:Generator_RowChangedName="FGASAC_GRALSUBACRowChanged" msprop:Generator_RowClassName="FGASAC_GRALSUBACRow" msprop:Generator_RowChangingName="FGASAC_GRALSUBACRowChanging" msprop:Generator_RowEvArgName="FGASAC_GRALSUBACRowChangeEvent" msprop:Generator_RowEvHandlerName="FGASAC_GRALSUBACRowChangeEventHandler" msprop:Generator_TableClassName="FGASAC_GRALSUBACDataTable" msprop:Generator_TableVarName="tableFGASAC_GRALSUBAC" msprop:Generator_RowDeletingName="FGASAC_GRALSUBACRowDeleting" msprop:Generator_TablePropName="FGASAC_GRALSUBAC">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGASAC_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAC_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAC_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGASAC_SAC_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAC_SAC_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAC_SAC_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGASAC_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAC_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAC_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGASAC_SAC_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAC_SAC_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAC_SAC_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAC_SAC_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGASAU_GRALSUBAU" msprop:Generator_UserTableName="FGASAU_GRALSUBAU" msprop:Generator_RowDeletedName="FGASAU_GRALSUBAURowDeleted" msprop:Generator_RowChangedName="FGASAU_GRALSUBAURowChanged" msprop:Generator_RowClassName="FGASAU_GRALSUBAURow" msprop:Generator_RowChangingName="FGASAU_GRALSUBAURowChanging" msprop:Generator_RowEvArgName="FGASAU_GRALSUBAURowChangeEvent" msprop:Generator_RowEvHandlerName="FGASAU_GRALSUBAURowChangeEventHandler" msprop:Generator_TableClassName="FGASAU_GRALSUBAUDataTable" msprop:Generator_TableVarName="tableFGASAU_GRALSUBAU" msprop:Generator_RowDeletingName="FGASAU_GRALSUBAURowDeleting" msprop:Generator_TablePropName="FGASAU_GRALSUBAU">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGASAU_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAU_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAU_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAU_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAU_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGASAU_SAU_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAU_SAU_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAU_SAU_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAU_SAU_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAU_SAU_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGASAU_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAU_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAU_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAU_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAU_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGASAU_SAU_CODE_FK_PK" msprop:Generator_UserColumnName="FGASAU_SAU_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASAU_SAU_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASAU_SAU_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASAU_SAU_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGASP_GRALSPE" msprop:Generator_UserTableName="FGASP_GRALSPE" msprop:Generator_RowDeletedName="FGASP_GRALSPERowDeleted" msprop:Generator_RowChangedName="FGASP_GRALSPERowChanged" msprop:Generator_RowClassName="FGASP_GRALSPERow" msprop:Generator_RowChangingName="FGASP_GRALSPERowChanging" msprop:Generator_RowEvArgName="FGASP_GRALSPERowChangeEvent" msprop:Generator_RowEvHandlerName="FGASP_GRALSPERowChangeEventHandler" msprop:Generator_TableClassName="FGASP_GRALSPEDataTable" msprop:Generator_TableVarName="tableFGASP_GRALSPE" msprop:Generator_RowDeletingName="FGASP_GRALSPERowDeleting" msprop:Generator_TablePropName="FGASP_GRALSPE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGASP_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGASP_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASP_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGASP_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FGASP_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASP_SP_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGASP_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGASP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASP_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASP_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGASP_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FGASP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGASP_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGASP_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGASP_SP_CODE_FK_PKColumn" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGAOA_OBSERVATION_ANIMALE" msprop:Generator_UserTableName="FGAOA_OBSERVATION_ANIMALE" msprop:Generator_RowDeletedName="FGAOA_OBSERVATION_ANIMALERowDeleted" msprop:Generator_RowChangedName="FGAOA_OBSERVATION_ANIMALERowChanged" msprop:Generator_RowClassName="FGAOA_OBSERVATION_ANIMALERow" msprop:Generator_RowChangingName="FGAOA_OBSERVATION_ANIMALERowChanging" msprop:Generator_RowEvArgName="FGAOA_OBSERVATION_ANIMALERowChangeEvent" msprop:Generator_RowEvHandlerName="FGAOA_OBSERVATION_ANIMALERowChangeEventHandler" msprop:Generator_TableClassName="FGAOA_OBSERVATION_ANIMALEDataTable" msprop:Generator_TableVarName="tableFGAOA_OBSERVATION_ANIMALE" msprop:Generator_RowDeletingName="FGAOA_OBSERVATION_ANIMALERowDeleting" msprop:Generator_TablePropName="FGAOA_OBSERVATION_ANIMALE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGAOA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOA_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOA_CDF_OBS_CODE_FK_PKColumn">
+              <xs:element name="FGAOA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOA_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOA_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOA_CDF_OBS_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGAOA_NUMORD" msprop:Generator_UserColumnName="FGAOA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAOA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAOA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAOA_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGAOA_NUMORD" msprop:Generator_UserColumnName="FGAOA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAOA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAOA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAOA_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGACFA_CIRCONSTFAVORIS_ANIMALE" msprop:Generator_UserTableName="FGACFA_CIRCONSTFAVORIS_ANIMALE" msprop:Generator_RowDeletedName="FGACFA_CIRCONSTFAVORIS_ANIMALERowDeleted" msprop:Generator_RowChangedName="FGACFA_CIRCONSTFAVORIS_ANIMALERowChanged" msprop:Generator_RowClassName="FGACFA_CIRCONSTFAVORIS_ANIMALERow" msprop:Generator_RowChangingName="FGACFA_CIRCONSTFAVORIS_ANIMALERowChanging" msprop:Generator_RowEvArgName="FGACFA_CIRCONSTFAVORIS_ANIMALERowChangeEvent" msprop:Generator_RowEvHandlerName="FGACFA_CIRCONSTFAVORIS_ANIMALERowChangeEventHandler" msprop:Generator_TableClassName="FGACFA_CIRCONSTFAVORIS_ANIMALEDataTable" msprop:Generator_TableVarName="tableFGACFA_CIRCONSTFAVORIS_ANIMALE" msprop:Generator_RowDeletingName="FGACFA_CIRCONSTFAVORIS_ANIMALERowDeleting" msprop:Generator_TablePropName="FGACFA_CIRCONSTFAVORIS_ANIMALE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACFA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFA_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFA_CDF_CF_CODE_FK_PKColumn">
+              <xs:element name="FGACFA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFA_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFA_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFA_CDF_CF_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGACFA_NUMORD" msprop:Generator_UserColumnName="FGACFA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFA_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGACFA_NUMORD" msprop:Generator_UserColumnName="FGACFA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFA_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX1_FGA_TXOBSERVANI" msprop:Generator_UserTableName="FGATX1_FGA_TXOBSERVANI" msprop:Generator_RowDeletedName="FGATX1_FGA_TXOBSERVANIRowDeleted" msprop:Generator_RowChangedName="FGATX1_FGA_TXOBSERVANIRowChanged" msprop:Generator_RowClassName="FGATX1_FGA_TXOBSERVANIRow" msprop:Generator_RowChangingName="FGATX1_FGA_TXOBSERVANIRowChanging" msprop:Generator_RowEvArgName="FGATX1_FGA_TXOBSERVANIRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX1_FGA_TXOBSERVANIRowChangeEventHandler" msprop:Generator_TableClassName="FGATX1_FGA_TXOBSERVANIDataTable" msprop:Generator_TableVarName="tableFGATX1_FGA_TXOBSERVANI" msprop:Generator_RowDeletingName="FGATX1_FGA_TXOBSERVANIRowDeleting" msprop:Generator_TablePropName="FGATX1_FGA_TXOBSERVANI">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX1_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX1_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX1_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX1_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX1_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX1_TEXTE" msprop:Generator_UserColumnName="FGATX1_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX1_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX1_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX1_TEXTEColumn">
+              <xs:element name="FGATX1_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX1_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX1_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX1_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX1_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX1_TEXTE" msprop:Generator_UserColumnName="FGATX1_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX1_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX1_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX1_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -2947,68 +2947,68 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGARIA_RISQUE_ANIMALE" msprop:Generator_UserTableName="FGARIA_RISQUE_ANIMALE" msprop:Generator_RowDeletedName="FGARIA_RISQUE_ANIMALERowDeleted" msprop:Generator_RowChangedName="FGARIA_RISQUE_ANIMALERowChanged" msprop:Generator_RowClassName="FGARIA_RISQUE_ANIMALERow" msprop:Generator_RowChangingName="FGARIA_RISQUE_ANIMALERowChanging" msprop:Generator_RowEvArgName="FGARIA_RISQUE_ANIMALERowChangeEvent" msprop:Generator_RowEvHandlerName="FGARIA_RISQUE_ANIMALERowChangeEventHandler" msprop:Generator_TableClassName="FGARIA_RISQUE_ANIMALEDataTable" msprop:Generator_TableVarName="tableFGARIA_RISQUE_ANIMALE" msprop:Generator_RowDeletingName="FGARIA_RISQUE_ANIMALERowDeleting" msprop:Generator_TablePropName="FGARIA_RISQUE_ANIMALE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGARIA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIA_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIA_CDF_RI_CODE_FK_PKColumn">
+              <xs:element name="FGARIA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIA_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIA_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIA_CDF_RI_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGARIA_NUMORD" msprop:Generator_UserColumnName="FGARIA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIA_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGARIA_NUMORD" msprop:Generator_UserColumnName="FGARIA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIA_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGAPC_PERIODECRITIQUE_FGRAL" msprop:Generator_UserTableName="FGAPC_PERIODECRITIQUE_FGRAL" msprop:Generator_RowDeletedName="FGAPC_PERIODECRITIQUE_FGRALRowDeleted" msprop:Generator_RowChangedName="FGAPC_PERIODECRITIQUE_FGRALRowChanged" msprop:Generator_RowClassName="FGAPC_PERIODECRITIQUE_FGRALRow" msprop:Generator_RowChangingName="FGAPC_PERIODECRITIQUE_FGRALRowChanging" msprop:Generator_RowEvArgName="FGAPC_PERIODECRITIQUE_FGRALRowChangeEvent" msprop:Generator_RowEvHandlerName="FGAPC_PERIODECRITIQUE_FGRALRowChangeEventHandler" msprop:Generator_TableClassName="FGAPC_PERIODECRITIQUE_FGRALDataTable" msprop:Generator_TableVarName="tableFGAPC_PERIODECRITIQUE_FGRAL" msprop:Generator_RowDeletingName="FGAPC_PERIODECRITIQUE_FGRALRowDeleting" msprop:Generator_TablePropName="FGAPC_PERIODECRITIQUE_FGRAL">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGAPC_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPC_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPC_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPC_CDF_PC_CODE_FK_PKColumn">
+              <xs:element name="FGAPC_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPC_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPC_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPC_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_UserColumnName="FGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAPC_CDF_PC_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAPC_CDF_PC_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGAPC_NUMORD" msprop:Generator_UserColumnName="FGAPC_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAPC_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAPC_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAPC_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGAPC_NUMORD" msprop:Generator_UserColumnName="FGAPC_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAPC_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAPC_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAPC_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGAOH_OBSERVATION_HUMAINE" msprop:Generator_UserTableName="FGAOH_OBSERVATION_HUMAINE" msprop:Generator_RowDeletedName="FGAOH_OBSERVATION_HUMAINERowDeleted" msprop:Generator_RowChangedName="FGAOH_OBSERVATION_HUMAINERowChanged" msprop:Generator_RowClassName="FGAOH_OBSERVATION_HUMAINERow" msprop:Generator_RowChangingName="FGAOH_OBSERVATION_HUMAINERowChanging" msprop:Generator_RowEvArgName="FGAOH_OBSERVATION_HUMAINERowChangeEvent" msprop:Generator_RowEvHandlerName="FGAOH_OBSERVATION_HUMAINERowChangeEventHandler" msprop:Generator_TableClassName="FGAOH_OBSERVATION_HUMAINEDataTable" msprop:Generator_TableVarName="tableFGAOH_OBSERVATION_HUMAINE" msprop:Generator_RowDeletingName="FGAOH_OBSERVATION_HUMAINERowDeleting" msprop:Generator_TablePropName="FGAOH_OBSERVATION_HUMAINE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGAOH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOH_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOH_CDF_OBS_CODE_FK_PKColumn">
+              <xs:element name="FGAOH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOH_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_UserColumnName="FGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAOH_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAOH_CDF_OBS_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGAOH_NUMORD" msprop:Generator_UserColumnName="FGAOH_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAOH_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAOH_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAOH_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGAOH_NUMORD" msprop:Generator_UserColumnName="FGAOH_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAOH_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAOH_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAOH_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGACFH_CIRCONSTFAVORIS_HUMAINE" msprop:Generator_UserTableName="FGACFH_CIRCONSTFAVORIS_HUMAINE" msprop:Generator_RowDeletedName="FGACFH_CIRCONSTFAVORIS_HUMAINERowDeleted" msprop:Generator_RowChangedName="FGACFH_CIRCONSTFAVORIS_HUMAINERowChanged" msprop:Generator_RowClassName="FGACFH_CIRCONSTFAVORIS_HUMAINERow" msprop:Generator_RowChangingName="FGACFH_CIRCONSTFAVORIS_HUMAINERowChanging" msprop:Generator_RowEvArgName="FGACFH_CIRCONSTFAVORIS_HUMAINERowChangeEvent" msprop:Generator_RowEvHandlerName="FGACFH_CIRCONSTFAVORIS_HUMAINERowChangeEventHandler" msprop:Generator_TableClassName="FGACFH_CIRCONSTFAVORIS_HUMAINEDataTable" msprop:Generator_TableVarName="tableFGACFH_CIRCONSTFAVORIS_HUMAINE" msprop:Generator_RowDeletingName="FGACFH_CIRCONSTFAVORIS_HUMAINERowDeleting" msprop:Generator_TablePropName="FGACFH_CIRCONSTFAVORIS_HUMAINE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACFH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFH_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFH_CDF_CF_CODE_FK_PKColumn">
+              <xs:element name="FGACFH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFH_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFH_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFH_CDF_CF_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGACFH_NUMORD" msprop:Generator_UserColumnName="FGACFH_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFH_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFH_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFH_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGACFH_NUMORD" msprop:Generator_UserColumnName="FGACFH_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFH_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFH_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFH_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX3_FGA_TXOBSERVHUM" msprop:Generator_UserTableName="FGATX3_FGA_TXOBSERVHUM" msprop:Generator_RowDeletedName="FGATX3_FGA_TXOBSERVHUMRowDeleted" msprop:Generator_RowChangedName="FGATX3_FGA_TXOBSERVHUMRowChanged" msprop:Generator_RowClassName="FGATX3_FGA_TXOBSERVHUMRow" msprop:Generator_RowChangingName="FGATX3_FGA_TXOBSERVHUMRowChanging" msprop:Generator_RowEvArgName="FGATX3_FGA_TXOBSERVHUMRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX3_FGA_TXOBSERVHUMRowChangeEventHandler" msprop:Generator_TableClassName="FGATX3_FGA_TXOBSERVHUMDataTable" msprop:Generator_TableVarName="tableFGATX3_FGA_TXOBSERVHUM" msprop:Generator_RowDeletingName="FGATX3_FGA_TXOBSERVHUMRowDeleting" msprop:Generator_TablePropName="FGATX3_FGA_TXOBSERVHUM">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX3_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX3_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX3_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX3_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX3_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX3_TEXTE" msprop:Generator_UserColumnName="FGATX3_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX3_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX3_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX3_TEXTEColumn">
+              <xs:element name="FGATX3_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX3_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX3_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX3_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX3_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX3_TEXTE" msprop:Generator_UserColumnName="FGATX3_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX3_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX3_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX3_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3021,46 +3021,46 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGARIH_RISQUE_HUMAINE" msprop:Generator_UserTableName="FGARIH_RISQUE_HUMAINE" msprop:Generator_RowDeletedName="FGARIH_RISQUE_HUMAINERowDeleted" msprop:Generator_RowChangedName="FGARIH_RISQUE_HUMAINERowChanged" msprop:Generator_RowClassName="FGARIH_RISQUE_HUMAINERow" msprop:Generator_RowChangingName="FGARIH_RISQUE_HUMAINERowChanging" msprop:Generator_RowEvArgName="FGARIH_RISQUE_HUMAINERowChangeEvent" msprop:Generator_RowEvHandlerName="FGARIH_RISQUE_HUMAINERowChangeEventHandler" msprop:Generator_TableClassName="FGARIH_RISQUE_HUMAINEDataTable" msprop:Generator_TableVarName="tableFGARIH_RISQUE_HUMAINE" msprop:Generator_RowDeletingName="FGARIH_RISQUE_HUMAINERowDeleting" msprop:Generator_TablePropName="FGARIH_RISQUE_HUMAINE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGARIH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIH_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIH_CDF_RI_CODE_FK_PKColumn">
+              <xs:element name="FGARIH_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIH_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIH_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIH_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIH_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIH_CDF_RI_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGARIH_NUMORD" msprop:Generator_UserColumnName="FGARIH_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIH_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIH_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIH_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGARIH_NUMORD" msprop:Generator_UserColumnName="FGARIH_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIH_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIH_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIH_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGARIG_RISQUE_GROSSESSE" msprop:Generator_UserTableName="FGARIG_RISQUE_GROSSESSE" msprop:Generator_RowDeletedName="FGARIG_RISQUE_GROSSESSERowDeleted" msprop:Generator_RowChangedName="FGARIG_RISQUE_GROSSESSERowChanged" msprop:Generator_RowClassName="FGARIG_RISQUE_GROSSESSERow" msprop:Generator_RowChangingName="FGARIG_RISQUE_GROSSESSERowChanging" msprop:Generator_RowEvArgName="FGARIG_RISQUE_GROSSESSERowChangeEvent" msprop:Generator_RowEvHandlerName="FGARIG_RISQUE_GROSSESSERowChangeEventHandler" msprop:Generator_TableClassName="FGARIG_RISQUE_GROSSESSEDataTable" msprop:Generator_TableVarName="tableFGARIG_RISQUE_GROSSESSE" msprop:Generator_RowDeletingName="FGARIG_RISQUE_GROSSESSERowDeleting" msprop:Generator_TablePropName="FGARIG_RISQUE_GROSSESSE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGARIG_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIG_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIG_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIG_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGARIG_NUMSEQ_PK" msprop:Generator_UserColumnName="FGARIG_NUMSEQ_PK" msprop:Generator_ColumnPropNameInRow="FGARIG_NUMSEQ_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_NUMSEQ_PK" msprop:Generator_ColumnPropNameInTable="FGARIG_NUMSEQ_PKColumn" type="xs:short" />
-              <xs:element name="FGARIG_CDF_RI_CODE_FK" msprop:Generator_UserColumnName="FGARIG_CDF_RI_CODE_FK" msprop:Generator_ColumnPropNameInRow="FGARIG_CDF_RI_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_CDF_RI_CODE_FK" msprop:Generator_ColumnPropNameInTable="FGARIG_CDF_RI_CODE_FKColumn">
+              <xs:element name="FGARIG_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIG_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIG_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIG_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGARIG_NUMSEQ_PK" msprop:Generator_UserColumnName="FGARIG_NUMSEQ_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_NUMSEQ_PK" msprop:Generator_ColumnPropNameInRow="FGARIG_NUMSEQ_PK" msprop:Generator_ColumnPropNameInTable="FGARIG_NUMSEQ_PKColumn" type="xs:short" />
+              <xs:element name="FGARIG_CDF_RI_CODE_FK" msprop:Generator_UserColumnName="FGARIG_CDF_RI_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_CDF_RI_CODE_FK" msprop:Generator_ColumnPropNameInRow="FGARIG_CDF_RI_CODE_FK" msprop:Generator_ColumnPropNameInTable="FGARIG_CDF_RI_CODE_FKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGARIG_CDF_TC_CODE_FK" msprop:Generator_UserColumnName="FGARIG_CDF_TC_CODE_FK" msprop:Generator_ColumnPropNameInRow="FGARIG_CDF_TC_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_CDF_TC_CODE_FK" msprop:Generator_ColumnPropNameInTable="FGARIG_CDF_TC_CODE_FKColumn" minOccurs="0">
+              <xs:element name="FGARIG_CDF_TC_CODE_FK" msprop:Generator_UserColumnName="FGARIG_CDF_TC_CODE_FK" msprop:Generator_ColumnVarNameInTable="columnFGARIG_CDF_TC_CODE_FK" msprop:Generator_ColumnPropNameInRow="FGARIG_CDF_TC_CODE_FK" msprop:Generator_ColumnPropNameInTable="FGARIG_CDF_TC_CODE_FKColumn" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGARIG_NUMORD" msprop:Generator_UserColumnName="FGARIG_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIG_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIG_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIG_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGARIG_NUMORD" msprop:Generator_UserColumnName="FGARIG_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIG_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIG_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIG_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX7_FGA_TXRECOMMANDAT" msprop:Generator_UserTableName="FGATX7_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletedName="FGATX7_FGA_TXRECOMMANDATRowDeleted" msprop:Generator_RowChangedName="FGATX7_FGA_TXRECOMMANDATRowChanged" msprop:Generator_RowClassName="FGATX7_FGA_TXRECOMMANDATRow" msprop:Generator_RowChangingName="FGATX7_FGA_TXRECOMMANDATRowChanging" msprop:Generator_RowEvArgName="FGATX7_FGA_TXRECOMMANDATRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX7_FGA_TXRECOMMANDATRowChangeEventHandler" msprop:Generator_TableClassName="FGATX7_FGA_TXRECOMMANDATDataTable" msprop:Generator_TableVarName="tableFGATX7_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletingName="FGATX7_FGA_TXRECOMMANDATRowDeleting" msprop:Generator_TablePropName="FGATX7_FGA_TXRECOMMANDAT">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX7_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX7_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX7_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX7_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX7_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX7_TEXTE" msprop:Generator_UserColumnName="FGATX7_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX7_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX7_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX7_TEXTEColumn">
+              <xs:element name="FGATX7_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX7_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX7_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX7_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX7_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX7_TEXTE" msprop:Generator_UserColumnName="FGATX7_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX7_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX7_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX7_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3073,38 +3073,38 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGACF_CATFEMMEENCEINTE" msprop:Generator_UserTableName="FGACF_CATFEMMEENCEINTE" msprop:Generator_RowDeletedName="FGACF_CATFEMMEENCEINTERowDeleted" msprop:Generator_RowChangedName="FGACF_CATFEMMEENCEINTERowChanged" msprop:Generator_RowClassName="FGACF_CATFEMMEENCEINTERow" msprop:Generator_RowChangingName="FGACF_CATFEMMEENCEINTERowChanging" msprop:Generator_RowEvArgName="FGACF_CATFEMMEENCEINTERowChangeEvent" msprop:Generator_RowEvHandlerName="FGACF_CATFEMMEENCEINTERowChangeEventHandler" msprop:Generator_TableClassName="FGACF_CATFEMMEENCEINTEDataTable" msprop:Generator_TableVarName="tableFGACF_CATFEMMEENCEINTE" msprop:Generator_RowDeletingName="FGACF_CATFEMMEENCEINTERowDeleting" msprop:Generator_TablePropName="FGACF_CATFEMMEENCEINTE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACF_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACF_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACF_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACF_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACF_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACF_CDF_CAT_CODE_FK_PKColumn">
+              <xs:element name="FGACF_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACF_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACF_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACF_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACF_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACF_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACF_CDF_CAT_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGACF_NUMORD" msprop:Generator_UserColumnName="FGACF_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACF_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACF_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACF_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGACF_NUMORD" msprop:Generator_UserColumnName="FGACF_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACF_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACF_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACF_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGACN_CATNOUVEAUNE" msprop:Generator_UserTableName="FGACN_CATNOUVEAUNE" msprop:Generator_RowDeletedName="FGACN_CATNOUVEAUNERowDeleted" msprop:Generator_RowChangedName="FGACN_CATNOUVEAUNERowChanged" msprop:Generator_RowClassName="FGACN_CATNOUVEAUNERow" msprop:Generator_RowChangingName="FGACN_CATNOUVEAUNERowChanging" msprop:Generator_RowEvArgName="FGACN_CATNOUVEAUNERowChangeEvent" msprop:Generator_RowEvHandlerName="FGACN_CATNOUVEAUNERowChangeEventHandler" msprop:Generator_TableClassName="FGACN_CATNOUVEAUNEDataTable" msprop:Generator_TableVarName="tableFGACN_CATNOUVEAUNE" msprop:Generator_RowDeletingName="FGACN_CATNOUVEAUNERowDeleting" msprop:Generator_TablePropName="FGACN_CATNOUVEAUNE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACN_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACN_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACN_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACN_CDF_CAT_CODE_FK_PKColumn">
+              <xs:element name="FGACN_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACN_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACN_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACN_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACN_CDF_CAT_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGACN_NUMORD" msprop:Generator_UserColumnName="FGACN_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACN_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACN_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACN_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGACN_NUMORD" msprop:Generator_UserColumnName="FGACN_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACN_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACN_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACN_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX4_FGA_TXCONDATENIRCF" msprop:Generator_UserTableName="FGATX4_FGA_TXCONDATENIRCF" msprop:Generator_RowDeletedName="FGATX4_FGA_TXCONDATENIRCFRowDeleted" msprop:Generator_RowChangedName="FGATX4_FGA_TXCONDATENIRCFRowChanged" msprop:Generator_RowClassName="FGATX4_FGA_TXCONDATENIRCFRow" msprop:Generator_RowChangingName="FGATX4_FGA_TXCONDATENIRCFRowChanging" msprop:Generator_RowEvArgName="FGATX4_FGA_TXCONDATENIRCFRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX4_FGA_TXCONDATENIRCFRowChangeEventHandler" msprop:Generator_TableClassName="FGATX4_FGA_TXCONDATENIRCFDataTable" msprop:Generator_TableVarName="tableFGATX4_FGA_TXCONDATENIRCF" msprop:Generator_RowDeletingName="FGATX4_FGA_TXCONDATENIRCFRowDeleting" msprop:Generator_TablePropName="FGATX4_FGA_TXCONDATENIRCF">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX4_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX4_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX4_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX4_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX4_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX4_TEXTE" msprop:Generator_UserColumnName="FGATX4_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX4_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX4_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX4_TEXTEColumn">
+              <xs:element name="FGATX4_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX4_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX4_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX4_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX4_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX4_TEXTE" msprop:Generator_UserColumnName="FGATX4_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX4_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX4_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX4_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3117,8 +3117,8 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGATX5_FGA_TXCONDATENIRCN" msprop:Generator_UserTableName="FGATX5_FGA_TXCONDATENIRCN" msprop:Generator_RowDeletedName="FGATX5_FGA_TXCONDATENIRCNRowDeleted" msprop:Generator_RowChangedName="FGATX5_FGA_TXCONDATENIRCNRowChanged" msprop:Generator_RowClassName="FGATX5_FGA_TXCONDATENIRCNRow" msprop:Generator_RowChangingName="FGATX5_FGA_TXCONDATENIRCNRowChanging" msprop:Generator_RowEvArgName="FGATX5_FGA_TXCONDATENIRCNRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX5_FGA_TXCONDATENIRCNRowChangeEventHandler" msprop:Generator_TableClassName="FGATX5_FGA_TXCONDATENIRCNDataTable" msprop:Generator_TableVarName="tableFGATX5_FGA_TXCONDATENIRCN" msprop:Generator_RowDeletingName="FGATX5_FGA_TXCONDATENIRCNRowDeleting" msprop:Generator_TablePropName="FGATX5_FGA_TXCONDATENIRCN">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX5_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX5_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX5_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX5_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX5_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX5_TEXTE" msprop:Generator_UserColumnName="FGATX5_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX5_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX5_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX5_TEXTEColumn">
+              <xs:element name="FGATX5_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX5_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX5_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX5_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX5_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX5_TEXTE" msprop:Generator_UserColumnName="FGATX5_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX5_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX5_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX5_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3131,8 +3131,8 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGATX9_FGA_TXRECOMMANDAT" msprop:Generator_UserTableName="FGATX9_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletedName="FGATX9_FGA_TXRECOMMANDATRowDeleted" msprop:Generator_RowChangedName="FGATX9_FGA_TXRECOMMANDATRowChanged" msprop:Generator_RowClassName="FGATX9_FGA_TXRECOMMANDATRow" msprop:Generator_RowChangingName="FGATX9_FGA_TXRECOMMANDATRowChanging" msprop:Generator_RowEvArgName="FGATX9_FGA_TXRECOMMANDATRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX9_FGA_TXRECOMMANDATRowChangeEventHandler" msprop:Generator_TableClassName="FGATX9_FGA_TXRECOMMANDATDataTable" msprop:Generator_TableVarName="tableFGATX9_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletingName="FGATX9_FGA_TXRECOMMANDATRowDeleting" msprop:Generator_TablePropName="FGATX9_FGA_TXRECOMMANDAT">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX9_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX9_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX9_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX9_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX9_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX9_TEXTE" msprop:Generator_UserColumnName="FGATX9_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX9_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX9_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX9_TEXTEColumn">
+              <xs:element name="FGATX9_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX9_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX9_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX9_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX9_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX9_TEXTE" msprop:Generator_UserColumnName="FGATX9_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX9_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX9_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX9_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3145,38 +3145,38 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGARIFAP_RISQUEFEMMEENAGE" msprop:Generator_UserTableName="FGARIFAP_RISQUEFEMMEENAGE" msprop:Generator_RowDeletedName="FGARIFAP_RISQUEFEMMEENAGERowDeleted" msprop:Generator_RowChangedName="FGARIFAP_RISQUEFEMMEENAGERowChanged" msprop:Generator_RowClassName="FGARIFAP_RISQUEFEMMEENAGERow" msprop:Generator_RowChangingName="FGARIFAP_RISQUEFEMMEENAGERowChanging" msprop:Generator_RowEvArgName="FGARIFAP_RISQUEFEMMEENAGERowChangeEvent" msprop:Generator_RowEvHandlerName="FGARIFAP_RISQUEFEMMEENAGERowChangeEventHandler" msprop:Generator_TableClassName="FGARIFAP_RISQUEFEMMEENAGEDataTable" msprop:Generator_TableVarName="tableFGARIFAP_RISQUEFEMMEENAGE" msprop:Generator_RowDeletingName="FGARIFAP_RISQUEFEMMEENAGERowDeleting" msprop:Generator_TablePropName="FGARIFAP_RISQUEFEMMEENAGE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGARIFAP_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIFAP_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIFAP_CDF_RI_CODE_FK_PKColumn">
+              <xs:element name="FGARIFAP_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIFAP_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIFAP_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIFAP_CDF_RI_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGARIFAP_NUMORD" msprop:Generator_UserColumnName="FGARIFAP_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIFAP_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIFAP_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIFAP_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGARIFAP_NUMORD" msprop:Generator_UserColumnName="FGARIFAP_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIFAP_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIFAP_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIFAP_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGACFAP_CATFEMMEENAGE" msprop:Generator_UserTableName="FGACFAP_CATFEMMEENAGE" msprop:Generator_RowDeletedName="FGACFAP_CATFEMMEENAGERowDeleted" msprop:Generator_RowChangedName="FGACFAP_CATFEMMEENAGERowChanged" msprop:Generator_RowClassName="FGACFAP_CATFEMMEENAGERow" msprop:Generator_RowChangingName="FGACFAP_CATFEMMEENAGERowChanging" msprop:Generator_RowEvArgName="FGACFAP_CATFEMMEENAGERowChangeEvent" msprop:Generator_RowEvHandlerName="FGACFAP_CATFEMMEENAGERowChangeEventHandler" msprop:Generator_TableClassName="FGACFAP_CATFEMMEENAGEDataTable" msprop:Generator_TableVarName="tableFGACFAP_CATFEMMEENAGE" msprop:Generator_RowDeletingName="FGACFAP_CATFEMMEENAGERowDeleting" msprop:Generator_TablePropName="FGACFAP_CATFEMMEENAGE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACFAP_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFAP_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFAP_CDF_CAT_CODE_FK_PKColumn">
+              <xs:element name="FGACFAP_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFAP_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFAP_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFAP_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFAP_CDF_CAT_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGACFAP_NUMORD" msprop:Generator_UserColumnName="FGACFAP_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFAP_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFAP_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFAP_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGACFAP_NUMORD" msprop:Generator_UserColumnName="FGACFAP_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFAP_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFAP_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFAP_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX10_FGA_TXRECOMMANDAT" msprop:Generator_UserTableName="FGATX10_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletedName="FGATX10_FGA_TXRECOMMANDATRowDeleted" msprop:Generator_RowChangedName="FGATX10_FGA_TXRECOMMANDATRowChanged" msprop:Generator_RowClassName="FGATX10_FGA_TXRECOMMANDATRow" msprop:Generator_RowChangingName="FGATX10_FGA_TXRECOMMANDATRowChanging" msprop:Generator_RowEvArgName="FGATX10_FGA_TXRECOMMANDATRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX10_FGA_TXRECOMMANDATRowChangeEventHandler" msprop:Generator_TableClassName="FGATX10_FGA_TXRECOMMANDATDataTable" msprop:Generator_TableVarName="tableFGATX10_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletingName="FGATX10_FGA_TXRECOMMANDATRowDeleting" msprop:Generator_TablePropName="FGATX10_FGA_TXRECOMMANDAT">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX10_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX10_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX10_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX10_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX10_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX10_TEXTE" msprop:Generator_UserColumnName="FGATX10_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX10_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX10_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX10_TEXTEColumn">
+              <xs:element name="FGATX10_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX10_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX10_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX10_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX10_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX10_TEXTE" msprop:Generator_UserColumnName="FGATX10_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX10_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX10_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX10_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3189,38 +3189,38 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGAON_OBSERVATION_NOUVEAUNE" msprop:Generator_UserTableName="FGAON_OBSERVATION_NOUVEAUNE" msprop:Generator_RowDeletedName="FGAON_OBSERVATION_NOUVEAUNERowDeleted" msprop:Generator_RowChangedName="FGAON_OBSERVATION_NOUVEAUNERowChanged" msprop:Generator_RowClassName="FGAON_OBSERVATION_NOUVEAUNERow" msprop:Generator_RowChangingName="FGAON_OBSERVATION_NOUVEAUNERowChanging" msprop:Generator_RowEvArgName="FGAON_OBSERVATION_NOUVEAUNERowChangeEvent" msprop:Generator_RowEvHandlerName="FGAON_OBSERVATION_NOUVEAUNERowChangeEventHandler" msprop:Generator_TableClassName="FGAON_OBSERVATION_NOUVEAUNEDataTable" msprop:Generator_TableVarName="tableFGAON_OBSERVATION_NOUVEAUNE" msprop:Generator_RowDeletingName="FGAON_OBSERVATION_NOUVEAUNERowDeleting" msprop:Generator_TablePropName="FGAON_OBSERVATION_NOUVEAUNE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGAON_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAON_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAON_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAON_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAON_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_UserColumnName="FGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAON_CDF_OBS_CODE_FK_PKColumn">
+              <xs:element name="FGAON_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAON_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAON_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAON_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAON_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_UserColumnName="FGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAON_CDF_OBS_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAON_CDF_OBS_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGAON_NUMORD" msprop:Generator_UserColumnName="FGAON_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAON_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAON_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAON_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGAON_NUMORD" msprop:Generator_UserColumnName="FGAON_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGAON_NUMORD" msprop:Generator_ColumnPropNameInRow="FGAON_NUMORD" msprop:Generator_ColumnPropNameInTable="FGAON_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGACFN_CIRCONSFAVORIS_NOUVEAUN" msprop:Generator_UserTableName="FGACFN_CIRCONSFAVORIS_NOUVEAUN" msprop:Generator_RowDeletedName="FGACFN_CIRCONSFAVORIS_NOUVEAUNRowDeleted" msprop:Generator_RowChangedName="FGACFN_CIRCONSFAVORIS_NOUVEAUNRowChanged" msprop:Generator_RowClassName="FGACFN_CIRCONSFAVORIS_NOUVEAUNRow" msprop:Generator_RowChangingName="FGACFN_CIRCONSFAVORIS_NOUVEAUNRowChanging" msprop:Generator_RowEvArgName="FGACFN_CIRCONSFAVORIS_NOUVEAUNRowChangeEvent" msprop:Generator_RowEvHandlerName="FGACFN_CIRCONSFAVORIS_NOUVEAUNRowChangeEventHandler" msprop:Generator_TableClassName="FGACFN_CIRCONSFAVORIS_NOUVEAUNDataTable" msprop:Generator_TableVarName="tableFGACFN_CIRCONSFAVORIS_NOUVEAUN" msprop:Generator_RowDeletingName="FGACFN_CIRCONSFAVORIS_NOUVEAUNRowDeleting" msprop:Generator_TablePropName="FGACFN_CIRCONSFAVORIS_NOUVEAUN">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACFN_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFN_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFN_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFN_CDF_CF_CODE_FK_PKColumn">
+              <xs:element name="FGACFN_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFN_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFN_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFN_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_UserColumnName="FGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACFN_CDF_CF_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACFN_CDF_CF_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGACFN_NUMORD" msprop:Generator_UserColumnName="FGACFN_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFN_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFN_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFN_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGACFN_NUMORD" msprop:Generator_UserColumnName="FGACFN_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACFN_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACFN_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACFN_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX2_FGA_TXOBSERVNOUVNE" msprop:Generator_UserTableName="FGATX2_FGA_TXOBSERVNOUVNE" msprop:Generator_RowDeletedName="FGATX2_FGA_TXOBSERVNOUVNERowDeleted" msprop:Generator_RowChangedName="FGATX2_FGA_TXOBSERVNOUVNERowChanged" msprop:Generator_RowClassName="FGATX2_FGA_TXOBSERVNOUVNERow" msprop:Generator_RowChangingName="FGATX2_FGA_TXOBSERVNOUVNERowChanging" msprop:Generator_RowEvArgName="FGATX2_FGA_TXOBSERVNOUVNERowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX2_FGA_TXOBSERVNOUVNERowChangeEventHandler" msprop:Generator_TableClassName="FGATX2_FGA_TXOBSERVNOUVNEDataTable" msprop:Generator_TableVarName="tableFGATX2_FGA_TXOBSERVNOUVNE" msprop:Generator_RowDeletingName="FGATX2_FGA_TXOBSERVNOUVNERowDeleting" msprop:Generator_TablePropName="FGATX2_FGA_TXOBSERVNOUVNE">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX2_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX2_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX2_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX2_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX2_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX2_TEXTE" msprop:Generator_UserColumnName="FGATX2_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX2_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX2_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX2_TEXTEColumn">
+              <xs:element name="FGATX2_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX2_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX2_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX2_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX2_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX2_TEXTE" msprop:Generator_UserColumnName="FGATX2_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX2_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX2_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX2_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3233,23 +3233,23 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGARIL_RISQUE_ALLAITEMENT" msprop:Generator_UserTableName="FGARIL_RISQUE_ALLAITEMENT" msprop:Generator_RowDeletedName="FGARIL_RISQUE_ALLAITEMENTRowDeleted" msprop:Generator_RowChangedName="FGARIL_RISQUE_ALLAITEMENTRowChanged" msprop:Generator_RowClassName="FGARIL_RISQUE_ALLAITEMENTRow" msprop:Generator_RowChangingName="FGARIL_RISQUE_ALLAITEMENTRowChanging" msprop:Generator_RowEvArgName="FGARIL_RISQUE_ALLAITEMENTRowChangeEvent" msprop:Generator_RowEvHandlerName="FGARIL_RISQUE_ALLAITEMENTRowChangeEventHandler" msprop:Generator_TableClassName="FGARIL_RISQUE_ALLAITEMENTDataTable" msprop:Generator_TableVarName="tableFGARIL_RISQUE_ALLAITEMENT" msprop:Generator_RowDeletingName="FGARIL_RISQUE_ALLAITEMENTRowDeleting" msprop:Generator_TablePropName="FGARIL_RISQUE_ALLAITEMENT">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGARIL_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIL_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIL_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIL_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIL_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIL_CDF_RI_CODE_FK_PKColumn">
+              <xs:element name="FGARIL_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIL_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIL_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIL_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIL_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_UserColumnName="FGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGARIL_CDF_RI_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGARIL_CDF_RI_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGARIL_NUMORD" msprop:Generator_UserColumnName="FGARIL_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIL_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIL_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIL_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGARIL_NUMORD" msprop:Generator_UserColumnName="FGARIL_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGARIL_NUMORD" msprop:Generator_ColumnPropNameInRow="FGARIL_NUMORD" msprop:Generator_ColumnPropNameInTable="FGARIL_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX8_FGA_TXRECOMMANDAT" msprop:Generator_UserTableName="FGATX8_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletedName="FGATX8_FGA_TXRECOMMANDATRowDeleted" msprop:Generator_RowChangedName="FGATX8_FGA_TXRECOMMANDATRowChanged" msprop:Generator_RowClassName="FGATX8_FGA_TXRECOMMANDATRow" msprop:Generator_RowChangingName="FGATX8_FGA_TXRECOMMANDATRowChanging" msprop:Generator_RowEvArgName="FGATX8_FGA_TXRECOMMANDATRowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX8_FGA_TXRECOMMANDATRowChangeEventHandler" msprop:Generator_TableClassName="FGATX8_FGA_TXRECOMMANDATDataTable" msprop:Generator_TableVarName="tableFGATX8_FGA_TXRECOMMANDAT" msprop:Generator_RowDeletingName="FGATX8_FGA_TXRECOMMANDATRowDeleting" msprop:Generator_TablePropName="FGATX8_FGA_TXRECOMMANDAT">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX8_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX8_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX8_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX8_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX8_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX8_TEXTE" msprop:Generator_UserColumnName="FGATX8_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX8_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX8_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX8_TEXTEColumn">
+              <xs:element name="FGATX8_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX8_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX8_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX8_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX8_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX8_TEXTE" msprop:Generator_UserColumnName="FGATX8_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX8_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX8_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX8_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3262,23 +3262,23 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGACA_CATALLAITEMENT" msprop:Generator_UserTableName="FGACA_CATALLAITEMENT" msprop:Generator_RowDeletedName="FGACA_CATALLAITEMENTRowDeleted" msprop:Generator_RowChangedName="FGACA_CATALLAITEMENTRowChanged" msprop:Generator_RowClassName="FGACA_CATALLAITEMENTRow" msprop:Generator_RowChangingName="FGACA_CATALLAITEMENTRowChanging" msprop:Generator_RowEvArgName="FGACA_CATALLAITEMENTRowChangeEvent" msprop:Generator_RowEvHandlerName="FGACA_CATALLAITEMENTRowChangeEventHandler" msprop:Generator_TableClassName="FGACA_CATALLAITEMENTDataTable" msprop:Generator_TableVarName="tableFGACA_CATALLAITEMENT" msprop:Generator_RowDeletingName="FGACA_CATALLAITEMENTRowDeleting" msprop:Generator_TablePropName="FGACA_CATALLAITEMENT">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGACA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACA_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACA_CDF_CAT_CODE_FK_PKColumn">
+              <xs:element name="FGACA_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGACA_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACA_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACA_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_UserColumnName="FGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGACA_CDF_CAT_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGACA_CDF_CAT_CODE_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGACA_NUMORD" msprop:Generator_UserColumnName="FGACA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACA_NUMORDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="FGACA_NUMORD" msprop:Generator_UserColumnName="FGACA_NUMORD" msprop:Generator_ColumnVarNameInTable="columnFGACA_NUMORD" msprop:Generator_ColumnPropNameInRow="FGACA_NUMORD" msprop:Generator_ColumnPropNameInTable="FGACA_NUMORDColumn" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="FGATX6_FGA_TXCONDATENIRCA" msprop:Generator_UserTableName="FGATX6_FGA_TXCONDATENIRCA" msprop:Generator_RowDeletedName="FGATX6_FGA_TXCONDATENIRCARowDeleted" msprop:Generator_RowChangedName="FGATX6_FGA_TXCONDATENIRCARowChanged" msprop:Generator_RowClassName="FGATX6_FGA_TXCONDATENIRCARow" msprop:Generator_RowChangingName="FGATX6_FGA_TXCONDATENIRCARowChanging" msprop:Generator_RowEvArgName="FGATX6_FGA_TXCONDATENIRCARowChangeEvent" msprop:Generator_RowEvHandlerName="FGATX6_FGA_TXCONDATENIRCARowChangeEventHandler" msprop:Generator_TableClassName="FGATX6_FGA_TXCONDATENIRCADataTable" msprop:Generator_TableVarName="tableFGATX6_FGA_TXCONDATENIRCA" msprop:Generator_RowDeletingName="FGATX6_FGA_TXCONDATENIRCARowDeleting" msprop:Generator_TablePropName="FGATX6_FGA_TXCONDATENIRCA">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGATX6_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX6_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX6_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX6_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX6_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGATX6_TEXTE" msprop:Generator_UserColumnName="FGATX6_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX6_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX6_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX6_TEXTEColumn">
+              <xs:element name="FGATX6_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGATX6_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGATX6_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGATX6_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGATX6_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGATX6_TEXTE" msprop:Generator_UserColumnName="FGATX6_TEXTE" msprop:Generator_ColumnVarNameInTable="columnFGATX6_TEXTE" msprop:Generator_ColumnPropNameInRow="FGATX6_TEXTE" msprop:Generator_ColumnPropNameInTable="FGATX6_TEXTEColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
@@ -3291,17 +3291,17 @@ WHERE FGAAFS_FGA_CODE_FK_PK = @FGAAFS_FGA_CODE_FK_PK</CommandText>
         <xs:element name="FGAAFS_FGA_AFSSAPS" msprop:Generator_UserTableName="FGAAFS_FGA_AFSSAPS" msprop:Generator_RowDeletedName="FGAAFS_FGA_AFSSAPSRowDeleted" msprop:Generator_RowChangedName="FGAAFS_FGA_AFSSAPSRowChanged" msprop:Generator_RowClassName="FGAAFS_FGA_AFSSAPSRow" msprop:Generator_RowChangingName="FGAAFS_FGA_AFSSAPSRowChanging" msprop:Generator_RowEvArgName="FGAAFS_FGA_AFSSAPSRowChangeEvent" msprop:Generator_RowEvHandlerName="FGAAFS_FGA_AFSSAPSRowChangeEventHandler" msprop:Generator_TableClassName="FGAAFS_FGA_AFSSAPSDataTable" msprop:Generator_TableVarName="tableFGAAFS_FGA_AFSSAPS" msprop:Generator_RowDeletingName="FGAAFS_FGA_AFSSAPSRowDeleting" msprop:Generator_TablePropName="FGAAFS_FGA_AFSSAPS">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="FGAAFS_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAAFS_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_FGA_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGAAFS_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FGAAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_SP_CODE_FK_PKColumn" type="xs:int" />
-              <xs:element name="FGAAFS_DATE_PK" msprop:Generator_UserColumnName="FGAAFS_DATE_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_DATE_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_DATE_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_DATE_PKColumn" type="xs:dateTime" />
-              <xs:element name="FGAAFS_TYPEGRAL_PK" msprop:Generator_UserColumnName="FGAAFS_TYPEGRAL_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_TYPEGRAL_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_TYPEGRAL_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_TYPEGRAL_PKColumn">
+              <xs:element name="FGAAFS_FGA_CODE_FK_PK" msprop:Generator_UserColumnName="FGAAFS_FGA_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_FGA_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_FGA_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAAFS_SP_CODE_FK_PK" msprop:Generator_UserColumnName="FGAAFS_SP_CODE_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_SP_CODE_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_SP_CODE_FK_PKColumn" type="xs:int" />
+              <xs:element name="FGAAFS_DATE_PK" msprop:Generator_UserColumnName="FGAAFS_DATE_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_DATE_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_DATE_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_DATE_PKColumn" type="xs:dateTime" />
+              <xs:element name="FGAAFS_TYPEGRAL_PK" msprop:Generator_UserColumnName="FGAAFS_TYPEGRAL_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_TYPEGRAL_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_TYPEGRAL_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_TYPEGRAL_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="FGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_UserColumnName="FGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_CDF_DOCUMENT_FK_PKColumn">
+              <xs:element name="FGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_UserColumnName="FGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnVarNameInTable="columnFGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInRow="FGAAFS_CDF_DOCUMENT_FK_PK" msprop:Generator_ColumnPropNameInTable="FGAAFS_CDF_DOCUMENT_FK_PKColumn">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />

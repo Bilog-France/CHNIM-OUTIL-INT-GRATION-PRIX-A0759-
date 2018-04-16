@@ -1216,4 +1216,8 @@ Public Class Frm_Main
         f.MdiParent = Me
         f.Show()
     End Sub
+
+    Private Sub ToolStrip_ItemClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles ToolStrip.ItemClicked
+
+    End Sub
 End Class

@@ -42,7 +42,29 @@ Public Class Frm_Etiologie
             OnLoading = True
             EmptyDataTable()
             Me.FeT_TA.FillByCode(Me.DsTheriaque_Etiologie.FET_FICHEETIOLOGIE, f._Code)
-            'Onglet 1
+            If (Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIHS") IsNot System.DBNull.Value) Then
+                TextEdit1.Text = Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIHS")
+            End If
+
+            If (Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIIS") IsNot System.DBNull.Value) Then
+                TextEdit2.Text = Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIIS")
+            Else
+                TextEdit5.Text = ""
+            End If
+
+            If (Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIMS") IsNot System.DBNull.Value) Then
+                TextEdit4.Text = Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIMS")
+            Else
+                TextEdit5.Text = ""
+            End If
+
+            If (Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIRE") IsNot System.DBNull.Value) Then
+                TextEdit5.Text = Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIRE")
+            Else
+                TextEdit5.Text = ""
+            End If
+
+                  'Onglet 1
             Me.FetcpH_TA.FillByCode(Me.DsTheriaque_Etiologie.FETCPH_ETIOCPH, f._Code)
             Me.FetccH_TA.FillByCode(Me.DsTheriaque_Etiologie.FETCCH_ETIOCCH, f._Code)
             Me.FetpR_TA.FillByCode(Me.DsTheriaque_Etiologie.FETPR_ETIOPROD, f._Code)
@@ -359,7 +381,59 @@ Public Class Frm_Etiologie
     ''' </summary>
     ''' <remarks>Proçédure surchargée</remarks>
     Public Overrides Sub valider()
+
         MyBase.Valider()
+        Dim d As Decimal
+        If Not String.IsNullOrEmpty(TextEdit1.Text) Then
+            If Decimal.TryParse(TextEdit1.Text, d) Then
+                Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIHS") = d
+            Else
+                MsgBox("Le CMI doit etre décimal")
+            End If
+        Else
+            Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIHS") = System.DBNull.Value
+        End If
+
+        If Not String.IsNullOrEmpty(TextEdit2.Text) Then
+            If Decimal.TryParse(TextEdit2.Text, d) Then
+                Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIIS") = d
+            Else
+                MsgBox("Le CMI doit etre décimal")
+            End If
+        Else
+            Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIIS") = System.DBNull.Value
+        End If
+
+        If Not String.IsNullOrEmpty(TextEdit4.Text) Then
+            If Decimal.TryParse(TextEdit4.Text, d) Then
+                Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIMS") = d
+            Else
+                MsgBox("Le CMI doit etre décimal")
+            End If
+        Else
+            Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIMS") = System.DBNull.Value
+        End If
+
+        If Not String.IsNullOrEmpty(TextEdit4.Text) Then
+            If Decimal.TryParse(TextEdit4.Text, d) Then
+                Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIMS") = d
+            Else
+                MsgBox("Le CMI doit etre décimal")
+            End If
+        Else
+            Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIMS") = System.DBNull.Value
+        End If
+
+        If Not String.IsNullOrEmpty(TextEdit5.Text) Then
+            If Decimal.TryParse(TextEdit5.Text, d) Then
+                Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIRE") = d
+            Else
+                MsgBox("Le CMI doit etre décimal")
+            End If
+        Else
+            Me.BindingContext(DsTheriaque_Etiologie, FET_FICHEETIOLOGIE).Current("FET_CMIRE") = System.DBNull.Value
+        End If
+
         Me.BindingContext(Me.MasterDataSet, MasterTable).EndCurrentEdit()
         FeT_TA.Update(Me.DsTheriaque_Etiologie.FET_FICHEETIOLOGIE)
         'Onglet entités
@@ -1431,6 +1505,8 @@ Public Class Frm_Etiologie
     ''' <param name="e">Validated</param>
     ''' <remarks></remarks>
     Private Sub TextEdit1_Validated(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextEdit1.Validated
+
+       
         If ModeFiche = eMode.Ajout Or ModeFiche = eMode.Duplication Then
             If TextEdit1.Text <> "" And LookUp_FET.Text = "" Then
                 LookUp_FET.ItemIndex = 0
@@ -1724,5 +1800,33 @@ Public Class Frm_Etiologie
         e.RowHeight = sender.GridControl.Height
     End Sub
 
+    Private Sub TextEdit1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextEdit1.TextChanged
+        EnableButtons(False)
+    End Sub
+
+    Private Sub EnableButtons(ByVal value As Boolean)
+
+        btAjouter.Enabled = value
+        btSupprimer.Enabled = value
+        btDupliquer.Enabled = value
+        btChercher.Enabled = value
+        btAdvancedSearch.Enabled = value
+        btn_RechMulti.Enabled = value
+        btValider.Enabled = Not value
+        btAnnuler.Enabled = Not value
+
+    End Sub
+
+    Private Sub TextEdit2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextEdit2.TextChanged
+        EnableButtons(False)
+    End Sub
+
+    Private Sub TextEdit4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextEdit4.TextChanged
+        EnableButtons(False)
+    End Sub
+
+    Private Sub TextEdit5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextEdit5.TextChanged
+        EnableButtons(False)
+    End Sub
 End Class
 
